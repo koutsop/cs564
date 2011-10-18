@@ -68,27 +68,21 @@ input:focus {
 
 .searchStyle {
 	float: left;
+	min-width: 290px;
 	margin-top: 15px;
 }
 /*TODO to leftBG kai to rightBG na exoun to idio name*/
-.leftBg {
+.leftBg, .rightBg {
 	float: left;
-	min-height: 71px;
-	margin: 0;
-	padding: 0;
-}
-
-.rightBg {
-	float: left;
-	min-height: 71px;
+	height: 71px;
 	margin: 0;
 	padding: 0;
 }
 
 .search {
-	width: auto;
-	min-height: 71px;
 	margin: 0;
+	padding: 0;
+	min-height: 71px;
 	float: left;
 	background: url(./../images/repeatBg.png) repeat-x center;
 }
