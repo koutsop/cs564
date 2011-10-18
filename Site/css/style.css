@@ -34,7 +34,7 @@ input:focus {
 #header{
 	min-height: 173px;
 	/*background: url(./../images/header_bg.jpg) no-repeat center;*/
-	border: 2px solid Black;
+	/*border: 2px solid Black;*/
 	background-position: 0px 0px;
 	margin: 15px auto auto auto;
 }
@@ -153,6 +153,7 @@ input.search_input{
 	padding-bottom: 27px;
 	padding-left: 0px;
 	padding-right: 0px;
+	color: #999
 }
 
 /*---------------- hellp ----------------------*/
@@ -272,10 +273,8 @@ a.nav:hover {
 	background-position: center 70%;
 }
 
-
-
-
 /*----------------crumb_navigation-------------*/
+
 #crumbContainer {
     /*border: 1px solid Black;*/
     float: left;
@@ -317,7 +316,7 @@ a.crumb {
 	display: block;
 	padding-left: 25px;	
 	padding-right: 10px;	
-	color: #000;
+    color: #0FA0DD;
 	text-decoration: none;
 	background:url(../images/blue-arrow.png);
 	background-repeat:no-repeat;
@@ -330,7 +329,79 @@ a.crumb:hover, a.crumb:focus {
 }
 
 
+/****************************************************
+content
+****************************************************/
+#mainContent {
+    clear:both;
+}
 
+/*---------------- left_content -------------*/
+
+.leftContent {
+    width: 196px;
+    float: left;
+    margin-left: 10px;
+}
+
+.titleBox {
+    width: 196px;
+    height: 30px;
+    margin: 5px 0 0 0;
+    background: url(../images/menu_title_bg.gif) no-repeat center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    line-height: 30px;
+}
+
+
+ul.leftMenu {
+    width: 194px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border: 1px solid #7bbcc7;
+}
+
+li.leftMenu {
+    margin: 0;
+    list-style: node;
+}
+
+
+a.leftMenu {
+    width: 164px;
+    height: 25px;
+    display: block;
+    background: url(../images/leftMenu.png) no-repeat left #DAD0D0;
+    background-position: 5px 5px;
+    border-bottom: 1px white solid;
+    text-decoration: none;
+    color: #504B4B;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+
+a.leftMenu:hover, a.leftMenu:focus {
+    background:url(../images/leftMenuSelected.png) no-repeat left #7bbcc7; 
+    color:#FFFFFF;
+    background-position:5px 5px;   
+}
+
+li.leftMenuSelected {
+    width: 164px;
+    height: 25px;
+    display: block;
+    background:url(../images/leftMenuSelected.png) no-repeat left #7bbcc7;    
+    background-position: 5px 5px;
+    border-bottom: 1px white solid;
+    text-decoration: none;
+    color: #504B4B;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
 
 /****************************************************
 general 
