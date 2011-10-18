@@ -1,0 +1,241 @@
+﻿body {
+	background: url(./../images/bg.jpg) no-repeat #fff center top;
+	padding: 0;
+	font-family: 'Trebuchet MS', Tahoma, sans-serif;
+	font-size: 11px;
+	margin: 0px auto auto auto;
+	color: #000;
+}
+
+p {
+	padding: 2px;
+	margin: 0px;
+}
+
+#main_container {
+	width: 1000px;
+	height: auto;
+	margin: auto;
+	padding: 0px;
+}
+
+
+/******************************************************************/
+								/*events*/
+/******************************************************************/
+
+input:focus {
+	background-color: yellow;
+} 
+
+
+/******************************************************************/
+								/*header*/
+/******************************************************************/
+#header{
+	width: 1000px;
+	height: 173px;
+	background: url(./../images/header_bg.jpg) no-repeat center;
+	background-position: 0px 0px;
+	margin: 15px auto auto auto;
+}
+
+#logo{
+	float: left;
+	margin: 15px;
+}
+
+#logo img {
+	border: 0;
+	width: 237px;
+	height: 140px;
+}
+
+
+/************************/
+		/*Search*/
+/************************/
+.searchStyle {
+	float: left;
+	margin-top: 15px;
+}
+/*TODO to leftBG kai to rightBG na exoun to idio name*/
+.leftBg {
+	float: left;
+	height: 71px;
+	margin: 0;
+	padding: 0;
+}
+
+.rightBg {
+	float: left;
+	height: 71px;
+	margin: 0;
+	padding: 0;
+}
+
+.search {
+	width: auto;
+	height: 71px;
+	margin: 0;
+	float: left;
+	background: url(./../images/repeatBg.png) repeat-x center;
+}
+
+span.search_text{
+	float: right;
+	width: auto;
+	padding: 7px 0px 0 10px;
+	color: #999999;
+}
+
+span.search_text a{
+	text-decoration:none;
+	color:#999999;
+}
+
+.search_bt{
+	float:left;
+	margin:15px 0 0 10px ;
+}
+
+input.search_input{
+	width:220px;
+	height:18px;
+	float:left;
+	padding-left: 10px;
+	margin:15px 0 0 0px ;
+	border:1px solid #dbdbdb;
+	border-bottom-color:#ffffff;
+	border-right-color:#ffffff;
+}
+
+/************************/
+	/*shopping cart*/
+/************************/
+
+.shoppingCartStyle {
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.shoppingCart {
+	width: auto;
+	height: 71px;
+	margin: 0;
+	float: left;
+	background: url(./../images/repeatBg.png) repeat-x center;
+}
+
+.shoppingCart img {
+	float: left;
+	padding-top: 12px;
+	padding-bottom: 11px;
+}
+
+.shoppingCart p {
+	float: left;
+	height: auto;
+	padding-top: 28px;
+	padding-bottom: 27px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/************************/
+		/*hellp*/
+/************************/
+
+.hellpStyle {
+	float: left;
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.hellp {
+	width: auto;
+	height: 71px;
+	margin: 0;
+	float: left;
+	background: url(./../images/repeatBg.png) repeat-x center;	
+}
+
+
+span.hellpLink{
+	float: right;
+	width: auto;
+	padding-top: 28px;
+	padding-bottom: 27px;
+	color: #999999;
+}
+
+span.hellpLink a{
+	text-decoration:none;
+	color:#999999;
+}
+
+
+/*---------------- header menu ----------------------*/
+#headerMenuStyle{
+	clear: both;
+	width: 1000px;
+	height: 71px;
+	background-color: #fff;
+}
+
+ul.headerMenu {
+	list-style-type:none; 
+	float:left; 
+	display:block; 
+	width:982px; 
+	margin:0px; 
+	padding:0px;
+	background:url(./../images/repeatBg.png) repeat-x;
+}
+
+ul.headerMenu li {
+	display:block;
+	font-size:11px;
+	font-weight:bold;
+	line-height:71px;
+}
+ul.headerMenu li.divider {
+	display:inline;
+	width:2px;
+	height:71px;
+	float:left;
+	background:url(./../images/menu_divider.gif) no-repeat center;
+}
+
+a.navSelected:link {
+	color:#333333;
+	background:url(./../images/selectedMenu.png);
+	background-repeat:no-repeat;
+	background-position: center 70%;
+	display:block; 
+	float:left; 
+	padding:0px 12px 0px 12px; 
+	margin:0 14px 0 14px;
+	height:71px;
+	text-decoration:none; 
+	color:#676d77;	
+}
+
+a.nav:link, a.nav:visited {
+	display:block; 
+	float:left; 
+	padding:0px 12px 0px 12px; 
+	margin:0 14px 0 14px;
+	height:71px;
+	text-decoration:none; 
+	color:#676d77;
+}
+
+a.nav:hover {
+	color:#333333;
+	background:url(./../images/selectedMenu.png);
+	background-repeat:no-repeat;
+	background-position: center 70%;
+}
+
