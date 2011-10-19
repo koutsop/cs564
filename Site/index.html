@@ -27,9 +27,25 @@
             <div class="searchStyle"><!-- search -->
                 <img src="./images/leftBg.png" class="leftBg" alt="" />
                 <div class="search"><!-- search -->
-                    <form action="index.html" method="post">
-                        <input type="text" class="searchInput" name="search" value="τίτλος, συγγραφέας, εκδότης, ISBN" onfocus="doClear(this, 'τίτλος, συγγραφέας, εκδότης, ISBN')"/>
-                        <input type="image" src="./images/search.gif" alt="Αναζήτηση" title="Αναζήτηση" class="searchButton"/>
+                    <form id="simplesearch" action="index.html" method="post">
+                        <label for="searchBook">Αναζήτηση βιβλίου</label>
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            name="search" 
+                            title=""
+                            value="τίτλος, συγγραφέας, εκδότης, ISBN" 
+                            onfocus="doClear(this, 'τίτλος, συγγραφέας, εκδότης, ISBN')"
+                            tabindex="1"
+                        />
+                        <input 
+                            type="image" 
+                            src="./images/search.gif" 
+                            alt="Αναζήτηση βιβλίου" 
+                            title="Αναζήτηση βιβλίου" 
+                            id="searchButton"
+                            tabindex="2"
+                        />
                     </form>
                     <div class="clear"></div>
                     <!-- TODO: na balw to link gia thn anazhthsh -->
@@ -42,7 +58,7 @@
                 <img src="./images/leftBg.png" class="leftBg" alt=""/>
                 <div class="shoppingCart"><!-- cart -->				    <p>(0 προϊόντα)</p>
                     <!-- TODO Na bale to swsto link gia to pou 8a paei to kala8i-->
-                    <a href="#"><img src="./images/shoppingcart.png" alt="Αγορά" title="Αγορά"/></a>
+                    <a href="#"><img src="./images/shoppingcart.png" alt="Αγορά" title="Αγορά" tabI/></a>
 
                 </div>  <!-- cart ends -->
                 <img src="./images/rightBg.png" class="rightBg" alt=""/>
@@ -133,9 +149,10 @@
         </div>  <!-- leftContent ends -->
 
 
-        <div class="content">   <!-- content -->
+        <div class="centerContent">   <!-- centerContent -->
             <a name="content"></a>
-        </div>  <!-- content ends -->
+            <p> eisai enas malakaskai tiptoa alo kai den mporeis na pas na gami8eis kai den 3rw akoma ti alo</p>
+        </div>  <!-- centerContent ends -->
 
     </div>  <!-- mainContent ends -->
 
