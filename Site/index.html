@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
     <!-- glwssa -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <title>Αccessible-Βookstore: Αρχική Σελίδα</title>
 
-    <script language="JavaScript" type="text/JavaScript">
+    <script type="text/JavaScript">
     <!--
 	    function doClear(theText, defaultValue) {
 		    if (theText.value == defaultValue) {
@@ -24,13 +24,13 @@
             <a href="index.html"><img src="images/logo.png" alt="Το λογότυπο του Αccessible-Βookstore" /></a>
         </div>  <!-- logo ends -->
 
-        <div id="standertFileds">   <!-- standertFileds -->
+        <div id="standartFileds">   <!-- standartFileds -->
             <div class="searchStyle"><!-- search -->
                 <img src="./images/leftBg.png" class="leftBg" alt="" />
                 <div class="search"><!-- search -->
                     <!-- Edw na dw an exei ginei me accessible tropo h forma? dhl an einai swsta opos exw balei to keimeno kai to button -->
                     <input type="text" class="search_input" name="search" value="τίτλος, συγγραφέας, εκδότης, ISBN" onfocus="doClear(this, 'τίτλος, συγγραφέας, εκδότης, ISBN')"/>
-                    <input type="image" src="./images/search.gif" alt="Αναζήτηση" class="search_bt"/>
+                    <input type="image" src="./images/search.gif" alt="Αναζήτηση" title="Αναζήτηση" class="search_bt"/>
                    <div class="clear"></div>
                     <!-- TODO: na balw to link gia thn anazhthsh -->
                     <span class="search_text"><a href="#">Σύνθετη Αναζήτηση</a></span>
@@ -42,8 +42,7 @@
                 <img src="./images/leftBg.png" class="leftBg" alt=""/>
                 <div class="shoppingCart"><!-- cart -->				    <p>(0 προϊόντα)</p>
                     <!-- TODO Na bale to swsto link gia to pou 8a paei to kala8i-->
-                    <a href="#"><img src="./images/shoppingcart.png" alt="Αγορά"/></a>
-                    <!-- TODO na to kanw link kai ta proionta h' opos einai? -->
+                    <a href="#"><img src="./images/shoppingcart.png" alt="Αγορά" title="Αγορά"/></a>
 
                 </div>  <!-- cart ends -->
                 <img src="./images/rightBg.png" class="rightBg" alt=""/>
@@ -53,12 +52,15 @@
                 <img src="./images/leftBg.png" class="leftBg" alt=""/>
                 <div class="hellp"><!-- cart -->
                     <!-- TODO Na bale to swsto link gia to pou 8a paei to kala8i-->
-                    <span class="hellpLink"> <p>Bοήθεια</p><img src="./images/question_mark.png" alt="Βοήθεια"/></span>
+                    <p>Bοήθεια</p>
+                    <a href="#"><img src="images/question_mark.png" alt="Bοήθεια" title="Bοήθεια"/></a>
+
+                    <!-- <span class="hellpLink"> <p>Bοήθεια</p></span> -->
                 </div>  <!-- cart ends -->
 
                 <img src="./images/rightBg.png" class="rightBg" alt=""/>
             </div>
-        </div>  <!-- standertFileds ends -->
+        </div>  <!-- standartFileds ends -->
 
         <div class="advertisement"> <!-- advertisement -->
         </div> <!-- advertisement ends -->

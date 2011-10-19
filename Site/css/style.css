@@ -58,9 +58,9 @@ input:focus {
     padding:0;
 }
 
-/*---------------- standertFileds ----------------------*/
+/*---------------- standartFileds ----------------------*/
 
-#standertFileds {
+#standartFileds {
     float: right;
 }
 
@@ -71,7 +71,7 @@ input:focus {
 	min-width: 290px;
 	margin-top: 15px;
 }
-/*TODO to leftBG kai to rightBG na exoun to idio name*/
+
 .leftBg, .rightBg {
 	float: left;
 	height: 71px;
@@ -119,12 +119,13 @@ input.search_input{
 
 .shoppingCartStyle {
 	float: left;
+	width: auto;
 	margin-top: 15px;
 	margin-left: 15px;
 }
 
 .shoppingCart {
-	width: auto;
+	
 	height: 71px;
 	margin: 0;
 	float: left;
@@ -133,8 +134,9 @@ input.search_input{
 
 .shoppingCart img {
 	float: left;
-	padding-top: 12px;
-	padding-bottom: 11px;
+	padding-left: 4px;
+	padding-top: 21px;
+	padding-bottom: 21px;
 }
 
 .shoppingCart p {
@@ -164,20 +166,24 @@ input.search_input{
 	float: left;
 	background: url(./../images/repeatBg.png) repeat-x center;	
 }
+.hellp a {
+	float: left;
+	padding-top: 19px;
+	padding-bottom: 19px;	
+	text-decoration:none;
+	color:#999999;	
+}
 
-
-span.hellpLink{
-	float: right;
-	width: auto;
+.hellp p {
+	float: left;
+	height: auto;
 	padding-top: 28px;
 	padding-bottom: 27px;
-	color: #999999;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #999
 }
 
-span.hellpLink a{
-	text-decoration:none;
-	color:#999999;
-}
 
 
 /*---------------- header menu ----------------------*/
