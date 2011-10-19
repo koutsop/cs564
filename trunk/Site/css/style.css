@@ -531,14 +531,27 @@ general
 }
 
 .post .postContent {
-	/*margin-top: 10px;
-	margin-left: 2px;
-	margin-right: 2px;
-	padding: 2px;
-	border: 1px solid #EFEDED;	*/
+	clear: both;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.post .box {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.post .box .boxContents{
+	float: left;
+	margin: 10px;
+	border: 1px solid Black;
+	padding: 10px;
 }
 
 .post .postFooter {
+	
 	background-color: #FAFAFA;
 	border: 1px solid #f2f2f2;
 	padding: 5px; 

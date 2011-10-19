@@ -53,6 +53,7 @@
   <ItemGroup>
     <Content Include="css\style.css" />
     <Content Include="index.html" />
+    <Content Include="RSS\RSS.xml" />
     <Content Include="TODO.txt" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
