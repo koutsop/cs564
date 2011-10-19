@@ -28,24 +28,25 @@
                 <img src="./images/leftBg.png" class="leftBg" alt="" />
                 <div class="search"><!-- search -->
                     <form id="simplesearch" action="index.html" method="post">
-                        <label for="searchBook">Αναζήτηση βιβλίου</label>
-                        <input 
-                            type="text" 
-                            id="searchInput" 
-                            name="search" 
-                            title=""
-                            value="τίτλος, συγγραφέας, εκδότης, ISBN" 
-                            onfocus="doClear(this, 'τίτλος, συγγραφέας, εκδότης, ISBN')"
-                            tabindex="1"
-                        />
-                        <input 
-                            type="image" 
-                            src="./images/search.gif" 
-                            alt="Αναζήτηση βιβλίου" 
-                            title="Αναζήτηση βιβλίου" 
-                            id="searchButton"
-                            tabindex="2"
-                        />
+                        <fieldset class="hiddenFieldset">
+                            <label for="searchBook">Αναζήτηση βιβλίου</label>
+                            <input 
+                                id="searchBook" 
+                                name="searchBook" 
+                                type="text" 
+                                maxlength="255"
+                                value="τίτλος, συγγραφέας, εκδότης, ISBN" 
+                                onfocus="doClear(this, 'τίτλος, συγγραφέας, εκδότης, ISBN')"
+                            />
+                            <input 
+                                id="searchButton"
+                                name="searchButton"
+                                type="image" 
+                                src="./images/search.gif" 
+                                alt="Αναζήτηση βιβλίου" 
+                                title="Αναζήτηση βιβλίου" 
+                            />
+                        </fieldset>
                     </form>
                     <div class="clear"></div>
                     <!-- TODO: na balw to link gia thn anazhthsh -->
@@ -58,7 +59,7 @@
                 <img src="./images/leftBg.png" class="leftBg" alt=""/>
                 <div class="shoppingCart"><!-- cart -->				    <p>(0 προϊόντα)</p>
                     <!-- TODO Na bale to swsto link gia to pou 8a paei to kala8i-->
-                    <a href="#"><img src="./images/shoppingcart.png" alt="Αγορά" title="Αγορά" tabI/></a>
+                    <a href="#"><img src="./images/shoppingcart.png" alt="Αγορά" title="Αγορά"/></a>
 
                 </div>  <!-- cart ends -->
                 <img src="./images/rightBg.png" class="rightBg" alt=""/>
@@ -82,7 +83,7 @@
         </div> <!-- advertisement ends -->
         
         <div id="headerMenuStyle">    <!-- headerMenuStyle -->
-            <a href="#crumb" title="Μετάβαση στους συνδέσμους πλοήγησης"></a>
+            <a href="#crumb" class="skipButton">Μετάβαση στους συνδέσμους πλοήγησης</a>
             <img src="./images/leftBg.png" id="leftBgMenu" alt=""/>
             <ul class="headerMenu">   <!-- headerMenu -->
                 <li  id="navSelected">Αρχική σελίδα</li>
@@ -108,7 +109,7 @@
     <div id="mainContent">  <!-- mainContent -->
         
         <div id="crumbContainer">   <!-- crumbContainer -->
-            <a href="#" title="Μετάβαση στο μενού κατηγορίες"></a>
+            <a href="#" class="skipButton">Μετάβαση στο μενού κατηγορίες</a>
             <a name="crumb"></a>
             <ul class="crumb">
                 <li class= "crumbNavigation">Navigation:</li>
@@ -122,7 +123,7 @@
         
         <div class="leftContent">   <!-- leftContent -->
             <div class="titleBox"><strong>Κατηγορίες</strong></div>
-            <a href="#" title="Μετάβαση στο περιεχόμενο"></a>
+            <a href="#" class="skipButton">Μετάβαση στο περιεχόμενο</a>
             <a name="categoryMenu"></a>
             <ul class="categoryMenu">
                 <!--    To categoryMenuSelected den prepei na uparxei mesa sthn arxikh selida 
