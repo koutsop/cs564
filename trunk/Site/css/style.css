@@ -282,7 +282,8 @@ a.nav:hover {
 
 ul.crumb {
     float: left;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     padding: 0;
 	list-style-type: none; 
 	overflow:auto;
@@ -294,30 +295,34 @@ li.crumb {
     display: inline;
 }
 
+li.crumbDivider {
+	font-weight: bolder;
+}
+/*
 li.crumbNavigation {
 	float: left;
 	display: block;	
 	padding-left: 20px;	
 	padding-right: 10px;	
 	display: inline;
-	/*background:#98C8E5;*/
+	*background:#98C8E5;*
 	background:url(../images/navbullet.png);
 	background-repeat:no-repeat;
 	background-position:left;
-	/*color: #292929;*/
+	*color: #292929;)
 	font-weight:bold;
-}
+}*/
 
 a.crumb {
 	float: left;
 	display: block;
-	padding-left: 25px;	
+	padding-left: 10px;	
 	padding-right: 10px;	
     color: #0FA0DD;
 	text-decoration: none;
-	background:url(../images/blue-arrow.png);
+	/*background:url(../images/blue-arrow.png);
 	background-repeat:no-repeat;
-	background-position:left;	
+	background-position:left;	*/
 }
 
 a.crumb:hover, a.crumb:focus {
@@ -338,9 +343,11 @@ content
 
 .centerContent {
 	float: left;
-	margin: 10px;
-	padding: 20px;
-	border: 1px solid Black;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	/*border: 1px solid Black;8*/
 }
 
 /*---------------- left content -------------*/
@@ -501,5 +508,40 @@ general
 .hiddenFieldset {
 	border: 0px solid; 
 	padding: 0; 
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.post {
+	float: left;
+	text-align: left;
 	margin: 0;
+	padding: 0;
+	background: white url(../images/gradientbg.jpg) repeat-x;
+	border: 1px solid #EFEDED;
+}
+
+.post h1 {
+	border-bottom: 1px solid #F2F2F2;
+	font: normal 1.5em 'Trebuchet MS', Tahoma, Sans-serif;
+}
+.post h1 span.text {
+	padding: 10px 0px 5px 0px;
+	margin: 0 0 0 10px;
+}
+
+.post .postContent {
+	/*margin-top: 10px;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding: 2px;
+	border: 1px solid #EFEDED;	*/
+}
+
+.post .postFooter {
+	background-color: #FAFAFA;
+	border: 1px solid #f2f2f2;
+	padding: 5px; 
+	margin-top: 20px;
+	font-size: 95%;
 }
