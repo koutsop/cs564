@@ -91,24 +91,24 @@ form#simplesearch label{
 	display: none;
 }
 
-span.searchText{
+span.searchText {
 	float: right;
 	width: auto;
 	padding: 7px 0px 0 10px;
 	color: #999999;
 }
 
-span.searchText a{
+span.searchText a {
 	text-decoration:none;
 	color:#999999;
 }
 
-input#searchButton{
+input#searchButton {
 	float:left;
 	margin:15px 0 0 10px ;
 }
 
-input#searchInput{
+input#searchBook {
 	width:220px;
 	height:18px;
 	float:left;
@@ -494,3 +494,12 @@ general
 
 
 .clear{ clear: both; }
+
+
+.skipButton { display: none; }
+
+.hiddenFieldset {
+	border: 0px solid; 
+	padding: 0; 
+	margin: 0;
+}
