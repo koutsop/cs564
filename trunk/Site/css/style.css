@@ -4,7 +4,7 @@
 	font-family: 'Trebuchet MS', Tahoma, sans-serif;
 	font-size: 11px;
 	margin: 0px auto auto auto;
-	color: #f7f7f7;
+	color: #616161;
 }
 
 p {
@@ -87,24 +87,24 @@ input:focus {
 	background: url(./../images/repeatBg.png) repeat-x center;
 }
 
-span.search_text{
+span.searchText{
 	float: right;
 	width: auto;
 	padding: 7px 0px 0 10px;
 	color: #999999;
 }
 
-span.search_text a{
+span.searchText a{
 	text-decoration:none;
 	color:#999999;
 }
 
-.search_bt{
+.searchButton{
 	float:left;
 	margin:15px 0 0 10px ;
 }
 
-input.search_input{
+input.searchInput{
 	width:220px;
 	height:18px;
 	float:left;
@@ -149,9 +149,9 @@ input.search_input{
 	color: #999
 }
 
-/*---------------- hellp ----------------------*/
+/*---------------- help ----------------------*/
 
-.hellpStyle {
+.helpStyle {
 	float: left;
 	margin-top: 15px;
 	margin-left: 15px;
@@ -159,14 +159,14 @@ input.search_input{
 	
 }
 
-.hellp {
+.help {
 	width: auto;
 	min-height: 71px;
 	margin: 0;
 	float: left;
 	background: url(./../images/repeatBg.png) repeat-x center;	
 }
-.hellp a {
+.help a {
 	float: left;
 	padding-top: 19px;
 	padding-bottom: 19px;	
@@ -174,7 +174,7 @@ input.search_input{
 	color:#999999;	
 }
 
-.hellp p {
+.help p {
 	float: left;
 	height: auto;
 	padding-top: 28px;
@@ -273,6 +273,7 @@ a.nav:hover {
     margin: 0;
     padding: 0;
     width: 100%;
+    clear:both;
 }
 
 ul.crumb {
@@ -350,7 +351,7 @@ content
 }
 
 
-ul.leftMenu {
+ul.categoryMenu {
     width: 194px;
     padding: 0px;
     margin: 0px;
@@ -358,13 +359,13 @@ ul.leftMenu {
     border: 1px solid #7bbcc7;
 }
 
-li.leftMenu {
+li.categoryMenu {
     margin: 0;
     list-style: node;
 }
 
 
-a.leftMenu {
+a.categoryMenu {
     width: 164px;
     height: 25px;
     display: block;
@@ -377,13 +378,13 @@ a.leftMenu {
     line-height: 25px;
 }
 
-a.leftMenu:hover, a.leftMenu:focus {
+a.categoryMenu:hover, a.categoryMenu:focus {
     background:url(../images/leftMenuSelected.png) no-repeat left #7bbcc7; 
     color:#FFFFFF;
     background-position:5px 5px;   
 }
 
-li.leftMenuSelected {
+li.categoryMenuSelected {
     width: 164px;
     height: 25px;
     display: block;
@@ -395,6 +396,84 @@ li.leftMenuSelected {
     padding: 0 0 0 30px;
     line-height: 25px;
 }
+
+
+
+/******************************************************************/
+								/*footer*/
+/******************************************************************/
+
+.footer {
+	float: left;
+	clear:both;
+	width: 100%;
+	min-height: 65px;
+	margin-top: 40px;
+	background:url(../images/footer_bg.gif) repeat-x top;
+}
+
+/*---------------- left footer -------------*/
+
+.leftFooter {
+	float: left;
+	width: 20%;
+	padding-top: 2%;
+	min-height: 65px;
+}
+
+.leftFooter img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+/*---------------- center footer -------------*/
+
+.centerFooter {
+	float: left;
+	width: 60%;
+	text-align: center;
+	padding-top: 2%;
+	min-height: 65px;
+}
+
+#footerMenu {
+	float: left;
+	padding-left: 7.4%;
+}
+
+#footerMenu a {
+	color: #616161;
+	text-decoration: none;
+}
+
+#footerMenu a:hover,  #footerMenu a:focus{
+	color: Black;
+	text-decoration: underline;
+}
+
+/*---------------- right foter -------------*/
+
+.rightFooter {
+	float: left;
+	width: 20%;
+	padding-top: 2%;
+	min-height: 65px;
+}
+
+.rightFooter #followUsOn {
+	float: left;
+	display: block;
+	padding-left: 26%;
+	
+}
+
+.rightFooter #followUsOn img {
+	float: left;
+}
+
 
 /****************************************************
 general 
