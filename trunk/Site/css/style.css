@@ -70,6 +70,7 @@ input:focus {
 .searchStyle {
 	float: left;
 	width: 290px;
+	position: relative;
 }
 
 .leftBg, .rightBg {
@@ -81,11 +82,11 @@ input:focus {
 }
 
 .search {
+	float: left;	
 	margin: 0;
 	padding: 0;
 	width: 272px;
 	height: 71px;
-	float: left;
 	background: url(./../images/repeatBg.png) repeat-x center;
 }
 
@@ -94,14 +95,16 @@ form#simpleSearch hiddenFieldset    { float: left; }
 form#simpleSearch label             { display: none; }
 
 span.compositeSearch {
-	float: right;
-	width: auto;
-	padding: 7px 0px 0 10px;
+	/*float: right;*/
+	margin: 0;
+	border: 0;
+	padding: 0px 9px 11px 10px;
 	color: #999999;
+	position: absolute;
+	bottom: 0; right: 0;
 }
 
 span.compositeSearch a {
-    float: left;
 	text-decoration:none;
 	color:#999999;
 }
