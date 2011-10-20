@@ -309,14 +309,13 @@ content
 .leftContent {
     width: 196px;
     float: left;
-    margin-left: 10px;
 }
 
 .titleBox {
     width: 196px;
     height: 30px;
     margin: 0;
-    background: url(../images/menu_title_bg.gif) no-repeat center;
+    background: url(../images/menuBg.png) repeat-x center;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
