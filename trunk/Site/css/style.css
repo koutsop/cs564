@@ -315,7 +315,7 @@ content
     width: 196px;
     height: 30px;
     margin: 0;
-    background: url(../images/categoryMenuBg.png) repeat-x center;
+    background: url(../images/categoryMenuTitleBoxBg.png) repeat-x center;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
@@ -342,7 +342,7 @@ a.categoryMenu {
     width: 164px;
     height: 25px;
     display: block;
-    background: url(../images/leftMenu.png) no-repeat left #DAD0D0;
+    background: url(../images/categoryMenu.png) no-repeat left #eff3f6;
     background-position: 5px 5px;
     border-bottom: 1px white solid;
     text-decoration: none;
@@ -352,7 +352,7 @@ a.categoryMenu {
 }
 
 a.categoryMenu:hover, a.categoryMenu:focus {
-    background:url(../images/leftMenuSelected.png) no-repeat left #7bbcc7; 
+    background:url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7; 
     color:#FFFFFF;
     background-position:5px 5px;   
 }
@@ -361,7 +361,7 @@ li.categoryMenuSelected {
     width: 164px;
     height: 25px;
     display: block;
-    background:url(../images/leftMenuSelected.png) no-repeat left #7bbcc7;    
+    background:url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7;    
     background-position: 5px 5px;
     border-bottom: 1px white solid;
     text-decoration: none;
