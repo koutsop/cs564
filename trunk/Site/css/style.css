@@ -214,7 +214,7 @@ input#searchBook {
 
 #headerMenuStyle ul.headerMenu li {
     float: inherit;
-    background: url(../images/menuDivider.gif) no-repeat 100% 0;
+    background: url(../images/categoryMenuDivider.gif) no-repeat 100% 0;
     float: left;
     list-style-type: none;
 }
@@ -315,7 +315,7 @@ content
     width: 196px;
     height: 30px;
     margin: 0;
-    background: url(../images/menuBg.png) repeat-x center;
+    background: url(../images/categoryMenuBg.png) repeat-x center;
     text-align: center;
     font-size: 13px;
     font-weight: bold;
@@ -380,40 +380,35 @@ li.categoryMenuSelected {
 	float: left;
 	clear:both;
 	width: 100%;
-	min-height: 65px;
 	margin-top: 40px;
-	background:url(../images/footer_bg.gif) repeat-x top;
+	padding-top: 2%;
+	padding-bottom: 2%;	
+	background-color: #eff3f6;
 }
 
 /*---------------- left footer -------------*/
 
 .leftFooter {
-	float: left;
+	float: inherit;
 	width: 20%;
-	padding-top: 2%;
-	min-height: 65px;
 }
 
 .leftFooter img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	
 }
-
 
 /*---------------- center footer -------------*/
 
 .centerFooter {
-	float: left;
+	float: inherit;
 	width: 60%;
 	text-align: center;
-	padding-top: 2%;
-	min-height: 65px;
 }
 
 #footerMenu {
-	float: left;
+	float: inherit;
 	padding-left: 7.4%;
 }
 
@@ -430,17 +425,14 @@ li.categoryMenuSelected {
 /*---------------- right foter -------------*/
 
 .rightFooter {
-	float: left;
+	float: inherit;
 	width: 20%;
-	padding-top: 2%;
-	min-height: 65px;
 }
 
 .rightFooter #followUsOn {
-	float: left;
+	float: inherit;
 	display: block;
 	padding-left: 26%;
-	
 }
 
 .rightFooter #followUsOn img {
