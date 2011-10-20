@@ -51,13 +51,13 @@ input:focus {
 }
 
 /*---------------- advertisement ----------------------*/
-
+/*
 #advertisement {
     float:left;
     margin:0;
     padding:0;
 }
-
+*/
 /*---------------- standartFileds ----------------------*/
 
 #standartFileds {
@@ -193,41 +193,36 @@ input#searchBook {
 /*---------------- header menu ----------------------*/
 
 #headerMenuStyle {
-    float: left;
 	clear: both;
+	margin: 0;
+	padding: 0;
 	width: 100%;
-	background-color: #fff;
+	background-color: Yellow;
 }
 
 #headerMenuStyle ul.headerMenu {
-    float: inherit;
     margin: 0;
     padding: 0;
     border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;    
-    display: inline;
     width: 100%;
-    background-color:#eff3f6;
+    list-style-type: none;
+    background-color:#eff3f6;    
 }
 
 #headerMenuStyle ul.headerMenu li {
-    float: inherit;
-    background: url(../images/categoryMenuDivider.gif) no-repeat 100% 0;
-    float: left;
-    list-style-type: none;
+    display: inline;
 }
 
 #headerMenuStyle ul.headerMenu li a {
     color:#8f8f8f;
     display:inline-block;
     font-family:'Trebuchet MS', Tahoma, serif;
-    font-size:13px;
-    height:30px;
-    outline:none;
-    padding:14px 18px 0;
-    text-decoration:none
+    font-size: 13px;
+    height: 30px;
+    outline: none;
+    padding: 15px 18px 0;
+    text-decoration:none;
+    background: url(../images/categoryMenuDivider.gif) no-repeat right;
 }
 
 #headerMenuStyle ul.headerMenu li a:hover,
@@ -238,7 +233,7 @@ input#searchBook {
 }
 
 #headerMenuStyle ul.headerMenu li.tipoEspecial {
-    float:right
+   /* float:right*/
 }
 
 /*----------------crumb_navigation-------------*/
@@ -290,7 +285,6 @@ a.crumb:hover, a.crumb:focus {
 content
 ****************************************************/
 #mainContent {
-    float: left;
     clear: both;
 }
 
@@ -319,7 +313,7 @@ content
     text-align: center;
     font-size: 13px;
     font-weight: bold;
-    color: white;
+    color: #F5F5F5;
     line-height: 30px;
 }
 
@@ -334,9 +328,7 @@ ul.categoryMenu {
 
 li.categoryMenu {
     margin: 0;
-    list-style: node;
 }
-
 
 a.categoryMenu {
     width: 164px;
