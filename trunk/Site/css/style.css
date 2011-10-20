@@ -192,82 +192,53 @@ input#searchBook {
 
 /*---------------- header menu ----------------------*/
 
-#headerMenuStyle{
+#headerMenuStyle {
     float: left;
 	clear: both;
 	width: 100%;
-	min-height: 71px;
 	background-color: #fff;
 }
 
-#leftBgMenu, #rightBgMenu {
-	float: left;
-	height: 71px;
-	margin: 0;
-	padding: 0;
-	width: 1%;
-}
-
-ul.headerMenu {
-	float: left; 
-	margin: 0px; 
-	padding: 0px;
-	width: 98%; 
-	min-height: 71px;
-	display: block; 
-	list-style-type:none; 
-	background:url(./../images/repeatBg.png) repeat-x;
-}
-
-ul.headerMenu li {
-    float: left;
-	display:block;
-	font-size:11px;
-	font-weight:bold;
-	background:url(./../images/repeatBg.png) repeat-x;
-}
-
-ul.headerMenu li.divider {
-    float: left;
-	width:2px;
-	min-height: 71px;
-	padding: 0;
-	background:url(./../images/menu_divider.gif) no-repeat center;
-}
-
-li#navSelected {
-    float:left; 
-    display:block; 
+#headerMenuStyle ul.headerMenu {
+    float: inherit;
     margin: 0;
-    padding: 30px 12px 0px 12px; 
-	min-width: 130px;		/*An 8elw na pira3w to mege8os tou menou alazw auto*/
-	min-height: 41px;
-	text-align: center;
-	text-decoration:none; 
-	color:#333333;
-	background:url(./../images/selectedMenu.png);
-	background-repeat:no-repeat;
-	background-position: center 80%;
-	
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;    
+    display: inline;
+    width: 100%;
+    background-color:#eff3f6;
 }
 
-a.nav:link, a.nav:visited {
-    float:left; 
-    display:block; 
-    margin: 0;
-    padding:30px 12px 0px 12px;
-	text-align: center;
-	min-width: 130px;	/*An 8elw na pira3w to mege8os tou menou alazw auto*/
-	min-height: 41px;
-	text-decoration:none; 
-	color:#676d77;	
+#headerMenuStyle ul.headerMenu li {
+    float: inherit;
+    background: url(../images/separador-menu-superior.gif) no-repeat 100% 0;
+    float: left;
+    list-style-type: none;
 }
 
-a.nav:hover {
-	color:#333333;
-	background:url(./../images/selectedMenu.png);
-	background-repeat:no-repeat;
-	background-position: center 80%;
+#headerMenuStyle ul.headerMenu li a {
+    color:#8f8f8f;
+    display:inline-block;
+    font-family:'Trebuchet MS', Tahoma, serif;
+    font-size:13px;
+    height:30px;
+    outline:none;
+    padding:14px 18px 0;
+    text-decoration:none
+}
+
+#headerMenuStyle ul.headerMenu li a:hover,
+#headerMenuStyle ul.headerMenu li a:focus,
+#headerMenuStyle ul.headerMenu li a:active,
+#headerMenuStyle ul.headerMenu li a.actual {
+    background:#c9c9c9;color:#fff
+}
+
+#headerMenuStyle ul.headerMenu li.tipoEspecial {
+    float:right
 }
 
 /*----------------crumb_navigation-------------*/
@@ -298,20 +269,7 @@ li.crumb {
 li.crumbDivider {
 	font-weight: bolder;
 }
-/*
-li.crumbNavigation {
-	float: left;
-	display: block;	
-	padding-left: 20px;	
-	padding-right: 10px;	
-	display: inline;
-	*background:#98C8E5;*
-	background:url(../images/navbullet.png);
-	background-repeat:no-repeat;
-	background-position:left;
-	*color: #292929;)
-	font-weight:bold;
-}*/
+
 
 a.crumb {
 	float: left;
@@ -320,9 +278,6 @@ a.crumb {
 	padding-right: 10px;	
     color: #0FA0DD;
 	text-decoration: none;
-	/*background:url(../images/blue-arrow.png);
-	background-repeat:no-repeat;
-	background-position:left;	*/
 }
 
 a.crumb:hover, a.crumb:focus {
@@ -347,7 +302,6 @@ content
 	margin-right: 10px;
 	padding-left: 20px;
 	padding-right: 20px;
-	/*border: 1px solid Black;8*/
 }
 
 /*---------------- left content -------------*/
@@ -361,7 +315,7 @@ content
 .titleBox {
     width: 196px;
     height: 30px;
-    margin: 5px 0 0 0;
+    margin: 0;
     background: url(../images/menu_title_bg.gif) no-repeat center;
     text-align: center;
     font-size: 13px;
