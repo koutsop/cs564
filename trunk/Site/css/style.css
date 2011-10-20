@@ -214,7 +214,7 @@ input#searchBook {
 
 #headerMenuStyle ul.headerMenu li {
     float: inherit;
-    background: url(../images/separador-menu-superior.gif) no-repeat 100% 0;
+    background: url(../images/menuDivider.gif) no-repeat 100% 0;
     float: left;
     list-style-type: none;
 }
