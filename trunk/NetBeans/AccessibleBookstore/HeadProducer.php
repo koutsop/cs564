@@ -6,12 +6,12 @@
  */
 class HeadProducer {
     public function ProduceHeader ($activePage) {
-        ProduceHeaderBegin();
-        produceLogo();
-        ProduceStandartFileds();
-        ProduceClear();
-        ProduceHeaderEnd();
-        /*ProduceHeaderMenu($activePage);*/
+        //ProduceHeaderBegin();
+        $this->produceLogo();
+        $this->ProduceStandartFileds();
+        $this->ProduceClear();
+        $this->ProduceHeaderEnd();
+        $this->ProduceHeaderMenu($activePage);
     } 
     //------------------------------------------------------------
     
@@ -126,13 +126,13 @@ class HeadProducer {
             <div id='headerMenuStyle'>    <!-- headerMenuStyle -->
                 <a href='#crumb' class='skipButton'>Μετάβαση στους συνδέσμους πλοήγησης</a>
                 <ul class='headerMenu'>   ";    
-                    IsActivePage ($activePage, 'index.php', 'Αρχική σελίδα');
-                    IsActivePage ($activePage, '#', 'Ο λογαριασμός μου');
-                    IsActivePage ($activePage, '#', 'Εγγραφή');
-                    IsActivePage ($activePage, '#', 'Ποιοί είμαστε');
-                    IsActivePage ($activePage, '#', 'Είσοδος');
-                    IsActivePage ($activePage, 'faq.php', 'FAQ');
-                    IsActivePage ($activePage, 'siteMap.php', 'Site map');
+                    $this->IsActivePage ($activePage, 'index.php', 'Αρχική σελίδα');
+                    $this->IsActivePage ($activePage, '#', 'Ο λογαριασμός μου');
+                    $this->IsActivePage ($activePage, '#', 'Εγγραφή');
+                    $this->IsActivePage ($activePage, '#', 'Ποιοί είμαστε');
+                    $this->IsActivePage ($activePage, '#', 'Είσοδος');
+                    $this->IsActivePage ($activePage, 'faq.php', 'FAQ');
+                    $this->IsActivePage ($activePage, 'siteMap.php', 'Site map');
         echo " 
                 </ul>
             </div>  <!-- headerMenu ends -->          
