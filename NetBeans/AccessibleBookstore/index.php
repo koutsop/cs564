@@ -64,7 +64,19 @@
                 <div class="postContent">
                     <div class="box">
                         <div class="boxContents">
-                            <p>eisai enas malakas kai den 3ereis ti les kai ti kaneis</p>
+							<div class="frame">
+								<a href="#" title="ΜΑΤΩΜΕΝΑ ΙΧΝΗ"><img src="images/books/matwmena_ixnh.jpg" alt=""/></a>
+								<div class="text">
+									
+									<strong style="font: left"><a class="booLink" href="#">ΜΑΤΩΜΕΝΑ ΙΧΝΗ</a></strong>
+									<br />
+									<a class="booLink" href="#">ΜΑΤΩΜΕΝΑ ΙΧΝΗ</a>
+									<br />
+									<span style="float:left">
+									<strong>Συγγραφέας</strong>: ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ 
+									€ 11,99</span>
+								</div>
+							</div>
                         </div>
                     </div>
 
