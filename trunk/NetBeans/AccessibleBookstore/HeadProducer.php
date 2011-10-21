@@ -6,12 +6,12 @@
  */
 class HeadProducer {
     public function ProduceHeader ($activePage) {
-        //ProduceHeaderBegin();
+        $this->ProduceHeaderBegin();
         $this->produceLogo();
         $this->ProduceStandartFileds();
         $this->ProduceClear();
-        $this->ProduceHeaderEnd();
         $this->ProduceHeaderMenu($activePage);
+        $this->ProduceHeaderEnd();
     } 
     //------------------------------------------------------------
     
