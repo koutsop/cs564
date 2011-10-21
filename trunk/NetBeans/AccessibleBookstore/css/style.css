@@ -328,7 +328,7 @@ content
 	float: left;
 	margin: 10px;
 	border: 1px solid Black;
-	padding: 10px;
+	padding: 0px;
 }
 
 .post .postFooter {
@@ -338,6 +338,45 @@ content
 	padding: 5px; 
 	margin-top: 20px;
 	font-size: 95%;
+}
+
+.post .postContent .box .boxContents .frame {
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.post .postContent .box .boxContents .frame .text {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 5px;
+	border: 0;	
+	width: 118px;
+	height: 92px;	
+}
+
+.post .postContent .box .boxContents .frame .text .booLink {
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 0;	
+	text-decoration: none;
+	color: #333;
+}
+
+.post .postContent .box .boxContents .frame .text publisher {
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 0;	
+	color: #333;
+}
+
+
+.post .postContent .box .boxContents .frame img {
+	float: left;
+	width: 82px;
+	height: 122px;
 }
 /*---------------- left content -------------*/
 
