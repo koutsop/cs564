@@ -15,6 +15,7 @@ p {
 #main_container {
 	margin: auto;
 	padding: 0px;
+	overflow: auto;
 }
 
 
@@ -22,9 +23,7 @@ p {
 								/*events*/
 /******************************************************************/
 
-input:focus {
-	background-color: yellow;
-} 
+input:focus { background-color: yellow; } 
 
 
 
@@ -32,8 +31,9 @@ input:focus {
 								/*header*/
 /******************************************************************/
 #header{
+    margin: 0;
 	min-height: 173px;
-	margin: 0;
+	overflow: auto;
 }
 
 
@@ -235,28 +235,19 @@ input#searchBook {
 #headerMenuStyle ul.headerMenu li a:hover,
 #headerMenuStyle ul.headerMenu li a:focus,
 #headerMenuStyle ul.headerMenu li a:active,
-#headerMenuStyle ul.headerMenu li a.actual {
-    background:#c9c9c9;color:#fff
-}
+#headerMenuStyle ul.headerMenu li a.actual      { background:#c9c9c9;color:#fff }
 
-#headerMenuStyle ul.headerMenu li.tipoEspecial {
-    float:right
-}
+#headerMenuStyle ul.headerMenu li.tipoEspecial  { float:right; }
 
 /*----------------crumb_navigation-------------*/
 
 #crumbContainer {
-    float: left;
-    margin: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0px 10px 0px;
     padding: 0;
     width: 100%;
-    clear:both;
 }
 
 ul.crumb {
-    float: left;
     margin: 0;
     padding: 0;
 	list-style-type: none; 
@@ -269,9 +260,7 @@ li.crumb {
     display: inline;
 }
 
-li.crumbDivider {
-	font-weight: bolder;
-}
+li.crumbDivider { font-weight: bolder; }
 
 
 a.crumb {
@@ -292,9 +281,7 @@ a.crumb:hover, a.crumb:focus {
 /****************************************************
 content
 ****************************************************/
-#mainContent {
-    clear: both;
-}
+#mainContent { overflow: auto; }
 
 /*---------------- centerContent -------------*/
 
@@ -306,11 +293,57 @@ content
 	padding-right: 20px;
 }
 
+.post {
+	float: left;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	background: white url(../images/gradientbg.jpg) repeat-x;
+	border: 1px solid #EFEDED;
+}
+
+.post h1 {
+	border-bottom: 1px solid #F2F2F2;
+	font: normal 1.5em 'Trebuchet MS', Tahoma, Sans-serif;
+}
+.post h1 span.text {
+	padding: 10px 0px 5px 0px;
+	margin: 0 0 0 10px;
+}
+
+.post .postContent {
+	clear: both;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.post .box {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.post .box .boxContents{
+	float: left;
+	margin: 10px;
+	border: 1px solid Black;
+	padding: 10px;
+}
+
+.post .postFooter {
+	
+	background-color: #FAFAFA;
+	border: 1px solid #f2f2f2;
+	padding: 5px; 
+	margin-top: 20px;
+	font-size: 95%;
+}
 /*---------------- left content -------------*/
 
 .leftContent {
-    width: 196px;
     float: left;
+    width: 196px;
 }
 
 .titleBox {
@@ -327,6 +360,7 @@ content
 
 
 ul.categoryMenu {
+    
     width: 194px;
     padding: 0px;
     margin: 0px;
@@ -334,9 +368,7 @@ ul.categoryMenu {
     border: 1px solid #7bbcc7;
 }
 
-li.categoryMenu {
-    margin: 0;
-}
+li.categoryMenu { margin: 0; }
 
 a.categoryMenu {
     width: 164px;
@@ -380,7 +412,7 @@ li.categoryMenuSelected {
 	float: left;
 	clear:both;
 	width: 100%;
-	height: auto;
+	overflow: auto;
 	margin-top: 40px;
 	padding-top: 2%;
 	padding-bottom: 2%;	
@@ -444,12 +476,16 @@ li.categoryMenuSelected {
 
 
 /****************************************************
-general 
+                util classes 
 ****************************************************/
 
-
 .clear{ clear: both; }
+.clearLeft{ clear: left; }
+.clearRight{ clear: right; }
 
+span.clear{ clear: both; }
+span.clearLeft{ clear: left; }
+span.clearRight{ clear: right; }
 
 .skipButton { display: none; }
 
@@ -460,49 +496,3 @@ general
 	margin-right: 0;
 }
 
-.post {
-	float: left;
-	text-align: left;
-	margin: 0;
-	padding: 0;
-	background: white url(../images/gradientbg.jpg) repeat-x;
-	border: 1px solid #EFEDED;
-}
-
-.post h1 {
-	border-bottom: 1px solid #F2F2F2;
-	font: normal 1.5em 'Trebuchet MS', Tahoma, Sans-serif;
-}
-.post h1 span.text {
-	padding: 10px 0px 5px 0px;
-	margin: 0 0 0 10px;
-}
-
-.post .postContent {
-	clear: both;
-	float: left;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.post .box {
-	float: left;
-	margin: 0;
-	padding: 0;
-}
-
-.post .box .boxContents{
-	float: left;
-	margin: 10px;
-	border: 1px solid Black;
-	padding: 10px;
-}
-
-.post .postFooter {
-	
-	background-color: #FAFAFA;
-	border: 1px solid #f2f2f2;
-	padding: 5px; 
-	margin-top: 20px;
-	font-size: 95%;
-}
