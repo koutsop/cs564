@@ -8,25 +8,62 @@
 class CategoryMenuProducer {
     //put your code here
     
-    public function CategoryMenu($activePage) {
-        
+    public function ProduceCategoryMenu($selectedCategory) {
+        $this->ProduceCategoryMenuBegin();
+		$this->ProduceTitleBox();
+		$this->ProduceMenu($selectedCategory);
+		$this->ProduceCategoryMenuEnd();
     }
     
     //------------------------------------------------------------
     
     public function ProduceCategoryMenuBegin ()
-        { echo "<div class='header'> <!-- header -->"; }
+        { echo "<div class='leftContent'>   <!-- leftContent -->"; }
         
     //------------------------------------------------------------
     
     public function ProduceCategoryMenuEnd () 
         { echo "</div>"; }
         
-    //------------------------------------------------------------
-    
-    public function ProduceClear () 
-        { echo "<div class='clear'></div>"; }
-            
+ 	public function ProduceTitleBox () {
+		echo "
+			<div class='titleBox'><strong>Κατηγορίες</strong></div>
+			<a href='#' class='skipButton'>Μετάβαση στο περιεχόμενο</a>
+			<a name='categoryMenu'></a>
+		";
+	}
+
+	
+	private function ProduceCategory ($selectedCategory, $pageURL, $pageTitle) {
+		if ($selectedCategory == $pageURL)
+			echo "<li class='categoryMenuSelected'>$pageTitle</li>";
+		else
+			echo "<li class='categoryMenu'><a href=$pageURL class='categoryMenu'>$pageTitle</a></li>";
+			
+	}
+	
+	//------------------------------------------------------------
+	
+	public function ProduceMenu($selectedCategory) {
+		echo "<ul class='categoryMenu'>";
+				$this->ProduceCategory($selectedCategory, "index.php", "Όλα τα βιβλία");	
+				$this->ProduceCategory($selectedCategory, "#", "Μυθιστόρημα");	
+				$this->ProduceCategory($selectedCategory, "#", "Κλασσική Λογοτεχνία");
+				$this->ProduceCategory($selectedCategory, "#", "Επιστ.Φαντασία");
+				$this->ProduceCategory($selectedCategory, "#", "Fantasy");
+				$this->ProduceCategory($selectedCategory, "#", "Ιστορία");
+				$this->ProduceCategory($selectedCategory, "#", "Βιογραφίες");
+				$this->ProduceCategory($selectedCategory, "#", "Μονογραφίες");
+				$this->ProduceCategory($selectedCategory, "#", "Μυστικισμός");
+				$this->ProduceCategory($selectedCategory, "#", "Τεχνολογία");
+				$this->ProduceCategory($selectedCategory, "#", "Διάφορα");
+				$this->ProduceCategory($selectedCategory, "#", "Παιδική Λογοτεχνία");
+				$this->ProduceCategory($selectedCategory, "#", "Χιούμορ");
+				$this->ProduceCategory($selectedCategory, "#", "Εκπαίδευση");
+				$this->ProduceCategory($selectedCategory, "#", "Manga");
+		echo "</ul>";
+		
+	}
 }
 
 ?>

@@ -102,26 +102,22 @@ class HeadProducer {
     
     //------------------------------------------------------------
     
-    public function IsActivePage ($activePage, $page, $pageName){
+    private function IsActivePage ($activePage, $pageURL, $pageTitle, $isRightElement = false){
         $class = '';
-        if ($activePage == $page)
+		$rightElement = '';
+		
+		if ($isRightElement)
+			$rightElement = "class='rightElement'";
+		
+        if ($activePage == $pageURL)
             $class = "class='actual'";
-        echo "<li><a $class href='$page'>$pageName</a></li>\n\t\t";
+		
+        echo "<li $rightElement><a $class href='$pageURL'>$pageTitle</a></li>\n\t\t";
     }
     
     //------------------------------------------------------------
     
-    public function ProduceHeaderMenu ($activePage){        
-        $class = "class='actual'";
-        
-        if ($selectedPage == "index.php")
-            ;
-        else
-        if ($selectedPage == "siteMap.php")
-            $class = "actual";
-        else
-            $class = "";
-        
+    public function ProduceHeaderMenu ($activePage){              
         echo "
             <div id='headerMenuStyle'>    <!-- headerMenuStyle -->
                 <a href='#crumb' class='skipButton'>Μετάβαση στους συνδέσμους πλοήγησης</a>
@@ -132,7 +128,7 @@ class HeadProducer {
                     $this->IsActivePage ($activePage, '#', 'Ποιοί είμαστε');
                     $this->IsActivePage ($activePage, '#', 'Είσοδος');
                     $this->IsActivePage ($activePage, 'faq.php', 'FAQ');
-                    $this->IsActivePage ($activePage, 'siteMap.php', 'Site map');
+                    $this->IsActivePage ($activePage, 'siteMap.php', 'Site map', true);
         echo " 
                 </ul>
             </div>  <!-- headerMenu ends -->          

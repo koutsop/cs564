@@ -237,7 +237,7 @@ input#searchBook {
 #headerMenuStyle ul.headerMenu li a:active,
 #headerMenuStyle ul.headerMenu li a.actual      { background:#c9c9c9;color:#fff }
 
-#headerMenuStyle ul.headerMenu li.tipoEspecial  { float:right; }
+#headerMenuStyle ul.headerMenu li.rightElement  { float:right; }
 
 /*----------------crumb_navigation-------------*/
 
