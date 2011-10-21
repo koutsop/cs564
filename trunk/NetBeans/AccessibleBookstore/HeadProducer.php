@@ -106,7 +106,7 @@ class HeadProducer {
         $class = '';
         if ($activePage == $page)
             $class = "class='actual'";
-        echo "<li><a $class href='$page'>$pageName</a></li>";
+        echo "<li><a $class href='$page'>$pageName</a></li>\n\t\t";
     }
     
     //------------------------------------------------------------
