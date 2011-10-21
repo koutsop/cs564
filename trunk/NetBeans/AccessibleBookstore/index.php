@@ -31,7 +31,8 @@
     <div class="clear"></div>
 
     <div id="mainContent">  <!-- mainContent -->    
-        <div id="crumbContainer">   <!-- crumbContainer -->
+        
+		<div id="crumbContainer">   <!-- crumbContainer -->
             <a href="#" class="skipButton">Μετάβαση στο μενού κατηγορίες</a>
             <a name="crumb"></a>
             <ul class="crumb">
@@ -47,34 +48,12 @@
 
         <div class="clear"></div>
 
-        <div class="leftContent">   <!-- leftContent -->
-            <div class="titleBox"><strong>Κατηγορίες</strong></div>
-            <a href="#" class="skipButton">Μετάβαση στο περιεχόμενο</a>
-            <a name="categoryMenu"></a>
-            <ul class="categoryMenu">
-                <!--    To categoryMenuSelected den prepei na uparxei mesa sthn arxikh selida 
-                        8a epilegete mono otan exoume epile3ei mia katigoria.
-                        Sthn arxikh selida 8a ginetai link ?
-                -->
-                <li class="categoryMenuSelected">Όλα τα βιβλία</li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Μυθιστόρημα</a>          </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Κλασσική Λογοτεχνία</a>  </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Επιστ.Φαντασία</a>       </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Fantasy</a>              </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Ιστορία</a>              </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Βιογραφίες</a>           </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Μονογραφίες</a>          </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Μυστικισμός</a>          </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Τεχνολογία</a>           </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Διάφορα</a>              </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Παιδική Λογοτεχνία</a>   </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Δοκίμιο</a>              </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Χιούμορ</a>              </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Εκπαίδευση</a>           </li>
-                <li class="categoryMenu"><a href="index.html" class="categoryMenu">Manga</a>                </li>           
-            </ul>
-        </div>  <!-- leftContent ends -->
-
+		<?php
+			require_once 'CategoryMenuProducer.php';
+			$producer = new CategoryMenuProducer();
+			$producer->ProduceCategoryMenu("index.php");
+		?>
+        
 
         <div class="centerContent">   <!-- centerContent -->
             <a name="content"></a>
@@ -161,7 +140,11 @@
 
 
     <div class="clear"></div>
-    <? require_once 'footer.php';?>
+    <?php 
+		require_once 'FooterProducer.php';
+		$producer = new FooterProducer();
+		$producer->ProduceFooter();
+	?>
     <div class="clear"></div>
     
 </div>  <!-- main_container ends -->
