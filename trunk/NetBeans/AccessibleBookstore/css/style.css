@@ -1,0 +1,500 @@
+body {
+	background: url(./../images/bg.jpg) no-repeat #fff center top;
+	padding: 0;
+	font-family: 'Trebuchet MS', Tahoma, sans-serif;
+	font-size: 11px;
+	margin: 0px auto auto auto;
+	color: #616161;
+}
+
+p {
+	padding: 2px;
+	margin: 0px;
+}
+
+#main_container {
+	margin: auto;
+	padding: 0px;
+	overflow: auto;
+}
+
+
+/******************************************************************/
+								/*events*/
+/******************************************************************/
+
+input:focus { background-color: yellow; } 
+
+
+
+/******************************************************************/
+								/*header*/
+/******************************************************************/
+#header{
+    margin: 0;
+	min-height: 173px;
+	overflow: auto;
+}
+
+
+/*---------------- logo ----------------------*/
+
+#logo{
+	float: left;
+	margin: 15px;
+}
+
+#logo img {
+	border: 0;
+	width: 237px;
+	height: 140px;
+}
+
+/*---------------- advertisement ----------------------*/
+/*
+#advertisement {
+    float:left;
+    margin:0;
+    padding:0;
+}
+*/
+/*---------------- standartFileds ----------------------*/
+
+#standartFileds {
+    float: right;
+    margin-top: 15px;
+}
+
+/*---------------- Search ----------------------*/
+
+.searchStyle {
+	float: left;
+	width: 290px;
+	position: relative;
+}
+
+.leftBg, .rightBg {
+	float: left;
+	width: 9px;
+	height: 71px;
+	margin: 0;
+	padding: 0;
+}
+
+.search {
+	float: left;	
+	margin: 0;
+	padding: 0;
+	width: 272px;
+	height: 71px;
+	background: url(./../images/repeatBg.png) repeat-x center;
+}
+
+form#simpleSearch                   {  }
+form#simpleSearch hiddenFieldset    { float: left; }
+form#simpleSearch label             { display: none; }
+
+span.compositeSearch {
+	/*float: right;*/
+	margin: 0;
+	border: 0;
+	padding: 0px 9px 11px 10px;
+	color: #999999;
+	position: absolute;
+	bottom: 0; right: 0;
+}
+
+span.compositeSearch a {
+	text-decoration:none;
+	color:#999999;
+}
+
+input#searchButton {
+	float:left;
+	margin:15px 0 0 10px ;
+	padding: 0;
+	border: 0;
+}
+
+input#searchBook {
+	width:220px;
+	height:18px;
+	float:left;
+	padding-left: 10px;
+	margin:15px 0 0 0px ;
+	border:1px solid #dbdbdb;
+	border-bottom-color:#ffffff;
+	border-right-color:#ffffff;
+}
+
+/*---------------- shopping cart ----------------------*/
+
+.shoppingCartStyle {
+	float: left;
+	margin-left: 15px;
+}
+
+.shoppingCart {
+	height: 71px;
+	margin: 0;
+	float: left;
+	background: url(./../images/repeatBg.png) repeat-x center;
+}
+
+.shoppingCart img {
+	float: left;
+	border: 0;
+	padding-left: 4px;
+	padding-top: 21px;
+	padding-bottom: 21px;
+}
+
+.shoppingCart p {
+	float: left;
+	height: auto;
+	padding-top: 28px;
+	padding-bottom: 27px;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #999
+}
+
+/*---------------- help ----------------------*/
+
+.helpStyle {
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.help {
+	min-height: 71px;
+	margin: 0;
+	float: left;
+	background: url(./../images/repeatBg.png) repeat-x center;	
+}
+
+.help img {
+	float: left;
+	border: 0;
+	padding-top: 19px;
+	padding-bottom: 19px;	
+	text-decoration:none;
+	color:#999999;	
+}
+
+.help p {
+	float: left;
+	height: auto;
+	padding-top: 28px;
+	padding-bottom: 27px;
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #999
+}
+
+
+
+/*---------------- header menu ----------------------*/
+
+#headerMenuStyle {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color: Yellow;
+}
+
+#headerMenuStyle ul.headerMenu {
+    margin: 0;
+    float: left;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    list-style-type: none;
+    background-color:#eff3f6;    
+}
+
+#headerMenuStyle ul.headerMenu li {
+    float: left;
+    display: inline;
+}
+
+#headerMenuStyle ul.headerMenu li a {
+    color:#8f8f8f;
+    display:inline-block;
+    font-family:'Trebuchet MS', Tahoma, serif;
+    font-size: 13px;
+    height: 30px;
+    outline: none;
+    padding: 15px 18px 0;
+    text-decoration:none;
+    background: url(../images/categoryMenuDivider.gif) no-repeat right;
+}
+
+#headerMenuStyle ul.headerMenu li a:hover,
+#headerMenuStyle ul.headerMenu li a:focus,
+#headerMenuStyle ul.headerMenu li a:active,
+#headerMenuStyle ul.headerMenu li a.actual      { background:#c9c9c9;color:#fff }
+
+#headerMenuStyle ul.headerMenu li.tipoEspecial  { float:right; }
+
+/*----------------crumb_navigation-------------*/
+
+#crumbContainer {
+    margin: 10px 0px 10px 0px;
+    padding: 0;
+    width: 100%;
+}
+
+ul.crumb {
+    margin: 0;
+    padding: 0;
+	list-style-type: none; 
+	overflow:auto;
+    color:#333333;
+}
+
+li.crumb {
+    float: left;
+    display: inline;
+}
+
+li.crumbDivider { font-weight: bolder; }
+
+
+a.crumb {
+	float: left;
+	display: block;
+	padding-left: 10px;	
+	padding-right: 10px;	
+    color: #0FA0DD;
+	text-decoration: none;
+}
+
+a.crumb:hover, a.crumb:focus {
+    text-decoration: underline;
+	color: #333333;
+}
+
+
+/****************************************************
+content
+****************************************************/
+#mainContent { overflow: auto; }
+
+/*---------------- centerContent -------------*/
+
+.centerContent {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.post {
+	float: left;
+	text-align: left;
+	margin: 0 0 40px 0;
+	padding: 0;
+	background: white url(../images/gradientbg.jpg) repeat-x;
+	border: 1px solid #EFEDED;
+}
+
+.post h1 {
+	border-bottom: 1px solid #F2F2F2;
+	font: normal 1.5em 'Trebuchet MS', Tahoma, Sans-serif;
+}
+.post h1 span.text {
+	padding: 10px 0px 5px 0px;
+	margin: 0 0 0 10px;
+}
+
+.post .postContent {
+	clear: both;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.post .box {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.post .box .boxContents{
+	float: left;
+	margin: 10px;
+	border: 1px solid Black;
+	padding: 10px;
+}
+
+.post .postFooter {
+	
+	background-color: #FAFAFA;
+	border: 1px solid #f2f2f2;
+	padding: 5px; 
+	margin-top: 20px;
+	font-size: 95%;
+}
+/*---------------- left content -------------*/
+
+.leftContent {
+    float: left;
+    width: 196px;
+}
+
+.titleBox {
+    width: 196px;
+    height: 30px;
+    margin: 0;
+    background: url(../images/categoryMenuTitleBoxBg.png) repeat-x center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #F5F5F5;
+    line-height: 30px;
+}
+
+
+ul.categoryMenu {
+    
+    width: 194px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    border: 1px solid #7bbcc7;
+}
+
+li.categoryMenu { margin: 0; }
+
+a.categoryMenu {
+    width: 164px;
+    height: 25px;
+    display: block;
+    background: url(../images/categoryMenu.png) no-repeat left #eff3f6;
+    background-position: 5px 5px;
+    border-bottom: 1px white solid;
+    text-decoration: none;
+    color: #504B4B;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+
+a.categoryMenu:hover, a.categoryMenu:focus {
+    background:url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7; 
+    color:#FFFFFF;
+    background-position:5px 5px;   
+}
+
+li.categoryMenuSelected {
+    width: 164px;
+    height: 25px;
+    display: block;
+    background:url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7;    
+    background-position: 5px 5px;
+    border-bottom: 1px white solid;
+    text-decoration: none;
+    color: #504B4B;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+
+
+
+/******************************************************************/
+								/*footer*/
+/******************************************************************/
+
+.footer {
+	float: left;
+	clear:both;
+	width: 100%;
+	overflow: auto;
+	margin-top: 40px;
+	padding-top: 2%;
+	padding-bottom: 2%;	
+	background-color: #eff3f6;
+}
+
+/*---------------- left footer -------------*/
+
+.leftFooter {
+	float: left;
+	width: 20%;
+}
+
+.leftFooter img {
+	border: 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*---------------- center footer -------------*/
+
+.centerFooter {
+	float: left;
+	width: 60%;
+	text-align: center;
+}
+
+#footerMenu {
+	float: inherit;
+	padding-left: 7.4%;
+}
+
+#footerMenu a {
+	color: #616161;
+	text-decoration: none;
+}
+
+#footerMenu a:hover,  #footerMenu a:focus{
+	color: Black;
+	text-decoration: underline;
+}
+
+/*---------------- right foter -------------*/
+
+.rightFooter {
+	float: left;
+	width: 20%;
+}
+
+.rightFooter #followUsOn {
+	float: inherit;
+	display: block;
+	padding-left: 26%;
+}
+
+.rightFooter #followUsOn img {
+	float: left;
+	border: 0;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+
+/****************************************************
+                util classes 
+****************************************************/
+
+.clear{ clear: both; }
+.clearLeft{ clear: left; }
+.clearRight{ clear: right; }
+
+span.clear{ clear: both; }
+span.clearLeft{ clear: left; }
+span.clearRight{ clear: right; }
+
+.skipButton { display: none; }
+
+.hiddenFieldset {
+	border: 0px solid; 
+	padding: 0; 
+	margin-left: 0;
+	margin-right: 0;
+}
+

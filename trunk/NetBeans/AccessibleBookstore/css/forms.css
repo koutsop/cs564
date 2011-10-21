@@ -1,0 +1,54 @@
+/****************************************************
+forms 
+****************************************************/
+
+
+input
+{
+	margin-top: 3%;
+}
+
+select
+{
+	margin-top: 3%;
+}
+
+label {
+font-family: 'Trebuchet MS', Tahoma, sans-serif;
+	font-size: 12px;
+	margin: 4% auto auto auto;
+	color: #000000;
+	font-weight:bold;
+	float: left;
+	text-align: left;
+	margin-right: 5%;
+	width: 35%;
+	display: block 
+}
+
+legend
+{	
+	background: #f7f7f7;
+	border: 1px solid #781351;
+	font-size: 13px;
+	margin: 0px auto auto auto;
+	color: #000000;
+	font-weight:bold;
+}
+
+fieldset
+{
+border: 1px solid #781351;
+color: #000000;
+width: 60%;
+}
+
+.submit input
+{
+color: #000;
+border: 2px outset #d7b9c9;
+margin-left: 35%;
+}
+
+
+/** marigianna - end **/
