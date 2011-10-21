@@ -21,15 +21,12 @@
 <div id="main_container">   <!-- main_container -->
     <a name="top"></a>
   
-    <div id="header">       <!-- header -->
-        
-        <?php 
-            require_once 'HeadProducer.php';  
-            $producer = new HeadProducer();
-            $producer->ProduceHeader("index.php");
-        ?>
 
-    </div>  <!-- header ends -->
+    <?php 
+        require_once 'HeadProducer.php';  
+        $producer = new HeadProducer();
+        $producer->ProduceHeader("index.php");
+    ?>
 
     <div class="clear"></div>
 
