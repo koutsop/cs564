@@ -472,6 +472,8 @@ li.categoryMenuSelected {
 .rightFooter #followUsOn img {
 	float: left;
 	border: 0;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 
 
