@@ -26,10 +26,7 @@
         <?php 
             require_once 'HeadProducer.php';  
             $producer = new HeadProducer();
-            $producer->ProduceLogo();
-            $producer->ProduceStandartFileds();
-            $producer->ProduceClear();
-            /*$producer->ProduceHeaderMenu("index.php");*/
+            $producer->ProduceHeader("index.php");
         ?>
 
     </div>  <!-- header ends -->
