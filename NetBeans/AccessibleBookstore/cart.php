@@ -5,6 +5,7 @@
     <meta http-equiv ="Content-Language" content="el" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/shoppingcart.css" type="text/css" />
     <title>Αccessible-Βookstore: Αρχική Σελίδα</title>
 
     <script type="text/JavaScript">
@@ -57,39 +58,35 @@
 
         <div class="centerContent">   <!-- centerContent -->
             <a name="content"></a>
-            
+           
 
-        <div class="post">
-
-        <div class="post">
-            <h1><span class="text"> Καλάθι αγορών</span></h1>
-                <div class="postContent">
-                    <div class="box">
-                    <div align="left"> 
-						<fieldset>
-						<table cellspacing="5">
-						<tr>
-						<td><h2> Περιγραφή </h2> </td> <td  colspan="5"> &nbsp; </td> <td><h2>Τεμάχια </h2></td> <td><h2> Τιμή </h2></td> <td><h2> Διαγραφή </h2></td>
-						</tr>
-						<tr>
-						<td><img src="./images/steve-jobs-book.jpg" alt="steve jobs book image"/></td> 
-						<td  colspan="5"> Steve Jobs: Τα μυστικά </td> 
-						<td><input id="items" type="text" name="textfield" maxlength="3" size="3"/></td> 
-						<td> 30.99 € </td> 
-						<td> <input name="Delete" type="image" src="images/Delete-icon.png" width="20" height="20" align="center" alt="Delete"/> </td>
-						</tr>
-						</table>
-						</fieldset>
-	
-                    </div> 
+				<div class="post">
+					<h1><span class="text"> Καλάθι αγορών</span></h1>
+						<div class="postContent">
+							<div class="box">
+							<div align="left"> 
+								<fieldset>
+								<table>
+								<tr>
+								<th> Βιβλίο </th> <th> Τίτλος </th> <th>Τεμάχια </th> <th> Τιμή <th/> <th> Διαγραφή </th>
+								</tr>
+								<tr>
+								<td><img src="./images/steve-jobs-book.jpg" alt="steve jobs book image"/></td> 
+								<td> Steve Jobs: Τα μυστικά </td> 
+								<td><input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
+								<td> 30.99 € </td> 
+								<td> <input name="Delete" type="image" src="images/Delete-icon.png" width="20" height="20" align="right" alt="Delete item from cart"/> </td>
+								</tr>
+								</table>
+								</fieldset>
+						 </div>
+						 </div>
+						</div>
 					<div class="clear"></div>
-                </div>
-            <div class="clear"></div>
-            <div class="postFooter"></div>
-        </div>
+					<div class="postFooter"></div>
+				</div>
 
         <div class="clear"></div>
-
         </div>  <!-- centerContent ends -->
     </div>  <!-- mainContent ends -->
 
