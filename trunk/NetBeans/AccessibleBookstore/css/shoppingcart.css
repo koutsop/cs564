@@ -10,9 +10,12 @@ th {
   font-weight: bold;
   text-align: center;
   background-color: #f0f0f0;
-  font-size: 15pt;
-	padding-top: 12px;
+  font-size: 15pt;	
+  padding: 1em;
+  /*padding-top: 12px;
 	padding-bottom: 3px;
+	padding-right: 10px;
+	padding-left: 10px;*/
 }
 
 table 
@@ -22,11 +25,28 @@ table
 
 table td { 
 
-	padding:20px;
-	border: 1px solid black;
+	padding: 1em;
+	border: 1px solid #f0f0f0;
 }
 
 table tr h2
 {
 	background-color:#f0f0f0;
+}
+
+h2
+{
+font-family: 'Trebuchet MS', Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: right;
+  font-size: 13pt;	
+}
+
+input.image 
+{
+	float: right;
+	display: block; margin-left: auto; margin-right: auto;
+	padding-bottom: 2%;
+	padding-left: 2%;
+	padding-top: 2%; 
 }
