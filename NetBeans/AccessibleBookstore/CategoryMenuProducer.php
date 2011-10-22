@@ -38,7 +38,7 @@ class CategoryMenuProducer {
 		if ($selectedCategory == $pageURL)
 			echo "<li class='categoryMenuSelected'>$pageTitle</li>";
 		else
-			echo "<li class='categoryMenu'><a href=$pageURL class='categoryMenu'>$pageTitle</a></li>";
+			echo "<li class='categoryMenu'><a href='$pageURL' class='categoryMenu'>$pageTitle</a></li>";
 			
 	}
 	
