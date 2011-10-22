@@ -83,11 +83,18 @@
 								<td> 30.99 € </td> 
 								<td> <input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
 								</tr>
+								<tr>
+								<td><a href="#" title="Aleph"><img src="./images/books/aleph.jpg"/></a></td> 
+								<td><a href="#" title="Aleph"> Aleph</a></td> 
+								<td><input id="items" type="text" name="textfield" maxlength="3" size="3" value="2"/></td> 
+								<td> 20.64 € </td> 
+								<td> <input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
+								</tr>
 								</table>
 														
 								</fieldset>
 						 </div>
-						 <h2> Σύνολο: 30.99 €</h2>
+						 <h2> Σύνολο: 51.63 €</h2>
 						 </div>
 
 						 <div id="bottomButtons">
