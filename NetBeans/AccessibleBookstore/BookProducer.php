@@ -24,9 +24,9 @@ class BookProducer {
 							<br />
 							<a class='publisher' href='$publisherURL'>Εκδόσεις Ψυχογιός</a>
 							<br />
-							<strong>Συγγραφέας</strong>: $author 
+							<strong>Συγγραφέας</strong>: $author
+							<br />
 							<span class='price'>€ $price</span>							
-
 						</div>
 						<div class='imgCartContainer'>
 								<a  href='#' title='Προσθήκη στο καλάθι'><img src='images/cart.gif' alt=''/></a>
