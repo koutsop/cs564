@@ -18,7 +18,7 @@ class CategoryMenuProducer {
     //------------------------------------------------------------
     
     public function ProduceCategoryMenuBegin ()
-        { echo "<div class='leftContent'>   <!-- leftContent -->"; }
+        { echo "<div class=\"leftContent\">   <!-- leftContent -->"; }
         
     //------------------------------------------------------------
     
@@ -27,25 +27,25 @@ class CategoryMenuProducer {
         
  	public function ProduceTitleBox () {
 		echo "
-			<div class='titleBox'><strong>Κατηγορίες</strong></div>
-			<a href='#' class='skipButton'>Μετάβαση στο περιεχόμενο</a>
-			<a name='categoryMenu'></a>
+			<div class=\"titleBox\"><strong>Κατηγορίες</strong></div>
+			<a href=\"#\" class=\"skipButton\">Μετάβαση στο περιεχόμενο</a>
+			<a name=\"categoryMenu\"></a>
 		";
 	}
 
 	
 	private function ProduceCategory ($selectedCategory, $pageURL, $pageTitle) {
 		if ($selectedCategory == $pageURL)
-			echo "<li class='categoryMenuSelected'>$pageTitle</li>";
+			echo "<li class=\"categoryMenuSelected\">$pageTitle</li>";
 		else
-			echo "<li class='categoryMenu'><a href='$pageURL' class='categoryMenu'>$pageTitle</a></li>";
+			echo "<li class=\"categoryMenu\"><a href=\"$pageURL\" class=\"categoryMenu\">$pageTitle</a></li>";
 			
 	}
 	
 	//------------------------------------------------------------
 	
 	public function ProduceMenu($selectedCategory) {
-		echo "<ul class='categoryMenu'>";
+		echo "<ul class=\"categoryMenu\">";
 				$this->ProduceCategory($selectedCategory, "index.php", "Όλα τα βιβλία");	
 				$this->ProduceCategory($selectedCategory, "#", "Μυθιστόρημα");	
 				$this->ProduceCategory($selectedCategory, "#", "Κλασσική Λογοτεχνία");
