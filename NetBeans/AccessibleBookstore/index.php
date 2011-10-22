@@ -65,16 +65,20 @@
                     <div class="box">
                         <div class="boxContents">
 							<div class="frame">
-								<a href="#" title="ΜΑΤΩΜΕΝΑ ΙΧΝΗ"><img src="images/books/matwmena_ixnh.jpg" alt=""/></a>
+								<div class="imgBookContainer">
+									<a href="#" title="ΜΑΤΩΜΕΝΑ ΙΧΝΗ"><img src="images/books/matwmena_ixnh.jpg" alt=""/></a>
+								</div>
 								<div class="text">
-									
-									<strong style="font: left"><a class="booLink" href="#">ΜΑΤΩΜΕΝΑ ΙΧΝΗ</a></strong>
+									<a class="booLink" href="#"><strong>ΜΑΤΩΜΕΝΑ ΙΧΝΗ</strong></a>
 									<br />
-									<a class="booLink" href="#">ΜΑΤΩΜΕΝΑ ΙΧΝΗ</a>
+									<a class="publisher" href="#">Εκδόσεις Ψυχογιός</a>
 									<br />
-									<span style="float:left">
 									<strong>Συγγραφέας</strong>: ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ 
-									€ 11,99</span>
+									<span class="value">€ 11,99</span>							
+								
+								</div>
+								<div class="imgTextContainer">
+										<a  href="#" title="Προσθήκη στο καλάθι"><img src="images/cart.gif" alt=""/></a>
 								</div>
 							</div>
                         </div>
