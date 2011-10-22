@@ -37,12 +37,6 @@
             <a name="crumb"></a>
             <ul class="crumb">
                 <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
-                <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
-                <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
-                <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 
@@ -59,9 +53,15 @@
             <a name="content"></a>
 			<?php
 				require_once 'Utility.php';
+				require_once 'Proposal.php';
+				require_once 'TopSalling.php';
 				require_once 'LatestAdditions.php';
 				require_once 'ForeignLanguageBooks.php';
 				LatestAdditions();
+				Clear();
+				TopSalling();
+				Clear();
+				Proposal();
 				Clear();
 				ForeignLanguageBooks();
 			?>
