@@ -33,7 +33,7 @@ legend
 fieldset
 {
 border: none;
-color: #000000;
+color: #000;
 }
 
 .submit input
@@ -47,6 +47,25 @@ margin-top: 5%;
 .box form
 {
 	border: none;
+}
+
+#wrapper
+{
+Width:80%;
+}
+
+#leftdv
+{
+width: 50%;
+Text-align:center;
+float:left;
+}
+
+#rightdv
+{
+width: 30%;
+Text-align:center;
+float:right;
 }
 
 
