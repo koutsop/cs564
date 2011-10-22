@@ -15,8 +15,8 @@ function ForeignLanguageBooks () {
 		'passion.jpg', 
 		'ADA Editors', 
 		'#', 
-		'Zaha Hadid', 
-		'46,90',
+		'LAUREN KATE', 
+		'12,90',
 		'EN-US'
 	);	
 	
@@ -26,7 +26,7 @@ function ForeignLanguageBooks () {
 		'the_thread.jpg', 
 		'Headline', 
 		'#', 
-		'Victoria Hislop', 
+		'VICTORIA HISLOP', 
 		'14,90',
 		'EN-US'
 	);		
@@ -37,19 +37,19 @@ function ForeignLanguageBooks () {
 		'headhunters.jpg', 
 		'Harvill Secker', 
 		'#', 
-		'Jo Nesbo', 
+		'NESBO JO', 
 		'13,95',
 		'EN-US'
 	);		
 	
 	$producer->ProduceBook(
 		'#', 
-		'THE THREAD', 
-		'the_thread.jpg', 
-		'Headline', 
+		'THE LEOPARD', 
+		'the_leopard.jpg', 
+		'Random House Canada', 
 		'#', 
-		'Victoria Hislop', 
-		'46,90',
+		'NESBO JO', 
+		'8,90',
 		'EN-US'
 	);	
 	
@@ -57,45 +57,45 @@ function ForeignLanguageBooks () {
 	
 	$producer->ProduceBook(
 		'#', 
-		'THE THREAD', 
-		'the_thread.jpg', 
+		'ABSOLUTE C++', 
+		'absolute_C++.jpg', 
 		'Headline', 
 		'#', 
-		'Victoria Hislop', 
-		'46,90',
+		'WALTER J.,SAVITCH', 
+		'64,90',
 		'EN-US'
 	);		
 	
 	$producer->ProduceBook(
 		'#', 
-		'THE THREAD', 
-		'the_thread.jpg', 
+		'AFTERWARDS', 
+		'afterwards.jpg', 
 		'Headline', 
 		'#', 
-		'Victoria Hislop', 
-		'46,90',
+		'ROSAMUND,LUPTON', 
+		'10,90',
 		'EN-US'
 	);	
 	
 	$producer->ProduceBook(
 		'#', 
-		'THE THREAD', 
-		'the_thread.jpg', 
-		'Headline', 
+		'FALL OF GIANTS', 
+		'fall_of_giants.jpg', 
+		'Dutton Adult', 
 		'#', 
-		'Victoria Hislop', 
-		'46,90',
+		'FOLLETT KEN', 
+		'8,90',
 		'EN-US'
 	);		
 	
 	$producer->ProduceBook(
 		'#', 
-		'THE THREAD', 
-		'the_thread.jpg', 
-		'Headline', 
+		'Objective-C', 
+		'objective-C.jpg', 
+		'John Wiley and Sons Ltd', 
 		'#', 
-		'Victoria Hislop', 
-		'46,90',
+		'JIVA,DEVOE, BOB,KRESSIN', 
+		'31,90',
 		'EN-US'
 	);	
 	
