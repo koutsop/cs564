@@ -287,6 +287,7 @@ content
 
 .centerContent {
 	float: left;
+	width: 79%;		/*Prosoxh an 8elisw na pira3w to mergin kai padding na ala3w pososto*/
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-left: 20px;
@@ -332,7 +333,6 @@ content
 }
 
 .post .postFooter {
-	
 	background-color: #FAFAFA;
 	border: 1px solid #f2f2f2;
 	padding: 5px; 
@@ -402,7 +402,7 @@ content
 
 .leftContent {
     float: left;
-    width: 196px;
+    width: 16%;
 }
 
 .titleBox {
