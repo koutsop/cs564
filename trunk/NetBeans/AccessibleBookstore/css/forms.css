@@ -68,5 +68,14 @@ Text-align:center;
 float:right;
 }
 
+.required
+{
+	color: red;
+}
 
+.error
+{
+	background: #ffcc99;
+	
+}
 /** marigianna - end **/

@@ -72,16 +72,18 @@
 							<div class="box">
 							<div> 
 								<fieldset>
-								<table>
+								<table summary="Ο παρακάτω πίνακας περιγράφει τα προϊόντα που έχετε επιλέξει προς αγορά, και άλλα χαρακτηριστικά τους. 
+								Συγκεκριμένα τα χαρακτηριστικά που περιγράφονται είναι: Εξώφυλλο βιβλίου, Τίτλος, Τεμάχια, Τιμή, και επιλογή
+								διαγραφής του κάθε προϊόντος.">
 								<tr>
-								<th> Βιβλίο </th> <th> Τίτλος </th> <th>Τεμάχια </th> <th> Τιμή </th> <th> Διαγραφή </th>
+								<th id="b"> Βιβλίο </th> <th id="t"> Τίτλος </th> <th id="no">Τεμάχια </th> <th id="p"> Τιμή </th> <th id="del"> Διαγραφή </th>
 								</tr>
 								<tr>
-								<td><a href="#" title="Steve Jobs: Τα μυστικά"><img src="./images/books/steve-jobs-book.jpg"/></a></td> 
-								<td><a href="#" title="Steve Jobs: Τα μυστικά"> Steve Jobs: Τα μυστικά </a></td> 
-								<td><input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
-								<td> 30.99 € </td> 
-								<td> <input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
+								<td headers="b"><a href="#" title="Steve Jobs: Τα μυστικά"><img src="./images/books/steve-jobs-book.jpg"/></a></td> 
+								<td headers="t"><a href="#" title="Steve Jobs: Τα μυστικά"> Steve Jobs: Τα μυστικά </a></td> 
+								<td headers="no"><input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
+								<td headers="p"> 30.99 € </td> 
+								<td headers="del"> <input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
 								</tr>
 								</table>
 														
