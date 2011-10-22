@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 	 <link rel="stylesheet" href="css/forms.css" type="text/css" />
+	  <link rel="stylesheet" href="css/shoppingcart.css" type="text/css" />
     <title>Αccessible-Βookstore: Διαδικασία Πληρωμής</title>
 
     <script type="text/JavaScript">
@@ -59,30 +60,33 @@
         <div class="centerContent">   <!-- centerContent -->
             <a name="content"></a>
             
-
+		<div id="wrapper">	
+		<div id="leftdv">
         <div class="post">
             <h1><span class="text">Διαδικασία Πληρωμής</span></h1>
                 <div class="postContent">
 				<form action="#"> <!-- address form -->
+				
+
                     <div class="box">
                         <div class="boxContents">
 						<fieldset>
 							<legend>Στοιχεία Αποστολής</legend>
 								<p><em>Η συμπλήρωση των πεδίων με * είναι υποχρεωτική.</em></p>
 								<p><label for="name">Όνομα:</label></p>
-								<p>*<input id="name" type="text" name="textfield" /></p>
+								<p><input id="name" type="text" name="textfield" /></p>
 								<p><label for="surname">Επίθετο:</label></p>
-								<p>*<input id="surname" type="text" name="textfield" /></p>
+								<p><input id="surname" type="text" name="textfield" /></p>
 								<p><label for="street">Οδός/Αριθμός:</label></p>
-								<p>*<input id="street" type="text" name="textfield" /></p>
+								<p><input id="street" type="text" name="textfield" /></p>
 								<p><label for="city">Πόλη:</label></p>
-								<p>*<input id="city" type="text" name="textfield" /></p>
+								<p><input id="city" type="text" name="textfield" /></p>
 								<p><label for="area">Περιοχή:</label></p>
-								<p>*<input id="area" type="text" name="textfield" /></p>
+								<p><input id="area" type="text" name="textfield" /></p>
 								<p><label for="postal_code">Ταχυδρομικός κώδικας:</label></p>
-								<p>*<input id="postal_code" type="text" name="textfield" /></p>
+								<p><input id="postal_code" type="text" name="textfield" /></p>
 								<p><label for="country">Χώρα:</label></p>
-								<p>*<select name="country" id="country">
+								<p><select name="country" id="country">
 								<option>Χώρα</option>
 								<option>Γαλλία</option>
 								<option>Γερμανία</option>
@@ -99,11 +103,14 @@
 								</select></p>
 								<p><label for="phone">Τηλέφωνο:</label></p>
 								<p>&nbsp;<input id="phone" type="text" name="textfield" /></p>
-								<p><label for="email">e-mail:</label></p>
-								<p>*<input id="email" type="text" name="textfield" /></p>
+								<p><label for="email">Διεύθυνση e-mail:</label> <em>Θα λάβετε e-mail επιβεβαίωσης της κράτησής σας</em></p>
+								<p><input id="email" type="text" name="textfield" /></p>
+								<p><label for="emailconfirm">Επιβεβαίωση διεύθυνσης e-mail:</label></p>
+								<p><input id="emailconfirm" type="text" name="textfield" /></p>
 							</fieldset>
-                        </div>
-                    </div>
+                        </div> <!-- close boxContents -->
+                    </div> <!-- close box -->
+					<div class="clear"></div>
 					<br /> <div class="clear"></div>
                     <div class="box">
                         <div class="boxContents">
@@ -117,7 +124,7 @@
 							<img src="./images/card-5.gif" alt=""/>			
 							</p>
 							<p><label for="credit_card_type">Είδος πιστωτικής κάρτας:</label></p>
-							<p>*<select name="credit_card_type" id="credit_card_type">
+							<p><select name="credit_card_type" id="credit_card_type">
 							<option>VISA</option>
 							<option>VISA Prepaid</option>
 							<option>VISA Electron</option>
@@ -125,11 +132,11 @@
 							<option>American Express +3.00%</option>
 							</select></p>
 							<p><label for="cardholder_name">Όνομα κατόχου</label></p>
-							<p>*<input id="cardholder_name" type="text" name="textfield" /></p>
+							<p><input id="cardholder_name" type="text" name="textfield" /></p>
 							<p><label for="card_number">Αριθμός κάρτας:</label></p>
-							<p>*<input id="card_number" type="text" name="textfield" /></p>
+							<p><input id="card_number" type="text" name="textfield" /></p>
 							<p><label for="expiry_date">Ημερομηνία λήξης:</label></p>
-							<p>*<select name="expiry_date" id="expiry_date_month">
+							<p><select name="expiry_date" id="expiry_date_month">
 								<option>Μήνας</option>
 								<option>01</option>
 								<option>02</option>
@@ -161,26 +168,55 @@
 								</select>
 								</p>
 							<p><label for="ccv2">CCV2: (κωδικός ασφαλείας)</label></p>
-							/*TODO: na valo elegxo - na valo link sto erotimatiko */
-							<p>*<input id="ccv2" type="text" name="textfield" maxlength="3" size="3"/>?</p>
+							<!-- TODO: na valo elegxo - na valo link sto erotimatiko -->
+							<p><input id="ccv2" type="text" name="textfield" maxlength="3" size="3"/><a href="#" title="ccv πληροφορίες"> ?</a></p>
 							</fieldset>
                         </div>
-						</div>
+					</div>
 						<p>
 						<br />
 						<input type="checkbox" name="termsAndConditions value="TermsAndConditions" />
 						Αποδέχομαι τους όρους του <a href="#">accessible-bookstore.gr</a></p>
-					</div>
-					<p class="submit"><input type="submit" value="Αγορά βιβλίου" /></p>
-					</form>	<!-- address form end-->
-                </div>
+				</div> <!-- close postContent -->
+				<p class="submit"><input type="submit" value="Αγορά βιβλίου" /></p>
+				</form>	<!-- address form end-->
+        </div> <!-- post ends -->
+		</div> <!-- leftdv ends-->
+		<div class="clear"></div>
+				<div id="rightdv">
+				<div class="post">
+            <h1><span class="text">Στοιχεία Παραγγελίας</span></h1>
+                <div class="postContent">
+			<div class="box">
+							<div> 
+								<fieldset>
+								<table>
+								<tr>
+								<th> Τίτλος </th> <th>Τεμάχια </th> <th> Τιμή </th>
+								</tr>
+								<tr>
+								<td><a href="#" title="Steve Jobs: Τα μυστικά"> Steve Jobs: Τα μυστικά </a></td> 
+								<td>1</td> 
+								<td> 30.99 € </td> 
+								</tr>
+								<tr>
+								<td><a href="#" title="Aleph"> Aleph</a></td> 
+								<td>2</td> 
+								<td> 20.64 € </td> 
+								</tr>
+								</table>				
+								</fieldset>
+						 </div>
+						 <h2> Σύνολο: 51.63 €</h2>
+			</div> <!-- box ends-->
+			</div> <!-- postContent ends-->
+			</div> <!-- post ends -->
+			</div> <!--rightdv ends-->
             <div class="clear"></div>
             <div class="postFooter"></div>
-        </div>
+        </div> <!-- wrapper ends-->
 
-        <div class="clear"></div>
-       
-		
+     		
 		  <div class="clear"></div>
         </div>  <!-- centerContent ends -->
     </div>  <!-- mainContent ends -->
