@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="el"  lang="el">
 <head>
@@ -110,8 +110,9 @@
 							</fieldset>
                         </div> <!-- close boxContents -->
                     </div> <!-- close box -->
+					
+					
 					<div class="clear"></div>
-					<br /> <div class="clear"></div>
                     <div class="box">
                         <div class="boxContents">
 						<fieldset>
@@ -175,14 +176,19 @@
 					</div>
 						<p>
 						<br />
-						<input type="checkbox" name="termsAndConditions value="TermsAndConditions" />
+						<input type="checkbox" name="termsAndConditions" value="TermsAndConditions" />
 						Αποδέχομαι τους όρους του <a href="#">accessible-bookstore.gr</a></p>
-				</div> <!-- close postContent -->
+				
 				<p class="submit"><input type="submit" value="Αγορά βιβλίου" /></p>
 				</form>	<!-- address form end-->
+				</div> <!-- close postContent -->
+			<div class="clear"></div>	
+			<div class="postFooter"></div>
         </div> <!-- post ends -->
 		</div> <!-- leftdv ends-->
-		<div class="clear"></div>
+		
+		
+		<!--<div class="clear"></div>-->
 				<div id="rightdv">
 				<div class="post">
             <h1><span class="text">Στοιχεία Παραγγελίας</span></h1>
@@ -210,10 +216,11 @@
 						 <h2> Σύνολο: 51.63 €</h2>
 			</div> <!-- box ends-->
 			</div> <!-- postContent ends-->
+            <div class="clear"></div>
+            <div class="postFooter"></div>			
 			</div> <!-- post ends -->
 			</div> <!--rightdv ends-->
-            <div class="clear"></div>
-            <div class="postFooter"></div>
+
         </div> <!-- wrapper ends-->
 
      		
