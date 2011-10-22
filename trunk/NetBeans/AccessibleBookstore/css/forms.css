@@ -6,10 +6,10 @@ form
 {
 	width: 40em;
 }
-input, select
+
+input,select
 {
-	margin-left: 23%;
-	margin-right: 40%;
+	margin-bottom: 5%;
 }
 
 label {
@@ -17,12 +17,6 @@ font-family: 'Trebuchet MS', Tahoma, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 	color: #000000;
-	float: left;
-	text-align: left;
-	margin-right: 5%;
-	margin-top: 6%;
-	margin-bottom: -5%;
-	width: 35%;
 	display: block 
 }
 
@@ -38,7 +32,7 @@ legend
 
 fieldset
 {
-border: 1px solid #781351;
+border: none;
 color: #000000;
 }
 
@@ -47,7 +41,7 @@ color: #000000;
 color: #000;
 border: 2px outset #d7b9c9;
 margin-left: 35%;
-margin-top: 10%;
+margin-top: 5%;
 }
 
 .box form
