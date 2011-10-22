@@ -59,77 +59,10 @@
             <a name="content"></a>
             
 
-        <div class="post">
-            <h1><span class="text">Τελευταίες Προσθήκες</span></h1>
-                <div class="postContent">
-					<?php
-						require_once 'BookProducer.php';
-						$producer = new BookProducer();
-						$producer->ProduceBook('
-							#', 
-							'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 
-							'matwmena_ixnh.jpg', 
-							'Εκδόσεις Ψυχογιός', 
-							'#', 
-							'ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ', 
-							'11,99'
-						);
-						
-						$producer->ProduceBook('
-							#', 
-							'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 
-							'matwmena_ixnh.jpg', 
-							'Εκδόσεις Ψυχογιός', 
-							'#', 
-							'ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ', 
-							'11,99'
-						);
-						
-						$producer->ProduceBook('
-							#', 
-							'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 
-							'matwmena_ixnh.jpg', 
-							'Εκδόσεις Ψυχογιός', 
-							'#', 
-							'ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ', 
-							'11,99'
-						);
-						
-						$producer->ProduceBook('
-							#', 
-							'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 
-							'matwmena_ixnh.jpg', 
-							'Εκδόσεις Ψυχογιός', 
-							'#', 
-							'ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ', 
-							'11,99'
-						);						
-					?>
-					
-                    <div class="clear"></div>
-
-                    <div class="box">
-                        <div class="boxContents">
-                            <p>eisai enas malakas kai den 3ereis ti les kai ti kaneis</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="boxContents">
-                            <p>eisai enas malakas kai den 3ereis ti les kai ti kaneis</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="boxContents">
-                            <p>eisai enas malakas kai den 3ereis ti les kai ti kaneis</p>
-                        </div>
-                    </div>
-
-                </div>
-            <div class="clear"></div>
-            <div class="postFooter"></div>
-        </div>
+		<?php
+			require_once 'LatestAdditions.php';
+			LatestAdditions();
+		?>
 
         <div class="clear"></div>
         
