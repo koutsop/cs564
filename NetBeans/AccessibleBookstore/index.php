@@ -62,40 +62,50 @@
         <div class="post">
             <h1><span class="text">Τελευταίες Προσθήκες</span></h1>
                 <div class="postContent">
-                    <div class="box">
-                        <div class="boxContents">
-							<div class="frame">
-								<div class="imgBookContainer">
-									<a href="#" title="ΜΑΤΩΜΕΝΑ ΙΧΝΗ"><img src="images/books/matwmena_ixnh.jpg" alt=""/></a>
-								</div>
-								<div class="text">
-									<a class="booLink" href="#"><strong>ΜΑΤΩΜΕΝΑ ΙΧΝΗ</strong></a>
-									<br />
-									<a class="publisher" href="#">Εκδόσεις Ψυχογιός</a>
-									<br />
-									<strong>Συγγραφέας</strong>: ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ 
-									<span class="value">€ 11,99</span>							
-								
-								</div>
-								<div class="imgTextContainer">
-										<a  href="#" title="Προσθήκη στο καλάθι"><img src="images/cart.gif" alt=""/></a>
-								</div>
-							</div>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="boxContents">
-                            <p>eisai enas malakas kai den 3ereis ti les kai ti kaneis</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="boxContents">
-                            <p>eisai enas malakas kai den 3ereis ti les kai ti kaneis</p>
-                        </div>
-                    </div>
-
+					<?php
+						require_once 'BookProducer.php';
+						$producer = new BookProducer();
+						$producer->ProduceBook('
+							#', 
+							'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 
+							'matwmena_ixnh.jpg', 
+							'Εκδόσεις Ψυχογιός', 
+							'#', 
+							'ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ', 
+							'11,99'
+						);
+						
+						$producer->ProduceBook('
+							#', 
+							'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 
+							'matwmena_ixnh.jpg', 
+							'Εκδόσεις Ψυχογιός', 
+							'#', 
+							'ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ', 
+							'11,99'
+						);
+						
+						$producer->ProduceBook('
+							#', 
+							'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 
+							'matwmena_ixnh.jpg', 
+							'Εκδόσεις Ψυχογιός', 
+							'#', 
+							'ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ', 
+							'11,99'
+						);
+						
+						$producer->ProduceBook('
+							#', 
+							'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 
+							'matwmena_ixnh.jpg', 
+							'Εκδόσεις Ψυχογιός', 
+							'#', 
+							'ΧΕΝΙΝΓΚ ΜΑΝΚΕΛ', 
+							'11,99'
+						);						
+					?>
+					
                     <div class="clear"></div>
 
                     <div class="box">
