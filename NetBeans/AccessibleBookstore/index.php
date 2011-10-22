@@ -57,43 +57,15 @@
 
         <div class="centerContent">   <!-- centerContent -->
             <a name="content"></a>
-            
-
-		<?php
-			require_once 'LatestAdditions.php';
-			LatestAdditions();
-		?>
-
-        <div class="clear"></div>
-        
-        <div class="post">
-            <h1><span class="text"> Το Accesible-Bookstore Προτείνε</span></h1>
-                <div class="postContent">
-                    <div class="box">
-                        <div class="boxContents">
-                            <p>eisai enas malakas kai den 3ereis ti les kai ti kaneis</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="boxContents">
-                            <p>eisai enas malakas kai den 3ereis ti les kai ti kaneis</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="boxContents">
-                            <p>eisai enas malakas kai den 3ereis ti les kai ti kaneis</p>
-                        </div>
-                    </div>
-                    
-                </div>
-            <div class="clear"></div>
-            <div class="postFooter"></div>
-        </div>
-
-        <div class="clear"></div>
-
+			<?php
+				require_once 'Utility.php';
+				require_once 'LatestAdditions.php';
+				require_once 'ForeignLanguageBooks.php';
+				LatestAdditions();
+				Clear();
+				ForeignLanguageBooks();
+			?>
+			<div class="clear"></div>
         </div>  <!-- centerContent ends -->
     </div>  <!-- mainContent ends -->
 

@@ -16,7 +16,7 @@ class HeadProducer {
     //------------------------------------------------------------
     
     public function ProduceHeaderBegin () 
-        { echo "<div class='header'> <!-- header -->"; }
+        { echo "<div class=\"header\"> <!-- header -->"; }
         
     //------------------------------------------------------------
     
@@ -26,15 +26,15 @@ class HeadProducer {
     //------------------------------------------------------------
     
     public function ProduceClear () 
-        { echo "<div class='clear'></div>"; }
+        { echo "<div class=\"clear\"></div>"; }
     
     //------------------------------------------------------------
     
     public function ProduceLogo () {
          echo"
-            <div id='logo'>     <!-- logo -->
+            <div id=\"logo\">     <!-- logo -->
                 <!-- long description-->
-                <a href='index.php'><img src='images/logo.png' alt='Το λογότυπο του Αccessible-Βookstore' /></a>
+                <a href=\"index.php\"><img src=\"images/logo.png\" alt=\"Το λογότυπο του Αccessible-Βookstore\" /></a>
             </div>  <!-- logo ends -->
         ";       
     }
@@ -43,58 +43,58 @@ class HeadProducer {
     
     public function ProduceStandartFileds() {
         echo "
-            <div id='standartFileds'>   <!-- standartFileds -->
-                <div class='searchStyle'><!-- search -->
-                    <img src='./images/leftBg.png' class='leftBg' alt='' />
-                    <div class='search'><!-- search -->
-                        <form id='simpleSearch' action='index.php' method='post'>
-                            <fieldset class='hiddenFieldset'>
-                                <label for='searchBook'>Γρήγορη αναζήτηση βιβλίου</label>
+            <div id=\"standartFileds\">   <!-- standartFileds -->
+                <div class=\"searchStyle\"><!-- search -->
+                    <img src=\"./images/leftBg.png\" class=\"leftBg\" alt=\"\" />
+                    <div class=\"search\"><!-- search -->
+                        <form id=\"simpleSearch\" action=\"index.php\" method=\"post\">
+                            <fieldset class=\"hiddenFieldset\">
+                                <label for=\"searchBook\">Γρήγορη αναζήτηση βιβλίου</label>
                                 <input 
-                                    id='searchBook' 
-                                    name='searchBook' 
-                                    type='text' 
-                                    maxlength='255'
-                                    value='τίτλος, συγγραφέας, εκδότης, ISBN' 
-                                    onfocus='doClear(this, 'τίτλος, συγγραφέας, εκδότης, ISBN')'
+                                    id=\"searchBook\" 
+                                    name=\"searchBook\" 
+                                    type=\"text\" 
+                                    maxlength=\"255\"
+                                    value=\"τίτλος, συγγραφέας, εκδότης, ISBN\" 
+                                    onfocus=\"doClear(this, 'τίτλος, συγγραφέας, εκδότης, ISBN')\"
                                 />
                                 <input 
-                                    id='searchButton'
-                                    name='searchButton'
-                                    type='image' 
-                                    src='./images/search.gif' 
-                                    alt='Αναζήτηση' 
+                                    id=\"searchButton\"
+                                    name=\"searchButton\"
+                                    type=\"image\" 
+                                    src=\"./images/search.gif\" 
+                                    alt=\"Αναζήτηση\" 
                                 />
                             </fieldset>
                         </form>
                         <!-- TODO: na balw to link gia thn anazhthsh -->
-                        <span class='compositeSearch'><a href='#'>Σύνθετη Αναζήτηση</a></span>
+                        <span class=\"compositeSearch\"><a href=\"#\">Σύνθετη Αναζήτηση</a></span>
                     </div>  <!-- search ends -->
-                    <img src='./images/rightBg.png' class='rightBg' alt=''/>
+                    <img src=\"./images/rightBg.png\" class=\"rightBg\" alt=\"\"/>
                 </div>  <!-- search ends -->
 
-                <div class='shoppingCartStyle'>  <!-- shoppingCart -->
-                    <img src='./images/leftBg.png' class='leftBg' alt=''/>
-                    <div class='shoppingCart'><!-- cart -->
+                <div class=\"shoppingCartStyle\">  <!-- shoppingCart -->
+                    <img src=\"./images/leftBg.png\" class=\"leftBg\" alt=\"\"/>
+                    <div class=\"shoppingCart\"><!-- cart -->
                                         <p>(0 προϊόντα)</p>
                         <!-- TODO Na bale to swsto link gia to pou 8a paei to kala8i-->
-                        <a href='#'><img src='./images/shoppingcart.png' alt='Αγορά'/></a>
+                        <a href=\"#\"><img src=\"./images/shoppingcart.png\" alt=\"Αγορά\"/></a>
 
                     </div>  <!-- cart ends -->
-                    <img src='./images/rightBg.png' class='rightBg' alt=''/>
+                    <img src=\"./images/rightBg.png\" class=\"rightBg\" alt=\"\"/>
                 </div>  <!-- shoppingCart ends -->
 
-                <div class='helpStyle'>
-                    <img src='./images/leftBg.png' class='leftBg' alt=''/>
-                    <div class='help'><!-- cart -->
+                <div class=\"helpStyle\">
+                    <img src=\"./images/leftBg.png\" class=\"leftBg\" alt=\"\"/>
+                    <div class=\"help\"><!-- cart -->
                         <!-- TODO Na bale to swsto link gia to pou 8a paei to kala8i-->
                         <p>Bοήθεια</p>
-                        <a href='#'><img src='images/question_mark.png' alt='Bοήθεια'/> </a>
+                        <a href=\"#\"><img src=\"images/question_mark.png\" alt=\"Bοήθεια\"/> </a>
 
-                        <!-- <span class='helpLink'> <p>Bοήθεια</p></span> -->
+                        <!-- <span class=\"helpLink\"> <p>Bοήθεια</p></span> -->
                     </div>  <!-- cart ends -->
 
-                    <img src='./images/rightBg.png' class='rightBg' alt=''/>
+                    <img src=\"./images/rightBg.png\" class=\"rightBg\" alt=\"\"/>
                 </div>
             </div>  <!-- standartFileds ends -->
         ";    
@@ -107,7 +107,7 @@ class HeadProducer {
 		$rightElement = '';
 		
 		if ($isRightElement)
-			$rightElement = "class='rightElement'";
+			$rightElement = "class=\"rightElement\"";
 		
         if ($activePage == $pageURL)
             $class = "class='actual'";
@@ -119,9 +119,9 @@ class HeadProducer {
     
     public function ProduceHeaderMenu ($activePage){              
         echo "
-            <div id='headerMenuStyle'>    <!-- headerMenuStyle -->
-                <a href='#crumb' class='skipButton'>Μετάβαση στους συνδέσμους πλοήγησης</a>
-                <ul class='headerMenu'>   ";    
+            <div id=\"headerMenuStyle\">    <!-- headerMenuStyle -->
+                <a href=\"#crumb\" class=\"skipButton\">Μετάβαση στους συνδέσμους πλοήγησης</a>
+                <ul class=\"headerMenu\">   ";    
                     $this->IsActivePage ($activePage, 'index.php', 'Αρχική σελίδα');
                     $this->IsActivePage ($activePage, '#', 'Ο λογαριασμός μου');
                     $this->IsActivePage ($activePage, '#', 'Εγγραφή');
