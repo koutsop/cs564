@@ -50,3 +50,25 @@ input.image
 	padding-left: 2%;
 	padding-top: 2%; 
 }
+
+
+.shoppingCartButtons
+{
+	float: right;
+}
+
+img
+{
+	border: 0px;
+}
+
+.leftdv
+{
+float:left;
+margin-right: 10px;
+}
+
+.rightdv
+{
+float:right;
+}
