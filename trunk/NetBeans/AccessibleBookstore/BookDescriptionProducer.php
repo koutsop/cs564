@@ -14,19 +14,40 @@ class BookDescriptionProducer{
 	
 	//------------------------------------------------------------
 	//otan 8a exoume mono to eikonidio kai tis genikes plirofories
-	public function ProduceBook ($url, $title, $img, $publisher, $publisherURL, $author, $price, $language) {
+	public function ProduceSortBookDiscription (
+						$url, 
+						$title, 
+						$img, 
+						$publisher, 
+						$publisherURL, 
+						$author, 
+						$price, 
+						$language
+		) {
 		echo "
 		   <div class=\"box\">
 				<div class=\"boxContents\">
-					<div class=\"frame\">
+					<div class=\"bookFrame\">
 						<div class=\"imgBookContainer\">
 							<span lang=\"$language\">
 							<a href=\"$url\" title=\"$title\"><img src=\"images/books/$img\" alt=\"\"/></a>
 							</span>
 						</div>
-		";
-		$this->ProduceText($url, $title, $publisher, $publisherURL, $author, $price, $language, 'text');
-		echo "		
+						<div class=\"sortDescription\">
+							<div class=\"bookTitle\">
+								<a href=\"$url\"><strong>$title</strong></a>
+							</div>
+							<div class=\"clear\"></div>
+							<div class=\"publisher\">
+								<strong>Εκδόσεις</strong>: 
+								<a href=\"$publisherURL\"><span lang=\"$language\">$publisher</span></a>
+							</div>
+							<div class=\"clear\"></div>
+							<strong>Συγγραφέας</strong>: <span lang=\"$language\">$author</span>
+							<div class=\"clear\"></div>
+							<spane class=\".floatLeft\"><strong>Τιμή</strong>: </span>
+							<span class=\"price\">€ $price</span>							
+						</div>						
 						<div class=\"imgCartContainer\">
 								<a  href=\"#\" title=\"Προσθήκη στο καλάθι\"><img src=\"images/cart.gif\" alt=\"\"/></a>
 						</div>
@@ -35,13 +56,7 @@ class BookDescriptionProducer{
 			</div>		
 		";
 	}
-	
-	//------------------------------------------------------------
-	//edw 8a exoume ola plirofories kritikes kai ta lipa.
-	public function ProduceDetailedBookDiscription () {
-	
-	}
-	
+
 	//------------------------------------------------------------
 	// otan 8a exoume kai ligo keimeno
 	public function ProduceLongBookDiscription (
@@ -53,50 +68,57 @@ class BookDescriptionProducer{
 						$author, 
 						$price, 
 						$language, 
-						$paragraph
+						$discription
 		) {
 		echo "
 		   <div class=\"box\">
 				<div class=\"boxContents\">
-					<div class=\"frame\">
-						<div class=\"imgBookContainer\">
-							<span lang=\"$language\">
-							<a href=\"$url\" title=\"$title\"><img src=\"images/books/$img\" alt=\"\"/></a>
-							</span>
+					<div class=\"bookFrame\">
+						<div class=\"bookContentTop\">
+							<div class=\"imgBookContainer\">
+								<span lang=\"$language\">
+								<a href=\"$url\" title=\"$title\"><img src=\"images/books/$img\" alt=\"\"/></a>
+								</span>
+							</div>
+							<div class=\"longDescription\">
+								<div class=\"bookTitle\">
+									<strong>Τίτλος</strong>:
+									<a href=\"$url\"><strong>$title</strong></a>
+								</div>
+								<div class=\"clear\"></div>
+								<div class=\"publisher\">
+									<strong>Εκδόσεις</strong>: 
+									<a href=\"$publisherURL\"><span lang=\"$language\">$publisher</span></a>
+								</div>
+								<div class=\"clear\"></div>
+								<strong>Συγγραφέας</strong>: <span lang=\"$language\">$author</span>
+								<div class=\"clear\"></div>
+								<spane class=\".floatLeft\"><strong>Τιμή</strong>: </span>
+								<span class=\"price\">€ $price</span>							
+							</div>						
 						</div>
-		";
-		$this->ProduceText($url, $title, $publisher, $publisherURL, $author, $price, $language, 'textLong');
-		echo "		
-						<div class=\"paragraph\"><p>$paragraph</p></div>
+						<div class=\"clear\"></div>
+						<div class=\"bookContentBottom\">
+							<p>$discription</p>
+						</div>				
 						<div class=\"imgCartContainer\">
 								<a  href=\"#\" title=\"Προσθήκη στο καλάθι\"><img src=\"images/cart.gif\" alt=\"\"/></a>
 						</div>
 						
-					</div>
-				</div>
-			</div>		
+					</div>	<!-- bookFrame ends -->
+				</div>		<!-- boxContent ends -->
+			</div>			<!-- box ends -->	
 		";
 	}	
+
+
 	
 	//------------------------------------------------------------
+	//edw 8a exoume ola plirofories kritikes kai ta lipa.
+	public function ProduceDetailedBookDiscription () {
 	
-	public function ProduceText ($url, $title, $publisher, $publisherURL, $author, $price, $language, $class){
-		echo "
-						<div class=\"$class\">
-							<a class=\"booLink\" href=\"$url\"><strong>$title</strong></a>
-							<div class=\"clear\"></div>
-							<div class=\"publisher\">
-								<strong>Εκδόσεις</strong>: 
-								<a href=\"$publisherURL\"><span lang=\"$language\">$publisher</span></a>
-							</div>
-							<div class=\"clear\"></div>
-							<strong>Συγγραφέας</strong>: <span lang=\"$language\">$author</span>
-							<div class=\"clear\"></div>
-							<spane class=\".floatLeft\"><strong>Τιμή</strong>: </span>
-							<span class=\"price\">€ $price</span>							
-						</div>			
-		";
-	}
+	}	
+
 
 }
 

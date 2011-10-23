@@ -9,7 +9,7 @@
 		
 		require_once 'BookDescriptionProducer.php';
 		$producer = new BookDescriptionProducer();
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'O ΛΕΥΚΟΣ ΤΟΙΧΟΣ', 
 			'o_leukos_toixos.jpg', 
@@ -20,7 +20,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'ΤΟ ΤΑΞΙΔΙ ΤΗΣ ΦΩΤΙΑΣ', 
 			'to_ta3idi_ths_fwtias.jpg', 
@@ -31,7 +31,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'Η ΦΟΝΙΣΣΑ', 
 			'h_fonissa.jpg', 
@@ -42,7 +42,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'Καβάφης - Απαντα', 
 			'kabafhs-apanta.jpg', 
@@ -55,7 +55,7 @@
 		
 		echo "<div class=\"clear\"></div>";
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'DUNE', 
 			'dune.jpg', 
@@ -66,7 +66,7 @@
 			'EN-US'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'ΟΣΟΙ ΖΩΝΤΑΝΟΙ', 
 			'osoi_zvntanoi.jpg', 
@@ -77,7 +77,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'Βαβυλωνία', 
 			'babulwnia.jpg', 
@@ -88,7 +88,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'Γυναικοκρατία', 
 			'gunaikokratia.jpg', 

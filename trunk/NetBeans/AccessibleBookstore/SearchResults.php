@@ -54,27 +54,29 @@
 		<div class="centerContentCell">   <!-- centerContent -->
         <div class="centerContent">   <!-- centerContent -->
         <a name="content"></a>
-			<?php
-				/*require_once 'Utility.php';
-				require_once 'Proposal.php';
-				require_once 'TopSalling.php';
-				require_once 'LatestAdditions.php';
-				require_once 'ForeignLanguageBooks.php';
-				LatestAdditions();
-				Clear();
-				TopSalling();
-				Clear();
-				Proposal();
-				Clear();
-				ForeignLanguageBooks();*/
-			?>
+			
+			
 			<div class="post">	<!-- post -->
 				<h1><span class="text">ΑΠΟΤΕΛΕΣΜΑΤΑ ΑΝΑΖΗΤΗΣΗΣ: (X αποτελέσματα)</span></h1>
 				<div class="postContent"> <!-- postContent -->
+				
+					
+					<div class="searchResultsContent">
+						
+					</div>
+					<div class="clear"></div>
+					<div class="searchResultsPages">
+						
+					</div>
+					<div class="clear"></div>
+					<div class="searchResultsGotoTop">
+						
+					</div>
+
 					<?php
 						require_once 'BookDescriptionProducer.php';
 						$producer = new BookDescriptionProducer();
-						$producer->ProduceLongBook(
+						$producer->ProduceLongBookDiscription(
 							'#', 
 							'PASSION', 
 							'passion.jpg', 
@@ -86,6 +88,9 @@
 							'Δεν υπάρχουν κριτικές αναγνωστών για αυτό το προϊόν. Μπορείτε να γράψετε εσείς την πρώτη κριτική κάνοντας κλικ εδώ'
 						);
 					?>
+					
+					
+					
 				</div>			<!-- postContent ends -->
 			</div>				<!-- post ends -->
 			

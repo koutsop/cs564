@@ -9,7 +9,7 @@
 		
 		require_once 'BookDescriptionProducer.php';
 		$producer = new BookDescriptionProducer();
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'ΑΓΓΕΛΟΙ 2: ΤΟ ΜΑΡΤΥΡΙΟ', 
 			'aggeloi2.jpg', 
@@ -20,7 +20,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'ΤΟ ΤΑΞΙΔΙ ΤΗΣ ΦΩΤΙΑΣ', 
 			'to_ta3idi_ths_fwtias.jpg', 
@@ -31,7 +31,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'ΤΟ 3 ΚΑΙ ΤΟ 7', 
 			'to_3_kai_to_7.jpg', 
@@ -42,7 +42,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'Η ΠΕΡΙΠΤΩΣΗ ΦΙΝΚΛΕΡ', 
 			'h_periptvsh_finkler.jpg', 
@@ -55,7 +55,7 @@
 		
 		echo "<div class=\"clear\"></div>";
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'1453', 
 			'1453.jpg', 
@@ -66,7 +66,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'BLACK OUT', 
 			'black_out.jpg', 
@@ -77,7 +77,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'H ΛΥΣΣΑ', 
 			'h_lussa.jpg', 
@@ -88,7 +88,7 @@
 			'el'
 		);			
 		
-		$producer->ProduceBook(
+		$producer->ProduceSortBookDiscription(
 			'#', 
 			'ΑΓΑΠΩ ΘΑ ΠΕΙ ΧΑΝΟΜΑΙ', 
 			'agapw_8a_pei_xanomai.jpg', 
