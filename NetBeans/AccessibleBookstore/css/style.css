@@ -378,6 +378,11 @@ content
 	padding: 0;	
 	border: 0;
 }
+/*
+.post .postContent .box .boxContents .bookFrame .imgBookContainer a.rollover:hover > img {
+	width: 150px;
+    height: 240px;
+}*/
 
 .post .postContent .box .boxContents .bookFrame .imgCartContainer {
 	width: 16px;
