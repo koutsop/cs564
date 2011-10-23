@@ -100,10 +100,12 @@ function ForeignLanguageBooks () {
 	);	
 	
 	echo "			
-                </div>
+                </div>	<!-- postContent ends -->
+			<div class=\"clear\"></div>
+			<div class=\"gotoTop\"><a href=\"#top\">Πήγαινε στην κορυφή</a></div>				
             <div class=\"clear\"></div>
             <div class=\"postFooter\"></div>
-        </div>	
+		</div>	<!-- post ends-->
 	";
 }
 ?>

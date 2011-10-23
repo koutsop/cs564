@@ -5,7 +5,7 @@
     <meta http-equiv ="Content-Language" content="el" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <title>Αccessible-Βookstore: Αποτελέσματα Αναζήτησης Σελίδα 1 απο 5</title>
+    <title>Αccessible-Βookstore: Αποτελέσματα Αναζήτησης  Σελίδα 2 απο 5</title>
 
     <script type="text/JavaScript">
     <!--
@@ -59,6 +59,8 @@
 			<div class="post">	<!-- post -->
 				<h1><span class="text">ΑΠΟΤΕΛΕΣΜΑΤΑ ΑΝΑΖΗΤΗΣΗΣ: (X αποτελέσματα)</span></h1>
 				<div class="postContent"> <!-- postContent -->
+				
+					
 					<div class="searchResultsContent">				
 						<?php
 							require_once 'Utility.php';
@@ -153,14 +155,15 @@
 					<div class="clear"></div>
 					<div class="searchResultsPages">
 						<strong>Σελίδες: &nbsp;</strong>
-						<a href="SearchResults.php"><strong>1</strong></a>&nbsp;
-						<a href="SearchResults2.php">2</a>&nbsp;
+						<a href="SearchResults.php">1</a>&nbsp;
+						<a href="SearchResults2.php"><strong>2</strong></a>&nbsp;
 						<a href="SearchResults3.php">3</a>&nbsp;
 						<a href="#">4</a>&nbsp;
 						<a href="#">5</a>
 						<br/>
-						Σελίδα 1 απο 5&nbsp;&nbsp;&nbsp;
-						<a href="SearchResults2.php">&lt;Επόμενη Σελιδα&gt;</a>
+						<a href="SearchResults.php">&lt;Προηγούμενη Σελίδα&gt;</a>
+						&nbsp;&nbsp;&nbsp;Σελίδα 2 απο 5&nbsp;&nbsp;&nbsp;
+						<a href="SearchResults3.php">&lt;Επόμενη Σελιδα&gt;</a>
 					</div>
 					<div class="clear"></div>
 				</div>			<!-- postContent ends -->
