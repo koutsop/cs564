@@ -9,7 +9,7 @@ function ForeignLanguageBooks () {
 	
 	require_once 'BookDescriptionProducer.php';
 	$producer = new BookDescriptionProducer();
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'PASSION', 
 		'passion.jpg', 
@@ -20,7 +20,7 @@ function ForeignLanguageBooks () {
 		'EN-US'
 	);	
 	
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'THE THREAD', 
 		'the_thread.jpg', 
@@ -31,7 +31,7 @@ function ForeignLanguageBooks () {
 		'EN-US'
 	);		
 	
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'HEADHUNTERS', 
 		'headhunters.jpg', 
@@ -42,7 +42,7 @@ function ForeignLanguageBooks () {
 		'EN-US'
 	);		
 	
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'THE LEOPARD', 
 		'the_leopard.jpg', 
@@ -55,7 +55,7 @@ function ForeignLanguageBooks () {
 	
 	echo "<div class=\"clear\"></div>";
 	
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'ABSOLUTE C++', 
 		'absolute_C++.jpg', 
@@ -66,7 +66,7 @@ function ForeignLanguageBooks () {
 		'EN-US'
 	);		
 	
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'AFTERWARDS', 
 		'afterwards.jpg', 
@@ -77,7 +77,7 @@ function ForeignLanguageBooks () {
 		'EN-US'
 	);	
 	
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'FALL OF GIANTS', 
 		'fall_of_giants.jpg', 
@@ -88,7 +88,7 @@ function ForeignLanguageBooks () {
 		'EN-US'
 	);		
 	
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'Objective-C', 
 		'objective-C.jpg', 

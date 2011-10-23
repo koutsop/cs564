@@ -8,7 +8,7 @@ function LatestAdditions (){
 	";
 	require_once 'BookDescriptionProducer.php';
 	$producer = new BookDescriptionProducer();
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 
 		'matwmena_ixnh.jpg', 
@@ -19,7 +19,7 @@ function LatestAdditions (){
 		'el'
 	);
 
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'ΤΟ ΘΑΥΜΑ ΤΗΣ ΡΟΔΟΥ', 
 		'to_8auma_ths_rodou.jpg', 
@@ -30,7 +30,7 @@ function LatestAdditions (){
 		'el'
 	);
 
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'ΦΕΥΓΩ', 
 		'feugw.jpg', 
@@ -41,7 +41,7 @@ function LatestAdditions (){
 		'el'
 	);
 
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'ΧΩΡΙΣ ΧΕΙΡΟΚΡΟΤΗΜΑ', 
 		'xwris_xeirokrothma.jpg', 
@@ -54,7 +54,7 @@ function LatestAdditions (){
 	
 	echo "<div class=\"clear\"></div>";
 	
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'ΚΟΜΜΕΝΑ ΛΟΥΛΟΥΔΙΑ', 
 		'kommena_louloudia.jpg', 
@@ -65,7 +65,7 @@ function LatestAdditions (){
 		'el'
 	);
 
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'ΑΜΝΗΣΙΑ', 
 		'amnhsia.jpg', 
@@ -76,7 +76,7 @@ function LatestAdditions (){
 		'el'
 	);
 
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'ΠΟΣΟ ΚΟΣΤΙΖΕΙ Η ΒΡΟΧΗ;', 
 		'poso_kostizei_h_broxh.jpg', 
@@ -87,7 +87,7 @@ function LatestAdditions (){
 		'el'
 	);
 
-	$producer->ProduceBook(
+	$producer->ProduceSortBookDiscription(
 		'#', 
 		'ΤΟ ΦΘΙΝΟΠΩΡΟ ΤΗΣ ΜΑΓΙΣΣΑΣ', 
 		'to_f8inopwro_ths_magissas.jpg', 
