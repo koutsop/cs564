@@ -298,6 +298,19 @@ content
 	padding-right: 20px;
 }
 
+.centerContent .bannerContauner {
+	float: left;
+	width: 93%;
+	height: 24.9%;
+	margin-bottom: 40px;
+}
+.centerContent .bannerContauner img {
+	float: left;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
 .post {
 	float: left;
 	text-align: left;
@@ -420,7 +433,7 @@ content
 	border: 0;
 }
 
-.post .postContent .box .boxContents .bookFrame .imgBookContainer:hover {
+.post .postContent .box .boxContents .bookFrame .bookContentTop .imgBookContainer:hover {
 	width: 240px; height: 360px;
 }
 
