@@ -39,6 +39,8 @@
                 <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
 				<li class= "crumb">></li>
                 <li class= "crumb"><a href="SearchResults.php" class="crumb">Αποτελέσματα Αναζήτησης</a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="SearchResults3.php" class="crumb">Αποτελέσματα Αναζήτησης (Σελίδα 3)</a></li>                
             </ul>         
         </div>  <!-- crumbContainer -->
 
@@ -47,7 +49,7 @@
 		<?php
 			require_once 'CategoryMenuProducer.php';
 			$producer = new CategoryMenuProducer();
-			$producer->ProduceCategoryMenu("index.php");
+			$producer->ProduceCategoryMenu("");
 		?>
         
 

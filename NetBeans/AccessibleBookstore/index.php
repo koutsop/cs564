@@ -45,7 +45,7 @@
 		<?php
 			require_once 'CategoryMenuProducer.php';
 			$producer = new CategoryMenuProducer();
-			$producer->ProduceCategoryMenu("index.php");
+			$producer->ProduceCategoryMenu("");
 		?>
         
 
