@@ -46,7 +46,7 @@ class CategoryMenuProducer {
 	
 	public function ProduceMenu($selectedCategory) {
 		echo "<ul class=\"categoryMenu\">";
-				$this->ProduceCategory($selectedCategory, "index.php", "Όλα τα βιβλία");	
+				$this->ProduceCategory($selectedCategory, "#", "Όλα τα βιβλία");	
 				$this->ProduceCategory($selectedCategory, "#", "Μυθιστόρημα");	
 				$this->ProduceCategory($selectedCategory, "Literature.php", "Λογοτεχνία");
 				/*$this->ProduceCategory($selectedCategory, "#", "Κλασσική Λογοτεχνία");*/
