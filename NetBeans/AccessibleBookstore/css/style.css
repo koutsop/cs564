@@ -412,6 +412,12 @@ content
 	float: left;
 	margin: 10px 21px 40px 0;
 }
+
+
+.details, .summary, .review {
+    float: left;
+    display: block;
+}
 /*
 .bookContentTop .bookContent1, 
 .bookContentTop .bookContent2 {
