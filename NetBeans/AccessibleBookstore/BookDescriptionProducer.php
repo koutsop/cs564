@@ -85,8 +85,10 @@ class BookDescriptionProducer{
 						<div class=\"$class\">
 							<a class=\"booLink\" href=\"$url\"><strong>$title</strong></a>
 							<div class=\"clear\"></div>
-							<spane class=\".floatLeft\"><strong>Εκδόσεις</strong>: </span>
-							<a class=\"publisher\" href=\"$publisherURL\"><span lang=\"$language\">$publisher</span></a>
+							<div class=\"publisher\">
+								<strong>Εκδόσεις</strong>: 
+								<a href=\"$publisherURL\"><span lang=\"$language\">$publisher</span></a>
+							</div>
 							<div class=\"clear\"></div>
 							<strong>Συγγραφέας</strong>: <span lang=\"$language\">$author</span>
 							<div class=\"clear\"></div>
