@@ -6,8 +6,8 @@ function LatestAdditions (){
             <h1><span class=\"text\">Τελευταίες Προσθήκες</span></h1>
                 <div class=\"postContent\">
 	";
-	require_once 'BookProducer.php';
-	$producer = new BookProducer();
+	require_once 'BookDescriptionProducer.php';
+	$producer = new BookDescriptionProducer();
 	$producer->ProduceBook(
 		'#', 
 		'ΜΑΤΩΜΕΝΑ ΙΧΝΗ', 

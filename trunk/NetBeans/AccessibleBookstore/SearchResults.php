@@ -72,8 +72,8 @@
 				<h1><span class="text">ΑΠΟΤΕΛΕΣΜΑΤΑ ΑΝΑΖΗΤΗΣΗΣ: (X αποτελέσματα)</span></h1>
 				<div class="postContent"> <!-- postContent -->
 					<?php
-						require_once 'BookProducer.php';
-						$producer = new BookProducer();
+						require_once 'BookDescriptionProducer.php';
+						$producer = new BookDescriptionProducer();
 						$producer->ProduceLongBook(
 							'#', 
 							'PASSION', 
