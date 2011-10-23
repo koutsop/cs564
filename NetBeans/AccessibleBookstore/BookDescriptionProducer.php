@@ -45,7 +45,7 @@ class BookDescriptionProducer{
 							<div class=\"clear\"></div>
 							<strong>Συγγραφέας</strong>: <span lang=\"$language\">$author</span>
 							<div class=\"clear\"></div>
-							<spane class=\".floatLeft\"><strong>Τιμή</strong>: </span>
+							<span class=\"floatLeft\"><strong>Τιμή</strong>: </span>
 							<span class=\"price\">€ $price</span>							
 						</div>						
 						<div class=\"imgCartContainer\">
@@ -93,7 +93,7 @@ class BookDescriptionProducer{
 								<div class=\"clear\"></div>
 								<strong>Συγγραφέας</strong>: <span lang=\"$language\">$author</span>
 								<div class=\"clear\"></div>
-								<spane class=\".floatLeft\"><strong>Τιμή</strong>: </span>
+								<span class=\"floatLeft\"><strong>Τιμή</strong>: </span>
 								<span class=\"price\">€ $price</span>							
 							</div>						
 						</div>
