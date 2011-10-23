@@ -65,19 +65,73 @@
 					
 					<div class="searchResultsContent">				
 						<?php
+
 							require_once 'Utility.php';
 							require_once 'BookDescriptionProducer.php';
 							$producer = new BookDescriptionProducer();
 							$producer->ProduceLongBookDiscription(
 								'#', 
-								'PASSION', 
-								'passion.jpg', 
-								'ADA Editors', 
+								'THE THREAD', 
+								'the_thread.jpg', 
+								'Headline', 
 								'#', 
-								'LAUREN KATE', 
-								'12,90',
+								'VICTORIA HISLOP', 
+								'14,90',
 								'EN-US',
-								'Δεν υπάρχουν κριτικές αναγνωστών για αυτό το προϊόν. Μπορείτε να γράψετε εσείς την πρώτη κριτική κάνοντας κλικ εδώ'
+                                'Μετά την απίστευτη εκδοτική και τηλεοπτική επιτυχία με «Το Νησί»...'
+							);
+							Clear();
+							
+							
+							
+							$producer->ProduceLongBookDiscription(
+ 								'#', 
+								'Η επίσημη βιογραφία του Steve Jobs', 
+								'steve-jobs-book.jpg', 
+								'ΨΥΧΟΓΙΟΣ', 
+								'#', 
+								'Isaacson Walter', 
+								'30,99',
+								'EN-US',
+                                'Η επίσημη βιογραφία του Steve Jobs, βασισμένη σε περισσότερες από σαράντα συνεντεύξεις που έδωσε ο ίδιος καθώς και ένα μικρό πλήθος από ανθρώπους..'
+							
+							);
+							Clear();
+							$producer->ProduceLongBookDiscription(
+								'#', 
+								'HEADHUNTERS', 
+								'headhunters.jpg', 
+								'Harvill Secker', 
+								'#', 
+								'NESBO JO', 
+								'13,95',
+								'EN-US',
+                                'Ο υποψήφιος ήταν τρομοκρατιμένος.Φορούσε ένα γκρι κοστούμι...'
+							);
+							
+							Clear();
+							$producer->ProduceLongBookDiscription(
+								 '#', 
+								 'Aleph', 
+								 'aleph.jpg', 
+								 'Alfred A. Knopf', 
+								 '#', 
+								 'Paolo Coelho', 
+								 '20,64',
+								 'EN-US',
+                                 'Μετέτρεψε τη ζωή σου. Ξαναγράψε το πεπρωμένο σου.Μερικά βιβλία τα διαβάζεις.Το Άλεφ το ζείς.'
+							);
+							Clear();
+							$producer->ProduceLongBookDiscription(
+								'#', 
+								'THE LEOPARD', 
+								'the_leopard.jpg', 
+								'Random House Canada', 
+								'#', 
+								'NESBO JO', 
+								'8,90',
+								'EN-US',
+                                'Ο Χάρυ Χολ επιστρέφει, και αυτή τη φορά από πολύ πολύ μακρυά'
 							);
 							Clear();
 							$producer->ProduceLongBookDiscription(
@@ -89,70 +143,25 @@
 								'LAUREN KATE', 
 								'12,90',
 								'EN-US',
-								'Δεν υπάρχουν κριτικές αναγνωστών για αυτό το προϊόν. Μπορείτε να γράψετε εσείς την πρώτη κριτική κάνοντας κλικ εδώ'
+								'Υπάρχει κάτι μυστηριώδες και ταυτόχρονα οικείο σχετικά με τον Ντάνιελ..'
 							);
 							Clear();
+						
 							$producer->ProduceLongBookDiscription(
 								'#', 
-								'PASSION', 
-								'passion.jpg', 
-								'ADA Editors', 
+								'FALL OF GIANTS', 
+								'fall_of_giants.jpg', 
+								'Dutton Adult', 
 								'#', 
-								'LAUREN KATE', 
-								'12,90',
+								'FOLLETT KEN', 
+								'8,90',
 								'EN-US',
-								'Δεν υπάρχουν κριτικές αναγνωστών για αυτό το προϊόν. Μπορείτε να γράψετε εσείς την πρώτη κριτική κάνοντας κλικ εδώ'
+                                'Ένα εκπληκτικό μυθιστόρημα που ακολουθεί πέντε οικογένειες μέσα από το δράμα που βίωσαν τον Α΄ Παγκόσμιο πόλεμο.'
 							);
 							Clear();
-							$producer->ProduceLongBookDiscription(
-								'#', 
-								'PASSION', 
-								'passion.jpg', 
-								'ADA Editors', 
-								'#', 
-								'LAUREN KATE', 
-								'12,90',
-								'EN-US',
-								'Δεν υπάρχουν κριτικές αναγνωστών για αυτό το προϊόν. Μπορείτε να γράψετε εσείς την πρώτη κριτική κάνοντας κλικ εδώ'
-							);
-							Clear();
-							$producer->ProduceLongBookDiscription(
-								'#', 
-								'PASSION', 
-								'passion.jpg', 
-								'ADA Editors', 
-								'#', 
-								'LAUREN KATE', 
-								'12,90',
-								'EN-US',
-								'Δεν υπάρχουν κριτικές αναγνωστών για αυτό το προϊόν. Μπορείτε να γράψετε εσείς την πρώτη κριτική κάνοντας κλικ εδώ'
-							);
-							Clear();
-							$producer->ProduceLongBookDiscription(
-								'#', 
-								'PASSION', 
-								'passion.jpg', 
-								'ADA Editors', 
-								'#', 
-								'LAUREN KATE', 
-								'12,90',
-								'EN-US',
-								'Δεν υπάρχουν κριτικές αναγνωστών για αυτό το προϊόν. Μπορείτε να γράψετε εσείς την πρώτη κριτική κάνοντας κλικ εδώ'
-							);
-							Clear();
-							$producer->ProduceLongBookDiscription(
-								'#', 
-								'PASSION', 
-								'passion.jpg', 
-								'ADA Editors', 
-								'#', 
-								'LAUREN KATE', 
-								'12,90',
-								'EN-US',
-								'Δεν υπάρχουν κριτικές αναγνωστών για αυτό το προϊόν. Μπορείτε να γράψετε εσείς την πρώτη κριτική κάνοντας κλικ εδώ'
-							);
-
-						?>						
+							
+							
+						?>		
 					</div>
 					<div class="clear"></div>
 					<div class="resultPages">

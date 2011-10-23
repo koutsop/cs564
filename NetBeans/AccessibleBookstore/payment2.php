@@ -75,7 +75,7 @@
         <div class="post">
             <h1><span class="text">Διαδικασία Πληρωμής</span></h1>
                 <div class="postContent">
-				<form action="#"> <!-- address form -->
+				<form action="payment_success.php"> <!-- address form -->
 				 <div class="box">
                         <div class="boxContents">
 						<fieldset style="border-color: #FF3333">
@@ -225,7 +225,7 @@
 								<th id="t"> Τίτλος </th> <th id="no">Τεμάχια </th> <th id="p"> Τιμή </th>
 								</tr>
 								<tr>
-								<td headers="t"><a href="#" title="Steve Jobs: Τα μυστικά"> Steve Jobs: Τα μυστικά </a></td> 
+								<td headers="t"><a href="#" title=" Η επίσημη βιογραφία του Steve Jobs ">  Η επίσημη βιογραφία του Steve Jobs </a></td> 
 								<td headers="no">1</td> 
 								<td headers="p"> 30.99 € </td> 
 								</tr>
