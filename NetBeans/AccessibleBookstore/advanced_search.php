@@ -64,8 +64,7 @@
            <div class="box">
                         <div class="boxContents">
 						<p><em> Επιλέξτε κριτήρια αναζήτησης:</em></p>
-						<p>
-                        <form action="SearchResults.php"> <!-- advanced search form -->
+                        <form action="SearchResults.php" method="get"> <!-- advanced search form -->
 								<p><label for="title">Τίτλος:</label></p>
 								<p><input id="title" type="text" name="textfield" /></p>
 								<p><label for="author">Συγγραφέας:</label></p>
@@ -105,7 +104,6 @@
 								</select></p>
 								<p class="submit"><input type="submit" value="Αναζήτηση" /></p>
 						</form>	<!-- advanced search form -->
-						</p>
                     </div>
 					</div>
                 </div>

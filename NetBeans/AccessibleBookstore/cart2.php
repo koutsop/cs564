@@ -65,11 +65,19 @@
 					<h1><span class="text"> Καλάθι αγορών</span></h1>
 						<div class="postContent">
 						
-						<p>Eλέγξτε τα προϊόντα σας και τις ποσότητες και προχωρήστε στην ολοκλήρωση της παραγγελίας</p>
-						<div id="topButtons">
-							<input class="image" name="buyNowBtn" type="image" src="images/buyNowButton.png" alt="Ολοκλήρωση Παραγγελίας" />
-							<input class="image" name="continueShoppingBtn" type="image" src="images/continueBtn.png" alt="Συνέχεια αγορών"/>
+						<p>Eλέγξτε τα προϊόντα σας και τις ποσότητες και προχωρήστε στην ολοκλήρωση της παραγγελίας</p><br></br>
+						<div class="shoppingCartButtons">
+							<!--  <input class="image" name="buyNowBtn" type="image" src="images/buyNowButton.png" alt="Ολοκλήρωση Παραγγελίας" /> -->
+							<!--  <input class="image" name="continueShoppingBtn" type="image" src="images/continueBtn.png" alt="Συνέχεια αγορών"/> -->
+							<div class="leftdv">
+							<a href="#"><img src="images/buyNowButton.png" alt="Ολοκλήρωση Παραγγελίας"/></a>
+							</div>
+							<!--  <div class="clear"></div> --> 
+							<div class="rightdv">
+							<a href="#"><img src="images/continueBtn.png" alt="Συνέχεια αγορών"/></a>
+							</div>
 						</div>
+						       <div class="clear"></div>
 							<div class="box">
 							<div> 
 								<fieldset>
@@ -82,18 +90,17 @@
 								<tr>
 									<!--TODO Otan bazoume img sthn xhtml prepei na bazoume to alt (estw kai keno) edw isos xriazetai perigrafh ?-->
 									
-								<td headers="b"><a href="#" title="Steve Jobs: Τα μυστικά"><img src="./images/books/steve-jobs-book.jpg" alt=""/></a></td> 
+								<td headers="b"><a href="#" title="Steve Jobs: Τα μυστικά"><img src="./images/books/steve-jobs-book.jpg" 
+								alt="Εξώφυλλο:Τα μυστικά παρουσιάσης του Steve Jobs. Πως να είστε καταπληκτικοί μπροστά από οποιοδήποτε κοινό."/></a></td> 
 								<td headers="t"><a href="#" title="Steve Jobs: Τα μυστικά"> Steve Jobs: Τα μυστικά </a></td> 
-								<!-- TODO: edw exoume to idio id me auto pou einai 10 grammes katw -->
-								<td headers="no"><input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
+								<td headers="no"><input id="itemsRow1" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
 								<td headers="p"> 30.99 € </td> 
 								<td headers="del"> <input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
 								</tr>
 								<tr>
-								<td headers="b"><a href="#" title="Aleph"><img src="./images/books/aleph.jpg" alt=""/></a></td> 
+								<td headers="b"><a href="#" title="Aleph"><img src="./images/books/aleph.jpg" alt="Εξώφυλλο:Μιά γυναίκα περπατάει στο σταθμό των τρένων."/></a></td> 
 								<td headers="t"><a href="#" title="Aleph"> Aleph</a></td> 
-								<!-- TODO: edw exoume to idio id me auto pou einai 10 grammes panw -->
-								<td headers="no"><input id="items" type="text" name="textfield" maxlength="3" size="3" value="2"/></td> 
+								<td headers="no"><input id="itemsRow2" type="text" name="textfield" maxlength="3" size="3" value="2"/></td> 
 								<td headers="p"> 20.64 € </td> 
 								<td headers="del"><input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
 								</tr>
@@ -103,16 +110,25 @@
 						 </div>
 						 <h2> Σύνολο: 51.63 €</h2>
 						 </div>
-
-						 <div id="bottomButtons">
+  <div class="clear"></div>
+						<!--   <div id="bottomButtons">
 						<input class="image" name="buyNowBtn" type="image" src="images/buyNowButton.png" alt="Ολοκλήρωση Παραγγελίας" />
 						<input class="image" name="continueShoppingBtn" type="image" src="images/continueBtn.png"  alt="Συνέχεια αγορών"/>
-					</div>
+					</div> -->
+					<div class="shoppingCartButtons">
+							<!--  <input class="image" name="buyNowBtn" type="image" src="images/buyNowButton.png" alt="Ολοκλήρωση Παραγγελίας" /> -->
+							<!--  <input class="image" name="continueShoppingBtn" type="image" src="images/continueBtn.png" alt="Συνέχεια αγορών"/> -->
+							<div class="leftdv">
+							<a href="#"><img src="images/buyNowButton.png" alt="Ολοκλήρωση Παραγγελίας"/></a>
+							</div>
+							<!--  <div class="clear"></div> --> 
+							<div class="rightdv">
+							<a href="#"><img src="images/continueBtn.png" alt="Συνέχεια αγορών"/></a>
+							</div>
+						</div>
 						</div>
 					<div class="clear"></div>
 					<div class="postFooter"></div>
-					
-					
 				</div>
 
 			<div class="clear"></div>
