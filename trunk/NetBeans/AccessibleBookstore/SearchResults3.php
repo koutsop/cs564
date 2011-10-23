@@ -25,7 +25,7 @@
     <?php 
         require_once 'HeadProducer.php';  
         $producer = new HeadProducer();
-        $producer->ProduceHeader("index.php");
+        $producer->ProduceHeader("");
     ?>
 
     <div class="clear"></div>
@@ -59,7 +59,7 @@
 			
 			
 			<div class="post">	<!-- post -->
-				<h1><span class="text">ΑΠΟΤΕΛΕΣΜΑΤΑ ΑΝΑΖΗΤΗΣΗΣ: (X αποτελέσματα)</span></h1>
+				<h1><span class="text">ΑΠΟΤΕΛΕΣΜΑΤΑ ΑΝΑΖΗΤΗΣΗΣ (3 απο 5)</span></h1>
 				<div class="postContent"> <!-- postContent -->
 				
 					
