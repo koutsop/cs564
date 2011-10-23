@@ -285,9 +285,13 @@ content
 
 /*---------------- centerContent -------------*/
 
+.centerContentCell {
+	float: left;
+	width: 84%;		
+}
+
 .centerContent {
 	float: left;
-	width: 79%;		/*Prosoxh an 8elisw na pira3w to mergin kai padding na ala3w pososto*/
 	margin-left: 10px;
 	margin-right: 10px;
 	padding-left: 20px;
@@ -348,12 +352,28 @@ content
 	display: block;
 	position: relative;
 }
+
+.post .postContent .box .boxContents .frame .paragraph {
+	float: left;
+	margin: 10px 0 10px 0px;
+	padding: 0;
+	display: block;
+}
+
 .post .postContent .box .boxContents .frame .text {
 	float: left;
 	margin: 0;
 	padding: 0 0 0 5px;
 	border: 0;	
-	width: 118px;
+	width: 120px;
+}
+
+.post .postContent .box .boxContents .frame .textLong {
+	float: left;
+	margin: 0;
+	padding: 0 0 0 10px;
+	border: 0;
+	height: 122px;
 }
 
 .post .postContent .box .boxContents .frame .text .booLink {
@@ -540,14 +560,15 @@ li.categoryMenuSelected {
                 util classes 
 ****************************************************/
 
-.clear{ clear: both; }
-.clearLeft{ clear: left; }
-.clearRight{ clear: right; }
+.clear		{ clear: both; }
+.clearLeft	{ clear: left; }
+.clearRight	{ clear: right; }
 
-span.clear{ clear: both; }
-span.clearLeft{ clear: left; }
-span.clearRight{ clear: right; }
+span .clear		{ clear: both; }
+span .clearLeft	{ clear: left; }
+span .clearRight{ clear: right; }
 
+span .floatLeft { float: left; }
 .skipButton { display: none; }
 
 .hiddenFieldset {
