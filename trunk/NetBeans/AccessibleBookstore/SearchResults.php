@@ -5,7 +5,7 @@
     <meta http-equiv ="Content-Language" content="el" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <title>Αccessible-Βookstore: Αρχική Σελίδα</title>
+    <title>Αccessible-Βookstore: Αποτελέσματα Αναζήτησης</title>
 
     <script type="text/JavaScript">
     <!--
@@ -36,7 +36,9 @@
             <a href="#" class="skipButton">Μετάβαση στο μενού κατηγορίες</a>
             <a name="crumb"></a>
             <ul class="crumb">
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
+                <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
+				<li class= "crumb">></li>
+                <li class= "crumb"><a href="SearchResults.php" class="crumb">Αποτελέσματα Αναζήτησης</a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 
@@ -49,28 +51,48 @@
 		?>
         
 
-		<div class="centerContentCell">		<!-- centerContent -->
-        <div class="centerContent">			<!-- centerContent -->
+		<div class="centerContentCell">   <!-- centerContent -->
+        <div class="centerContent">   <!-- centerContent -->
         <a name="content"></a>
 			<?php
-				require_once 'Utility.php';
+				/*require_once 'Utility.php';
+				require_once 'Proposal.php';
 				require_once 'TopSalling.php';
-				require_once 'Suggestions.php';
 				require_once 'LatestAdditions.php';
 				require_once 'ForeignLanguageBooks.php';
 				LatestAdditions();
 				Clear();
 				TopSalling();
 				Clear();
-				Suggestions();
+				Proposal();
 				Clear();
-				ForeignLanguageBooks();
+				ForeignLanguageBooks();*/
 			?>
+			<div class="post">	<!-- post -->
+				<h1><span class="text">ΑΠΟΤΕΛΕΣΜΑΤΑ ΑΝΑΖΗΤΗΣΗΣ: (X αποτελέσματα)</span></h1>
+				<div class="postContent"> <!-- postContent -->
+					<?php
+						require_once 'BookProducer.php';
+						$producer = new BookProducer();
+						$producer->ProduceLongBook(
+							'#', 
+							'PASSION', 
+							'passion.jpg', 
+							'ADA Editors', 
+							'#', 
+							'LAUREN KATE', 
+							'12,90',
+							'EN-US',
+							'Δεν υπάρχουν κριτικές αναγνωστών για αυτό το προϊόν. Μπορείτε να γράψετε εσείς την πρώτη κριτική κάνοντας κλικ εδώ'
+						);
+					?>
+				</div>			<!-- postContent ends -->
+			</div>				<!-- post ends -->
+			
 			<div class="clear"></div>
         </div>  <!-- centerContent ends -->
-		</div>	<!-- centerContentCell ends -->
-	</div>		<!-- mainContent ends -->
-	
+    </div>		<!-- mainContent ends -->
+	</div>		<!-- centerContentCell ends -->
 
 
     <div class="clear"></div>

@@ -13,6 +13,7 @@ class HeadProducer {
         $this->ProduceHeaderMenu($activePage);
         $this->ProduceHeaderEnd();
     } 
+	
     //------------------------------------------------------------
     
     public function ProduceHeaderBegin () 
