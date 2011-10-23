@@ -69,7 +69,7 @@ class HeadProducer {
                             </fieldset>
                         </form>
                         <!-- TODO: na balw to link gia thn anazhthsh -->
-                        <span class=\"compositeSearch\"><a href=\"#\">Σύνθετη Αναζήτηση</a></span>
+                        <span class=\"compositeSearch\"><a href=\"advanced_search.php\">Σύνθετη Αναζήτηση</a></span>
                     </div>  <!-- search ends -->
                     <img src=\"./images/rightBg.png\" class=\"rightBg\" alt=\"\"/>
                 </div>  <!-- search ends -->

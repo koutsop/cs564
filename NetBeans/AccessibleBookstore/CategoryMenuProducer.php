@@ -48,7 +48,8 @@ class CategoryMenuProducer {
 		echo "<ul class=\"categoryMenu\">";
 				$this->ProduceCategory($selectedCategory, "index.php", "Όλα τα βιβλία");	
 				$this->ProduceCategory($selectedCategory, "#", "Μυθιστόρημα");	
-				$this->ProduceCategory($selectedCategory, "#", "Κλασσική Λογοτεχνία");
+				$this->ProduceCategory($selectedCategory, "Literature.php", "Λογοτεχνία");
+				/*$this->ProduceCategory($selectedCategory, "#", "Κλασσική Λογοτεχνία");*/
 				$this->ProduceCategory($selectedCategory, "#", "Επιστ.Φαντασία");
 				$this->ProduceCategory($selectedCategory, "#", "Fantasy");
 				$this->ProduceCategory($selectedCategory, "#", "Ιστορία");
@@ -57,12 +58,11 @@ class CategoryMenuProducer {
 				$this->ProduceCategory($selectedCategory, "#", "Μυστικισμός");
 				$this->ProduceCategory($selectedCategory, "#", "Τεχνολογία");
 				$this->ProduceCategory($selectedCategory, "#", "Διάφορα");
-				$this->ProduceCategory($selectedCategory, "#", "Παιδική Λογοτεχνία");
+				/*$this->ProduceCategory($selectedCategory, "#", "Παιδική Λογοτεχνία");*/
 				$this->ProduceCategory($selectedCategory, "#", "Χιούμορ");
 				$this->ProduceCategory($selectedCategory, "#", "Εκπαίδευση");
 				$this->ProduceCategory($selectedCategory, "#", "Manga");
 		echo "</ul>";
-		
 	}
 }
 
