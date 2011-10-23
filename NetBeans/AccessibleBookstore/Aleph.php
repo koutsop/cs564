@@ -25,7 +25,7 @@
     <?php 
         require_once 'HeadProducer.php';  
         $producer = new HeadProducer();
-        $producer->ProduceHeader("");
+        $producer->ProduceHeader("", 1);
     ?>
 
     <div class="clear"></div>
@@ -128,7 +128,9 @@
                             <br/>
                             <p class="bookRating">
 								<em>Βαθμολογία:</em> <img src="images/stars400.png" alt="4 απο 5 αστέρια"/> 
-								<a  href="#" title="Προσθήκη στο καλάθι"><img src="images/cart.gif" alt=""/></a>
+								<a  href="cart2.php" title="Προσθήκη στο καλάθι"><img src="images/cart.gif" alt=""/></a>
+								<br/>
+								Για να βαθμολογήσετε το βιβλίο πατήστε τον σύνδεσμο βαθμολογία: <a href="">Bαθμολογία</a>
 							</p>
 							
                             <div class="clear"></div>

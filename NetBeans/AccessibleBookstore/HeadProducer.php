@@ -5,10 +5,10 @@
  * @author koutsop
  */
 class HeadProducer {
-    public function ProduceHeader ($activePage) {
+    public function ProduceHeader ($activePage, $numberOfCartItems = 0) {
         $this->ProduceHeaderBegin();
         $this->produceLogo();
-        $this->ProduceStandartFileds();
+        $this->ProduceStandartFileds($numberOfCartItems);
         $this->ProduceClear();
         $this->ProduceHeaderMenu($activePage);
         $this->ProduceHeaderEnd();
@@ -42,7 +42,7 @@ class HeadProducer {
     
     //------------------------------------------------------------
     
-    public function ProduceStandartFileds() {
+    public function ProduceStandartFileds($numberOfCartItems) {
         echo "
             <div id=\"standartFileds\">   <!-- standartFileds -->
                 <div class=\"searchStyle\"><!-- search -->
@@ -77,7 +77,7 @@ class HeadProducer {
                 <div class=\"shoppingCartStyle\">  <!-- shoppingCart -->
                     <img src=\"./images/leftBg.png\" class=\"leftBg\" alt=\"\"/>
                     <div class=\"shoppingCart\"><!-- cart -->
-                                        <p>(0 προϊόντα)</p>
+                                        <p>($numberOfCartItems προϊόντα)</p>
                         <!-- TODO Na bale to swsto link gia to pou 8a paei to kala8i-->
                         <a href=\"#\"><img src=\"./images/shoppingcart.png\" alt=\"Αγορά\"/></a>
 
