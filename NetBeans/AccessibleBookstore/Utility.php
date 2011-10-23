@@ -1,6 +1,6 @@
 <?php
 
 	function Clear()
-		{ echo "<div class=\"Clear\"></div>"; }
+		{ echo "<div class=\"clear\"></div>"; }
 	
 ?>

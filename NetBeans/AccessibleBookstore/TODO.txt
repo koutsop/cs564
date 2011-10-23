@@ -1,10 +1,10 @@
-﻿Ta oikondia tou fb, rss, ..., na ta kanw 30x30
+Na ele3w xrwmata, text stile, margin, padding gia:
+1) BookTitle
+2) publisher
+3) price
+4) gotoTop
+5) resultPages
 
-Tabindex????
-
-labels???
-
-alt kai title xriazontai kai ta 2?
 
 grammatooshra prepei na einai se em se % h' fix?
 
