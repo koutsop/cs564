@@ -6,11 +6,11 @@
  */
 
 /**
- * Description of BookProducer
+ * Description of BookDescriptionProducer
  *
  * @author koutsop
  */
-class BookProducer {
+class BookDescriptionProducer{
 	
 	//------------------------------------------------------------
 	//otan 8a exoume mono to eikonidio kai tis genikes plirofories
