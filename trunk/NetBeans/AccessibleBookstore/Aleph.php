@@ -123,7 +123,7 @@
                             <div class="bookContentTop">
                                 <div class="imgBookContainer">
                                     <span lang="EN-US">    
-                                        <img src="images/books/aleph.jpg" alt="Aleph" onmouseover='openWindow();' onmouseout='closeIt(this);'/>            
+                                        <img src="images/books/aleph.jpg" alt="Aleph"/>            
                                     </span>
                                 </div>
                             <div class="longDescription">
@@ -166,32 +166,85 @@
                             <hr />
                             <div class="summary">
                                
-                                <p><span lang="EN-US">
-                                        In his most personal novel to date, internationally best-selling author Paulo Coelho<br /> 
-                                         returns with a remarkable journey of self-discovery. Like the main character in his <br />
-                                         much-beloved The Alchemist, Paulo is facing a grave crisis of faith. As he seeks a <br />
-                                         path of spiritual renewal and growth, he decides to begin again: to travel, <br />
-                                         to experiment, to reconnect with people and the landscapes around him.<br />
-                                         <br />
-                                         Setting off to Africa, and then to Europe and Asia via the Trans-Siberian Railway, <br />
-                                         he initiates a journey to revitalize his energy and passion. Even so, he never <br />
-                                         expects to meet Hilal. A gifted young violinist, she is the woman Paulo loved <br />
-                                         five hundred years before—and the woman he betrayed in an act of cowardice so <br />
-                                         far-reaching that it prevents him from finding real happiness in this life. <br />
-                                         Together they will initiate a mystical voyage through time and space, <br />
-                                         traveling a path that teaches love, forgiveness, and the courage to overcome <br />
-                                         life’s inevitable challenges. Beautiful and inspiring, Aleph invites us to <br />
-                                         consider the meaning of our own personal journeys: Are we where we want to be, <br />
-                                         doing what we want to do?
-                                    </span>
+                                <p>
+                                <span lang="EN-US">
+                                    In his most personal novel to date, internationally best-selling author Paulo Coelho<br /> 
+                                     returns with a remarkable journey of self-discovery. Like the main character in his <br />
+                                     much-beloved The Alchemist, Paulo is facing a grave crisis of faith. As he seeks a <br />
+                                     path of spiritual renewal and growth, he decides to begin again: to travel, <br />
+                                     to experiment, to reconnect with people and the landscapes around him.<br />
+                                     <br />
+                                     Setting off to Africa, and then to Europe and Asia via the Trans-Siberian Railway, <br />
+                                     he initiates a journey to revitalize his energy and passion. Even so, he never <br />
+                                     expects to meet Hilal. A gifted young violinist, she is the woman Paulo loved <br />
+                                     five hundred years before—and the woman he betrayed in an act of cowardice so <br />
+                                     far-reaching that it prevents him from finding real happiness in this life. <br />
+                                     Together they will initiate a mystical voyage through time and space, <br />
+                                     traveling a path that teaches love, forgiveness, and the courage to overcome <br />
+                                     life’s inevitable challenges. Beautiful and inspiring, Aleph invites us to <br />
+                                     consider the meaning of our own personal journeys: Are we where we want to be, <br />
+                                     doing what we want to do?
+                                </span>
                                 </p>
                             </div>
                             <div class="clear"></div> 
                             
+                            
+                            
+                            
+                            
                             <h1>Κριτικές</h1>
                             <hr />
+                            <div class="review" style="float:left;">
+                                <div class="reviewLeft">
+                                    <p>
+                                        Χρήστης: <span lang="EN-US">foufoutos</span> <br />
+                                        18 Μαρτίου 2011
+                                    </p>
+                                </div>
+                                <div class="reviewRight" style="float:left;">
+                                    <p>
+                                     Tο βιβλίο ξεφεύγει από το συνηθισμένο οι ανατροπές στο σενάριο κόβουν την ανάσα, καθιστώντας τα διηγήματα του πολύ ξεχωριστά και ενδιαφέροντα 
+                                    </p>
+                                </div>
+                            </div>	
                             
-                            <div class="review"></div>				
+                            <div class="clear"></div> 
+                            
+                            <div class="review" style="float:left;">
+                                <div class="reviewLeft">
+                                    <p>
+                                        Χρήστης: <span lang="EN-US">foufoutos</span> <br />
+                                        18 Μαρτίου 2011
+                                    </p>
+                                </div>
+                                <div class="reviewRight" style="float:left;">
+                                    <p>
+                                     Υπέροχο βιβλίο, σε μεταφέρει σε άλλη εποχή
+
+                                    </p>
+                                </div>
+                            </div>	
+                            
+                            <div class="clear"></div> 
+                            
+                            <div class="review" style="float:left;">
+                                <div class="reviewLeft">
+                                    <p>
+                                        Χρήστης: <span lang="EN-US">foufoutos</span> <br />
+                                        18 Μαρτίου 2011
+                                    </p>
+                                </div>
+                                <div class="reviewRight" style="float:left;">
+                                    <p>
+                                     Ο συγγραφέας επέλεξε για καμβά μία φανταστική Αυτοκρατορία, δυσπροσδιόριστη χρονικά, αλλά σκιαγραφημένη με έντονα βυζαντινά χρώματα και με μέσο την προαιώνια σύγκρουση της με το Βασίλειο των Απίστων, ερεύνησε τα κίνητρα του ήρωα και την πάλη του ενάντια στο πεπρωμένο.
+                                    </p>
+                                </div>
+                            </div>	
+                            
+                            
+                            
+                            
                             
                             <div class="clear"></div> 
                             <div class="imgCartContainer">
