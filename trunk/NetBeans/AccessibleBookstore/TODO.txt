@@ -1,3 +1,9 @@
+lab 2 slide 40
+lab 2 slide 79
+
+Na ele3w to xrwma pou exoume pernoun ta input
+text fields (mesa apo to CSS ginetai auto)
+
 Na ele3w xrwmata, text stile, margin, padding gia:
 1) BookTitle
 2) publisher
@@ -5,6 +11,13 @@ Na ele3w xrwmata, text stile, margin, padding gia:
 4) gotoTop
 5) resultPages
 
+Na ftia3w ta active pages twn:
+1) Header
+2) Menu
+
+Sthn sun8eth anzhth:
+Kathgoria proionta na to ala3w kai na balw auta pou exoume emeis
+? Giati na mhn baloume legend sthn forma?
 
 grammatooshra prepei na einai se em se % h' fix?
 
