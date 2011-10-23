@@ -88,14 +88,18 @@
 								<th id="b"> Βιβλίο </th> <th id="t"> Τίτλος </th> <th id="no">Τεμάχια </th> <th id="p"> Τιμή </th> <th id="del"> Διαγραφή </th>
 								</tr>
 								<tr>
-									<!--TODO Otan bazoume img sthn xhtml prepei na bazoume to alt (estw kai keno) edw isos xriazetai perigrafh ?-->
-									
-								<td headers="b"><a href="#" title="Steve Jobs: Τα μυστικά"><img src="./images/books/steve-jobs-book.jpg" 
-								alt="Εξώφυλλο:Τα μυστικά παρουσιάσης του Steve Jobs. Πως να είστε καταπληκτικοί μπροστά από οποιοδήποτε κοινό."/></a></td> 
-								<td headers="t"><a href="#" title="Steve Jobs: Τα μυστικά"> Steve Jobs: Τα μυστικά </a></td> 
-								<td headers="no"><input id="itemsRow1" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
+								<td headers="b"><a href="#" title="Η επίσημη βιογραφία του Steve Jobs">
+								<img src="./images/books/steve-jobs-book.jpg" 
+								alt="Εξώφυλλο:Η επίσημη βιογραφία του Steve Jobs.Η ζωή του όπως αυτός περιγράφει."/>
+								</a></td> 
+								<td headers="t"><a href="#" title="Η επίσημη βιογραφία του Steve Jobs"> 
+								 Η επίσημη βιογραφία του Steve Jobs </a></td> 
+								<td headers="no"><input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
 								<td headers="p"> 30.99 € </td> 
-								<td headers="del"> <input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
+								<td headers="del"> 
+								<!--<input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/>  -->
+								<a href="#"><img  src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι."/></a>	
+								</td>
 								</tr>
 								<tr>
 								<td headers="b"><a href="#" title="Aleph"><img src="./images/books/aleph.jpg" alt="Εξώφυλλο:Μιά γυναίκα περπατάει στο σταθμό των τρένων."/></a></td> 
@@ -119,11 +123,11 @@
 							<!--  <input class="image" name="buyNowBtn" type="image" src="images/buyNowButton.png" alt="Ολοκλήρωση Παραγγελίας" /> -->
 							<!--  <input class="image" name="continueShoppingBtn" type="image" src="images/continueBtn.png" alt="Συνέχεια αγορών"/> -->
 							<div class="leftdv">
-							<a href="#"><img src="images/buyNowButton.png" alt="Ολοκλήρωση Παραγγελίας"/></a>
+							<a href="payment.php"><img src="images/buyNowButton.png" alt="Ολοκλήρωση Παραγγελίας"/></a>
 							</div>
 							<!--  <div class="clear"></div> --> 
 							<div class="rightdv">
-							<a href="#"><img src="images/continueBtn.png" alt="Συνέχεια αγορών"/></a>
+							<a href="index.php"><img src="images/continueBtn.png" alt="Συνέχεια αγορών"/></a>
 							</div>
 						</div>
 						</div>
