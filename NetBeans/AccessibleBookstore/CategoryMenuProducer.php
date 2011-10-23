@@ -36,9 +36,9 @@ class CategoryMenuProducer {
 	
 	private function ProduceCategory ($selectedCategory, $pageURL, $pageTitle) {
 		if ($selectedCategory == $pageURL)
-			echo "<li class=\"categoryMenuSelected\">$pageTitle</li>";
+			echo "<li class=\"categoryMenuSelected\">$pageTitle</li>\t\t\n";
 		else
-			echo "<li class=\"categoryMenu\"><a href=\"$pageURL\" class=\"categoryMenu\">$pageTitle</a></li>";
+			echo "<li class=\"categoryMenu\"><a href=\"$pageURL\" class=\"categoryMenu\">$pageTitle</a></li>\t\t\n";
 			
 	}
 	

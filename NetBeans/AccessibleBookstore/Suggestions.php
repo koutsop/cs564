@@ -1,6 +1,6 @@
 <?php
 
-	function Proposal (){
+	function Suggestions (){
 		echo "
 			<div class=\"post\">
 				<h1><span class=\"text\">Σας προτείνουμε</span></h1>
