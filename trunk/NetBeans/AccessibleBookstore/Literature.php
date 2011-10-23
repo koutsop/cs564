@@ -203,8 +203,8 @@
             </div>				<!-- post ends -->		
             <div class="clear"></div>
         </div>  <!-- centerContent ends -->
-    </div>		<!-- mainContent ends -->
-	</div>		<!-- centerContentCell ends -->
+     </div>		<!-- centerContentCell ends -->
+     </div>		<!-- mainContent ends -->
 
 
     <div class="clear"></div>

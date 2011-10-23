@@ -83,7 +83,7 @@ class BookDescriptionProducer{
 							<div class=\"longDescription\">
 								<div class=\"bookTitle\">
 									<strong>Τίτλος</strong>:
-									<a href=\"$url\"><strong>$title</strong></a>
+									<a href=\"$url\"><strong><span lang=\"$language\">$title</span></strong></a>
 								</div>
 								<div class=\"clear\"></div>
 								<div class=\"publisher\">
