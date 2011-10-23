@@ -14,26 +14,6 @@
 			    theText.value = "";
 	    }
     //-->
-    
-     function Big(me)
-        { me.height *= 2; }
-     
-     function Small(me)
-        { me.height /= 2; }
-
-
-        function openWindow(url, name) {
-            myWin = window.open("","nCt", "left=0,width=272,height=54,status=no, toolbar=no,menubar=no,scrollbars=no");
-            myWin.document.write("<head><title>Example</title></head>");
-            myWin.document.write ("<HTML><BODY>");
-            myWin.document.write ("</BODY></HTML>");
-            myWin.document.close()
-        }
-
-        function closeIt() {
-            if (!myWin.closed)
-            myWin.self.close()
-        }
     </script>
 </head>
 
