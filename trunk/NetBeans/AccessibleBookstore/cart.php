@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/shoppingcart.css" type="text/css" />
-    <title>Αccessible-Βookstore: Αρχική Σελίδα</title>
+    <title>Αccessible-Βookstore: Καλάθη Αγορών</title>
 
     <script type="text/JavaScript">
     <!--
@@ -26,7 +26,7 @@
     <?php 
         require_once 'HeadProducer.php';  
         $producer = new HeadProducer();
-        $producer->ProduceHeader("index.php");
+        $producer->ProduceHeader("", 1);
     ?>
 
     <div class="clear"></div>
@@ -37,13 +37,9 @@
             <a href="#" class="skipButton">Μετάβαση στο μενού κατηγορίες</a>
             <a name="crumb"></a>
             <ul class="crumb">
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
+                <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
                 <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
-                <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
-                <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
+                <li class= "crumb"><a href="cart.php" class="crumb">Καλάθη Αγορών</a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 

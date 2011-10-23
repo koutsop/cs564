@@ -102,7 +102,7 @@ class BookDescriptionProducer{
 							<p>$discription</p>
 						</div>				
 						<div class=\"imgCartContainer\">
-								<a  href=\"#\" title=\"Προσθήκη στο καλάθι\"><img src=\"images/cart.gif\" alt=\"\"/></a>
+								<a  href=\"cart.php\" title=\"Προσθήκη στο καλάθι\"><img src=\"images/cart.gif\" alt=\"\"/></a>
 						</div>
 						
 					</div>	<!-- bookFrame ends -->

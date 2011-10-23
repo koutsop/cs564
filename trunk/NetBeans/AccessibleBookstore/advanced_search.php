@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/forms.css" type="text/css" />
-    <title>Αccessible-Βookstore: Αρχική Σελίδα</title>
+    <title>Αccessible-Βookstore: Σύνθετη Αναζήτηση</title>
 
     <script type="text/JavaScript">
     <!--
@@ -36,13 +36,9 @@
             <a href="#" class="skipButton">Μετάβαση στο μενού κατηγορίες</a>
             <a name="crumb"></a>
             <ul class="crumb">
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
+                <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
                 <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
-                <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
-                <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
+                <li class= "crumb"><a href="advanced_search.php" class="crumb">Σύνθετη Αναζήτηση</a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 

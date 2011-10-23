@@ -25,7 +25,7 @@
     <?php 
         require_once 'HeadProducer.php';  
         $producer = new HeadProducer();
-        $producer->ProduceHeader("");
+        $producer->ProduceHeader("", 1);
     ?>
 
     <div class="clear"></div>

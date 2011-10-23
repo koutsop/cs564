@@ -36,7 +36,7 @@
     <?php 
         require_once 'HeadProducer.php';  
         $producer = new HeadProducer();
-        $producer->ProduceHeader("index.php");
+        $producer->ProduceHeader("", 2);
     ?>
 
     <div class="clear"></div>
@@ -47,13 +47,9 @@
             <a href="#" class="skipButton">Μετάβαση στο μενού κατηγορίες</a>
             <a name="crumb"></a>
             <ul class="crumb">
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
+                <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
                 <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
-                <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
-                <li class= "crumb">></li>
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
+                <li class= "crumb"><a href="payment2.php" class="crumb">Διαδικασία Πληρωμής</a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 

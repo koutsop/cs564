@@ -233,7 +233,6 @@ input#searchBook {
 }
 
 #headerMenuStyle ul.headerMenu li a:hover,
-#headerMenuStyle ul.headerMenu li a:focus,
 #headerMenuStyle ul.headerMenu li a:active,
 #headerMenuStyle ul.headerMenu li a.actual      { background:#c9c9c9;color:#fff }
 
