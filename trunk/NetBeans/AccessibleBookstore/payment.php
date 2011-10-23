@@ -57,8 +57,9 @@
 		?>
         
 
-        <div class="centerContent">   <!-- centerContent -->
-            <a name="content"></a>
+		<div class="centerContentCell">		<!-- centerContent -->
+        <div class="centerContent">			<!-- centerContent -->
+        <a name="content"></a>
             
 		<div id="wrapper">	
 		<div id="leftdv">
@@ -198,7 +199,7 @@
 							<div> 
 								<fieldset>
 								<table summary="Ο παρακάτω πίνακας περιγράφει τα προϊόντα που έχετε επιλέξει προς αγορά, και άλλα χαρακτηριστικά τους. 
-								Συγκεκριμένα τα χαρακτηριστικά που περιγράφονται είναι: Τίτλος, Τεμάχια, και Τιμή του κάθε προϊόντος.>
+								Συγκεκριμένα τα χαρακτηριστικά που περιγράφονται είναι: Τίτλος, Τεμάχια, και Τιμή του κάθε προϊόντος.">
 								<tr>
 								<th id="t"> Τίτλος </th> <th id="no">Τεμάχια </th> <th id="p"> Τιμή </th>
 								</tr>
@@ -226,8 +227,9 @@
         </div> <!-- wrapper ends-->
 
      		
-		  <div class="clear"></div>
+			<div class="clear"></div>
         </div>  <!-- centerContent ends -->
+		</div>	<!-- centerContentCell ends -->
     </div>  <!-- mainContent ends -->
 
 

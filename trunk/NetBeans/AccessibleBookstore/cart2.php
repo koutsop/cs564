@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="el"  lang="el">
 <head>
@@ -56,8 +56,9 @@
 		?>
         
 
-        <div class="centerContent">   <!-- centerContent -->
-            <a name="content"></a>
+		<div class="centerContentCell">		<!-- centerContent -->
+        <div class="centerContent">			<!-- centerContent -->
+        <a name="content"></a>
            
 
 				<div class="post">
@@ -74,20 +75,24 @@
 								<fieldset>
 								<table summary="Ο παρακάτω πίνακας περιγράφει τα προϊόντα που έχετε επιλέξει προς αγορά, και άλλα χαρακτηριστικά τους. 
 								Συγκεκριμένα τα χαρακτηριστικά που περιγράφονται είναι: Εξώφυλλο βιβλίου, Τίτλος, Τεμάχια, Τιμή, και επιλογή
-								διαγραφής του κάθε προϊόντος.> 
+								διαγραφής του κάθε προϊόντος." > 
 								<tr>
 								<th id="b"> Βιβλίο </th> <th id="t"> Τίτλος </th> <th id="no">Τεμάχια </th> <th id="p"> Τιμή </th> <th id="del"> Διαγραφή </th>
 								</tr>
 								<tr>
-								<td headers="b"><a href="#" title="Steve Jobs: Τα μυστικά"><img src="./images/books/steve-jobs-book.jpg"/></a></td> 
+									<!--TODO Otan bazoume img sthn xhtml prepei na bazoume to alt (estw kai keno) edw isos xriazetai perigrafh ?-->
+									
+								<td headers="b"><a href="#" title="Steve Jobs: Τα μυστικά"><img src="./images/books/steve-jobs-book.jpg" alt=""/></a></td> 
 								<td headers="t"><a href="#" title="Steve Jobs: Τα μυστικά"> Steve Jobs: Τα μυστικά </a></td> 
+								<!-- TODO: edw exoume to idio id me auto pou einai 10 grammes katw -->
 								<td headers="no"><input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
 								<td headers="p"> 30.99 € </td> 
 								<td headers="del"> <input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
 								</tr>
 								<tr>
-								<td headers="b"><a href="#" title="Aleph"><img src="./images/books/aleph.jpg"/></a></td> 
+								<td headers="b"><a href="#" title="Aleph"><img src="./images/books/aleph.jpg" alt=""/></a></td> 
 								<td headers="t"><a href="#" title="Aleph"> Aleph</a></td> 
+								<!-- TODO: edw exoume to idio id me auto pou einai 10 grammes panw -->
 								<td headers="no"><input id="items" type="text" name="textfield" maxlength="3" size="3" value="2"/></td> 
 								<td headers="p"> 20.64 € </td> 
 								<td headers="del"><input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
@@ -110,9 +115,11 @@
 					
 				</div>
 
-        <div class="clear"></div>
+			<div class="clear"></div>
         </div>  <!-- centerContent ends -->
-    </div>  <!-- mainContent ends -->
+		</div>	<!-- centerContentCell ends -->
+	</div>		<!-- mainContent ends -->
+
 
 
     <div class="clear"></div>
