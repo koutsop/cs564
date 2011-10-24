@@ -104,16 +104,15 @@ class HeadProducer {
     //------------------------------------------------------------
     
     private function IsActivePage ($activePage, $pageURL, $pageTitle, $isRightElement = false){
-        $class = "class='headerMenu'";
 		$rightElement = '';
 		
 		if ($isRightElement)
 			$rightElement = "rightElement";
 		
         if ($activePage == $pageURL)
-            $class = "class='headerMenuSelected'";
-		
-        echo "<li class=\"headerMenu $rightElement\"><a $class href='$pageURL'>$pageTitle</a></li>\n\t\t";
+            echo "<li class=\"headerMenuSelected $rightElement\">$pageTitle</li>\n\t\t";
+		else
+			echo "<li class=\"headerMenu $rightElement\"><a class=\"headerMenu\" href='$pageURL'>$pageTitle</a></li>\n\t\t";
     }
     
     //------------------------------------------------------------
