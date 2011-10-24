@@ -1,8 +1,9 @@
 body {
 	background: url(./../images/bg.jpg) no-repeat #fff center top;
 	padding: 0;
-	font-family: 'Trebuchet MS', Tahoma, sans-serif;
-	font-size: 11px;
+	/*font-family: 'Trebuchet MS', Tahoma, sans-serif;
+	font-size: 11px;*/
+	font: normal 79%/1.3em 'Trebuchet MS', Tahoma, sans-serif;
 	margin: 0px auto auto auto;
 	color: #616161;
 }
@@ -300,7 +301,7 @@ content
 .centerContent .bannerContauner {
 	float: left;
 	width: 93%;
-	height: 24.9%;
+	height: 17%;
 	margin-bottom: 40px;
 }
 .centerContent .bannerContauner img {
@@ -450,6 +451,7 @@ content
 	padding: 5px 0 0 5px;
 	border: 0;	
 	width: 120px;
+	font-size: 12px;
 }
 
 .post .postContent .box .boxContents .bookFrame .longDescription {
@@ -566,6 +568,7 @@ ul.categoryMenu {
     margin: 0px;
     list-style: none;
     border: 1px solid #7bbcc7;
+	font-size: 11px;
 }
 
 li.categoryMenu { margin: 0; }
