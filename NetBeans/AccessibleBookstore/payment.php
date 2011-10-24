@@ -62,7 +62,7 @@
         <div class="post">
             <h1><span class="text">Διαδικασία Πληρωμής</span></h1>
                 <div class="postContent">
-				<form action="payment2.php"> <!-- address form -->
+				<form action="payment2.php#errors"> <!-- address form -->
 				
 
                     <div class="box">
