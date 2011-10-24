@@ -84,11 +84,11 @@
 								<th id="b"> Βιβλίο </th> <th id="t"> Τίτλος </th> <th id="no">Τεμάχια </th> <th id="p"> Τιμή </th> <th id="del"> Διαγραφή </th>
 								</tr>
 								<tr>
-								<td headers="b"><a href="#" title="Η επίσημη βιογραφία του Steve Jobs">
+								<td headers="b"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs">
 								<img src="./images/books/steve-jobs-book.jpg" 
 								alt="Εξώφυλλο:Η επίσημη βιογραφία του Steve Jobs.Η ζωή του όπως αυτός περιγράφει."/>
 								</a></td> 
-								<td headers="t"><a href="#" title="Η επίσημη βιογραφία του Steve Jobs"> 
+								<td headers="t"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs"> 
 								 Η επίσημη βιογραφία του Steve Jobs </a></td> 
 								<td headers="no"><input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
 								<td headers="p"> 30.99 € </td> 

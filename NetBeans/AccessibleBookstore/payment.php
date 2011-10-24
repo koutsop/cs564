@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 	 <link rel="stylesheet" href="css/forms.css" type="text/css" />
 	  <link rel="stylesheet" href="css/shoppingcart.css" type="text/css" />
-    <title>Αccessible-Βookstore: Διαδικασία Πληρωμής</title>
+    <title>Αccessible-Βookstore: Λάθη Στην Διαδικασία Πληρωμής</title>
 
     <script type="text/JavaScript">
     <!--
@@ -198,12 +198,12 @@
 								<th id="t"> Τίτλος </th> <th id="no">Τεμάχια </th> <th id="p"> Τιμή </th>
 								</tr>
 								<tr>
-								<td headers="t"><a href="#" title="Η επίσημη βιογραφία του Steve Jobs"> Η επίσημη βιογραφία του Steve Jobs </a></td> 
+								<td headers="t"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs"> Η επίσημη βιογραφία του Steve Jobs </a></td> 
 								<td headers="no">1</td> 
 								<td headers="p"> 30.99 € </td> 
 								</tr>
 								<tr>
-								<td headers="t"><a href="#" title="Aleph"> Aleph</a></td> 
+								<td headers="t"><a href="Aleph.php" title="Aleph"> Aleph</a></td> 
 								<td headers="no">2</td> 
 								<td headers="p"> 20.64 € </td> 
 								</tr>

@@ -110,6 +110,8 @@
                                             		'Υπάρχει κάτι μυστηριώδες και ταυτόχρονα οικείο σχετικά με τον Ντάνιελ..'
                                             );
                                             Clear();
+											Hr();
+											
                                             $producer->ProduceLongBookDiscription(
                                                    	'#', 
 													'THE THREAD', 
@@ -122,6 +124,8 @@
                                                     'Μετά την απίστευτη εκδοτική και τηλεοπτική επιτυχία με «Το Νησί»...'
                                             );
                                             Clear();
+											Hr();
+											
                                             $producer->ProduceLongBookDiscription(
                                                     '#', 
 													'HEADHUNTERS', 
@@ -134,6 +138,8 @@
                                             		'Ο υποψήφιος ήταν τρομοκρατιμένος.Φορούσε ένα γκρι κοστούμι...'
                                             );
                                             Clear();
+											Hr();
+											
                                             $producer->ProduceLongBookDiscription(
                                                    	'#', 
 													'THE LEOPARD', 
@@ -146,6 +152,8 @@
                                                     'Ο Χάρυ Χολ επιστρέφει, και αυτή τη φορά από πολύ πολύ μακρυά'
                                             );
                                             Clear();
+											Hr();
+											
                                             $producer->ProduceLongBookDiscription(
                                                     'Aleph.php', 
 													'Aleph', 
@@ -158,6 +166,8 @@
                                                     'Μετέτρεψε τη ζωή σου. Ξαναγράψε το πεπρωμένο σου.Μερικά βιβλία τα διαβάζεις.Το Άλεφ το ζείς.'
                                             );
                                             Clear();
+											Hr();
+											
                                             $producer->ProduceLongBookDiscription(
                                                     '#', 
 													'AFTERWARDS', 
@@ -170,6 +180,8 @@
                                             		'Είμαι η μητέρα σου και θα σε προστατεύω πάντα. Ο μάυρος καπνός λεκιάζει τον γαλανό καλοκαιρινό ουρανό...'
                                             );
                                             Clear();
+											Hr();
+											
                                             $producer->ProduceLongBookDiscription(
                                                    '#', 
 													'FALL OF GIANTS', 
@@ -181,15 +193,17 @@
 													'EN-US',
                                             		'Ένα εκπληκτικό μυθιστόρημα που ακολουθεί πέντε οικογένειες μέσα από το δράμα που βίωσαν τον Α΄ Παγκόσμιο πόλεμο.'
                                             );
+											Clear();
+											Hr();
 
                                     ?>						
                             </div>
                             <div class="clear"></div>
                             <div class="searchResultsPages">
                                     <strong>Σελίδες: &nbsp;</strong>
-                                    <a href="SearchResults.php"><strong>1</strong></a>&nbsp;
-                                    <a href="SearchResults2.php">2</a>&nbsp;
-                                    <a href="SearchResults3.php">3</a>&nbsp;
+                                    <a href="#"><strong>1</strong></a>&nbsp;
+                                    <a href="#">2</a>&nbsp;
+                                    <a href="#">3</a>&nbsp;
                                     <a href="#">4</a>&nbsp;
                                     <a href="#">5</a>
                                     <br/>
