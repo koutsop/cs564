@@ -24,7 +24,7 @@ p {
 								/*events*/
 /******************************************************************/
 
-input:focus { background-color: yellow; } 
+input:focus { background-color: #FFF8C6; } 
 
 
 
@@ -234,8 +234,7 @@ input#searchBook {
 }
 
 #headerMenuStyle ul.headerMenu li a:hover,
-#headerMenuStyle ul.headerMenu li a:active,
-#headerMenuStyle ul.headerMenu li a.actual      { background:#c9c9c9;color:#fff }
+#headerMenuStyle ul.headerMenu li a:focus    { background:#c9c9c9;color:#fff }
 
 #headerMenuStyle ul.headerMenu li.rightElement  { float:right; }
 
