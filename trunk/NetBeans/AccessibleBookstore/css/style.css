@@ -245,6 +245,7 @@ input#searchBook {
     margin: 10px 0px 10px 0px;
     padding: 0;
     width: 100%;
+	font-size: 11px;
 }
 
 ul.crumb {
@@ -475,7 +476,7 @@ content
 .post .postContent .box .boxContents .bookFrame .bookTitle a,
 .post .postContent .box .boxContents .bookFrame .publisher a {
 	text-decoration: none;
-	color: pink;	
+	color: #000066;	
 }
 
 .bookContentTop { float: left; }
