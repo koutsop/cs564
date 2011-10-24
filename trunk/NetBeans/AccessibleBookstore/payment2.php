@@ -58,7 +58,7 @@
 		<?php
 			require_once 'CategoryMenuProducer.php';
 			$producer = new CategoryMenuProducer();
-			$producer->ProduceCategoryMenu("index.php");
+			$producer->ProduceCategoryMenu("");
 		?>
         
 
@@ -75,6 +75,7 @@
 				 <div class="box">
                         <div class="boxContents">
 						<fieldset style="border-color: #FF3333">
+						<a name="errors"></a>
 						<p style="color: #FF3333; font-weight: bold;"> 3 Λάθη βρέθηκαν κατά τη διαδικασία της πληρωμής.</p>
 						<p style="color: #FF3333;"> Παρακαλούμε διορθώστε αυτά τα λάθη, και υποβάλλετε τη φόρμα ξανά</p>
 						<ul id="error">
