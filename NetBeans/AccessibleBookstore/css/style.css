@@ -13,9 +13,7 @@ p {
 	margin: 0px;
 }
 
-img {
-	border: 0;
-}
+img { border: 0; }
 
 #main_container {
 	margin: auto;
@@ -444,10 +442,12 @@ content
 	border: 0;
 	width: 80px;
 	height: 120px;	
+	overflow: auto;
 }
 
-.post .postContent .box .boxContents .bookFrame .imgCartContainer a,
-.post .postContent .box .boxContents .bookFrame .imgCartContainerlongDescription a{
+.imgCartContainer a,
+.imgBookContainer a,
+.imgCartContainerlongDescription a{
 	float: left;
 }
 .post .postContent .box .boxContents .bookFrame .imgBookContainer img,
@@ -478,10 +478,6 @@ content
 	height: 16px;	
 	margin: 0;
 	padding: 0;		
-}
-.post .postContent .box .boxContents .bookFrame .imgCartContainerlongDescription img,
-.post .postContent .box .boxContents .bookFrame .imgCartContainerlongDescription a {
-	border: 0;
 }
 
 .post .postContent .box .boxContents .bookFrame .sortDescription {
