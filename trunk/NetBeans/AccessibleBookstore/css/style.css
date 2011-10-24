@@ -455,6 +455,12 @@ content
 	float: left;
 	width: 16px;
 	height: 16px;	
+	margin: 0;
+	padding: 0;		
+}
+.post .postContent .box .boxContents .bookFrame .imgCartContainerlongDescription img,
+.post .postContent .box .boxContents .bookFrame .imgCartContainerlongDescription a {
+	border: 0;
 }
 
 .post .postContent .box .boxContents .bookFrame .sortDescription {
@@ -484,66 +490,6 @@ content
 	float: left;
 	margin: 10px 0px 10px 0;
 }
-
-
-
-/*
-.bookContentTop .bookContent1, 
-.bookContentTop .bookContent2 {
-	float: left;
-	margin: 0;
-	padding: 0;
-}
-
-.bookContentTop .bookContent1 { margin-left: 10px; }
-.bookContentTop .bookContent2 { margin-left: 2px; }
-.bookContentBottom {
-	float: left;
-	margin: 10px 21px 40px 0;
-}*/
-/*---------------------  Books ends --------------------------- */
-/*
-.post .postContent .box .boxContents .frame .paragraph {
-	float: left;
-	margin: 10px 0 10px 0px;
-	padding: 0;
-	display: block;
-}
-
-.post .postContent .box .boxContents .frame .text {
-	float: left;
-	margin: 0;
-	padding: 0 0 0 5px;
-	border: 0;	
-	width: 120px;
-}
-
-.post .postContent .box .boxContents .frame .textLong {
-	float: left;
-	margin: 0;
-	padding: 0 0 0 10px;
-	border: 0;
-	height: 122px;
-}
-
-.post .postContent .box .boxContents .frame .text .booLink {
-	float: left;
-	margin: 0;
-	padding: 0;
-	border: 0;	
-	text-decoration: none;
-	color: #333;
-}
-
-.post .postContent .box .boxContents .frame .text .publisher {
-	float: left;
-	margin: 0;
-	padding: 0;
-	border: 0;	
-	*color: #333;*
-}
-.post .postContent .box .boxContents .frame .text .publisher a { color: #333; }
-*/
 
 /*---------------- searchResults Content -------------*/
 

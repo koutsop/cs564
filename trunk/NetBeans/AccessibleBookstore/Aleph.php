@@ -262,7 +262,7 @@
 								</div>	
 								
                             </div>	<!-- review ends-->                          
-                                 
+                            <div class="clear"></div>     
 							<p>Για να κάνετε κριτική, πατήστε τον σύνδεσμο: <a href="">κριτική</a></p>
                             </div>	<!-- bookFrame ends -->
                         </div>		<!-- boxContent ends -->

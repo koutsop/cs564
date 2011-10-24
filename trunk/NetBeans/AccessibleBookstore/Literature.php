@@ -153,7 +153,7 @@
 											Hr();
 											
                                             $producer->ProduceLongBookDiscription(
-                                                    '#', 
+                                                    'Aleph.php', 
 													'Aleph', 
 													'aleph.jpg', 
 													'Alfred A. Knopf', 
