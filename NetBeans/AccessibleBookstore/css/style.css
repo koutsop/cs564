@@ -375,6 +375,12 @@ content
 	position: relative;
 }
 
+.post .postContent .box .boxContents .bookFrame .bookContentTop .imgBookContainer img,
+.post .postContent .box .boxContents .bookFrame .bookContentTop .imgBookContainer a {
+	border: 0;
+}
+
+
 .post .postContent .box .boxContents .bookFrame .price {
 	color: #FF3300;
 }
