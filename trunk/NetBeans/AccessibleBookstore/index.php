@@ -52,7 +52,7 @@
 		<div class="centerContentCell">		<!-- centerContent -->
         <div class="centerContent">			<!-- centerContent -->
 			<a name="content"></a>
-			<div class="bannerContauner">
+			<div class="bannerContainer">
 				<img src="images/banner.gif" alt="Με παραγγελίες άνω των 10 ευρώ σας κάνουμε δώρο τα έξοδα αποστολής"/>
 			</div>
 			<?php

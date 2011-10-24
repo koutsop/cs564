@@ -81,11 +81,10 @@
                                 'Μετά την απίστευτη εκδοτική και τηλεοπτική επιτυχία με «Το Νησί»...'
 							);
 							Clear();
-							
-							
+							Hr();
 							
 							$producer->ProduceLongBookDiscription(
- 								'#', 
+ 								'SteveJobs.php', 
 								'Η επίσημη βιογραφία του Steve Jobs', 
 								'steve-jobs-book.jpg', 
 								'ΨΥΧΟΓΙΟΣ', 
@@ -97,6 +96,7 @@
 							
 							);
 							Clear();
+							Hr();
 							$producer->ProduceLongBookDiscription(
 								'#', 
 								'HEADHUNTERS', 
@@ -110,8 +110,9 @@
 							);
 							
 							Clear();
+							Hr();
 							$producer->ProduceLongBookDiscription(
-								 '#', 
+								 'Aleph.php', 
 								 'Aleph', 
 								 'aleph.jpg', 
 								 'Alfred A. Knopf', 
@@ -122,6 +123,7 @@
                                  'Μετέτρεψε τη ζωή σου. Ξαναγράψε το πεπρωμένο σου.Μερικά βιβλία τα διαβάζεις.Το Άλεφ το ζείς.'
 							);
 							Clear();
+							Hr();
 							$producer->ProduceLongBookDiscription(
 								'#', 
 								'THE LEOPARD', 
@@ -134,6 +136,7 @@
                                 'Ο Χάρυ Χολ επιστρέφει, και αυτή τη φορά από πολύ πολύ μακρυά'
 							);
 							Clear();
+							Hr();
 							$producer->ProduceLongBookDiscription(
 								'#', 
 								'PASSION', 
@@ -146,7 +149,7 @@
 								'Υπάρχει κάτι μυστηριώδες και ταυτόχρονα οικείο σχετικά με τον Ντάνιελ..'
 							);
 							Clear();
-						
+							Hr();
 							$producer->ProduceLongBookDiscription(
 								'#', 
 								'FALL OF GIANTS', 
@@ -159,6 +162,7 @@
                                 'Ένα εκπληκτικό μυθιστόρημα που ακολουθεί πέντε οικογένειες μέσα από το δράμα που βίωσαν τον Α΄ Παγκόσμιο πόλεμο.'
 							);
 							Clear();
+							Hr();
 							
 							
 						?>		

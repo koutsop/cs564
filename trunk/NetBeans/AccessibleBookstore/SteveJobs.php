@@ -5,7 +5,7 @@
     <meta http-equiv ="Content-Language" content="el" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <title>Αccessible-Βookstore: Aleph</title>
+    <title>Αccessible-Βookstore: Steve Jobs</title>
 
     <script type="text/JavaScript">
     <!--
@@ -38,11 +38,11 @@
             <ul class="crumb">
                 <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
 				<li class= "crumb">></li>
-                <li class= "crumb"><a href="Literature.php" class="crumb">Λογοτεχνία</a></li>
+                <li class= "crumb"><a href="SearchResults.php" class="crumb">Αποτελέσματα Αναζήτησης</a></li>
                 <li class= "crumb">></li>
-                <li class= "crumb"><a href="ForeignLiterature.php" class="crumb">Ξένη Λογοτεχνία</a></li>
+                <li class= "crumb"><a href="SearchResults3.php" class="crumb">Αποτελέσματα Αναζήτησης (Σελίδα 3)</a></li>
                 <li class= "crumb">></li>
-                <li class= "crumb"><a href="BookView.php" class="crumb"><span lang="EN-US">Aleph</span></a></li>
+                <li class= "crumb"><a href="SteveJobs.php" class="crumb"><span lang="EN-US">Steve Jobs</span></a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 
@@ -93,7 +93,7 @@
         <div class="centerContent">   <!-- centerContent -->
         <a name="content"></a>
             <div class="post">	<!-- post -->
-                <h1><span class="text"><span lang="EN-US">Aleph</span></span></h1>
+                <h1><span class="text"><span lang="EN-US">Steve Jobs</span></span></h1>
                 <div class="postContent"> <!-- postContent -->
                     <div class="box">
                         <div class="boxContents">
@@ -103,24 +103,24 @@
                             <div class="bookContentTop">
                                 <div class="imgBookContainer">
                                     <span lang="EN-US">    
-                                        <img src="images/books/aleph.jpg" alt="Aleph"/>            
+                                        <img src="images/books/steve-jobs-book.jpg" alt="Steve Jobs"/>            
                                     </span>
                                 </div>
                             <div class="longDescription">
 								<div class="bookTitle">
 									<strong>Τίτλος</strong>:
-									<a href="Aleph.php"><strong><span lang="EN-US">Aleph</span></strong></a>
+									<a href="SteveJobs.php"><strong><span lang="EN-US">Walter Isaacson</span></strong></a>
 								</div>
 								<div class="clear"></div>
 								<div class="publisher">
 									<strong>Εκδόσεις</strong>: 
-									<a href="#"><span lang="EN-US">Knopf (September 27, 2011)</span></a>
+									<a href="#"><span lang="EN-US">Simon &amp; Schuster (October 24, 2011)</span></a>
 								</div>
 								<div class="clear"></div>
 								<strong>Συγγραφέας</strong>: <span lang="EN-US">Paulo Coelho</span>
 								<div class="clear"></div>
 								<span class="floatLeft"><strong>Τιμή</strong>: </span>
-								<span class="price">€ 20,64</span>							
+								<span class="price">€ 30,99</span>							
 							</div>						
                             </div>  
                             <div class="clear"></div> 
@@ -138,11 +138,11 @@
                            
                             <div class="details">         
                                 <ul>
-                                    <li><strong>Σελίδες:</strong> 288</li>
-                                    <li><strong>Γλώσσα:</strong> Αγγλικά</li>
-                                    <li><strong>ISBN-10:</strong> 0307700186</li>
-                                    <li><strong>ISBN-13:</strong> 978-0307700186</li>
-                                    <li><strong>Διαστάσεις:</strong> 9 x 5.9 x 1.1 inches</li>
+                                    <li><strong>Σελίδες: </strong>656</li>
+                                    <li><strong>Γλώσσα: </strong>Αγγλικά</li>
+                                    <li><strong>ISBN-10: </strong>1451648537</li>
+                                    <li><strong>ISBN-13: </strong>978-1451648539</li>
+                                    <li><strong>Διαστάσεις: </strong>9.4 x 6.1 x 2 inches</li>
                                 </ul>                                 
                             </div>
                             <div class="clear"></div>                                
@@ -152,47 +152,56 @@
                                
                                 <p>
                                 <span lang="EN-US">
-                                    In his most personal novel to date, internationally best-selling author Paulo Coelho 
-                                    returns with a remarkable journey of self-discovery. Like the main character in his 
-                                    much-beloved The Alchemist, Paulo is facing a grave crisis of faith. As he seeks a 
-                                    path of spiritual renewal and growth, he decides to begin again: to travel, 
-                                    to experiment, to reconnect with people and the landscapes around him.
+									Based on more than forty interviews with Jobs conducted over two years—as well 
+									as interviews with more than a hundred family members, friends, adversaries, 
+									competitors, and colleagues—Walter Isaacson has written a riveting story of the 
+									roller-coaster life and searingly intense personality of a creative entrepreneur 
+									whose passion for perfection and ferocious drive revolutionized six industries: 
+									personal computers, animated movies, music, phones, tablet computing, and digital 
+									publishing.
                                     <br />
 									<br />
-                                    Setting off to Africa, and then to Europe and Asia via the Trans-Siberian Railway, 
-									he initiates a journey to revitalize his energy and passion. Even so, he never 
-									expects to meet Hilal. A gifted young violinist, she is the woman Paulo loved 
-									five hundred years before—and the woman he betrayed in an act of cowardice so 
-									far-reaching that it prevents him from finding real happiness in this life. 
-									Together they will initiate a mystical voyage through time and space, 
-									traveling a path that teaches love, forgiveness, and the courage to overcome 
-									life’s inevitable challenges. Beautiful and inspiring, Aleph invites us to 
-									consider the meaning of our own personal journeys: Are we where we want to be, 
-									doing what we want to do?
+									At a time when America is seeking ways to sustain its innovative edge, and when 
+									societies around the world are trying to build digital-age economies, Jobs stands 
+									as the ultimate icon of inventiveness and applied imagination. He knew that the 
+									best way to create value in the twenty-first century was to connect creativity 
+									with technology. He built a company where leaps of the imagination were combined 
+									with remarkable feats of engineering. 
+									
+									<br />
+									<br />
+									Although Jobs cooperated with this book, he asked for no control over what was 
+									written nor even the right to read it before it was published. He put nothing 
+									off-limits. He encouraged the people he knew to speak honestly. And Jobs speaks 
+									candidly, sometimes brutally so, about the people he worked with and competed 
+									against. His friends, foes, and colleagues provide an unvarnished view of the 
+									passions, perfectionism, obsessions, artistry, devilry, and compulsion for 
+									control that shaped his approach to business and the innovative products that 
+									resulted.
+									<br />
+									<br />
+									Driven by demons, Jobs could drive those around him to fury and despair. But his 
+									personality and products were interrelated, just as Apple’s hardware and software 
+									tended to be, as if part of an integrated system. His tale is instructive and 
+									cautionary, filled with lessons about innovation, character, leadership, and 
+									values.
+									<br />
+									<br />									
                                 </span>
                                 </p>
                             </div>
                             <div class="clear"></div> 
-							<br />
 							<h1>Σχετικά με τον συγγραφέα</h1>
 							<p>
 								<span lang="EN-US">
-									The Brazilian author <strong>Paulo Coelho</strong> was born in 1947 in the city 
-									of Rio de Janeiro. Before dedicating his life completely to literature, 
-									he worked as theatre director and actor, lyricist and journalist.
-									<br />
-									<br />
-									In 1986, Paulo Coelho did the pilgrimage to Saint James of Compostella, an 
-									experience later to be documented in his book The Pilgrimage.
-									<br />
-									<br />
-									In the following year, Coelho published The Alchemist. Slow initial sales 
-									convinced his first publisher to drop the novel, but it went on to become 
-									one of the best selling Brazilian books of all time.
+									<strong>Walter Isaacson</strong>, the CEO of the Aspen Institute, has been chairman of 
+									CNN and the managing editor of Time magazine. He is the author of Benjamin Franklin: 
+									An American Life and of Kissinger: A Biography, and the coauthor of The Wise Men: 
+									Six Friends and the World They Made. He lives in Washington, D.C., with his wife and daughter.
 								</span>
 							</p>
 							<br />
-							<div class="clear"></div>                             
+							<div class="clear"></div> 
                             
                             
                             

@@ -1,3 +1,5 @@
+Title stis formes opos upe h marigianna
+
 Na ginei elegxos an sto gramb exoume balei swsta ta paths
 
 To cart sta books prepei na einai button h' link opos to exw?
@@ -17,7 +19,7 @@ Na ele3w xrwmata, text stile, margin, padding gia:
 4) gotoTop
 5) resultPages
 
-Na ftia3w ta active pages twn:
+[OK] Na ftia3w ta active pages twn:
 1) Header
 2) Menu
 
@@ -29,17 +31,17 @@ grammatooshra prepei na einai se em se % h' fix?
 
 /************* marigianna ******************/
 
-*kalathi1, kalathi2 ( konteuoun) 
+[OK] *kalathi1, kalathi2 ( konteuoun) 
 
-*formes pliromis na kano mia me periptosi lathous (prepei na do pos tha einai accessible)
+[OK] *formes pliromis na kano mia me periptosi lathous (prepei na do pos tha einai accessible)
 
-*ena php na leei pliromi egine epitixos
+[OK] *ena php na leei pliromi egine epitixos
 
-* arxiki selida (koutsop??)
+[OK] * arxiki selida (koutsop??)
 
-* provoli apotelesmaton anazitisis (selida 1 - 2- 3 ( na einai me idia morfi - diaforetiko periexomeno)
+[OK] * provoli apotelesmaton anazitisis (selida 1 - 2- 3 ( na einai me idia morfi - diaforetiko periexomeno)
  
-* analitiki provoli ton 2 vivlion pou tha agorasei (2php arxeia) 
+[OK] * analitiki provoli ton 2 vivlion pou tha agorasei (2php arxeia) 
 
 ******* ola na einai prosvasima me osous perissoterous elegxous mporoume
 
