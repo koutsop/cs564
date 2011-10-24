@@ -104,16 +104,16 @@ class HeadProducer {
     //------------------------------------------------------------
     
     private function IsActivePage ($activePage, $pageURL, $pageTitle, $isRightElement = false){
-        $class = '';
+        $class = "class='headerMenu'";
 		$rightElement = '';
 		
 		if ($isRightElement)
-			$rightElement = "class=\"rightElement\"";
+			$rightElement = "rightElement";
 		
         if ($activePage == $pageURL)
-            $class = "class='actual'";
+            $class = "class='headerMenuSelected'";
 		
-        echo "<li $rightElement><a $class href='$pageURL'>$pageTitle</a></li>\n\t\t";
+        echo "<li class=\"headerMenu $rightElement\"><a $class href='$pageURL'>$pageTitle</a></li>\n\t\t";
     }
     
     //------------------------------------------------------------
@@ -122,14 +122,14 @@ class HeadProducer {
         echo "
             <div id=\"headerMenuStyle\">    <!-- headerMenuStyle -->
                 <a href=\"#crumb\" class=\"skipButton\">Μετάβαση στους συνδέσμους πλοήγησης</a>
-                <ul class=\"headerMenu\">   ";    
+                <ul class=\"headerMenu\">\n";    
                     $this->IsActivePage ($activePage, 'index.php', 'Αρχική σελίδα');
                     $this->IsActivePage ($activePage, '#', 'Ο λογαριασμός μου');
                     $this->IsActivePage ($activePage, '#', 'Εγγραφή');
                     $this->IsActivePage ($activePage, '#', 'Ποιοί είμαστε');
                     $this->IsActivePage ($activePage, '#', 'Είσοδος');
-                    $this->IsActivePage ($activePage, 'faq.php', 'FAQ');
-                    $this->IsActivePage ($activePage, 'siteMap.php', 'Site map', true);
+                    $this->IsActivePage ($activePage, '#', 'FAQ');
+                    $this->IsActivePage ($activePage, '#', 'Site map', true);
         echo " 
                 </ul>
             </div>  <!-- headerMenu ends -->          

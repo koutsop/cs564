@@ -207,34 +207,45 @@ input#searchBook {
 }
 
 #headerMenuStyle ul.headerMenu {
-    margin: 0;
     float: left;
+	margin: 0;
     padding: 0;
     border: 0;
     width: 100%;
     list-style-type: none;
     background-color:#eff3f6;    
+	
+	font: normal 1.2em 'Trebuchet MS', sans-serif;
 }
 
-#headerMenuStyle ul.headerMenu li {
-    float: left;
-    display: inline;
+#headerMenuStyle ul.headerMenu li.headerMenu { display: inline; }
+
+#headerMenuStyle ul.headerMenu li.headerMenu a.headerMenu {
+	float: left;
+	display:block;
+	color:#8f8f8f;
+	min-height: 30px;
+	outline: none;
+	padding: 15px 18px 0;
+	text-decoration:none;
+	background: url(../images/categoryMenuDivider.gif) no-repeat right;
+}
+#headerMenuStyle ul.headerMenu li.headerMenu a.headerMenuSelected {
+	float: left;
+	display:block;
+	min-height: 30px;
+	outline: none;
+	padding: 15px 18px 0;
+	text-decoration:none;
+	background: url(../images/categoryMenuDivider.gif) no-repeat right;	
+	background:#c9c9c9;color:#fff 	
 }
 
-#headerMenuStyle ul.headerMenu li a {
-    color:#8f8f8f;
-    display:inline-block;
-    font-family:'Trebuchet MS', Tahoma, serif;
-    font-size: 13px;
-    height: 30px;
-    outline: none;
-    padding: 15px 18px 0;
-    text-decoration:none;
-    background: url(../images/categoryMenuDivider.gif) no-repeat right;
+#headerMenuStyle ul.headerMenu li.headerMenu a:hover,
+#headerMenuStyle ul.headerMenu li.headerMenu a:focus {
+	background:#c9c9c9;color:#fff 	
 }
 
-#headerMenuStyle ul.headerMenu li a:hover,
-#headerMenuStyle ul.headerMenu li a:focus    { background:#c9c9c9;color:#fff }
 
 #headerMenuStyle ul.headerMenu li.rightElement  { float:right; }
 
