@@ -13,12 +13,15 @@ p {
 	margin: 0px;
 }
 
+img {
+	border: 0;
+}
+
 #main_container {
 	margin: auto;
 	padding: 0px;
 	overflow: auto;
 }
-
 
 /******************************************************************/
 								/*events*/
@@ -43,12 +46,17 @@ input:focus { background-color: #FFF8C6; }
 #logo{
 	float: left;
 	margin: 15px;
+	width: 237px;
+	height: 140px;	
 }
 
+#logo a { float: left; }
+
 #logo img {
+	float: left;
 	border: 0;
-	width: 237px;
-	height: 140px;
+	width: 100%;
+	height: 100%;
 }
 
 /*---------------- advertisement ----------------------*/
@@ -142,6 +150,8 @@ input#searchBook {
 	background: url(./../images/repeatBg.png) repeat-x center;
 }
 
+.shoppingCart a { float: left; }
+/*TODO*/
 .shoppingCart img {
 	float: left;
 	border: 0;
@@ -169,11 +179,13 @@ input#searchBook {
 }
 
 .help {
-	min-height: 71px;
+	height: 71px;
 	margin: 0;
 	float: left;
 	background: url(./../images/repeatBg.png) repeat-x center;	
 }
+
+.help a { float: left; }
 
 .help img {
 	float: left;
@@ -220,32 +232,28 @@ input#searchBook {
 
 #headerMenuStyle ul.headerMenu li.headerMenu { display: inline; }
 
-#headerMenuStyle ul.headerMenu li.headerMenu a.headerMenu {
+
+#headerMenuStyle ul.headerMenu li.headerMenu a.headerMenu,
+#headerMenuStyle ul.headerMenu li.headerMenuSelected {
 	float: left;
 	display:block;
-	color:#8f8f8f;
 	min-height: 30px;
 	outline: none;
 	padding: 15px 18px 0;
 	text-decoration:none;
 	background: url(../images/categoryMenuDivider.gif) no-repeat right;
 }
-#headerMenuStyle ul.headerMenu li.headerMenu a.headerMenuSelected {
-	float: left;
-	display:block;
-	min-height: 30px;
-	outline: none;
-	padding: 15px 18px 0;
-	text-decoration:none;
-	background: url(../images/categoryMenuDivider.gif) no-repeat right;	
-	background:#c9c9c9;color:#fff 	
+#headerMenuStyle ul.headerMenu li.headerMenu a.headerMenu {color:#8f8f8f;}
+
+#headerMenuStyle ul.headerMenu li.headerMenuSelected {
+	background:#c9c9c9;
+	color:#fff 	
 }
 
 #headerMenuStyle ul.headerMenu li.headerMenu a:hover,
 #headerMenuStyle ul.headerMenu li.headerMenu a:focus {
 	background:#c9c9c9;color:#fff 	
 }
-
 
 #headerMenuStyle ul.headerMenu li.rightElement  { float:right; }
 
@@ -385,17 +393,10 @@ content
 	position: relative;
 }
 
-.post .postContent .box .boxContents .bookFrame .bookContentTop .imgBookContainer img,
-.post .postContent .box .boxContents .bookFrame .bookContentTop .imgBookContainer a {
-	border: 0;
-}
-
-
 .post .postContent .box .boxContents .bookFrame .price {
 	color: #FF3300;
 }
 
-.post .postContent .box .boxContents .bookFrame img { margin: 0 3px 0 3px; }
 .post .postContent .box .boxContents .bookFrame .review {
 	float: left;
 	margin: 0;
@@ -445,6 +446,10 @@ content
 	height: 120px;	
 }
 
+.post .postContent .box .boxContents .bookFrame .imgCartContainer a,
+.post .postContent .box .boxContents .bookFrame .imgCartContainerlongDescription a{
+	float: left;
+}
 .post .postContent .box .boxContents .bookFrame .imgBookContainer img,
 .post .postContent .box .boxContents .bookFrame .imgCartContainer img {
 	float: left;
