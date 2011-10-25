@@ -46,7 +46,7 @@ class HeadProducer {
         echo "
             <div id=\"standartFileds\">   <!-- standartFileds -->
                 <div class=\"searchStyle\"><!-- search -->
-                    <img src=\"./images/leftBg.png\" class=\"leftBg\" alt=\"\" />
+                    <div class=\"leftBg\"></div>
                     <div class=\"search\"><!-- search -->
                         <form id=\"simpleSearch\" action=\"index.php\" method=\"post\">
                             <fieldset class=\"hiddenFieldset\">
@@ -71,22 +71,22 @@ class HeadProducer {
                         <!-- TODO: na balw to link gia thn anazhthsh -->
                         <span class=\"compositeSearch\"><a href=\"advanced_search.php\">Σύνθετη Αναζήτηση</a></span>
                     </div>  <!-- search ends -->
-                    <img src=\"./images/rightBg.png\" class=\"rightBg\" alt=\"\"/>
+                    <div class=\"rightBg\"></div>
                 </div>  <!-- search ends -->
 
                 <div class=\"shoppingCartStyle\">  <!-- shoppingCart -->
-                    <img src=\"./images/leftBg.png\" class=\"leftBg\" alt=\"\"/>
+                    <div class=\"leftBg\"></div>
                     <div class=\"shoppingCart\"><!-- cart -->
                                         <p>($numberOfCartItems προϊόντα)</p>
                         <!-- TODO Na bale to swsto link gia to pou 8a paei to kala8i-->
                         <a href=\"#\"><img src=\"./images/shoppingcart.png\" alt=\"Αγορά\"/></a>
 
                     </div>  <!-- cart ends -->
-                    <img src=\"./images/rightBg.png\" class=\"rightBg\" alt=\"\"/>
+                    <div class=\"rightBg\"></div>
                 </div>  <!-- shoppingCart ends -->
 
                 <div class=\"helpStyle\">
-                    <img src=\"./images/leftBg.png\" class=\"leftBg\" alt=\"\"/>
+                    <div class=\"leftBg\"></div>
                     <div class=\"help\"><!-- cart -->
                         <!-- TODO Na bale to swsto link gia to pou 8a paei to kala8i-->
                         <p>Bοήθεια</p>
@@ -94,8 +94,7 @@ class HeadProducer {
 
                         <!-- <span class=\"helpLink\"> <p>Bοήθεια</p></span> -->
                     </div>  <!-- cart ends -->
-
-                    <img src=\"./images/rightBg.png\" class=\"rightBg\" alt=\"\"/>
+                    <div class=\"rightBg\"></div>
                 </div>
             </div>  <!-- standartFileds ends -->
         ";    
