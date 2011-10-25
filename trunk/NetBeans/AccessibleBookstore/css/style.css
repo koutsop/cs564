@@ -80,12 +80,22 @@ input:focus { background-color: #FFF8C6; }
 	position: relative;
 }
 
-.leftBg, .rightBg {
+.leftBg {
 	float: left;
 	width: 9px;
 	height: 71px;
 	margin: 0;
 	padding: 0;
+	background: url(../images/leftBg.png) no-repeat center;
+}
+
+.rightBg {
+	float: left;
+	width: 9px;
+	height: 71px;
+	margin: 0;
+	padding: 0;
+	background: url(../images/rightBg.png) no-repeat center;
 }
 
 .search {
