@@ -697,7 +697,7 @@ a.categoryMenu:hover, a.categoryMenu:focus {
 	text-decoration: none;
 }
 
-#footerMenu a:hover,  #footerMenu a:focus{
+#footerMenu a:hover,  #footerMenu a:focus {
 	color: Black;
 	text-decoration: underline;
 }
@@ -714,6 +714,7 @@ a.categoryMenu:hover, a.categoryMenu:focus {
 	display: block;
 	padding-left: 26%;
 }
+.rightFooter #followUsOn a { float: left; }
 
 .rightFooter #followUsOn img {
 	float: left;

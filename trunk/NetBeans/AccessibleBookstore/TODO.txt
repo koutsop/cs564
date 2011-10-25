@@ -1,21 +1,23 @@
-Title stis formes opos upe h marigianna
+long disc
+
+[OK] Title stis formes opos upe h marigianna
 
 Na ginei elegxos an sto gramb exoume balei swsta ta paths
 
-To cart sta books prepei na einai button h' link opos to exw?
+[OK] To cart sta books prepei na einai button h' link opos to exw?
 
-Sto menu otan pataw mia epilogh paramenh selected h arxikh selida
+[OK] Sto menu otan pataw mia epilogh paramenh selected h arxikh selida
 
 lab 2 slide 40
 lab 2 slide 79
 
-Na ele3w to xrwma pou exoume pernoun ta input
+[OK] Na ele3w to xrwma pou exoume pernoun ta input
 text fields (mesa apo to CSS ginetai auto)
 
 Na ele3w xrwmata, text stile, margin, padding gia:
-1) BookTitle
-2) publisher
-3) price
+[OK] 1) BookTitle
+[OK] 2) publisher
+[OK] 3) price
 4) gotoTop
 5) resultPages
 
@@ -27,7 +29,7 @@ Sthn sun8eth anzhth:
 Kathgoria proionta na to ala3w kai na balw auta pou exoume emeis
 ? Giati na mhn baloume legend sthn forma?
 
-grammatooshra prepei na einai se em se % h' fix?
+[OK] grammatooshra prepei na einai se em se % h' fix?
 
 /************* marigianna ******************/
 
@@ -49,13 +51,13 @@ grammatooshra prepei na einai se em se % h' fix?
 
 * megalitera kena anamesa se menu - breadcrumbs - category & content?
 
-** na ananeosoume ta links
+[OK] ** na ananeosoume ta links
 
 * sto kalathi i eikona k o titlos na einai energa link pros tis analitikes perigrafes
 
-* CAPTHCHA ---> eipame oxi
+[OK] * CAPTHCHA ---> eipame oxi
 
-* banner stin arxiki selida?
+[OK] * banner stin arxiki selida?
 
-* na allaksoume to xroma onclick stis formes
+[OK] * na allaksoume to xroma onclick stis formes
 
