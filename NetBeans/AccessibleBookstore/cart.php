@@ -85,7 +85,7 @@
 								</tr>
 								<tr>
 								<td headers="b"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs">
-								<img src="./images/books/steve-jobs-book.jpg" 
+								<img class="book_img" src="./images/books/steve-jobs-book.jpg" 
 								alt="Εξώφυλλο:Η επίσημη βιογραφία του Steve Jobs.Η ζωή του όπως αυτός περιγράφει."/>
 								</a></td> 
 								<td headers="t"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs"> 

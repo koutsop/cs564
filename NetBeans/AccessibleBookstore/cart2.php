@@ -85,7 +85,7 @@
 								</tr>
 								<tr>
 								<td headers="b"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs">
-								<img src="./images/books/steve-jobs-book.jpg" 
+								<img class="book_img" src="./images/books/steve-jobs-book.jpg" 
 								alt="Εξώφυλλο:Η επίσημη βιογραφία του Steve Jobs.Η ζωή του όπως αυτός περιγράφει."/>
 								</a></td> 
 								<td headers="t"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs"> 
@@ -94,15 +94,15 @@
 								<td headers="p"> 30.99 € </td> 
 								<td headers="del"> 
 								<!--<input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/>  -->
-								<a href="#"><img  src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι."/></a>	
+								<a href="#"><img src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι."/></a>	
 								</td>
 								</tr>
 								<tr>
-								<td headers="b"><a href="Aleph.php" title="Aleph"><img src="./images/books/aleph.jpg" alt="Εξώφυλλο:Μιά γυναίκα περπατάει στο σταθμό των τρένων."/></a></td> 
+								<td headers="b"><a href="Aleph.php" title="Aleph"><img class="book_img" src="./images/books/aleph.jpg" alt="Εξώφυλλο:Μιά γυναίκα περπατάει στο σταθμό των τρένων."/></a></td> 
 								<td headers="t"><a href="Aleph.php" title="Aleph"> Aleph</a></td> 
 								<td headers="no"><input id="itemsRow2" type="text" name="textfield" maxlength="3" size="3" value="2"/></td> 
 								<td headers="p"> 20.64 € </td> 
-								<td headers="del"><input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/> </td>
+								<td headers="del"><a href="#"><img src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι."/></a>	 </td>
 								</tr>
 								</table>
 														
