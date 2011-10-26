@@ -5,7 +5,7 @@ body {
 	font-size: 11px;*/
 	font: normal 79%/1.3em 'Trebuchet MS', Tahoma, sans-serif;
 	margin: 0px auto auto auto;
-	color: #616161;
+	color: #ebebeb;
 }
 
 p {
@@ -223,7 +223,6 @@ input#searchBook {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	background-color: Yellow;
 }
 
 #headerMenuStyle ul.headerMenu {
@@ -254,8 +253,9 @@ input#searchBook {
 #headerMenuStyle ul.headerMenu li.headerMenu a.headerMenu {color:#8f8f8f;}
 
 #headerMenuStyle ul.headerMenu li.headerMenuSelected {
-    background:#c9c9c9;
-    color:#fff 	
+/*background:#c9c9c9;*/
+	background:#055a5a;
+	color:#fff; 	
 }
 
 #headerMenuStyle ul.headerMenu li.headerMenu a:hover,
@@ -676,7 +676,7 @@ a.categoryMenu:hover, a.categoryMenu:focus {
 	padding-top: 2%;
 	padding-bottom: 2%;	
 	font-size: 11px;
-	background-color: #eff3f6;
+	background-color: #ebebeb;
 }
 
 /*---------------- left footer -------------*/
@@ -707,7 +707,7 @@ a.categoryMenu:hover, a.categoryMenu:focus {
 }
 
 #footerMenu a {
-	color: #616161;
+	color: #ebebeb;
 	text-decoration: none;
 }
 
