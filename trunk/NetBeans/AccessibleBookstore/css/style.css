@@ -5,7 +5,7 @@ body {
 	font-size: 11px;*/
 	font: normal 79%/1.3em 'Trebuchet MS', Tahoma, sans-serif;
 	margin: 0px auto auto auto;
-	color: #ebebeb;
+	color: #000;
 }
 
 p {
@@ -260,7 +260,7 @@ input#searchBook {
 
 #headerMenuStyle ul.headerMenu li.headerMenu a:hover,
 #headerMenuStyle ul.headerMenu li.headerMenu a:focus {
-    background:#c9c9c9;color:#fff 	
+    background:#055a5a;color:#fff 	
 }
 
 #headerMenuStyle ul.headerMenu li.rightElement  { float:right; }
@@ -707,7 +707,7 @@ a.categoryMenu:hover, a.categoryMenu:focus {
 }
 
 #footerMenu a {
-	color: #ebebeb;
+	color: #070707;
 	text-decoration: none;
 }
 
