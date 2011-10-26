@@ -28,8 +28,9 @@ class CategoryMenuProducer {
     public function ProduceBanner () { 
         echo "
             <div class=\"bannerContainer\">
-                <img src=\"images/banner1.png\" alt=\"Με παραγγελίες άνω των 10 ευρώ σας κάνουμε δώρο τα έξοδα αποστολής\"/>
+                <img src=\"images/banner.gif\" alt=\"Με παραγγελίες άνω των 10 ευρώ σας κάνουμε δώρο τα έξοδα αποστολής\"/>
             </div>
+            <div class=\"clear\"></div>
         ";
         
     }
@@ -42,9 +43,9 @@ class CategoryMenuProducer {
         
  	public function ProduceTitleBox () {
 		echo "
-			<div class=\"titleBox\"><h1>Κατηγορίες</h1></div>
-			<a href=\"#\" class=\"skipButton\">Μετάβαση στο περιεχόμενο</a>
-			<a name=\"categoryMenu\"></a>
+            <div class=\"titleBox\"><h1>Κατηγορίες</h1></div>
+			<a href=\"#content\" class=\"skipButton\">Μετάβαση στο περιεχόμενο</a>
+            <a name=\"categoryMenu\"></a>
 		";
 	}
 

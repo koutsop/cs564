@@ -28,6 +28,7 @@ Na ele3w xrwmata, text stile, margin, padding gia:
 Sthn sun8eth anzhth:
 Kathgoria proionta na to ala3w kai na balw auta pou exoume emeis
 ? Giati na mhn baloume legend sthn forma?
+ftia3imo + na ta balw kai na einai paralila
 
 [OK] grammatooshra prepei na einai se em se % h' fix?
 
@@ -49,11 +50,11 @@ Kathgoria proionta na to ala3w kai na balw auta pou exoume emeis
 
 *anafora
 
-* megalitera kena anamesa se menu - breadcrumbs - category & content?
+[OK] * megalitera kena anamesa se menu - breadcrumbs - category & content?
 
 [OK] ** na ananeosoume ta links
 
-* sto kalathi i eikona k o titlos na einai energa link pros tis analitikes perigrafes
+[OK] * sto kalathi i eikona k o titlos na einai energa link pros tis analitikes perigrafes
 
 [OK] * CAPTHCHA ---> eipame oxi
 
