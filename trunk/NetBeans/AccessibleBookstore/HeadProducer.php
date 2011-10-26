@@ -19,7 +19,10 @@ class HeadProducer {
     public function ProduceHeaderBegin () { 
         echo "
             <div class=\"header\"> <!-- header -->
-            <a href=\"#\" class=\"skipButton\">Μετάβαση στο περιεχόμενο</a>
+			<a href=\"#content\" class=\"skipButton\">Μετάβαση στο περιεχόμενο</a>
+            <a href=\"#searchAnchor\" class=\"skipButton\">Μετάβαση στην αναζήτηση</a>
+            <a href=\"#crumb\" class=\"skipButton\">Μετάβαση στους συνδέσμους πλοήγησης</a>
+            <a href=\"#categoryMenu\" class=\"skipButton\">Μετάβαση στο μενού κατηγορίες</a>            
         ";
     }
         
@@ -52,6 +55,7 @@ class HeadProducer {
                 <div class=\"searchStyle\"><!-- search -->
                     <div class=\"leftBg\"></div>
                     <div class=\"search\"><!-- search -->
+                    <a name=\"searchAnchor\"></a>
                         <form id=\"simpleSearch\" action=\"index.php\" method=\"post\">
                             <fieldset class=\"hiddenFieldset\">
                                 <label for=\"searchBook\">Γρήγορη αναζήτηση βιβλίου</label>

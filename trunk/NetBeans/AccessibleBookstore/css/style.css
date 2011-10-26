@@ -330,14 +330,14 @@ content
 	padding-left: 20px;
 	padding-right: 20px;
 }
-/*TODO na to kanw me pososta*/
-.centerContent .bannerContainer {
+
+.bannerContainer {
 	float: left;
-	width: 270px;
-	height: 277px;
-	margin-bottom: 40px;
+	width: 100%;
+	height: 30%;
+	margin-bottom: 10px;
 }
-.centerContent .bannerContainer img {
+.bannerContainer img {
 	float: left;
 	width: 100%;
 	height: 100%;
@@ -542,7 +542,7 @@ content
 }
 
 .titleBox {
-    min-width: 196px;
+/*    min-width: 196px;*/
     min-height: 30px;
     margin: 0;
     background: url(../images/categoryMenuTitleBoxBg.png) repeat-x center;
@@ -554,7 +554,7 @@ content
 .titleBox h1 { margin: 0; font-size: 1.5em;}
 
 ul.categoryMenu {
-    min-width: 194px;
+/*    min-width: 194px;*/
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -571,7 +571,7 @@ dl.categoryMenu {
 dt.categoryMenu,
 dd.categoryMenu { margin: 0; }
 dd.categoryMenuSelected {
-    min-width: 164px;
+/*    min-width: 164px;*/
     min-height: 25px;
     display: block;
     background:url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7;    
@@ -586,7 +586,7 @@ dd.categoryMenuSelected {
 
 
 li.categoryMenuSelected {
-    min-width: 164px;
+/*    min-width: 164px;*/
     min-height: 25px;
     display: block;
     background:url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7;    
@@ -599,7 +599,7 @@ li.categoryMenuSelected {
 }
 /****************************************/
 dt.categoryMenuSelected {
-    min-width: 139px;
+/*    min-width: 139px;*/
     min-height: 25px;
     display: block;
     background: url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7;
@@ -612,7 +612,7 @@ dt.categoryMenuSelected {
 }
 
 dt.categoryMenu a.categoryMenu {
-    min-width: 139px;
+/*    min-width: 139px;*/
     min-height: 25px;
     display: block;
     background: url(../images/categoryMenu.png) no-repeat left #eff3f6;
@@ -626,7 +626,7 @@ dt.categoryMenu a.categoryMenu {
 
 dt.categoryMenuSelected, 
 dt.categoryMenu a.categoryMenu {
-    min-width: 139px;
+ /*   min-width: 139px;*/
     min-height: 25px;
     display: block;
     background-position: 30px 5px;
@@ -645,7 +645,7 @@ dt.categoryMenu a.categoryMenu:hover, dt.categoryMenu a.categoryMenu:focus {
 }
 
 a.categoryMenu {
-    min-width: 164px;
+/*    min-width: 164px;*/
     min-height: 25px;
     display: block;
     background: url(../images/categoryMenu.png) no-repeat left #eff3f6;
