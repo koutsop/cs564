@@ -42,7 +42,7 @@ class HeadProducer {
          echo"
             <div id=\"logo\">     <!-- logo -->
                 <!-- long description-->
-                <a href=\"index.php\"><img src=\"images/logo.png\" alt=\"Το λογότυπο του Αccessible-Βookstore\" /></a>
+                <a href=\"index.php\"><img src=\"images/logo.png\" alt=\"Το λογότυπο του Αccessible-Βookstore\" longdesc=\"logo.html\"/></a>
             </div>  <!-- logo ends -->
         ";       
     }

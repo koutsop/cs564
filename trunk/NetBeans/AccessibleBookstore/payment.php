@@ -41,6 +41,14 @@
             <a name="crumb"></a>
             <ul class="crumb">
                 <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
+				<li class= "crumb">></li>
+                <li class= "crumb"><a href="Literature.php" class="crumb">Λογοτεχνία</a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="ForeignLiterature.php" class="crumb">Ξένη Λογοτεχνία (Σελίδα 1)</a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="BookView.php" class="crumb"><span lang="EN-US">Aleph</span></a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="cart2.php" class="crumb">Καλάθι Αγορών</a></li>
                 <li class= "crumb">></li>
                 <li class= "crumb"><a href="payment.php" class="crumb">Διαδικασία Πληρωμής</a></li>
             </ul>         

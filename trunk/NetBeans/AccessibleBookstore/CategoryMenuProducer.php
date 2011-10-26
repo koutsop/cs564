@@ -28,7 +28,7 @@ class CategoryMenuProducer {
     public function ProduceBanner () { 
         echo "
             <div class=\"bannerContainer\">
-                <img src=\"images/banner.gif\" alt=\"Με παραγγελίες άνω των 10 ευρώ σας κάνουμε δώρο τα έξοδα αποστολής\"/>
+                <img src=\"images/banner.gif\" alt=\"Προσφορά καταστήματος\" longdesc=\"Με παραγγελίες άνω των 10 ευρώ σας κάνουμε δώρο τα έξοδα αποστολής\"/>
             </div>
             <div class=\"clear\"></div>
         ";
@@ -67,7 +67,7 @@ class CategoryMenuProducer {
 				$this->ProduceCategory($selectedCategory, "Literature.php", "Λογοτεχνία");
 				/*$this->ProduceCategory($selectedCategory, "#", "Κλασσική Λογοτεχνία");*/
 				$this->ProduceCategory($selectedCategory, "#", "Επιστ.Φαντασία");
-				$this->ProduceCategory($selectedCategory, "#", "Fantasy");
+				//$this->ProduceCategory($selectedCategory, "#", "Fantasy");
 				$this->ProduceCategory($selectedCategory, "#", "Ιστορία");
 				$this->ProduceCategory($selectedCategory, "#", "Βιογραφίες");
 				$this->ProduceCategory($selectedCategory, "#", "Μονογραφίες");
@@ -77,7 +77,7 @@ class CategoryMenuProducer {
 				/*$this->ProduceCategory($selectedCategory, "#", "Παιδική Λογοτεχνία");*/
 				$this->ProduceCategory($selectedCategory, "#", "Χιούμορ");
 				$this->ProduceCategory($selectedCategory, "#", "Εκπαίδευση");
-				$this->ProduceCategory($selectedCategory, "#", "Manga");
+				//$this->ProduceCategory($selectedCategory, "#", "Manga");
 		echo "</ul>";
 	}
 }

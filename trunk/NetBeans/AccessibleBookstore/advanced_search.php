@@ -57,50 +57,95 @@
         <a name="content"></a>
         
         <div class="post">
-            <h1><span class="text"> Σύνθετη Αναζήτηση</span></h1>
+            <h1><span class="text">Σύνθετη Αναζήτηση</span></h1>
                 <div class="postContent">
            <div class="box">
                         <div class="boxContents">
-						<p><em> Επιλέξτε κριτήρια αναζήτησης:</em></p>
+						<!--<p><em> Επιλέξτε κριτήρια αναζήτησης:</em></p>-->
                         <form action="SearchResults.php" method="get"> <!-- advanced search form -->
-								<p><label for="title">Τίτλος:</label></p>
-								<p><input id="title" type="text" name="textfield" /></p>
-								<p><label for="author">Συγγραφέας:</label></p>
-								<p><input id="author" type="text" name="textfield" /></p>
-								<p><label for="publisher">Εκδότης:</label></p>
-								<p><input id="publisher" type="text" name="textfield" /></p>
-								<p><label for="isbn">ISBN:</label></p>
-								<p><input id="isbn" type="text" name="textfield" /></p>
-								<p><label for="publication_year">Έτος έκδοσης:</label></p>
-								<p><select name="publication_year" id="publication_year">
-								<option>Χρόνος</option>
-								<option>2011</option>
-								<option>2010</option>
-								<option>2009</option>
-								<option>2008</option>
-								<option>2007</option>
-								<option>2006</option>
-								<option>2005</option>
-								<option>2004</option>
-								<option>2003</option>
-								<option>2002</option>
-								<option>2001</option>
-								<option>2000</option>
-								</select></p>
-								<p><label for="text">Κείμενο:</label></p>
-								<p><input id="text" type="text" name="textfield" /></p>
-								<p><label for="category">Κατηγορία:</label></p>
-								<p><select name="category" id="category">
-								<option value="0">Όλα τα Προϊόντα</option>
-								<option value="1" >Βιβλία στα Ελληνικά</option>
-								<option value="2" >Ξενόγλωσσα Βιβλία	</option>
-								<option value="3" >PC Software</option>
-								<option value="4" >Games</option>
-								<option value="5,6" >Περιφεριακά Η/Υ - Αναλώσιμα Η/Υ</option>
-								<option value="11" >Ηλεκτρονικά</option>
-								<option value="7" >Χαρτικά - Είδη Γραφείου</option>							
-								</select></p>
+                            <fieldset>
+                                <legend><em>Επιλέξτε κριτήρια αναζήτησης:</em></legend>
+                                
+                                    <div class="formLayer">
+                                        <div class="leftFormLayer"><p><label for="title">Τίτλος:</label></p></div>
+                                        <div class="rightFormLayer"><p><input id="title" type="text" name="textfield" /></p></div>
+                                    </div>
+                                    <div class="clear"></div>  
+                                    
+                                    <div class="formLayer">
+                                        <div class="leftFormLayer"><p><label for="author">Συγγραφέας:</label></p></div>
+                                        <div class="rightFormLayer"><p><input id="author" type="text" name="textfield" /></p></div>
+                                    </div>
+                                    <div class="clear"></div>                                    
+								
+                                    <div class="formLayer">
+                                        <div class="leftFormLayer"><p><label for="publisher">Εκδότης:</label></p></div>
+                                        <div class="rightFormLayer"><p><input id="publisher" type="text" name="textfield" /></p></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    
+                                    <div class="formLayer">
+                                        <div class="leftFormLayer"><p><label for="isbn">ISBN:</label></p></div>
+                                        <div class="rightFormLayer"><p><input id="isbn" type="text" name="textfield" /></p></div>
+                                    </div>
+                                    <div class="clear"></div>
+                                    
+                                    <div class="formLayer">
+                                        <div class="leftFormLayer"><p><label for="publication_year">Έτος έκδοσης:</label></p></div>
+                                        <div class="rightFormLayer">
+                                            <p>
+                                                <select name="publication_year" id="publication_year">
+                                                <option>Χρόνος</option>
+                                                <option>2011</option>
+                                                <option>2010</option>
+                                                <option>2009</option>
+                                                <option>2008</option>
+                                                <option>2007</option>
+                                                <option>2006</option>
+                                                <option>2005</option>
+                                                <option>2004</option>
+                                                <option>2003</option>
+                                                <option>2002</option>
+                                                <option>2001</option>
+                                                <option>2000</option>
+                                            </select>
+                                            </p>                                            
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>                                
+								
+                                    <div class="formLayer">
+                                        <div class="leftFormLayer"><p><label for="text">Κείμενο:</label></p></div>
+                                        <div class="rightFormLayer"><p><input id="text" type="text" name="textfield" /></p></div>
+                                    </div>
+                                    <div class="clear"></div>         
+                                    
+                                    <div class="formLayer">
+                                        <div class="leftFormLayer"><p><label for="category">Κατηγορία:</label></p></div>
+                                        <div class="rightFormLayer">
+                                            <p>
+                                                <select name="category" id="category">
+                                                <option value="0">Όλα τα βιβλία</option>
+                                                <option value="1" >Μυθιστόρημα</option>
+                                                <option value="2" >Λογοτεχνία</option>
+                                                <option value="3" >Επιστ.Φαντασία</option>
+                                                <option value="4" >Ιστορία</option>
+                                                <option value="5" >Βιογραφίες</option>
+                                                <option value="6" >Μονογραφίες</option>	
+                                                <option value="7" >Μυστικισμός</option>	
+                                                <option value="8" >Τεχνολογία</option>	
+                                                <option value="9" >Διάφορα</option>	
+                                                <option value="10" >Χιούμορ</option>	
+                                                <option value="11" >Εκπαίδευση</option>		
+                                                </select>
+                                            </p>                                            
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>                                             
+
 								<p class="submit"><input type="submit" value="Αναζήτηση" /></p>
+                            </fieldset>
+                            <div class="clear"></div>        
 						</form>	<!-- advanced search form -->
                     </div>
 					</div>
