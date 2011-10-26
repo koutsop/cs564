@@ -29,6 +29,12 @@ table td {
 	border: 1px solid #f0f0f0;
 }
 
+.book_img
+{
+	width: 100px;
+	height: 150px;
+}
+
 table tr h2
 {
 	background-color:#f0f0f0;
