@@ -8,7 +8,7 @@
     <meta name="keywords" content="purchase books, electonic accessible bookstore" />          
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/shoppingcart.css" type="text/css" />
-    <title>Αccessible-Βookstore: Καλάθη Αγορών</title>
+    <title>Αccessible-Βookstore: Καλάθι Αγορών</title>
 
     <script type="text/JavaScript">
     <!--
@@ -40,8 +40,14 @@
             <a name="crumb"></a>
             <ul class="crumb">
                 <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
+				<li class= "crumb">></li>
+                <li class= "crumb"><a href="Literature.php" class="crumb">Λογοτεχνία</a></li>
                 <li class= "crumb">></li>
-                <li class= "crumb"><a href="cart2.php" class="crumb">Καλάθη Αγορών</a></li>
+                <li class= "crumb"><a href="ForeignLiterature.php" class="crumb">Ξένη Λογοτεχνία (Σελίδα 1)</a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="BookView.php" class="crumb"><span lang="EN-US">Aleph</span></a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="cart2.php" class="crumb">Καλάθι Αγορών</a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 

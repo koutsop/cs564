@@ -43,7 +43,7 @@
 				<li class= "crumb">></li>
                 <li class= "crumb"><a href="Literature.php" class="crumb">Λογοτεχνία</a></li>
                 <li class= "crumb">></li>
-                <li class= "crumb"><a href="ForeignLiterature.php" class="crumb">Ξένη Λογοτεχνία</a></li>
+                <li class= "crumb"><a href="ForeignLiterature.php" class="crumb">Ξένη Λογοτεχνία (Σελίδα 1)</a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 

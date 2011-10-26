@@ -40,8 +40,10 @@
             <a name="crumb"></a>
             <ul class="crumb">
                 <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="advanced_search.php" class="crumb">Σύνθετη Αναζήτηση</a></li>                
 				<li class= "crumb">></li>
-                <li class= "crumb"><a href="SearchResults.php" class="crumb">Αποτελέσματα Αναζήτησης</a></li>
+                <li class= "crumb"><a href="SearchResults.php" class="crumb">Αποτελέσματα Αναζήτησης (Σελίδα 1)</a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 

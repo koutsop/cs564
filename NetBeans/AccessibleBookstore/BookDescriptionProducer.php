@@ -17,12 +17,13 @@ class BookDescriptionProducer{
 	public function ProduceSortBookDiscription (
 						$url, 
 						$title, 
-						$img, 
+						$img,
 						$publisher, 
 						$publisherURL, 
 						$author, 
 						$price, 
-						$language
+						$language,
+                        $longdesc = "book.html"
 		) {
 		echo "
 		   <div class=\"box\">
@@ -30,7 +31,7 @@ class BookDescriptionProducer{
 					<div class=\"bookFrame\">
 						<div class=\"imgBookContainer\">
 							<span lang=\"$language\">
-							<a href=\"$url\"><img src=\"images/books/$img\" alt=\"Τίτλος βιβλίου: $title\" /></a>
+							<a href=\"$url\"><img src=\"images/books/$img\" alt=\"Τίτλος βιβλίου: $title\" longdesc=\"$longdesc\"/></a>
 							</span>
 						</div>
 						<div class=\"sortDescription\">

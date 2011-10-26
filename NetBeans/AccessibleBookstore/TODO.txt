@@ -1,8 +1,8 @@
-long disc
+[OK] long disc
 
 [OK] Title stis formes opos upe h marigianna
 
-Na ginei elegxos an sto gramb exoume balei swsta ta paths
+[OK] Na ginei elegxos an sto gramb exoume balei swsta ta paths
 
 [OK] To cart sta books prepei na einai button h' link opos to exw?
 
@@ -11,10 +11,9 @@ Na ginei elegxos an sto gramb exoume balei swsta ta paths
 lab 2 slide 40
 lab 2 slide 79
 
-[OK] Na ele3w to xrwma pou exoume pernoun ta input
-text fields (mesa apo to CSS ginetai auto)
+[OK] Na ele3w to xrwma pou exoume pernoun ta input text fields
 
-Na ele3w xrwmata, text stile, margin, padding gia:
+[OK] Na ele3w xrwmata, text stile, margin, padding gia:
 [OK] 1) BookTitle
 [OK] 2) publisher
 [OK] 3) price
@@ -26,9 +25,10 @@ Na ele3w xrwmata, text stile, margin, padding gia:
 2) Menu
 
 Sthn sun8eth anzhth:
-Kathgoria proionta na to ala3w kai na balw auta pou exoume emeis
-? Giati na mhn baloume legend sthn forma?
-ftia3imo + na ta balw kai na einai paralila
+[OK] Kathgoria proionta na to ala3w kai na balw auta pou exoume emeis
+[OK] ? Giati na mhn baloume legend sthn forma?
+[OK] ftia3imo + na ta balw kai na einai paralila
+na ftia3w to filedset na kanei rap ta content
 
 [OK] grammatooshra prepei na einai se em se % h' fix?
 

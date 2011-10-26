@@ -50,6 +50,14 @@
             <a name="crumb"></a>
             <ul class="crumb">
                 <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
+				<li class= "crumb">></li>
+                <li class= "crumb"><a href="Literature.php" class="crumb">Λογοτεχνία</a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="ForeignLiterature.php" class="crumb">Ξένη Λογοτεχνία (Σελίδα 1)</a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="BookView.php" class="crumb"><span lang="EN-US">Aleph</span></a></li>
+                <li class= "crumb">></li>
+                <li class= "crumb"><a href="cart2.php" class="crumb">Καλάθι Αγορών</a></li>
                 <li class= "crumb">></li>
                 <li class= "crumb"><a href="payment2.php" class="crumb">Διαδικασία Πληρωμής</a></li>
             </ul>         
@@ -74,20 +82,22 @@
             <h1><span class="text">Διαδικασία Πληρωμής</span></h1>
                 <div class="postContent">
 				<form action="payment_success.php"> <!-- address form -->
-				 <div class="box">
+                    <div class="box">
                         <div class="boxContents">
-						<fieldset style="border-color: #FF3333">
-						<a name="errors"></a>
-						<p style="color: #FF3333; font-weight: bold;"> 3 Λάθη βρέθηκαν κατά τη διαδικασία της πληρωμής.</p>
-						<p style="color: #FF3333;"> Παρακαλούμε διορθώστε αυτά τα λάθη, και υποβάλλετε τη φόρμα ξανά</p>
-						<ul id="error">
-						<li><a href="#name" onclick="setfocus('name')">Το όνομα παραλήπτη δεν μπορεί να είναι άδειο.Παρακαλώ δώστε ένα όνομα.</a></li>
-						<li><a href="#email" onclick="setfocus('email')">Tα e-mail που δώσατε δεν ταιριάζουν. Παρακαλώ δώστε δυο ίδια e-mail.</a></li>
-						<li><a href="#card_number" onclick="setfocus('card_number')"> Ο αριθμός της κάρτας σας δεν είναι σωστός. Παρακαλώ δώστε το σωστό αριθμό.</a></li>
-						</ul>
-						</fieldset>
+                        <div class="redBox">
+                            <!-- <fieldset style="border-color: #FF3333"> -->
+                                <a name="errors"></a>
+                                <p style="color: #FF3333; font-weight: bold;"> 3 Λάθη βρέθηκαν κατά τη διαδικασία της πληρωμής.</p>
+                                <p style="color: #FF3333;"> Παρακαλούμε διορθώστε αυτά τα λάθη, και υποβάλλετε τη φόρμα ξανά</p>
+                                <ul id="error">
+                                <li><a href="#name" onclick="setfocus('name')">Το όνομα παραλήπτη δεν μπορεί να είναι άδειο.Παρακαλώ δώστε ένα όνομα.</a></li>
+                                <li><a href="#email" onclick="setfocus('email')">Tα e-mail που δώσατε δεν ταιριάζουν. Παρακαλώ δώστε δυο ίδια e-mail.</a></li>
+                                <li><a href="#card_number" onclick="setfocus('card_number')"> Ο αριθμός της κάρτας σας δεν είναι σωστός. Παρακαλώ δώστε το σωστό αριθμό.</a></li>
+                                </ul>
+                           <!-- </fieldset> -->
+                        </div>   
 						</div>
-						</div>
+                    </div>
 					<div class="clear"></div>
 
                     <div class="box">
