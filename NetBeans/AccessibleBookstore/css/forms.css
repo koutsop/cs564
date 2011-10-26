@@ -32,7 +32,7 @@ legend
 
 fieldset
 {
-border: none;
+border: 1px solid black;
 color: #000;
 }
 
@@ -79,3 +79,10 @@ float:right;
 	
 }
 /** marigianna - end **/
+
+
+/* ----------- koutsop ----------------- */
+.leftFormLayer, rightFormLayer {
+    float: left;
+    width: 50%;
+}

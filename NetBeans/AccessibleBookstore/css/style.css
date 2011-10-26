@@ -34,8 +34,8 @@ input:focus { background-color: #FFF8C6; }
 /******************************************************************/
 #header{
     margin: 0;
-	min-height: 173px;
-	overflow: auto;
+    min-height: 86px;
+    overflow: auto;
 }
 
 
@@ -44,8 +44,8 @@ input:focus { background-color: #FFF8C6; }
 #logo{
 	float: left;
 	margin: 15px;
-	width: 237px;
-	height: 140px;	
+	width: 222px;
+	height: 86px;	
 }
 
 #logo a { float: left; }
@@ -243,24 +243,24 @@ input#searchBook {
 
 #headerMenuStyle ul.headerMenu li.headerMenu a.headerMenu,
 #headerMenuStyle ul.headerMenu li.headerMenuSelected {
-	float: left;
-	display:block;
-	min-height: 30px;
-	outline: none;
-	padding: 15px 18px 0;
-	text-decoration:none;
-	background: url(../images/categoryMenuDivider.gif) no-repeat right;
+    float: left;
+    display:block;
+    min-height: 30px;
+    outline: none;
+    padding: 15px 18px 0;
+    text-decoration:none;
+    background: url(../images/categoryMenuDivider.gif) no-repeat right;
 }
 #headerMenuStyle ul.headerMenu li.headerMenu a.headerMenu {color:#8f8f8f;}
 
 #headerMenuStyle ul.headerMenu li.headerMenuSelected {
-	background:#c9c9c9;
-	color:#fff 	
+    background:#c9c9c9;
+    color:#fff 	
 }
 
 #headerMenuStyle ul.headerMenu li.headerMenu a:hover,
 #headerMenuStyle ul.headerMenu li.headerMenu a:focus {
-	background:#c9c9c9;color:#fff 	
+    background:#c9c9c9;color:#fff 	
 }
 
 #headerMenuStyle ul.headerMenu li.rightElement  { float:right; }
@@ -268,17 +268,23 @@ input#searchBook {
 /*----------------crumb_navigation-------------*/
 
 #crumbContainer {
+    float: left;
     margin: 10px 0px 10px 0px;
     padding: 0;
     width: 100%;
-	font-size: 11px;
+    overflow: auto;
+    /*display: block;*/
+    /*font-size: 11px;*/
 }
 
 ul.crumb {
+    min-height: 20px;
+    width:100%;
+    float: left;
     margin: 0;
     padding: 0;
-	list-style-type: none; 
-	overflow:auto;
+    list-style-type: none; 
+    overflow:auto;
     color:#333333;
 }
 
@@ -291,12 +297,12 @@ li.crumbDivider { font-weight: bolder; }
 
 
 a.crumb {
-	float: left;
-	display: block;
-	padding-left: 10px;	
-	padding-right: 10px;	
+    float: left;
+    display: block;
+    padding-left: 10px;	
+    padding-right: 10px;	
     color: #0FA0DD;
-	text-decoration: none;
+    text-decoration: none;
 }
 
 a.crumb:hover, a.crumb:focus {
@@ -314,7 +320,7 @@ content
 
 .centerContentCell {
 	float: left;
-	width: 84%;		
+	width: 80%;		
 }
 
 .centerContent {
@@ -324,11 +330,11 @@ content
 	padding-left: 20px;
 	padding-right: 20px;
 }
-
+/*TODO na to kanw me pososta*/
 .centerContent .bannerContainer {
 	float: left;
-	width: 92%;
-	height: 17%;
+	width: 270px;
+	height: 277px;
 	margin-bottom: 40px;
 }
 .centerContent .bannerContainer img {
@@ -532,28 +538,28 @@ content
 
 .leftContent {
     float: left;
-    width: 16%;
+    width: 20%;
 }
 
 .titleBox {
-    width: 196px;
-    height: 30px;
+    min-width: 196px;
+    min-height: 30px;
     margin: 0;
     background: url(../images/categoryMenuTitleBoxBg.png) repeat-x center;
     text-align: center;
-    font-size: 13px;
     font-weight: bold;
     color: #F5F5F5;
     line-height: 30px;
 }
+.titleBox h1 { margin: 0; font-size: 1.5em;}
 
 ul.categoryMenu {
-    width: 194px;
+    min-width: 194px;
     padding: 0px;
     margin: 0px;
     list-style: none;
     border: 1px solid #7bbcc7;
-	font-size: 11px;
+	/*font-size: 11px;*/
 }
 
 li.categoryMenu { margin: 0; }
@@ -565,8 +571,8 @@ dl.categoryMenu {
 dt.categoryMenu,
 dd.categoryMenu { margin: 0; }
 dd.categoryMenuSelected {
-    width: 164px;
-    height: 25px;
+    min-width: 164px;
+    min-height: 25px;
     display: block;
     background:url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7;    
     background-position: 5px 5px;
@@ -580,8 +586,8 @@ dd.categoryMenuSelected {
 
 
 li.categoryMenuSelected {
-    width: 164px;
-    height: 25px;
+    min-width: 164px;
+    min-height: 25px;
     display: block;
     background:url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7;    
     background-position: 5px 5px;
@@ -593,8 +599,8 @@ li.categoryMenuSelected {
 }
 /****************************************/
 dt.categoryMenuSelected {
-    width: 139px;
-    height: 25px;
+    min-width: 139px;
+    min-height: 25px;
     display: block;
     background: url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7;
     background-position: 30px 5px;
@@ -606,8 +612,8 @@ dt.categoryMenuSelected {
 }
 
 dt.categoryMenu a.categoryMenu {
-    width: 139px;
-    height: 25px;
+    min-width: 139px;
+    min-height: 25px;
     display: block;
     background: url(../images/categoryMenu.png) no-repeat left #eff3f6;
     background-position: 30px 5px;
@@ -620,8 +626,8 @@ dt.categoryMenu a.categoryMenu {
 
 dt.categoryMenuSelected, 
 dt.categoryMenu a.categoryMenu {
-   width: 139px;
-    height: 25px;
+    min-width: 139px;
+    min-height: 25px;
     display: block;
     background-position: 30px 5px;
     border-bottom: 1px white solid;
@@ -632,8 +638,6 @@ dt.categoryMenu a.categoryMenu {
 }
 
 
-/****************************************/
-
 dt.categoryMenu a.categoryMenu:hover, dt.categoryMenu a.categoryMenu:focus {
     background:url(../images/categoryMenuSelected.png) no-repeat left #7bbcc7; 
     color:#FFFFFF;
@@ -641,8 +645,8 @@ dt.categoryMenu a.categoryMenu:hover, dt.categoryMenu a.categoryMenu:focus {
 }
 
 a.categoryMenu {
-    width: 164px;
-    height: 25px;
+    min-width: 164px;
+    min-height: 25px;
     display: block;
     background: url(../images/categoryMenu.png) no-repeat left #eff3f6;
     background-position: 5px 5px;

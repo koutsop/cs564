@@ -30,7 +30,7 @@ class BookDescriptionProducer{
 					<div class=\"bookFrame\">
 						<div class=\"imgBookContainer\">
 							<span lang=\"$language\">
-							<a href=\"$url\" title=\"$title\"><img src=\"images/books/$img\" alt=\"\"/></a>
+							<a href=\"$url\"><img src=\"images/books/$img\" alt=\"Τίτλος βιβλίου: $title\" /></a>
 							</span>
 						</div>
 						<div class=\"sortDescription\">
@@ -50,7 +50,7 @@ class BookDescriptionProducer{
 						</div>	
 						<div class=\"clear\"></div>
 						<div class=\"imgCartContainer\">
-								<a  href=\"#\" title=\"Προσθήκη στο καλάθι\"><img src=\"images/cart.gif\" alt=\"\"/></a>
+								<a  href=\"#\"><img src=\"images/cart.gif\" alt=\"Προσθήκη στο καλάθι\"/></a>
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,7 @@ class BookDescriptionProducer{
 						<div class=\"bookContentTop\">
 							<div class=\"imgBookContainer\">
 								<span lang=\"$language\">
-								<a href=\"$url\" title=\"$title\"><img src=\"images/books/$img\" alt=\"\"/></a>
+								<a href=\"$url\"><img src=\"images/books/$img\" alt=\"Τίτλος βιβλίου: $title\"/></a>
 								</span>
 							</div>
 							<div class=\"longDescription\">
@@ -104,7 +104,7 @@ class BookDescriptionProducer{
 						</div>	
 						<div class=\"clear\"></div>
 						<div class=\"imgCartContainerlongDescription\">
-								<a  href=\"cart.php\" title=\"Προσθήκη στο καλάθι\"><img src=\"images/cart.gif\" alt=\"\"/></a>
+								<a  href=\"cart.php\" ><img src=\"images/cart.gif\" alt=\"Προσθήκη στο καλάθι\"/></a>
 						</div>
 						
 						

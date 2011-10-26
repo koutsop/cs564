@@ -16,8 +16,12 @@ class HeadProducer {
 	
     //------------------------------------------------------------
     
-    public function ProduceHeaderBegin () 
-        { echo "<div class=\"header\"> <!-- header -->"; }
+    public function ProduceHeaderBegin () { 
+        echo "
+            <div class=\"header\"> <!-- header -->
+            <a href=\"#\" class=\"skipButton\">Μετάβαση στο περιεχόμενο</a>
+        ";
+    }
         
     //------------------------------------------------------------
     
