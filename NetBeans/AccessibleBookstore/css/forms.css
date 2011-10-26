@@ -13,7 +13,7 @@ input,select
 }
 
 label {
-font-family: 'Trebuchet MS', Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', Tahoma, sans-serif;
 	font-size: 12px;
 	font-weight: bold;
 	color: #000000;
@@ -63,7 +63,7 @@ float:left;
 
 #rightdv
 {
-width: 30%;
+width: 40%;
 Text-align:center;
 float:right;
 }
@@ -82,7 +82,11 @@ float:right;
 
 
 /* ----------- koutsop ----------------- */
-.leftFormLayer, rightFormLayer {
+.formLayer {
+    float: left;
+    width: 100%;
+}
+.leftFormLayer, .rightFormLayer {
     float: left;
     width: 50%;
 }
