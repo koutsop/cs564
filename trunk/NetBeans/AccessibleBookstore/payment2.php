@@ -4,9 +4,11 @@
 <head>
     <meta http-equiv ="Content-Language" content="el" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Accessible bookstore" />
+    <meta name="keywords" content="purchase books, electonic accessible bookstore" />          
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-	 <link rel="stylesheet" href="css/forms.css" type="text/css" />
-	  <link rel="stylesheet" href="css/shoppingcart.css" type="text/css" />
+	<link rel="stylesheet" href="css/forms.css" type="text/css" />
+	<link rel="stylesheet" href="css/shoppingcart.css" type="text/css" />
     <title>Αccessible-Βookstore: Διαδικασία Πληρωμής</title>
 
     <script type="text/JavaScript">

@@ -4,6 +4,8 @@
 <head>
     <meta http-equiv ="Content-Language" content="el" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Accessible bookstore" />
+    <meta name="keywords" content="purchase books, electonic accessible bookstore" />          
     <link rel="stylesheet" href="css/style.css" type="text/css" />
 	<link rel="stylesheet" href="css/shoppingcart.css" type="text/css" />
     <title>Αccessible-Βookstore: Καλάθη Αγορών</title>
@@ -73,7 +75,10 @@
 							<a href="#"><img src="images/continueBtn.png" alt="Συνέχεια αγορών"/></a>
 							</div>
 						</div>
-						       <div class="clear"></div>
+                      
+                        <div class="clear"></div>
+                        <br />
+                        
 						<div class="box">
 							<div> 
 								<fieldset>
@@ -81,20 +86,28 @@
 								Συγκεκριμένα τα χαρακτηριστικά που περιγράφονται είναι: Εξώφυλλο βιβλίου, Τίτλος, Τεμάχια, Τιμή, και επιλογή
 								διαγραφής του κάθε προϊόντος.">
 								<tr>
-								<th id="b"> Βιβλίο </th> <th id="t"> Τίτλος </th> <th id="no">Τεμάχια </th> <th id="p"> Τιμή </th> <th id="del"> Διαγραφή </th>
+                                    <th id="b"> Βιβλίο </th> 
+                                    <th id="t"> Τίτλος </th> 
+                                    <th id="no">Τεμάχια </th> 
+                                    <th id="p"> Τιμή </th> 
+                                    <th id="del"> Διαγραφή </th>
 								</tr>
 								<tr>
 								<td headers="b"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs">
 								<img class="book_img" src="./images/books/steve-jobs-book.jpg" 
 								alt="Εξώφυλλο:Η επίσημη βιογραφία του Steve Jobs.Η ζωή του όπως αυτός περιγράφει."/>
 								</a></td> 
-								<td headers="t"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs"> 
+								<td headers="t" align="center"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs"> 
 								 Η επίσημη βιογραφία του Steve Jobs </a></td> 
-								<td headers="no"><input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/></td> 
-								<td headers="p"> 30.99 € </td> 
-								<td headers="del"> 
+								<td headers="no" align="center">
+                                    <input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/>
+                                    <br />
+                                    <a href="" style="font-size: 11px;">ανανέωση</a>
+                                </td> 
+                                <td headers="p" align="center"> 30.99 € </td> 
+								<td headers="del" align="center"> 
 								<!--<input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/>  -->
-								<a href="#"><img  src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι."/></a>	
+								<a href="#" align="center"><img  src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι."/></a>	
 								</td>
 								</tr>
 								</table>
