@@ -10,15 +10,30 @@ class CategoryMenuProducer {
     
     public function ProduceCategoryMenu($selectedCategory) {
         $this->ProduceCategoryMenuBegin();
-		$this->ProduceTitleBox();
-		$this->ProduceMenu($selectedCategory);
-		$this->ProduceCategoryMenuEnd();
+        $this->ProduceBanner();
+        $this->ProduceTitleBox();
+        $this->ProduceMenu($selectedCategory);
+        $this->ProduceCategoryMenuEnd();
     }
-    
+    /*<div class="bannerContainer">
+				<img src="images/banner.gif" alt="Με παραγγελίες άνω των 10 ευρώ σας κάνουμε δώρο τα έξοδα αποστολής"/>
+			</div>*/
     //------------------------------------------------------------
     
     public function ProduceCategoryMenuBegin ()
         { echo "<div class=\"leftContent\">   <!-- leftContent -->"; }
+ 
+    //------------------------------------------------------------
+    
+    public function ProduceBanner () { 
+        echo "
+            <div class=\"bannerContainer\">
+                <img src=\"images/banner1.png\" alt=\"Με παραγγελίες άνω των 10 ευρώ σας κάνουμε δώρο τα έξοδα αποστολής\"/>
+            </div>
+        ";
+        
+    }
+   
         
     //------------------------------------------------------------
     
@@ -27,7 +42,7 @@ class CategoryMenuProducer {
         
  	public function ProduceTitleBox () {
 		echo "
-			<div class=\"titleBox\"><strong>Κατηγορίες</strong></div>
+			<div class=\"titleBox\"><h1>Κατηγορίες</h1></div>
 			<a href=\"#\" class=\"skipButton\">Μετάβαση στο περιεχόμενο</a>
 			<a name=\"categoryMenu\"></a>
 		";

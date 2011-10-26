@@ -53,7 +53,7 @@
 		?>
         
        <div class="leftContent">   <!-- leftContent -->
-            <div class="titleBox"><strong>Κατηγορίες</strong></div>
+            <div class="titleBox"><h1>Κατηγορίες</h1></div>
             <a href="#" class="skipButton">Μετάβαση στο περιεχόμενο</a>
             <a name="categoryMenu"></a>
             <ul class="categoryMenu">
