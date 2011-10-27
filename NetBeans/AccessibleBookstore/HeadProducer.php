@@ -159,9 +159,9 @@ class HeadProducer {
                 <ul class=\"headerMenu\">\n";    
                     $this->IsActivePage ($activePage, 'index.php', 'Αρχική σελίδα');
                     $this->IsActivePage ($activePage, '#', 'Ο λογαριασμός μου');
-                    $this->IsActivePage ($activePage, '#', 'Εγγραφή');
+                    //$this->IsActivePage ($activePage, '#', 'Εγγραφή');
                     $this->IsActivePage ($activePage, '#', 'Ποιοί είμαστε');
-                    $this->IsActivePage ($activePage, '#', 'Είσοδος');
+                    //$this->IsActivePage ($activePage, '#', 'Είσοδος');
                     $this->IsActivePage ($activePage, '#', 'FAQ');
                     $this->IsActivePage ($activePage, '#', 'Site map', true);
         echo " 
