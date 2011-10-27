@@ -8,9 +8,10 @@ class HeadProducer {
     public function ProduceHeader ($activePage, $numberOfCartItems = 0) {
         $this->ProduceHeaderBegin();
         $this->produceLogo();
-		$this->ProduceLogin();
         $this->ProduceStandartFileds($numberOfCartItems);
         $this->ProduceClear();
+		$this->ProduceLogin();
+		$this->ProduceClear();
         $this->ProduceHeaderMenu($activePage);
         $this->ProduceHeaderEnd();
     } 
@@ -20,6 +21,7 @@ class HeadProducer {
     public function ProduceHeaderBegin () { 
         echo "
             <div class=\"header\"> <!-- header -->
+			<div class=\"headerUp\">
 			<a href=\"#content\" class=\"skipButton\">Μετάβαση στο περιεχόμενο</a>
             <a href=\"#searchAnchor\" class=\"skipButton\">Μετάβαση στην αναζήτηση</a>
             <a href=\"#crumb\" class=\"skipButton\">Μετάβαση στους συνδέσμους πλοήγησης</a>
@@ -51,19 +53,21 @@ class HeadProducer {
 	public function ProduceLogin () {
 		echo "
 			<div class=\"signin-box\" lang=\"EN-US\">
-				<div class=\"sinin\">
-					<form action=\"index.php\" method=\"post\">
-						<fieldset>
-							<label for=\"username\">Userename: </label>
-							<input id=\"username\" name=\"username\" type=\"text\" maxlength=\"255\"/>
-							<label for=\"password\">Password: </label>
-							<input id=\"password\" name=\"password\" type=\"password\" maxlength=\"255\"/>
-							<input type=\"submit\" id=\"sinIn\" class=\"sinInButtonSubmit\" name=\"sinIn\" value=\"Sign In\"/>
-						</fieldset>
-					</form>
-				</div>	<!-- sinin ends -->
-				<div class=\"siniup\">
-					<ul><li><a href=\"#\">Sign up</a></li></ul>
+				<div class=\"signin-box-contents\">
+					<div class=\"sinin\">
+						<form action=\"index.php\" method=\"post\">
+							<fieldset>
+								<label for=\"username\">Userename: </label>
+								<input id=\"username\" name=\"username\" type=\"text\" maxlength=\"255\"/>
+								<label for=\"password\">Password: </label>
+								<input id=\"password\" name=\"password\" type=\"password\" maxlength=\"255\"/>
+								<input type=\"submit\" id=\"sinIn\" class=\"sinInButtonSubmit\" name=\"sinIn\" value=\"Sign In\"/>
+							</fieldset>
+						</form>
+					</div>	<!-- sinin ends -->
+					<div class=\"siniup\">
+						<ul><li><a href=\"#\">Sign up</a></li></ul>
+					</div>
 				</div>
 			</div>		
 		";
@@ -127,6 +131,7 @@ class HeadProducer {
                     <div class=\"rightBg\"></div>
                 </div>
             </div>  <!-- standartFileds ends -->
+			</div> <!-- headerUp -->
         ";    
     }
     

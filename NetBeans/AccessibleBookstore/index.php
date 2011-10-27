@@ -40,7 +40,7 @@
             <a href="#categoryMenu" class="skipButton">Μετάβαση στο μενού κατηγορίες</a>
             <a name="crumb"></a>
             <ul class="crumb">
-                <li class= "crumb"><a href="index.html" class="crumb">Αρχική σελίδα</a></li>
+                <li class= "crumb"><a href="index.php" class="crumb">Αρχική σελίδα</a></li>
             </ul>         
         </div>  <!-- crumbContainer -->
 

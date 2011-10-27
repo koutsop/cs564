@@ -32,13 +32,18 @@ input:focus { background-color: #FFF8C6; }
 /******************************************************************/
 								/*header*/
 /******************************************************************/
-#header{
+.header{
     margin: 0;
     min-height: 86px;
     overflow: auto;
 }
 
-
+.headerUp {
+	float: left;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
 /*---------------- logo ----------------------*/
 
 #logo{
@@ -59,41 +64,47 @@ input:focus { background-color: #FFF8C6; }
 
 /*---------------- login ----------------------*/
 
-.signin-box { 
-	float: right;
-	margin-right: 10px;
+.header .signin-box { 
+	float: left;
 	display: block;
+	width: 100%;
+	margin-bottom: 15px;
 }
-.signin-box fieldset { 
+
+.header .signin-box .signin-box-contents {
+	float: right;
+	margin-right: 15px;
+}
+
+.header .signin-box fieldset { 
 	margin: 0;
 	padding: 0;
 	border: 0px;
 }
 
-.signin-box .sinin,  .sinin#username, .sinin#password, .sin#sinIn {
+.header .signin-box .sinin, 
+.header .sinin#username, 
+.header .sinin#password, 
+.header .sin#sinIn {
 	float: left;
 }
 
-.signin-box .siniup {
-	float: left;
-}
+.header .signin-box .siniup { float: left; }
 
-.signin-box .sinInButtonSubmit {
+.header .signin-box .sinInButtonSubmit {
 	border: 1px solid #3079ED;
 	color: white;
 	background-color: #4D90FE;	
 	margin: 2px 5px 2px 2px;
 }
 
-.signin-box .siniup ul {
+.header .signin-box .siniup ul {
 	list-style-type: none;
 	padding-left: 10px;
 	margin: 2px 2px 2px 2px;
 }
 
-.signin-box .siniup li {
-	display: inline;
-}
+.header .signin-box .siniup li { display: inline; }
 
 /*---------------- standartFileds ----------------------*/
 
