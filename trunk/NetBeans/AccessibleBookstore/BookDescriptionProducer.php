@@ -70,7 +70,8 @@ class BookDescriptionProducer{
 						$author, 
 						$price, 
 						$language, 
-						$discription
+						$discription,
+                        $longdesc = "book.html"			
 		) {
 		echo "
 		   <div class=\"box\">
@@ -79,7 +80,7 @@ class BookDescriptionProducer{
 						<div class=\"bookContentTop\">
 							<div class=\"imgBookContainer\">
 								<span lang=\"$language\">
-								<a href=\"$url\"><img src=\"images/books/$img\" alt=\"Τίτλος βιβλίου: $title\"/></a>
+								<a href=\"$url\"><img src=\"images/books/$img\" alt=\"Τίτλος βιβλίου: $title\" longdesc=\"$longdesc\"/></a>
 								</span>
 							</div>
 							<div class=\"longDescription\">

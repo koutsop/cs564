@@ -84,7 +84,7 @@
                     <div class="box">
                         <div class="boxContents">					
 					
-							<form action="payment_success.php"> <!-- address form -->
+							<form action="payment_success.php" method="post"> <!-- address form -->
 								<div class="redBox">
 									<a name="errors"></a>
 									<p style="color: #FF3333; font-weight: bold;"> 3 Λάθη βρέθηκαν κατά τη διαδικασία της πληρωμής.</p>
@@ -103,7 +103,7 @@
 									<legend>Στοιχεία Αποστολής</legend>
 									<div class="formLayer">
 										<div class="leftFormLayer"><p><label for="name">Όνομα<span class="required"> (Υποχρεωτικό) </span></label></p></div>
-										<div class="rightFormLayer"><p><input id="name" type="text" name="name" style="background: #FF3333"/></p></div>
+										<div class="rightFormLayer"><p><input id="name" type="text" name="name" style="background: #FF3333" accesskey="1"/></p></div>
 									</div>
 									<div class="clear"></div>  
 
@@ -202,7 +202,7 @@
 									<div class="formLayer">
 										<div class="leftFormLayer"><p><label for="credit_card_type">Είδος πιστωτικής κάρτας<span class="required"> (Υποχρεωτικό) </span></label></p></div>
 										<div class="rightFormLayer">
-											<p><select name="credit_card_type" id="credit_card_type">
+											<p><select name="credit_card_type" id="credit_card_type" accesskey="2">
 											<option>VISA</option>
 											<option selected="selected">VISA Prepaid</option>
 											<option>VISA Electron</option>
