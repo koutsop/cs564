@@ -57,19 +57,50 @@ input:focus { background-color: #FFF8C6; }
 	height: 100%;
 }
 
-/*---------------- advertisement ----------------------*/
-/*
-#advertisement {
-    float:left;
-    margin:0;
-    padding:0;
+/*---------------- login ----------------------*/
+
+.signin-box { 
+	float: right;
+	margin-right: 10px;
+	display: block;
 }
-*/
+.signin-box fieldset { 
+	margin: 0;
+	padding: 0;
+	border: 0px;
+}
+
+.signin-box .sinin,  .sinin#username, .sinin#password, .sin#sinIn {
+	float: left;
+}
+
+.signin-box .siniup {
+	float: left;
+}
+
+.signin-box .sinInButtonSubmit {
+	border: 1px solid #3079ED;
+	color: white;
+	background-color: #4D90FE;	
+	margin: 2px 5px 2px 2px;
+}
+
+.signin-box .siniup ul {
+	list-style-type: none;
+	padding-left: 10px;
+	margin: 2px 2px 2px 2px;
+}
+
+.signin-box .siniup li {
+	display: inline;
+}
+
 /*---------------- standartFileds ----------------------*/
 
 #standartFileds {
     float: right;
-    margin-top: 15px;
+    margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 /*---------------- Search ----------------------*/

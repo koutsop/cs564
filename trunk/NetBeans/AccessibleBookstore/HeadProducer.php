@@ -8,6 +8,7 @@ class HeadProducer {
     public function ProduceHeader ($activePage, $numberOfCartItems = 0) {
         $this->ProduceHeaderBegin();
         $this->produceLogo();
+		$this->ProduceLogin();
         $this->ProduceStandartFileds($numberOfCartItems);
         $this->ProduceClear();
         $this->ProduceHeaderMenu($activePage);
@@ -47,6 +48,27 @@ class HeadProducer {
         ";       
     }
     
+	public function ProduceLogin () {
+		echo "
+			<div class=\"signin-box\" lang=\"EN-US\">
+				<div class=\"sinin\">
+					<form action=\"index.php\" method=\"post\">
+						<fieldset>
+							<label for=\"username\">Userename: </label>
+							<input id=\"username\" name=\"username\" type=\"text\" maxlength=\"255\"/>
+							<label for=\"password\">Password: </label>
+							<input id=\"password\" name=\"password\" type=\"password\" maxlength=\"255\"/>
+							<input type=\"submit\" id=\"sinIn\" class=\"sinInButtonSubmit\" name=\"sinIn\" value=\"Sign In\"/>
+						</fieldset>
+					</form>
+				</div>	<!-- sinin ends -->
+				<div class=\"siniup\">
+					<ul><li><a href=\"#\">Sign up</a></li></ul>
+				</div>
+			</div>		
+		";
+	}
+	
     //------------------------------------------------------------
     
     public function ProduceStandartFileds($numberOfCartItems) {
