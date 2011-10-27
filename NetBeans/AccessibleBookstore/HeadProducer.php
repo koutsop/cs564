@@ -58,15 +58,15 @@ class HeadProducer {
 						<form action=\"index.php\" method=\"post\">
 							<fieldset>
 								<label for=\"username\">Userename: </label>
-								<input id=\"username\" name=\"username\" type=\"text\" maxlength=\"255\"/>
+								<input id=\"username\" name=\"username\" type=\"text\" maxlength=\"255\" accesskey=\"L\"/>
 								<label for=\"password\">Password: </label>
-								<input id=\"password\" name=\"password\" type=\"password\" maxlength=\"255\"/>
-								<input type=\"submit\" id=\"sinIn\" class=\"sinInButtonSubmit\" name=\"sinIn\" value=\"Sign In\"/>
+								<input id=\"password\" name=\"password\" type=\"password\" maxlength=\"255\" accesskey=\"P\"/>
+								<input type=\"submit\" id=\"sinIn\" class=\"sinInButtonSubmit\" name=\"sinIn\" value=\"Sign In\" accesskey=\"I\"/>
 							</fieldset>
 						</form>
 					</div>	<!-- sinin ends -->
 					<div class=\"siniup\">
-						<ul><li><a href=\"#\">Sign up</a></li></ul>
+						<ul><li><a href=\"#\" accesskey=\"U\">Sign up</a></li></ul>
 					</div>
 				</div>
 			</div>		
@@ -90,6 +90,7 @@ class HeadProducer {
                                     name=\"searchBook\" 
                                     type=\"text\" 
                                     maxlength=\"255\"
+									accesskey=\"S\"
                                     value=\"τίτλος, συγγραφέας, εκδότης, ISBN\" 
                                     onfocus=\"doClear(this, 'τίτλος, συγγραφέας, εκδότης, ISBN')\"
                                 />

@@ -56,6 +56,10 @@
 		?>
         
        <div class="leftContent">   <!-- leftContent -->
+			<div class="bannerContainer">
+                <img src="images/banner.gif" alt="Προσφορά καταστήματος" longdesc="offering.html"/>
+            </div>
+			<div class="clear"></div>
             <div class="titleBox"><h1>Κατηγορίες</h1></div>
             <a href="#" class="skipButton">Μετάβαση στο περιεχόμενο</a>
             <a name="categoryMenu"></a>

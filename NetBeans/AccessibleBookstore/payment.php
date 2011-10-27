@@ -74,12 +74,12 @@
                 <div class="postContent">
 					<div class="box">
 						<div class="boxContents">
-							<form action="payment2.php#errors"> <!-- address form -->
+							<form action="payment2.php#errors" method="post"> <!-- address form -->
 								<fieldset>
-                                <legend>Στοιχεία Αποστολής</legend>
+									<legend>Στοιχεία Αποστολής</legend>
                                     <div class="formLayer">
                                         <div class="leftFormLayer"><p><label for="name">Όνομα<span class="required"> (Υποχρεωτικό) </span></label></p> <br/></div>
-                                        <div class="rightFormLayer"><p><input id="name" type="text" name="textfield" /></p></div>
+                                        <div class="rightFormLayer"><p><input id="name" type="text" name="textfield" accesskey="1"/></p></div>
                                     </div>
                                     <div class="clear"></div>
                                     
@@ -179,7 +179,7 @@
 											<div class="leftFormLayer"><p><label for="credit_card_type">Είδος πιστωτικής κάρτας<span class="required"> (Υποχρεωτικό) </span></label></p></div>
 											<div class="rightFormLayer">
 												<p>
-													<select name="credit_card_type" id="credit_card_type">
+													<select name="credit_card_type" id="credit_card_type" accesskey="2">
 														<option>VISA</option>
 														<option>VISA Prepaid</option>
 														<option>VISA Electron</option>

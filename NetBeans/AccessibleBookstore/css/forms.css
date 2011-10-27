@@ -37,9 +37,7 @@ forms
 	margin-top: 5%;
 }
 
-.centerContentCell .box form {
-	float: left;
-}
+.centerContentCell .box form { float: left; }
 
 .centerContentCell #wrapper { width: 100%; }
 
@@ -69,7 +67,8 @@ forms
     display: block; 
 }
 
-.centerContentCell .leftFormLayer, .centerContentCell .rightFormLayer {
+.centerContentCell .formLayer .leftFormLayer, 
+.centerContentCell .formLayer .rightFormLayer {
     float: left;
     width: 50%;
     display: block; 
