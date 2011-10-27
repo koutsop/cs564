@@ -101,17 +101,17 @@
 								<img class="book_img" src="./images/books/steve-jobs-book.jpg" 
 								alt="Εξώφυλλο:Η επίσημη βιογραφία του Steve Jobs.Η ζωή του όπως αυτός περιγράφει."/>
 								</a></td> 
-								<td headers="t" align="center"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs"> 
+								<td headers="t"><a href="SteveJobs.php" title="Η επίσημη βιογραφία του Steve Jobs"> 
 								 Η επίσημη βιογραφία του Steve Jobs </a></td> 
-								<td headers="no" align="center">
+								<td headers="no" style="text-align: center;">
                                     <input id="items" type="text" name="textfield" maxlength="3" size="3" value="1"/>
                                     <br />
                                     <a href="" style="font-size: 11px;">ανανέωση</a>
                                 </td> 
-                                <td headers="p" align="center"> 30.99 € </td> 
-								<td headers="del" align="center"> 
+                                <td headers="p"> 30.99 € </td> 
+								<td headers="del" style="text-align: center;"> 
 								<!--<input class="image" name="Delete" type="image" src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι"/>  -->
-								<a href="#" align="center"><img  src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι."/></a>	
+								<a href="#"><img  src="images/Delete-icon.png" alt="Διαγραφή προϊόντος από το καλάθι."/></a>	
 								</td>
 								</tr>
 								</table>
