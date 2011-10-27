@@ -202,7 +202,7 @@
 									<div class="formLayer">
 										<div class="leftFormLayer"><p><label for="credit_card_type">Είδος πιστωτικής κάρτας<span class="required"> (Υποχρεωτικό) </span></label></p></div>
 										<div class="rightFormLayer">
-											<p><select name="credit_card_type" id="credit_card_type" accesskey="2">
+											<p><select name="credit_card_type" id="credit_card_type">
 											<option>VISA</option>
 											<option selected="selected">VISA Prepaid</option>
 											<option>VISA Electron</option>
@@ -215,7 +215,7 @@
 
 									<div class="formLayer">
 										<div class="leftFormLayer"><p><label for="cardholder_name">Όνομα κατόχου<span class="required"> (Υποχρεωτικό) </span></label></p></div>
-										<div class="rightFormLayer"><p><input id="cardholder_name" type="text" name="textfield" value="ΓΙΑΝΝΗΣ ΣΚΟΥΡΑΔΑΚΗΣ"/></p></div>
+										<div class="rightFormLayer"><p><input id="cardholder_name" type="text" name="textfield" value="ΓΙΑΝΝΗΣ ΣΚΟΥΡΑΔΑΚΗΣ" accesskey="2"/></p></div>
 									</div>
 									<div class="clear"></div>                               
 
