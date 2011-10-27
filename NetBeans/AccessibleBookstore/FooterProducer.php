@@ -29,7 +29,7 @@ class FooterProducer {
 
 				<div class=\"rightFooter\"> <!-- rightFooter -->
 					<div id=\"followUsOn\">    <!-- followUsOn -->
-						<a href=\"\"><img src=\"images/rss.gif\" alt=\"Τα τελευταία νέα μας μέσο RSS\"/></a>
+						<a href=\"rss/rss.xml\"><img src=\"images/rss.gif\" alt=\"Τα τελευταία νέα μας μέσο RSS\"/></a>
 						<a href=\"http://www.facebook.com\"><img src=\"images/facebook_logo.png\" alt=\"Η σελίδας μας στο facebook\"/></a>
 						<a href=\"http://twitter.com/\"><img src=\"images/twitter_logo.png\" alt=\"Ακολουθείσθε μας στο twitter\"/></a>
 					</div>  <!-- followUsOn ends -->
