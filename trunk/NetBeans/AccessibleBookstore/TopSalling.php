@@ -53,7 +53,7 @@
 			'el'
 		);			
 		
-		echo "<div class=\"clear\"></div>";
+		//echo "<div class=\"clear\"></div>";
 		
 		$producer->ProduceSortBookDiscription(
 			'#', 

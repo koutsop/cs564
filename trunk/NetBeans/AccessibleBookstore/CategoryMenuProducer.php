@@ -10,9 +10,9 @@ class CategoryMenuProducer {
     
     public function ProduceCategoryMenu($selectedCategory) {
         $this->ProduceCategoryMenuBegin();
-        $this->ProduceBanner();
         $this->ProduceTitleBox();
         $this->ProduceMenu($selectedCategory);
+		$this->ProduceBanner();
         $this->ProduceCategoryMenuEnd();
     }
 
@@ -25,10 +25,10 @@ class CategoryMenuProducer {
     
     public function ProduceBanner () { 
         echo "
+			<div class=\"clear\"></div>
             <div class=\"bannerContainer\">
-                <img src=\"images/banner.gif\" alt=\"Προσφορά καταστήματος\" longdesc=\"offering.html\"/>
+                <img src=\"images/book_banner.png\" alt=\"Προσφορά καταστήματος\" longdesc=\"offering.html\"/>
             </div>
-            <div class=\"clear\"></div>
         ";
         
     }

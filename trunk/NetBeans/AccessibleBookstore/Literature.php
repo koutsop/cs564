@@ -54,9 +54,6 @@
 		?>
         
        <div class="leftContent">   <!-- leftContent -->
-			<div class="bannerContainer">
-                <img src="images/banner.gif" alt="Προσφορά καταστήματος" longdesc="offering.html"/>
-            </div>
             <div class="clear"></div>
             <div class="titleBox"><h1>Κατηγορίες</h1></div>
             <a href="#" class="skipButton">Μετάβαση στο περιεχόμενο</a>
@@ -89,6 +86,11 @@
                 <li class="categoryMenu"><a href="#" class="categoryMenu">Εκπαίδευση</a>           </li>
                 <li class="categoryMenu"><a href="#" class="categoryMenu">Manga</a>                </li>           
             </ul>
+			<div class="clear"></div>
+			
+			<div class="bannerContainer">
+                <img src="images/book_banner.png" alt="Προσφορά καταστήματος" longdesc="offering.html"/>
+            </div>			
         </div>  <!-- leftContent ends -->        
         
 
