@@ -7,7 +7,7 @@
     <meta name="description" content="Accessible bookstore" />
     <meta name="keywords" content="purchase books, electonic accessible bookstore" />          
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-	<link rel="stylesheet" href="css/forms.css" type="text/css" />
+	<link rel="stylesheet" href="css/forms.css" type="text/css" />			
 	<link rel="stylesheet" href="css/shoppingcart.css" type="text/css" />
     <title>Αccessible-Βookstore: Λάθη Στην Διαδικασία Πληρωμής</title>
 
@@ -72,11 +72,10 @@
         <div class="post">
             <h1><span class="text">Διαδικασία Πληρωμής</span></h1>
                 <div class="postContent">
-				<form action="payment2.php#errors"> <!-- address form -->
-				
-                    <div class="box">
-                        <div class="boxContents">
-                            <fieldset>
+					<div class="box">
+						<div class="boxContents">
+							<form action="payment2.php#errors"> <!-- address form -->
+								<fieldset>
                                 <legend>Στοιχεία Αποστολής</legend>
                                     <div class="formLayer">
                                         <div class="leftFormLayer"><p><label for="name">Όνομα<span class="required"> (Υποχρεωτικό) </span></label></p> <br/></div>
@@ -161,106 +160,107 @@
                                     </div>
                                     <div class ="clear"></div>
                                                                  
-                            </fieldset>
+								</fieldset>
+								<div class="clear"></div>
+								<p><br /></p>
+								
+								<fieldset>
+									<legend>Στοιχεία Πληρωμής</legend>
+										<p><em>Τα στοιχεία της πιστωτικής σας κάρτας δεν αποθηκεύονται στη βάση δεδομένων μας.
+												<br />Κατά τη συναλλαγή τηρούμε όλα τα πρωτόκολλα ασφαλείας.</em></p>
+										<p>
+										<img src="./images/card-1.gif" alt=""/>
+										<img src="./images/card-2.gif" alt=""/>
+										<img src="./images/card-4.gif" alt=""/>
+										<img src="./images/card-5.gif" alt=""/>			
+										</p>
+
+										<div class="formLayer">
+											<div class="leftFormLayer"><p><label for="credit_card_type">Είδος πιστωτικής κάρτας<span class="required"> (Υποχρεωτικό) </span></label></p></div>
+											<div class="rightFormLayer">
+												<p>
+													<select name="credit_card_type" id="credit_card_type">
+														<option>VISA</option>
+														<option>VISA Prepaid</option>
+														<option>VISA Electron</option>
+														<option>MasterCard</option>
+														<option>American Express</option>
+													</select>
+												</p>
+											</div>
+										</div>
+										<div class ="clear"></div>
+
+										 <div class="formLayer">
+											<div class="leftFormLayer"><p><label for="cardholder_name">Όνομα κατόχου<span class="required"> (Υποχρεωτικό) </span></label></p></div>
+											<div class="rightFormLayer"><p><input id="cardholder_name" type="text" name="textfield" /></p></div>
+										</div>
+										<div class ="clear"></div>                                   
+
+										<div class="formLayer">
+											<div class="leftFormLayer"><p><label for="card_number">Αριθμός κάρτας<span class="required"> (Υποχρεωτικό) </span></label></p></div>
+											<div class="rightFormLayer"><p><input id="card_number" type="text" name="textfield" /></p></div>
+										</div>
+										<div class ="clear"></div>
+
+										<div class="formLayer">
+											<div class="leftFormLayer"><p><label for="expiry_date">Ημερομηνία λήξης<span class="required"> (Υποχρεωτικό) </span></label></p></div>
+											<div class="rightFormLayer">            
+												<p><select id="expiry_date">
+													<optgroup label="Month">
+															<option>Μήνας</option>
+															<option>01</option>
+															<option>02</option>
+															<option>03</option>
+															<option>04</option>
+															<option>05</option>
+															<option>06</option>
+															<option>07</option>
+															<option>08</option>
+															<option>09</option>
+															<option>10</option>
+															<option>11</option>
+															<option>12</option>
+													</optgroup>
+													<optgroup label="Year">
+															<option>Χρόνος</option>
+															<option>2011</option>
+															<option>2012</option>
+															<option>2013</option>
+															<option>2014</option>
+															<option>2015</option>
+															<option>2016</option>
+															<option>2017</option>
+															<option>2018</option>
+															<option>2019</option>
+															<option>2020</option>
+															<option>2021</option>
+															<option>2022</option>
+													</optgroup>	
+													</select>
+												</p></div>
+										</div>  
+										<div class ="clear"></div>
+
+										<div class="formLayer">
+											<div class="leftFormLayer"><p><label for="ccv2">CCV2 (κωδικός ασφαλείας)<span class="required"> (Υποχρεωτικό) </span></label></p></div>
+											<div class="rightFormLayer"><p><input id="ccv2" type="text" name="textfield" maxlength="3" size="3"/><a href="#" title="ccv πληροφορίες"> [help]</a></p></div>
+										</div>
+										<div class ="clear"></div>  
+								</fieldset>
+								<div class ="clear"></div>  
+								
+								<p> 
+									<br />
+									<input type="checkbox" name="termsAndConditions" value="TermsAndConditions" style="float: left;"/>
+									Αποδέχομαι τους όρους του <a href="#">accessible-bookstore.gr</a>
+								</p>
+								<div class ="clear"></div> 
+				
+								<p class="submit"><input type="submit" value="Αγορά βιβλίου" /></p>
+							</form>	<!-- address form end-->
                         </div> <!-- close boxContents -->
                     </div> <!-- close box -->
-					
-					
-					<div class="clear"></div>
-                    <div class="box">
-                        <div class="boxContents">
-                            <fieldset>
-                                <legend>Στοιχεία Πληρωμής</legend>
-                                    <p><em>Τα στοιχεία της πιστωτικής σας κάρτας δεν αποθηκεύονται στη βάση δεδομένων μας. Κατά τη συναλλαγή τηρούμε όλα τα πρωτόκολλα ασφαλείας.</em></p>
-                                    <p>
-                                    <img src="./images/card-1.gif" alt=""/>
-                                    <img src="./images/card-2.gif" alt=""/>
-                                    <img src="./images/card-4.gif" alt=""/>
-                                    <img src="./images/card-5.gif" alt=""/>			
-                                    </p>
-                                     
-                                    <div class="formLayer">
-                                        <div class="leftFormLayer"><p><label for="credit_card_type">Είδος πιστωτικής κάρτας<span class="required"> (Υποχρεωτικό) </span></label></p></div>
-                                        <div class="rightFormLayer">
-                                            <p>
-                                                <select name="credit_card_type" id="credit_card_type">
-                                                    <option>VISA</option>
-                                                    <option>VISA Prepaid</option>
-                                                    <option>VISA Electron</option>
-                                                    <option>MasterCard</option>
-                                                    <option>American Express</option>
-                                                </select>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class ="clear"></div>
-                                    
-                                     <div class="formLayer">
-                                        <div class="leftFormLayer"><p><label for="cardholder_name">Όνομα κατόχου<span class="required"> (Υποχρεωτικό) </span></label></p></div>
-                                        <div class="rightFormLayer"><p><input id="cardholder_name" type="text" name="textfield" /></p></div>
-                                    </div>
-                                    <div class ="clear"></div>                                   
-                                    
-                                    <div class="formLayer">
-                                        <div class="leftFormLayer"><p><label for="card_number">Αριθμός κάρτας<span class="required"> (Υποχρεωτικό) </span></label></p></div>
-                                        <div class="rightFormLayer"><p><input id="card_number" type="text" name="textfield" /></p></div>
-                                    </div>
-                                    <div class ="clear"></div>
-                                    
-                                    <div class="formLayer">
-                                        <div class="leftFormLayer"><p><label for="expiry_date">Ημερομηνία λήξης<span class="required"> (Υποχρεωτικό) </span></label></p></div>
-                                        <div class="rightFormLayer">            
-                                            <p><select id="expiry_date">
-                                                <optgroup label="Month">
-                                                        <option>Μήνας</option>
-                                                        <option>01</option>
-                                                        <option>02</option>
-                                                        <option>03</option>
-                                                        <option>04</option>
-                                                        <option>05</option>
-                                                        <option>06</option>
-                                                        <option>07</option>
-                                                        <option>08</option>
-                                                        <option>09</option>
-                                                        <option>10</option>
-                                                        <option>11</option>
-                                                        <option>12</option>
-                                                </optgroup>
-                                                <optgroup label="Year">
-                                                        <option>Χρόνος</option>
-                                                        <option>2011</option>
-                                                        <option>2012</option>
-                                                        <option>2013</option>
-                                                        <option>2014</option>
-                                                        <option>2015</option>
-                                                        <option>2016</option>
-                                                        <option>2017</option>
-                                                        <option>2018</option>
-                                                        <option>2019</option>
-                                                        <option>2020</option>
-                                                        <option>2021</option>
-                                                        <option>2022</option>
-                                                </optgroup>	
-                                                </select>
-                                            </p></div>
-                                    </div>  
-                                    <div class ="clear"></div>
-                                    
-                                    <div class="formLayer">
-                                        <div class="leftFormLayer"><p><label for="ccv2">CCV2 (κωδικός ασφαλείας)<span class="required"> (Υποχρεωτικό) </span></label></p></div>
-                                        <div class="rightFormLayer"><p><input id="ccv2" type="text" name="textfield" maxlength="3" size="3"/><a href="#" title="ccv πληροφορίες">[help]</a></p></div>
-                                    </div>
-                                    <div class ="clear"></div>  
-                            </fieldset>
-                        </div>
-					</div>
-						<p>
-						<br />
-						<input type="checkbox" name="termsAndConditions" value="TermsAndConditions" />
-						Αποδέχομαι τους όρους του <a href="#">accessible-bookstore.gr</a></p>
-				
-				<p class="submit"><input type="submit" value="Αγορά βιβλίου" /></p>
-				</form>	<!-- address form end-->
 				</div> <!-- close postContent -->
 			<div class="clear"></div>	
 			<div class="postFooter"></div>
@@ -273,7 +273,7 @@
                 <div class="postContent">
 			<div class="box">
 							<div> 
-								<fieldset>
+							
 								<table summary="Ο παρακάτω πίνακας περιγράφει τα προϊόντα που έχετε επιλέξει προς αγορά, και άλλα χαρακτηριστικά τους. 
 								Συγκεκριμένα τα χαρακτηριστικά που περιγράφονται είναι: Τίτλος, Τεμάχια, και Τιμή του κάθε προϊόντος.">
 								<tr>
@@ -290,7 +290,7 @@
 								<td headers="p"> 20.64 € </td> 
 								</tr>
 								</table>				
-								</fieldset>
+
 						 </div>
 						 <h2> Σύνολο: 51.63 €</h2>
 			</div> <!-- box ends-->

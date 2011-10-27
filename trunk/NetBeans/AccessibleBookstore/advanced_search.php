@@ -59,18 +59,17 @@
         <div class="post">
             <h1><span class="text">Σύνθετη Αναζήτηση</span></h1>
                 <div class="postContent">
-           <div class="box">
+					<div class="box">
                         <div class="boxContents">
-						<!--<p><em> Επιλέξτε κριτήρια αναζήτησης:</em></p>-->
-                        <form action="SearchResults.php" method="get"> <!-- advanced search form -->
-                            <fieldset>
-                                <legend><em>Επιλέξτε κριτήρια αναζήτησης:</em></legend>
+							<form action="SearchResults.php" method="get"> <!-- advanced search form -->
+								<fieldset>
+									<legend><em>Επιλέξτε κριτήρια αναζήτησης:</em></legend>
                                 
-                                    <div class="formLayer">
+									<div class="formLayer">
                                         <div class="leftFormLayer"><p><label for="title">Τίτλος:</label></p></div>
                                         <div class="rightFormLayer"><p><input id="title" type="text" name="textfield" /></p></div>
-                                    </div>
-                                    <div class="clear"></div>  
+									</div>
+									<div class="clear"></div>
                                     
                                     <div class="formLayer">
                                         <div class="leftFormLayer"><p><label for="author">Συγγραφέας:</label></p></div>
@@ -145,11 +144,12 @@
 
 								<p class="submit"><input type="submit" value="Αναζήτηση" /></p>
                             </fieldset>
-                            <div class="clear"></div>        
-						</form>	<!-- advanced search form -->
-                    </div>
-					</div>
-                </div>
+								<div class="clear"></div>        
+							
+							</form>	<!-- advanced search form -->
+						</div>	<!-- boxContents ends -->
+					</div>	<!-- box ends -->
+                </div>	<!-- postContent ends -->
             <div class="clear"></div>
             <div class="postFooter"></div>
         </div>
