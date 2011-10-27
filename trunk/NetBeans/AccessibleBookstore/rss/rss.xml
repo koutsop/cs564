@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <atom:link href="http://http://139.91.186.161/CS-564/NetBeans/AccessibleBookstore/rss/rss.xml" rel="self" type="application/rss+xml"/>
+        
+        <title>Accessible Bookstore</title>
+        <link>http://http://139.91.186.161/CS-564/NetBeans/AccessibleBookstore/index.php</link>
+        <description>Τα τελευτέα νέα μας</description>
+        <lastBuildDate>Thu, 27 Oct 2011 13:00:00 GMT</lastBuildDate>
+        <language>el</language>
+
+        <item>
+            <title>Τελευταίες Προσθήκες</title>
+            <link>http://http://139.91.186.161/CS-564/NetBeans/AccessibleBookstore/index.php</link>
+            <guid>http://http://139.91.186.161/CS-564/NetBeans/AccessibleBookstore/SteveJobs.php</guid>
+            <pubDate>Thu, 27 Oct 2011 13:00:00 GMT</pubDate>
+            <description>Η επίσημη βιογραφία του Steve Jobs</description>
+        </item>
+
+        <item>
+            <title>Τελευταίες Προσθήκες</title>
+            <link>http://http://139.91.186.161/CS-564/NetBeans/AccessibleBookstore/index.php</link>
+            <guid>http://http://139.91.186.161/CS-564/NetBeans/AccessibleBookstore/Aleph.php</guid>
+            <pubDate>Thu, 27 Oct 2011 13:00:00 GMT</pubDate>
+            <description>Aleph</description>
+        </item>
+    </channel>
+</rss>
