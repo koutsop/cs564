@@ -376,8 +376,8 @@ content
 .bannerContainer {
 	float: left;
 	width: 100%;
-	height: 30%;
-	margin-bottom: 10px;
+	height: 25%;
+	margin-top: 20px;
 }
 .bannerContainer img {
 	float: left;
