@@ -220,7 +220,7 @@ component AdaptableView1 [
 ]
 
 component MainIMPage [
-		if 		profile1 then 	activate "ViewB"
+		if 		profile1 then 	activate "NoDisabilityMainView"
 		else if profile2 then 	activate "ViewA"
-		else 					activate "ViewB"
+		else 					activate "NoDisabilityMainView"
 ]
