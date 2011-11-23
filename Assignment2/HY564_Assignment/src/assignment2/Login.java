@@ -106,7 +106,6 @@ public class Login extends javax.swing.JPanel {
 
     private void signInButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signInButtonActionPerformed
         AdaptableIMView im = new AdaptableIMView();       
-        MainWindowPC.ShowMenuBar();
         MainWindowPC.showPanel(im);
     }//GEN-LAST:event_signInButtonActionPerformed
 

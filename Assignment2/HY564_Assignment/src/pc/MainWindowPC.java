@@ -38,7 +38,6 @@ public class MainWindowPC extends javax.swing.JFrame {
         Adaptation.initLookAndFeel(this);
 
         initComponents();
-        mainManuBar.setVisible(false);
 
         Login login = new Login();
         mainPanel.add(login);
@@ -70,13 +69,6 @@ public class MainWindowPC extends javax.swing.JFrame {
     private void initComponents() {
 
         mainPanel = new javax.swing.JPanel();
-        mainManuBar = new javax.swing.JMenuBar();
-        accesibleIMMenu = new javax.swing.JMenu();
-        exit = new javax.swing.JMenuItem();
-        profile = new javax.swing.JMenuItem();
-        contactsMenu = new javax.swing.JMenu();
-        callMenu = new javax.swing.JMenu();
-        hellpMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -86,28 +78,6 @@ public class MainWindowPC extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
         getContentPane().add(mainPanel);
-
-        accesibleIMMenu.setText("Accesible IM");
-
-        exit.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, 0));
-        exit.setText("Κλείσιμο");
-        accesibleIMMenu.add(exit);
-
-        profile.setText("jMenuItem1");
-        accesibleIMMenu.add(profile);
-
-        mainManuBar.add(accesibleIMMenu);
-
-        contactsMenu.setText("Επαφές");
-        mainManuBar.add(contactsMenu);
-
-        callMenu.setText("Κλήση");
-        mainManuBar.add(callMenu);
-
-        hellpMenu.setText("Θοήθεια");
-        mainManuBar.add(hellpMenu);
-
-        setJMenuBar(mainManuBar);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -123,12 +93,6 @@ public class MainWindowPC extends javax.swing.JFrame {
                 
         frame.setSize(p.getPreferredSize());     
     }
-    
-    public static void ShowMenuBar ()
-        {  frame.mainManuBar.setVisible(true); }
-    
-    public static void HideMenuBar () 
-        {  frame.mainManuBar.setVisible(false); }
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         DMSLConnector.getInstance().close();
@@ -147,14 +111,7 @@ public class MainWindowPC extends javax.swing.JFrame {
 
     private static MainWindowPC frame;
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu accesibleIMMenu;
-    private javax.swing.JMenu callMenu;
-    private javax.swing.JMenu contactsMenu;
-    private javax.swing.JMenuItem exit;
-    private javax.swing.JMenu hellpMenu;
-    private javax.swing.JMenuBar mainManuBar;
     private static javax.swing.JPanel mainPanel;
-    private javax.swing.JMenuItem profile;
     // End of variables declaration//GEN-END:variables
 
 }
