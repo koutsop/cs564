@@ -1,0 +1,226 @@
+////////////////////////////////////////////////////
+// Stereotype Definitions
+
+
+stereotype profile1 : params.user.profile == no_disability
+stereotype profile2 : params.user.profile == color_blind
+stereotype profile3 : params.user.profile == instability
+stereotype profile4 : params.user.profile == low_vision
+
+
+component "Style" [
+ 
+	if 		profile1 then 	activate "profile_no_disability/"
+	else if profile2 then 	activate "profile_color_blind/"
+    else if profile3 then   activate "profile_instability/"
+    else if profile4 then   activate "profile_low_vision/"
+	else 					activate "profile_no_disability/"
+
+]
+
+//==================================================//
+// 								Size-related rules
+//==================================================//
+
+
+////////////////////////////////////////////////////
+//
+// Panel rules
+//
+
+//*************************
+// Main Menu Bar
+//*************************
+
+component "Panel.MainNavigationBar.Height" [ activate "69" ]
+
+//*************************
+// Secondary Menu Bar
+//*************************
+
+component "Panel.SecNavigationBar.Width" [
+	
+	if profile1 then activate "126"
+	else activate "134"
+	
+]
+
+//*************************
+// Status Bar
+//*************************
+
+component "Panel.StatusBar.Height" [
+
+	if profile1 then activate "28"
+	else if profile2 then activate "31"
+	else if profile3 then activate "34"
+	else if profile4 then activate "37"
+	else activate "28"
+	
+]
+
+//*************************
+// Interaction Settings Bar
+//*************************
+
+component "Panel.InteractionSettingsBar.Height" [ activate "69" ]
+
+////////////////////////////////////////////////////
+//
+// Button rules
+//
+
+component "Button.Height" [ 
+
+	if profile1 then activate "28"
+	else if profile2 then activate "31"
+	else if profile3 then activate "34"
+	else if profile4 then activate "36"
+	else activate "28"
+
+]
+component "Button.Width.StdPadding" [ activate "12" ]
+component "Button.Width.ExtraPercPadding" [ activate "30" ]
+
+//*************************
+// Main Menu Button
+//*************************
+
+component "Button.MainNavigation.Width" [ 
+	
+	if profile1 or profile2 then activate "130"
+	else if profile3 then activate "140"
+	else if profile4 then activate "150"
+	else activate "130"
+
+]
+component "Button.MainNavigation.Height" [ 
+
+	if profile1 then activate "50"
+	else if profile2 then activate "55"
+	else if profile3 then activate "60"
+	else if profile4 then activate "65"
+	else activate "50"
+
+]
+
+//*************************
+// Secondary Menu Button
+//*************************
+
+component "Button.SecNavigation.Width" [
+	
+	if profile1 then activate "100"
+	else if profile2 then activate "110"
+	else if profile3 then activate "120"
+	else if profile4 then activate "130"
+	else activate "100"
+
+]
+component "Button.SecNavigation.Height" [
+
+	if profile1 then activate "41"
+	else if profile2 then activate "44"
+	else if profile3 then activate "47"
+	else if profile4 then activate "50"
+	else activate "41"
+
+]
+
+////////////////////////////////////////////////////
+//
+// TextBox rules
+//
+
+component "TextBox.Height.FLine" [ 
+
+	if profile1 then activate "24"
+	else if profile2 then activate "27"
+	else if profile3 then activate "29"
+	else if profile4 then activate "32"
+	else activate "24"
+
+]
+component "TextBox.Height.ELine" [ 
+
+	if profile1 then activate "19"
+	else if profile2 then activate "21"
+	else if profile3 then activate "25"
+	else if profile4 then activate "27"
+	else activate "24"
+
+]
+component "TextBox.Width.ExtraPercPadding" [ activate "30" ]
+
+//==================================================//
+// 								Color-related rules
+//==================================================//
+
+component "Link.Unvisited.Underline.Color"[
+
+	if profile1 then activate "0x07697b"
+	else activate "0x000000"
+	
+]
+
+component "Link.Visited.Underline.Color"[
+
+	if profile1 then activate "0xfe9b74"
+	else activate "0x000000"
+	
+]
+
+//==================================================//
+//							Function-based rules
+//==================================================//
+
+
+component MyButton[
+
+	if params.Dummy.attr = 1 then
+		activate "Button.MainNav"
+	else
+		activate "Button.Content"
+
+]
+
+//==================================================//
+//							Image-related rules
+//==================================================//
+
+component MainTitle [
+	activate "MainPanel.MainTitle"
+]
+
+component AppetizerName [
+	activate "MainPanel.Appetizer"
+]
+
+
+component greekSaladImg [
+		activate "Panel.Image.GreekSalad"
+]
+
+component gardenSaladImg [
+		activate "Panel.Image.GardenSalad"
+]
+
+component onionSaladImg [
+		activate "Panel.Image.OnionSalad"
+]
+
+component LoginLabel [
+    activate "LoginPanel.Label"
+]
+
+component AdaptableView1 [
+		if 		profile1 then 	activate "ViewB"
+		else if profile2 then 	activate "ViewA"
+		else 					activate "ViewB"
+]
+
+component MainIMPage [
+		if 		profile1 then 	activate "ViewB"
+		else if profile2 then 	activate "ViewA"
+		else 					activate "ViewB"
+]
