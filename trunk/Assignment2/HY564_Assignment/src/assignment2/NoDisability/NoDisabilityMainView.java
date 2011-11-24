@@ -25,44 +25,44 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
     }
 	
 	private void AddContacts () {
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
 		
 	}
 
@@ -78,15 +78,6 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         leftPanel = new widgets.panel.AdaptivePanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         contactsPanel = new widgets.panel.AdaptivePanel();
-        adaptiveButton5 = new widgets.button.AdaptiveButton();
-        adaptiveButton6 = new widgets.button.AdaptiveButton();
-        adaptiveButton7 = new widgets.button.AdaptiveButton();
-        adaptiveButton8 = new widgets.button.AdaptiveButton();
-        adaptiveButton9 = new widgets.button.AdaptiveButton();
-        adaptiveButton10 = new widgets.button.AdaptiveButton();
-        adaptiveButton12 = new widgets.button.AdaptiveButton();
-        adaptiveButton13 = new widgets.button.AdaptiveButton();
-        adaptiveButton14 = new widgets.button.AdaptiveButton();
         menuPanel = new widgets.panel.AdaptivePanel();
         adaptiveButton1 = new widgets.button.AdaptiveButton();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
@@ -95,39 +86,14 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         contentPanel = new widgets.panel.AdaptivePanel();
         adaptiveButton11 = new widgets.button.AdaptiveButton();
 
+        setMaximumSize(new java.awt.Dimension(1000, 688));
+        setMinimumSize(new java.awt.Dimension(1000, 688));
+        setPreferredSize(new java.awt.Dimension(1000, 688));
         setLayout(new java.awt.BorderLayout());
 
         leftPanel.setLayout(new javax.swing.BoxLayout(leftPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
         contactsPanel.setLayout(new javax.swing.BoxLayout(contactsPanel, javax.swing.BoxLayout.PAGE_AXIS));
-
-        adaptiveButton5.setText("adaptiveButton5");
-        contactsPanel.add(adaptiveButton5);
-
-        adaptiveButton6.setText("adaptiveButton6");
-        contactsPanel.add(adaptiveButton6);
-
-        adaptiveButton7.setText("adaptiveButton7");
-        contactsPanel.add(adaptiveButton7);
-
-        adaptiveButton8.setText("adaptiveButton8");
-        contactsPanel.add(adaptiveButton8);
-
-        adaptiveButton9.setText("adaptiveButton9");
-        contactsPanel.add(adaptiveButton9);
-
-        adaptiveButton10.setText("adaptiveButton10");
-        contactsPanel.add(adaptiveButton10);
-
-        adaptiveButton12.setText("adaptiveButton12");
-        contactsPanel.add(adaptiveButton12);
-
-        adaptiveButton13.setText("adaptiveButton13");
-        contactsPanel.add(adaptiveButton13);
-
-        adaptiveButton14.setText("adaptiveButton14");
-        contactsPanel.add(adaptiveButton14);
-
         jScrollPane1.setViewportView(contactsPanel);
 
         leftPanel.add(jScrollPane1);
@@ -159,19 +125,10 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
-    private widgets.button.AdaptiveButton adaptiveButton10;
     private widgets.button.AdaptiveButton adaptiveButton11;
-    private widgets.button.AdaptiveButton adaptiveButton12;
-    private widgets.button.AdaptiveButton adaptiveButton13;
-    private widgets.button.AdaptiveButton adaptiveButton14;
     private widgets.button.AdaptiveButton adaptiveButton2;
     private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.button.AdaptiveButton adaptiveButton4;
-    private widgets.button.AdaptiveButton adaptiveButton5;
-    private widgets.button.AdaptiveButton adaptiveButton6;
-    private widgets.button.AdaptiveButton adaptiveButton7;
-    private widgets.button.AdaptiveButton adaptiveButton8;
-    private widgets.button.AdaptiveButton adaptiveButton9;
     private widgets.panel.AdaptivePanel contactsPanel;
     private widgets.panel.AdaptivePanel contentPanel;
     private javax.swing.JScrollPane jScrollPane1;

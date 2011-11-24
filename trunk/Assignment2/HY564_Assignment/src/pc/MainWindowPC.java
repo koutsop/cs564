@@ -60,12 +60,15 @@ public class MainWindowPC extends javax.swing.JFrame {
         mainPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setName("AccessibleIM"); // NOI18N
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 formWindowClosing(evt);
             }
         });
-        getContentPane().setLayout(new java.awt.FlowLayout());
+        getContentPane().setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        mainPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
         getContentPane().add(mainPanel);
 
         pack();
@@ -76,7 +79,8 @@ public class MainWindowPC extends javax.swing.JFrame {
         p.setVisible(true);
         mainPanel.add(p);
         mainPanel.repaint();
-        mainPanel.validate();                
+        mainPanel.validate();
+		frame.pack();
     }
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
