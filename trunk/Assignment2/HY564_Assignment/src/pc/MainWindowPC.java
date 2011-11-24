@@ -2,7 +2,6 @@ package pc;
 
 
 import assignment2.Login;
-import demo.RestaurantDemo;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;

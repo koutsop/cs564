@@ -10,6 +10,7 @@
  */
 package assignment2;
 
+import assignment2.NoDisability.NoDisabilityMainView;
 import demo.ViewA;
 import demo.ViewB;
 import java.awt.CardLayout;
@@ -22,7 +23,7 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class AdaptableIMView extends javax.swing.JPanel {
-    final static String viewA = "ViewA";
+    final static String noDisability = "NoDisabilityMainView";
     final static String viewB = "ViewB";
     JPanel p = new JPanel(new CardLayout());
     
@@ -30,7 +31,7 @@ public class AdaptableIMView extends javax.swing.JPanel {
     public AdaptableIMView() {
         initComponents();
         
-        p.add(new ViewA(), viewA);
+        p.add(new NoDisabilityMainView(), noDisability);
         p.add(new ViewB(), viewB);
         this.add(p);
 

@@ -209,14 +209,18 @@ component onionSaladImg [
 		activate "Panel.Image.OnionSalad"
 ]
 
+component ContactImg [
+    activate "contactAvatar1"
+]
+
 component LoginLabel [
     activate "LoginPanel.Label"
 ]
 
 component AdaptableView1 [
-		if 		profile1 then 	activate "ViewB"
-		else if profile2 then 	activate "ViewA"
-		else 					activate "ViewB"
+		if 		profile1 then 	activate "noDisability"
+		else if profile2 then 	activate "noDisability"
+		else 					activate "noDisability"
 ]
 
 component MainIMPage [
