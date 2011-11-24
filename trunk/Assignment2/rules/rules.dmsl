@@ -201,34 +201,72 @@ component welcomeImg [
 		activate "Panel.Image.Welcome"
 ]
 
-component greekSaladImg [
-		activate "Panel.Image.GreekSalad"
-]
+//component greekSaladImg [
+//		activate "Panel.Image.GreekSalad"
+//]
 
-component gardenSaladImg [
-		activate "Panel.Image.GardenSalad"
-]
+//component gardenSaladImg [
+//		activate "Panel.Image.GardenSalad"
+//]
 
-component onionSaladImg [
-		activate "Panel.Image.OnionSalad"
-]
-
-component ContactImg [
-    activate "contactAvatar1"
-]
+//component onionSaladImg [
+//		activate "Panel.Image.OnionSalad"
+//]
 
 component LoginLabel [
-    activate "LoginPanel.Label"
+   activate "LoginPanel.Label"
 ]
 
-component AdaptableView1 [
-		if 		profile1 then 	activate "noDisability"
-		else if profile2 then 	activate "noDisability"
-		else 					activate "noDisability"
+//component AdaptableView1 [
+//		if 		profile1 then 	activate "noDisability"
+//		else if profile2 then 	activate "noDisability"
+//		else 					activate "noDisability"
+//]
+
+
+//==========================================
+component ContactImgHeight [
+	if profile1 then activate "100"
+	else if profile2 then activate "21"
+	else if profile3 then activate "25"
+	else if profile4 then activate "27"
+	else activate "-1"
 ]
+component ContactImgWidth [
+	if profile1 then activate "100"
+	else if profile2 then activate "21"
+	else if profile3 then activate "25"
+	else if profile4 then activate "27"
+	else activate "-1"
+]
+
+component StatusImgHeight [
+	if profile1 then activate "20"
+	else if profile2 then activate "21"
+	else if profile3 then activate "25"
+	else if profile4 then activate "27"
+	else activate "-1"
+]
+
+component StatusImgWidth [
+	if profile1 then activate "20"
+	else if profile2 then activate "21"
+	else if profile3 then activate "25"
+	else if profile4 then activate "27"
+	else activate "-1"
+]
+component ContactImg [
+    activate "ContactPanel.AvatarPanel"
+]
+
+component StatusImg [
+    activate "ContactPanel.StatusPanel"
+]
+//==========================================
+
 
 component MainIMPage [
 		if 		profile1 then 	activate "NoDisabilityMainView"
-		else if profile2 then 	activate "ViewA"
-		else 					activate "NoDisabilityMainView"
+		else if profile2 then 	activate "ViewB"
+		else 					activate "ViewB"
 ]
