@@ -406,7 +406,10 @@
 	<bind style="ContactPhoto" type="name" key="contactAvatar1"/>
 
 
-
+	<style id="welcomeImage">
+		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/welcome.png" center="true"/>
+	</style>
+	<bind style="welcomeImage" type="name" key="Panel.Image.Welcome"/>
 
 
 	<style id="GardenSalad">
