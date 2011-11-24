@@ -10,6 +10,8 @@
  */
 package assignment2.NoDisability;
 
+import assignment2.Contact;
+
 /**
  *
  * @author koutsop
@@ -19,9 +21,50 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
     /** Creates new form NoDisabilityMainView */
     public NoDisabilityMainView() {
         initComponents();
-        contactAvatar1.setName("contactAvatar1");
-        System.out.println(contactAvatar1.getName());
+		AddContacts();
     }
+	
+	private void AddContacts () {
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+//		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		
+	}
 
     /** This method is called from within the constructor to
      * initialize the form.
@@ -35,11 +78,15 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         leftPanel = new widgets.panel.AdaptivePanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         contactsPanel = new widgets.panel.AdaptivePanel();
-        contactPanel1 = new widgets.panel.AdaptivePanel();
-        contactAvatar1 = new widgets.panel.AdaptivePanel();
-        contactStatus1 = new widgets.panel.AdaptivePanel();
-        contactName1 = new widgets.panel.AdaptivePanel();
-        adaptiveLabel1 = new widgets.label.AdaptiveLabel();
+        adaptiveButton5 = new widgets.button.AdaptiveButton();
+        adaptiveButton6 = new widgets.button.AdaptiveButton();
+        adaptiveButton7 = new widgets.button.AdaptiveButton();
+        adaptiveButton8 = new widgets.button.AdaptiveButton();
+        adaptiveButton9 = new widgets.button.AdaptiveButton();
+        adaptiveButton10 = new widgets.button.AdaptiveButton();
+        adaptiveButton12 = new widgets.button.AdaptiveButton();
+        adaptiveButton13 = new widgets.button.AdaptiveButton();
+        adaptiveButton14 = new widgets.button.AdaptiveButton();
         menuPanel = new widgets.panel.AdaptivePanel();
         adaptiveButton1 = new widgets.button.AdaptiveButton();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
@@ -50,51 +97,36 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout());
 
-        leftPanel.setLayout(new javax.swing.BoxLayout(leftPanel, javax.swing.BoxLayout.LINE_AXIS));
+        leftPanel.setLayout(new javax.swing.BoxLayout(leftPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
         contactsPanel.setLayout(new javax.swing.BoxLayout(contactsPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
-        contactPanel1.setLayout(new javax.swing.BoxLayout(contactPanel1, javax.swing.BoxLayout.LINE_AXIS));
+        adaptiveButton5.setText("adaptiveButton5");
+        contactsPanel.add(adaptiveButton5);
 
-        contactAvatar1.setFunction("ContactImg");
-        contactAvatar1.setMaximumSize(new java.awt.Dimension(50, 50));
-        contactAvatar1.setPreferredSize(new java.awt.Dimension(50, 50));
-        contactAvatar1.setSize(new java.awt.Dimension(50, 50));
+        adaptiveButton6.setText("adaptiveButton6");
+        contactsPanel.add(adaptiveButton6);
 
-        javax.swing.GroupLayout contactAvatar1Layout = new javax.swing.GroupLayout(contactAvatar1);
-        contactAvatar1.setLayout(contactAvatar1Layout);
-        contactAvatar1Layout.setHorizontalGroup(
-            contactAvatar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        contactAvatar1Layout.setVerticalGroup(
-            contactAvatar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        adaptiveButton7.setText("adaptiveButton7");
+        contactsPanel.add(adaptiveButton7);
 
-        contactPanel1.add(contactAvatar1);
+        adaptiveButton8.setText("adaptiveButton8");
+        contactsPanel.add(adaptiveButton8);
 
-        javax.swing.GroupLayout contactStatus1Layout = new javax.swing.GroupLayout(contactStatus1);
-        contactStatus1.setLayout(contactStatus1Layout);
-        contactStatus1Layout.setHorizontalGroup(
-            contactStatus1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        contactStatus1Layout.setVerticalGroup(
-            contactStatus1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        adaptiveButton9.setText("adaptiveButton9");
+        contactsPanel.add(adaptiveButton9);
 
-        contactPanel1.add(contactStatus1);
+        adaptiveButton10.setText("adaptiveButton10");
+        contactsPanel.add(adaptiveButton10);
 
-        contactName1.setLayout(new java.awt.GridLayout());
+        adaptiveButton12.setText("adaptiveButton12");
+        contactsPanel.add(adaptiveButton12);
 
-        adaptiveLabel1.setText("Koutsopoulos Nikolaos");
-        contactName1.add(adaptiveLabel1);
+        adaptiveButton13.setText("adaptiveButton13");
+        contactsPanel.add(adaptiveButton13);
 
-        contactPanel1.add(contactName1);
-
-        contactsPanel.add(contactPanel1);
+        adaptiveButton14.setText("adaptiveButton14");
+        contactsPanel.add(adaptiveButton14);
 
         jScrollPane1.setViewportView(contactsPanel);
 
@@ -127,15 +159,19 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
+    private widgets.button.AdaptiveButton adaptiveButton10;
     private widgets.button.AdaptiveButton adaptiveButton11;
+    private widgets.button.AdaptiveButton adaptiveButton12;
+    private widgets.button.AdaptiveButton adaptiveButton13;
+    private widgets.button.AdaptiveButton adaptiveButton14;
     private widgets.button.AdaptiveButton adaptiveButton2;
     private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.button.AdaptiveButton adaptiveButton4;
-    private widgets.label.AdaptiveLabel adaptiveLabel1;
-    private widgets.panel.AdaptivePanel contactAvatar1;
-    private widgets.panel.AdaptivePanel contactName1;
-    private widgets.panel.AdaptivePanel contactPanel1;
-    private widgets.panel.AdaptivePanel contactStatus1;
+    private widgets.button.AdaptiveButton adaptiveButton5;
+    private widgets.button.AdaptiveButton adaptiveButton6;
+    private widgets.button.AdaptiveButton adaptiveButton7;
+    private widgets.button.AdaptiveButton adaptiveButton8;
+    private widgets.button.AdaptiveButton adaptiveButton9;
     private widgets.panel.AdaptivePanel contactsPanel;
     private widgets.panel.AdaptivePanel contentPanel;
     private javax.swing.JScrollPane jScrollPane1;

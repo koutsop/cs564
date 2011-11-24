@@ -2,6 +2,7 @@ package pc;
 
 
 import assignment2.Login;
+import java.awt.Dimension;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
@@ -39,23 +40,12 @@ public class MainWindowPC extends javax.swing.JFrame {
         initComponents();
 
         Login login = new Login();
-        mainPanel.add(login);
-        //RestaurantDemo rd = new RestaurantDemo();
-        //mainPanel.add(rd);
+        mainPanel.add(login);       
         
-        this.setSize(login.getSize());
-        this.setMinimumSize(login.getMinimumSize());
-        this.setMaximumSize(login.getMaximumSize());
-        this.setPreferredSize(login.getPreferredSize());
-        this.setSize(login.getPreferredSize());
-        
-        //this.setMinimumSize(new Dimension(1000,720));
-        //this.setMaximumSize(new Dimension(1000,720));
-        //this.setPreferredSize(new Dimension(1000,720));
-        this.setResizable(true);
-
-        
-
+        this.setMinimumSize(new Dimension(1000,720));
+        this.setMaximumSize(new Dimension(1000,720));
+        this.setPreferredSize(new Dimension(1000,720));
+		this.setResizable(false);
     }
 
     /** This method is called from within the constructor to
@@ -75,22 +65,18 @@ public class MainWindowPC extends javax.swing.JFrame {
                 formWindowClosing(evt);
             }
         });
-        getContentPane().setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        getContentPane().setLayout(new java.awt.FlowLayout());
         getContentPane().add(mainPanel);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public static void showPanel(JPanel p)
-    {
+    public static void showPanel(JPanel p) {
         mainPanel.removeAll();
-        
+        p.setVisible(true);
         mainPanel.add(p);
-        mainPanel.setSize(p.getPreferredSize());
         mainPanel.repaint();
-        mainPanel.validate();
-                
-        frame.setSize(p.getPreferredSize());     
+        mainPanel.validate();                
     }
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
