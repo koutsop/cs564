@@ -421,31 +421,31 @@
 	</style>
 	<bind style="ContactImg" type="name" key="ContactPanel.AvatarPanel"/>
 	
-	<style id="StatusAvailableImg">
+	<style id="StatusAvailableImage">
 		<imagePainter 
             method="panelBackground" 
             path="../../styles/profile_no_disability/images/koutsop.jpg"
             center="true"
         />
 	</style>
-	<bind style="StatusAvailableImg" type="name" key="ContactPanel.StatusPanel"/>
+	<bind style="StatusAvailableImage" type="name" key="ContactPanel.StatusPanel"/>
 	
-	<style id="StatusIdleImg">
+	<style id="StatusIdleImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop.jpg"
+            path="../../styles/profile_no_disability/images/koutsop2.jpg"
             center="true"
         />
 	</style>
-	<bind style="StatusIdleImg" type="name" key="ContactPanel.StatusPanel"/>
+	<bind style="StatusIdleImage" type="name" key="ContactPanel.StatusPanel"/>
 
-	<style id="StatusBusyImg">
+	<style id="StatusBusyImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop.jpg"
+            path="../../styles/profile_no_disability/images/koutsop1.jpg"
             center="true"
         />
 	</style>
-	<bind style="StatusBusyImg" type="name" key="ContactPanel.StatusPanel"/>
+	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusPanel"/>
 	
 </synth>

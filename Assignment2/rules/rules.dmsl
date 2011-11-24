@@ -226,40 +226,50 @@ component LoginLabel [
 
 //==========================================
 component ContactImgHeight [
-	if profile1 then activate "100"
-	else if profile2 then activate "21"
-	else if profile3 then activate "25"
-	else if profile4 then activate "27"
-	else activate "-1"
+	if 		profile1 then 	activate "100"
+	else if profile2 then 	activate "21"
+	else if profile3 then 	activate "25"
+	else if profile4 then 	activate "27"
+	else 					activate "-1"
 ]
 component ContactImgWidth [
-	if profile1 then activate "100"
-	else if profile2 then activate "21"
-	else if profile3 then activate "25"
-	else if profile4 then activate "27"
-	else activate "-1"
+	if 		profile1 then 	activate "100"
+	else if profile2 then 	activate "21"
+	else if profile3 then 	activate "25"
+	else if profile4 then 	activate "27"
+	else 					activate "-1"
 ]
 
 component StatusImgHeight [
-	if profile1 then activate "20"
-	else if profile2 then activate "21"
-	else if profile3 then activate "25"
-	else if profile4 then activate "27"
-	else activate "-1"
+	if 		profile1 then 	activate "300"
+	else if profile2 then 	activate "21"
+	else if profile3 then 	activate "25"
+	else if profile4 then 	activate "27"
+	else 					activate "-1"
 ]
 
 component StatusImgWidth [
-	if profile1 then activate "20"
-	else if profile2 then activate "21"
-	else if profile3 then activate "25"
-	else if profile4 then activate "27"
-	else activate "-1"
+	if 		profile1 then 	activate "300"
+	else if profile2 then 	activate "21"
+	else if profile3 then 	activate "25"
+	else if profile4 then 	activate "27"
+	else 					activate "-1"
 ]
+
+
 component ContactImg [
     activate "ContactPanel.AvatarPanel"
 ]
 
-component StatusImg [
+component StatusAvailableImg [
+    activate "ContactPanel.StatusPanel"
+]
+
+component StatusIdleImg [
+    activate "ContactPanel.StatusPanel"
+]
+
+component StatusBusyImg [
     activate "ContactPanel.StatusPanel"
 ]
 //==========================================

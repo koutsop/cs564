@@ -11,6 +11,10 @@
 package assignment2.NoDisability;
 
 import assignment2.Contact;
+import java.awt.Component;
+import java.awt.Dimension;
+import utilities.Adaptation;
+import utilities.DMSLConnector;
 
 /**
  *
@@ -22,47 +26,76 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
     public NoDisabilityMainView() {
         initComponents();
 		AddContacts();
+		
+		/*Update specific components so as to impose specific rules (both methods take as argument
+        the  main container/placeholder the holds all the widgets placed into the UI. This concept
+        is similar to the HTML <body> element) */
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);
+		SetConactSizeImages();
+		this.updateUI();
     }
 	
+	private void SetConactSizeImages () {
+		int contactImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgHeight"));
+		int contactImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgWidth"));
+		int StatusImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgHeight"));
+		int StatusImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgWidth"));
+		
+		assert	contactImgHeight	!= -1 && 
+				contactImgWidth		!= -1 && 
+				StatusImgHeight		!= -1 && 
+				StatusImgWidth		!= -1;
+		
+		for (Component contact: contactsPanel.getComponents()) {
+			((Contact)contact).GetAvatarPanel().setPreferredSize(new Dimension(contactImgWidth, contactImgHeight));
+			((Contact)contact).GetAvatarPanel().setMinimumSize(new Dimension(contactImgWidth, contactImgHeight));
+			((Contact)contact).GetAvatarPanel().setMaximumSize(new Dimension(contactImgWidth, contactImgHeight));
+			((Contact)contact).GetStatusPanel().setPreferredSize(new Dimension(StatusImgWidth, StatusImgHeight));
+			((Contact)contact).GetStatusPanel().setMinimumSize(new Dimension(StatusImgWidth, StatusImgHeight));
+			((Contact)contact).GetStatusPanel().setMaximumSize(new Dimension(StatusImgWidth, StatusImgHeight));
+		}		
+	}
+	
 	private void AddContacts () {
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
-		contactsPanel.add(new Contact("ContactImg", "StatusImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusIdleImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
+		contactsPanel.add(new Contact("ContactImg", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata"));
 		
 	}
 
