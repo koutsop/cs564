@@ -197,6 +197,10 @@ component AppetizerName [
 ]
 
 
+component welcomeImg [
+		activate "Panel.Image.Welcome"
+]
+
 component greekSaladImg [
 		activate "Panel.Image.GreekSalad"
 ]
