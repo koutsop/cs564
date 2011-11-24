@@ -391,10 +391,23 @@
 	</style>
 	<bind style="AppetizerNameStyle" type="name" key="MainPanel.Appetizer.*"/>
 	
-	<style id="GreekSalad">
-		<imagePainter method="panelBackground" path="images/common/greek.png" center="true"/>
+    
+    
+    
+    
+    
+	<style id="ContactPhoto">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_no_disability/images/koutsop.jpg"
+            center="true"
+        />
 	</style>
-	<bind style="GreekSalad" type="name" key="Panel.Image.GreekSalad"/>
+	<bind style="ContactPhoto" type="name" key="contactAvatar1"/>
+
+
+
+
 
 	<style id="GardenSalad">
 		<imagePainter method="panelBackground" path="images/common/garden.png" center="true"/>
