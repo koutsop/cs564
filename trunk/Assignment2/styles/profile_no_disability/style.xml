@@ -83,16 +83,16 @@
 <!-- PANELS & BARS -->
 <!-- ======================================================= -->
 
-	<style id="Content">
+	<!-- <style id="Content">
 		<imagePainter method="panelBorder" path="images/Border.png" sourceInsets="1 1 1 1" paintCenter="false"/>
 		<imagePainter method="panelBackground" path="images/ContentBg.png" sourceInsets="2 2 2 2"/>		
 	</style>
-	<bind style="Content" type="name" key="Panel.Content.*"/>
+	<bind style="Content" type="name" key="Panel.Content.*"/> -->
 	
 	<style id="WhitePanel">
 		<imagePainter method="panelBackground" path="images/WhiteContentBg.png" sourceInsets="2 2 2 2"/>
 	</style>
-	<bind style="WhitePanel" type="name" key="Panel.White.*"/>
+	<bind style="WhitePanel" type="name" key="Panel.White.*"/> 
 	
 <!-- ======================================================= -->
 <!-- BUTTONS -->
