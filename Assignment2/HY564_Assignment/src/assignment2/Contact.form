@@ -32,9 +32,23 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
     </Container>
-    <Container class="widgets.panel.AdaptivePanel" name="statusPanel">
+    <Container class="widgets.panel.AdaptivePanel" name="statusAvailablePanel">
       <Properties>
-        <Property name="name" type="java.lang.String" value="ContactPanel.StatusPanel" noResource="true"/>
+        <Property name="name" type="java.lang.String" value="ContactPanel.StatusAvailablePanel" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+    </Container>
+    <Container class="widgets.panel.AdaptivePanel" name="statusBusyPanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="ContactPanel.StatusBusyPanel" noResource="true"/>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+    </Container>
+    <Container class="widgets.panel.AdaptivePanel" name="statusIdlePanel">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="ContactPanel.StatusIdlePanel" noResource="true"/>
       </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>

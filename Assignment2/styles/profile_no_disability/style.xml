@@ -428,7 +428,7 @@
             center="true"
         />
 	</style>
-	<bind style="StatusAvailableImage" type="name" key="ContactPanel.StatusPanel"/>
+	<bind style="StatusAvailableImage" type="name" key="ContactPanel.StatusAvailablePanel"/>
 	
 	<style id="StatusIdleImage">
 		<imagePainter 
@@ -437,7 +437,7 @@
             center="true"
         />
 	</style>
-	<bind style="StatusIdleImage" type="name" key="ContactPanel.StatusPanel"/>
+	<bind style="StatusIdleImage" type="name" key="ContactPanel.StatusIdlePanel"/>
 
 	<style id="StatusBusyImage">
 		<imagePainter 
@@ -446,6 +446,6 @@
             center="true"
         />
 	</style>
-	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusPanel"/>
+	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusBusyPanel"/>
 	
 </synth>
