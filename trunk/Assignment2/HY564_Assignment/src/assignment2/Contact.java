@@ -10,31 +10,63 @@
  */
 package assignment2;
 
+import java.awt.Dimension;
+
 /**
  *
  * @author koutsop
  */
 public class Contact extends javax.swing.JPanel {
-
+    private String statusType;
 	/** Creates new form Contact */
 	public Contact(
 		String avatarFunction,
 		String statusFunction,
 		String contactName,
-		String contactSatus
+		String contactSatus,
+        String statusType
 	) {
 		initComponents();
+        this.statusType = statusType;
 		avatarPanel.setFunction(avatarFunction);
-		statusPanel.setFunction(statusFunction);
+		statusAvailablePanel.setFunction(statusFunction);
 		nameLabel.setText(contactName);
 		statusLabel.setText(contactSatus);
 	}
+    
+    public void SetContactSize (int width, int height){
+        this.setMinimumSize(new Dimension(width, height));
+        this.setMaximumSize(new Dimension(width, height));
+        this.setPreferredSize(new Dimension(width, height));
+    }
 	
+    public void SetAvatarDimensionPanel (int width, int height) {
+        avatarPanel.setMinimumSize(new Dimension(width, height));
+        avatarPanel.setMaximumSize(new Dimension(width, height));
+        avatarPanel.setPreferredSize(new Dimension(width, height));
+    }
+    
+    public void SetStatusDimensionPanel (int width, int height) {
+        widgets.panel.AdaptivePanel p;
+        
+        if ("available".equals(statusType))
+            p = statusAvailablePanel;
+        else
+        if ("busy".equals(statusType))
+            p = statusBusyPanel;
+        else
+            p = statusIdlePanel;
+        
+        p.setMinimumSize(new Dimension(width, height));
+        p.setMaximumSize(new Dimension(width, height));
+        p.setPreferredSize(new Dimension(width, height));
+    }  
+    
 	public widgets.panel.AdaptivePanel GetAvatarPanel () 
 		{ return avatarPanel; }
 	
 	public widgets.panel.AdaptivePanel GetStatusPanel () 
-		{ return statusPanel; }	
+		{ return statusAvailablePanel; }	
 
 	/** This method is called from within the constructor to
 	 * initialize the form.
@@ -46,7 +78,9 @@ public class Contact extends javax.swing.JPanel {
     private void initComponents() {
 
         avatarPanel = new widgets.panel.AdaptivePanel();
-        statusPanel = new widgets.panel.AdaptivePanel();
+        statusAvailablePanel = new widgets.panel.AdaptivePanel();
+        statusBusyPanel = new widgets.panel.AdaptivePanel();
+        statusIdlePanel = new widgets.panel.AdaptivePanel();
         namePanel = new widgets.panel.AdaptivePanel();
         nameLabel = new widgets.label.AdaptiveLabel();
         statusLabel = new widgets.label.AdaptiveLabel();
@@ -60,9 +94,17 @@ public class Contact extends javax.swing.JPanel {
         avatarPanel.setLayout(new javax.swing.BoxLayout(avatarPanel, javax.swing.BoxLayout.LINE_AXIS));
         add(avatarPanel);
 
-        statusPanel.setName("ContactPanel.StatusPanel"); // NOI18N
-        statusPanel.setLayout(new javax.swing.BoxLayout(statusPanel, javax.swing.BoxLayout.LINE_AXIS));
-        add(statusPanel);
+        statusAvailablePanel.setName("ContactPanel.StatusAvailablePanel"); // NOI18N
+        statusAvailablePanel.setLayout(new javax.swing.BoxLayout(statusAvailablePanel, javax.swing.BoxLayout.LINE_AXIS));
+        add(statusAvailablePanel);
+
+        statusBusyPanel.setName("ContactPanel.StatusBusyPanel"); // NOI18N
+        statusBusyPanel.setLayout(new javax.swing.BoxLayout(statusBusyPanel, javax.swing.BoxLayout.LINE_AXIS));
+        add(statusBusyPanel);
+
+        statusIdlePanel.setName("ContactPanel.StatusIdlePanel"); // NOI18N
+        statusIdlePanel.setLayout(new javax.swing.BoxLayout(statusIdlePanel, javax.swing.BoxLayout.LINE_AXIS));
+        add(statusIdlePanel);
 
         namePanel.setLayout(new javax.swing.BoxLayout(namePanel, javax.swing.BoxLayout.PAGE_AXIS));
         namePanel.add(nameLabel);
@@ -74,7 +116,9 @@ public class Contact extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel avatarPanel;
     private widgets.label.AdaptiveLabel nameLabel;
     private widgets.panel.AdaptivePanel namePanel;
+    private widgets.panel.AdaptivePanel statusAvailablePanel;
+    private widgets.panel.AdaptivePanel statusBusyPanel;
+    private widgets.panel.AdaptivePanel statusIdlePanel;
     private widgets.label.AdaptiveLabel statusLabel;
-    private widgets.panel.AdaptivePanel statusPanel;
     // End of variables declaration//GEN-END:variables
 }
