@@ -4,7 +4,7 @@
  */
 
 /*
- * MainView.java
+ * NoDisabilityMainView.java
  *
  * Created on 23 Νοε 2011, 3:56:11 μμ
  */
@@ -14,11 +14,13 @@ package assignment2.NoDisability;
  *
  * @author koutsop
  */
-public class MainView extends javax.swing.JPanel {
+public class NoDisabilityMainView extends javax.swing.JPanel {
 
-    /** Creates new form MainView */
-    public MainView() {
+    /** Creates new form NoDisabilityMainView */
+    public NoDisabilityMainView() {
         initComponents();
+        contactAvatar1.setName("contactAvatar1");
+        System.out.println(contactAvatar1.getName());
     }
 
     /** This method is called from within the constructor to
@@ -30,17 +32,114 @@ public class MainView extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        leftPanel = new widgets.panel.AdaptivePanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        contactsPanel = new widgets.panel.AdaptivePanel();
+        contactPanel1 = new widgets.panel.AdaptivePanel();
+        contactAvatar1 = new widgets.panel.AdaptivePanel();
+        contactStatus1 = new widgets.panel.AdaptivePanel();
+        contactName1 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel1 = new widgets.label.AdaptiveLabel();
+        menuPanel = new widgets.panel.AdaptivePanel();
+        adaptiveButton1 = new widgets.button.AdaptiveButton();
+        adaptiveButton2 = new widgets.button.AdaptiveButton();
+        adaptiveButton3 = new widgets.button.AdaptiveButton();
+        adaptiveButton4 = new widgets.button.AdaptiveButton();
+        contentPanel = new widgets.panel.AdaptivePanel();
+        adaptiveButton11 = new widgets.button.AdaptiveButton();
+
+        setLayout(new java.awt.BorderLayout());
+
+        leftPanel.setLayout(new javax.swing.BoxLayout(leftPanel, javax.swing.BoxLayout.LINE_AXIS));
+
+        contactsPanel.setLayout(new javax.swing.BoxLayout(contactsPanel, javax.swing.BoxLayout.PAGE_AXIS));
+
+        contactPanel1.setLayout(new javax.swing.BoxLayout(contactPanel1, javax.swing.BoxLayout.LINE_AXIS));
+
+        contactAvatar1.setFunction("ContactImg");
+        contactAvatar1.setMaximumSize(new java.awt.Dimension(50, 50));
+        contactAvatar1.setPreferredSize(new java.awt.Dimension(50, 50));
+        contactAvatar1.setSize(new java.awt.Dimension(50, 50));
+
+        javax.swing.GroupLayout contactAvatar1Layout = new javax.swing.GroupLayout(contactAvatar1);
+        contactAvatar1.setLayout(contactAvatar1Layout);
+        contactAvatar1Layout.setHorizontalGroup(
+            contactAvatar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        contactAvatar1Layout.setVerticalGroup(
+            contactAvatar1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
+
+        contactPanel1.add(contactAvatar1);
+
+        javax.swing.GroupLayout contactStatus1Layout = new javax.swing.GroupLayout(contactStatus1);
+        contactStatus1.setLayout(contactStatus1Layout);
+        contactStatus1Layout.setHorizontalGroup(
+            contactStatus1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        contactStatus1Layout.setVerticalGroup(
+            contactStatus1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        contactPanel1.add(contactStatus1);
+
+        contactName1.setLayout(new java.awt.GridLayout());
+
+        adaptiveLabel1.setText("Koutsopoulos Nikolaos");
+        contactName1.add(adaptiveLabel1);
+
+        contactPanel1.add(contactName1);
+
+        contactsPanel.add(contactPanel1);
+
+        jScrollPane1.setViewportView(contactsPanel);
+
+        leftPanel.add(jScrollPane1);
+
+        add(leftPanel, java.awt.BorderLayout.LINE_START);
+
+        menuPanel.setLayout(new javax.swing.BoxLayout(menuPanel, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveButton1.setText("adaptiveButton1");
+        menuPanel.add(adaptiveButton1);
+
+        adaptiveButton2.setText("adaptiveButton2");
+        menuPanel.add(adaptiveButton2);
+
+        adaptiveButton3.setText("adaptiveButton3");
+        menuPanel.add(adaptiveButton3);
+
+        adaptiveButton4.setText("adaptiveButton4");
+        menuPanel.add(adaptiveButton4);
+
+        add(menuPanel, java.awt.BorderLayout.PAGE_START);
+
+        contentPanel.setLayout(new javax.swing.BoxLayout(contentPanel, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveButton11.setText("adaptiveButton11");
+        contentPanel.add(adaptiveButton11);
+
+        add(contentPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.button.AdaptiveButton adaptiveButton1;
+    private widgets.button.AdaptiveButton adaptiveButton11;
+    private widgets.button.AdaptiveButton adaptiveButton2;
+    private widgets.button.AdaptiveButton adaptiveButton3;
+    private widgets.button.AdaptiveButton adaptiveButton4;
+    private widgets.label.AdaptiveLabel adaptiveLabel1;
+    private widgets.panel.AdaptivePanel contactAvatar1;
+    private widgets.panel.AdaptivePanel contactName1;
+    private widgets.panel.AdaptivePanel contactPanel1;
+    private widgets.panel.AdaptivePanel contactStatus1;
+    private widgets.panel.AdaptivePanel contactsPanel;
+    private widgets.panel.AdaptivePanel contentPanel;
+    private javax.swing.JScrollPane jScrollPane1;
+    private widgets.panel.AdaptivePanel leftPanel;
+    private widgets.panel.AdaptivePanel menuPanel;
     // End of variables declaration//GEN-END:variables
 }
