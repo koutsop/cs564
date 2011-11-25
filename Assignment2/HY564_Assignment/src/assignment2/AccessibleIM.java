@@ -11,7 +11,7 @@
 package assignment2;
 
 import javax.swing.JPanel;
-import pc.MainWindowPC;
+import utilities.Adaptation;
 
 /**
  *
@@ -22,6 +22,9 @@ public class AccessibleIM extends javax.swing.JPanel {
     /** Creates new form AccessibleIM */
     public AccessibleIM() {
         initComponents();
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);
+        imButton.setVisible(false);
         showPanel(new AdaptableIMView());
     }
 
@@ -38,18 +41,19 @@ public class AccessibleIM extends javax.swing.JPanel {
         menuPanel = new widgets.panel.AdaptivePanel();
         imButton = new widgets.button.MainMenuButton();
         settingsButton = new widgets.button.MainMenuButton();
-        startPageButton = new widgets.button.MainMenuButton();
-        mainMenuButton1 = new widgets.button.MainMenuButton();
+        exitButton = new widgets.button.MainMenuButton();
 
         setMaximumSize(new java.awt.Dimension(1000, 688));
         setMinimumSize(new java.awt.Dimension(1000, 688));
         setPreferredSize(new java.awt.Dimension(1000, 688));
         setLayout(new java.awt.BorderLayout());
 
-        menuContentsPanel.setLayout(new java.awt.GridLayout());
+        menuContentsPanel.setLayout(new java.awt.GridLayout(1, 0));
         add(menuContentsPanel, java.awt.BorderLayout.CENTER);
 
-        imButton.setText("Accessible IM");
+        menuPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        imButton.setText("Πίσω σε ...");
         imButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 imButtonActionPerformed(evt);
@@ -57,7 +61,7 @@ public class AccessibleIM extends javax.swing.JPanel {
         });
         menuPanel.add(imButton);
 
-        settingsButton.setText("Ρυθμίισεις");
+        settingsButton.setText("Ρυθμίσεις");
         settingsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 settingsButtonActionPerformed(evt);
@@ -65,21 +69,13 @@ public class AccessibleIM extends javax.swing.JPanel {
         });
         menuPanel.add(settingsButton);
 
-        startPageButton.setText("Αρχική");
-        startPageButton.addActionListener(new java.awt.event.ActionListener() {
+        exitButton.setText("Έξοδος");
+        exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                startPageButtonActionPerformed(evt);
+                exitButtonActionPerformed(evt);
             }
         });
-        menuPanel.add(startPageButton);
-
-        mainMenuButton1.setText("Έξοδος");
-        mainMenuButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mainMenuButton1ActionPerformed(evt);
-            }
-        });
-        menuPanel.add(mainMenuButton1);
+        menuPanel.add(exitButton);
 
         add(menuPanel, java.awt.BorderLayout.PAGE_START);
     }// </editor-fold>//GEN-END:initComponents
@@ -93,27 +89,25 @@ public class AccessibleIM extends javax.swing.JPanel {
     }
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
+        imButton.setVisible(false);
         showPanel(new AdaptableIMView());
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
+        imButton.setVisible(true);
         showPanel(new AdaptableSettingsView());
     }//GEN-LAST:event_settingsButtonActionPerformed
 
-    private void startPageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startPageButtonActionPerformed
-        MainWindowPC.showPanel(new Login1());
-    }//GEN-LAST:event_startPageButtonActionPerformed
-
-    private void mainMenuButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainMenuButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mainMenuButton1ActionPerformed
+    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
+        imButton.setVisible(true);
+        showPanel(new Exit());        
+    }//GEN-LAST:event_exitButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.button.MainMenuButton exitButton;
     private widgets.button.MainMenuButton imButton;
-    private widgets.button.MainMenuButton mainMenuButton1;
     private widgets.panel.AdaptivePanel menuContentsPanel;
     private widgets.panel.AdaptivePanel menuPanel;
     private widgets.button.MainMenuButton settingsButton;
-    private widgets.button.MainMenuButton startPageButton;
     // End of variables declaration//GEN-END:variables
 }

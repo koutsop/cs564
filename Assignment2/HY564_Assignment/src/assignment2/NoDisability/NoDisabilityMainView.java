@@ -46,20 +46,20 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
 		int contactWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactWidth"));
 		int contactImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgHeight"));
 		int contactImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgWidth"));
-		int StatusImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgHeight"));
-		int StatusImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgWidth"));
+		int statusImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgHeight"));
+		int statusImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgWidth"));
 		
 		assert	contactHeight		!= -1 &&
 				contactWidth		!= -1 &&
 				contactImgHeight	!= -1 && 
 				contactImgWidth		!= -1 && 
-				StatusImgHeight		!= -1 && 
-				StatusImgWidth		!= -1;
+				statusImgHeight		!= -1 && 
+				statusImgWidth		!= -1;
 		
 		for (Component contact: contactsPanel.getComponents()) {
-			((Contact)contact).SetContactSize(contactWidth, contactHeight);
+			//((Contact)contact).SetContactSize(contactWidth, contactHeight);
 			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
-            ((Contact)contact).SetStatusDimensionPanel(StatusImgWidth, StatusImgHeight);
+            ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
 		}		
 	}
 	

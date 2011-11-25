@@ -292,6 +292,16 @@ component StatusIdleImg [
 component StatusBusyImg [
     activate "ContactPanel.StatusBusyPanel"
 ]
+
+component CancelButton [
+    if 	profile1 then activate "/images/profile_no_disability/x.png"
+    else activate "/images/profile_no_disability/x.png"
+]
+
+component AcceptanceButton [
+    if 	profile1 then activate "/images/profile_no_disability/tick.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
 //==========================================
 
 
