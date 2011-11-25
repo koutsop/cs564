@@ -10,6 +10,7 @@
  */
 package assignment2.NoDisability;
 
+import assignment2.AdaptableSettingsView;
 import assignment2.Chat;
 import assignment2.Contact;
 import assignment2.Login1;
