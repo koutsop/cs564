@@ -104,22 +104,22 @@ public class Login1 extends javax.swing.JPanel {
 
     private void noDisabilityButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noDisabilityButtonActionPerformed
         initAdaptation("no_disability");
-        MainWindowPC.showPanel(new AdaptableIMView());
+        MainWindowPC.showPanel(new AccessibleIM());
     }//GEN-LAST:event_noDisabilityButtonActionPerformed
 
     private void colorBlindButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorBlindButtonActionPerformed
         initAdaptation("no_disability");
-        MainWindowPC.showPanel(new AdaptableIMView());
+        MainWindowPC.showPanel(new AccessibleIM());
     }//GEN-LAST:event_colorBlindButtonActionPerformed
 
     private void instabilityButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_instabilityButtonActionPerformed
         initAdaptation("no_disability");
-        MainWindowPC.showPanel(new AdaptableIMView());
+        MainWindowPC.showPanel(new AccessibleIM());
     }//GEN-LAST:event_instabilityButtonActionPerformed
 
     private void lowVisionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowVisionButtonActionPerformed
         initAdaptation("no_disability");
-        MainWindowPC.showPanel(new AdaptableIMView());
+        MainWindowPC.showPanel(new AccessibleIM());
     }//GEN-LAST:event_lowVisionButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

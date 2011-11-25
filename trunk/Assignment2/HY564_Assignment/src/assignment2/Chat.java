@@ -35,8 +35,8 @@ public class Chat extends javax.swing.JPanel {
         callButton = new widgets.button.AdaptiveButton();
         exitButton = new widgets.button.AdaptiveButton();
         chatPanel = new widgets.panel.AdaptivePanel();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
 
         setMaximumSize(new java.awt.Dimension(757, 622));
         setMinimumSize(new java.awt.Dimension(757, 622));
@@ -56,20 +56,18 @@ public class Chat extends javax.swing.JPanel {
 
         chatPanel.setLayout(new java.awt.BorderLayout());
 
-        adaptiveButton1.setText("adaptiveButton1");
-        chatPanel.add(adaptiveButton1, java.awt.BorderLayout.CENTER);
-
         adaptiveButton2.setText("adaptiveButton2");
         chatPanel.add(adaptiveButton2, java.awt.BorderLayout.PAGE_END);
+        chatPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
         add(chatPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton2;
     private widgets.button.AdaptiveButton callButton;
     private widgets.panel.AdaptivePanel chatPanel;
     private widgets.button.AdaptiveButton exitButton;
+    private javax.swing.JScrollPane jScrollPane1;
     private widgets.panel.AdaptivePanel upPanel;
     private widgets.button.AdaptiveButton videoCallButton;
     // End of variables declaration//GEN-END:variables
