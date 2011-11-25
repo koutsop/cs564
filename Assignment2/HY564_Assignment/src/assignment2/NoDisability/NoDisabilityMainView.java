@@ -117,7 +117,7 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         menuPanel = new widgets.panel.AdaptivePanel();
         adaptiveButton1 = new widgets.button.AdaptiveButton();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
-        adaptiveButton3 = new widgets.button.AdaptiveButton();
+        settingsButton = new widgets.button.AdaptiveButton();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
         adaptiveButton5 = new widgets.button.AdaptiveButton();
         adaptiveButton6 = new widgets.button.AdaptiveButton();
@@ -153,9 +153,14 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         adaptiveButton2.setText("Επιλογές");
         menuPanel.add(adaptiveButton2);
 
-        adaptiveButton3.setFunction("MenuButton");
-        adaptiveButton3.setText("Ρυθμίισεις");
-        menuPanel.add(adaptiveButton3);
+        settingsButton.setFunction("MenuButton");
+        settingsButton.setText("Ρυθμίισεις");
+        settingsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                settingsButtonActionPerformed(evt);
+            }
+        });
+        menuPanel.add(settingsButton);
 
         adaptiveButton4.setFunction("MenuButton");
         adaptiveButton4.setText("Αρχική");
@@ -238,10 +243,14 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         MainWindowPC.showPanel(login);
 	}//GEN-LAST:event_adaptiveButton4ActionPerformed
 
+    private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
+        AdaptableSettingsView settings = new AdaptableSettingsView();       
+        MainWindowPC.showPanel(settings);
+    }//GEN-LAST:event_settingsButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton2;
-    private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.button.AdaptiveButton adaptiveButton4;
     private widgets.button.AdaptiveButton adaptiveButton5;
     private widgets.button.AdaptiveButton adaptiveButton6;
@@ -253,6 +262,7 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel leftPanel;
     private widgets.panel.AdaptivePanel mainPanel;
     private widgets.panel.AdaptivePanel menuPanel;
+    private widgets.button.AdaptiveButton settingsButton;
     private widgets.panel.AdaptivePanel tabPanel;
     private widgets.button.AdaptiveButton tmp1;
     private widgets.button.AdaptiveButton tmp2;
