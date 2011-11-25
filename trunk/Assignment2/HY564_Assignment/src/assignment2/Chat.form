@@ -25,7 +25,9 @@
     <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,91,0,0,1,-47"/>
   </AuxValues>
 
-  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+    <Property name="verticalGap" type="int" value="10"/>
+  </Layout>
   <SubComponents>
     <Container class="widgets.panel.AdaptivePanel" name="sendPanel">
       <Constraints>
@@ -34,7 +36,9 @@
         </Constraint>
       </Constraints>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+        <Property name="verticalGap" type="int" value="5"/>
+      </Layout>
       <SubComponents>
         <Container class="widgets.panel.AdaptivePanel" name="chatButtonsPanel">
           <Constraints>
@@ -59,7 +63,7 @@
             </Component>
             <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Send File"/>
+                <Property name="text" type="java.lang.String" value="Send File ..."/>
               </Properties>
             </Component>
             <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
@@ -91,54 +95,106 @@
         </Container>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JScrollPane" name="receivePanel">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-          <BorderConstraints direction="Center"/>
-        </Constraint>
-      </Constraints>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="widgets.textbox.AdaptiveTextBox" name="adaptiveTextBox1">
-          <Properties>
-            <Property name="columns" type="int" value="20"/>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
     <Container class="widgets.panel.AdaptivePanel" name="contactPanel">
+      <Properties>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[32767, 100]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[125, 100]"/>
+        </Property>
+      </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
           <BorderConstraints direction="First"/>
         </Constraint>
       </Constraints>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+        <Property name="alignment" type="int" value="0"/>
+        <Property name="horizontalGap" type="int" value="10"/>
+        <Property name="verticalGap" type="int" value="10"/>
+      </Layout>
       <SubComponents>
         <Container class="widgets.panel.AdaptivePanel" name="avatarPanel">
           <Properties>
             <Property name="function" type="java.lang.String" value="ContactImg"/>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[100, 100]"/>
-            </Property>
-            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[100, 100]"/>
-            </Property>
             <Property name="name" type="java.lang.String" value="ContactPanel.AvatarPanel" noResource="true"/>
           </Properties>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
         </Container>
-        <Container class="widgets.panel.AdaptivePanel" name="statulPanel">
+        <Container class="widgets.panel.AdaptivePanel" name="statusPanel">
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+            <Component class="widgets.label.AdaptiveLabel" name="nameLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="koutsoppoulos Nikolaos: H zwh einai skata"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Last"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+            <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="First"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                <Property name="alignment" type="int" value="0"/>
+              </Layout>
+              <SubComponents>
+                <Container class="widgets.panel.AdaptivePanel" name="statusAvatarPanel">
+                  <Properties>
+                    <Property name="function" type="java.lang.String" value="StatusAvailableImg"/>
+                    <Property name="name" type="java.lang.String" value="ContactPanel.StatusAvailablePanel" noResource="true"/>
+                  </Properties>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="widgets.panel.AdaptivePanel" name="receivePanel">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+            <LineBorder roundedCorners="true"/>
+          </Border>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JScrollPane" name="receiveScrolPane">
+          <AuxValues>
+            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+          </AuxValues>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Component class="widgets.textbox.AdaptiveTextBox" name="adaptiveTextBox1">
+              <Properties>
+                <Property name="columns" type="int" value="20"/>
+                <Property name="editable" type="boolean" value="false"/>
+                <Property name="rows" type="int" value="5"/>
+                <Property name="text" type="java.lang.String" value="koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu&#xa;koutsop:   Bariemai&#xa;koutsop1: Kai egw polu"/>
+              </Properties>
+            </Component>
+          </SubComponents>
         </Container>
       </SubComponents>
     </Container>

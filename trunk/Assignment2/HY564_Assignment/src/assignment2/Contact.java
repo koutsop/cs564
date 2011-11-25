@@ -34,6 +34,9 @@ public class Contact extends javax.swing.JPanel {
 		statusAvailablePanel.setFunction(statusFunction);
 		nameLabel.setText(contactName);
 		statusLabel.setText(contactSatus);
+        separatorPanel.setMinimumSize(new Dimension(5, 1));
+        separatorPanel.setMaximumSize(new Dimension(5, 1));
+        separatorPanel.setPreferredSize(new Dimension(5, 1));
 	}
     
     public void SetContactSize (int width, int height){
@@ -80,6 +83,7 @@ public class Contact extends javax.swing.JPanel {
     private void initComponents() {
 
         avatarPanel = new widgets.panel.AdaptivePanel();
+        separatorPanel = new widgets.panel.AdaptivePanel();
         statusAvailablePanel = new widgets.panel.AdaptivePanel();
         statusBusyPanel = new widgets.panel.AdaptivePanel();
         statusIdlePanel = new widgets.panel.AdaptivePanel();
@@ -88,9 +92,6 @@ public class Contact extends javax.swing.JPanel {
         statusLabel = new widgets.label.AdaptiveLabel();
 
         setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
-        setMaximumSize(new java.awt.Dimension(300, 300));
-        setMinimumSize(new java.awt.Dimension(300, 300));
-        setPreferredSize(new java.awt.Dimension(300, 300));
         addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ChatWithContact(evt);
@@ -105,6 +106,9 @@ public class Contact extends javax.swing.JPanel {
         avatarPanel.setLayout(new javax.swing.BoxLayout(avatarPanel, javax.swing.BoxLayout.LINE_AXIS));
         add(avatarPanel);
 
+        separatorPanel.setAlignmentY(0.0F);
+        add(separatorPanel);
+
         statusAvailablePanel.setName("ContactPanel.StatusAvailablePanel"); // NOI18N
         statusAvailablePanel.setLayout(new javax.swing.BoxLayout(statusAvailablePanel, javax.swing.BoxLayout.LINE_AXIS));
         add(statusAvailablePanel);
@@ -117,7 +121,6 @@ public class Contact extends javax.swing.JPanel {
         statusIdlePanel.setLayout(new javax.swing.BoxLayout(statusIdlePanel, javax.swing.BoxLayout.LINE_AXIS));
         add(statusIdlePanel);
 
-        namePanel.setAlignmentX(0.5F);
         namePanel.setAlignmentY(0.0F);
         namePanel.setLayout(new javax.swing.BoxLayout(namePanel, javax.swing.BoxLayout.PAGE_AXIS));
         namePanel.add(nameLabel);
@@ -136,6 +139,7 @@ public class Contact extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel avatarPanel;
     private widgets.label.AdaptiveLabel nameLabel;
     private widgets.panel.AdaptivePanel namePanel;
+    private widgets.panel.AdaptivePanel separatorPanel;
     private widgets.panel.AdaptivePanel statusAvailablePanel;
     private widgets.panel.AdaptivePanel statusBusyPanel;
     private widgets.panel.AdaptivePanel statusIdlePanel;
