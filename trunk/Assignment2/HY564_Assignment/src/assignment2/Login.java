@@ -83,7 +83,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel2Layout.setVerticalGroup(
             adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
+            .addGap(0, 32, Short.MAX_VALUE)
         );
 
         add(adaptivePanel2);
@@ -99,7 +99,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel24Layout.setVerticalGroup(
             adaptivePanel24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 15, Short.MAX_VALUE)
+            .addGap(0, 16, Short.MAX_VALUE)
         );
 
         add(adaptivePanel24);
@@ -116,7 +116,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel13Layout.setVerticalGroup(
             adaptivePanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 92, Short.MAX_VALUE)
+            .addGap(0, 93, Short.MAX_VALUE)
         );
 
         adaptivePanel12.add(adaptivePanel13);
@@ -167,7 +167,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel15Layout.setVerticalGroup(
             adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 92, Short.MAX_VALUE)
+            .addGap(0, 93, Short.MAX_VALUE)
         );
 
         adaptivePanel12.add(adaptivePanel15);
@@ -334,12 +334,11 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel9Layout.setVerticalGroup(
             adaptivePanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 53, Short.MAX_VALUE)
+            .addGap(0, 49, Short.MAX_VALUE)
         );
 
         adaptivePanel8.add(adaptivePanel9);
 
-        adaptivePanel10.setAlignmentX(0.5F);
         adaptivePanel10.setMaximumSize(new java.awt.Dimension(222, 48));
         adaptivePanel10.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -367,7 +366,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel11Layout.setVerticalGroup(
             adaptivePanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 53, Short.MAX_VALUE)
+            .addGap(0, 49, Short.MAX_VALUE)
         );
 
         adaptivePanel8.add(adaptivePanel11);
@@ -384,7 +383,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel23Layout.setVerticalGroup(
             adaptivePanel23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 15, Short.MAX_VALUE)
+            .addGap(0, 16, Short.MAX_VALUE)
         );
 
         add(adaptivePanel23);
@@ -399,7 +398,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel25Layout.setVerticalGroup(
             adaptivePanel25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 15, Short.MAX_VALUE)
+            .addGap(0, 16, Short.MAX_VALUE)
         );
 
         add(adaptivePanel25);
