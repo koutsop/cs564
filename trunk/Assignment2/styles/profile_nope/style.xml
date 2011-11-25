@@ -83,16 +83,16 @@
 <!-- PANELS & BARS -->
 <!-- ======================================================= -->
 
-	<!-- <style id="Content">
+	<style id="Content">
 		<imagePainter method="panelBorder" path="images/Border.png" sourceInsets="1 1 1 1" paintCenter="false"/>
 		<imagePainter method="panelBackground" path="images/ContentBg.png" sourceInsets="2 2 2 2"/>		
 	</style>
-	<bind style="Content" type="name" key="Panel.Content.*"/> -->
+	<bind style="Content" type="name" key="Panel.Content.*"/>
 	
 	<style id="WhitePanel">
 		<imagePainter method="panelBackground" path="images/WhiteContentBg.png" sourceInsets="2 2 2 2"/>
 	</style>
-	<bind style="WhitePanel" type="name" key="Panel.White.*"/> 
+	<bind style="WhitePanel" type="name" key="Panel.White.*"/>
 	
 <!-- ======================================================= -->
 <!-- BUTTONS -->
@@ -223,7 +223,7 @@
 <!-- LINK -->
 <!-- ======================================================= -->	
 	
-  <style id="h4">
+		<style id="h4">
 		<state>
 			<font name="Arial" size="12" style="BOLD"/>
 			<color value="#07697b" type="TEXT_FOREGROUND"/>
@@ -369,12 +369,11 @@
 <!-- ======================================================= -->
 <!-- CUSTOM STYLES -->
 <!-- ======================================================= -->
- <!--	<style id="LoginLabelStyle">
-		<font name="Lucida" size="11"/>
+ 	<style id="LoginLabelStyle">
+		<font name="Lucida" size="18" style="BOLD"/>
 	</style>   
     <bind style="LoginLabelStyle" type="name" key="LoginPanel.Label"/>	
--->    
- <!--   
+    
 	<style id="MainTitleStyle">
 		<font name="Lucida" size="18" style="BOLD"/>
 		<state value="ENABLED">
@@ -391,6 +390,11 @@
 	</style>
 	<bind style="AppetizerNameStyle" type="name" key="MainPanel.Appetizer.*"/>
 	
+	<style id="GreekSalad">
+		<imagePainter method="panelBackground" path="images/common/greek.png" center="true"/>
+	</style>
+	<bind style="GreekSalad" type="name" key="Panel.Image.GreekSalad"/>
+
 	<style id="GardenSalad">
 		<imagePainter method="panelBackground" path="images/common/garden.png" center="true"/>
 	</style>
@@ -400,54 +404,5 @@
 		<imagePainter method="panelBackground" path="images/common/onion.png" center="true"/>
 	</style>
 	<bind style="OnionSalad" type="name" key="Panel.Image.OnionSalad"/>
-	-->
-<!-- ====================================================================================== -->	
-	<style id="welcomeImage">
-		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/welcome.png" center="true"/>
-	</style>
-	<bind style="welcomeImage" type="name" key="Panel.Image.Welcome"/>
-
-
-	<!-- Edw an exw 10 diaforetikes epafes 10 diaforetikes photos swta?-->
-	<!-- Ola ta buttons poio megala ?-->
-	<!-- Na alazw to size apo sigkerkimena panes -->
-	<!-- Ti skata ginetai me ta 12px? pou uparxoun sthn arxh tou main AccesibleFrame-->
-	<style id="ContactImg">
-		<imagePainter 
-            method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop.jpg"
-            center="true"
-        />
-	</style>
-	<bind style="ContactImg" type="name" key="ContactPanel.AvatarPanel"/>
-	
-	<style id="StatusAvailableImage">
-		<imagePainter 
-            method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop.jpg"
-            center="true"
-        />
-	</style>
-	<bind style="StatusAvailableImage" type="name" key="ContactPanel.StatusAvailablePanel"/>
-	
-	<style id="StatusIdleImage">
-		<imagePainter 
-            method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop2.jpg"
-            center="true"
-        />
-	</style>
-	<bind style="StatusIdleImage" type="name" key="ContactPanel.StatusIdlePanel"/>
-
-	<style id="StatusBusyImage">
-		<imagePainter 
-            method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop1.jpg"
-            center="true"
-        />
-	</style>
-	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusBusyPanel"/>
-	
-
 	
 </synth>
