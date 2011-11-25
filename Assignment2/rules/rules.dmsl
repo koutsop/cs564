@@ -6,6 +6,7 @@ stereotype profile1 : params.user.profile == no_disability
 stereotype profile2 : params.user.profile == color_blind
 stereotype profile3 : params.user.profile == instability
 stereotype profile4 : params.user.profile == low_vision
+stereotype profile5 : params.user.profile == nope
 
 
 component "Style" [
@@ -14,7 +15,7 @@ component "Style" [
 	else if profile2 then 	activate "profile_color_blind/"
     else if profile3 then   activate "profile_instability/"
     else if profile4 then   activate "profile_low_vision/"
-	else 					activate "profile_no_disability/"
+	else 					activate "profile_nope/"
 
 ]
 
@@ -256,6 +257,25 @@ component StatusImgWidth [
 	else 					activate "-1"
 ]
 
+component ContactHeight [
+	if 		profile1 then 	activate "75"
+	else if profile2 then 	activate "21"
+	else if profile3 then 	activate "25"
+	else if profile4 then 	activate "27"
+	else 					activate "-1"
+]
+
+component ContactWidth [
+	if 		profile1 then 	activate "230"
+	else if profile2 then 	activate "21"
+	else if profile3 then 	activate "25"
+	else if profile4 then 	activate "27"
+	else 					activate "-1"
+]
+
+//component MenuButton [
+//	activate "MenuButton.Content"
+//]
 
 component ContactImg [
     activate "ContactPanel.AvatarPanel"

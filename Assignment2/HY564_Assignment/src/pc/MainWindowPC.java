@@ -1,7 +1,7 @@
 package pc;
 
 
-import assignment2.Login;
+import assignment2.Login1;
 import java.awt.Dimension;
 import javax.swing.JPanel;
 import utilities.Adaptation;
@@ -27,19 +27,15 @@ public class MainWindowPC extends javax.swing.JFrame {
     public void initAdaptationParameters(){
 
         /*Set user age to be 50*/
-        DMSLConnector.getInstance().getClient(false).SetAttribute("user.profile", "no_disability");
+        //DMSLConnector.getInstance().getClient(false).SetAttribute("user.profile", "no_disability");
 
     }
 
     /** Creates new form MainWindow */
     public MainWindowPC() {
-
-        initAdaptationParameters();
-        Adaptation.initLookAndFeel(this);
-
         initComponents();
 
-        Login login = new Login();
+        Login1 login = new Login1();
         mainPanel.add(login);       
         
         this.setMinimumSize(new Dimension(1000,720));
