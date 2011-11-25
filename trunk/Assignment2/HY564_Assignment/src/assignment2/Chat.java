@@ -30,45 +30,81 @@ public class Chat extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        upPanel = new widgets.panel.AdaptivePanel();
-        videoCallButton = new widgets.button.AdaptiveButton();
-        callButton = new widgets.button.AdaptiveButton();
-        exitButton = new widgets.button.AdaptiveButton();
-        chatPanel = new widgets.panel.AdaptivePanel();
+        sendPanel = new widgets.panel.AdaptivePanel();
+        chatButtonsPanel = new widgets.panel.AdaptivePanel();
+        adaptiveButton1 = new widgets.button.AdaptiveButton();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        adaptiveButton3 = new widgets.button.AdaptiveButton();
+        adaptiveButton4 = new widgets.button.AdaptiveButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        adaptiveTextBox2 = new widgets.textbox.AdaptiveTextBox();
+        receivePanel = new javax.swing.JScrollPane();
+        adaptiveTextBox1 = new widgets.textbox.AdaptiveTextBox();
+        contactPanel = new widgets.panel.AdaptivePanel();
+        avatarPanel = new widgets.panel.AdaptivePanel();
+        statulPanel = new widgets.panel.AdaptivePanel();
 
-        setMaximumSize(new java.awt.Dimension(757, 622));
-        setMinimumSize(new java.awt.Dimension(757, 622));
-        setPreferredSize(new java.awt.Dimension(757, 622));
+        setMaximumSize(new java.awt.Dimension(750, 560));
+        setMinimumSize(new java.awt.Dimension(750, 560));
+        setPreferredSize(new java.awt.Dimension(750, 560));
         setLayout(new java.awt.BorderLayout());
 
-        videoCallButton.setText("Video Call");
-        upPanel.add(videoCallButton);
+        sendPanel.setLayout(new java.awt.BorderLayout());
 
-        callButton.setText("Call");
-        upPanel.add(callButton);
+        chatButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 5));
 
-        exitButton.setText("Exit");
-        upPanel.add(exitButton);
+        adaptiveButton1.setText("Video Call");
+        chatButtonsPanel.add(adaptiveButton1);
 
-        add(upPanel, java.awt.BorderLayout.PAGE_START);
+        adaptiveButton2.setText("Call");
+        chatButtonsPanel.add(adaptiveButton2);
 
-        chatPanel.setLayout(new java.awt.BorderLayout());
+        adaptiveButton3.setText("Send File");
+        chatButtonsPanel.add(adaptiveButton3);
 
-        adaptiveButton2.setText("adaptiveButton2");
-        chatPanel.add(adaptiveButton2, java.awt.BorderLayout.PAGE_END);
-        chatPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+        adaptiveButton4.setText("Exit");
+        chatButtonsPanel.add(adaptiveButton4);
 
-        add(chatPanel, java.awt.BorderLayout.CENTER);
+        sendPanel.add(chatButtonsPanel, java.awt.BorderLayout.PAGE_START);
+
+        adaptiveTextBox2.setColumns(20);
+        adaptiveTextBox2.setRows(5);
+        jScrollPane2.setViewportView(adaptiveTextBox2);
+
+        sendPanel.add(jScrollPane2, java.awt.BorderLayout.PAGE_END);
+
+        add(sendPanel, java.awt.BorderLayout.PAGE_END);
+
+        adaptiveTextBox1.setColumns(20);
+        adaptiveTextBox1.setEditable(false);
+        adaptiveTextBox1.setRows(5);
+        adaptiveTextBox1.setText("koutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu");
+        receivePanel.setViewportView(adaptiveTextBox1);
+
+        add(receivePanel, java.awt.BorderLayout.CENTER);
+
+        avatarPanel.setFunction("ContactImg");
+        avatarPanel.setMaximumSize(new java.awt.Dimension(100, 100));
+        avatarPanel.setMinimumSize(new java.awt.Dimension(100, 100));
+        avatarPanel.setName("ContactPanel.AvatarPanel"); // NOI18N
+        contactPanel.add(avatarPanel);
+        contactPanel.add(statulPanel);
+
+        add(contactPanel, java.awt.BorderLayout.PAGE_START);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton2;
-    private widgets.button.AdaptiveButton callButton;
-    private widgets.panel.AdaptivePanel chatPanel;
-    private widgets.button.AdaptiveButton exitButton;
-    private javax.swing.JScrollPane jScrollPane1;
-    private widgets.panel.AdaptivePanel upPanel;
-    private widgets.button.AdaptiveButton videoCallButton;
+    private widgets.button.AdaptiveButton adaptiveButton3;
+    private widgets.button.AdaptiveButton adaptiveButton4;
+    private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
+    private widgets.textbox.AdaptiveTextBox adaptiveTextBox2;
+    private widgets.panel.AdaptivePanel avatarPanel;
+    private widgets.panel.AdaptivePanel chatButtonsPanel;
+    private widgets.panel.AdaptivePanel contactPanel;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane receivePanel;
+    private widgets.panel.AdaptivePanel sendPanel;
+    private widgets.panel.AdaptivePanel statulPanel;
     // End of variables declaration//GEN-END:variables
 }

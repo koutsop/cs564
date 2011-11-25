@@ -10,6 +10,7 @@
  */
 package assignment2;
 
+import javax.swing.JPanel;
 import pc.MainWindowPC;
 
 /**
@@ -21,6 +22,7 @@ public class AccessibleIM extends javax.swing.JPanel {
     /** Creates new form AccessibleIM */
     public AccessibleIM() {
         initComponents();
+        showPanel(new AdaptableIMView());
     }
 
     /** This method is called from within the constructor to
@@ -34,41 +36,27 @@ public class AccessibleIM extends javax.swing.JPanel {
 
         menuContentsPanel = new widgets.panel.AdaptivePanel();
         menuPanel = new widgets.panel.AdaptivePanel();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
-        adaptiveButton2 = new widgets.button.AdaptiveButton();
-        settingsButton = new widgets.button.AdaptiveButton();
-        startPageButton = new widgets.button.AdaptiveButton();
-        adaptiveButton5 = new widgets.button.AdaptiveButton();
-        adaptiveButton6 = new widgets.button.AdaptiveButton();
-        adaptiveButton7 = new widgets.button.AdaptiveButton();
+        imButton = new widgets.button.MainMenuButton();
+        settingsButton = new widgets.button.MainMenuButton();
+        startPageButton = new widgets.button.MainMenuButton();
+        mainMenuButton1 = new widgets.button.MainMenuButton();
 
         setMaximumSize(new java.awt.Dimension(1000, 688));
         setMinimumSize(new java.awt.Dimension(1000, 688));
         setPreferredSize(new java.awt.Dimension(1000, 688));
         setLayout(new java.awt.BorderLayout());
 
-        javax.swing.GroupLayout menuContentsPanelLayout = new javax.swing.GroupLayout(menuContentsPanel);
-        menuContentsPanel.setLayout(menuContentsPanelLayout);
-        menuContentsPanelLayout.setHorizontalGroup(
-            menuContentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
-        );
-        menuContentsPanelLayout.setVerticalGroup(
-            menuContentsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 650, Short.MAX_VALUE)
-        );
-
+        menuContentsPanel.setLayout(new java.awt.GridLayout());
         add(menuContentsPanel, java.awt.BorderLayout.CENTER);
 
-        adaptiveButton1.setFunction("MenuButton");
-        adaptiveButton1.setText("Accessible IM");
-        menuPanel.add(adaptiveButton1);
+        imButton.setText("Accessible IM");
+        imButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                imButtonActionPerformed(evt);
+            }
+        });
+        menuPanel.add(imButton);
 
-        adaptiveButton2.setFunction("MenuButton");
-        adaptiveButton2.setText("Επιλογές");
-        menuPanel.add(adaptiveButton2);
-
-        settingsButton.setFunction("MenuButton");
         settingsButton.setText("Ρυθμίισεις");
         settingsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +65,6 @@ public class AccessibleIM extends javax.swing.JPanel {
         });
         menuPanel.add(settingsButton);
 
-        startPageButton.setFunction("MenuButton");
         startPageButton.setText("Αρχική");
         startPageButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,35 +73,47 @@ public class AccessibleIM extends javax.swing.JPanel {
         });
         menuPanel.add(startPageButton);
 
-        adaptiveButton5.setText("Έξοδος");
-        menuPanel.add(adaptiveButton5);
-
-        adaptiveButton6.setText("adaptiveButton6");
-        menuPanel.add(adaptiveButton6);
-
-        adaptiveButton7.setText("adaptiveButton7");
-        menuPanel.add(adaptiveButton7);
+        mainMenuButton1.setText("Έξοδος");
+        mainMenuButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mainMenuButton1ActionPerformed(evt);
+            }
+        });
+        menuPanel.add(mainMenuButton1);
 
         add(menuPanel, java.awt.BorderLayout.PAGE_START);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {
-        MainWindowPC.showPanel(new AdaptableSettingsView());
+    private void showPanel(JPanel p) {
+        menuContentsPanel.removeAll();
+        p.setVisible(true);
+        menuContentsPanel.add(p);
+        menuContentsPanel.repaint();
+        menuContentsPanel.validate();       
     }
+    
+    private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
+        showPanel(new AdaptableIMView());
+    }//GEN-LAST:event_imButtonActionPerformed
 
-    private void startPageButtonActionPerformed(java.awt.event.ActionEvent evt) {
+    private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
+        showPanel(new AdaptableSettingsView());
+    }//GEN-LAST:event_settingsButtonActionPerformed
+
+    private void startPageButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startPageButtonActionPerformed
         MainWindowPC.showPanel(new Login1());
-    }
+    }//GEN-LAST:event_startPageButtonActionPerformed
+
+    private void mainMenuButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mainMenuButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_mainMenuButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.button.AdaptiveButton adaptiveButton1;
-    private widgets.button.AdaptiveButton adaptiveButton2;
-    private widgets.button.AdaptiveButton adaptiveButton5;
-    private widgets.button.AdaptiveButton adaptiveButton6;
-    private widgets.button.AdaptiveButton adaptiveButton7;
+    private widgets.button.MainMenuButton imButton;
+    private widgets.button.MainMenuButton mainMenuButton1;
     private widgets.panel.AdaptivePanel menuContentsPanel;
     private widgets.panel.AdaptivePanel menuPanel;
-    private widgets.button.AdaptiveButton settingsButton;
-    private widgets.button.AdaptiveButton startPageButton;
+    private widgets.button.MainMenuButton settingsButton;
+    private widgets.button.MainMenuButton startPageButton;
     // End of variables declaration//GEN-END:variables
 }
