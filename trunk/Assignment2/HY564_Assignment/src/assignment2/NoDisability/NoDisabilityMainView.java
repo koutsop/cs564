@@ -10,6 +10,7 @@
  */
 package assignment2.NoDisability;
 
+import assignment2.Chat;
 import assignment2.Contact;
 import assignment2.Login1;
 import java.awt.Component;
@@ -123,9 +124,9 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         adaptiveButton7 = new widgets.button.AdaptiveButton();
         mainPanel = new widgets.panel.AdaptivePanel();
         tabPanel = new widgets.panel.AdaptivePanel();
-        adaptiveButton8 = new widgets.button.AdaptiveButton();
-        adaptiveButton9 = new widgets.button.AdaptiveButton();
-        adaptiveButton10 = new widgets.button.AdaptiveButton();
+        koutsopButton = new widgets.button.AdaptiveButton();
+        tmp1 = new widgets.button.AdaptiveButton();
+        tmp2 = new widgets.button.AdaptiveButton();
         contentPanel = new widgets.panel.AdaptivePanel();
 
         setMaximumSize(new java.awt.Dimension(1000, 688));
@@ -180,29 +181,29 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
 
         tabPanel.setLayout(new javax.swing.BoxLayout(tabPanel, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveButton8.setText("adaptiveButton8");
-        adaptiveButton8.addActionListener(new java.awt.event.ActionListener() {
+        koutsopButton.setText("koutsop");
+        koutsopButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton8ActionPerformed(evt);
+                koutsopButtonActionPerformed(evt);
             }
         });
-        tabPanel.add(adaptiveButton8);
+        tabPanel.add(koutsopButton);
 
-        adaptiveButton9.setText("adaptiveButton9");
-        adaptiveButton9.addActionListener(new java.awt.event.ActionListener() {
+        tmp1.setText("adaptiveButton9");
+        tmp1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton9ActionPerformed(evt);
+                tmp1ActionPerformed(evt);
             }
         });
-        tabPanel.add(adaptiveButton9);
+        tabPanel.add(tmp1);
 
-        adaptiveButton10.setText("adaptiveButton10");
-        adaptiveButton10.addActionListener(new java.awt.event.ActionListener() {
+        tmp2.setText("adaptiveButton10");
+        tmp2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton10ActionPerformed(evt);
+                tmp2ActionPerformed(evt);
             }
         });
-        tabPanel.add(adaptiveButton10);
+        tabPanel.add(tmp2);
 
         mainPanel.add(tabPanel, java.awt.BorderLayout.PAGE_START);
         mainPanel.add(contentPanel, java.awt.BorderLayout.CENTER);
@@ -210,17 +211,27 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         add(mainPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
-	private void adaptiveButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton9ActionPerformed
+	private void tmp1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tmp1ActionPerformed
 		// TODO add your handling code here:
-	}//GEN-LAST:event_adaptiveButton9ActionPerformed
+	}//GEN-LAST:event_tmp1ActionPerformed
 
-	private void adaptiveButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton8ActionPerformed
-		// TODO add your handling code here:
-	}//GEN-LAST:event_adaptiveButton8ActionPerformed
+	private void koutsopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_koutsopButtonActionPerformed
+		koutsopButton.setSelected(true);
+        tmp1.setSelected(false);
+        tmp2.setSelected(false);
+        
+        Chat chat = new Chat();
+        chat.setVisible(true);
+        
+        contentPanel.removeAll();
+        contentPanel.add(chat);
+        contentPanel.repaint();
+        contentPanel.validate();
+	}//GEN-LAST:event_koutsopButtonActionPerformed
 
-	private void adaptiveButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton10ActionPerformed
+	private void tmp2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tmp2ActionPerformed
 		// TODO add your handling code here:
-	}//GEN-LAST:event_adaptiveButton10ActionPerformed
+	}//GEN-LAST:event_tmp2ActionPerformed
 
 	private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
 		Login1 login = new Login1();       
@@ -229,21 +240,21 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
-    private widgets.button.AdaptiveButton adaptiveButton10;
     private widgets.button.AdaptiveButton adaptiveButton2;
     private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.button.AdaptiveButton adaptiveButton4;
     private widgets.button.AdaptiveButton adaptiveButton5;
     private widgets.button.AdaptiveButton adaptiveButton6;
     private widgets.button.AdaptiveButton adaptiveButton7;
-    private widgets.button.AdaptiveButton adaptiveButton8;
-    private widgets.button.AdaptiveButton adaptiveButton9;
     private widgets.panel.AdaptivePanel contactsPanel;
     private widgets.panel.AdaptivePanel contentPanel;
     private javax.swing.JScrollPane jScrollPane1;
+    private widgets.button.AdaptiveButton koutsopButton;
     private widgets.panel.AdaptivePanel leftPanel;
     private widgets.panel.AdaptivePanel mainPanel;
     private widgets.panel.AdaptivePanel menuPanel;
     private widgets.panel.AdaptivePanel tabPanel;
+    private widgets.button.AdaptiveButton tmp1;
+    private widgets.button.AdaptiveButton tmp2;
     // End of variables declaration//GEN-END:variables
 }

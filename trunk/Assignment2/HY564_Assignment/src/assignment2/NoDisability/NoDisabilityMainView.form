@@ -126,28 +126,28 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
           <SubComponents>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton8">
+            <Component class="widgets.button.AdaptiveButton" name="koutsopButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="adaptiveButton8"/>
+                <Property name="text" type="java.lang.String" value="koutsop"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton8ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="koutsopButtonActionPerformed"/>
               </Events>
             </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton9">
+            <Component class="widgets.button.AdaptiveButton" name="tmp1">
               <Properties>
                 <Property name="text" type="java.lang.String" value="adaptiveButton9"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton9ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tmp1ActionPerformed"/>
               </Events>
             </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton10">
+            <Component class="widgets.button.AdaptiveButton" name="tmp2">
               <Properties>
                 <Property name="text" type="java.lang.String" value="adaptiveButton10"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton10ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tmp2ActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
