@@ -144,8 +144,6 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
 
         add(leftPanel, java.awt.BorderLayout.LINE_START);
 
-        menuPanel.setLayout(new javax.swing.BoxLayout(menuPanel, javax.swing.BoxLayout.LINE_AXIS));
-
         adaptiveButton1.setFunction("MenuButton");
         adaptiveButton1.setText("Accessible IM");
         menuPanel.add(adaptiveButton1);
