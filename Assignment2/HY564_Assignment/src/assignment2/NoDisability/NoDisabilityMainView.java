@@ -15,6 +15,8 @@ import assignment2.Chat;
 import assignment2.Contact;
 import assignment2.Login1;
 import java.awt.Component;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 import pc.MainWindowPC;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
@@ -115,24 +117,16 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         leftPanel = new widgets.panel.AdaptivePanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         contactsPanel = new widgets.panel.AdaptivePanel();
-        menuPanel = new widgets.panel.AdaptivePanel();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
-        adaptiveButton2 = new widgets.button.AdaptiveButton();
-        settingsButton = new widgets.button.AdaptiveButton();
-        adaptiveButton4 = new widgets.button.AdaptiveButton();
-        adaptiveButton5 = new widgets.button.AdaptiveButton();
-        adaptiveButton6 = new widgets.button.AdaptiveButton();
-        adaptiveButton7 = new widgets.button.AdaptiveButton();
         mainPanel = new widgets.panel.AdaptivePanel();
         tabPanel = new widgets.panel.AdaptivePanel();
-        koutsopButton = new widgets.button.AdaptiveButton();
-        tmp1 = new widgets.button.AdaptiveButton();
-        tmp2 = new widgets.button.AdaptiveButton();
+        koutsopChatButton = new widgets.button.MainMenuButton();
+        tmp1 = new widgets.button.MainMenuButton();
+        tmp2 = new widgets.button.MainMenuButton();
         contentPanel = new widgets.panel.AdaptivePanel();
 
-        setMaximumSize(new java.awt.Dimension(1000, 688));
-        setMinimumSize(new java.awt.Dimension(1000, 688));
-        setPreferredSize(new java.awt.Dimension(1000, 688));
+        setMaximumSize(new java.awt.Dimension(1000, 620));
+        setMinimumSize(new java.awt.Dimension(1000, 620));
+        setPreferredSize(new java.awt.Dimension(1000, 620));
         setLayout(new java.awt.BorderLayout(10, 10));
 
         leftPanel.setLayout(new javax.swing.BoxLayout(leftPanel, javax.swing.BoxLayout.PAGE_AXIS));
@@ -144,69 +138,22 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
 
         add(leftPanel, java.awt.BorderLayout.LINE_START);
 
-        adaptiveButton1.setFunction("MenuButton");
-        adaptiveButton1.setText("Accessible IM");
-        menuPanel.add(adaptiveButton1);
-
-        adaptiveButton2.setFunction("MenuButton");
-        adaptiveButton2.setText("Επιλογές");
-        menuPanel.add(adaptiveButton2);
-
-        settingsButton.setFunction("MenuButton");
-        settingsButton.setText("Ρυθμίισεις");
-        settingsButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                settingsButtonActionPerformed(evt);
-            }
-        });
-        menuPanel.add(settingsButton);
-
-        adaptiveButton4.setFunction("MenuButton");
-        adaptiveButton4.setText("Αρχική");
-        adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton4ActionPerformed(evt);
-            }
-        });
-        menuPanel.add(adaptiveButton4);
-
-        adaptiveButton5.setText("Έξοδος");
-        menuPanel.add(adaptiveButton5);
-
-        adaptiveButton6.setText("adaptiveButton6");
-        menuPanel.add(adaptiveButton6);
-
-        adaptiveButton7.setText("adaptiveButton7");
-        menuPanel.add(adaptiveButton7);
-
-        add(menuPanel, java.awt.BorderLayout.PAGE_START);
-
         mainPanel.setLayout(new java.awt.BorderLayout());
 
-        tabPanel.setLayout(new javax.swing.BoxLayout(tabPanel, javax.swing.BoxLayout.LINE_AXIS));
+        tabPanel.setLayout(new java.awt.GridLayout(1, 3, 0, 30));
 
-        koutsopButton.setText("koutsop");
-        koutsopButton.addActionListener(new java.awt.event.ActionListener() {
+        koutsopChatButton.setText("koutsop chat");
+        koutsopChatButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                koutsopButtonActionPerformed(evt);
+                koutsopChatButtonActionPerformed(evt);
             }
         });
-        tabPanel.add(koutsopButton);
+        tabPanel.add(koutsopChatButton);
 
-        tmp1.setText("adaptiveButton9");
-        tmp1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tmp1ActionPerformed(evt);
-            }
-        });
+        tmp1.setText("mainMenuButton2");
         tabPanel.add(tmp1);
 
-        tmp2.setText("adaptiveButton10");
-        tmp2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tmp2ActionPerformed(evt);
-            }
-        });
+        tmp2.setText("mainMenuButton3");
         tabPanel.add(tmp2);
 
         mainPanel.add(tabPanel, java.awt.BorderLayout.PAGE_START);
@@ -215,55 +162,35 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         add(mainPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
-	private void tmp1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tmp1ActionPerformed
-		// TODO add your handling code here:
-	}//GEN-LAST:event_tmp1ActionPerformed
+    private void koutsopChatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_koutsopChatButtonActionPerformed
+        selectButton(koutsopChatButton);
+        showPanel(new Chat());
+    }//GEN-LAST:event_koutsopChatButtonActionPerformed
 
-	private void koutsopButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_koutsopButtonActionPerformed
-		koutsopButton.setSelected(true);
+    private void showPanel (JPanel p) {
+        contentPanel.removeAll();
+        p.setVisible(true);
+        contentPanel.add(p);
+        contentPanel.repaint();
+        contentPanel.validate();       
+    }
+    
+    private void selectButton (JButton button) {
+        koutsopChatButton.setSelected(false);
         tmp1.setSelected(false);
         tmp2.setSelected(false);
-        
-        Chat chat = new Chat();
-        chat.setVisible(true);
-        
-        contentPanel.removeAll();
-        contentPanel.add(chat);
-        contentPanel.repaint();
-        contentPanel.validate();
-	}//GEN-LAST:event_koutsopButtonActionPerformed
-
-	private void tmp2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tmp2ActionPerformed
-		// TODO add your handling code here:
-	}//GEN-LAST:event_tmp2ActionPerformed
-
-	private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
-		Login1 login = new Login1();       
-        MainWindowPC.showPanel(login);
-	}//GEN-LAST:event_adaptiveButton4ActionPerformed
-
-    private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
-        AdaptableSettingsView settings = new AdaptableSettingsView();       
-        MainWindowPC.showPanel(settings);
-    }//GEN-LAST:event_settingsButtonActionPerformed
-
+        button.setSelected(true);
+    }
+     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.button.AdaptiveButton adaptiveButton1;
-    private widgets.button.AdaptiveButton adaptiveButton2;
-    private widgets.button.AdaptiveButton adaptiveButton4;
-    private widgets.button.AdaptiveButton adaptiveButton5;
-    private widgets.button.AdaptiveButton adaptiveButton6;
-    private widgets.button.AdaptiveButton adaptiveButton7;
     private widgets.panel.AdaptivePanel contactsPanel;
     private widgets.panel.AdaptivePanel contentPanel;
     private javax.swing.JScrollPane jScrollPane1;
-    private widgets.button.AdaptiveButton koutsopButton;
+    private widgets.button.MainMenuButton koutsopChatButton;
     private widgets.panel.AdaptivePanel leftPanel;
     private widgets.panel.AdaptivePanel mainPanel;
-    private widgets.panel.AdaptivePanel menuPanel;
-    private widgets.button.AdaptiveButton settingsButton;
     private widgets.panel.AdaptivePanel tabPanel;
-    private widgets.button.AdaptiveButton tmp1;
-    private widgets.button.AdaptiveButton tmp2;
+    private widgets.button.MainMenuButton tmp1;
+    private widgets.button.MainMenuButton tmp2;
     // End of variables declaration//GEN-END:variables
 }
