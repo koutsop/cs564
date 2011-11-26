@@ -449,7 +449,14 @@
 	</style>
 	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusBusyPanel"/>
 	
-
+<style id="captchaImage1">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_no_disability/images/CAPTCHA.jpg"
+            center="true"
+        />
+	</style>
+	<bind style="captchaImage1" type="name" key="Panel.Image.Captcha"/>
 	<style id="ReceiveVideoImage">
 		<imagePainter 
             method="panelBackground" 

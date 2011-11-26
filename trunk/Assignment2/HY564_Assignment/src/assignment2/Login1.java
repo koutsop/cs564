@@ -10,6 +10,8 @@
  */
 package assignment2;
 
+import assignment2.NoDisability.ProfileCreation;
+import assignment2.NoDisability.ProfileCreation1;
 import pc.MainWindowPC;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
@@ -98,6 +100,11 @@ public class Login1 extends javax.swing.JPanel {
         add(modlePanel, java.awt.BorderLayout.CENTER);
 
         registerButton.setText("Δεν έχετε λογαριασμο;");
+        registerButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registerButtonActionPerformed(evt);
+            }
+        });
         downPanel.add(registerButton);
 
         add(downPanel, java.awt.BorderLayout.PAGE_END);
@@ -122,6 +129,11 @@ public class Login1 extends javax.swing.JPanel {
         initAdaptation("no_disability");
         MainWindowPC.showPanel(new AccessibleIM());
     }//GEN-LAST:event_lowVisionButtonActionPerformed
+
+private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
+// TODO add your handling code here:
+     MainWindowPC.showPanel(new ProfileCreation1());
+}//GEN-LAST:event_registerButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.label.AdaptiveLabel adaptiveLabel1;

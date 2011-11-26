@@ -116,7 +116,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel13Layout.setVerticalGroup(
             adaptivePanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 93, Short.MAX_VALUE)
+            .addGap(0, 94, Short.MAX_VALUE)
         );
 
         adaptivePanel12.add(adaptivePanel13);
@@ -167,7 +167,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel15Layout.setVerticalGroup(
             adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 93, Short.MAX_VALUE)
+            .addGap(0, 94, Short.MAX_VALUE)
         );
 
         adaptivePanel12.add(adaptivePanel15);
@@ -334,7 +334,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel9Layout.setVerticalGroup(
             adaptivePanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 49, Short.MAX_VALUE)
+            .addGap(0, 48, Short.MAX_VALUE)
         );
 
         adaptivePanel8.add(adaptivePanel9);
@@ -354,6 +354,11 @@ public class Login extends javax.swing.JPanel {
         signUpButton.setMaximumSize(new java.awt.Dimension(187, 24));
         signUpButton.setPreferredSize(new java.awt.Dimension(187, 24));
         signUpButton.setText("Δεν έχετε λογαριασμο;");
+        signUpButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                signUpButtonActionPerformed(evt);
+            }
+        });
         adaptivePanel10.add(signUpButton);
 
         adaptivePanel8.add(adaptivePanel10);
@@ -366,7 +371,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel11Layout.setVerticalGroup(
             adaptivePanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 49, Short.MAX_VALUE)
+            .addGap(0, 48, Short.MAX_VALUE)
         );
 
         adaptivePanel8.add(adaptivePanel11);
@@ -428,6 +433,10 @@ private void signInButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
         //AdaptableIMView im = new AdaptableIMView();       
         //MainWindowPC.showPanel(im);
 }//GEN-LAST:event_signInButtonActionPerformed
+
+private void signUpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signUpButtonActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_signUpButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.checkbox.AdaptiveCheckBox adaptiveCheckBox1;
