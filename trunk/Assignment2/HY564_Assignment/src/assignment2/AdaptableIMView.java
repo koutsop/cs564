@@ -10,8 +10,7 @@
  */
 package assignment2;
 
-import assignment2.NoDisability.NoDisabilityMainView;
-import demo.ViewA;
+import assignment2.NoDisability.ChatMainView;
 import demo.ViewB;
 import java.awt.CardLayout;
 import java.awt.Dimension;
@@ -31,7 +30,7 @@ public class AdaptableIMView extends javax.swing.JPanel {
     public AdaptableIMView(Dimension menuSize) {
         initComponents();
         
-        p.add(new NoDisabilityMainView(menuSize), "NoDisabilityMainView");
+        p.add(new ChatMainView(menuSize), "ChatMainView");
         p.add(new ViewB(), viewB);
         this.add(p);
 

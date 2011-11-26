@@ -26,10 +26,10 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class NoDisabilityMainView extends javax.swing.JPanel {
+public class ChatMainView extends javax.swing.JPanel {
           
     /** Creates new form NoDisabilityMainView */
-    public NoDisabilityMainView(Dimension menuSize) {
+    public ChatMainView(Dimension menuSize) {
         this.menuSize = menuSize;
         initComponents();
 		AddContacts();
@@ -174,7 +174,7 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         });
         tabPanel.add(videoCallButton);
 
-        tmp2.setText("mainMenuButton3");
+        tmp2.setText("Koutsop Video Call");
         tabPanel.add(tmp2);
 
         mainPanel.add(tabPanel, java.awt.BorderLayout.PAGE_START);

@@ -10,9 +10,7 @@
  */
 package assignment2;
 
-import assignment2.NoDisability.NoDisabilityMainView;
 import assignment2.NoDisability.NoDisabilitySettingsView;
-import demo.ViewA;
 import demo.ViewB;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
