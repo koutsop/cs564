@@ -140,6 +140,7 @@
 	</state>
   </style>
   <bind style="ContentButton" type="name" key="Button.Content.*"/>
+  <bind style="ContentButton" type="name" key="Button.Chat.*"/>
     
 	<style id="SpinnerArrowButton">
 	<property key="Button.textShiftOffset" type="integer" value="1"/>
@@ -449,5 +450,40 @@
 	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusBusyPanel"/>
 	
 
-	
+	<style id="ReceiveVideoImage">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_no_disability/images/koutsop.jpg"
+            center="true"
+        />
+	</style>
+	<bind style="ReceiveVideoImage" type="name" key="Panel.ReceiveVideoPanel"/>
+    
+	<style id="SendVideoImage">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_no_disability/images/koutsop1.jpg"
+            center="true"
+        />
+	</style>
+	<bind style="SendVideoImage" type="name" key="Panel.SendVideoImage"/>    
+    
+    
+    
+    
+    
+    
+	<style id="ChatButton">
+    <property key="Button.textShiftOffset" type="integer" value="1"/>
+    <state>
+			<imagePainter method="buttonBackground" path="images/ContentButton.png" sourceInsets="10 10 10 10"/>	
+    </state>
+	<state value="PRESSED"> 
+	    <imagePainter method="buttonBackground" path="images/ContentButtonPressed.png" sourceInsets="10 10 10 10"/>
+	</state>
+	<state value="SELECTED"> 
+	    <imagePainter method="buttonBackground" path="images/ContentButtonSelected.png" sourceInsets="10 10 10 10"/>
+	</state>
+  </style>
+  <bind style="ChatButton" type="name" key="Button.Chat.*"/>    
 </synth>

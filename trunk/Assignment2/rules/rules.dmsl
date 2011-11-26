@@ -172,18 +172,18 @@ component "Link.Visited.Underline.Color"[
 ]
 
 //==================================================//
-//							Function-based rules
+//							Chat-based rules
 //==================================================//
 
 
-component MyButton[
-
-	if params.Dummy.attr = 1 then
-		activate "Button.MainNav"
-	else
-		activate "Button.Content"
-
+component ChatButton[
+		activate "Button.Chat"
 ]
+component "Button.Chat.Height" [ activate "36" ]
+component "Button.Chat.Width.StdPadding" [ activate "12" ]
+component "Button.Chat.Width.ExtraPercPadding" [ activate "30" ]
+
+
 
 //==================================================//
 //							Image-related rules
@@ -293,6 +293,17 @@ component StatusBusyImg [
     activate "ContactPanel.StatusBusyPanel"
 ]
 
+
+component ReceiveVideoImg [
+    activate "Panel.ReceiveVideoPanel"
+]
+
+component SendVideoImg [
+    activate "Panel.SendVideoImage"
+]
+
+
+
 component CancelButton [
     if 	profile1 then activate "/images/profile_no_disability/x.png"
     else activate "/images/profile_no_disability/x.png"
@@ -300,6 +311,58 @@ component CancelButton [
 
 component AcceptanceButton [
     if 	profile1 then activate "/images/profile_no_disability/tick.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
+
+
+
+component VideoCallButton [
+    if 	profile1 then activate "/images/profile_no_disability/video_call.png"
+    else activate "/images/profile_no_disability/x.png"
+]
+
+component CallButton [
+    if 	profile1 then activate "/images/profile_no_disability/call.png"
+    else activate "/images/profile_no_disability/x.png"
+]
+
+component SendFileButton [
+    if 	profile1 then activate "/images/profile_no_disability/document_up.png"
+    else activate "/images/profile_no_disability/x.png"
+]
+
+component MuteButton [
+    if 	profile1 then activate "/images/profile_no_disability/mute.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
+
+component VolumeUpButton [
+    if 	profile1 then activate "/images/profile_no_disability/volume_up.png"
+    else activate "/images/profile_no_disability/x.png"
+]
+
+component VolumeDownButton [
+    if 	profile1 then activate "/images/profile_no_disability/volume_down.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
+
+component FullScreenButton [
+    if 	profile1 then activate "/images/profile_no_disability/fullscreen.png"
+    else activate "/images/profile_no_disability/x.png"
+]
+
+component SwapButton [
+    if 	profile1 then activate "/images/profile_no_disability/swap.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
+
+component AddButton [
+    if 	profile1 then activate "/images/profile_no_disability/add.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
+
+component CloseButton [
+    if 	profile1 then activate "/images/profile_no_disability/cloase.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
@@ -315,6 +378,14 @@ component ContactListWidth [
 	else if profile4 then 	activate "300"
 	else 					activate "-1"  
 ] 
+
+component sendVideoImagePanel [
+	if 		profile1 then 	activate "100" //22% of wondow's width (1000)
+	else if profile2 then 	activate "300"
+	else if profile3 then 	activate "300"
+	else if profile4 then 	activate "300"
+	else 					activate "-1"  
+]
 
 
 //==========================================
