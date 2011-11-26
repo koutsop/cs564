@@ -10,7 +10,7 @@
  */
 package assignment2;
 
-import assignment2.NoDisability.AddContact;
+//import assignment2.NoDisability.AddContact;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 
@@ -114,8 +114,8 @@ public class AccessibleIM extends javax.swing.JPanel {
     }//GEN-LAST:event_exitButtonActionPerformed
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
- imButton.setVisible(true);
-        showPanel(new AddContact());
+	//imButton.setVisible(true);
+	//showPanel(new AddContact());
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

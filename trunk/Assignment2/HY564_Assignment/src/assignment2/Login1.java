@@ -10,8 +10,7 @@
  */
 package assignment2;
 
-import assignment2.NoDisability.AddContact;
-import assignment2.NoDisability.ProfileCreation;
+//import assignment2.NoDisability.AddContact;
 import assignment2.NoDisability.ProfileCreation1;
 import pc.MainWindowPC;
 import utilities.Adaptation;
