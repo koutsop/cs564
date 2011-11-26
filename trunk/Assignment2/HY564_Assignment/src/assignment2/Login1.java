@@ -10,6 +10,7 @@
  */
 package assignment2;
 
+import assignment2.NoDisability.AddContact;
 import assignment2.NoDisability.ProfileCreation;
 import assignment2.NoDisability.ProfileCreation1;
 import pc.MainWindowPC;
@@ -128,6 +129,7 @@ public class Login1 extends javax.swing.JPanel {
     private void lowVisionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowVisionButtonActionPerformed
         initAdaptation("no_disability");
         MainWindowPC.showPanel(new AccessibleIM());
+       
     }//GEN-LAST:event_lowVisionButtonActionPerformed
 
 private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed

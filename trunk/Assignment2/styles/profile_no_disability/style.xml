@@ -408,6 +408,10 @@
 	</style>
 	<bind style="welcomeImage" type="name" key="Panel.Image.Welcome"/>
 
+	<style id="profileImage">
+		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/koutsop.jpg" center="true"/>
+	</style>
+	<bind style="profileImage" type="name" key="Panel.Content.ProfileImage"/>
 
 	<!-- Edw an exw 10 diaforetikes epafes 10 diaforetikes photos swta?-->
 	<!-- Ola ta buttons poio megala ?-->
@@ -449,22 +453,6 @@
 	</style>
 	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusBusyPanel"/>
 	
-<style id="captchaImage1">
-		<imagePainter 
-            method="panelBackground" 
-            path="../../styles/profile_no_disability/images/CAPTCHA.jpg"
-            center="true"
-        />
-	</style>
-	<bind style="captchaImage1" type="name" key="Panel.Image.Captcha"/>
-	<style id="ReceiveVideoImage">
-		<imagePainter 
-            method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop.jpg"
-            center="true"
-        />
-	</style>
-	<bind style="ReceiveVideoImage" type="name" key="Panel.ReceiveVideoPanel"/>
     
 	<style id="SendVideoImage">
 		<imagePainter 
