@@ -183,7 +183,12 @@ component "Button.Chat.Height" [ activate "36" ]
 component "Button.Chat.Width.StdPadding" [ activate "12" ]
 component "Button.Chat.Width.ExtraPercPadding" [ activate "30" ]
 
-
+component ContactsActionButton [
+    activate "Button.ContactsAction"
+]
+component "Button.ContactsAction.Height" [ activate "36" ]
+component "Button.ContactsAction.Width.StdPadding" [ activate "12" ]
+component "Button.ContactsAction.Width.ExtraPercPadding" [ activate "30" ]
 
 //==================================================//
 //							Image-related rules
@@ -369,13 +374,27 @@ component CloseButton [
     else activate "/images/profile_no_disability/tick.png"
 ]
 
+component RemoveButton [
+    if 	profile1 then activate "/images/profile_no_disability/remove.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
+
+component SearchButton [
+    if 	profile1 then activate "/images/profile_no_disability/search.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
+
+component GroupButton [
+    if 	profile1 then activate "/images/profile_no_disability/group.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
 //==========================================
 //      Panels size
 //==========================================
 
 //for chating
 component ContactListWidth [
-	if 		profile1 then 	activate "220" //22% of wondow's width (1000)
+	if 		profile1 then 	activate "250" //25% of wondow's width (1000)
 	else if profile2 then 	activate "300"
 	else if profile3 then 	activate "300"
 	else if profile4 then 	activate "300"
@@ -383,7 +402,7 @@ component ContactListWidth [
 ] 
 
 component sendVideoImagePanel [
-	if 		profile1 then 	activate "100" //22% of wondow's width (1000)
+	if 		profile1 then 	activate "100" 
 	else if profile2 then 	activate "300"
 	else if profile3 then 	activate "300"
 	else if profile4 then 	activate "300"
