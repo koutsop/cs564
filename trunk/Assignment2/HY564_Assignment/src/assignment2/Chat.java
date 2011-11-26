@@ -11,6 +11,7 @@
 package assignment2;
 
 import java.awt.Dimension;
+import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
 
@@ -21,7 +22,7 @@ import utilities.DMSLConnector;
 public class Chat extends javax.swing.JPanel {
 
     /** Creates new form Chat */
-    public Chat() {
+    public Chat(Dimension parentSize) {
         initComponents();
         
         Adaptation.automaticallySetRuntime(this);
@@ -36,12 +37,10 @@ public class Chat extends javax.swing.JPanel {
 				statusImgHeight		!= -1 && 
 				statusImgWidth		!= -1;
         
-        avatarPanel.setMinimumSize(new Dimension(contactImgWidth, contactImgHeight));
-        avatarPanel.setMaximumSize(new Dimension(contactImgWidth, contactImgHeight));
-        avatarPanel.setPreferredSize(new Dimension(contactImgWidth, contactImgHeight));
-        statusAvatarPanel.setMinimumSize(new Dimension(statusImgWidth, statusImgHeight));
-        statusAvatarPanel.setMaximumSize(new Dimension(statusImgWidth, statusImgHeight));
-        statusAvatarPanel.setPreferredSize(new Dimension(statusImgWidth, statusImgHeight));  
+        Utility.SetJComponentSize(avatarPanel, contactImgWidth, contactImgHeight);
+        Utility.SetJComponentSize(statusAvatarPanel, statusImgWidth, statusImgHeight);
+        Utility.SetJComponentSize(this, parentSize); 
+        System.out.println(this.getPreferredSize());
     }
 
     /** This method is called from within the constructor to
@@ -59,7 +58,10 @@ public class Chat extends javax.swing.JPanel {
         adaptiveButton2 = new widgets.button.AdaptiveButton();
         adaptiveButton3 = new widgets.button.AdaptiveButton();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
+        chatPanel = new widgets.panel.AdaptivePanel();
+        sendButonPanel = new widgets.panel.AdaptivePanel();
+        adaptiveButton5 = new widgets.button.AdaptiveButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
         adaptiveTextBox2 = new widgets.textbox.AdaptiveTextBox();
         contactPanel = new widgets.panel.AdaptivePanel();
         avatarPanel = new widgets.panel.AdaptivePanel();
@@ -71,9 +73,6 @@ public class Chat extends javax.swing.JPanel {
         receiveScrolPane = new javax.swing.JScrollPane();
         adaptiveTextBox1 = new widgets.textbox.AdaptiveTextBox();
 
-        setMaximumSize(new java.awt.Dimension(750, 560));
-        setMinimumSize(new java.awt.Dimension(750, 560));
-        setPreferredSize(new java.awt.Dimension(750, 560));
         setLayout(new java.awt.BorderLayout(0, 10));
 
         sendPanel.setLayout(new java.awt.BorderLayout(0, 5));
@@ -92,13 +91,24 @@ public class Chat extends javax.swing.JPanel {
         adaptiveButton4.setText("Exit");
         chatButtonsPanel.add(adaptiveButton4);
 
-        sendPanel.add(chatButtonsPanel, java.awt.BorderLayout.PAGE_START);
+        sendPanel.add(chatButtonsPanel, java.awt.BorderLayout.NORTH);
+
+        chatPanel.setLayout(new java.awt.BorderLayout(15, 15));
+
+        sendButonPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptiveButton5.setText("Send");
+        sendButonPanel.add(adaptiveButton5);
+
+        chatPanel.add(sendButonPanel, java.awt.BorderLayout.EAST);
 
         adaptiveTextBox2.setColumns(20);
         adaptiveTextBox2.setRows(5);
-        jScrollPane2.setViewportView(adaptiveTextBox2);
+        jScrollPane1.setViewportView(adaptiveTextBox2);
 
-        sendPanel.add(jScrollPane2, java.awt.BorderLayout.PAGE_END);
+        chatPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+
+        sendPanel.add(chatPanel, java.awt.BorderLayout.CENTER);
 
         add(sendPanel, java.awt.BorderLayout.PAGE_END);
 
@@ -146,16 +156,19 @@ public class Chat extends javax.swing.JPanel {
     private widgets.button.AdaptiveButton adaptiveButton2;
     private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.button.AdaptiveButton adaptiveButton4;
+    private widgets.button.AdaptiveButton adaptiveButton5;
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox2;
     private widgets.panel.AdaptivePanel avatarPanel;
     private widgets.panel.AdaptivePanel chatButtonsPanel;
+    private widgets.panel.AdaptivePanel chatPanel;
     private widgets.panel.AdaptivePanel contactPanel;
-    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane1;
     private widgets.label.AdaptiveLabel nameLabel;
     private widgets.panel.AdaptivePanel receivePanel;
     private javax.swing.JScrollPane receiveScrolPane;
+    private widgets.panel.AdaptivePanel sendButonPanel;
     private widgets.panel.AdaptivePanel sendPanel;
     private widgets.panel.AdaptivePanel statusAvatarPanel;
     private widgets.panel.AdaptivePanel statusPanel;

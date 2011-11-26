@@ -25,7 +25,7 @@ public class AccessibleIM extends javax.swing.JPanel {
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         imButton.setVisible(false);
-        showPanel(new AdaptableIMView());
+        showPanel(new AdaptableIMView((menuPanel.getPreferredSize())));
     }
 
     /** This method is called from within the constructor to
@@ -37,7 +37,7 @@ public class AccessibleIM extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        menuContentsPanel = new widgets.panel.AdaptivePanel();
+        contentsPanel = new widgets.panel.AdaptivePanel();
         menuPanel = new widgets.panel.AdaptivePanel();
         imButton = new widgets.button.MainMenuButton();
         settingsButton = new widgets.button.MainMenuButton();
@@ -48,8 +48,8 @@ public class AccessibleIM extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1000, 688));
         setLayout(new java.awt.BorderLayout());
 
-        menuContentsPanel.setLayout(new java.awt.GridLayout(1, 0));
-        add(menuContentsPanel, java.awt.BorderLayout.CENTER);
+        contentsPanel.setLayout(new java.awt.GridLayout(1, 0));
+        add(contentsPanel, java.awt.BorderLayout.CENTER);
 
         menuPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
@@ -81,16 +81,16 @@ public class AccessibleIM extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void showPanel(JPanel p) {
-        menuContentsPanel.removeAll();
+        contentsPanel.removeAll();
         p.setVisible(true);
-        menuContentsPanel.add(p);
-        menuContentsPanel.repaint();
-        menuContentsPanel.validate();       
+        contentsPanel.add(p);
+        contentsPanel.repaint();
+        contentsPanel.validate();  
     }
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
         imButton.setVisible(false);
-        showPanel(new AdaptableIMView());
+        showPanel(new AdaptableIMView(menuPanel.getPreferredSize()));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
@@ -104,9 +104,9 @@ public class AccessibleIM extends javax.swing.JPanel {
     }//GEN-LAST:event_exitButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.panel.AdaptivePanel contentsPanel;
     private widgets.button.MainMenuButton exitButton;
     private widgets.button.MainMenuButton imButton;
-    private widgets.panel.AdaptivePanel menuContentsPanel;
     private widgets.panel.AdaptivePanel menuPanel;
     private widgets.button.MainMenuButton settingsButton;
     // End of variables declaration//GEN-END:variables
