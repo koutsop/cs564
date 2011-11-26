@@ -11,6 +11,7 @@
 package assignment2;
 
 import java.awt.Dimension;
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
@@ -40,9 +41,25 @@ public class Chat extends javax.swing.JPanel {
         Utility.SetJComponentSize(avatarPanel, contactImgWidth, contactImgHeight);
         Utility.SetJComponentSize(statusAvatarPanel, statusImgWidth, statusImgHeight);
         Utility.SetJComponentSize(this, parentSize); 
+        
+        String path = DMSLConnector.getInstance().getClient(false).Evaluate("VideoCallButton");
+        videoCallButton.setIcon(new ImageIcon(getClass().getResource(path)));
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("CallButton");
+        callButton.setIcon(new ImageIcon(getClass().getResource(path)));
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("SendFileButton");
+        sendFileButton.setIcon(new ImageIcon(getClass().getResource(path)));
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("AddButton");
+        addButton.setIcon(new ImageIcon(getClass().getResource(path)));  
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("CloseButton");
+        closeButton.setIcon(new ImageIcon(getClass().getResource(path)));
+        
         System.out.println(this.getPreferredSize());
     }
-
+ 
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -54,13 +71,14 @@ public class Chat extends javax.swing.JPanel {
 
         sendPanel = new widgets.panel.AdaptivePanel();
         chatButtonsPanel = new widgets.panel.AdaptivePanel();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
-        adaptiveButton2 = new widgets.button.AdaptiveButton();
-        adaptiveButton3 = new widgets.button.AdaptiveButton();
-        adaptiveButton4 = new widgets.button.AdaptiveButton();
+        videoCallButton = new widgets.button.AdaptiveButton();
+        callButton = new widgets.button.AdaptiveButton();
+        sendFileButton = new widgets.button.AdaptiveButton();
+        addButton = new widgets.button.AdaptiveButton();
+        closeButton = new widgets.button.AdaptiveButton();
         chatPanel = new widgets.panel.AdaptivePanel();
         sendButonPanel = new widgets.panel.AdaptivePanel();
-        adaptiveButton5 = new widgets.button.AdaptiveButton();
+        sendButton = new widgets.button.AdaptiveButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         adaptiveTextBox2 = new widgets.textbox.AdaptiveTextBox();
         contactPanel = new widgets.panel.AdaptivePanel();
@@ -79,17 +97,20 @@ public class Chat extends javax.swing.JPanel {
 
         chatButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 5));
 
-        adaptiveButton1.setText("Video Call");
-        chatButtonsPanel.add(adaptiveButton1);
+        videoCallButton.setFunction("ChatButton");
+        chatButtonsPanel.add(videoCallButton);
 
-        adaptiveButton2.setText("Call");
-        chatButtonsPanel.add(adaptiveButton2);
+        callButton.setFunction("ChatButton");
+        chatButtonsPanel.add(callButton);
 
-        adaptiveButton3.setText("Send File ...");
-        chatButtonsPanel.add(adaptiveButton3);
+        sendFileButton.setFunction("ChatButton");
+        chatButtonsPanel.add(sendFileButton);
 
-        adaptiveButton4.setText("Exit");
-        chatButtonsPanel.add(adaptiveButton4);
+        addButton.setFunction("ChatButton");
+        chatButtonsPanel.add(addButton);
+
+        closeButton.setFunction("ChatButton");
+        chatButtonsPanel.add(closeButton);
 
         sendPanel.add(chatButtonsPanel, java.awt.BorderLayout.NORTH);
 
@@ -97,10 +118,13 @@ public class Chat extends javax.swing.JPanel {
 
         sendButonPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveButton5.setText("Send");
-        sendButonPanel.add(adaptiveButton5);
+        sendButton.setFunction("ChatButton");
+        sendButton.setText("Send");
+        sendButonPanel.add(sendButton);
 
         chatPanel.add(sendButonPanel, java.awt.BorderLayout.EAST);
+
+        jScrollPane1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
 
         adaptiveTextBox2.setColumns(20);
         adaptiveTextBox2.setRows(5);
@@ -152,25 +176,26 @@ public class Chat extends javax.swing.JPanel {
         add(receivePanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.button.AdaptiveButton adaptiveButton1;
-    private widgets.button.AdaptiveButton adaptiveButton2;
-    private widgets.button.AdaptiveButton adaptiveButton3;
-    private widgets.button.AdaptiveButton adaptiveButton4;
-    private widgets.button.AdaptiveButton adaptiveButton5;
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox2;
+    private widgets.button.AdaptiveButton addButton;
     private widgets.panel.AdaptivePanel avatarPanel;
+    private widgets.button.AdaptiveButton callButton;
     private widgets.panel.AdaptivePanel chatButtonsPanel;
     private widgets.panel.AdaptivePanel chatPanel;
+    private widgets.button.AdaptiveButton closeButton;
     private widgets.panel.AdaptivePanel contactPanel;
     private javax.swing.JScrollPane jScrollPane1;
     private widgets.label.AdaptiveLabel nameLabel;
     private widgets.panel.AdaptivePanel receivePanel;
     private javax.swing.JScrollPane receiveScrolPane;
     private widgets.panel.AdaptivePanel sendButonPanel;
+    private widgets.button.AdaptiveButton sendButton;
+    private widgets.button.AdaptiveButton sendFileButton;
     private widgets.panel.AdaptivePanel sendPanel;
     private widgets.panel.AdaptivePanel statusAvatarPanel;
     private widgets.panel.AdaptivePanel statusPanel;
+    private widgets.button.AdaptiveButton videoCallButton;
     // End of variables declaration//GEN-END:variables
 }

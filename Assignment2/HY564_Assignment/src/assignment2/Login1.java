@@ -28,6 +28,7 @@ public class Login1 extends javax.swing.JPanel {
     
     private void initAdaptation(String profile){
         DMSLConnector.getInstance().getClient(false).SetAttribute("user.profile", profile);
+        DMSLConnector.getInstance().getClient(false).SetAttribute("Dummy.attr", "1");
         Adaptation.initLookAndFeel(this);
     }
 

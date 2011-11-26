@@ -13,6 +13,7 @@ package assignment2.NoDisability;
 import assignment2.Chat;
 import assignment2.Contact;
 import assignment2.Utility;
+import assignment2.VideoCall;
 import java.awt.Component;
 import java.awt.Dimension;
 import javax.swing.JButton;
@@ -137,8 +138,8 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         contactsListPanel = new widgets.panel.AdaptivePanel();
         mainPanel = new widgets.panel.AdaptivePanel();
         tabPanel = new widgets.panel.AdaptivePanel();
-        koutsopChatButton = new widgets.button.MainMenuButton();
-        tmp1 = new widgets.button.MainMenuButton();
+        chatButton = new widgets.button.MainMenuButton();
+        videoCallButton = new widgets.button.MainMenuButton();
         tmp2 = new widgets.button.MainMenuButton();
         contentPanel = new widgets.panel.AdaptivePanel();
 
@@ -157,16 +158,21 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
 
         tabPanel.setLayout(new java.awt.GridLayout(1, 3, 0, 30));
 
-        koutsopChatButton.setText("koutsop chat");
-        koutsopChatButton.addActionListener(new java.awt.event.ActionListener() {
+        chatButton.setText("koutsop chat");
+        chatButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                koutsopChatButtonActionPerformed(evt);
+                chatButtonActionPerformed(evt);
             }
         });
-        tabPanel.add(koutsopChatButton);
+        tabPanel.add(chatButton);
 
-        tmp1.setText("mainMenuButton2");
-        tabPanel.add(tmp1);
+        videoCallButton.setText("koutsop Video Call");
+        videoCallButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                videoCallButtonActionPerformed(evt);
+            }
+        });
+        tabPanel.add(videoCallButton);
 
         tmp2.setText("mainMenuButton3");
         tabPanel.add(tmp2);
@@ -177,10 +183,15 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
         add(mainPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void koutsopChatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_koutsopChatButtonActionPerformed
-        selectButton(koutsopChatButton);
+    private void chatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chatButtonActionPerformed
+        selectButton(chatButton);
         showPanel(new Chat(contentPanel.getPreferredSize()));
-    }//GEN-LAST:event_koutsopChatButtonActionPerformed
+    }//GEN-LAST:event_chatButtonActionPerformed
+
+    private void videoCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_videoCallButtonActionPerformed
+        selectButton(videoCallButton);
+        showPanel(new VideoCall(contentPanel.getPreferredSize()));
+    }//GEN-LAST:event_videoCallButtonActionPerformed
 
     private void showPanel (JPanel p) {
         contentPanel.removeAll();
@@ -191,8 +202,8 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
     }
     
     private void selectButton (JButton button) {
-        koutsopChatButton.setSelected(false);
-        tmp1.setSelected(false);
+        chatButton.setSelected(false);
+        videoCallButton.setSelected(false);
         tmp2.setSelected(false);
         button.setSelected(true);
     }
@@ -200,14 +211,14 @@ public class NoDisabilityMainView extends javax.swing.JPanel {
     private Dimension menuSize;
      
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.button.MainMenuButton chatButton;
     private widgets.panel.AdaptivePanel contactsListPanel;
     private javax.swing.JScrollPane contactsListScrollPane;
     private widgets.panel.AdaptivePanel contentPanel;
-    private widgets.button.MainMenuButton koutsopChatButton;
     private widgets.panel.AdaptivePanel leftPanel;
     private widgets.panel.AdaptivePanel mainPanel;
     private widgets.panel.AdaptivePanel tabPanel;
-    private widgets.button.MainMenuButton tmp1;
     private widgets.button.MainMenuButton tmp2;
+    private widgets.button.MainMenuButton videoCallButton;
     // End of variables declaration//GEN-END:variables
 }

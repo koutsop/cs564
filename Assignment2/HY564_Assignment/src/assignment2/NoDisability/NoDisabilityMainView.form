@@ -66,18 +66,21 @@
             <Property name="verticalGap" type="int" value="30"/>
           </Layout>
           <SubComponents>
-            <Component class="widgets.button.MainMenuButton" name="koutsopChatButton">
+            <Component class="widgets.button.MainMenuButton" name="chatButton">
               <Properties>
                 <Property name="text" type="java.lang.String" value="koutsop chat"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="koutsopChatButtonActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chatButtonActionPerformed"/>
               </Events>
             </Component>
-            <Component class="widgets.button.MainMenuButton" name="tmp1">
+            <Component class="widgets.button.MainMenuButton" name="videoCallButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="mainMenuButton2"/>
+                <Property name="text" type="java.lang.String" value="koutsop Video Call"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="videoCallButtonActionPerformed"/>
+              </Events>
             </Component>
             <Component class="widgets.button.MainMenuButton" name="tmp2">
               <Properties>
