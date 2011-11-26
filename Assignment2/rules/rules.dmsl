@@ -197,6 +197,9 @@ component AppetizerName [
 	activate "MainPanel.Appetizer"
 ]
 
+component captchaImg [
+		activate "Panel.Image.Captcha"
+]
 
 component welcomeImg [
 		activate "Panel.Image.Welcome"

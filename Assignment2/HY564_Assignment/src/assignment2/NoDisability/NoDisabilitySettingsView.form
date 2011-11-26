@@ -1,6 +1,13 @@
 <?xml version="1.1" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <NonVisualComponents>
+    <Component class="widgets.button.SecMenuButton" name="secMenuButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="secMenuButton1"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[1000, 630]"/>
@@ -36,12 +43,12 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="688" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="630" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="0" pref="29" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="29" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -67,20 +74,9 @@
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
       <SubComponents>
         <Container class="widgets.panel.AdaptivePanel" name="menuPanel">
-          <Properties>
-            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[501, 200]"/>
-            </Property>
-            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[501, 100]"/>
-            </Property>
-            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[501, 100]"/>
-            </Property>
-          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-              <BorderConstraints direction="First"/>
+              <BorderConstraints direction="West"/>
             </Constraint>
           </Constraints>
 
@@ -90,17 +86,29 @@
           <SubComponents>
             <Container class="widgets.panel.AdaptivePanel" name="tabbedPanel">
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                <Property name="axis" type="int" value="3"/>
+              </Layout>
               <SubComponents>
-                <Component class="widgets.button.MainMenuButton" name="generalButton">
+                <Component class="widgets.button.SecMenuButton" name="generalButton">
                   <Properties>
+                    <Property name="actionCommand" type="java.lang.String" value="&#x393;&#x3b5;&#x3bd;&#x3b9;&#x3ba;&#x3ac;"/>
+                    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[110, 35]"/>
+                    </Property>
+                    <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[110, 35]"/>
+                    </Property>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[110, 35]"/>
+                    </Property>
                     <Property name="text" type="java.lang.String" value="&#x393;&#x3b5;&#x3bd;&#x3b9;&#x3ba;&#x3ac;"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="generalButtonActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="widgets.button.MainMenuButton" name="historyButton">
+                <Component class="widgets.button.SecMenuButton" name="historyButton">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="&#x399;&#x3c3;&#x3c4;&#x3bf;&#x3c1;&#x3b9;&#x3ba;&#x3cc;"/>
                   </Properties>
@@ -108,7 +116,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="historyButtonActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="widgets.button.MainMenuButton" name="blockedButton">
+                <Component class="widgets.button.SecMenuButton" name="blockedButton">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="&#x391;&#x3c0;&#x3bf;&#x3ba;&#x3bb;&#x3b5;&#x3b9;&#x3c3;&#x3bc;&#x3ad;&#x3bd;&#x3bf;&#x3b9;"/>
                   </Properties>
@@ -116,7 +124,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="blockedButtonActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="widgets.button.MainMenuButton" name="notificationsButton">
+                <Component class="widgets.button.SecMenuButton" name="notificationsButton">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2;"/>
                   </Properties>
@@ -124,7 +132,7 @@
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="notificationsButtonActionPerformed"/>
                   </Events>
                 </Component>
-                <Component class="widgets.button.MainMenuButton" name="appearanceButton">
+                <Component class="widgets.button.SecMenuButton" name="appearanceButton">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="&#x395;&#x3bc;&#x3c6;&#x3ac;&#x3bd;&#x3b9;&#x3c3;&#x3b7;"/>
                   </Properties>

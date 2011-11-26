@@ -28,6 +28,23 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
         initComponents();
          Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
+        //activate General Settings
+         generalButton.setSelected(true);
+   blockedButton.setSelected(false);
+   appearanceButton.setSelected(false);
+   blockedButton.setSelected(false);
+   notificationsButton.setSelected(false);
+  
+   // Instantiate the new screen
+   GeneralSettingsPanel generalSettings = new GeneralSettingsPanel();
+   generalSettings.setVisible(true);
+
+  // Chat a = new Chat();
+   // Remove the contents of the content panel & add the new screen
+   contentPanel.removeAll();
+   contentPanel.add(generalSettings);
+   contentPanel.repaint();
+   contentPanel.validate();
 		//this.updateUI();
     }
 
@@ -40,14 +57,15 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        secMenuButton1 = new widgets.button.SecMenuButton();
         jPanel1 = new javax.swing.JPanel();
         menuPanel = new widgets.panel.AdaptivePanel();
         tabbedPanel = new widgets.panel.AdaptivePanel();
-        generalButton = new widgets.button.MainMenuButton();
-        historyButton = new widgets.button.MainMenuButton();
-        blockedButton = new widgets.button.MainMenuButton();
-        notificationsButton = new widgets.button.MainMenuButton();
-        appearanceButton = new widgets.button.MainMenuButton();
+        generalButton = new widgets.button.SecMenuButton();
+        historyButton = new widgets.button.SecMenuButton();
+        blockedButton = new widgets.button.SecMenuButton();
+        notificationsButton = new widgets.button.SecMenuButton();
+        appearanceButton = new widgets.button.SecMenuButton();
         contentPanel = new widgets.panel.AdaptivePanel();
         bottomPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
@@ -57,6 +75,8 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
         adaptiveButton5 = new widgets.button.AdaptiveButton();
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
 
+        secMenuButton1.setText("secMenuButton1");
+
         setMaximumSize(new java.awt.Dimension(1000, 630));
         setPreferredSize(new java.awt.Dimension(1000, 630));
 
@@ -65,13 +85,14 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
         jPanel1.setPreferredSize(new java.awt.Dimension(1000, 630));
         jPanel1.setLayout(new java.awt.BorderLayout());
 
-        menuPanel.setMaximumSize(new java.awt.Dimension(501, 200));
-        menuPanel.setMinimumSize(new java.awt.Dimension(501, 100));
-        menuPanel.setPreferredSize(new java.awt.Dimension(501, 100));
         menuPanel.setLayout(new javax.swing.BoxLayout(menuPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
-        tabbedPanel.setLayout(new javax.swing.BoxLayout(tabbedPanel, javax.swing.BoxLayout.LINE_AXIS));
+        tabbedPanel.setLayout(new javax.swing.BoxLayout(tabbedPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
+        generalButton.setActionCommand("Γενικά");
+        generalButton.setMaximumSize(new java.awt.Dimension(110, 35));
+        generalButton.setMinimumSize(new java.awt.Dimension(110, 35));
+        generalButton.setPreferredSize(new java.awt.Dimension(110, 35));
         generalButton.setText("Γενικά");
         generalButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,7 +135,7 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
 
         menuPanel.add(tabbedPanel);
 
-        jPanel1.add(menuPanel, java.awt.BorderLayout.PAGE_START);
+        jPanel1.add(menuPanel, java.awt.BorderLayout.WEST);
 
         contentPanel.setMaximumSize(new java.awt.Dimension(1000, 600));
         contentPanel.setMinimumSize(new java.awt.Dimension(1000, 350));
@@ -214,12 +235,12 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 688, Short.MAX_VALUE)
+            .addGap(0, 630, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 29, Short.MAX_VALUE)
+                    .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 29, Short.MAX_VALUE)))
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -227,25 +248,14 @@ private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//G
 // TODO add your handling code here:
 }//GEN-LAST:event_adaptiveButton4ActionPerformed
 
-private void historyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyButtonActionPerformed
-     // Set the appropriate tab as selected
-   generalButton.setSelected(false);
-   historyButton.setSelected(true);
-   appearanceButton.setSelected(false);
-   blockedButton.setSelected(false);
-   notificationsButton.setSelected(false);
-  
-   // Instantiate the new screen
-   HistorySettingsPanel historySettings = new HistorySettingsPanel();
-   historySettings.setVisible(true);
+    
+private void adaptiveButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton6ActionPerformed
+MainWindowPC.showPanel(new AccessibleIM());
+}//GEN-LAST:event_adaptiveButton6ActionPerformed
 
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(historySettings);
-   contentPanel.repaint();
-   contentPanel.validate();
-}//GEN-LAST:event_historyButtonActionPerformed
+private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
+MainWindowPC.showPanel(new AccessibleIM());
+}//GEN-LAST:event_adaptiveButton5ActionPerformed
 
 private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generalButtonActionPerformed
 // TODO add your handling code here:
@@ -268,9 +278,28 @@ private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN
    contentPanel.validate();
 }//GEN-LAST:event_generalButtonActionPerformed
 
+private void historyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyButtonActionPerformed
+  generalButton.setSelected(false);
+   historyButton.setSelected(true);
+   appearanceButton.setSelected(false);
+   blockedButton.setSelected(false);
+   notificationsButton.setSelected(false);
+  
+   // Instantiate the new screen
+   HistorySettingsPanel historySettings = new HistorySettingsPanel();
+   historySettings.setVisible(true);
+
+  // Chat a = new Chat();
+   // Remove the contents of the content panel & add the new screen
+   contentPanel.removeAll();
+   contentPanel.add(historySettings);
+   contentPanel.repaint();
+   contentPanel.validate();
+}//GEN-LAST:event_historyButtonActionPerformed
+
 private void blockedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_blockedButtonActionPerformed
- // Set the appropriate tab as selected
-   generalButton.setSelected(false);
+// TODO add your handling code here:
+    generalButton.setSelected(false);
    historyButton.setSelected(false);
    appearanceButton.setSelected(false);
    blockedButton.setSelected(true);
@@ -289,8 +318,8 @@ private void blockedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN
 }//GEN-LAST:event_blockedButtonActionPerformed
 
 private void notificationsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificationsButtonActionPerformed
- // Set the appropriate tab as selected
-   generalButton.setSelected(false);
+// TODO add your handling code here:
+     generalButton.setSelected(false);
    historyButton.setSelected(false);
    appearanceButton.setSelected(false);
    blockedButton.setSelected(false);
@@ -309,8 +338,7 @@ private void notificationsButtonActionPerformed(java.awt.event.ActionEvent evt) 
 }//GEN-LAST:event_notificationsButtonActionPerformed
 
 private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appearanceButtonActionPerformed
- // Set the appropriate tab as selected
-   generalButton.setSelected(false);
+  generalButton.setSelected(false);
    historyButton.setSelected(false);
    appearanceButton.setSelected(true);
    blockedButton.setSelected(false);
@@ -328,15 +356,6 @@ private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//
    contentPanel.validate();
 }//GEN-LAST:event_appearanceButtonActionPerformed
 
-    
-private void adaptiveButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton6ActionPerformed
-MainWindowPC.showPanel(new AccessibleIM());
-}//GEN-LAST:event_adaptiveButton6ActionPerformed
-
-private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
-MainWindowPC.showPanel(new AccessibleIM());
-}//GEN-LAST:event_adaptiveButton5ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton4;
     private widgets.button.AdaptiveButton adaptiveButton5;
@@ -344,15 +363,16 @@ MainWindowPC.showPanel(new AccessibleIM());
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
-    private widgets.button.MainMenuButton appearanceButton;
-    private widgets.button.MainMenuButton blockedButton;
+    private widgets.button.SecMenuButton appearanceButton;
+    private widgets.button.SecMenuButton blockedButton;
     private widgets.panel.AdaptivePanel bottomPanel;
     private widgets.panel.AdaptivePanel contentPanel;
-    private widgets.button.MainMenuButton generalButton;
-    private widgets.button.MainMenuButton historyButton;
+    private widgets.button.SecMenuButton generalButton;
+    private widgets.button.SecMenuButton historyButton;
     private javax.swing.JPanel jPanel1;
     private widgets.panel.AdaptivePanel menuPanel;
-    private widgets.button.MainMenuButton notificationsButton;
+    private widgets.button.SecMenuButton notificationsButton;
+    private widgets.button.SecMenuButton secMenuButton1;
     private widgets.panel.AdaptivePanel tabbedPanel;
     // End of variables declaration//GEN-END:variables
 }
