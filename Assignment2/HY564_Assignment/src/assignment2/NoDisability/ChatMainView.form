@@ -84,7 +84,7 @@
             </Component>
             <Component class="widgets.button.MainMenuButton" name="tmp2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="mainMenuButton3"/>
+                <Property name="text" type="java.lang.String" value="Koutsop Video Call"/>
               </Properties>
             </Component>
           </SubComponents>
