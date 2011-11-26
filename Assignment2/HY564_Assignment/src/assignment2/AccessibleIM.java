@@ -10,6 +10,7 @@
  */
 package assignment2;
 
+import assignment2.NoDisability.AddContact;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 
@@ -42,13 +43,14 @@ public class AccessibleIM extends javax.swing.JPanel {
         imButton = new widgets.button.MainMenuButton();
         settingsButton = new widgets.button.MainMenuButton();
         exitButton = new widgets.button.MainMenuButton();
+        adaptiveButton1 = new widgets.button.AdaptiveButton();
 
         setMaximumSize(new java.awt.Dimension(1000, 688));
         setMinimumSize(new java.awt.Dimension(1000, 688));
         setPreferredSize(new java.awt.Dimension(1000, 688));
         setLayout(new java.awt.BorderLayout());
 
-        contentsPanel.setLayout(new java.awt.GridLayout(1, 0));
+        contentsPanel.setLayout(new javax.swing.BoxLayout(contentsPanel, javax.swing.BoxLayout.LINE_AXIS));
         add(contentsPanel, java.awt.BorderLayout.CENTER);
 
         menuPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
@@ -77,6 +79,14 @@ public class AccessibleIM extends javax.swing.JPanel {
         });
         menuPanel.add(exitButton);
 
+        adaptiveButton1.setText("Αναζήτηση επαφής");
+        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton1ActionPerformed(evt);
+            }
+        });
+        menuPanel.add(adaptiveButton1);
+
         add(menuPanel, java.awt.BorderLayout.PAGE_START);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -103,7 +113,13 @@ public class AccessibleIM extends javax.swing.JPanel {
         showPanel(new Exit());        
     }//GEN-LAST:event_exitButtonActionPerformed
 
+private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
+ imButton.setVisible(true);
+        showPanel(new AddContact());
+}//GEN-LAST:event_adaptiveButton1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.panel.AdaptivePanel contentsPanel;
     private widgets.button.MainMenuButton exitButton;
     private widgets.button.MainMenuButton imButton;
