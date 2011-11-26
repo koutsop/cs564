@@ -302,6 +302,21 @@ component AcceptanceButton [
     if 	profile1 then activate "/images/profile_no_disability/tick.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
+
+//==========================================
+//      Panels size
+//==========================================
+
+//for chating
+component ContactListWidth [
+	if 		profile1 then 	activate "220" //22% of wondow's width (1000)
+	else if profile2 then 	activate "300"
+	else if profile3 then 	activate "300"
+	else if profile4 then 	activate "300"
+	else 					activate "-1"  
+] 
+
+
 //==========================================
 
 

@@ -40,15 +40,11 @@ public class Contact extends javax.swing.JPanel {
 	}
     
     public void SetContactSize (int width, int height){
-        this.setMinimumSize(new Dimension(width, height));
-        this.setMaximumSize(new Dimension(width, height));
-        this.setPreferredSize(new Dimension(width, height));
+        Utility.SetJComponentSize(this, new Dimension(width, height));
     }
 	
     public void SetAvatarDimensionPanel (int width, int height) {
-        avatarPanel.setMinimumSize(new Dimension(width, height));
-        avatarPanel.setMaximumSize(new Dimension(width, height));
-        avatarPanel.setPreferredSize(new Dimension(width, height));
+        Utility.SetJComponentSize(avatarPanel, new Dimension(width, height));
     }
     
     public void SetStatusDimensionPanel (int width, int height) {

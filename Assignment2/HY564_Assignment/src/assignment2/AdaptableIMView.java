@@ -14,6 +14,7 @@ import assignment2.NoDisability.NoDisabilityMainView;
 import demo.ViewA;
 import demo.ViewB;
 import java.awt.CardLayout;
+import java.awt.Dimension;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
@@ -23,15 +24,14 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class AdaptableIMView extends javax.swing.JPanel {
-    final static String noDisability = "NoDisabilityMainView";
     final static String viewB = "ViewB";
     JPanel p = new JPanel(new CardLayout());
     
     /** Creates new form AdaptableIMView */
-    public AdaptableIMView() {
+    public AdaptableIMView(Dimension menuSize) {
         initComponents();
         
-        p.add(new NoDisabilityMainView(), noDisability);
+        p.add(new NoDisabilityMainView(menuSize), "NoDisabilityMainView");
         p.add(new ViewB(), viewB);
         this.add(p);
 

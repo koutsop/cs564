@@ -425,8 +425,8 @@ private void passwordTextFieldActionPerformed(java.awt.event.ActionEvent evt) {/
 }//GEN-LAST:event_passwordTextFieldActionPerformed
 
 private void signInButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signInButtonActionPerformed
-        AdaptableIMView im = new AdaptableIMView();       
-        MainWindowPC.showPanel(im);
+        //AdaptableIMView im = new AdaptableIMView();       
+        //MainWindowPC.showPanel(im);
 }//GEN-LAST:event_signInButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
