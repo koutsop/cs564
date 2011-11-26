@@ -26,19 +26,115 @@
         </Constraint>
       </Constraints>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
-        <Property name="axis" type="int" value="3"/>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+        <Property name="verticalGap" type="int" value="10"/>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JScrollPane" name="contactsListScrollPane">
+        <Container class="widgets.panel.AdaptivePanel" name="gapPanel1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="West"/>
+            </Constraint>
+          </Constraints>
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+        </Container>
+        <Container class="widgets.panel.AdaptivePanel" name="LeftCenterPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="East"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+            <Property name="verticalGap" type="int" value="10"/>
+          </Layout>
           <SubComponents>
-            <Container class="widgets.panel.AdaptivePanel" name="contactsListPanel">
+            <Container class="widgets.panel.AdaptivePanel" name="contactsPanel">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="Center"/>
+                </Constraint>
+              </Constraints>
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
-                <Property name="axis" type="int" value="3"/>
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="contactsListScrollPane">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Container class="widgets.panel.AdaptivePanel" name="contactsListPanel">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                        <Property name="axis" type="int" value="3"/>
+                      </Layout>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="widgets.panel.AdaptivePanel" name="contactActionPanel">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="North"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+                <Property name="verticalGap" type="int" value="10"/>
               </Layout>
+              <SubComponents>
+                <Container class="widgets.panel.AdaptivePanel" name="buttonsPanel">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="North"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.button.AdaptiveButton" name="addContactButton">
+                      <Properties>
+                        <Property name="function" type="java.lang.String" value="ContactsActionButton"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addContactButtonActionPerformed"/>
+                      </Events>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="removeContactButton">
+                      <Properties>
+                        <Property name="function" type="java.lang.String" value="ContactsActionButton"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="groupContactsButton">
+                      <Properties>
+                        <Property name="function" type="java.lang.String" value="ContactsActionButton"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="searchButton">
+                      <Properties>
+                        <Property name="function" type="java.lang.String" value="ContactsActionButton"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="searchPanel">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="Center"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField1">
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
             </Container>
           </SubComponents>
         </Container>
@@ -66,6 +162,14 @@
             <Property name="verticalGap" type="int" value="30"/>
           </Layout>
           <SubComponents>
+            <Component class="widgets.button.MainMenuButton" name="myProfileButton">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="My Profile"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="myProfileButtonActionPerformed"/>
+              </Events>
+            </Component>
             <Component class="widgets.button.MainMenuButton" name="chatButton">
               <Properties>
                 <Property name="text" type="java.lang.String" value="koutsop chat"/>
@@ -82,10 +186,13 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="videoCallButtonActionPerformed"/>
               </Events>
             </Component>
-            <Component class="widgets.button.MainMenuButton" name="tmp2">
+            <Component class="widgets.button.MainMenuButton" name="callButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Koutsop Video Call"/>
+                <Property name="text" type="java.lang.String" value="koutsop Call"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="callButtonActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -99,6 +206,15 @@
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
         </Container>
       </SubComponents>
+    </Container>
+    <Container class="widgets.panel.AdaptivePanel" name="rightPanel">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="East"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
     </Container>
   </SubComponents>
 </Form>

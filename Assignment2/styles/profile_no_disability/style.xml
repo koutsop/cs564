@@ -493,4 +493,6 @@
 	</state>
   </style>
   <bind style="ChatButton" type="name" key="Button.Chat.*"/>    
+  <bind style="ChatButton" type="name" key="Button.ContactsAction.*"/> 
+  
 </synth>
