@@ -4,7 +4,6 @@ package pc;
 import assignment2.Login1;
 import java.awt.Dimension;
 import javax.swing.JPanel;
-import utilities.Adaptation;
 import utilities.DMSLConnector;
 
 /*

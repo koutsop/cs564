@@ -32,76 +32,366 @@
               </Constraints>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-                <Property name="columns" type="int" value="1"/>
-                <Property name="rows" type="int" value="13"/>
+                <Property name="columns" type="int" value="2"/>
+                <Property name="rows" type="int" value="14"/>
                 <Property name="verticalGap" type="int" value="10"/>
               </Layout>
               <SubComponents>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField1">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField1"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField2">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField2"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField3">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField3"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField4">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField4"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField5">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField5"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField6">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField6"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField7">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField7"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField8">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField8"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField9">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField9"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField10">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField10"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField11">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField11"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField13">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField13"/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField12">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="adaptiveTextField12"/>
-                  </Properties>
-                </Component>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel27">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="New Photo"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel28">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="horizontalGap" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Epilogh"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel18">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Status"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel13">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField13"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel14">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x38c;&#x3bd;&#x3bf;&#x3bc;&#x3b1;"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField1"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel15">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x395;&#x3c0;&#x3ce;&#x3bd;&#x3b7;&#x3bc;&#x3bf;"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel2">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField2"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel16">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="e-mail"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel3">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField3"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel17">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x3b7;&#x3bc;&#x3b5;&#x3c1;&#x3bf;&#x3bc;&#x3b7;&#x3bd;&#x3af;&#x3b1;&#x3c2; &#x3b3;&#x3ad;&#x3bd;&#x3bd;&#x3b7;&#x3c3;&#x3b7;&#x3c2;  "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel4">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField4"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel21">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x3b3;&#x3ad;&#x3bd;&#x3bf;&#x3c5;&#x3c2;  "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel5">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel22">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x3c7;&#x3ce;&#x3c1;&#x3b1; "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel6">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField6"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel23">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel7">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x3c0;&#x3cc;&#x3bb;&#x3b7; "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel7">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField7">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField7"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel24">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel8">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x3b3;&#x3bb;&#x3ce;&#x3c3;&#x3c3;&#x3b1; "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel8">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField8">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField8"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel25">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel9">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x3c4;&#x3b7;&#x3bb;&#x3b5;&#x3c6;&#x3ce;&#x3bd;&#x3bf;&#x3c5;  "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel9">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField9">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField9"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel26">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel10">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="login name  "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel10">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField10">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField10"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel20">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel11">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x3ba;&#x3c9;&#x3b4;&#x3b9;&#x3ba;&#x3bf;&#x3cd; "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel11">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField11">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="**********"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveTextField11ActionPerformed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel19">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel12">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x3b5;&#x3c0;&#x3b1;&#x3bb;&#x3ae;&#x3b8;&#x3b5;&#x3c5;&#x3c3;&#x3b7;&#x3c2; &#x3ba;&#x3c9;&#x3b4;&#x3b9;&#x3ba;&#x3bf;&#x3cd; "/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel12">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField12">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveTextField12"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
               </SubComponents>
             </Container>
             <Container class="widgets.panel.AdaptivePanel" name="buttonData">
@@ -130,32 +420,12 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="132" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="382" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="260" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-              </Layout>
-            </Container>
-            <Container class="widgets.panel.AdaptivePanel" name="westPanel">
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-                  <BorderConstraints direction="West"/>
-                </Constraint>
-              </Constraints>
-
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="126" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="260" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="562" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
