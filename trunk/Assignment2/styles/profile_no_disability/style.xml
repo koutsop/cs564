@@ -370,67 +370,13 @@
 <!-- ======================================================= -->
 <!-- CUSTOM STYLES -->
 <!-- ======================================================= -->
- <!--	<style id="LoginLabelStyle">
-		<font name="Lucida" size="11"/>
-	</style>   
-    <bind style="LoginLabelStyle" type="name" key="LoginPanel.Label"/>	
--->    
- <!--   
-	<style id="MainTitleStyle">
-		<font name="Lucida" size="18" style="BOLD"/>
-		<state value="ENABLED">
-			<color type="TEXT_FOREGROUND" value="BLUE"/>
-		</state>
-	</style>
-	<bind style="MainTitleStyle" type="name" key="MainPanel.MainTitle.*"/>	
-	
-	<style id="AppetizerNameStyle">
-		<font name="Lucida" size="12"/>
-		<state value="ENABLED">
-			<color type="TEXT_FOREGROUND" value="BLUE"/>
-		</state>
-	</style>
-	<bind style="AppetizerNameStyle" type="name" key="MainPanel.Appetizer.*"/>
-	
-	<style id="GardenSalad">
-		<imagePainter method="panelBackground" path="images/common/garden.png" center="true"/>
-	</style>
-	<bind style="GardenSalad" type="name" key="Panel.Image.GardenSalad"/>
-	
-	<style id="OnionSalad">
-		<imagePainter method="panelBackground" path="images/common/onion.png" center="true"/>
-	</style>
-	<bind style="OnionSalad" type="name" key="Panel.Image.OnionSalad"/>
-	-->
+
 <!-- ====================================================================================== -->	
 	<style id="welcomeImage">
 		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/welcome.png" center="true"/>
 	</style>
 	<bind style="welcomeImage" type="name" key="Panel.Image.Welcome"/>
-
-	<style id="profileImage">
-		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/koutsop.jpg" center="true"/>
-	</style>
-	<bind style="profileImage" type="name" key="Panel.Content.ProfileImage"/>
-	
-	<style id="marigiannaImage">
-		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/marigianna.jpg" center="true"/>
-	</style>
-	<bind style="marigiannaImage" type="name" key="Panel.Content.MarigiannaImage"/>
-
-	<!-- Edw an exw 10 diaforetikes epafes 10 diaforetikes photos swta?-->
-	<!-- Ola ta buttons poio megala ?-->
-	<!-- Na alazw to size apo sigkerkimena panes -->
-	<!-- Ti skata ginetai me ta 12px? pou uparxoun sthn arxh tou main AccesibleFrame-->
-	<style id="ContactImg">
-		<imagePainter 
-            method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop.jpg"
-            center="true"
-        />
-	</style>
-	<bind style="ContactImg" type="name" key="ContactPanel.AvatarPanel"/>
-	
+    
 	<style id="StatusAvailableImage">
 		<imagePainter 
             method="panelBackground" 
@@ -463,7 +409,7 @@
     
 <!-- ============================================================== -->    
     <!-- Video and call styles (images)-->
-  	<style id="ReceiveContactImg">
+  	<style id="KoutsopImage">
 		<imagePainter 
             method="panelBackground" 
             path="../../styles/profile_no_disability/images/koutsop.jpg"
@@ -472,18 +418,20 @@
             stretch="true"
         />
 	</style>
-	<bind style="ReceiveContactImg" type="name" key="Panel.ReceiveVideoPanel"/>    
-    
-    
-	<style id="MyProfileImage">
+	<bind style="KoutsopImage" type="name" key="Panel.Content.KoutsopImage"/>    
+   
+ 
+	<style id="marigiannaImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop1.jpg"
-            center="true"
+            path="../../styles/profile_no_disability/images/marigianna.jpg" 
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
         />
 	</style>
-	<bind style="MyProfileImage" type="name" key="Panel.ProfileImage"/>    
-    
+	<bind style="marigiannaImage" type="name" key="Panel.Content.MarigiannaImage"/> 
+       
 <!-- ============================================================== -->     
     
 

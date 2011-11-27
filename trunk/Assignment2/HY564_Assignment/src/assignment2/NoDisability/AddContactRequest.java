@@ -49,11 +49,11 @@ public class AddContactRequest extends javax.swing.JPanel {
 
         contentPanel.setLayout(new java.awt.BorderLayout(10, 20));
 
-        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 14));
         adaptiveLabel1.setText("Προσθήκη του χρήστη : ");
         topPanel.add(adaptiveLabel1);
 
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 3, 12)); // NOI18N
+        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 3, 12));
         adaptiveLabel2.setText("Κουτσόπουλος Νικόλαος");
         topPanel.add(adaptiveLabel2);
 
@@ -70,7 +70,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         adaptivePanel6.setLayout(adaptivePanel6Layout);
         adaptivePanel6Layout.setHorizontalGroup(
             adaptivePanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 940, Short.MAX_VALUE)
+            .addGap(0, 500, Short.MAX_VALUE)
         );
         adaptivePanel6Layout.setVerticalGroup(
             adaptivePanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -79,10 +79,10 @@ public class AddContactRequest extends javax.swing.JPanel {
 
         adaptivePanel1.add(adaptivePanel6, java.awt.BorderLayout.NORTH);
 
-        adaptivePanel3.setFunction("profileImg");
+        adaptivePanel3.setFunction("KoutsopImage");
         adaptivePanel3.setMaximumSize(new java.awt.Dimension(100, 100));
         adaptivePanel3.setMinimumSize(new java.awt.Dimension(100, 100));
-        adaptivePanel3.setName("Panel.Content.ProfileImage"); // NOI18N
+        adaptivePanel3.setName("Panel.Content.KoutsopImage"); // NOI18N
         adaptivePanel3.setPreferredSize(new java.awt.Dimension(100, 100));
 
         javax.swing.GroupLayout adaptivePanel3Layout = new javax.swing.GroupLayout(adaptivePanel3);
@@ -93,7 +93,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel3Layout.setVerticalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 333, Short.MAX_VALUE)
+            .addGap(0, 322, Short.MAX_VALUE)
         );
 
         adaptivePanel1.add(adaptivePanel3, java.awt.BorderLayout.WEST);
@@ -105,7 +105,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         adaptiveTextBox1.setColumns(20);
         adaptiveTextBox1.setRows(5);
         adaptiveTextBox1.setText("Γεια σου Κουτσόπουλος Νικόλαος!\nΘα ήθελα να σε προσθέσω στο ΙΜ.\nmarigianna");
-        adaptiveTextBox1.setFont(new java.awt.Font("Tahoma", 0, 11)); // NOI18N
+        adaptiveTextBox1.setFont(new java.awt.Font("Tahoma", 0, 11));
         jScrollPane1.setViewportView(adaptiveTextBox1);
 
         adaptivePanel1.add(jScrollPane1, java.awt.BorderLayout.CENTER);
@@ -124,7 +124,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel2Layout.setVerticalGroup(
             adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 333, Short.MAX_VALUE)
+            .addGap(0, 322, Short.MAX_VALUE)
         );
 
         adaptivePanel1.add(adaptivePanel2, java.awt.BorderLayout.EAST);

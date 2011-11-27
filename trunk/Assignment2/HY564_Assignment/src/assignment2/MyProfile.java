@@ -333,11 +333,10 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileImagePanel.setLayout(new java.awt.BorderLayout());
 
-        adaptivePanel29.setAlignmentY(0.5F);
-        adaptivePanel29.setFunction("MyProfileImg");
+        adaptivePanel29.setFunction("koutsopImg");
         adaptivePanel29.setMaximumSize(new java.awt.Dimension(100, 100));
         adaptivePanel29.setMinimumSize(new java.awt.Dimension(100, 100));
-        adaptivePanel29.setName("Panel.ProfileImage"); // NOI18N
+        adaptivePanel29.setName("Panel.Content.KoutsopImage"); // NOI18N
         adaptivePanel29.setPreferredSize(new java.awt.Dimension(100, 100));
         adaptivePanel29.setLayout(new javax.swing.BoxLayout(adaptivePanel29, javax.swing.BoxLayout.LINE_AXIS));
         profileImagePanel.add(adaptivePanel29, java.awt.BorderLayout.WEST);

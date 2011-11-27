@@ -51,8 +51,10 @@ public class VideoCall extends javax.swing.JPanel {
         videoPanel = new widgets.panel.AdaptivePanel();
         receiveVideoPanel = new widgets.panel.AdaptivePanel();
         sendVideoPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         sendVideoImagePanel = new widgets.panel.AdaptivePanel();
+        westPanel = new widgets.panel.AdaptivePanel();
         chatPanel = new widgets.panel.AdaptivePanel();
 
         setLayout(new java.awt.GridLayout(2, 1));
@@ -60,32 +62,53 @@ public class VideoCall extends javax.swing.JPanel {
         videoPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
         videoPanel.setLayout(new java.awt.BorderLayout());
 
-        receiveVideoPanel.setFunction("ReceiveContactImg");
-        receiveVideoPanel.setName("Panel.ReceiveVideoPanel"); // NOI18N
+        receiveVideoPanel.setFunction("marigiannaImg");
+        receiveVideoPanel.setName("Panel.Content.MarigiannaImage"); // NOI18N
         receiveVideoPanel.setLayout(new javax.swing.BoxLayout(receiveVideoPanel, javax.swing.BoxLayout.LINE_AXIS));
         videoPanel.add(receiveVideoPanel, java.awt.BorderLayout.CENTER);
 
         sendVideoPanel.setAlignmentY(0.0F);
-        sendVideoPanel.setLayout(new java.awt.GridLayout(2, 1));
+        sendVideoPanel.setLayout(new java.awt.BorderLayout());
+
+        adaptivePanel2.setLayout(new java.awt.GridLayout(2, 1));
 
         javax.swing.GroupLayout adaptivePanel1Layout = new javax.swing.GroupLayout(adaptivePanel1);
         adaptivePanel1.setLayout(adaptivePanel1Layout);
         adaptivePanel1Layout.setHorizontalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 144, Short.MAX_VALUE)
         );
         adaptivePanel1Layout.setVerticalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 152, Short.MAX_VALUE)
         );
 
-        sendVideoPanel.add(adaptivePanel1);
+        adaptivePanel2.add(adaptivePanel1);
 
         sendVideoImagePanel.setAlignmentY(0.0F);
-        sendVideoImagePanel.setFunction("MyProfileImg");
-        sendVideoImagePanel.setName("Panel.ProfileImage"); // NOI18N
+        sendVideoImagePanel.setFunction("koutsopImg");
+        sendVideoImagePanel.setName("Panel.Content.KoutsopImage"); // NOI18N
         sendVideoImagePanel.setLayout(new javax.swing.BoxLayout(sendVideoImagePanel, javax.swing.BoxLayout.LINE_AXIS));
-        sendVideoPanel.add(sendVideoImagePanel);
+        adaptivePanel2.add(sendVideoImagePanel);
+
+        sendVideoPanel.add(adaptivePanel2, java.awt.BorderLayout.CENTER);
+
+        westPanel.setMaximumSize(new java.awt.Dimension(5, 32767));
+        westPanel.setMinimumSize(new java.awt.Dimension(5, 100));
+        westPanel.setPreferredSize(new java.awt.Dimension(5, 305));
+
+        javax.swing.GroupLayout westPanelLayout = new javax.swing.GroupLayout(westPanel);
+        westPanel.setLayout(westPanelLayout);
+        westPanelLayout.setHorizontalGroup(
+            westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 5, Short.MAX_VALUE)
+        );
+        westPanelLayout.setVerticalGroup(
+            westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 305, Short.MAX_VALUE)
+        );
+
+        sendVideoPanel.add(westPanel, java.awt.BorderLayout.WEST);
 
         videoPanel.add(sendVideoPanel, java.awt.BorderLayout.EAST);
 
@@ -94,10 +117,12 @@ public class VideoCall extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel chatPanel;
     private widgets.panel.AdaptivePanel receiveVideoPanel;
     private widgets.panel.AdaptivePanel sendVideoImagePanel;
     private widgets.panel.AdaptivePanel sendVideoPanel;
     private widgets.panel.AdaptivePanel videoPanel;
+    private widgets.panel.AdaptivePanel westPanel;
     // End of variables declaration//GEN-END:variables
 }

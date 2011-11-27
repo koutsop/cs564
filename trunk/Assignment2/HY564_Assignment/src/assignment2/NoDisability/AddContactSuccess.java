@@ -45,7 +45,7 @@ public class AddContactSuccess extends javax.swing.JPanel {
         contentPanel.setPreferredSize(new java.awt.Dimension(400, 200));
         contentPanel.setLayout(new java.awt.BorderLayout(1, 1));
 
-        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 14));
         adaptiveLabel1.setText("Το μήνυμά σας εστάλη επιτυχώς στο χρήστη: ");
 
         javax.swing.GroupLayout adaptivePanel3Layout = new javax.swing.GroupLayout(adaptivePanel3);
@@ -73,10 +73,10 @@ public class AddContactSuccess extends javax.swing.JPanel {
 
         adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.PAGE_AXIS));
 
-        adaptivePanel4.setFunction("profileImg");
+        adaptivePanel4.setFunction("KoutsopImage");
         adaptivePanel4.setMaximumSize(new java.awt.Dimension(80, 80));
         adaptivePanel4.setMinimumSize(new java.awt.Dimension(80, 80));
-        adaptivePanel4.setName("Panel.Content.ProfileImage"); // NOI18N
+        adaptivePanel4.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout adaptivePanel4Layout = new javax.swing.GroupLayout(adaptivePanel4);
         adaptivePanel4.setLayout(adaptivePanel4Layout);
@@ -105,16 +105,16 @@ public class AddContactSuccess extends javax.swing.JPanel {
         );
         adaptivePanel5Layout.setVerticalGroup(
             adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 252, Short.MAX_VALUE)
+            .addGap(0, 202, Short.MAX_VALUE)
             .addGroup(adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(adaptivePanel5Layout.createSequentialGroup()
-                    .addGap(0, 86, Short.MAX_VALUE)
+                    .addGap(0, 61, Short.MAX_VALUE)
                     .addGroup(adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(adaptivePanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGroup(adaptivePanel5Layout.createSequentialGroup()
                             .addGap(33, 33, 33)
                             .addComponent(adaptiveLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(0, 86, Short.MAX_VALUE)))
+                    .addGap(0, 61, Short.MAX_VALUE)))
         );
 
         adaptivePanel2.add(adaptivePanel5);
@@ -129,21 +129,21 @@ public class AddContactSuccess extends javax.swing.JPanel {
         adaptivePanel1.setLayout(adaptivePanel1Layout);
         adaptivePanel1Layout.setHorizontalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 398, Short.MAX_VALUE)
+            .addGap(0, 399, Short.MAX_VALUE)
             .addGroup(adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(adaptivePanel1Layout.createSequentialGroup()
-                    .addGap(0, 110, Short.MAX_VALUE)
+                    .addGap(0, 95, Short.MAX_VALUE)
                     .addComponent(adaptiveButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 110, Short.MAX_VALUE)))
+                    .addGap(0, 95, Short.MAX_VALUE)))
         );
         adaptivePanel1Layout.setVerticalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
+            .addGap(0, 79, Short.MAX_VALUE)
             .addGroup(adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(adaptivePanel1Layout.createSequentialGroup()
-                    .addGap(0, 28, Short.MAX_VALUE)
+                    .addGap(0, 25, Short.MAX_VALUE)
                     .addComponent(adaptiveButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 28, Short.MAX_VALUE)))
+                    .addGap(0, 26, Short.MAX_VALUE)))
         );
 
         adaptivePanel2.add(adaptivePanel1);

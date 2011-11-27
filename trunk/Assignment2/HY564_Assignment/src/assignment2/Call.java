@@ -54,8 +54,8 @@ public class Call extends javax.swing.JPanel {
 
         callPanel.setLayout(new java.awt.BorderLayout());
 
-        receivePanell.setFunction("ReceiveContactImg");
-        receivePanell.setName("Panel.ReceiveVideoPanel"); // NOI18N
+        receivePanell.setFunction("marigiannaImg");
+        receivePanell.setName("Panel.Content.MarigiannaImage"); // NOI18N
         receivePanell.setLayout(new javax.swing.BoxLayout(receivePanell, javax.swing.BoxLayout.LINE_AXIS));
         callPanel.add(receivePanell, java.awt.BorderLayout.CENTER);
 

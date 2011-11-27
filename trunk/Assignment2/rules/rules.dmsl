@@ -202,12 +202,12 @@ component AppetizerName [
 	activate "MainPanel.Appetizer"
 ]
 
-component profileImg [
-		activate "Panel.Content.ProfileImage"
-]
-
 component marigiannaImg [
 		activate "Panel.Content.MarigiannaImage"
+]
+
+component koutsopImg [
+		activate "Panel.Content.KoutsopImage"
 ]
 
 
