@@ -26,7 +26,7 @@ public class AccessibleIM extends javax.swing.JPanel {
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         imButton.setVisible(false);
-        showPanel(new AdaptableIMView((menuPanel.getPreferredSize())));
+        showPanel(new AdaptableIMView(menuPanel.getPreferredSize(), contentsPanel));
     }
 
     /** This method is called from within the constructor to
@@ -43,7 +43,6 @@ public class AccessibleIM extends javax.swing.JPanel {
         imButton = new widgets.button.MainMenuButton();
         settingsButton = new widgets.button.MainMenuButton();
         exitButton = new widgets.button.MainMenuButton();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
 
         setMaximumSize(new java.awt.Dimension(1000, 688));
         setMinimumSize(new java.awt.Dimension(1000, 688));
@@ -79,18 +78,10 @@ public class AccessibleIM extends javax.swing.JPanel {
         });
         menuPanel.add(exitButton);
 
-        adaptiveButton1.setText("Αναζήτηση επαφής");
-        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton1ActionPerformed(evt);
-            }
-        });
-        menuPanel.add(adaptiveButton1);
-
         add(menuPanel, java.awt.BorderLayout.PAGE_START);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void showPanel(JPanel p) {
+    public static void showPanel(JPanel p) {
         contentsPanel.removeAll();
         p.setVisible(true);
         contentsPanel.add(p);
@@ -100,7 +91,7 @@ public class AccessibleIM extends javax.swing.JPanel {
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
         imButton.setVisible(false);
-        showPanel(new AdaptableIMView(menuPanel.getPreferredSize()));
+        showPanel(new AdaptableIMView(menuPanel.getPreferredSize(), contentsPanel));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
@@ -113,14 +104,8 @@ public class AccessibleIM extends javax.swing.JPanel {
         showPanel(new Exit());        
     }//GEN-LAST:event_exitButtonActionPerformed
 
-private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
-	imButton.setVisible(true);
-	showPanel(new AddContact());
-}//GEN-LAST:event_adaptiveButton1ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.button.AdaptiveButton adaptiveButton1;
-    private widgets.panel.AdaptivePanel contentsPanel;
+    private static widgets.panel.AdaptivePanel contentsPanel;
     private widgets.button.MainMenuButton exitButton;
     private widgets.button.MainMenuButton imButton;
     private widgets.panel.AdaptivePanel menuPanel;

@@ -10,7 +10,7 @@
  */
 package assignment2.Instability;
 
-import assignment2.NoDisability.AddContact;
+//import assignment2.NoDisability.AddContact;
 import assignment2.AdaptableIMView;
 import assignment2.AdaptableSettingsView;
 import assignment2.Exit;
@@ -29,7 +29,7 @@ public class AccessibleIM1 extends javax.swing.JPanel {
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         imButton.setVisible(false);
-        showPanel(new AdaptableIMView((menuPanel.getPreferredSize())));
+       // showPanel(new AdaptableIMView((menuPanel.getPreferredSize())));
     }
 
     /** This method is called from within the constructor to
@@ -308,7 +308,7 @@ public class AccessibleIM1 extends javax.swing.JPanel {
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
         imButton.setVisible(false);
-        showPanel(new AdaptableIMView(menuPanel.getPreferredSize()));
+//        showPanel(new AdaptableIMView(menuPanel.getPreferredSize()));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
@@ -323,7 +323,7 @@ public class AccessibleIM1 extends javax.swing.JPanel {
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
 	imButton.setVisible(true);
-	showPanel(new AddContact());
+	//showPanel(new AddContact());
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

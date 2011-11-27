@@ -10,15 +10,18 @@
  */
 package assignment2.NoDisability;
 
+import javax.swing.JPanel;
+
 /**
  *
  * @author Marigianna
  */
 public class AddContact extends javax.swing.JPanel {
-
+    private JPanel myParent;
     /** Creates new form AddContact */
-    public AddContact() {
+    public AddContact(JPanel parent) {
         initComponents();
+        this.myParent = parent;
     }
 
     /** This method is called from within the constructor to
@@ -46,32 +49,23 @@ public class AddContact extends javax.swing.JPanel {
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptiveButton1 = new widgets.button.AdaptiveButton();
 
-        setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
-        setMaximumSize(new java.awt.Dimension(1000, 600));
-        setMinimumSize(new java.awt.Dimension(1000, 600));
-        setPreferredSize(new java.awt.Dimension(1000, 600));
-        setLayout(new java.awt.GridLayout());
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
-        contentPanel.setMaximumSize(new java.awt.Dimension(1000, 600));
-        contentPanel.setMinimumSize(new java.awt.Dimension(1000, 600));
-        contentPanel.setPreferredSize(new java.awt.Dimension(1000, 600));
+        contentPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 20, 0));
 
-        adaptivePanel1.setMaximumSize(new java.awt.Dimension(500, 282));
-        adaptivePanel1.setMinimumSize(new java.awt.Dimension(500, 282));
-        adaptivePanel1.setPreferredSize(new java.awt.Dimension(500, 282));
         adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptivePanel5.setLayout(new javax.swing.BoxLayout(adaptivePanel5, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptiveLabel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 1, 10, 1));
-        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
+        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 13));
         adaptiveLabel1.setText("Προσθήκη Επαφής");
         adaptivePanel5.add(adaptiveLabel1);
 
         adaptivePanel1.add(adaptivePanel5);
 
         adaptiveLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 10, 1));
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
+        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 2, 12));
         adaptiveLabel2.setText("Εισάγετε όλα τα πεδία που γνωρίζετε:");
         adaptivePanel4.add(adaptiveLabel2);
 
@@ -114,15 +108,12 @@ private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//G
 
   
    // Instantiate the new screen
-   AddContactResults r = new AddContactResults();
+   AddContactResults r = new AddContactResults(myParent);
    r.setVisible(true);
-
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(r);
-   contentPanel.repaint();
-   contentPanel.validate();
+   myParent.removeAll();
+   myParent.add(r);
+   myParent.repaint();
+   myParent.validate();
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

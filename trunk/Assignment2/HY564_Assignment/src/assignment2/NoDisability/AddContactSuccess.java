@@ -15,10 +15,11 @@ package assignment2.NoDisability;
  * @author Marigianna
  */
 public class AddContactSuccess extends javax.swing.JPanel {
-
+    javax.swing.JPanel myParent;
     /** Creates new form AddContactSuccess */
-    public AddContactSuccess() {
+    public AddContactSuccess(javax.swing.JPanel parent) {
         initComponents();
+        this.myParent = parent;
     }
 
     /** This method is called from within the constructor to
@@ -40,6 +41,9 @@ public class AddContactSuccess extends javax.swing.JPanel {
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptiveButton1 = new widgets.button.AdaptiveButton();
 
+        setMaximumSize(new java.awt.Dimension(900, 500));
+        setMinimumSize(new java.awt.Dimension(900, 500));
+        setPreferredSize(new java.awt.Dimension(900, 500));
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         contentPanel.setPreferredSize(new java.awt.Dimension(400, 200));
@@ -52,12 +56,12 @@ public class AddContactSuccess extends javax.swing.JPanel {
         adaptivePanel3.setLayout(adaptivePanel3Layout);
         adaptivePanel3Layout.setHorizontalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 900, Short.MAX_VALUE)
             .addGroup(adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(adaptivePanel3Layout.createSequentialGroup()
-                    .addGap(0, 42, Short.MAX_VALUE)
+                    .addGap(0, 292, Short.MAX_VALUE)
                     .addComponent(adaptiveLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 43, Short.MAX_VALUE)))
+                    .addGap(0, 293, Short.MAX_VALUE)))
         );
         adaptivePanel3Layout.setVerticalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -89,33 +93,10 @@ public class AddContactSuccess extends javax.swing.JPanel {
             .addGap(0, 80, Short.MAX_VALUE)
         );
 
-        adaptiveLabel2.setText("Κουτσόπουλος Νικόλαος");
+        adaptivePanel5.add(adaptivePanel4);
 
-        javax.swing.GroupLayout adaptivePanel5Layout = new javax.swing.GroupLayout(adaptivePanel5);
-        adaptivePanel5.setLayout(adaptivePanel5Layout);
-        adaptivePanel5Layout.setHorizontalGroup(
-            adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-            .addGroup(adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(adaptivePanel5Layout.createSequentialGroup()
-                    .addGap(0, 101, Short.MAX_VALUE)
-                    .addComponent(adaptivePanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(adaptiveLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 102, Short.MAX_VALUE)))
-        );
-        adaptivePanel5Layout.setVerticalGroup(
-            adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 202, Short.MAX_VALUE)
-            .addGroup(adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(adaptivePanel5Layout.createSequentialGroup()
-                    .addGap(0, 61, Short.MAX_VALUE)
-                    .addGroup(adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(adaptivePanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(adaptivePanel5Layout.createSequentialGroup()
-                            .addGap(33, 33, 33)
-                            .addComponent(adaptiveLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(0, 61, Short.MAX_VALUE)))
-        );
+        adaptiveLabel2.setText("Κουτσόπουλος Νικόλαος");
+        adaptivePanel5.add(adaptiveLabel2);
 
         adaptivePanel2.add(adaptivePanel5);
 
@@ -134,19 +115,19 @@ public class AddContactSuccess extends javax.swing.JPanel {
         adaptivePanel1.setLayout(adaptivePanel1Layout);
         adaptivePanel1Layout.setHorizontalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 399, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
             .addGroup(adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(adaptivePanel1Layout.createSequentialGroup()
                     .addGap(0, 95, Short.MAX_VALUE)
                     .addComponent(adaptiveButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+                    .addGap(0, 96, Short.MAX_VALUE)))
         );
         adaptivePanel1Layout.setVerticalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 79, Short.MAX_VALUE)
+            .addGap(0, 80, Short.MAX_VALUE)
             .addGroup(adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(adaptivePanel1Layout.createSequentialGroup()
-                    .addGap(0, 25, Short.MAX_VALUE)
+                    .addGap(0, 26, Short.MAX_VALUE)
                     .addComponent(adaptiveButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 26, Short.MAX_VALUE)))
         );
@@ -160,15 +141,15 @@ public class AddContactSuccess extends javax.swing.JPanel {
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
  // Instantiate the new screen
-   AddContact r = new AddContact();
+   AddContact r = new AddContact(myParent);
    r.setVisible(true);
 
   // Chat a = new Chat();
    // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(r);
-   contentPanel.repaint();
-   contentPanel.validate();
+   myParent.removeAll();
+   myParent.add(r);
+   myParent.repaint();
+   myParent.validate();
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

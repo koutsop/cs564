@@ -10,15 +10,18 @@
  */
 package assignment2.NoDisability;
 
+import javax.swing.JPanel;
+
 /**
  *
  * @author Marigianna
  */
 public class AddContactRequest extends javax.swing.JPanel {
-
+    private JPanel myParent; 
     /** Creates new form AddContactRequest */
-    public AddContactRequest() {
+    public AddContactRequest(JPanel parent) {
         initComponents();
+        this.myParent = parent;
     }
 
     /** This method is called from within the constructor to
@@ -51,7 +54,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         adaptiveButton3 = new widgets.button.AdaptiveButton();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
 
-        setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         contentPanel.setLayout(new java.awt.BorderLayout(10, 20));
 
@@ -222,27 +225,27 @@ public class AddContactRequest extends javax.swing.JPanel {
 
 private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed
  // Instantiate the new screen
-   AddContactSuccess r = new AddContactSuccess();
+   AddContactSuccess r = new AddContactSuccess(myParent);
    r.setVisible(true);
 
   // Chat a = new Chat();
    // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(r);
-   contentPanel.repaint();
-   contentPanel.validate();
+   myParent.removeAll();
+   myParent.add(r);
+   myParent.repaint();
+   myParent.validate();
 }//GEN-LAST:event_adaptiveButton3ActionPerformed
 
 private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
-  AddContactResults r = new AddContactResults();
+  AddContactResults r = new AddContactResults(myParent);
    r.setVisible(true);
 
   // Chat a = new Chat();
    // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(r);
-   contentPanel.repaint();
-   contentPanel.validate();
+   myParent.removeAll();
+   myParent.add(r);
+   myParent.repaint();
+   myParent.validate();
 }//GEN-LAST:event_adaptiveButton4ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

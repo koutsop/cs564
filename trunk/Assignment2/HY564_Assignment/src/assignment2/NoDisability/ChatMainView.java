@@ -30,9 +30,11 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class ChatMainView extends javax.swing.JPanel {
-          
+    private JPanel myParent;
+    
     /** Creates new form NoDisabilityMainView */
-    public ChatMainView(Dimension menuSize) {
+    public ChatMainView(Dimension menuSize, JPanel parent) {
+        this.myParent = parent;
         this.menuSize = menuSize;
         initComponents();
 		AddContacts();
@@ -194,6 +196,11 @@ public class ChatMainView extends javax.swing.JPanel {
         buttonsPanel.add(removeContactButton);
 
         groupContactsButton.setFunction("ContactsActionButton");
+        groupContactsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                groupContactsButtonActionPerformed(evt);
+            }
+        });
         buttonsPanel.add(groupContactsButton);
 
         searchButton.setFunction("ContactsActionButton");
@@ -266,7 +273,12 @@ public class ChatMainView extends javax.swing.JPanel {
     }//GEN-LAST:event_videoCallButtonActionPerformed
 
     private void addContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addContactButtonActionPerformed
-        // TODO add your handling code here:
+        AddContact c = new AddContact(myParent);    
+        myParent.removeAll();
+        c.setVisible(true);
+        myParent.add(c);
+        myParent.repaint();
+        myParent.validate();         
     }//GEN-LAST:event_addContactButtonActionPerformed
 
     private void callButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callButtonActionPerformed
@@ -278,6 +290,15 @@ public class ChatMainView extends javax.swing.JPanel {
         selectMenuButton(myProfileButton);
         showPanel(new MyProfile(contentPanel.getPreferredSize()));
     }//GEN-LAST:event_myProfileButtonActionPerformed
+
+    private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed
+        AddContact c = new AddContact(myParent);    
+        myParent.removeAll();
+        c.setVisible(true);
+        myParent.add(c);
+        myParent.repaint();
+        myParent.validate(); 
+    }//GEN-LAST:event_groupContactsButtonActionPerformed
 
     private void showPanel (JPanel p) {
         contentPanel.removeAll();
