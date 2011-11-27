@@ -318,16 +318,19 @@
         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton39">
           <Properties>
             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+            <Property name="text" type="java.lang.String" value="Left"/>
           </Properties>
         </Component>
         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton40">
           <Properties>
             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+            <Property name="text" type="java.lang.String" value="Right"/>
           </Properties>
         </Component>
         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton41">
           <Properties>
             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+            <Property name="text" type="java.lang.String" value="space"/>
           </Properties>
         </Component>
       </SubComponents>

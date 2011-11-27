@@ -293,7 +293,7 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel11);
 
-        adaptivePanel19.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        adaptivePanel19.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         adaptiveLabel12.setText("επαλήθευσης κωδικού ");
         adaptivePanel19.add(adaptiveLabel12);
