@@ -40,6 +40,9 @@ public class Chat extends javax.swing.JPanel {
         
         Utility.SetJComponentSize(avatarPanel, contactImgWidth, contactImgHeight);
         Utility.SetJComponentSize(statusAvatarPanel, statusImgWidth, statusImgHeight);
+        
+        //Utility.SetJComponentSize(imagePanel, new Dimension(100, 100));
+        
         Utility.SetJComponentSize(this, parentSize); 
         
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("VideoCallButton");
@@ -88,8 +91,18 @@ public class Chat extends javax.swing.JPanel {
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         statusAvatarPanel = new widgets.panel.AdaptivePanel();
         receivePanel = new widgets.panel.AdaptivePanel();
-        receiveScrolPane = new javax.swing.JScrollPane();
-        adaptiveTextBox1 = new widgets.textbox.AdaptiveTextBox();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        scroolContentPanel = new widgets.panel.AdaptivePanel();
+        conversationPanel1 = new widgets.panel.AdaptivePanel();
+        imagePanel = new widgets.panel.AdaptivePanel();
+        senderPanel = new widgets.panel.AdaptivePanel();
+        nameLabel1 = new widgets.label.AdaptiveLabel();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        textTextField = new widgets.textfield.AdaptiveTextField();
+        adaptivePanel4 = new widgets.panel.AdaptivePanel();
+        timeStampLabel = new widgets.label.AdaptiveLabel();
+        conversationPanel2 = new widgets.panel.AdaptivePanel();
+        senderPanel1 = new widgets.panel.AdaptivePanel();
 
         setLayout(new java.awt.BorderLayout(0, 10));
 
@@ -165,19 +178,86 @@ public class Chat extends javax.swing.JPanel {
         receivePanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
         receivePanel.setLayout(new javax.swing.BoxLayout(receivePanel, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextBox1.setColumns(20);
-        adaptiveTextBox1.setEditable(false);
-        adaptiveTextBox1.setRows(5);
-        adaptiveTextBox1.setText("koutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu\nkoutsop:   Bariemai\nkoutsop1: Kai egw polu");
-        receiveScrolPane.setViewportView(adaptiveTextBox1);
+        scroolContentPanel.setLayout(new java.awt.GridLayout(5, 1, 0, 20));
 
-        receivePanel.add(receiveScrolPane);
+        conversationPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        conversationPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 5));
+
+        imagePanel.setFunction("ReceiveContactImg");
+        imagePanel.setMaximumSize(new java.awt.Dimension(50, 50));
+        imagePanel.setMinimumSize(new java.awt.Dimension(50, 50));
+        imagePanel.setName("Panel.ReceiveVideoPanel"); // NOI18N
+        imagePanel.setPreferredSize(new java.awt.Dimension(50, 50));
+        imagePanel.setLayout(new javax.swing.BoxLayout(imagePanel, javax.swing.BoxLayout.PAGE_AXIS));
+        conversationPanel1.add(imagePanel);
+
+        senderPanel.setLayout(new javax.swing.BoxLayout(senderPanel, javax.swing.BoxLayout.PAGE_AXIS));
+
+        nameLabel1.setText("Marigianna:");
+        senderPanel.add(nameLabel1);
+
+        adaptivePanel2.setMaximumSize(new java.awt.Dimension(1, 10));
+        adaptivePanel2.setMinimumSize(new java.awt.Dimension(1, 10));
+        adaptivePanel2.setPreferredSize(new java.awt.Dimension(1, 10));
+
+        javax.swing.GroupLayout adaptivePanel2Layout = new javax.swing.GroupLayout(adaptivePanel2);
+        adaptivePanel2.setLayout(adaptivePanel2Layout);
+        adaptivePanel2Layout.setHorizontalGroup(
+            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1, Short.MAX_VALUE)
+        );
+        adaptivePanel2Layout.setVerticalGroup(
+            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+
+        senderPanel.add(adaptivePanel2);
+
+        textTextField.setEditable(false);
+        textTextField.setText("Bariemai na to 3ereis");
+        senderPanel.add(textTextField);
+
+        adaptivePanel4.setMaximumSize(new java.awt.Dimension(1, 10));
+        adaptivePanel4.setMinimumSize(new java.awt.Dimension(1, 10));
+
+        javax.swing.GroupLayout adaptivePanel4Layout = new javax.swing.GroupLayout(adaptivePanel4);
+        adaptivePanel4.setLayout(adaptivePanel4Layout);
+        adaptivePanel4Layout.setHorizontalGroup(
+            adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1, Short.MAX_VALUE)
+        );
+        adaptivePanel4Layout.setVerticalGroup(
+            adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+
+        senderPanel.add(adaptivePanel4);
+
+        timeStampLabel.setText("Sent at 12:03 PM on Sunday");
+        senderPanel.add(timeStampLabel);
+
+        conversationPanel1.add(senderPanel);
+
+        scroolContentPanel.add(conversationPanel1);
+
+        conversationPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        conversationPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 5));
+
+        senderPanel1.setLayout(new java.awt.BorderLayout());
+        conversationPanel2.add(senderPanel1);
+
+        scroolContentPanel.add(conversationPanel2);
+
+        jScrollPane2.setViewportView(scroolContentPanel);
+
+        receivePanel.add(jScrollPane2);
 
         add(receivePanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.panel.AdaptivePanel adaptivePanel1;
-    private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox2;
     private widgets.button.AdaptiveButton addButton;
     private widgets.panel.AdaptivePanel avatarPanel;
@@ -186,16 +266,25 @@ public class Chat extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel chatPanel;
     private widgets.button.AdaptiveButton closeButton;
     private widgets.panel.AdaptivePanel contactPanel;
+    private widgets.panel.AdaptivePanel conversationPanel1;
+    private widgets.panel.AdaptivePanel conversationPanel2;
+    private widgets.panel.AdaptivePanel imagePanel;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private widgets.label.AdaptiveLabel nameLabel;
+    private widgets.label.AdaptiveLabel nameLabel1;
     private widgets.panel.AdaptivePanel receivePanel;
-    private javax.swing.JScrollPane receiveScrolPane;
+    private widgets.panel.AdaptivePanel scroolContentPanel;
     private widgets.panel.AdaptivePanel sendButonPanel;
     private widgets.button.AdaptiveButton sendButton;
     private widgets.button.AdaptiveButton sendFileButton;
     private widgets.panel.AdaptivePanel sendPanel;
+    private widgets.panel.AdaptivePanel senderPanel;
+    private widgets.panel.AdaptivePanel senderPanel1;
     private widgets.panel.AdaptivePanel statusAvatarPanel;
     private widgets.panel.AdaptivePanel statusPanel;
+    private widgets.textfield.AdaptiveTextField textTextField;
+    private widgets.label.AdaptiveLabel timeStampLabel;
     private widgets.button.AdaptiveButton videoCallButton;
     // End of variables declaration//GEN-END:variables
 }
