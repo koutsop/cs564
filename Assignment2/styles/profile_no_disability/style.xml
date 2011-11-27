@@ -438,7 +438,7 @@
 <!-- ============================================================== -->   
     <!-- captha-->
     <style id="captchaImage">
-		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/koutsop.jpg" center="true"/>
+		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/captcha1.jpg" center="true"/>
 	</style>
 	<bind style="captchaImage" type="name" key="Panel.Content.Captcha"/>
 <!-- ============================================================== -->   

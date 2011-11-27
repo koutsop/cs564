@@ -55,7 +55,7 @@ public class Exit extends javax.swing.JPanel {
 
         adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 100, 5));
 
-        cancelButton.setText("Ακήρο");
+        cancelButton.setText("Άκυρο");
         cancelButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cancelButtonActionPerformed(evt);
