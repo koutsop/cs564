@@ -425,6 +425,18 @@ component GroupButton [
     if 	profile1 then activate "/images/profile_no_disability/group.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
+
+
+
+component CollapseAddButton [
+    if 	profile1 then activate "/images/profile_no_disability/button_plus_green.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
+
+component GroupSubButton [
+    if 	profile1 then activate "/images/profile_no_disability/button_minus_green.png"
+    else activate "/images/profile_no_disability/tick.png"
+]
 //==========================================
 //      Panels size
 //==========================================
