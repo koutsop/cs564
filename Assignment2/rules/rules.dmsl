@@ -206,6 +206,11 @@ component profileImg [
 		activate "Panel.Content.ProfileImage"
 ]
 
+component marigiannaImg [
+		activate "Panel.Content.MarigiannaImage"
+]
+
+
 component welcomeImg [
 		activate "Panel.Image.Welcome"
 ]

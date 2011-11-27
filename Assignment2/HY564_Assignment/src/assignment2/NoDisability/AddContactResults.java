@@ -30,6 +30,7 @@ public class AddContactResults extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        contentPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptiveLabel2 = new widgets.label.AdaptiveLabel();
@@ -99,25 +100,47 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptiveLabel27 = new widgets.label.AdaptiveLabel();
         adaptiveLabel28 = new widgets.label.AdaptiveLabel();
         adaptiveButton12 = new widgets.button.AdaptiveButton();
+        adaptivePanel17 = new widgets.panel.AdaptivePanel();
+        picturePanel11 = new widgets.panel.AdaptivePanel();
+        descrPanel11 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel29 = new widgets.label.AdaptiveLabel();
+        adaptiveLabel30 = new widgets.label.AdaptiveLabel();
+        adaptiveButton13 = new widgets.button.AdaptiveButton();
+        adaptivePanel18 = new widgets.panel.AdaptivePanel();
+        picturePanel12 = new widgets.panel.AdaptivePanel();
+        descrPanel12 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel31 = new widgets.label.AdaptiveLabel();
+        adaptiveLabel32 = new widgets.label.AdaptiveLabel();
+        adaptiveButton14 = new widgets.button.AdaptiveButton();
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptiveLabel5 = new widgets.label.AdaptiveLabel();
+        adaptiveButton15 = new widgets.button.AdaptiveButton();
+        adaptiveButton16 = new widgets.button.AdaptiveButton();
+        adaptiveButton17 = new widgets.button.AdaptiveButton();
+        adaptiveButton18 = new widgets.button.AdaptiveButton();
         adaptiveLabel6 = new widgets.label.AdaptiveLabel();
+        adaptiveButton19 = new widgets.button.AdaptiveButton();
+        adaptiveButton21 = new widgets.button.AdaptiveButton();
+        adaptiveButton22 = new widgets.button.AdaptiveButton();
+        adaptiveButton23 = new widgets.button.AdaptiveButton();
 
-        setLayout(new java.awt.BorderLayout());
+        setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        contentPanel.setLayout(new java.awt.BorderLayout());
 
         adaptivePanel1.setLayout(new java.awt.GridLayout(2, 1, 20, 20));
 
         adaptivePanel3.setLayout(new javax.swing.BoxLayout(adaptivePanel3, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 1, 14));
         adaptiveLabel2.setText("Βρέθηκαν περισσότερα από 200 αποτελέσματα ");
         adaptivePanel3.add(adaptiveLabel2);
 
         adaptiveLabel1.setText("για");
         adaptivePanel3.add(adaptiveLabel1);
 
-        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        adaptiveLabel3.setText("sofia");
+        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel3.setText("Νικόλαος");
         adaptivePanel3.add(adaptiveLabel3);
 
         adaptiveLabel4.setText(",εμφάνιση αποτελεσμάτων 1-10 από τα 200.");
@@ -132,17 +155,17 @@ public class AddContactResults extends javax.swing.JPanel {
 
         adaptivePanel1.add(adaptivePanel4);
 
-        add(adaptivePanel1, java.awt.BorderLayout.NORTH);
+        contentPanel.add(adaptivePanel1, java.awt.BorderLayout.NORTH);
 
         adaptivePanel2.setMaximumSize(new java.awt.Dimension(600, 400));
         adaptivePanel2.setMinimumSize(new java.awt.Dimension(600, 400));
         adaptivePanel2.setPreferredSize(new java.awt.Dimension(600, 400));
-        adaptivePanel2.setLayout(new java.awt.GridLayout(5, 2, 20, 20));
+        adaptivePanel2.setLayout(new java.awt.GridLayout(4, 3, 20, 20));
 
         adaptivePanel8.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel8.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel8.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel8.setLayout(new java.awt.BorderLayout());
+        adaptivePanel8.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel2.setFunction("profileImg");
         picturePanel2.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -156,7 +179,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel2Layout.setVerticalGroup(
             picturePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel8.add(picturePanel2, java.awt.BorderLayout.WEST);
@@ -167,7 +190,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel2.setLayout(new javax.swing.BoxLayout(descrPanel2, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel11.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel11.setText("Νικόλαος Κουτσόπουλος");
         descrPanel2.add(adaptiveLabel11);
 
@@ -190,7 +213,7 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel7.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel7.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel7.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel7.setLayout(new java.awt.BorderLayout());
+        adaptivePanel7.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel1.setFunction("profileImg");
         picturePanel1.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -204,7 +227,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel1Layout.setVerticalGroup(
             picturePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel7.add(picturePanel1, java.awt.BorderLayout.WEST);
@@ -215,7 +238,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel1.setLayout(new javax.swing.BoxLayout(descrPanel1, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel9.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel9.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel9.setText("Νικόλαος Κουτσόπουλος");
         descrPanel1.add(adaptiveLabel9);
 
@@ -238,7 +261,7 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel9.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel9.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel9.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel9.setLayout(new java.awt.BorderLayout());
+        adaptivePanel9.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel3.setFunction("profileImg");
         picturePanel3.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -252,7 +275,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel3Layout.setVerticalGroup(
             picturePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel9.add(picturePanel3, java.awt.BorderLayout.WEST);
@@ -263,7 +286,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel3.setLayout(new javax.swing.BoxLayout(descrPanel3, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel13.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel13.setText("Νικόλαος Κουτσόπουλος");
         descrPanel3.add(adaptiveLabel13);
 
@@ -286,7 +309,7 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel10.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel10.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel10.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel10.setLayout(new java.awt.BorderLayout());
+        adaptivePanel10.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel4.setFunction("profileImg");
         picturePanel4.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -300,7 +323,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel4Layout.setVerticalGroup(
             picturePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel10.add(picturePanel4, java.awt.BorderLayout.WEST);
@@ -311,7 +334,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel4.setLayout(new javax.swing.BoxLayout(descrPanel4, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel15.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel15.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel15.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel15.setText("Νικόλαος Κουτσόπουλος");
         descrPanel4.add(adaptiveLabel15);
 
@@ -334,7 +357,7 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel11.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel11.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel11.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel11.setLayout(new java.awt.BorderLayout());
+        adaptivePanel11.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel5.setFunction("profileImg");
         picturePanel5.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -348,7 +371,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel5Layout.setVerticalGroup(
             picturePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel11.add(picturePanel5, java.awt.BorderLayout.WEST);
@@ -359,7 +382,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel5.setLayout(new javax.swing.BoxLayout(descrPanel5, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel17.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel17.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel17.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel17.setText("Νικόλαος Κουτσόπουλος");
         descrPanel5.add(adaptiveLabel17);
 
@@ -382,7 +405,7 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel12.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel12.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel12.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel12.setLayout(new java.awt.BorderLayout());
+        adaptivePanel12.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel6.setFunction("profileImg");
         picturePanel6.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -396,7 +419,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel6Layout.setVerticalGroup(
             picturePanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel12.add(picturePanel6, java.awt.BorderLayout.WEST);
@@ -407,7 +430,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel6.setLayout(new javax.swing.BoxLayout(descrPanel6, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel19.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel19.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel19.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel19.setText("Νικόλαος Κουτσόπουλος");
         descrPanel6.add(adaptiveLabel19);
 
@@ -430,7 +453,7 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel13.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel13.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel13.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel13.setLayout(new java.awt.BorderLayout());
+        adaptivePanel13.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel7.setFunction("profileImg");
         picturePanel7.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -444,7 +467,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel7Layout.setVerticalGroup(
             picturePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel13.add(picturePanel7, java.awt.BorderLayout.WEST);
@@ -455,7 +478,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel7.setLayout(new javax.swing.BoxLayout(descrPanel7, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel21.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel21.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel21.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel21.setText("Νικόλαος Κουτσόπουλος");
         descrPanel7.add(adaptiveLabel21);
 
@@ -478,7 +501,7 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel14.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel14.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel14.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel14.setLayout(new java.awt.BorderLayout());
+        adaptivePanel14.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel8.setFunction("profileImg");
         picturePanel8.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -492,7 +515,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel8Layout.setVerticalGroup(
             picturePanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel14.add(picturePanel8, java.awt.BorderLayout.WEST);
@@ -503,7 +526,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel8.setLayout(new javax.swing.BoxLayout(descrPanel8, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel23.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel23.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel23.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel23.setText("Νικόλαος Κουτσόπουλος");
         descrPanel8.add(adaptiveLabel23);
 
@@ -526,7 +549,7 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel15.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel15.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel15.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel15.setLayout(new java.awt.BorderLayout());
+        adaptivePanel15.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel9.setFunction("profileImg");
         picturePanel9.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -540,7 +563,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel9Layout.setVerticalGroup(
             picturePanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel15.add(picturePanel9, java.awt.BorderLayout.WEST);
@@ -551,7 +574,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel9.setLayout(new javax.swing.BoxLayout(descrPanel9, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel25.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel25.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel25.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel25.setText("Νικόλαος Κουτσόπουλος");
         descrPanel9.add(adaptiveLabel25);
 
@@ -574,7 +597,7 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel16.setMaximumSize(new java.awt.Dimension(150, 100));
         adaptivePanel16.setMinimumSize(new java.awt.Dimension(150, 100));
         adaptivePanel16.setPreferredSize(new java.awt.Dimension(150, 100));
-        adaptivePanel16.setLayout(new java.awt.BorderLayout());
+        adaptivePanel16.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel10.setFunction("profileImg");
         picturePanel10.setMaximumSize(new java.awt.Dimension(50, 50));
@@ -588,7 +611,7 @@ public class AddContactResults extends javax.swing.JPanel {
         );
         picturePanel10Layout.setVerticalGroup(
             picturePanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
+            .addGap(0, 85, Short.MAX_VALUE)
         );
 
         adaptivePanel16.add(picturePanel10, java.awt.BorderLayout.WEST);
@@ -599,7 +622,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel10.setLayout(new javax.swing.BoxLayout(descrPanel10, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel27.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel27.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        adaptiveLabel27.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel27.setText("Νικόλαος Κουτσόπουλος");
         descrPanel10.add(adaptiveLabel27);
 
@@ -619,18 +642,151 @@ public class AddContactResults extends javax.swing.JPanel {
 
         adaptivePanel2.add(adaptivePanel16);
 
-        add(adaptivePanel2, java.awt.BorderLayout.CENTER);
+        adaptivePanel17.setMaximumSize(new java.awt.Dimension(150, 100));
+        adaptivePanel17.setMinimumSize(new java.awt.Dimension(150, 100));
+        adaptivePanel17.setPreferredSize(new java.awt.Dimension(150, 100));
+        adaptivePanel17.setLayout(new java.awt.BorderLayout(10, 10));
+
+        picturePanel11.setFunction("profileImg");
+        picturePanel11.setMaximumSize(new java.awt.Dimension(50, 50));
+        picturePanel11.setName("Panel.Content.ProfileImage"); // NOI18N
+
+        javax.swing.GroupLayout picturePanel11Layout = new javax.swing.GroupLayout(picturePanel11);
+        picturePanel11.setLayout(picturePanel11Layout);
+        picturePanel11Layout.setHorizontalGroup(
+            picturePanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
+        );
+        picturePanel11Layout.setVerticalGroup(
+            picturePanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 85, Short.MAX_VALUE)
+        );
+
+        adaptivePanel17.add(picturePanel11, java.awt.BorderLayout.WEST);
+
+        descrPanel11.setMaximumSize(new java.awt.Dimension(90, 68));
+        descrPanel11.setMinimumSize(new java.awt.Dimension(90, 68));
+        descrPanel11.setPreferredSize(new java.awt.Dimension(90, 68));
+        descrPanel11.setLayout(new javax.swing.BoxLayout(descrPanel11, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptiveLabel29.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        adaptiveLabel29.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel29.setText("Νικόλαος Κουτσόπουλος");
+        descrPanel11.add(adaptiveLabel29);
+
+        adaptiveLabel30.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 5, 5, 5));
+        adaptiveLabel30.setText("Ελλάδα");
+        descrPanel11.add(adaptiveLabel30);
+
+        adaptiveButton13.setText("Προσθήκη");
+        adaptiveButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton13ActionPerformed(evt);
+            }
+        });
+        descrPanel11.add(adaptiveButton13);
+
+        adaptivePanel17.add(descrPanel11, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel2.add(adaptivePanel17);
+
+        adaptivePanel18.setMaximumSize(new java.awt.Dimension(150, 100));
+        adaptivePanel18.setMinimumSize(new java.awt.Dimension(150, 100));
+        adaptivePanel18.setPreferredSize(new java.awt.Dimension(150, 100));
+        adaptivePanel18.setLayout(new java.awt.BorderLayout(10, 10));
+
+        picturePanel12.setFunction("profileImg");
+        picturePanel12.setMaximumSize(new java.awt.Dimension(50, 50));
+        picturePanel12.setName("Panel.Content.ProfileImage"); // NOI18N
+
+        javax.swing.GroupLayout picturePanel12Layout = new javax.swing.GroupLayout(picturePanel12);
+        picturePanel12.setLayout(picturePanel12Layout);
+        picturePanel12Layout.setHorizontalGroup(
+            picturePanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
+        );
+        picturePanel12Layout.setVerticalGroup(
+            picturePanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 85, Short.MAX_VALUE)
+        );
+
+        adaptivePanel18.add(picturePanel12, java.awt.BorderLayout.WEST);
+
+        descrPanel12.setMaximumSize(new java.awt.Dimension(90, 68));
+        descrPanel12.setMinimumSize(new java.awt.Dimension(90, 68));
+        descrPanel12.setPreferredSize(new java.awt.Dimension(90, 68));
+        descrPanel12.setLayout(new javax.swing.BoxLayout(descrPanel12, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptiveLabel31.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
+        adaptiveLabel31.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel31.setText("Νικόλαος Κουτσόπουλος");
+        descrPanel12.add(adaptiveLabel31);
+
+        adaptiveLabel32.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 5, 5, 5));
+        adaptiveLabel32.setText("Ελλάδα");
+        descrPanel12.add(adaptiveLabel32);
+
+        adaptiveButton14.setText("Προσθήκη");
+        adaptiveButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton14ActionPerformed(evt);
+            }
+        });
+        descrPanel12.add(adaptiveButton14);
+
+        adaptivePanel18.add(descrPanel12, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel2.add(adaptivePanel18);
+
+        contentPanel.add(adaptivePanel2, java.awt.BorderLayout.CENTER);
 
         adaptivePanel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
         adaptivePanel5.setLayout(new javax.swing.BoxLayout(adaptivePanel5, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveLabel5.setText("Σελίδα");
+        adaptiveLabel5.setText("Σελίδα:  ");
         adaptivePanel5.add(adaptiveLabel5);
 
-        adaptiveLabel6.setText(" << Προηγούμενη  ");
+        adaptiveButton15.setText("<< Προηγούμενο");
+        adaptivePanel5.add(adaptiveButton15);
+
+        adaptiveButton16.setSelected(true);
+        adaptiveButton16.setText("1");
+        adaptiveButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton16ActionPerformed(evt);
+            }
+        });
+        adaptivePanel5.add(adaptiveButton16);
+
+        adaptiveButton17.setText("2");
+        adaptivePanel5.add(adaptiveButton17);
+
+        adaptiveButton18.setText("3");
+        adaptiveButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton18ActionPerformed(evt);
+            }
+        });
+        adaptivePanel5.add(adaptiveButton18);
+
+        adaptiveLabel6.setText("...");
         adaptivePanel5.add(adaptiveLabel6);
 
-        add(adaptivePanel5, java.awt.BorderLayout.PAGE_END);
+        adaptiveButton19.setText("19");
+        adaptivePanel5.add(adaptiveButton19);
+
+        adaptiveButton21.setText("20");
+        adaptivePanel5.add(adaptiveButton21);
+
+        adaptiveButton22.setText("21");
+        adaptivePanel5.add(adaptiveButton22);
+
+        adaptiveButton23.setText("Επόμενο >>");
+        adaptivePanel5.add(adaptiveButton23);
+
+        contentPanel.add(adaptivePanel5, java.awt.BorderLayout.PAGE_END);
+
+        add(contentPanel);
     }// </editor-fold>//GEN-END:initComponents
 
 private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed
@@ -638,7 +794,17 @@ private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//G
 }//GEN-LAST:event_adaptiveButton3ActionPerformed
 
 private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
-// TODO add your handling code here:
+   
+   // Instantiate the new screen
+   AddContactRequest r = new AddContactRequest();
+   r.setVisible(true);
+
+  // Chat a = new Chat();
+   // Remove the contents of the content panel & add the new screen
+   contentPanel.removeAll();
+   contentPanel.add(r);
+   contentPanel.repaint();
+   contentPanel.validate();
 }//GEN-LAST:event_adaptiveButton4ActionPerformed
 
 private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
@@ -673,11 +839,37 @@ private void adaptiveButton12ActionPerformed(java.awt.event.ActionEvent evt) {//
 // TODO add your handling code here:
 }//GEN-LAST:event_adaptiveButton12ActionPerformed
 
+private void adaptiveButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton13ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveButton13ActionPerformed
+
+private void adaptiveButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton14ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveButton14ActionPerformed
+
+private void adaptiveButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton16ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveButton16ActionPerformed
+
+private void adaptiveButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton18ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveButton18ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton10;
     private widgets.button.AdaptiveButton adaptiveButton11;
     private widgets.button.AdaptiveButton adaptiveButton12;
+    private widgets.button.AdaptiveButton adaptiveButton13;
+    private widgets.button.AdaptiveButton adaptiveButton14;
+    private widgets.button.AdaptiveButton adaptiveButton15;
+    private widgets.button.AdaptiveButton adaptiveButton16;
+    private widgets.button.AdaptiveButton adaptiveButton17;
+    private widgets.button.AdaptiveButton adaptiveButton18;
+    private widgets.button.AdaptiveButton adaptiveButton19;
+    private widgets.button.AdaptiveButton adaptiveButton21;
+    private widgets.button.AdaptiveButton adaptiveButton22;
+    private widgets.button.AdaptiveButton adaptiveButton23;
     private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.button.AdaptiveButton adaptiveButton4;
     private widgets.button.AdaptiveButton adaptiveButton5;
@@ -706,7 +898,11 @@ private void adaptiveButton12ActionPerformed(java.awt.event.ActionEvent evt) {//
     private widgets.label.AdaptiveLabel adaptiveLabel26;
     private widgets.label.AdaptiveLabel adaptiveLabel27;
     private widgets.label.AdaptiveLabel adaptiveLabel28;
+    private widgets.label.AdaptiveLabel adaptiveLabel29;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
+    private widgets.label.AdaptiveLabel adaptiveLabel30;
+    private widgets.label.AdaptiveLabel adaptiveLabel31;
+    private widgets.label.AdaptiveLabel adaptiveLabel32;
     private widgets.label.AdaptiveLabel adaptiveLabel4;
     private widgets.label.AdaptiveLabel adaptiveLabel5;
     private widgets.label.AdaptiveLabel adaptiveLabel6;
@@ -719,6 +915,8 @@ private void adaptiveButton12ActionPerformed(java.awt.event.ActionEvent evt) {//
     private widgets.panel.AdaptivePanel adaptivePanel14;
     private widgets.panel.AdaptivePanel adaptivePanel15;
     private widgets.panel.AdaptivePanel adaptivePanel16;
+    private widgets.panel.AdaptivePanel adaptivePanel17;
+    private widgets.panel.AdaptivePanel adaptivePanel18;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
@@ -726,8 +924,11 @@ private void adaptiveButton12ActionPerformed(java.awt.event.ActionEvent evt) {//
     private widgets.panel.AdaptivePanel adaptivePanel7;
     private widgets.panel.AdaptivePanel adaptivePanel8;
     private widgets.panel.AdaptivePanel adaptivePanel9;
+    private widgets.panel.AdaptivePanel contentPanel;
     private widgets.panel.AdaptivePanel descrPanel1;
     private widgets.panel.AdaptivePanel descrPanel10;
+    private widgets.panel.AdaptivePanel descrPanel11;
+    private widgets.panel.AdaptivePanel descrPanel12;
     private widgets.panel.AdaptivePanel descrPanel2;
     private widgets.panel.AdaptivePanel descrPanel3;
     private widgets.panel.AdaptivePanel descrPanel4;
@@ -738,6 +939,8 @@ private void adaptiveButton12ActionPerformed(java.awt.event.ActionEvent evt) {//
     private widgets.panel.AdaptivePanel descrPanel9;
     private widgets.panel.AdaptivePanel picturePanel1;
     private widgets.panel.AdaptivePanel picturePanel10;
+    private widgets.panel.AdaptivePanel picturePanel11;
+    private widgets.panel.AdaptivePanel picturePanel12;
     private widgets.panel.AdaptivePanel picturePanel2;
     private widgets.panel.AdaptivePanel picturePanel3;
     private widgets.panel.AdaptivePanel picturePanel4;
