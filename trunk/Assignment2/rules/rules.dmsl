@@ -308,7 +308,7 @@ component StatusBusyImg [
 
 
 component captchaImg [
-    activate "Panel.Image.Captcha"
+    activate "Panel.Content.Captcha"
 ]
 
 component ReceiveContactImg [

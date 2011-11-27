@@ -40,10 +40,6 @@ public class MyProfile extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         contentPanel = new widgets.panel.AdaptivePanel();
         profileDataPanel = new widgets.panel.AdaptivePanel();
-        adaptivePanel27 = new widgets.panel.AdaptivePanel();
-        adaptiveLabel14 = new widgets.label.AdaptiveLabel();
-        adaptivePanel28 = new widgets.panel.AdaptivePanel();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
         adaptivePanel18 = new widgets.panel.AdaptivePanel();
         adaptiveLabel13 = new widgets.label.AdaptiveLabel();
         adaptivePanel13 = new widgets.panel.AdaptivePanel();
@@ -63,15 +59,17 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel17 = new widgets.panel.AdaptivePanel();
         adaptiveLabel4 = new widgets.label.AdaptiveLabel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
-        adaptiveTextField4 = new widgets.textfield.AdaptiveTextField();
+        adaptiveComboBox2 = new widgets.combobox.AdaptiveComboBox();
+        adaptiveComboBox3 = new widgets.combobox.AdaptiveComboBox();
+        adaptiveComboBox4 = new widgets.combobox.AdaptiveComboBox();
         adaptivePanel21 = new widgets.panel.AdaptivePanel();
         adaptiveLabel5 = new widgets.label.AdaptiveLabel();
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
-        adaptiveTextField5 = new widgets.textfield.AdaptiveTextField();
+        adaptiveLabel15 = new widgets.label.AdaptiveLabel();
         adaptivePanel22 = new widgets.panel.AdaptivePanel();
         adaptiveLabel6 = new widgets.label.AdaptiveLabel();
         adaptivePanel6 = new widgets.panel.AdaptivePanel();
-        adaptiveTextField6 = new widgets.textfield.AdaptiveTextField();
+        adaptiveComboBox5 = new widgets.combobox.AdaptiveComboBox();
         adaptivePanel23 = new widgets.panel.AdaptivePanel();
         adaptiveLabel7 = new widgets.label.AdaptiveLabel();
         adaptivePanel7 = new widgets.panel.AdaptivePanel();
@@ -79,15 +77,19 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel24 = new widgets.panel.AdaptivePanel();
         adaptiveLabel8 = new widgets.label.AdaptiveLabel();
         adaptivePanel8 = new widgets.panel.AdaptivePanel();
-        adaptiveTextField8 = new widgets.textfield.AdaptiveTextField();
+        adaptiveComboBox1 = new widgets.combobox.AdaptiveComboBox();
         adaptivePanel25 = new widgets.panel.AdaptivePanel();
         adaptiveLabel9 = new widgets.label.AdaptiveLabel();
         adaptivePanel9 = new widgets.panel.AdaptivePanel();
         adaptiveTextField9 = new widgets.textfield.AdaptiveTextField();
+        adaptivePanel27 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel19 = new widgets.label.AdaptiveLabel();
+        adaptivePanel28 = new widgets.panel.AdaptivePanel();
+        adaptiveComboBox8 = new widgets.combobox.AdaptiveComboBox();
         adaptivePanel26 = new widgets.panel.AdaptivePanel();
         adaptiveLabel10 = new widgets.label.AdaptiveLabel();
         adaptivePanel10 = new widgets.panel.AdaptivePanel();
-        adaptiveTextField10 = new widgets.textfield.AdaptiveTextField();
+        adaptiveLabel14 = new widgets.label.AdaptiveLabel();
         adaptivePanel20 = new widgets.panel.AdaptivePanel();
         adaptiveLabel11 = new widgets.label.AdaptiveLabel();
         adaptivePanel11 = new widgets.panel.AdaptivePanel();
@@ -110,20 +112,6 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.setLayout(new java.awt.GridLayout(14, 2, 0, 10));
 
-        adaptivePanel27.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
-
-        adaptiveLabel14.setText("New Photo");
-        adaptivePanel27.add(adaptiveLabel14);
-
-        profileDataPanel.add(adaptivePanel27);
-
-        adaptivePanel28.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
-
-        adaptiveButton1.setText("Epilogh");
-        adaptivePanel28.add(adaptiveButton1);
-
-        profileDataPanel.add(adaptivePanel28);
-
         adaptivePanel18.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         adaptiveLabel13.setText("Status");
@@ -133,7 +121,7 @@ public class MyProfile extends javax.swing.JPanel {
 
         adaptivePanel13.setLayout(new javax.swing.BoxLayout(adaptivePanel13, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField13.setText("adaptiveTextField13");
+        adaptiveTextField13.setText("ΗΥ-564 άσκηση 3");
         adaptivePanel13.add(adaptiveTextField13);
 
         profileDataPanel.add(adaptivePanel13);
@@ -147,140 +135,174 @@ public class MyProfile extends javax.swing.JPanel {
 
         adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField1.setText("adaptiveTextField1");
+        adaptiveTextField1.setText("Νικόλαος");
         adaptivePanel1.add(adaptiveTextField1);
 
         profileDataPanel.add(adaptivePanel1);
 
         adaptivePanel15.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel2.setText("Επώνημο");
+        adaptiveLabel2.setText("Επώνυμο");
         adaptivePanel15.add(adaptiveLabel2);
 
         profileDataPanel.add(adaptivePanel15);
 
         adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField2.setText("adaptiveTextField2");
+        adaptiveTextField2.setText("Κουτσόπουλος");
+        adaptiveTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveTextField2ActionPerformed(evt);
+            }
+        });
         adaptivePanel2.add(adaptiveTextField2);
 
         profileDataPanel.add(adaptivePanel2);
 
         adaptivePanel16.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel3.setText("e-mail");
+        adaptiveLabel3.setText("Ε-mail");
         adaptivePanel16.add(adaptiveLabel3);
 
         profileDataPanel.add(adaptivePanel16);
 
         adaptivePanel3.setLayout(new javax.swing.BoxLayout(adaptivePanel3, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField3.setText("adaptiveTextField3");
+        adaptiveTextField3.setText("koutsop@gmal.com");
+        adaptiveTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveTextField3ActionPerformed(evt);
+            }
+        });
         adaptivePanel3.add(adaptiveTextField3);
 
         profileDataPanel.add(adaptivePanel3);
 
         adaptivePanel17.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel4.setText("ημερομηνίας γέννησης  ");
+        adaptiveLabel4.setText("Ημερομηνίας Γέννησης  ");
         adaptivePanel17.add(adaptiveLabel4);
 
         profileDataPanel.add(adaptivePanel17);
 
         adaptivePanel4.setLayout(new javax.swing.BoxLayout(adaptivePanel4, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField4.setText("adaptiveTextField4");
-        adaptivePanel4.add(adaptiveTextField4);
+        adaptiveComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        adaptivePanel4.add(adaptiveComboBox2);
+
+        adaptiveComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05", "06", "07", "08", "09", "10", "11", "12", " " }));
+        adaptivePanel4.add(adaptiveComboBox3);
+
+        adaptiveComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1984", "1990", "2000" }));
+        adaptivePanel4.add(adaptiveComboBox4);
 
         profileDataPanel.add(adaptivePanel4);
 
         adaptivePanel21.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel5.setText("γένους  ");
+        adaptiveLabel5.setText("Φύλλο  ");
         adaptivePanel21.add(adaptiveLabel5);
 
         profileDataPanel.add(adaptivePanel21);
 
         adaptivePanel5.setLayout(new javax.swing.BoxLayout(adaptivePanel5, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField5.setText("adaptiveTextField5");
-        adaptivePanel5.add(adaptiveTextField5);
+        adaptiveLabel15.setText("Άνδρας");
+        adaptivePanel5.add(adaptiveLabel15);
 
         profileDataPanel.add(adaptivePanel5);
 
         adaptivePanel22.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel6.setText("χώρα ");
+        adaptiveLabel6.setText("Χώρα ");
         adaptivePanel22.add(adaptiveLabel6);
 
         profileDataPanel.add(adaptivePanel22);
 
         adaptivePanel6.setLayout(new javax.swing.BoxLayout(adaptivePanel6, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField6.setText("adaptiveTextField6");
-        adaptivePanel6.add(adaptiveTextField6);
+        adaptiveComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ελλάδα", "Γαλλία", "Γερμανία", "Ηνωμένο Βασίλειο", "Ιταλία", "Ισπανία" }));
+        adaptivePanel6.add(adaptiveComboBox5);
 
         profileDataPanel.add(adaptivePanel6);
 
         adaptivePanel23.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel7.setText("πόλη ");
+        adaptiveLabel7.setText("Πόλη ");
         adaptivePanel23.add(adaptiveLabel7);
 
         profileDataPanel.add(adaptivePanel23);
 
         adaptivePanel7.setLayout(new javax.swing.BoxLayout(adaptivePanel7, javax.swing.BoxLayout.LINE_AXIS));
-
-        adaptiveTextField7.setText("adaptiveTextField7");
         adaptivePanel7.add(adaptiveTextField7);
 
         profileDataPanel.add(adaptivePanel7);
 
         adaptivePanel24.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel8.setText("γλώσσα ");
+        adaptiveLabel8.setText("Γλώσσα");
         adaptivePanel24.add(adaptiveLabel8);
 
         profileDataPanel.add(adaptivePanel24);
 
         adaptivePanel8.setLayout(new javax.swing.BoxLayout(adaptivePanel8, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField8.setText("adaptiveTextField8");
-        adaptivePanel8.add(adaptiveTextField8);
+        adaptiveComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ελληνικά", "Αγγλικά", "Γαλλικά", "Γερμανικά", "Ισπανικά", "Ιταλικά", " " }));
+        adaptivePanel8.add(adaptiveComboBox1);
 
         profileDataPanel.add(adaptivePanel8);
 
         adaptivePanel25.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel9.setText("τηλεφώνου  ");
+        adaptiveLabel9.setText("Τηλέφωνο");
         adaptivePanel25.add(adaptiveLabel9);
 
         profileDataPanel.add(adaptivePanel25);
 
         adaptivePanel9.setLayout(new javax.swing.BoxLayout(adaptivePanel9, javax.swing.BoxLayout.LINE_AXIS));
-
-        adaptiveTextField9.setText("adaptiveTextField9");
         adaptivePanel9.add(adaptiveTextField9);
 
         profileDataPanel.add(adaptivePanel9);
 
+        adaptivePanel27.setLayout(new javax.swing.BoxLayout(adaptivePanel27, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveLabel19.setText("Είδος Αναπηρίας (εαν υπάρχει)");
+        adaptivePanel27.add(adaptiveLabel19);
+
+        profileDataPanel.add(adaptivePanel27);
+
+        adaptivePanel28.setLayout(new javax.swing.BoxLayout(adaptivePanel28, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Δεν υπάρχει", "Προβλήματα όρασης", "Αχρωματοψία", "Αστάθια άνω άκρων" }));
+        adaptiveComboBox8.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox8.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox8.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveComboBox8ActionPerformed(evt);
+            }
+        });
+        adaptivePanel28.add(adaptiveComboBox8);
+
+        profileDataPanel.add(adaptivePanel28);
+
         adaptivePanel26.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel10.setText("login name  ");
+        adaptiveLabel10.setText("Όνομα Χρήστη");
         adaptivePanel26.add(adaptiveLabel10);
 
         profileDataPanel.add(adaptivePanel26);
 
         adaptivePanel10.setLayout(new javax.swing.BoxLayout(adaptivePanel10, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField10.setText("adaptiveTextField10");
-        adaptivePanel10.add(adaptiveTextField10);
+        adaptiveLabel14.setText("koutsop");
+        adaptivePanel10.add(adaptiveLabel14);
 
         profileDataPanel.add(adaptivePanel10);
 
         adaptivePanel20.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel11.setText("κωδικού ");
+        adaptiveLabel11.setText("Κωδικός");
         adaptivePanel20.add(adaptiveLabel11);
 
         profileDataPanel.add(adaptivePanel20);
@@ -299,21 +321,26 @@ public class MyProfile extends javax.swing.JPanel {
 
         adaptivePanel19.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel12.setText("επαλήθευσης κωδικού ");
+        adaptiveLabel12.setText("Επαλήθευση Κωδικού ");
         adaptivePanel19.add(adaptiveLabel12);
 
         profileDataPanel.add(adaptivePanel19);
 
         adaptivePanel12.setLayout(new javax.swing.BoxLayout(adaptivePanel12, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField12.setText("adaptiveTextField12");
+        adaptiveTextField12.setText("**********");
         adaptivePanel12.add(adaptiveTextField12);
 
         profileDataPanel.add(adaptivePanel12);
 
         contentPanel.add(profileDataPanel, java.awt.BorderLayout.CENTER);
 
-        confirmButton.setText("confirm");
+        confirmButton.setText("Αποθήκευση");
+        confirmButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                confirmButtonActionPerformed(evt);
+            }
+        });
         buttonData.add(confirmButton);
 
         contentPanel.add(buttonData, java.awt.BorderLayout.SOUTH);
@@ -322,11 +349,11 @@ public class MyProfile extends javax.swing.JPanel {
         eastPanel.setLayout(eastPanelLayout);
         eastPanelLayout.setHorizontalGroup(
             eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 382, Short.MAX_VALUE)
+            .addGap(0, 264, Short.MAX_VALUE)
         );
         eastPanelLayout.setVerticalGroup(
             eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 522, Short.MAX_VALUE)
+            .addGap(0, 770, Short.MAX_VALUE)
         );
 
         contentPanel.add(eastPanel, java.awt.BorderLayout.EAST);
@@ -343,7 +370,12 @@ public class MyProfile extends javax.swing.JPanel {
 
         adaptivePanel30.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 15, 30));
 
-        adaptiveButton3.setText("Epilogh Eikona");
+        adaptiveButton3.setText("Επιλογή Εικόνας");
+        adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton3ActionPerformed(evt);
+            }
+        });
         adaptivePanel30.add(adaptiveButton3);
 
         profileImagePanel.add(adaptivePanel30, java.awt.BorderLayout.CENTER);
@@ -359,15 +391,42 @@ public class MyProfile extends javax.swing.JPanel {
 		// TODO add your handling code here:
 	}//GEN-LAST:event_adaptiveTextField11ActionPerformed
 
+private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveButton3ActionPerformed
+
+private void adaptiveTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField2ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveTextField2ActionPerformed
+
+private void adaptiveTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField3ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveTextField3ActionPerformed
+
+private void confirmButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmButtonActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_confirmButtonActionPerformed
+
+private void adaptiveComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveComboBox8ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveComboBox8ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton3;
+    private widgets.combobox.AdaptiveComboBox adaptiveComboBox1;
+    private widgets.combobox.AdaptiveComboBox adaptiveComboBox2;
+    private widgets.combobox.AdaptiveComboBox adaptiveComboBox3;
+    private widgets.combobox.AdaptiveComboBox adaptiveComboBox4;
+    private widgets.combobox.AdaptiveComboBox adaptiveComboBox5;
+    private widgets.combobox.AdaptiveComboBox adaptiveComboBox8;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel10;
     private widgets.label.AdaptiveLabel adaptiveLabel11;
     private widgets.label.AdaptiveLabel adaptiveLabel12;
     private widgets.label.AdaptiveLabel adaptiveLabel13;
     private widgets.label.AdaptiveLabel adaptiveLabel14;
+    private widgets.label.AdaptiveLabel adaptiveLabel15;
+    private widgets.label.AdaptiveLabel adaptiveLabel19;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
     private widgets.label.AdaptiveLabel adaptiveLabel4;
@@ -407,17 +466,12 @@ public class MyProfile extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel8;
     private widgets.panel.AdaptivePanel adaptivePanel9;
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
-    private widgets.textfield.AdaptiveTextField adaptiveTextField10;
     private widgets.textfield.AdaptiveTextField adaptiveTextField11;
     private widgets.textfield.AdaptiveTextField adaptiveTextField12;
     private widgets.textfield.AdaptiveTextField adaptiveTextField13;
     private widgets.textfield.AdaptiveTextField adaptiveTextField2;
     private widgets.textfield.AdaptiveTextField adaptiveTextField3;
-    private widgets.textfield.AdaptiveTextField adaptiveTextField4;
-    private widgets.textfield.AdaptiveTextField adaptiveTextField5;
-    private widgets.textfield.AdaptiveTextField adaptiveTextField6;
     private widgets.textfield.AdaptiveTextField adaptiveTextField7;
-    private widgets.textfield.AdaptiveTextField adaptiveTextField8;
     private widgets.textfield.AdaptiveTextField adaptiveTextField9;
     private widgets.panel.AdaptivePanel buttonData;
     private widgets.button.AdaptiveButton confirmButton;
