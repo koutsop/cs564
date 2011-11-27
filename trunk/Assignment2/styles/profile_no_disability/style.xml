@@ -468,17 +468,29 @@
 	<bind style="ReceiveContactImg" type="name" key="Panel.ReceiveVideoPanel"/>    
     
     
-	<style id="SendVideoImage">
+	<style id="MyProfileImage">
 		<imagePainter 
             method="panelBackground" 
             path="../../styles/profile_no_disability/images/koutsop1.jpg"
             center="true"
         />
 	</style>
-	<bind style="SendVideoImage" type="name" key="Panel.SendVideoImage"/>    
+	<bind style="MyProfileImage" type="name" key="Panel.ProfileImage"/>    
     
 <!-- ============================================================== -->     
     
+
+<!-- ============================================================== -->   
+    <!-- captha-->
+ 	<style id="CaptchaImage">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_no_disability/images/koutsop1.jpg"
+            center="true"
+        />
+	</style>
+	<bind style="CaptchaImage" type="name" key="Panel.Image.Captcha"/>      
+<!-- ============================================================== -->   
     
     
     

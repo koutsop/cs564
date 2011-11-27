@@ -302,14 +302,16 @@ component StatusBusyImg [
 ]
 
 
-
+component captchaImg [
+    activate "Panel.Image.Captcha"
+]
 
 component ReceiveContactImg [
     activate "Panel.ReceiveVideoPanel"
 ]
 
-component SendVideoImg [
-    activate "Panel.SendVideoImage"
+component MyProfileImg [
+    activate "Panel.ProfileImage"
 ]
 
 

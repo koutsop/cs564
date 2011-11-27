@@ -76,8 +76,8 @@
             <Container class="widgets.panel.AdaptivePanel" name="sendVideoImagePanel">
               <Properties>
                 <Property name="alignmentY" type="float" value="0.0"/>
-                <Property name="function" type="java.lang.String" value="SendVideoImg"/>
-                <Property name="name" type="java.lang.String" value="Panel.SendVideoImage" noResource="true"/>
+                <Property name="function" type="java.lang.String" value="MyProfileImg"/>
+                <Property name="name" type="java.lang.String" value="Panel.ProfileImage" noResource="true"/>
               </Properties>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>

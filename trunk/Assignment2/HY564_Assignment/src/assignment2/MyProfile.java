@@ -99,6 +99,10 @@ public class MyProfile extends javax.swing.JPanel {
         buttonData = new widgets.panel.AdaptivePanel();
         confirmButton = new widgets.button.AdaptiveButton();
         eastPanel = new widgets.panel.AdaptivePanel();
+        profileImagePanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel29 = new widgets.panel.AdaptivePanel();
+        adaptivePanel30 = new widgets.panel.AdaptivePanel();
+        adaptiveButton3 = new widgets.button.AdaptiveButton();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -322,10 +326,30 @@ public class MyProfile extends javax.swing.JPanel {
         );
         eastPanelLayout.setVerticalGroup(
             eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 562, Short.MAX_VALUE)
+            .addGap(0, 522, Short.MAX_VALUE)
         );
 
         contentPanel.add(eastPanel, java.awt.BorderLayout.EAST);
+
+        profileImagePanel.setLayout(new java.awt.BorderLayout());
+
+        adaptivePanel29.setAlignmentY(0.5F);
+        adaptivePanel29.setFunction("MyProfileImg");
+        adaptivePanel29.setMaximumSize(new java.awt.Dimension(100, 100));
+        adaptivePanel29.setMinimumSize(new java.awt.Dimension(100, 100));
+        adaptivePanel29.setName("Panel.ProfileImage"); // NOI18N
+        adaptivePanel29.setPreferredSize(new java.awt.Dimension(100, 100));
+        adaptivePanel29.setLayout(new javax.swing.BoxLayout(adaptivePanel29, javax.swing.BoxLayout.LINE_AXIS));
+        profileImagePanel.add(adaptivePanel29, java.awt.BorderLayout.WEST);
+
+        adaptivePanel30.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 15, 30));
+
+        adaptiveButton3.setText("Epilogh Eikona");
+        adaptivePanel30.add(adaptiveButton3);
+
+        profileImagePanel.add(adaptivePanel30, java.awt.BorderLayout.CENTER);
+
+        contentPanel.add(profileImagePanel, java.awt.BorderLayout.NORTH);
 
         jScrollPane1.setViewportView(contentPanel);
 
@@ -338,6 +362,7 @@ public class MyProfile extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
+    private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel10;
     private widgets.label.AdaptiveLabel adaptiveLabel11;
@@ -373,7 +398,9 @@ public class MyProfile extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel26;
     private widgets.panel.AdaptivePanel adaptivePanel27;
     private widgets.panel.AdaptivePanel adaptivePanel28;
+    private widgets.panel.AdaptivePanel adaptivePanel29;
     private widgets.panel.AdaptivePanel adaptivePanel3;
+    private widgets.panel.AdaptivePanel adaptivePanel30;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;
@@ -399,5 +426,6 @@ public class MyProfile extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel eastPanel;
     private javax.swing.JScrollPane jScrollPane1;
     private widgets.panel.AdaptivePanel profileDataPanel;
+    private widgets.panel.AdaptivePanel profileImagePanel;
     // End of variables declaration//GEN-END:variables
 }

@@ -74,8 +74,7 @@ public class ProfileCreation1 extends javax.swing.JPanel {
         adaptiveTextField7 = new widgets.textfield.AdaptiveTextField();
         adaptiveTextField9 = new widgets.textfield.AdaptiveTextField();
         adaptiveTextField8 = new widgets.textfield.AdaptiveTextField();
-        adaptivePanel3 = new widgets.panel.AdaptivePanel();
-        adaptivePanel5 = new widgets.panel.AdaptivePanel();
+        captchaPanel = new widgets.panel.AdaptivePanel();
         submitPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptiveCheckBox1 = new widgets.checkbox.AdaptiveCheckBox();
@@ -210,23 +209,13 @@ public class ProfileCreation1 extends javax.swing.JPanel {
 
         centerMainPanel.add(profilePanel);
 
-        adaptivePanel5.setFunction("captchaImg");
-        adaptivePanel5.setName("Panel.Image.Captcha"); // NOI18N
-
-        javax.swing.GroupLayout adaptivePanel5Layout = new javax.swing.GroupLayout(adaptivePanel5);
-        adaptivePanel5.setLayout(adaptivePanel5Layout);
-        adaptivePanel5Layout.setHorizontalGroup(
-            adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        adaptivePanel5Layout.setVerticalGroup(
-            adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        adaptivePanel3.add(adaptivePanel5);
-
-        centerMainPanel.add(adaptivePanel3);
+        captchaPanel.setFunction("captchaImg");
+        captchaPanel.setMaximumSize(new java.awt.Dimension(300, 100));
+        captchaPanel.setMinimumSize(new java.awt.Dimension(300, 100));
+        captchaPanel.setName("Panel.Image.Captcha"); // NOI18N
+        captchaPanel.setPreferredSize(new java.awt.Dimension(300, 100));
+        captchaPanel.setLayout(new javax.swing.BoxLayout(captchaPanel, javax.swing.BoxLayout.LINE_AXIS));
+        centerMainPanel.add(captchaPanel);
 
         submitPanel.setMaximumSize(new java.awt.Dimension(800, 56));
         submitPanel.setMinimumSize(new java.awt.Dimension(800, 56));
@@ -315,9 +304,7 @@ private void adaptiveCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {/
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel11;
     private widgets.panel.AdaptivePanel adaptivePanel2;
-    private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
-    private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
     private widgets.textfield.AdaptiveTextField adaptiveTextField3;
@@ -327,6 +314,7 @@ private void adaptiveCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {/
     private widgets.textfield.AdaptiveTextField adaptiveTextField7;
     private widgets.textfield.AdaptiveTextField adaptiveTextField8;
     private widgets.textfield.AdaptiveTextField adaptiveTextField9;
+    private widgets.panel.AdaptivePanel captchaPanel;
     private widgets.panel.AdaptivePanel centerMainPanel;
     private widgets.panel.AdaptivePanel profilePanel;
     private widgets.panel.AdaptivePanel submitPanel;
