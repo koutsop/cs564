@@ -167,9 +167,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel8.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel8.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel2.setFunction("profileImg");
+        picturePanel2.setFunction("koutsopImg");
         picturePanel2.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel2.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel2.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel2Layout = new javax.swing.GroupLayout(picturePanel2);
         picturePanel2.setLayout(picturePanel2Layout);
@@ -215,9 +215,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel7.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel7.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel1.setFunction("profileImg");
+        picturePanel1.setFunction("koutsopImg");
         picturePanel1.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel1.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel1.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel1Layout = new javax.swing.GroupLayout(picturePanel1);
         picturePanel1.setLayout(picturePanel1Layout);
@@ -263,9 +263,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel9.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel9.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel3.setFunction("profileImg");
+        picturePanel3.setFunction("koutsopImg");
         picturePanel3.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel3.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel3.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel3Layout = new javax.swing.GroupLayout(picturePanel3);
         picturePanel3.setLayout(picturePanel3Layout);
@@ -311,9 +311,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel10.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel10.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel4.setFunction("profileImg");
+        picturePanel4.setFunction("koutsopImg");
         picturePanel4.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel4.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel4.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel4Layout = new javax.swing.GroupLayout(picturePanel4);
         picturePanel4.setLayout(picturePanel4Layout);
@@ -359,9 +359,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel11.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel11.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel5.setFunction("profileImg");
+        picturePanel5.setFunction("koutsopImg");
         picturePanel5.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel5.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel5.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel5Layout = new javax.swing.GroupLayout(picturePanel5);
         picturePanel5.setLayout(picturePanel5Layout);
@@ -407,9 +407,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel12.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel12.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel6.setFunction("profileImg");
+        picturePanel6.setFunction("koutsopImg");
         picturePanel6.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel6.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel6.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel6Layout = new javax.swing.GroupLayout(picturePanel6);
         picturePanel6.setLayout(picturePanel6Layout);
@@ -455,9 +455,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel13.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel13.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel7.setFunction("profileImg");
+        picturePanel7.setFunction("koutsopImg");
         picturePanel7.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel7.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel7.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel7Layout = new javax.swing.GroupLayout(picturePanel7);
         picturePanel7.setLayout(picturePanel7Layout);
@@ -503,9 +503,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel14.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel14.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel8.setFunction("profileImg");
+        picturePanel8.setFunction("koutsopImg");
         picturePanel8.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel8.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel8.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel8Layout = new javax.swing.GroupLayout(picturePanel8);
         picturePanel8.setLayout(picturePanel8Layout);
@@ -551,9 +551,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel15.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel15.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel9.setFunction("profileImg");
+        picturePanel9.setFunction("koutsopImg");
         picturePanel9.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel9.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel9.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel9Layout = new javax.swing.GroupLayout(picturePanel9);
         picturePanel9.setLayout(picturePanel9Layout);
@@ -599,9 +599,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel16.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel16.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel10.setFunction("profileImg");
+        picturePanel10.setFunction("koutsopImg");
         picturePanel10.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel10.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel10.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel10Layout = new javax.swing.GroupLayout(picturePanel10);
         picturePanel10.setLayout(picturePanel10Layout);
@@ -647,9 +647,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel17.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel17.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel11.setFunction("profileImg");
+        picturePanel11.setFunction("koutsopImg");
         picturePanel11.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel11.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel11.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel11Layout = new javax.swing.GroupLayout(picturePanel11);
         picturePanel11.setLayout(picturePanel11Layout);
@@ -695,9 +695,9 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel18.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel18.setLayout(new java.awt.BorderLayout(10, 10));
 
-        picturePanel12.setFunction("profileImg");
+        picturePanel12.setFunction("koutsopImg");
         picturePanel12.setMaximumSize(new java.awt.Dimension(50, 50));
-        picturePanel12.setName("Panel.Content.ProfileImage"); // NOI18N
+        picturePanel12.setName("Panel.Content.KoutsopImage"); // NOI18N
 
         javax.swing.GroupLayout picturePanel12Layout = new javax.swing.GroupLayout(picturePanel12);
         picturePanel12.setLayout(picturePanel12Layout);

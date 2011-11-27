@@ -82,8 +82,61 @@ public class VideoChat extends javax.swing.JPanel {
         addButton = new widgets.button.AdaptiveButton();
         closeButton = new widgets.button.AdaptiveButton();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
-        receiveScrolPane = new javax.swing.JScrollPane();
-        adaptiveTextBox2 = new widgets.textbox.AdaptiveTextBox();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        scroolContentPanel = new widgets.panel.AdaptivePanel();
+        conversationKoutsopPanel = new widgets.panel.AdaptivePanel();
+        senderPanel2 = new widgets.panel.AdaptivePanel();
+        northPanel1 = new widgets.panel.AdaptivePanel();
+        senderInfoPanel2 = new widgets.panel.AdaptivePanel();
+        senderImagePanel1 = new widgets.panel.AdaptivePanel();
+        senderInfoPanel3 = new widgets.panel.AdaptivePanel();
+        senderNameLabel1 = new widgets.label.AdaptiveLabel();
+        timeLabel1 = new widgets.label.AdaptiveLabel();
+        senderTextPanel1 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel3 = new widgets.label.AdaptiveLabel();
+        conversationMarigiannaPanel = new widgets.panel.AdaptivePanel();
+        senderPanel1 = new widgets.panel.AdaptivePanel();
+        northPanel = new widgets.panel.AdaptivePanel();
+        senderInfoPanel1 = new widgets.panel.AdaptivePanel();
+        senderImagePanel = new widgets.panel.AdaptivePanel();
+        senderInfoPanel = new widgets.panel.AdaptivePanel();
+        senderNameLabel = new widgets.label.AdaptiveLabel();
+        timeLabel = new widgets.label.AdaptiveLabel();
+        senderTextPanel = new widgets.panel.AdaptivePanel();
+        adaptiveLabel2 = new widgets.label.AdaptiveLabel();
+        adaptiveLabel1 = new widgets.label.AdaptiveLabel();
+        conversationKoutsopPanel1 = new widgets.panel.AdaptivePanel();
+        senderPanel3 = new widgets.panel.AdaptivePanel();
+        northPanel2 = new widgets.panel.AdaptivePanel();
+        senderInfoPanel4 = new widgets.panel.AdaptivePanel();
+        senderImagePanel2 = new widgets.panel.AdaptivePanel();
+        senderInfoPanel5 = new widgets.panel.AdaptivePanel();
+        senderNameLabel2 = new widgets.label.AdaptiveLabel();
+        timeLabel2 = new widgets.label.AdaptiveLabel();
+        senderTextPanel2 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel4 = new widgets.label.AdaptiveLabel();
+        conversationMarigiannaPanel1 = new widgets.panel.AdaptivePanel();
+        senderPanel4 = new widgets.panel.AdaptivePanel();
+        northPanel3 = new widgets.panel.AdaptivePanel();
+        senderInfoPanel6 = new widgets.panel.AdaptivePanel();
+        senderImagePanel3 = new widgets.panel.AdaptivePanel();
+        senderInfoPanel7 = new widgets.panel.AdaptivePanel();
+        senderNameLabel3 = new widgets.label.AdaptiveLabel();
+        timeLabel3 = new widgets.label.AdaptiveLabel();
+        senderTextPanel3 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel5 = new widgets.label.AdaptiveLabel();
+        adaptiveLabel6 = new widgets.label.AdaptiveLabel();
+        conversationMarigiannaPanel2 = new widgets.panel.AdaptivePanel();
+        senderPanel5 = new widgets.panel.AdaptivePanel();
+        northPanel4 = new widgets.panel.AdaptivePanel();
+        senderInfoPanel8 = new widgets.panel.AdaptivePanel();
+        senderImagePanel4 = new widgets.panel.AdaptivePanel();
+        senderInfoPanel9 = new widgets.panel.AdaptivePanel();
+        senderNameLabel4 = new widgets.label.AdaptiveLabel();
+        timeLabel4 = new widgets.label.AdaptiveLabel();
+        senderTextPanel4 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel7 = new widgets.label.AdaptiveLabel();
+        adaptiveLabel8 = new widgets.label.AdaptiveLabel();
         sendPanel = new widgets.panel.AdaptivePanel();
         sendButonPanel = new widgets.panel.AdaptivePanel();
         sendButton = new widgets.button.AdaptiveButton();
@@ -121,14 +174,242 @@ public class VideoChat extends javax.swing.JPanel {
 
         receivePanel.add(buttonsPanel, java.awt.BorderLayout.NORTH);
 
-        adaptivePanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextBox2.setColumns(20);
-        adaptiveTextBox2.setRows(5);
-        receiveScrolPane.setViewportView(adaptiveTextBox2);
+        scroolContentPanel.setLayout(new java.awt.GridLayout(5, 1, 0, 20));
 
-        adaptivePanel1.add(receiveScrolPane);
+        conversationKoutsopPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 3, true));
+        conversationKoutsopPanel.setLayout(new javax.swing.BoxLayout(conversationKoutsopPanel, javax.swing.BoxLayout.LINE_AXIS));
+
+        senderPanel2.setName("Panel.ChatBox"); // NOI18N
+        senderPanel2.setLayout(new java.awt.BorderLayout());
+
+        northPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 10));
+
+        senderInfoPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 0));
+
+        senderImagePanel1.setFunction("koutsopImg");
+        senderImagePanel1.setMaximumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel1.setMinimumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel1.setName("Panel.Content.KoutsopImage"); // NOI18N
+        senderImagePanel1.setPreferredSize(new java.awt.Dimension(50, 50));
+        senderImagePanel1.setLayout(new javax.swing.BoxLayout(senderImagePanel1, javax.swing.BoxLayout.LINE_AXIS));
+        senderInfoPanel2.add(senderImagePanel1);
+
+        senderInfoPanel3.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        senderNameLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel1.setText("Koutsop:");
+        senderInfoPanel3.add(senderNameLabel1);
+
+        timeLabel1.setText("Sent at 12:03 PM on Sunday");
+        senderInfoPanel3.add(timeLabel1);
+
+        senderInfoPanel2.add(senderInfoPanel3);
+
+        northPanel1.add(senderInfoPanel2);
+
+        senderPanel2.add(northPanel1, java.awt.BorderLayout.NORTH);
+
+        senderTextPanel1.setLayout(new javax.swing.BoxLayout(senderTextPanel1, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptiveLabel3.setText("Pws paei eisai kala? Elpizw na eisai kala. Ta leme");
+        senderTextPanel1.add(adaptiveLabel3);
+
+        senderPanel2.add(senderTextPanel1, java.awt.BorderLayout.CENTER);
+
+        conversationKoutsopPanel.add(senderPanel2);
+
+        scroolContentPanel.add(conversationKoutsopPanel);
+
+        conversationMarigiannaPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 3, true));
+        conversationMarigiannaPanel.setLayout(new javax.swing.BoxLayout(conversationMarigiannaPanel, javax.swing.BoxLayout.LINE_AXIS));
+
+        senderPanel1.setName("Panel.ChatBox"); // NOI18N
+        senderPanel1.setLayout(new java.awt.BorderLayout());
+
+        northPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 10));
+
+        senderInfoPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 0));
+
+        senderImagePanel.setFunction("marigiannaImg");
+        senderImagePanel.setMaximumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel.setMinimumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel.setName("Panel.Content.MarigiannaImage"); // NOI18N
+        senderImagePanel.setPreferredSize(new java.awt.Dimension(50, 50));
+        senderImagePanel.setLayout(new javax.swing.BoxLayout(senderImagePanel, javax.swing.BoxLayout.LINE_AXIS));
+        senderInfoPanel1.add(senderImagePanel);
+
+        senderInfoPanel.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        senderNameLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel.setText("Marigianna:");
+        senderInfoPanel.add(senderNameLabel);
+
+        timeLabel.setText("Sent at 12:03 PM on Sunday");
+        senderInfoPanel.add(timeLabel);
+
+        senderInfoPanel1.add(senderInfoPanel);
+
+        northPanel.add(senderInfoPanel1);
+
+        senderPanel1.add(northPanel, java.awt.BorderLayout.NORTH);
+
+        senderTextPanel.setLayout(new javax.swing.BoxLayout(senderTextPanel, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptiveLabel2.setText("Bariemai thn zwh mou n to 3reis auto lalalalalalalalalalaalalalal");
+        senderTextPanel.add(adaptiveLabel2);
+
+        adaptiveLabel1.setText("Bariemai thn zwh mou n to 3reis auto");
+        senderTextPanel.add(adaptiveLabel1);
+
+        senderPanel1.add(senderTextPanel, java.awt.BorderLayout.CENTER);
+
+        conversationMarigiannaPanel.add(senderPanel1);
+
+        scroolContentPanel.add(conversationMarigiannaPanel);
+
+        conversationKoutsopPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 3, true));
+        conversationKoutsopPanel1.setLayout(new javax.swing.BoxLayout(conversationKoutsopPanel1, javax.swing.BoxLayout.LINE_AXIS));
+
+        senderPanel3.setName("Panel.ChatBox"); // NOI18N
+        senderPanel3.setLayout(new java.awt.BorderLayout());
+
+        northPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 10));
+
+        senderInfoPanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 0));
+
+        senderImagePanel2.setFunction("koutsopImg");
+        senderImagePanel2.setMaximumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel2.setMinimumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel2.setName("Panel.Content.KoutsopImage"); // NOI18N
+        senderImagePanel2.setPreferredSize(new java.awt.Dimension(50, 50));
+        senderImagePanel2.setLayout(new javax.swing.BoxLayout(senderImagePanel2, javax.swing.BoxLayout.LINE_AXIS));
+        senderInfoPanel4.add(senderImagePanel2);
+
+        senderInfoPanel5.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        senderNameLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel2.setText("Koutsop:");
+        senderInfoPanel5.add(senderNameLabel2);
+
+        timeLabel2.setText("Sent at 12:03 PM on Sunday");
+        senderInfoPanel5.add(timeLabel2);
+
+        senderInfoPanel4.add(senderInfoPanel5);
+
+        northPanel2.add(senderInfoPanel4);
+
+        senderPanel3.add(northPanel2, java.awt.BorderLayout.NORTH);
+
+        senderTextPanel2.setLayout(new javax.swing.BoxLayout(senderTextPanel2, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptiveLabel4.setText("Pws paei eisai kala? Elpizw na eisai kala. Ta leme");
+        senderTextPanel2.add(adaptiveLabel4);
+
+        senderPanel3.add(senderTextPanel2, java.awt.BorderLayout.CENTER);
+
+        conversationKoutsopPanel1.add(senderPanel3);
+
+        scroolContentPanel.add(conversationKoutsopPanel1);
+
+        conversationMarigiannaPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 3, true));
+        conversationMarigiannaPanel1.setLayout(new javax.swing.BoxLayout(conversationMarigiannaPanel1, javax.swing.BoxLayout.LINE_AXIS));
+
+        senderPanel4.setName("Panel.ChatBox"); // NOI18N
+        senderPanel4.setLayout(new java.awt.BorderLayout());
+
+        northPanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 10));
+
+        senderInfoPanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 0));
+
+        senderImagePanel3.setFunction("marigiannaImg");
+        senderImagePanel3.setMaximumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel3.setMinimumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel3.setName("Panel.Content.MarigiannaImage"); // NOI18N
+        senderImagePanel3.setPreferredSize(new java.awt.Dimension(50, 50));
+        senderImagePanel3.setLayout(new javax.swing.BoxLayout(senderImagePanel3, javax.swing.BoxLayout.LINE_AXIS));
+        senderInfoPanel6.add(senderImagePanel3);
+
+        senderInfoPanel7.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        senderNameLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel3.setText("Marigianna:");
+        senderInfoPanel7.add(senderNameLabel3);
+
+        timeLabel3.setText("Sent at 12:03 PM on Sunday");
+        senderInfoPanel7.add(timeLabel3);
+
+        senderInfoPanel6.add(senderInfoPanel7);
+
+        northPanel3.add(senderInfoPanel6);
+
+        senderPanel4.add(northPanel3, java.awt.BorderLayout.NORTH);
+
+        senderTextPanel3.setLayout(new javax.swing.BoxLayout(senderTextPanel3, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptiveLabel5.setText("Bariemai thn zwh mou n to 3reis auto lalalalalalalalalalaalalalal");
+        senderTextPanel3.add(adaptiveLabel5);
+
+        adaptiveLabel6.setText("Bariemai thn zwh mou n to 3reis auto");
+        senderTextPanel3.add(adaptiveLabel6);
+
+        senderPanel4.add(senderTextPanel3, java.awt.BorderLayout.CENTER);
+
+        conversationMarigiannaPanel1.add(senderPanel4);
+
+        scroolContentPanel.add(conversationMarigiannaPanel1);
+
+        conversationMarigiannaPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 3, true));
+        conversationMarigiannaPanel2.setLayout(new javax.swing.BoxLayout(conversationMarigiannaPanel2, javax.swing.BoxLayout.LINE_AXIS));
+
+        senderPanel5.setName("Panel.ChatBox"); // NOI18N
+        senderPanel5.setLayout(new java.awt.BorderLayout());
+
+        northPanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 10));
+
+        senderInfoPanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 0));
+
+        senderImagePanel4.setFunction("marigiannaImg");
+        senderImagePanel4.setMaximumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel4.setMinimumSize(new java.awt.Dimension(50, 50));
+        senderImagePanel4.setName("Panel.Content.MarigiannaImage"); // NOI18N
+        senderImagePanel4.setPreferredSize(new java.awt.Dimension(50, 50));
+        senderImagePanel4.setLayout(new javax.swing.BoxLayout(senderImagePanel4, javax.swing.BoxLayout.LINE_AXIS));
+        senderInfoPanel8.add(senderImagePanel4);
+
+        senderInfoPanel9.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
+
+        senderNameLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel4.setText("Marigianna:");
+        senderInfoPanel9.add(senderNameLabel4);
+
+        timeLabel4.setText("Sent at 12:03 PM on Sunday");
+        senderInfoPanel9.add(timeLabel4);
+
+        senderInfoPanel8.add(senderInfoPanel9);
+
+        northPanel4.add(senderInfoPanel8);
+
+        senderPanel5.add(northPanel4, java.awt.BorderLayout.NORTH);
+
+        senderTextPanel4.setLayout(new javax.swing.BoxLayout(senderTextPanel4, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptiveLabel7.setText("Bariemai thn zwh mou n to 3reis auto lalalalalalalalalalaalalalal");
+        senderTextPanel4.add(adaptiveLabel7);
+
+        adaptiveLabel8.setText("Bariemai thn zwh mou n to 3reis auto");
+        senderTextPanel4.add(adaptiveLabel8);
+
+        senderPanel5.add(senderTextPanel4, java.awt.BorderLayout.CENTER);
+
+        conversationMarigiannaPanel2.add(senderPanel5);
+
+        scroolContentPanel.add(conversationMarigiannaPanel2);
+
+        jScrollPane2.setViewportView(scroolContentPanel);
+
+        adaptivePanel1.add(jScrollPane2);
 
         receivePanel.add(adaptivePanel1, java.awt.BorderLayout.CENTER);
 
@@ -158,23 +439,76 @@ public class VideoChat extends javax.swing.JPanel {
         add(sendPanel, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.label.AdaptiveLabel adaptiveLabel1;
+    private widgets.label.AdaptiveLabel adaptiveLabel2;
+    private widgets.label.AdaptiveLabel adaptiveLabel3;
+    private widgets.label.AdaptiveLabel adaptiveLabel4;
+    private widgets.label.AdaptiveLabel adaptiveLabel5;
+    private widgets.label.AdaptiveLabel adaptiveLabel6;
+    private widgets.label.AdaptiveLabel adaptiveLabel7;
+    private widgets.label.AdaptiveLabel adaptiveLabel8;
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
-    private widgets.textbox.AdaptiveTextBox adaptiveTextBox2;
     private widgets.button.AdaptiveButton addButton;
     private widgets.panel.AdaptivePanel buttonsPanel;
     private widgets.button.AdaptiveButton closeButton;
+    private widgets.panel.AdaptivePanel conversationKoutsopPanel;
+    private widgets.panel.AdaptivePanel conversationKoutsopPanel1;
+    private widgets.panel.AdaptivePanel conversationMarigiannaPanel;
+    private widgets.panel.AdaptivePanel conversationMarigiannaPanel1;
+    private widgets.panel.AdaptivePanel conversationMarigiannaPanel2;
     private widgets.button.AdaptiveButton fullScreenButton;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private widgets.button.AdaptiveButton muteButton;
+    private widgets.panel.AdaptivePanel northPanel;
+    private widgets.panel.AdaptivePanel northPanel1;
+    private widgets.panel.AdaptivePanel northPanel2;
+    private widgets.panel.AdaptivePanel northPanel3;
+    private widgets.panel.AdaptivePanel northPanel4;
     private widgets.panel.AdaptivePanel receivePanel;
-    private javax.swing.JScrollPane receiveScrolPane;
+    private widgets.panel.AdaptivePanel scroolContentPanel;
     private widgets.panel.AdaptivePanel sendButonPanel;
     private widgets.button.AdaptiveButton sendButton;
     private widgets.button.AdaptiveButton sendFileButton;
     private widgets.panel.AdaptivePanel sendPanel;
+    private widgets.panel.AdaptivePanel senderImagePanel;
+    private widgets.panel.AdaptivePanel senderImagePanel1;
+    private widgets.panel.AdaptivePanel senderImagePanel2;
+    private widgets.panel.AdaptivePanel senderImagePanel3;
+    private widgets.panel.AdaptivePanel senderImagePanel4;
+    private widgets.panel.AdaptivePanel senderInfoPanel;
+    private widgets.panel.AdaptivePanel senderInfoPanel1;
+    private widgets.panel.AdaptivePanel senderInfoPanel2;
+    private widgets.panel.AdaptivePanel senderInfoPanel3;
+    private widgets.panel.AdaptivePanel senderInfoPanel4;
+    private widgets.panel.AdaptivePanel senderInfoPanel5;
+    private widgets.panel.AdaptivePanel senderInfoPanel6;
+    private widgets.panel.AdaptivePanel senderInfoPanel7;
+    private widgets.panel.AdaptivePanel senderInfoPanel8;
+    private widgets.panel.AdaptivePanel senderInfoPanel9;
+    private widgets.label.AdaptiveLabel senderNameLabel;
+    private widgets.label.AdaptiveLabel senderNameLabel1;
+    private widgets.label.AdaptiveLabel senderNameLabel2;
+    private widgets.label.AdaptiveLabel senderNameLabel3;
+    private widgets.label.AdaptiveLabel senderNameLabel4;
+    private widgets.panel.AdaptivePanel senderPanel1;
+    private widgets.panel.AdaptivePanel senderPanel2;
+    private widgets.panel.AdaptivePanel senderPanel3;
+    private widgets.panel.AdaptivePanel senderPanel4;
+    private widgets.panel.AdaptivePanel senderPanel5;
+    private widgets.panel.AdaptivePanel senderTextPanel;
+    private widgets.panel.AdaptivePanel senderTextPanel1;
+    private widgets.panel.AdaptivePanel senderTextPanel2;
+    private widgets.panel.AdaptivePanel senderTextPanel3;
+    private widgets.panel.AdaptivePanel senderTextPanel4;
     private widgets.button.AdaptiveButton swapButton;
+    private widgets.label.AdaptiveLabel timeLabel;
+    private widgets.label.AdaptiveLabel timeLabel1;
+    private widgets.label.AdaptiveLabel timeLabel2;
+    private widgets.label.AdaptiveLabel timeLabel3;
+    private widgets.label.AdaptiveLabel timeLabel4;
     private widgets.button.AdaptiveButton volumeDownButton;
     private widgets.button.AdaptiveButton volumeUpButton;
     // End of variables declaration//GEN-END:variables

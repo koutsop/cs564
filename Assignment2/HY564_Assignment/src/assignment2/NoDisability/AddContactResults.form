@@ -128,11 +128,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel2">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -230,11 +230,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel1">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -332,11 +332,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel3">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -434,11 +434,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel4">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -536,11 +536,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel5">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -638,11 +638,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel6">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -740,11 +740,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel7">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -842,11 +842,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel8">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -944,11 +944,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel9">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -1046,11 +1046,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel10">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -1148,11 +1148,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel11">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -1250,11 +1250,11 @@
               <SubComponents>
                 <Container class="widgets.panel.AdaptivePanel" name="picturePanel12">
                   <Properties>
-                    <Property name="function" type="java.lang.String" value="profileImg"/>
+                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
                     <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                       <Dimension value="[50, 50]"/>
                     </Property>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.ProfileImage" noResource="true"/>
+                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">

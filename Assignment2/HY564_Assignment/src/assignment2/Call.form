@@ -25,8 +25,8 @@
       <SubComponents>
         <Container class="widgets.panel.AdaptivePanel" name="receivePanell">
           <Properties>
-            <Property name="function" type="java.lang.String" value="ReceiveContactImg"/>
-            <Property name="name" type="java.lang.String" value="Panel.ReceiveVideoPanel" noResource="true"/>
+            <Property name="function" type="java.lang.String" value="marigiannaImg"/>
+            <Property name="name" type="java.lang.String" value="Panel.Content.MarigiannaImage" noResource="true"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">

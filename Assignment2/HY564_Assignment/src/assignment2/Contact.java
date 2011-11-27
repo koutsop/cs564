@@ -23,6 +23,7 @@ public class Contact extends javax.swing.JPanel {
 	/** Creates new form Contact */
 	public Contact(
 		String avatarFunction,
+        String avatarName,
 		String statusFunction,
 		String contactName,
 		String contactSatus,
@@ -31,12 +32,14 @@ public class Contact extends javax.swing.JPanel {
 		initComponents();
         this.statusType = statusType;
 		avatarPanel.setFunction(avatarFunction);
+        avatarPanel.setName(avatarName);
 		statusAvailablePanel.setFunction(statusFunction);
 		nameLabel.setText(contactName);
 		statusLabel.setText(contactSatus);
         separatorPanel.setMinimumSize(new Dimension(5, 1));
         separatorPanel.setMaximumSize(new Dimension(5, 1));
         separatorPanel.setPreferredSize(new Dimension(5, 1));
+        this.repaint();
 	}
     
     public void SetContactSize (int width, int height){
