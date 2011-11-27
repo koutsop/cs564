@@ -437,7 +437,7 @@
 
 <!-- ============================================================== -->   
     <!-- captha-->
-<style id="captchaImage">
+    <style id="captchaImage">
 		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/koutsop.jpg" center="true"/>
 	</style>
 	<bind style="captchaImage" type="name" key="Panel.Content.Captcha"/>
@@ -445,18 +445,18 @@
     
     
     
-	<style id="ChatButton">
-    <property key="Button.textShiftOffset" type="integer" value="1"/>
-    <state>
-			<imagePainter method="buttonBackground" path="images/ContentButton.png" sourceInsets="10 10 10 10"/>	
-    </state>
-	<state value="PRESSED"> 
-	    <imagePainter method="buttonBackground" path="images/ContentButtonPressed.png" sourceInsets="10 10 10 10"/>
-	</state>
-	<state value="SELECTED"> 
-	    <imagePainter method="buttonBackground" path="images/ContentButtonSelected.png" sourceInsets="10 10 10 10"/>
-	</state>
-  </style>
+    <style id="ChatButton">
+        <property key="Button.textShiftOffset" type="integer" value="1"/>
+        <state>
+                <imagePainter method="buttonBackground" path="images/ContentButton.png" sourceInsets="10 10 10 10"/>	
+        </state>
+        <state value="PRESSED"> 
+            <imagePainter method="buttonBackground" path="images/ContentButtonPressed.png" sourceInsets="10 10 10 10"/>
+        </state>
+        <state value="SELECTED"> 
+            <imagePainter method="buttonBackground" path="images/ContentButtonSelected.png" sourceInsets="10 10 10 10"/>
+        </state>
+    </style>
   <bind style="ChatButton" type="name" key="Button.Chat.*"/>    
   <bind style="ChatButton" type="name" key="Button.ContactsAction.*"/> 
   
