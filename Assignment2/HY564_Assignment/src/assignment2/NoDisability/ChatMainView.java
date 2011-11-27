@@ -95,11 +95,21 @@ public class ChatMainView extends javax.swing.JPanel {
 				statusImgHeight		!= -1 && 
 				statusImgWidth		!= -1;
 		
-		/*for (Component contact: contactsListPanel.getComponents()) {
+		for (Component contact: groupContentPanel.getComponents()) {
 			//((Contact)contact).SetContactSize(contactWidth, contactHeight);
 			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
             ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
-		}*/		
+		}
+		for (Component contact: groupContentPanel1.getComponents()) {
+			//((Contact)contact).SetContactSize(contactWidth, contactHeight);
+			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
+            ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
+		}
+		for (Component contact: groupContentPanel2.getComponents()) {
+			//((Contact)contact).SetContactSize(contactWidth, contactHeight);
+			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
+            ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
+		}	
 	}
 	
 	private void AddContacts () {
@@ -112,27 +122,27 @@ public class ChatMainView extends javax.swing.JPanel {
         groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
         groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
         groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
-        groupContentPanel.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel1.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
+        groupContentPanel2.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
 	}
 
     /** This method is called from within the constructor to
@@ -250,7 +260,7 @@ public class ChatMainView extends javax.swing.JPanel {
 
         contactsPanel.setLayout(new javax.swing.BoxLayout(contactsPanel, javax.swing.BoxLayout.LINE_AXIS));
 
-        contactsListPanel.setLayout(new java.awt.GridLayout(5, 1, 0, 20));
+        contactsListPanel.setLayout(new javax.swing.BoxLayout(contactsListPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
         groupPanel.setLayout(new java.awt.BorderLayout());
 
@@ -279,12 +289,12 @@ public class ChatMainView extends javax.swing.JPanel {
 
         groupNamePanel.add(adaptivePanel1);
 
-        adaptiveLabel1.setText("To onoma ths omadas mas");
+        adaptiveLabel1.setText("CSD");
         groupNamePanel.add(adaptiveLabel1);
 
         groupPanel.add(groupNamePanel, java.awt.BorderLayout.NORTH);
 
-        groupContentPanel.setLayout(new javax.swing.BoxLayout(groupContentPanel, javax.swing.BoxLayout.PAGE_AXIS));
+        groupContentPanel.setLayout(new java.awt.GridLayout(0, 1, 0, 20));
         groupPanel.add(groupContentPanel, java.awt.BorderLayout.CENTER);
 
         westPanel.setMaximumSize(new java.awt.Dimension(30, 1));
@@ -298,7 +308,7 @@ public class ChatMainView extends javax.swing.JPanel {
         );
         westPanelLayout.setVerticalGroup(
             westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 252, Short.MAX_VALUE)
+            .addGap(0, 581, Short.MAX_VALUE)
         );
 
         groupPanel.add(westPanel, java.awt.BorderLayout.WEST);
@@ -332,12 +342,12 @@ public class ChatMainView extends javax.swing.JPanel {
 
         groupNamePanel1.add(adaptivePanel2);
 
-        adaptiveLabel2.setText("To onoma ths omadas mas");
+        adaptiveLabel2.setText("CSD 1");
         groupNamePanel1.add(adaptiveLabel2);
 
         groupPanel1.add(groupNamePanel1, java.awt.BorderLayout.NORTH);
 
-        groupContentPanel1.setLayout(new javax.swing.BoxLayout(groupContentPanel1, javax.swing.BoxLayout.PAGE_AXIS));
+        groupContentPanel1.setLayout(new java.awt.GridLayout(0, 1, 0, 20));
         groupPanel1.add(groupContentPanel1, java.awt.BorderLayout.CENTER);
 
         westPanel1.setMaximumSize(new java.awt.Dimension(30, 1));
@@ -351,7 +361,7 @@ public class ChatMainView extends javax.swing.JPanel {
         );
         westPanel1Layout.setVerticalGroup(
             westPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 252, Short.MAX_VALUE)
+            .addGap(0, 581, Short.MAX_VALUE)
         );
 
         groupPanel1.add(westPanel1, java.awt.BorderLayout.WEST);
@@ -385,12 +395,12 @@ public class ChatMainView extends javax.swing.JPanel {
 
         groupNamePanel2.add(adaptivePanel4);
 
-        adaptiveLabel3.setText("To onoma ths omadas mas");
+        adaptiveLabel3.setText("CSD 2");
         groupNamePanel2.add(adaptiveLabel3);
 
         groupPanel2.add(groupNamePanel2, java.awt.BorderLayout.NORTH);
 
-        groupContentPanel2.setLayout(new javax.swing.BoxLayout(groupContentPanel2, javax.swing.BoxLayout.PAGE_AXIS));
+        groupContentPanel2.setLayout(new java.awt.GridLayout(0, 1, 0, 20));
         groupPanel2.add(groupContentPanel2, java.awt.BorderLayout.CENTER);
 
         westPanel2.setMaximumSize(new java.awt.Dimension(30, 1));
@@ -404,7 +414,7 @@ public class ChatMainView extends javax.swing.JPanel {
         );
         westPanel2Layout.setVerticalGroup(
             westPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 252, Short.MAX_VALUE)
+            .addGap(0, 581, Short.MAX_VALUE)
         );
 
         groupPanel2.add(westPanel2, java.awt.BorderLayout.WEST);
@@ -503,15 +513,15 @@ public class ChatMainView extends javax.swing.JPanel {
     }//GEN-LAST:event_groupContactsButtonActionPerformed
 
     private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
-
+		groupContentPanel.setVisible(!groupContentPanel.isVisible());
     }//GEN-LAST:event_adaptiveButton5ActionPerformed
 
     private void adaptiveButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton15ActionPerformed
-
+		groupContentPanel1.setVisible(!groupContentPanel1.isVisible());
     }//GEN-LAST:event_adaptiveButton15ActionPerformed
 
     private void adaptiveButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton25ActionPerformed
-
+		groupContentPanel2.setVisible(!groupContentPanel2.isVisible());
     }//GEN-LAST:event_adaptiveButton25ActionPerformed
           
     private void showInContentPanel (JPanel p) {
