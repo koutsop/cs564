@@ -302,7 +302,9 @@ component StatusBusyImg [
 ]
 
 
-component ReceiveVideoImg [
+
+
+component ReceiveContactImg [
     activate "Panel.ReceiveVideoPanel"
 ]
 

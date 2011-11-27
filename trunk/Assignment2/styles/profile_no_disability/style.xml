@@ -454,6 +454,20 @@
 	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusBusyPanel"/>
 	
     
+    
+    
+<!-- ============================================================== -->    
+    <!-- Video and call styles (images)-->
+  	<style id="ReceiveContactImg">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_no_disability/images/koutsop.jpg"
+            center="true"
+        />
+	</style>
+	<bind style="ReceiveContactImg" type="name" key="Panel.ReceiveVideoPanel"/>    
+    
+    
 	<style id="SendVideoImage">
 		<imagePainter 
             method="panelBackground" 
@@ -463,7 +477,7 @@
 	</style>
 	<bind style="SendVideoImage" type="name" key="Panel.SendVideoImage"/>    
     
-    
+<!-- ============================================================== -->     
     
     
     
