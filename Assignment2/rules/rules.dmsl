@@ -398,7 +398,7 @@ component GroupButton [
 
 //for chating
 component ContactListWidth [
-	if 		profile1 then 	activate "250" //25% of wondow's width (1000)
+	if 		profile1 then 	activate "280" //28% of wondow's width (1000)
 	else if profile2 then 	activate "300"
 	else if profile3 then 	activate "300"
 	else if profile4 then 	activate "300"

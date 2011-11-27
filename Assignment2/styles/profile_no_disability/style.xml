@@ -462,7 +462,9 @@
 		<imagePainter 
             method="panelBackground" 
             path="../../styles/profile_no_disability/images/koutsop.jpg"
-            center="true"
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
         />
 	</style>
 	<bind style="ReceiveContactImg" type="name" key="Panel.ReceiveVideoPanel"/>    
