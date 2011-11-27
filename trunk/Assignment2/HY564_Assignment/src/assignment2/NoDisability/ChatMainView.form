@@ -177,9 +177,9 @@
                                 <Property name="horizontalGap" type="int" value="0"/>
                               </Layout>
                               <SubComponents>
-                                <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
+                                <Component class="widgets.button.AdaptiveButton" name="groupButton0">
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton5ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupButton0ActionPerformed"/>
                                   </Events>
                                 </Component>
                                 <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
@@ -279,9 +279,9 @@
                                 <Property name="horizontalGap" type="int" value="0"/>
                               </Layout>
                               <SubComponents>
-                                <Component class="widgets.button.AdaptiveButton" name="adaptiveButton15">
+                                <Component class="widgets.button.AdaptiveButton" name="groupButton1">
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton15ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupButton1ActionPerformed"/>
                                   </Events>
                                 </Component>
                                 <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel2">
@@ -381,9 +381,9 @@
                                 <Property name="horizontalGap" type="int" value="0"/>
                               </Layout>
                               <SubComponents>
-                                <Component class="widgets.button.AdaptiveButton" name="adaptiveButton25">
+                                <Component class="widgets.button.AdaptiveButton" name="groupButton2">
                                   <Events>
-                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton25ActionPerformed"/>
+                                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupButton2ActionPerformed"/>
                                   </Events>
                                 </Component>
                                 <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel4">

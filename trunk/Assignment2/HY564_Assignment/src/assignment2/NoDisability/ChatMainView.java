@@ -58,7 +58,14 @@ public class ChatMainView extends javax.swing.JPanel {
         
         path = DMSLConnector.getInstance().getClient(false).Evaluate("RemoveButton");
         removeContactButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
+		
+		
+		collpaseAddImgPath = DMSLConnector.getInstance().getClient(false).Evaluate("CollapseAddButton");
+		collapseSubImgPath = DMSLConnector.getInstance().getClient(false).Evaluate("GroupSubButton");
+        groupButton0.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
+		groupButton1.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
+		groupButton2.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
+		
         selectMenuButton(myProfileButton);
         showInContentPanel(new MyProfile(contentPanel.getPreferredSize()));
 		this.updateUI();
@@ -171,21 +178,21 @@ public class ChatMainView extends javax.swing.JPanel {
         contactsListPanel = new widgets.panel.AdaptivePanel();
         groupPanel = new widgets.panel.AdaptivePanel();
         groupNamePanel = new widgets.panel.AdaptivePanel();
-        adaptiveButton5 = new widgets.button.AdaptiveButton();
+        groupButton0 = new widgets.button.AdaptiveButton();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptiveLabel1 = new widgets.label.AdaptiveLabel();
         groupContentPanel = new widgets.panel.AdaptivePanel();
         westPanel = new widgets.panel.AdaptivePanel();
         groupPanel1 = new widgets.panel.AdaptivePanel();
         groupNamePanel1 = new widgets.panel.AdaptivePanel();
-        adaptiveButton15 = new widgets.button.AdaptiveButton();
+        groupButton1 = new widgets.button.AdaptiveButton();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptiveLabel2 = new widgets.label.AdaptiveLabel();
         groupContentPanel1 = new widgets.panel.AdaptivePanel();
         westPanel1 = new widgets.panel.AdaptivePanel();
         groupPanel2 = new widgets.panel.AdaptivePanel();
         groupNamePanel2 = new widgets.panel.AdaptivePanel();
-        adaptiveButton25 = new widgets.button.AdaptiveButton();
+        groupButton2 = new widgets.button.AdaptiveButton();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptiveLabel3 = new widgets.label.AdaptiveLabel();
         groupContentPanel2 = new widgets.panel.AdaptivePanel();
@@ -266,12 +273,12 @@ public class ChatMainView extends javax.swing.JPanel {
 
         groupNamePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveButton5.addActionListener(new java.awt.event.ActionListener() {
+        groupButton0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton5ActionPerformed(evt);
+                groupButton0ActionPerformed(evt);
             }
         });
-        groupNamePanel.add(adaptiveButton5);
+        groupNamePanel.add(groupButton0);
 
         adaptivePanel1.setMaximumSize(new java.awt.Dimension(3, 1));
         adaptivePanel1.setMinimumSize(new java.awt.Dimension(3, 1));
@@ -321,12 +328,12 @@ public class ChatMainView extends javax.swing.JPanel {
 
         groupNamePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveButton15.addActionListener(new java.awt.event.ActionListener() {
+        groupButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton15ActionPerformed(evt);
+                groupButton1ActionPerformed(evt);
             }
         });
-        groupNamePanel1.add(adaptiveButton15);
+        groupNamePanel1.add(groupButton1);
 
         adaptivePanel2.setMaximumSize(new java.awt.Dimension(3, 1));
         adaptivePanel2.setMinimumSize(new java.awt.Dimension(3, 1));
@@ -376,12 +383,12 @@ public class ChatMainView extends javax.swing.JPanel {
 
         groupNamePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveButton25.addActionListener(new java.awt.event.ActionListener() {
+        groupButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton25ActionPerformed(evt);
+                groupButton2ActionPerformed(evt);
             }
         });
-        groupNamePanel2.add(adaptiveButton25);
+        groupNamePanel2.add(groupButton2);
 
         adaptivePanel4.setMaximumSize(new java.awt.Dimension(3, 1));
         adaptivePanel4.setMinimumSize(new java.awt.Dimension(3, 1));
@@ -518,32 +525,36 @@ public class ChatMainView extends javax.swing.JPanel {
         myParent.validate(); 
     }//GEN-LAST:event_groupContactsButtonActionPerformed
 
-	private void CollapseGroup (JPanel group, int initialHeight) {
+	private void CollapseGroup (JPanel group, JButton button, int initialHeight) {
 		group.setVisible(!group.isVisible());
 		
-		if (group.isVisible())
+		if (group.isVisible()) {
+			button.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
 			group.setPreferredSize(new Dimension(group.getPreferredSize().width, initialHeight));
-		else
+		}
+		else {
+			button.setIcon(new ImageIcon(getClass().getResource(collapseSubImgPath)));
 			group.setPreferredSize(new Dimension(group.getPreferredSize().width, 0));				
+		}
 	}
-	
-    private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
+
+    private void groupButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton0ActionPerformed
 		if (groupInitialHeight == -1)	//Do in fist call
 			groupInitialHeight = groupContentPanel.getPreferredSize().height;
-		CollapseGroup(groupContentPanel, groupInitialHeight);
-    }//GEN-LAST:event_adaptiveButton5ActionPerformed
+		CollapseGroup(groupContentPanel, groupButton0, groupInitialHeight);
+    }//GEN-LAST:event_groupButton0ActionPerformed
 
-    private void adaptiveButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton15ActionPerformed
+    private void groupButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton1ActionPerformed
 		if (group1InitialHeight == -1)	//Do in fist call
 			group1InitialHeight = groupContentPanel1.getPreferredSize().height;		
-		CollapseGroup(groupContentPanel1, group1InitialHeight);
-    }//GEN-LAST:event_adaptiveButton15ActionPerformed
+		CollapseGroup(groupContentPanel1, groupButton1, group1InitialHeight);
+    }//GEN-LAST:event_groupButton1ActionPerformed
 
-    private void adaptiveButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton25ActionPerformed
+    private void groupButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton2ActionPerformed
 		if (group2InitialHeight == -1)	//Do in fist call
 			group2InitialHeight = groupContentPanel2.getPreferredSize().height;			
-		CollapseGroup(groupContentPanel2, group2InitialHeight);
-    }//GEN-LAST:event_adaptiveButton25ActionPerformed
+		CollapseGroup(groupContentPanel2, groupButton2, group2InitialHeight);
+    }//GEN-LAST:event_groupButton2ActionPerformed
           
     private void showInContentPanel (JPanel p) {
         contentPanel.removeAll();
@@ -561,20 +572,19 @@ public class ChatMainView extends javax.swing.JPanel {
         button.setSelected(true);
     }
     
-    private Dimension menuSize;
+    private Dimension	menuSize;
+	private String		collpaseAddImgPath;
+	private String		collapseSubImgPath;
 	
 	/*********************************************/
 	//Collapse control variables
-	int groupInitialHeight	= -1;
-	int group1InitialHeight	= -1;
-	int group2InitialHeight	= -1;
+	private int groupInitialHeight	= -1;
+	private int group1InitialHeight	= -1;
+	private int group2InitialHeight	= -1;
 	/*********************************************/
 	
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.panel.AdaptivePanel LeftCenterPanel;
-    private widgets.button.AdaptiveButton adaptiveButton15;
-    private widgets.button.AdaptiveButton adaptiveButton25;
-    private widgets.button.AdaptiveButton adaptiveButton5;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
@@ -593,6 +603,9 @@ public class ChatMainView extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel contactsPanel;
     private widgets.panel.AdaptivePanel contentPanel;
     private widgets.panel.AdaptivePanel gapPanel1;
+    private widgets.button.AdaptiveButton groupButton0;
+    private widgets.button.AdaptiveButton groupButton1;
+    private widgets.button.AdaptiveButton groupButton2;
     private widgets.button.AdaptiveButton groupContactsButton;
     private widgets.panel.AdaptivePanel groupContentPanel;
     private widgets.panel.AdaptivePanel groupContentPanel1;
