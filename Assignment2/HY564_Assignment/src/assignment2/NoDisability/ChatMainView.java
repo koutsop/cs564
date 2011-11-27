@@ -494,7 +494,7 @@ public class ChatMainView extends javax.swing.JPanel {
     }//GEN-LAST:event_myProfileButtonActionPerformed
 
     private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed
-        AddContact c = new AddContact(myParent);    
+        Groups c = new Groups(myParent);    
         myParent.removeAll();
         c.setVisible(true);
         myParent.add(c);
