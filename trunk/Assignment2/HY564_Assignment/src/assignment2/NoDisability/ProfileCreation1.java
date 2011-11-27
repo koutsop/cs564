@@ -13,8 +13,10 @@ package assignment2.NoDisability;
 import assignment2.Login1;
 import assignment2.Utility;
 import java.awt.Dimension;
+import javax.swing.ImageIcon;
 import pc.MainWindowPC;
 import utilities.Adaptation;
+import utilities.DMSLConnector;
 
 /**
  *
@@ -32,6 +34,14 @@ public class ProfileCreation1 extends javax.swing.JPanel {
         Utility.SetJComponentSize(this, parentSize);
 //        Utility.SetJComponentSize(westMainPanel, new Dimension(100, 50));
 //        Utility.SetJComponentSize(eastMainPanel, new Dimension(100, 50));
+         String path = DMSLConnector.getInstance().getClient(false).Evaluate("RefreshButton");
+        refreshButton.setIcon(new ImageIcon(getClass().getResource(path)));
+
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("ListenButton");
+        listenButton.setIcon(new ImageIcon(getClass().getResource(path)));
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("HelpButton");
+        helpButton.setIcon(new ImageIcon(getClass().getResource(path)));
     }
 
     /** This method is called from within the constructor to
@@ -104,10 +114,16 @@ public class ProfileCreation1 extends javax.swing.JPanel {
         adaptiveLabel17 = new widgets.label.AdaptiveLabel();
         adaptivePanel12 = new widgets.panel.AdaptivePanel();
         adaptiveTextField12 = new widgets.textfield.AdaptiveTextField();
-        adaptivePanel18 = new widgets.panel.AdaptivePanel();
         adaptivePanel28 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel15 = new widgets.label.AdaptiveLabel();
+        adaptivePanel18 = new widgets.panel.AdaptivePanel();
+        refreshButton = new widgets.button.AdaptiveButton();
+        listenButton = new widgets.button.AdaptiveButton();
+        helpButton = new widgets.button.AdaptiveButton();
         adaptivePanel29 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel14 = new widgets.label.AdaptiveLabel();
         adaptivePanel30 = new widgets.panel.AdaptivePanel();
+        adaptiveTextField4 = new widgets.textfield.AdaptiveTextField();
         buttonData = new widgets.panel.AdaptivePanel();
         confirmButton = new widgets.button.AdaptiveButton();
         eastPanel = new widgets.panel.AdaptivePanel();
@@ -381,18 +397,47 @@ public class ProfileCreation1 extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel12);
 
-        adaptivePanel18.setFunction("captchaImg");
-        adaptivePanel18.setName("Panel.Content.Captcha"); // NOI18N
-        adaptivePanel18.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
-        profileDataPanel.add(adaptivePanel18);
+        adaptivePanel28.setBackground(new java.awt.Color(153, 153, 153));
+        adaptivePanel28.setFunction("captchaImg");
+        adaptivePanel28.setName("Panel.Content.Captcha"); // NOI18N
 
-        adaptivePanel28.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+        adaptiveLabel15.setFont(new java.awt.Font("Swis721 BlkOul BT", 3, 24)); // NOI18N
+        adaptiveLabel15.setMaximumSize(new java.awt.Dimension(110, 30));
+        adaptiveLabel15.setPreferredSize(new java.awt.Dimension(110, 30));
+        adaptiveLabel15.setText("K9L3FJ");
+        adaptivePanel28.add(adaptiveLabel15);
+
         profileDataPanel.add(adaptivePanel28);
 
+        adaptivePanel18.setName(""); // NOI18N
+        adaptivePanel18.setLayout(new java.awt.GridLayout(1, 4, 20, 0));
+
+        refreshButton.setActionCommand("");
+        refreshButton.setFunction("");
+        refreshButton.setLabel("");
+        adaptivePanel18.add(refreshButton);
+
+        listenButton.setActionCommand("");
+        listenButton.setLabel("");
+        adaptivePanel18.add(listenButton);
+
+        helpButton.setActionCommand("");
+        helpButton.setLabel("");
+        adaptivePanel18.add(helpButton);
+
+        profileDataPanel.add(adaptivePanel18);
+
         adaptivePanel29.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveLabel14.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        adaptiveLabel14.setText("Εισάγετε εδώ το παραπάνω κείμενο");
+        adaptivePanel29.add(adaptiveLabel14);
+
         profileDataPanel.add(adaptivePanel29);
 
-        adaptivePanel30.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+        adaptivePanel30.setLayout(new javax.swing.BoxLayout(adaptivePanel30, javax.swing.BoxLayout.LINE_AXIS));
+        adaptivePanel30.add(adaptiveTextField4);
+
         profileDataPanel.add(adaptivePanel30);
 
         contentPanel.add(profileDataPanel, java.awt.BorderLayout.CENTER);
@@ -483,6 +528,8 @@ private void adaptiveTextField13ActionPerformed(java.awt.event.ActionEvent evt) 
     private widgets.label.AdaptiveLabel adaptiveLabel11;
     private widgets.label.AdaptiveLabel adaptiveLabel12;
     private widgets.label.AdaptiveLabel adaptiveLabel13;
+    private widgets.label.AdaptiveLabel adaptiveLabel14;
+    private widgets.label.AdaptiveLabel adaptiveLabel15;
     private widgets.label.AdaptiveLabel adaptiveLabel16;
     private widgets.label.AdaptiveLabel adaptiveLabel17;
     private widgets.label.AdaptiveLabel adaptiveLabel19;
@@ -530,14 +577,18 @@ private void adaptiveTextField13ActionPerformed(java.awt.event.ActionEvent evt) 
     private widgets.textfield.AdaptiveTextField adaptiveTextField13;
     private widgets.textfield.AdaptiveTextField adaptiveTextField2;
     private widgets.textfield.AdaptiveTextField adaptiveTextField3;
+    private widgets.textfield.AdaptiveTextField adaptiveTextField4;
     private widgets.textfield.AdaptiveTextField adaptiveTextField7;
     private widgets.textfield.AdaptiveTextField adaptiveTextField9;
     private widgets.panel.AdaptivePanel buttonData;
     private widgets.button.AdaptiveButton confirmButton;
     private widgets.panel.AdaptivePanel contentPanel;
     private widgets.panel.AdaptivePanel eastPanel;
+    private widgets.button.AdaptiveButton helpButton;
     private javax.swing.JScrollPane jScrollPane1;
+    private widgets.button.AdaptiveButton listenButton;
     private widgets.panel.AdaptivePanel profileDataPanel;
+    private widgets.button.AdaptiveButton refreshButton;
     private widgets.panel.AdaptivePanel topPanel;
     private widgets.panel.AdaptivePanel westPanel;
     // End of variables declaration//GEN-END:variables

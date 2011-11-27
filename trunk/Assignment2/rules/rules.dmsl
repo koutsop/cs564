@@ -331,7 +331,35 @@ component AcceptanceButton [
     else activate "/images/profile_no_disability/tick.png"
 ]
 
+component ListenButton [
+    if 	profile1 then activate "/images/profile_no_disability/help.png"
+    else activate "/images/profile_no_disability/help.png"
+]
+component HelpButton [
+    if 	profile1 then activate "/images/profile_no_disability/listen.gif"
+    else activate "/images/profile_no_disability/listen.gif"
+]
+component RefreshButton [
+    if 	profile1 then activate "/images/profile_no_disability/refresh.gif"
+    else activate "/images/profile_no_disability/refresh.gif"
+]
 
+component OfflineButton [
+    if 	profile1 then activate "/images/profile_no_disability/status_offline.png"
+    else activate "/images/profile_no_disability/status_offline.png"
+]
+component OnlineButton [
+    if 	profile1 then activate "/images/profile_no_disability/status_online.png"
+    else activate "/images/profile_no_disability/status_online.png"
+]
+component BusyButton [
+    if 	profile1 then activate "/images/profile_no_disability/status_busy.png"
+    else activate "/images/profile_no_disability/status_busy.png"
+]
+component AwayButton [
+    if 	profile1 then activate "/images/profile_no_disability/status_away.png"
+    else activate "/images/profile_no_disability/status_away.png"
+]
 
 component VideoCallButton [
     if 	profile1 then activate "/images/profile_no_disability/video_call.png"

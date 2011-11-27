@@ -11,7 +11,9 @@
 package assignment2;
 
 import java.awt.Dimension;
+import javax.swing.ImageIcon;
 import utilities.Adaptation;
+import utilities.DMSLConnector;
 
 /**
  *
@@ -26,6 +28,19 @@ public class MyProfile extends javax.swing.JPanel {
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         Utility.SetJComponentSize(this, parentSize);
+        
+        String path = DMSLConnector.getInstance().getClient(false).Evaluate("OnlineButton");
+        onlineButton.setIcon(new ImageIcon(getClass().getResource(path)));  
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("AwayButton");
+        awayButton.setIcon(new ImageIcon(getClass().getResource(path)));  
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("BusyButton");
+        busyButton.setIcon(new ImageIcon(getClass().getResource(path))); 
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("OfflineButton");
+        offlineButton.setIcon(new ImageIcon(getClass().getResource(path))); 
+        
     }
 
     /** This method is called from within the constructor to
@@ -104,7 +119,14 @@ public class MyProfile extends javax.swing.JPanel {
         profileImagePanel = new widgets.panel.AdaptivePanel();
         adaptivePanel29 = new widgets.panel.AdaptivePanel();
         adaptivePanel30 = new widgets.panel.AdaptivePanel();
+        adaptivePanel31 = new widgets.panel.AdaptivePanel();
         adaptiveButton3 = new widgets.button.AdaptiveButton();
+        adaptivePanel32 = new widgets.panel.AdaptivePanel();
+        onlineButton = new widgets.button.AdaptiveButton();
+        awayButton = new widgets.button.AdaptiveButton();
+        busyButton = new widgets.button.AdaptiveButton();
+        offlineButton = new widgets.button.AdaptiveButton();
+        adaptivePanel33 = new widgets.panel.AdaptivePanel();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -188,12 +210,15 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel4.setLayout(new javax.swing.BoxLayout(adaptivePanel4, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptiveComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        adaptiveComboBox2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         adaptivePanel4.add(adaptiveComboBox2);
 
         adaptiveComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05", "06", "07", "08", "09", "10", "11", "12", " " }));
+        adaptiveComboBox3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         adaptivePanel4.add(adaptiveComboBox3);
 
         adaptiveComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1984", "1990", "2000" }));
+        adaptiveComboBox4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
         adaptivePanel4.add(adaptiveComboBox4);
 
         profileDataPanel.add(adaptivePanel4);
@@ -368,7 +393,10 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel29.setLayout(new javax.swing.BoxLayout(adaptivePanel29, javax.swing.BoxLayout.LINE_AXIS));
         profileImagePanel.add(adaptivePanel29, java.awt.BorderLayout.WEST);
 
-        adaptivePanel30.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 15, 30));
+        adaptivePanel30.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        adaptivePanel30.setLayout(new javax.swing.BoxLayout(adaptivePanel30, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptivePanel31.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         adaptiveButton3.setText("Επιλογή Εικόνας");
         adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -376,7 +404,39 @@ public class MyProfile extends javax.swing.JPanel {
                 adaptiveButton3ActionPerformed(evt);
             }
         });
-        adaptivePanel30.add(adaptiveButton3);
+        adaptivePanel31.add(adaptiveButton3);
+
+        adaptivePanel30.add(adaptivePanel31);
+
+        adaptivePanel32.setLayout(new javax.swing.BoxLayout(adaptivePanel32, javax.swing.BoxLayout.LINE_AXIS));
+
+        onlineButton.setLabel("");
+        onlineButton.setSelected(true);
+        adaptivePanel32.add(onlineButton);
+
+        awayButton.setLabel("");
+        adaptivePanel32.add(awayButton);
+
+        busyButton.setLabel("");
+        adaptivePanel32.add(busyButton);
+
+        offlineButton.setLabel("");
+        adaptivePanel32.add(offlineButton);
+
+        javax.swing.GroupLayout adaptivePanel33Layout = new javax.swing.GroupLayout(adaptivePanel33);
+        adaptivePanel33.setLayout(adaptivePanel33Layout);
+        adaptivePanel33Layout.setHorizontalGroup(
+            adaptivePanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 380, Short.MAX_VALUE)
+        );
+        adaptivePanel33Layout.setVerticalGroup(
+            adaptivePanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        adaptivePanel32.add(adaptivePanel33);
+
+        adaptivePanel30.add(adaptivePanel32);
 
         profileImagePanel.add(adaptivePanel30, java.awt.BorderLayout.CENTER);
 
@@ -459,6 +519,9 @@ private void adaptiveComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {/
     private widgets.panel.AdaptivePanel adaptivePanel29;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel30;
+    private widgets.panel.AdaptivePanel adaptivePanel31;
+    private widgets.panel.AdaptivePanel adaptivePanel32;
+    private widgets.panel.AdaptivePanel adaptivePanel33;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;
@@ -473,11 +536,15 @@ private void adaptiveComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {/
     private widgets.textfield.AdaptiveTextField adaptiveTextField3;
     private widgets.textfield.AdaptiveTextField adaptiveTextField7;
     private widgets.textfield.AdaptiveTextField adaptiveTextField9;
+    private widgets.button.AdaptiveButton awayButton;
+    private widgets.button.AdaptiveButton busyButton;
     private widgets.panel.AdaptivePanel buttonData;
     private widgets.button.AdaptiveButton confirmButton;
     private widgets.panel.AdaptivePanel contentPanel;
     private widgets.panel.AdaptivePanel eastPanel;
     private javax.swing.JScrollPane jScrollPane1;
+    private widgets.button.AdaptiveButton offlineButton;
+    private widgets.button.AdaptiveButton onlineButton;
     private widgets.panel.AdaptivePanel profileDataPanel;
     private widgets.panel.AdaptivePanel profileImagePanel;
     // End of variables declaration//GEN-END:variables
