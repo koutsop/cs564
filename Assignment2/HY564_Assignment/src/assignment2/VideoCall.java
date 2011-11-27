@@ -82,8 +82,8 @@ public class VideoCall extends javax.swing.JPanel {
         sendVideoPanel.add(adaptivePanel1);
 
         sendVideoImagePanel.setAlignmentY(0.0F);
-        sendVideoImagePanel.setFunction("SendVideoImg");
-        sendVideoImagePanel.setName("Panel.SendVideoImage"); // NOI18N
+        sendVideoImagePanel.setFunction("MyProfileImg");
+        sendVideoImagePanel.setName("Panel.ProfileImage"); // NOI18N
         sendVideoImagePanel.setLayout(new javax.swing.BoxLayout(sendVideoImagePanel, javax.swing.BoxLayout.LINE_AXIS));
         sendVideoPanel.add(sendVideoImagePanel);
 
