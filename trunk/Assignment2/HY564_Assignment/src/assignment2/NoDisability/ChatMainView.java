@@ -74,7 +74,10 @@ public class ChatMainView extends javax.swing.JPanel {
         searchButton.setIcon(new ImageIcon(getClass().getResource(path))); 
         
         path = DMSLConnector.getInstance().getClient(false).Evaluate("RemoveButton");
-        removeContactButton.setIcon(new ImageIcon(getClass().getResource(path))); 
+        removeContactButton.setIcon(new ImageIcon(getClass().getResource(path)));  
+        
+        selectMenuButton(myProfileButton);
+        showPanel(new MyProfile(contentPanel.getPreferredSize()));
     }
 	
 	private void SetConactSizeImages () {
@@ -223,7 +226,7 @@ public class ChatMainView extends javax.swing.JPanel {
 
         tabPanel.setLayout(new java.awt.GridLayout(1, 3, 0, 30));
 
-        myProfileButton.setText("My Profile");
+        myProfileButton.setText("To προφίλ μου");
         myProfileButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 myProfileButtonActionPerformed(evt);
@@ -231,7 +234,7 @@ public class ChatMainView extends javax.swing.JPanel {
         });
         tabPanel.add(myProfileButton);
 
-        chatButton.setText("koutsop chat");
+        chatButton.setText("Επικοινωνία: Koutsop");
         chatButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chatButtonActionPerformed(evt);
@@ -239,7 +242,7 @@ public class ChatMainView extends javax.swing.JPanel {
         });
         tabPanel.add(chatButton);
 
-        videoCallButton.setText("koutsop Video Call");
+        videoCallButton.setText("Κλήση Βίντεο: koutsop");
         videoCallButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 videoCallButtonActionPerformed(evt);
@@ -247,7 +250,7 @@ public class ChatMainView extends javax.swing.JPanel {
         });
         tabPanel.add(videoCallButton);
 
-        callButton.setText("koutsop Call");
+        callButton.setText("Κλήση: koutsop");
         callButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 callButtonActionPerformed(evt);

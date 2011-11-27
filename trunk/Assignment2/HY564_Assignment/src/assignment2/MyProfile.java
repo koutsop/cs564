@@ -12,6 +12,7 @@ package assignment2;
 
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
+import pc.MainWindowPC;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
 
@@ -41,6 +42,11 @@ public class MyProfile extends javax.swing.JPanel {
         path = DMSLConnector.getInstance().getClient(false).Evaluate("OfflineButton");
         offlineButton.setIcon(new ImageIcon(getClass().getResource(path))); 
         
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("CancelButton");
+        cancelButton.setIcon(new ImageIcon(getClass().getResource(path)));
+
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("AcceptanceButton");
+        acceptanceButton.setIcon(new ImageIcon(getClass().getResource(path)));
     }
 
     /** This method is called from within the constructor to
@@ -114,7 +120,11 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel12 = new widgets.panel.AdaptivePanel();
         adaptiveTextField12 = new widgets.textfield.AdaptiveTextField();
         buttonData = new widgets.panel.AdaptivePanel();
-        confirmButton = new widgets.button.AdaptiveButton();
+        adaptivePanel34 = new widgets.panel.AdaptivePanel();
+        acceptanceButton = new widgets.button.AdaptiveButton();
+        adaptivePanel35 = new widgets.panel.AdaptivePanel();
+        cancelButton = new widgets.button.AdaptiveButton();
+        adaptivePanel36 = new widgets.panel.AdaptivePanel();
         eastPanel = new widgets.panel.AdaptivePanel();
         profileImagePanel = new widgets.panel.AdaptivePanel();
         adaptivePanel29 = new widgets.panel.AdaptivePanel();
@@ -210,15 +220,15 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel4.setLayout(new javax.swing.BoxLayout(adaptivePanel4, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptiveComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        adaptiveComboBox2.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        adaptiveComboBox2.setFont(new java.awt.Font("Tahoma", 0, 8));
         adaptivePanel4.add(adaptiveComboBox2);
 
         adaptiveComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05", "06", "07", "08", "09", "10", "11", "12", " " }));
-        adaptiveComboBox3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        adaptiveComboBox3.setFont(new java.awt.Font("Tahoma", 0, 8));
         adaptivePanel4.add(adaptiveComboBox3);
 
         adaptiveComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1984", "1990", "2000" }));
-        adaptiveComboBox4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        adaptiveComboBox4.setFont(new java.awt.Font("Tahoma", 0, 8));
         adaptivePanel4.add(adaptiveComboBox4);
 
         profileDataPanel.add(adaptivePanel4);
@@ -360,13 +370,65 @@ public class MyProfile extends javax.swing.JPanel {
 
         contentPanel.add(profileDataPanel, java.awt.BorderLayout.CENTER);
 
-        confirmButton.setText("Αποθήκευση");
-        confirmButton.addActionListener(new java.awt.event.ActionListener() {
+        buttonData.setLayout(new javax.swing.BoxLayout(buttonData, javax.swing.BoxLayout.LINE_AXIS));
+
+        javax.swing.GroupLayout adaptivePanel34Layout = new javax.swing.GroupLayout(adaptivePanel34);
+        adaptivePanel34.setLayout(adaptivePanel34Layout);
+        adaptivePanel34Layout.setHorizontalGroup(
+            adaptivePanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 222, Short.MAX_VALUE)
+        );
+        adaptivePanel34Layout.setVerticalGroup(
+            adaptivePanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
+        );
+
+        buttonData.add(adaptivePanel34);
+
+        acceptanceButton.setText("Αποθήκευση");
+        acceptanceButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                confirmButtonActionPerformed(evt);
+                acceptanceButtonActionPerformed(evt);
             }
         });
-        buttonData.add(confirmButton);
+        buttonData.add(acceptanceButton);
+
+        adaptivePanel35.setMaximumSize(new java.awt.Dimension(30, 30));
+        adaptivePanel35.setMinimumSize(new java.awt.Dimension(30, 30));
+
+        javax.swing.GroupLayout adaptivePanel35Layout = new javax.swing.GroupLayout(adaptivePanel35);
+        adaptivePanel35.setLayout(adaptivePanel35Layout);
+        adaptivePanel35Layout.setHorizontalGroup(
+            adaptivePanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+        adaptivePanel35Layout.setVerticalGroup(
+            adaptivePanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+
+        buttonData.add(adaptivePanel35);
+
+        cancelButton.setText("Ακύρωση");
+        cancelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelButtonActionPerformed(evt);
+            }
+        });
+        buttonData.add(cancelButton);
+
+        javax.swing.GroupLayout adaptivePanel36Layout = new javax.swing.GroupLayout(adaptivePanel36);
+        adaptivePanel36.setLayout(adaptivePanel36Layout);
+        adaptivePanel36Layout.setHorizontalGroup(
+            adaptivePanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 222, Short.MAX_VALUE)
+        );
+        adaptivePanel36Layout.setVerticalGroup(
+            adaptivePanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
+        );
+
+        buttonData.add(adaptivePanel36);
 
         contentPanel.add(buttonData, java.awt.BorderLayout.SOUTH);
 
@@ -374,7 +436,7 @@ public class MyProfile extends javax.swing.JPanel {
         eastPanel.setLayout(eastPanelLayout);
         eastPanelLayout.setHorizontalGroup(
             eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 264, Short.MAX_VALUE)
+            .addGap(0, 73, Short.MAX_VALUE)
         );
         eastPanelLayout.setVerticalGroup(
             eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -410,17 +472,10 @@ public class MyProfile extends javax.swing.JPanel {
 
         adaptivePanel32.setLayout(new javax.swing.BoxLayout(adaptivePanel32, javax.swing.BoxLayout.LINE_AXIS));
 
-        onlineButton.setLabel("");
         onlineButton.setSelected(true);
         adaptivePanel32.add(onlineButton);
-
-        awayButton.setLabel("");
         adaptivePanel32.add(awayButton);
-
-        busyButton.setLabel("");
         adaptivePanel32.add(busyButton);
-
-        offlineButton.setLabel("");
         adaptivePanel32.add(offlineButton);
 
         javax.swing.GroupLayout adaptivePanel33Layout = new javax.swing.GroupLayout(adaptivePanel33);
@@ -463,15 +518,20 @@ private void adaptiveTextField3ActionPerformed(java.awt.event.ActionEvent evt) {
 // TODO add your handling code here:
 }//GEN-LAST:event_adaptiveTextField3ActionPerformed
 
-private void confirmButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmButtonActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_confirmButtonActionPerformed
-
 private void adaptiveComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveComboBox8ActionPerformed
 // TODO add your handling code here:
 }//GEN-LAST:event_adaptiveComboBox8ActionPerformed
 
+private void acceptanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptanceButtonActionPerformed
+       
+}//GEN-LAST:event_acceptanceButtonActionPerformed
+
+private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
+
+}//GEN-LAST:event_cancelButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.button.AdaptiveButton acceptanceButton;
     private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox1;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox2;
@@ -522,6 +582,9 @@ private void adaptiveComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {/
     private widgets.panel.AdaptivePanel adaptivePanel31;
     private widgets.panel.AdaptivePanel adaptivePanel32;
     private widgets.panel.AdaptivePanel adaptivePanel33;
+    private widgets.panel.AdaptivePanel adaptivePanel34;
+    private widgets.panel.AdaptivePanel adaptivePanel35;
+    private widgets.panel.AdaptivePanel adaptivePanel36;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;
@@ -539,7 +602,7 @@ private void adaptiveComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {/
     private widgets.button.AdaptiveButton awayButton;
     private widgets.button.AdaptiveButton busyButton;
     private widgets.panel.AdaptivePanel buttonData;
-    private widgets.button.AdaptiveButton confirmButton;
+    private widgets.button.AdaptiveButton cancelButton;
     private widgets.panel.AdaptivePanel contentPanel;
     private widgets.panel.AdaptivePanel eastPanel;
     private javax.swing.JScrollPane jScrollPane1;
