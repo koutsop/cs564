@@ -60,6 +60,17 @@ public class MyProfile extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         contentPanel = new widgets.panel.AdaptivePanel();
+        profileImagePanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel29 = new widgets.panel.AdaptivePanel();
+        adaptivePanel30 = new widgets.panel.AdaptivePanel();
+        adaptivePanel31 = new widgets.panel.AdaptivePanel();
+        adaptiveButton3 = new widgets.button.AdaptiveButton();
+        adaptivePanel32 = new widgets.panel.AdaptivePanel();
+        onlineButton = new widgets.button.AdaptiveButton();
+        awayButton = new widgets.button.AdaptiveButton();
+        busyButton = new widgets.button.AdaptiveButton();
+        offlineButton = new widgets.button.AdaptiveButton();
+        adaptivePanel37 = new widgets.panel.AdaptivePanel();
         profileDataPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel18 = new widgets.panel.AdaptivePanel();
         adaptiveLabel13 = new widgets.label.AdaptiveLabel();
@@ -125,23 +136,57 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel35 = new widgets.panel.AdaptivePanel();
         cancelButton = new widgets.button.AdaptiveButton();
         adaptivePanel36 = new widgets.panel.AdaptivePanel();
-        eastPanel = new widgets.panel.AdaptivePanel();
-        profileImagePanel = new widgets.panel.AdaptivePanel();
-        adaptivePanel29 = new widgets.panel.AdaptivePanel();
-        adaptivePanel30 = new widgets.panel.AdaptivePanel();
-        adaptivePanel31 = new widgets.panel.AdaptivePanel();
-        adaptiveButton3 = new widgets.button.AdaptiveButton();
-        adaptivePanel32 = new widgets.panel.AdaptivePanel();
-        onlineButton = new widgets.button.AdaptiveButton();
-        awayButton = new widgets.button.AdaptiveButton();
-        busyButton = new widgets.button.AdaptiveButton();
-        offlineButton = new widgets.button.AdaptiveButton();
-        adaptivePanel33 = new widgets.panel.AdaptivePanel();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
+        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
         contentPanel.setLayout(new java.awt.BorderLayout());
 
+        profileImagePanel.setLayout(new java.awt.BorderLayout());
+
+        adaptivePanel29.setFunction("koutsopImg");
+        adaptivePanel29.setMaximumSize(new java.awt.Dimension(100, 100));
+        adaptivePanel29.setMinimumSize(new java.awt.Dimension(100, 100));
+        adaptivePanel29.setName("Panel.Content.KoutsopImage"); // NOI18N
+        adaptivePanel29.setPreferredSize(new java.awt.Dimension(100, 100));
+        adaptivePanel29.setLayout(new javax.swing.BoxLayout(adaptivePanel29, javax.swing.BoxLayout.LINE_AXIS));
+        profileImagePanel.add(adaptivePanel29, java.awt.BorderLayout.WEST);
+
+        adaptivePanel30.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        adaptivePanel30.setLayout(new javax.swing.BoxLayout(adaptivePanel30, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptivePanel31.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        adaptiveButton3.setText("Επιλογή Εικόνας");
+        adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton3ActionPerformed(evt);
+            }
+        });
+        adaptivePanel31.add(adaptiveButton3);
+
+        adaptivePanel30.add(adaptivePanel31);
+
+        adaptivePanel32.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        onlineButton.setSelected(true);
+        adaptivePanel32.add(onlineButton);
+        adaptivePanel32.add(awayButton);
+        adaptivePanel32.add(busyButton);
+        adaptivePanel32.add(offlineButton);
+
+        adaptivePanel30.add(adaptivePanel32);
+
+        profileImagePanel.add(adaptivePanel30, java.awt.BorderLayout.CENTER);
+
+        contentPanel.add(profileImagePanel, java.awt.BorderLayout.NORTH);
+
+        adaptivePanel37.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        profileDataPanel.setMaximumSize(new java.awt.Dimension(400, 600));
+        profileDataPanel.setMinimumSize(new java.awt.Dimension(400, 600));
+        profileDataPanel.setPreferredSize(new java.awt.Dimension(400, 600));
         profileDataPanel.setLayout(new java.awt.GridLayout(14, 2, 0, 10));
 
         adaptivePanel18.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
@@ -368,7 +413,9 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel12);
 
-        contentPanel.add(profileDataPanel, java.awt.BorderLayout.CENTER);
+        adaptivePanel37.add(profileDataPanel);
+
+        contentPanel.add(adaptivePanel37, java.awt.BorderLayout.CENTER);
 
         buttonData.setLayout(new javax.swing.BoxLayout(buttonData, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -431,71 +478,6 @@ public class MyProfile extends javax.swing.JPanel {
         buttonData.add(adaptivePanel36);
 
         contentPanel.add(buttonData, java.awt.BorderLayout.SOUTH);
-
-        javax.swing.GroupLayout eastPanelLayout = new javax.swing.GroupLayout(eastPanel);
-        eastPanel.setLayout(eastPanelLayout);
-        eastPanelLayout.setHorizontalGroup(
-            eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 73, Short.MAX_VALUE)
-        );
-        eastPanelLayout.setVerticalGroup(
-            eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 770, Short.MAX_VALUE)
-        );
-
-        contentPanel.add(eastPanel, java.awt.BorderLayout.EAST);
-
-        profileImagePanel.setLayout(new java.awt.BorderLayout());
-
-        adaptivePanel29.setFunction("koutsopImg");
-        adaptivePanel29.setMaximumSize(new java.awt.Dimension(100, 100));
-        adaptivePanel29.setMinimumSize(new java.awt.Dimension(100, 100));
-        adaptivePanel29.setName("Panel.Content.KoutsopImage"); // NOI18N
-        adaptivePanel29.setPreferredSize(new java.awt.Dimension(100, 100));
-        adaptivePanel29.setLayout(new javax.swing.BoxLayout(adaptivePanel29, javax.swing.BoxLayout.LINE_AXIS));
-        profileImagePanel.add(adaptivePanel29, java.awt.BorderLayout.WEST);
-
-        adaptivePanel30.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        adaptivePanel30.setLayout(new javax.swing.BoxLayout(adaptivePanel30, javax.swing.BoxLayout.PAGE_AXIS));
-
-        adaptivePanel31.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
-
-        adaptiveButton3.setText("Επιλογή Εικόνας");
-        adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton3ActionPerformed(evt);
-            }
-        });
-        adaptivePanel31.add(adaptiveButton3);
-
-        adaptivePanel30.add(adaptivePanel31);
-
-        adaptivePanel32.setLayout(new javax.swing.BoxLayout(adaptivePanel32, javax.swing.BoxLayout.LINE_AXIS));
-
-        onlineButton.setSelected(true);
-        adaptivePanel32.add(onlineButton);
-        adaptivePanel32.add(awayButton);
-        adaptivePanel32.add(busyButton);
-        adaptivePanel32.add(offlineButton);
-
-        javax.swing.GroupLayout adaptivePanel33Layout = new javax.swing.GroupLayout(adaptivePanel33);
-        adaptivePanel33.setLayout(adaptivePanel33Layout);
-        adaptivePanel33Layout.setHorizontalGroup(
-            adaptivePanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 380, Short.MAX_VALUE)
-        );
-        adaptivePanel33Layout.setVerticalGroup(
-            adaptivePanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        adaptivePanel32.add(adaptivePanel33);
-
-        adaptivePanel30.add(adaptivePanel32);
-
-        profileImagePanel.add(adaptivePanel30, java.awt.BorderLayout.CENTER);
-
-        contentPanel.add(profileImagePanel, java.awt.BorderLayout.NORTH);
 
         jScrollPane1.setViewportView(contentPanel);
 
@@ -581,10 +563,10 @@ private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
     private widgets.panel.AdaptivePanel adaptivePanel30;
     private widgets.panel.AdaptivePanel adaptivePanel31;
     private widgets.panel.AdaptivePanel adaptivePanel32;
-    private widgets.panel.AdaptivePanel adaptivePanel33;
     private widgets.panel.AdaptivePanel adaptivePanel34;
     private widgets.panel.AdaptivePanel adaptivePanel35;
     private widgets.panel.AdaptivePanel adaptivePanel36;
+    private widgets.panel.AdaptivePanel adaptivePanel37;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;
@@ -604,7 +586,6 @@ private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
     private widgets.panel.AdaptivePanel buttonData;
     private widgets.button.AdaptiveButton cancelButton;
     private widgets.panel.AdaptivePanel contentPanel;
-    private widgets.panel.AdaptivePanel eastPanel;
     private javax.swing.JScrollPane jScrollPane1;
     private widgets.button.AdaptiveButton offlineButton;
     private widgets.button.AdaptiveButton onlineButton;
