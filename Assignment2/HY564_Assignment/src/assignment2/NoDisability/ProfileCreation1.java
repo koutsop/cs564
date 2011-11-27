@@ -14,16 +14,22 @@ import assignment2.Login1;
 import assignment2.Utility;
 import java.awt.Dimension;
 import pc.MainWindowPC;
+import utilities.Adaptation;
 
 /**
  *
  * @author koutsop
  */
 public class ProfileCreation1 extends javax.swing.JPanel {
+   
 
     /** Creates new form ProfileCreation */
-    public ProfileCreation1() {
+   public ProfileCreation1(Dimension parentSize) {
+    
         initComponents();
+       Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);
+        Utility.SetJComponentSize(this, parentSize);
 //        Utility.SetJComponentSize(westMainPanel, new Dimension(100, 50));
 //        Utility.SetJComponentSize(eastMainPanel, new Dimension(100, 50));
     }
@@ -41,248 +47,434 @@ public class ProfileCreation1 extends javax.swing.JPanel {
         adaptiveComboBox1 = new widgets.combobox.AdaptiveComboBox();
         adaptiveLabel7 = new widgets.label.AdaptiveLabel();
         adaptiveComboBox2 = new widgets.combobox.AdaptiveComboBox();
-        centerMainPanel = new widgets.panel.AdaptivePanel();
-        profilePanel = new widgets.panel.AdaptivePanel();
-        adaptivePanel2 = new widgets.panel.AdaptivePanel();
-        adaptiveLabel10 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel11 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel12 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel13 = new widgets.label.AdaptiveLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        contentPanel = new widgets.panel.AdaptivePanel();
+        profileDataPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel14 = new widgets.panel.AdaptivePanel();
         adaptiveLabel1 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel2 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel3 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel6 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel8 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel9 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel14 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel16 = new widgets.label.AdaptiveLabel();
-        adaptiveLabel15 = new widgets.label.AdaptiveLabel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
+        adaptiveTextField1 = new widgets.textfield.AdaptiveTextField();
+        adaptivePanel15 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel2 = new widgets.label.AdaptiveLabel();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        adaptiveTextField2 = new widgets.textfield.AdaptiveTextField();
+        adaptivePanel16 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel3 = new widgets.label.AdaptiveLabel();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptiveTextField3 = new widgets.textfield.AdaptiveTextField();
-        adaptiveTextField4 = new widgets.textfield.AdaptiveTextField();
-        adaptiveTextField5 = new widgets.textfield.AdaptiveTextField();
-        adaptiveTextField6 = new widgets.textfield.AdaptiveTextField();
-        adaptivePanel6 = new widgets.panel.AdaptivePanel();
+        adaptivePanel17 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel4 = new widgets.label.AdaptiveLabel();
+        adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptiveComboBox3 = new widgets.combobox.AdaptiveComboBox();
-        adaptiveComboBox8 = new widgets.combobox.AdaptiveComboBox();
-        adaptiveComboBox9 = new widgets.combobox.AdaptiveComboBox();
         adaptiveComboBox4 = new widgets.combobox.AdaptiveComboBox();
         adaptiveComboBox5 = new widgets.combobox.AdaptiveComboBox();
-        adaptiveTextField1 = new widgets.textfield.AdaptiveTextField();
-        adaptiveComboBox7 = new widgets.combobox.AdaptiveComboBox();
-        adaptiveComboBox10 = new widgets.combobox.AdaptiveComboBox();
+        adaptivePanel21 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel6 = new widgets.label.AdaptiveLabel();
+        adaptivePanel5 = new widgets.panel.AdaptivePanel();
+        adaptiveComboBox9 = new widgets.combobox.AdaptiveComboBox();
+        adaptivePanel22 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel8 = new widgets.label.AdaptiveLabel();
+        adaptivePanel6 = new widgets.panel.AdaptivePanel();
+        adaptiveComboBox6 = new widgets.combobox.AdaptiveComboBox();
+        adaptivePanel23 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel9 = new widgets.label.AdaptiveLabel();
+        adaptivePanel7 = new widgets.panel.AdaptivePanel();
         adaptiveTextField7 = new widgets.textfield.AdaptiveTextField();
+        adaptivePanel24 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel10 = new widgets.label.AdaptiveLabel();
+        adaptivePanel8 = new widgets.panel.AdaptivePanel();
+        adaptiveComboBox7 = new widgets.combobox.AdaptiveComboBox();
+        adaptivePanel25 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel11 = new widgets.label.AdaptiveLabel();
+        adaptivePanel9 = new widgets.panel.AdaptivePanel();
         adaptiveTextField9 = new widgets.textfield.AdaptiveTextField();
-        adaptiveTextField8 = new widgets.textfield.AdaptiveTextField();
-        captchaPanel = new widgets.panel.AdaptivePanel();
-        submitPanel = new widgets.panel.AdaptivePanel();
-        adaptivePanel4 = new widgets.panel.AdaptivePanel();
-        adaptiveCheckBox1 = new widgets.checkbox.AdaptiveCheckBox();
+        adaptivePanel13 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel19 = new widgets.label.AdaptiveLabel();
+        adaptivePanel27 = new widgets.panel.AdaptivePanel();
+        adaptiveComboBox8 = new widgets.combobox.AdaptiveComboBox();
+        adaptivePanel26 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel12 = new widgets.label.AdaptiveLabel();
+        adaptivePanel10 = new widgets.panel.AdaptivePanel();
+        adaptiveTextField13 = new widgets.textfield.AdaptiveTextField();
+        adaptivePanel20 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel16 = new widgets.label.AdaptiveLabel();
         adaptivePanel11 = new widgets.panel.AdaptivePanel();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
+        adaptiveTextField11 = new widgets.textfield.AdaptiveTextField();
+        adaptivePanel19 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel17 = new widgets.label.AdaptiveLabel();
+        adaptivePanel12 = new widgets.panel.AdaptivePanel();
+        adaptiveTextField12 = new widgets.textfield.AdaptiveTextField();
+        adaptivePanel18 = new widgets.panel.AdaptivePanel();
+        adaptivePanel28 = new widgets.panel.AdaptivePanel();
+        adaptivePanel29 = new widgets.panel.AdaptivePanel();
+        adaptivePanel30 = new widgets.panel.AdaptivePanel();
+        buttonData = new widgets.panel.AdaptivePanel();
+        confirmButton = new widgets.button.AdaptiveButton();
+        eastPanel = new widgets.panel.AdaptivePanel();
+        westPanel = new widgets.panel.AdaptivePanel();
+        topPanel = new widgets.panel.AdaptivePanel();
+        adaptiveLabel13 = new widgets.label.AdaptiveLabel();
 
         adaptiveLabel5.setText("adaptiveLabel5");
 
         adaptiveLabel7.setText("adaptiveLabel7");
 
-        setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 100, 10, 100));
-        setMaximumSize(new java.awt.Dimension(1000, 720));
-        setPreferredSize(new java.awt.Dimension(1000, 720));
-        setLayout(new java.awt.BorderLayout());
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
-        centerMainPanel.setMinimumSize(new java.awt.Dimension(800, 720));
-        centerMainPanel.setPreferredSize(new java.awt.Dimension(800, 720));
-        centerMainPanel.setLayout(new javax.swing.BoxLayout(centerMainPanel, javax.swing.BoxLayout.PAGE_AXIS));
+        contentPanel.setLayout(new java.awt.BorderLayout());
 
-        profilePanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 1, 5, 1));
-        profilePanel.setMinimumSize(new java.awt.Dimension(175, 20));
-        profilePanel.setPreferredSize(new java.awt.Dimension(375, 700));
-        profilePanel.setLayout(new java.awt.BorderLayout(10, 10));
+        profileDataPanel.setLayout(new java.awt.GridLayout(16, 2, 0, 10));
 
-        adaptivePanel2.setMinimumSize(new java.awt.Dimension(73, 132));
-        adaptivePanel2.setPreferredSize(new java.awt.Dimension(150, 200));
-        adaptivePanel2.setLayout(new java.awt.GridLayout(13, 1, 10, 10));
+        adaptivePanel14.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel10.setText("Όνομα*");
-        adaptivePanel2.add(adaptiveLabel10);
+        adaptiveLabel1.setText("Όνομα");
+        adaptivePanel14.add(adaptiveLabel1);
 
-        adaptiveLabel11.setText("Επίθετο*");
-        adaptivePanel2.add(adaptiveLabel11);
+        profileDataPanel.add(adaptivePanel14);
 
-        adaptiveLabel12.setText("E-mail*");
-        adaptivePanel2.add(adaptiveLabel12);
+        adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveLabel13.setText("Επιβεβαίωση e-mail");
-        adaptivePanel2.add(adaptiveLabel13);
-
-        adaptiveLabel1.setText("Ημ/νία γέννησης");
-        adaptivePanel2.add(adaptiveLabel1);
-
-        adaptiveLabel2.setText("Φύλο*");
-        adaptivePanel2.add(adaptiveLabel2);
-
-        adaptiveLabel3.setText("Χώρα*");
-        adaptivePanel2.add(adaptiveLabel3);
-
-        adaptiveLabel6.setText("Πόλη*");
-        adaptivePanel2.add(adaptiveLabel6);
-
-        adaptiveLabel8.setText("Γλώσσα*");
-        adaptivePanel2.add(adaptiveLabel8);
-
-        adaptiveLabel9.setText("Είδος αναπηρίας (αν υπάρχει)");
-        adaptivePanel2.add(adaptiveLabel9);
-
-        adaptiveLabel14.setText("Όνομα ΙΜ*");
-        adaptivePanel2.add(adaptiveLabel14);
-
-        adaptiveLabel16.setText("Κωδικός*");
-        adaptivePanel2.add(adaptiveLabel16);
-
-        adaptiveLabel15.setText("Επανάληψη κωδικού*");
-        adaptivePanel2.add(adaptiveLabel15);
-
-        profilePanel.add(adaptivePanel2, java.awt.BorderLayout.WEST);
-        adaptivePanel2.getAccessibleContext().setAccessibleDescription("");
-
-        adaptivePanel1.setLayout(new java.awt.GridLayout(13, 1, 10, 10));
-        adaptivePanel1.add(adaptiveTextField3);
-
-        adaptiveTextField4.addActionListener(new java.awt.event.ActionListener() {
+        adaptiveTextField1.setText("Νικόλαος");
+        adaptiveTextField1.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField1.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField1.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField4ActionPerformed(evt);
+                adaptiveTextField1ActionPerformed(evt);
             }
         });
-        adaptivePanel1.add(adaptiveTextField4);
-        adaptivePanel1.add(adaptiveTextField5);
-
-        adaptiveTextField6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField6ActionPerformed(evt);
-            }
-        });
-        adaptivePanel1.add(adaptiveTextField6);
-
-        adaptivePanel6.setPreferredSize(new java.awt.Dimension(213, 20));
-        adaptivePanel6.setLayout(new java.awt.GridLayout(1, 0, 3, 0));
-
-        adaptiveComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "HH", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        adaptivePanel6.add(adaptiveComboBox3);
-
-        adaptiveComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "MM", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12" }));
-        adaptivePanel6.add(adaptiveComboBox8);
-
-        adaptiveComboBox9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "XX", "50", "60", "70", "80", "90", "00" }));
-        adaptivePanel6.add(adaptiveComboBox9);
-
-        adaptivePanel1.add(adaptivePanel6);
-
-        adaptiveComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Επιλέξτε", "Γυναίκα", "Άνδρας" }));
-        adaptivePanel1.add(adaptiveComboBox4);
-
-        adaptiveComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ελλάδα", "Γαλλία", "Ιταλία", "Ισπανία", "Ηνωμένο Βασίλειο" }));
-        adaptivePanel1.add(adaptiveComboBox5);
         adaptivePanel1.add(adaptiveTextField1);
 
-        adaptiveComboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ελληνικά", "Αγγλικά", "Γαλλικά", "Ιταλικά", "Ισπανικά", " " }));
-        adaptivePanel1.add(adaptiveComboBox7);
+        profileDataPanel.add(adaptivePanel1);
 
-        adaptiveComboBox10.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Δεν υπάρχει", "Προβλήματα όρασης", "Αχρωματοψία", "Αστάθια στα άνω άκρα" }));
-        adaptivePanel1.add(adaptiveComboBox10);
+        adaptivePanel15.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveTextField7.addActionListener(new java.awt.event.ActionListener() {
+        adaptiveLabel2.setText("Επώνυμο");
+        adaptivePanel15.add(adaptiveLabel2);
+
+        profileDataPanel.add(adaptivePanel15);
+
+        adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveTextField2.setText("Κουτσόπουλος");
+        adaptiveTextField2.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField2.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField2.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField7ActionPerformed(evt);
+                adaptiveTextField2ActionPerformed(evt);
             }
         });
-        adaptivePanel1.add(adaptiveTextField7);
-        adaptivePanel1.add(adaptiveTextField9);
+        adaptivePanel2.add(adaptiveTextField2);
 
-        adaptiveTextField8.addActionListener(new java.awt.event.ActionListener() {
+        profileDataPanel.add(adaptivePanel2);
+
+        adaptivePanel16.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveLabel3.setText("Ε-mail");
+        adaptivePanel16.add(adaptiveLabel3);
+
+        profileDataPanel.add(adaptivePanel16);
+
+        adaptivePanel3.setLayout(new javax.swing.BoxLayout(adaptivePanel3, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveTextField3.setText("koutsop@gmal.com");
+        adaptiveTextField3.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField3.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField3.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField8ActionPerformed(evt);
+                adaptiveTextField3ActionPerformed(evt);
             }
         });
-        adaptivePanel1.add(adaptiveTextField8);
+        adaptivePanel3.add(adaptiveTextField3);
 
-        profilePanel.add(adaptivePanel1, java.awt.BorderLayout.CENTER);
+        profileDataPanel.add(adaptivePanel3);
 
-        centerMainPanel.add(profilePanel);
+        adaptivePanel17.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        captchaPanel.setFunction("captchaImg");
-        captchaPanel.setMaximumSize(new java.awt.Dimension(300, 100));
-        captchaPanel.setMinimumSize(new java.awt.Dimension(300, 100));
-        captchaPanel.setName("Panel.Image.Captcha"); // NOI18N
-        captchaPanel.setPreferredSize(new java.awt.Dimension(300, 100));
-        captchaPanel.setLayout(new javax.swing.BoxLayout(captchaPanel, javax.swing.BoxLayout.LINE_AXIS));
-        centerMainPanel.add(captchaPanel);
+        adaptiveLabel4.setText("Ημερομηνίας Γέννησης  ");
+        adaptivePanel17.add(adaptiveLabel4);
 
-        submitPanel.setMaximumSize(new java.awt.Dimension(800, 56));
-        submitPanel.setMinimumSize(new java.awt.Dimension(800, 56));
-        submitPanel.setPreferredSize(new java.awt.Dimension(800, 100));
-        submitPanel.setLayout(new java.awt.GridLayout(2, 1, 10, 10));
+        profileDataPanel.add(adaptivePanel17);
 
-        adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        adaptivePanel4.setLayout(new javax.swing.BoxLayout(adaptivePanel4, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveCheckBox1.setText("Έχω διαβάσει και αποδέχομαι τους όρους χρήσης του ΙΜ");
-        adaptiveCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+        adaptiveComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ΗΗ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
+        adaptiveComboBox3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        adaptiveComboBox3.setMaximumSize(new java.awt.Dimension(60, 40));
+        adaptiveComboBox3.setMinimumSize(new java.awt.Dimension(60, 40));
+        adaptiveComboBox3.setPreferredSize(new java.awt.Dimension(60, 40));
+        adaptivePanel4.add(adaptiveComboBox3);
+
+        adaptiveComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ΜΜ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", " " }));
+        adaptiveComboBox4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        adaptiveComboBox4.setMaximumSize(new java.awt.Dimension(60, 40));
+        adaptiveComboBox4.setMinimumSize(new java.awt.Dimension(60, 40));
+        adaptiveComboBox4.setPreferredSize(new java.awt.Dimension(60, 40));
+        adaptivePanel4.add(adaptiveComboBox4);
+
+        adaptiveComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ΧΧΧΧ", "1950", "1960", "1970", "1980", "1990", "2000" }));
+        adaptiveComboBox5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        adaptiveComboBox5.setMaximumSize(new java.awt.Dimension(80, 40));
+        adaptiveComboBox5.setMinimumSize(new java.awt.Dimension(80, 40));
+        adaptiveComboBox5.setPreferredSize(new java.awt.Dimension(80, 40));
+        adaptivePanel4.add(adaptiveComboBox5);
+
+        profileDataPanel.add(adaptivePanel4);
+
+        adaptivePanel21.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveLabel6.setText("Φύλλο  ");
+        adaptivePanel21.add(adaptiveLabel6);
+
+        profileDataPanel.add(adaptivePanel21);
+
+        adaptivePanel5.setLayout(new javax.swing.BoxLayout(adaptivePanel5, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveComboBox9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Επιλέξτε", "Άνδρας", "Γυναίκα" }));
+        adaptiveComboBox9.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox9.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox9.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptivePanel5.add(adaptiveComboBox9);
+
+        profileDataPanel.add(adaptivePanel5);
+
+        adaptivePanel22.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveLabel8.setText("Χώρα ");
+        adaptivePanel22.add(adaptiveLabel8);
+
+        profileDataPanel.add(adaptivePanel22);
+
+        adaptivePanel6.setLayout(new javax.swing.BoxLayout(adaptivePanel6, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveComboBox6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ελλάδα", "Γαλλία", "Γερμανία", "Ηνωμένο Βασίλειο", "Ιταλία", "Ισπανία" }));
+        adaptiveComboBox6.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox6.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox6.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptivePanel6.add(adaptiveComboBox6);
+
+        profileDataPanel.add(adaptivePanel6);
+
+        adaptivePanel23.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveLabel9.setText("Πόλη ");
+        adaptivePanel23.add(adaptiveLabel9);
+
+        profileDataPanel.add(adaptivePanel23);
+
+        adaptivePanel7.setLayout(new javax.swing.BoxLayout(adaptivePanel7, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveTextField7.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField7.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField7.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptivePanel7.add(adaptiveTextField7);
+
+        profileDataPanel.add(adaptivePanel7);
+
+        adaptivePanel24.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveLabel10.setText("Γλώσσα");
+        adaptivePanel24.add(adaptiveLabel10);
+
+        profileDataPanel.add(adaptivePanel24);
+
+        adaptivePanel8.setLayout(new javax.swing.BoxLayout(adaptivePanel8, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveComboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ελληνικά", "Αγγλικά", "Γαλλικά", "Γερμανικά", "Ισπανικά", "Ιταλικά", " " }));
+        adaptiveComboBox7.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox7.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox7.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptivePanel8.add(adaptiveComboBox7);
+
+        profileDataPanel.add(adaptivePanel8);
+
+        adaptivePanel25.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveLabel11.setText("Τηλέφωνο");
+        adaptivePanel25.add(adaptiveLabel11);
+
+        profileDataPanel.add(adaptivePanel25);
+
+        adaptivePanel9.setLayout(new javax.swing.BoxLayout(adaptivePanel9, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveTextField9.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField9.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField9.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptivePanel9.add(adaptiveTextField9);
+
+        profileDataPanel.add(adaptivePanel9);
+
+        adaptivePanel13.setLayout(new javax.swing.BoxLayout(adaptivePanel13, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveLabel19.setText("Είδος Αναπηρίας (εαν υπάρχει)");
+        adaptivePanel13.add(adaptiveLabel19);
+
+        profileDataPanel.add(adaptivePanel13);
+
+        adaptivePanel27.setLayout(new javax.swing.BoxLayout(adaptivePanel27, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Δεν υπάρχει", "Προβλήματα όρασης", "Αχρωματοψία", "Αστάθια άνω άκρων" }));
+        adaptiveComboBox8.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox8.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveComboBox8.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptivePanel27.add(adaptiveComboBox8);
+
+        profileDataPanel.add(adaptivePanel27);
+
+        adaptivePanel26.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveLabel12.setText("Όνομα Χρήστη");
+        adaptivePanel26.add(adaptiveLabel12);
+
+        profileDataPanel.add(adaptivePanel26);
+
+        adaptivePanel10.setLayout(new javax.swing.BoxLayout(adaptivePanel10, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveTextField13.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField13.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField13.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveCheckBox1ActionPerformed(evt);
+                adaptiveTextField13ActionPerformed(evt);
             }
         });
-        adaptivePanel4.add(adaptiveCheckBox1);
+        adaptivePanel10.add(adaptiveTextField13);
 
-        submitPanel.add(adaptivePanel4);
+        profileDataPanel.add(adaptivePanel10);
 
-        adaptiveButton1.setText("Δημιουργία Λογαριασμού");
-        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
+        adaptivePanel20.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveLabel16.setText("Κωδικός");
+        adaptivePanel20.add(adaptiveLabel16);
+
+        profileDataPanel.add(adaptivePanel20);
+
+        adaptivePanel11.setLayout(new javax.swing.BoxLayout(adaptivePanel11, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveTextField11.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField11.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField11.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton1ActionPerformed(evt);
+                adaptiveTextField11ActionPerformed(evt);
             }
         });
-        adaptivePanel11.add(adaptiveButton1);
+        adaptivePanel11.add(adaptiveTextField11);
 
-        submitPanel.add(adaptivePanel11);
+        profileDataPanel.add(adaptivePanel11);
 
-        centerMainPanel.add(submitPanel);
+        adaptivePanel19.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        add(centerMainPanel, java.awt.BorderLayout.CENTER);
+        adaptiveLabel17.setText("Επαλήθευση Κωδικού ");
+        adaptivePanel19.add(adaptiveLabel17);
+
+        profileDataPanel.add(adaptivePanel19);
+
+        adaptivePanel12.setLayout(new javax.swing.BoxLayout(adaptivePanel12, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveTextField12.setMaximumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField12.setMinimumSize(new java.awt.Dimension(200, 40));
+        adaptiveTextField12.setPreferredSize(new java.awt.Dimension(200, 40));
+        adaptivePanel12.add(adaptiveTextField12);
+
+        profileDataPanel.add(adaptivePanel12);
+
+        adaptivePanel18.setFunction("captchaImg");
+        adaptivePanel18.setName("Panel.Content.Captcha"); // NOI18N
+        adaptivePanel18.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+        profileDataPanel.add(adaptivePanel18);
+
+        adaptivePanel28.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+        profileDataPanel.add(adaptivePanel28);
+
+        adaptivePanel29.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+        profileDataPanel.add(adaptivePanel29);
+
+        adaptivePanel30.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+        profileDataPanel.add(adaptivePanel30);
+
+        contentPanel.add(profileDataPanel, java.awt.BorderLayout.CENTER);
+
+        confirmButton.setText("Δημιουργία Λογαριασμού");
+        confirmButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                confirmButtonActionPerformed(evt);
+            }
+        });
+        buttonData.add(confirmButton);
+
+        contentPanel.add(buttonData, java.awt.BorderLayout.SOUTH);
+
+        javax.swing.GroupLayout eastPanelLayout = new javax.swing.GroupLayout(eastPanel);
+        eastPanel.setLayout(eastPanelLayout);
+        eastPanelLayout.setHorizontalGroup(
+            eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 251, Short.MAX_VALUE)
+        );
+        eastPanelLayout.setVerticalGroup(
+            eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 640, Short.MAX_VALUE)
+        );
+
+        contentPanel.add(eastPanel, java.awt.BorderLayout.EAST);
+
+        javax.swing.GroupLayout westPanelLayout = new javax.swing.GroupLayout(westPanel);
+        westPanel.setLayout(westPanelLayout);
+        westPanelLayout.setHorizontalGroup(
+            westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 251, Short.MAX_VALUE)
+        );
+        westPanelLayout.setVerticalGroup(
+            westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 640, Short.MAX_VALUE)
+        );
+
+        contentPanel.add(westPanel, java.awt.BorderLayout.WEST);
+
+        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        adaptiveLabel13.setText("Δημιουργία Λογαριασμού");
+        topPanel.add(adaptiveLabel13);
+
+        contentPanel.add(topPanel, java.awt.BorderLayout.NORTH);
+
+        jScrollPane1.setViewportView(contentPanel);
+
+        add(jScrollPane1);
     }// </editor-fold>//GEN-END:initComponents
 
-private void adaptiveTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField4ActionPerformed
+private void adaptiveTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField2ActionPerformed
 // TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField4ActionPerformed
+}//GEN-LAST:event_adaptiveTextField2ActionPerformed
 
-private void adaptiveTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField6ActionPerformed
+private void adaptiveTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField3ActionPerformed
 // TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField6ActionPerformed
+}//GEN-LAST:event_adaptiveTextField3ActionPerformed
 
-private void adaptiveTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField8ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField8ActionPerformed
+private void adaptiveTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField11ActionPerformed
+		// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveTextField11ActionPerformed
 
-private void adaptiveTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField7ActionPerformed
+private void confirmButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmButtonActionPerformed
 // TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField7ActionPerformed
+}//GEN-LAST:event_confirmButtonActionPerformed
 
-private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
+private void adaptiveTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField1ActionPerformed
 // TODO add your handling code here:
-    MainWindowPC.showPanel(new Login1());
-}//GEN-LAST:event_adaptiveButton1ActionPerformed
+}//GEN-LAST:event_adaptiveTextField1ActionPerformed
 
-private void adaptiveCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveCheckBox1ActionPerformed
+private void adaptiveTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField13ActionPerformed
 // TODO add your handling code here:
-}//GEN-LAST:event_adaptiveCheckBox1ActionPerformed
+}//GEN-LAST:event_adaptiveTextField13ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.button.AdaptiveButton adaptiveButton1;
-    private widgets.checkbox.AdaptiveCheckBox adaptiveCheckBox1;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox1;
-    private widgets.combobox.AdaptiveComboBox adaptiveComboBox10;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox2;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox3;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox4;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox5;
+    private widgets.combobox.AdaptiveComboBox adaptiveComboBox6;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox7;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox8;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox9;
@@ -291,32 +483,62 @@ private void adaptiveCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {/
     private widgets.label.AdaptiveLabel adaptiveLabel11;
     private widgets.label.AdaptiveLabel adaptiveLabel12;
     private widgets.label.AdaptiveLabel adaptiveLabel13;
-    private widgets.label.AdaptiveLabel adaptiveLabel14;
-    private widgets.label.AdaptiveLabel adaptiveLabel15;
     private widgets.label.AdaptiveLabel adaptiveLabel16;
+    private widgets.label.AdaptiveLabel adaptiveLabel17;
+    private widgets.label.AdaptiveLabel adaptiveLabel19;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
+    private widgets.label.AdaptiveLabel adaptiveLabel4;
     private widgets.label.AdaptiveLabel adaptiveLabel5;
     private widgets.label.AdaptiveLabel adaptiveLabel6;
     private widgets.label.AdaptiveLabel adaptiveLabel7;
     private widgets.label.AdaptiveLabel adaptiveLabel8;
     private widgets.label.AdaptiveLabel adaptiveLabel9;
     private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel10;
     private widgets.panel.AdaptivePanel adaptivePanel11;
+    private widgets.panel.AdaptivePanel adaptivePanel12;
+    private widgets.panel.AdaptivePanel adaptivePanel13;
+    private widgets.panel.AdaptivePanel adaptivePanel14;
+    private widgets.panel.AdaptivePanel adaptivePanel15;
+    private widgets.panel.AdaptivePanel adaptivePanel16;
+    private widgets.panel.AdaptivePanel adaptivePanel17;
+    private widgets.panel.AdaptivePanel adaptivePanel18;
+    private widgets.panel.AdaptivePanel adaptivePanel19;
     private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel20;
+    private widgets.panel.AdaptivePanel adaptivePanel21;
+    private widgets.panel.AdaptivePanel adaptivePanel22;
+    private widgets.panel.AdaptivePanel adaptivePanel23;
+    private widgets.panel.AdaptivePanel adaptivePanel24;
+    private widgets.panel.AdaptivePanel adaptivePanel25;
+    private widgets.panel.AdaptivePanel adaptivePanel26;
+    private widgets.panel.AdaptivePanel adaptivePanel27;
+    private widgets.panel.AdaptivePanel adaptivePanel28;
+    private widgets.panel.AdaptivePanel adaptivePanel29;
+    private widgets.panel.AdaptivePanel adaptivePanel3;
+    private widgets.panel.AdaptivePanel adaptivePanel30;
     private widgets.panel.AdaptivePanel adaptivePanel4;
+    private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;
+    private widgets.panel.AdaptivePanel adaptivePanel7;
+    private widgets.panel.AdaptivePanel adaptivePanel8;
+    private widgets.panel.AdaptivePanel adaptivePanel9;
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
+    private widgets.textfield.AdaptiveTextField adaptiveTextField11;
+    private widgets.textfield.AdaptiveTextField adaptiveTextField12;
+    private widgets.textfield.AdaptiveTextField adaptiveTextField13;
+    private widgets.textfield.AdaptiveTextField adaptiveTextField2;
     private widgets.textfield.AdaptiveTextField adaptiveTextField3;
-    private widgets.textfield.AdaptiveTextField adaptiveTextField4;
-    private widgets.textfield.AdaptiveTextField adaptiveTextField5;
-    private widgets.textfield.AdaptiveTextField adaptiveTextField6;
     private widgets.textfield.AdaptiveTextField adaptiveTextField7;
-    private widgets.textfield.AdaptiveTextField adaptiveTextField8;
     private widgets.textfield.AdaptiveTextField adaptiveTextField9;
-    private widgets.panel.AdaptivePanel captchaPanel;
-    private widgets.panel.AdaptivePanel centerMainPanel;
-    private widgets.panel.AdaptivePanel profilePanel;
-    private widgets.panel.AdaptivePanel submitPanel;
+    private widgets.panel.AdaptivePanel buttonData;
+    private widgets.button.AdaptiveButton confirmButton;
+    private widgets.panel.AdaptivePanel contentPanel;
+    private widgets.panel.AdaptivePanel eastPanel;
+    private javax.swing.JScrollPane jScrollPane1;
+    private widgets.panel.AdaptivePanel profileDataPanel;
+    private widgets.panel.AdaptivePanel topPanel;
+    private widgets.panel.AdaptivePanel westPanel;
     // End of variables declaration//GEN-END:variables
 }

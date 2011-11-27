@@ -437,14 +437,10 @@
 
 <!-- ============================================================== -->   
     <!-- captha-->
- 	<style id="CaptchaImage">
-		<imagePainter 
-            method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop1.jpg"
-            center="true"
-        />
+<style id="captchaImage">
+		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/koutsop.jpg" center="true"/>
 	</style>
-	<bind style="CaptchaImage" type="name" key="Panel.Image.Captcha"/>      
+	<bind style="captchaImage" type="name" key="Panel.Content.Captcha"/>
 <!-- ============================================================== -->   
     
     

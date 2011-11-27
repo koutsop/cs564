@@ -124,6 +124,11 @@ public class AddContactSuccess extends javax.swing.JPanel {
         adaptivePanel1.setPreferredSize(new java.awt.Dimension(400, 80));
 
         adaptiveButton1.setText("Αναζήτηση Νέας Επαφής");
+        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout adaptivePanel1Layout = new javax.swing.GroupLayout(adaptivePanel1);
         adaptivePanel1.setLayout(adaptivePanel1Layout);
@@ -152,6 +157,20 @@ public class AddContactSuccess extends javax.swing.JPanel {
 
         add(contentPanel);
     }// </editor-fold>//GEN-END:initComponents
+
+private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
+ // Instantiate the new screen
+   AddContact r = new AddContact();
+   r.setVisible(true);
+
+  // Chat a = new Chat();
+   // Remove the contents of the content panel & add the new screen
+   contentPanel.removeAll();
+   contentPanel.add(r);
+   contentPanel.repaint();
+   contentPanel.validate();
+}//GEN-LAST:event_adaptiveButton1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
