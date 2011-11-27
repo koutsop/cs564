@@ -262,7 +262,6 @@ public class ChatMainView extends javax.swing.JPanel {
 
         contactsListPanel.setLayout(new javax.swing.BoxLayout(contactsListPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
-        groupPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         groupPanel.setLayout(new java.awt.BorderLayout());
 
         groupNamePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
@@ -318,7 +317,6 @@ public class ChatMainView extends javax.swing.JPanel {
 
         contactsListPanel.add(groupPanel);
 
-        groupPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         groupPanel1.setLayout(new java.awt.BorderLayout());
 
         groupNamePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
@@ -374,7 +372,6 @@ public class ChatMainView extends javax.swing.JPanel {
 
         contactsListPanel.add(groupPanel1);
 
-        groupPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         groupPanel2.setLayout(new java.awt.BorderLayout());
 
         groupNamePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
