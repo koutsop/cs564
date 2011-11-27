@@ -113,6 +113,9 @@
                       <Properties>
                         <Property name="function" type="java.lang.String" value="ContactsActionButton"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupContactsButtonActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="searchButton">
                       <Properties>
