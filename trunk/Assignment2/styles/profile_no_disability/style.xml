@@ -412,6 +412,11 @@
 		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/koutsop.jpg" center="true"/>
 	</style>
 	<bind style="profileImage" type="name" key="Panel.Content.ProfileImage"/>
+	
+	<style id="marigiannaImage">
+		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/marigianna.jpg" center="true"/>
+	</style>
+	<bind style="marigiannaImage" type="name" key="Panel.Content.MarigiannaImage"/>
 
 	<!-- Edw an exw 10 diaforetikes epafes 10 diaforetikes photos swta?-->
 	<!-- Ola ta buttons poio megala ?-->
