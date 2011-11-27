@@ -284,12 +284,15 @@ public class AccessibleIM1 extends javax.swing.JPanel {
         virtualKeyboard.add(adaptiveButton38);
 
         adaptiveButton39.setFunction("VirtualKeyboardButton");
+        adaptiveButton39.setText("Left");
         virtualKeyboard.add(adaptiveButton39);
 
         adaptiveButton40.setFunction("VirtualKeyboardButton");
+        adaptiveButton40.setText("Right");
         virtualKeyboard.add(adaptiveButton40);
 
         adaptiveButton41.setFunction("VirtualKeyboardButton");
+        adaptiveButton41.setText("space");
         virtualKeyboard.add(adaptiveButton41);
 
         add(virtualKeyboard, java.awt.BorderLayout.SOUTH);
