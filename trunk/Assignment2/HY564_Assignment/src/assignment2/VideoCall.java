@@ -60,7 +60,7 @@ public class VideoCall extends javax.swing.JPanel {
         videoPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
         videoPanel.setLayout(new java.awt.BorderLayout());
 
-        receiveVideoPanel.setFunction("ReceiveVideoImg");
+        receiveVideoPanel.setFunction("ReceiveContactImg");
         receiveVideoPanel.setName("Panel.ReceiveVideoPanel"); // NOI18N
         receiveVideoPanel.setLayout(new javax.swing.BoxLayout(receiveVideoPanel, javax.swing.BoxLayout.LINE_AXIS));
         videoPanel.add(receiveVideoPanel, java.awt.BorderLayout.CENTER);
@@ -76,7 +76,7 @@ public class VideoCall extends javax.swing.JPanel {
         );
         adaptivePanel1Layout.setVerticalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 150, Short.MAX_VALUE)
+            .addGap(0, 152, Short.MAX_VALUE)
         );
 
         sendVideoPanel.add(adaptivePanel1);
