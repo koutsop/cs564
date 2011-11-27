@@ -380,8 +380,10 @@
 	<style id="StatusAvailableImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop.jpg"
-            center="true"
+            path="../../styles/profile_no_disability/images/status_online.png"
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
         />
 	</style>
 	<bind style="StatusAvailableImage" type="name" key="ContactPanel.StatusAvailablePanel"/>
@@ -389,8 +391,10 @@
 	<style id="StatusIdleImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop2.jpg"
-            center="true"
+            path="../../styles/profile_no_disability/images/status_away.png"
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
         />
 	</style>
 	<bind style="StatusIdleImage" type="name" key="ContactPanel.StatusIdlePanel"/>
@@ -398,8 +402,10 @@
 	<style id="StatusBusyImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_no_disability/images/koutsop1.jpg"
-            center="true"
+            path="../../styles/profile_no_disability/images/status_busy.png"
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
         />
 	</style>
 	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusBusyPanel"/>
