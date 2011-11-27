@@ -81,6 +81,10 @@ public class AccessibleIM extends javax.swing.JPanel {
         add(menuPanel, java.awt.BorderLayout.PAGE_START);
     }// </editor-fold>//GEN-END:initComponents
 
+	public void setMyProfileVisible () {
+		imButton.setVisible(false);
+	}
+	
     public static void showPanel(JPanel p) {
         contentsPanel.removeAll();
         p.setVisible(true);
