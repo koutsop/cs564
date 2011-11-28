@@ -122,7 +122,8 @@ public class ProfileCreation1 extends javax.swing.JPanel {
         adaptivePanel12 = new widgets.panel.AdaptivePanel();
         adaptiveTextField12 = new widgets.textfield.AdaptiveTextField();
         adaptivePanel28 = new widgets.panel.AdaptivePanel();
-        adaptiveLabel15 = new widgets.label.AdaptiveLabel();
+        adaptivePanel34 = new widgets.panel.AdaptivePanel();
+        adaptivePanel35 = new widgets.panel.AdaptivePanel();
         adaptivePanel18 = new widgets.panel.AdaptivePanel();
         refreshButton = new widgets.button.AdaptiveButton();
         listenButton = new widgets.button.AdaptiveButton();
@@ -225,21 +226,21 @@ public class ProfileCreation1 extends javax.swing.JPanel {
         adaptivePanel4.setLayout(new javax.swing.BoxLayout(adaptivePanel4, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptiveComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ΗΗ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        adaptiveComboBox3.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        adaptiveComboBox3.setFont(new java.awt.Font("Tahoma", 0, 8));
         adaptiveComboBox3.setMaximumSize(new java.awt.Dimension(60, 40));
         adaptiveComboBox3.setMinimumSize(new java.awt.Dimension(60, 40));
         adaptiveComboBox3.setPreferredSize(new java.awt.Dimension(60, 40));
         adaptivePanel4.add(adaptiveComboBox3);
 
         adaptiveComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ΜΜ", "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", " " }));
-        adaptiveComboBox4.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        adaptiveComboBox4.setFont(new java.awt.Font("Tahoma", 0, 8));
         adaptiveComboBox4.setMaximumSize(new java.awt.Dimension(60, 40));
         adaptiveComboBox4.setMinimumSize(new java.awt.Dimension(60, 40));
         adaptiveComboBox4.setPreferredSize(new java.awt.Dimension(60, 40));
         adaptivePanel4.add(adaptiveComboBox4);
 
         adaptiveComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "ΧΧΧΧ", "1950", "1960", "1970", "1980", "1990", "2000" }));
-        adaptiveComboBox5.setFont(new java.awt.Font("Tahoma", 0, 8)); // NOI18N
+        adaptiveComboBox5.setFont(new java.awt.Font("Tahoma", 0, 8));
         adaptiveComboBox5.setMaximumSize(new java.awt.Dimension(80, 40));
         adaptiveComboBox5.setMinimumSize(new java.awt.Dimension(80, 40));
         adaptiveComboBox5.setPreferredSize(new java.awt.Dimension(80, 40));
@@ -405,39 +406,56 @@ public class ProfileCreation1 extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel12);
 
-        adaptivePanel28.setBackground(new java.awt.Color(153, 153, 153));
         adaptivePanel28.setFunction("captchaImg");
         adaptivePanel28.setName("Panel.Content.Captcha"); // NOI18N
+        adaptivePanel28.setLayout(new java.awt.BorderLayout());
 
-        adaptiveLabel15.setFont(new java.awt.Font("Swis721 BlkOul BT", 3, 24)); // NOI18N
-        adaptiveLabel15.setMaximumSize(new java.awt.Dimension(110, 30));
-        adaptiveLabel15.setPreferredSize(new java.awt.Dimension(110, 30));
-        adaptiveLabel15.setText("K9L3FJ");
-        adaptivePanel28.add(adaptiveLabel15);
+        adaptivePanel34.setFunction("captchaImg");
+        adaptivePanel34.setName("Panel.Content.Captcha"); // NOI18N
+
+        javax.swing.GroupLayout adaptivePanel34Layout = new javax.swing.GroupLayout(adaptivePanel34);
+        adaptivePanel34.setLayout(adaptivePanel34Layout);
+        adaptivePanel34Layout.setHorizontalGroup(
+            adaptivePanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 156, Short.MAX_VALUE)
+        );
+        adaptivePanel34Layout.setVerticalGroup(
+            adaptivePanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 42, Short.MAX_VALUE)
+        );
+
+        adaptivePanel28.add(adaptivePanel34, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel35.setPreferredSize(new java.awt.Dimension(50, 1));
+
+        javax.swing.GroupLayout adaptivePanel35Layout = new javax.swing.GroupLayout(adaptivePanel35);
+        adaptivePanel35.setLayout(adaptivePanel35Layout);
+        adaptivePanel35Layout.setHorizontalGroup(
+            adaptivePanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
+        );
+        adaptivePanel35Layout.setVerticalGroup(
+            adaptivePanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 42, Short.MAX_VALUE)
+        );
+
+        adaptivePanel28.add(adaptivePanel35, java.awt.BorderLayout.EAST);
 
         profileDataPanel.add(adaptivePanel28);
 
         adaptivePanel18.setName(""); // NOI18N
         adaptivePanel18.setLayout(new java.awt.GridLayout(1, 4, 20, 0));
 
-        refreshButton.setActionCommand("");
         refreshButton.setFunction("");
-        refreshButton.setLabel("");
         adaptivePanel18.add(refreshButton);
-
-        listenButton.setActionCommand("");
-        listenButton.setLabel("");
         adaptivePanel18.add(listenButton);
-
-        helpButton.setActionCommand("");
-        helpButton.setLabel("");
         adaptivePanel18.add(helpButton);
 
         profileDataPanel.add(adaptivePanel18);
 
         adaptivePanel29.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveLabel14.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
+        adaptiveLabel14.setFont(new java.awt.Font("Tahoma", 2, 11));
         adaptiveLabel14.setText("Εισάγετε εδώ το παραπάνω κείμενο");
         adaptivePanel29.add(adaptiveLabel14);
 
@@ -521,7 +539,7 @@ public class ProfileCreation1 extends javax.swing.JPanel {
         );
         eastPanelLayout.setVerticalGroup(
             eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 644, Short.MAX_VALUE)
+            .addGap(0, 822, Short.MAX_VALUE)
         );
 
         contentPanel.add(eastPanel, java.awt.BorderLayout.EAST);
@@ -534,12 +552,12 @@ public class ProfileCreation1 extends javax.swing.JPanel {
         );
         westPanelLayout.setVerticalGroup(
             westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 644, Short.MAX_VALUE)
+            .addGap(0, 822, Short.MAX_VALUE)
         );
 
         contentPanel.add(westPanel, java.awt.BorderLayout.WEST);
 
-        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 14));
         adaptiveLabel13.setText("Δημιουργία Λογαριασμού");
         topPanel.add(adaptiveLabel13);
 
@@ -595,7 +613,6 @@ private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
     private widgets.label.AdaptiveLabel adaptiveLabel12;
     private widgets.label.AdaptiveLabel adaptiveLabel13;
     private widgets.label.AdaptiveLabel adaptiveLabel14;
-    private widgets.label.AdaptiveLabel adaptiveLabel15;
     private widgets.label.AdaptiveLabel adaptiveLabel16;
     private widgets.label.AdaptiveLabel adaptiveLabel17;
     private widgets.label.AdaptiveLabel adaptiveLabel19;
@@ -634,6 +651,8 @@ private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
     private widgets.panel.AdaptivePanel adaptivePanel31;
     private widgets.panel.AdaptivePanel adaptivePanel32;
     private widgets.panel.AdaptivePanel adaptivePanel33;
+    private widgets.panel.AdaptivePanel adaptivePanel34;
+    private widgets.panel.AdaptivePanel adaptivePanel35;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;
