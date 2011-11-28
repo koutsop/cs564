@@ -26,14 +26,8 @@ public class Login1 extends javax.swing.JPanel {
     /** Creates new form Login1 */
     public Login1() {
         initComponents();
-		
-		String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsIMPage");
-        System.out.println("View:" + pid);
-		
 		Adaptation.automaticallySetRuntime(this);
-        Adaptation.automaticallyAdapt(this);
-		
-		
+        Adaptation.automaticallyAdapt(this);		
     }
     
     private void initAdaptation(String profile){
