@@ -444,7 +444,13 @@
 <!-- ============================================================== -->   
     <!-- captha-->
     <style id="captchaImage">
-		<imagePainter method="panelBackground" path="../../styles/profile_no_disability/images/captcha1.jpg" center="true"/>
+		<imagePainter 
+			method="panelBackground" 
+			path="../../styles/profile_no_disability/images/captcha1.jpg" 
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
+		/>
 	</style>
 	<bind style="captchaImage" type="name" key="Panel.Content.Captcha"/>
 <!-- ============================================================== -->   
@@ -463,7 +469,8 @@
             <imagePainter method="buttonBackground" path="images/ContentButtonSelected.png" sourceInsets="10 10 10 10"/>
         </state>
     </style>
-  <bind style="ChatButton" type="name" key="Button.Chat.*"/>    
+  <bind style="ChatButton" type="name" key="Button.Chat.*"/>
+  <bind style="ChatButton" type="name" key="Button.LoginButton.*"/> 
   <bind style="ChatButton" type="name" key="Button.ContactsAction.*"/> 
   
 </synth>

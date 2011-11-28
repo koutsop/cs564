@@ -6,7 +6,6 @@ stereotype profile1 : params.user.profile == no_disability
 stereotype profile2 : params.user.profile == color_blind
 stereotype profile3 : params.user.profile == instability
 stereotype profile4 : params.user.profile == low_vision
-stereotype profile5 : params.user.profile == nope
 
 
 component "Style" [
@@ -15,7 +14,7 @@ component "Style" [
 	else if profile2 then 	activate "profile_color_blind/"
     else if profile3 then   activate "profile_instability/"
     else if profile4 then   activate "profile_low_vision/"
-	else 					activate "profile_nope/"
+	else 					activate "profile_no_disability/"
 
 ]
 
@@ -170,6 +169,17 @@ component "Link.Visited.Underline.Color"[
 	else activate "0x000000"
 	
 ]
+
+//==================================================//
+//							Login rules
+//==================================================//
+component LoginButton[
+		activate "Button.LoginButton"
+]
+component "Button.LoginButton.Height" [ activate "70" ]
+component "Button.LoginButton.Width.StdPadding" [ activate "12" ]
+component "Button.LoginButton.Width.ExtraPercPadding" [ activate "30" ]
+
 
 //==================================================//
 //							Chat-based rules
