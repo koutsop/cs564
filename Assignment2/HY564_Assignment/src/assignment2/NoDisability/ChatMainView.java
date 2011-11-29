@@ -11,6 +11,7 @@
 package assignment2.NoDisability;
 
 import AdaptableWindows.AdaptableCall;
+import AdaptableWindows.AdaptableChat;
 import AdaptableWindows.AdaptableMyProfile;
 import AdaptableWindows.AdaptableVideoCall;
 import assignment2.Chat;
@@ -305,19 +306,19 @@ public class ChatMainView extends javax.swing.JPanel {
         groupContentPanel.setLayout(new java.awt.GridLayout(0, 1, 0, 20));
         groupPanel.add(groupContentPanel, java.awt.BorderLayout.CENTER);
 
-        westPanel.setMaximumSize(new java.awt.Dimension(30, 1));
-        westPanel.setMinimumSize(new java.awt.Dimension(30, 1));
-        westPanel.setPreferredSize(new java.awt.Dimension(30, 1));
+        westPanel.setMaximumSize(new java.awt.Dimension(15, 1));
+        westPanel.setMinimumSize(new java.awt.Dimension(15, 1));
+        westPanel.setPreferredSize(new java.awt.Dimension(15, 1));
 
         javax.swing.GroupLayout westPanelLayout = new javax.swing.GroupLayout(westPanel);
         westPanel.setLayout(westPanelLayout);
         westPanelLayout.setHorizontalGroup(
             westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
+            .addGap(0, 15, Short.MAX_VALUE)
         );
         westPanelLayout.setVerticalGroup(
             westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1, Short.MAX_VALUE)
+            .addGap(0, 170, Short.MAX_VALUE)
         );
 
         groupPanel.add(westPanel, java.awt.BorderLayout.WEST);
@@ -360,19 +361,19 @@ public class ChatMainView extends javax.swing.JPanel {
         groupContentPanel1.setLayout(new java.awt.GridLayout(0, 1, 0, 20));
         groupPanel1.add(groupContentPanel1, java.awt.BorderLayout.CENTER);
 
-        westPanel1.setMaximumSize(new java.awt.Dimension(30, 1));
-        westPanel1.setMinimumSize(new java.awt.Dimension(30, 1));
-        westPanel1.setPreferredSize(new java.awt.Dimension(30, 1));
+        westPanel1.setMaximumSize(new java.awt.Dimension(15, 1));
+        westPanel1.setMinimumSize(new java.awt.Dimension(15, 1));
+        westPanel1.setPreferredSize(new java.awt.Dimension(15, 1));
 
         javax.swing.GroupLayout westPanel1Layout = new javax.swing.GroupLayout(westPanel1);
         westPanel1.setLayout(westPanel1Layout);
         westPanel1Layout.setHorizontalGroup(
             westPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
+            .addGap(0, 15, Short.MAX_VALUE)
         );
         westPanel1Layout.setVerticalGroup(
             westPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1, Short.MAX_VALUE)
+            .addGap(0, 170, Short.MAX_VALUE)
         );
 
         groupPanel1.add(westPanel1, java.awt.BorderLayout.WEST);
@@ -415,19 +416,19 @@ public class ChatMainView extends javax.swing.JPanel {
         groupContentPanel2.setLayout(new java.awt.GridLayout(0, 1, 0, 20));
         groupPanel2.add(groupContentPanel2, java.awt.BorderLayout.CENTER);
 
-        westPanel2.setMaximumSize(new java.awt.Dimension(30, 1));
-        westPanel2.setMinimumSize(new java.awt.Dimension(30, 1));
-        westPanel2.setPreferredSize(new java.awt.Dimension(30, 1));
+        westPanel2.setMaximumSize(new java.awt.Dimension(15, 1));
+        westPanel2.setMinimumSize(new java.awt.Dimension(15, 1));
+        westPanel2.setPreferredSize(new java.awt.Dimension(15, 1));
 
         javax.swing.GroupLayout westPanel2Layout = new javax.swing.GroupLayout(westPanel2);
         westPanel2.setLayout(westPanel2Layout);
         westPanel2Layout.setHorizontalGroup(
             westPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
+            .addGap(0, 15, Short.MAX_VALUE)
         );
         westPanel2Layout.setVerticalGroup(
             westPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1, Short.MAX_VALUE)
+            .addGap(0, 170, Short.MAX_VALUE)
         );
 
         groupPanel2.add(westPanel2, java.awt.BorderLayout.WEST);
@@ -489,7 +490,7 @@ public class ChatMainView extends javax.swing.JPanel {
 
     private void chatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chatButtonActionPerformed
         selectMenuButton(chatButton);
-        showInContentPanel(new Chat(contentPanel.getPreferredSize()));
+        showInContentPanel(new AdaptableChat(contentPanel.getPreferredSize()));
     }//GEN-LAST:event_chatButtonActionPerformed
 
     private void videoCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_videoCallButtonActionPerformed
