@@ -28,27 +28,26 @@ public class ProfileCreation1 extends javax.swing.JPanel {
     /** Creates new form ProfileCreation */
    public ProfileCreation1(Dimension parentSize) {
     
-        initComponents();
-       Adaptation.automaticallySetRuntime(this);
-        Adaptation.automaticallyAdapt(this);
-        Utility.SetJComponentSize(this, parentSize);
-//        Utility.SetJComponentSize(westMainPanel, new Dimension(100, 50));
-//        Utility.SetJComponentSize(eastMainPanel, new Dimension(100, 50));
-         String path = DMSLConnector.getInstance().getClient(false).Evaluate("RefreshButton");
-        refreshButton.setIcon(new ImageIcon(getClass().getResource(path)));
+		initComponents();
+		Adaptation.automaticallySetRuntime(this);
+		Adaptation.automaticallyAdapt(this);
+		Utility.SetJComponentSize(jScrollPane1, parentSize);
 
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("ListenButton");
-        listenButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("HelpButton");
-        helpButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
-        
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("CancelButton");
-        cancelButton.setIcon(new ImageIcon(getClass().getResource(path)));
+		String path = DMSLConnector.getInstance().getClient(false).Evaluate("RefreshButton");
+		refreshButton.setIcon(new ImageIcon(getClass().getResource(path)));
 
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("AcceptanceButton");
-        acceptanceButton.setIcon(new ImageIcon(getClass().getResource(path)));
+		path = DMSLConnector.getInstance().getClient(false).Evaluate("ListenButton");
+		listenButton.setIcon(new ImageIcon(getClass().getResource(path)));
+
+		path = DMSLConnector.getInstance().getClient(false).Evaluate("HelpButton");
+		helpButton.setIcon(new ImageIcon(getClass().getResource(path)));
+
+
+		path = DMSLConnector.getInstance().getClient(false).Evaluate("CancelButton");
+		cancelButton.setIcon(new ImageIcon(getClass().getResource(path)));
+
+		path = DMSLConnector.getInstance().getClient(false).Evaluate("AcceptanceButton");
+		acceptanceButton.setIcon(new ImageIcon(getClass().getResource(path)));
     }
 
     /** This method is called from within the constructor to
