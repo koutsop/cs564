@@ -34,7 +34,7 @@ public class Call extends javax.swing.JPanel {
 		int size = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("sendVideoImagePanel"));
         Utility.SetJComponentSize(marigiannaPanel, size, size);
         int width   = parentSize.width;
-        int height  = (int)(parentSize.height/2.5) - 10; //10 Vertical Gap
+        int height  = (int)(parentSize.height/2.3) - 10; //10 Vertical Gap
         VideoChat chat   = new VideoChat(new Dimension(width, height));
 		((FlowLayout)chat.getButtonsPanel().getLayout()).setAlignment(FlowLayout.RIGHT);
         chat.ShowSwapButton(false);
@@ -60,6 +60,8 @@ public class Call extends javax.swing.JPanel {
         marigiannaPanel = new widgets.panel.AdaptivePanel();
         chatPanel = new widgets.panel.AdaptivePanel();
 
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.PAGE_AXIS));
+
         callPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
         callPanel.setLayout(new java.awt.BorderLayout());
 
@@ -82,7 +84,7 @@ public class Call extends javax.swing.JPanel {
         );
         marigiannaPanelLayout.setVerticalGroup(
             marigiannaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 150, Short.MAX_VALUE)
+            .addGap(0, 290, Short.MAX_VALUE)
         );
 
         adaptivePanel2.add(marigiannaPanel);
