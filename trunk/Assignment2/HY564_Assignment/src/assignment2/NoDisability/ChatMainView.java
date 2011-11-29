@@ -15,7 +15,7 @@ import AdaptableWindows.AdaptableVideoCall;
 import assignment2.Chat;
 import assignment2.Contact;
 import assignment2.MyProfile;
-import assignment2.Utility;
+import Utility.Utility;
 import java.awt.Component;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;

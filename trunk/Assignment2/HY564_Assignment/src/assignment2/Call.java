@@ -10,6 +10,7 @@
  */
 package assignment2;
 
+import Utility.Utility;
 import java.awt.Dimension;
 import utilities.Adaptation;
 
