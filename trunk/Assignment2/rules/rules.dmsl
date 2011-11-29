@@ -249,17 +249,17 @@ component LoginLabel [
 
 
 //==========================================
-component ContactImgHeight [
+component ContactImgHeight [	//to width kai height pou 8a exei to avatar gia sthn lista me ths epafes
 	if 		profile1 then 	activate "75"
 	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "25"
+	else if profile3 then 	activate "50"
 	else if profile4 then 	activate "27"
 	else 					activate "-1"
 ]
 component ContactImgWidth [
 	if 		profile1 then 	activate "75"
 	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "25"
+	else if profile3 then 	activate "50"
 	else if profile4 then 	activate "27"
 	else 					activate "-1"
 ]
@@ -267,7 +267,7 @@ component ContactImgWidth [
 component StatusImgHeight [
 	if 		profile1 then 	activate "20"
 	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "25"
+	else if profile3 then 	activate "20"
 	else if profile4 then 	activate "27"
 	else 					activate "-1"
 ]
@@ -275,7 +275,7 @@ component StatusImgHeight [
 component StatusImgWidth [
 	if 		profile1 then 	activate "20"
 	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "25"
+	else if profile3 then 	activate "20"
 	else if profile4 then 	activate "27"
 	else 					activate "-1"
 ]
@@ -283,7 +283,7 @@ component StatusImgWidth [
 component ContactHeight [
 	if 		profile1 then 	activate "75"
 	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "25"
+	else if profile3 then 	activate "75"
 	else if profile4 then 	activate "27"
 	else 					activate "-1"
 ]
@@ -291,7 +291,7 @@ component ContactHeight [
 component ContactWidth [
 	if 		profile1 then 	activate "230"
 	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "25"
+	else if profile3 then 	activate "230"
 	else if profile4 then 	activate "27"
 	else 					activate "-1"
 ]
@@ -325,126 +325,148 @@ component ReceiveContactImg [
     activate "Panel.ReceiveVideoPanel"
 ]
 
-component MyProfileImg [
-    activate "Panel.ProfileImage"
-]
+
 
 
 
 component CancelButton [
-    if 	profile1 then activate "/images/profile_no_disability/x.png"
+    if		profile1 then activate "/images/profile_no_disability/x.png"
+	else if profile3 then activate "/images/profile_instability/x.png"
     else activate "/images/profile_no_disability/x.png"
 ]
 
 component AcceptanceButton [
-    if 	profile1 then activate "/images/profile_no_disability/tick.png"
+    if		profile1 then activate "/images/profile_no_disability/tick.png"
+	else if profile3 then activate "/images/profile_instability/tick.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 component ListenButton [
-    if 	profile1 then activate "/images/profile_no_disability/help.png"
+    if		profile1 then activate "/images/profile_no_disability/help.png"
+	else if profile3 then activate "/images/profile_instability/help.png"
     else activate "/images/profile_no_disability/help.png"
 ]
 component HelpButton [
-    if 	profile1 then activate "/images/profile_no_disability/listen.gif"
+    if		profile1 then activate "/images/profile_no_disability/listen.gif"
+	else if profile3 then activate "/images/profile_instability/listen.gif"
     else activate "/images/profile_no_disability/listen.gif"
 ]
 component RefreshButton [
-    if 	profile1 then activate "/images/profile_no_disability/refresh.gif"
+    if		profile1 then activate "/images/profile_no_disability/refresh.gif"
+	else if profile3 then activate "/images/profile_instability/refresh.gif"
     else activate "/images/profile_no_disability/refresh.gif"
 ]
 
 component OfflineButton [
-    if 	profile1 then activate "/images/profile_no_disability/status_offline.png"
+    if		profile1 then activate "/images/profile_no_disability/status_offline.png"
+	else if profile3 then activate "/images/profile_instability/status_offline.png"
     else activate "/images/profile_no_disability/status_offline.png"
 ]
 component OnlineButton [
-    if 	profile1 then activate "/images/profile_no_disability/status_online.png"
+    if		profile1 then activate "/images/profile_no_disability/status_online.png"
+	else if profile3 then activate "/images/profile_instability/status_online.png"
     else activate "/images/profile_no_disability/status_online.png"
 ]
 component BusyButton [
-    if 	profile1 then activate "/images/profile_no_disability/status_busy.png"
+    if		profile1 then activate "/images/profile_no_disability/status_busy.png"
+	else if profile3 then activate "/images/profile_instability/status_busy.png"
     else activate "/images/profile_no_disability/status_busy.png"
 ]
 component AwayButton [
-    if 	profile1 then activate "/images/profile_no_disability/status_away.png"
+    if		profile1 then activate "/images/profile_no_disability/status_away.png"
+	else if profile3 then activate "/images/profile_instability/status_away.png"
     else activate "/images/profile_no_disability/status_away.png"
 ]
 
 component VideoCallButton [
-    if 	profile1 then activate "/images/profile_no_disability/video_call.png"
+    if		profile1 then activate "/images/profile_no_disability/video_call.png"
+	else if profile3 then activate "/images/profile_instability/video_call.png"
     else activate "/images/profile_no_disability/x.png"
 ]
 
 component CallButton [
-    if 	profile1 then activate "/images/profile_no_disability/call.png"
+    if		profile1 then activate "/images/profile_no_disability/call.png"
+	else if profile3 then activate "/images/profile_instability/call.png"
     else activate "/images/profile_no_disability/x.png"
 ]
 
 component SendFileButton [
-    if 	profile1 then activate "/images/profile_no_disability/document_up.png"
+    if		profile1 then activate "/images/profile_no_disability/document_up.png"
+	else if profile3 then activate "/images/profile_instability/document_up.png"
     else activate "/images/profile_no_disability/x.png"
 ]
 
 component MuteButton [
-    if 	profile1 then activate "/images/profile_no_disability/mute.png"
+    if		profile1 then activate "/images/profile_no_disability/mute.png"
+	else if profile3 then activate "/images/profile_instability/mute.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 component VolumeUpButton [
-    if 	profile1 then activate "/images/profile_no_disability/volume_up.png"
+    if		profile1 then activate "/images/profile_no_disability/volume_up.png"
+	else if profile3 then activate "/images/profile_instability/volume_up.png"
     else activate "/images/profile_no_disability/x.png"
 ]
 
 component VolumeDownButton [
-    if 	profile1 then activate "/images/profile_no_disability/volume_down.png"
+    if		profile1 then activate "/images/profile_no_disability/volume_down.png"
+	else if profile3 then activate "/images/profile_instability/volume_down.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 component FullScreenButton [
-    if 	profile1 then activate "/images/profile_no_disability/fullscreen.png"
+    if		profile1 then activate "/images/profile_no_disability/fullscreen.png"
+	else if profile3 then activate "/images/profile_instability/fullscreen.png"
     else activate "/images/profile_no_disability/x.png"
 ]
 
 component SwapButton [
-    if 	profile1 then activate "/images/profile_no_disability/swap.png"
+    if		profile1 then activate "/images/profile_no_disability/swap.png"
+	else if profile3 then activate "/images/profile_instability/swap.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 component AddButton [
-    if 	profile1 then activate "/images/profile_no_disability/add.png"
+    if		profile1 then activate "/images/profile_no_disability/add.png"
+	else if profile3 then activate "/images/profile_instability/add.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 component CloseButton [
-    if 	profile1 then activate "/images/profile_no_disability/cloase.png"
+    if		profile1 then activate "/images/profile_no_disability/cloase.png"
+	else if profile3 then activate "/images/profile_instability/cloase.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 component RemoveButton [
-    if 	profile1 then activate "/images/profile_no_disability/remove.png"
+    if		profile1 then activate "/images/profile_no_disability/remove.png"
+	else if profile3 then activate "/images/profile_instability/remove.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 component SearchButton [
-    if 	profile1 then activate "/images/profile_no_disability/search.png"
+    if		profile1 then activate "/images/profile_no_disability/search.png"
+	else if profile3 then activate "/images/profile_instability/search.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 component GroupButton [
-    if 	profile1 then activate "/images/profile_no_disability/group.png"
+    if		profile1 then activate "/images/profile_no_disability/group.png"
+	else if profile3 then activate "/images/profile_instability/group.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 
 
 component CollapseAddButton [
-    if 	profile1 then activate "/images/profile_no_disability/button_plus_green.png"
+    if		profile1 then activate "/images/profile_no_disability/button_plus_green.png"
+	else if profile3 then activate "/images/profile_instability/button_plus_green.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 
 component GroupSubButton [
-    if 	profile1 then activate "/images/profile_no_disability/button_minus_green.png"
+    if		profile1 then activate "/images/profile_no_disability/button_minus_green.png"
+	else if profile3 then activate "/images/profile_instability/button_minus_green.png"
     else activate "/images/profile_no_disability/tick.png"
 ]
 //==========================================
@@ -454,26 +476,30 @@ component GroupSubButton [
 //for chating
 component ContactListWidth [
 	if 		profile1 then 	activate "290" //29% of wondow's width (1000)
-	else if profile2 then 	activate "300"
-	else if profile3 then 	activate "300"
-	else if profile4 then 	activate "300"
+	else if profile2 then 	activate "290"
+	else if profile3 then 	activate "260"
+	else if profile4 then 	activate "290"
 	else 					activate "-1"  
 ] 
 
 component sendVideoImagePanel [
 	if 		profile1 then 	activate "100" 
-	else if profile2 then 	activate "300"
-	else if profile3 then 	activate "300"
-	else if profile4 then 	activate "300"
+	else if profile2 then 	activate "100"
+	else if profile3 then 	activate "200"
+	else if profile4 then 	activate "100"
 	else 					activate "-1"  
 ]
 
 
 //==========================================
 
+component InstabilityChat [
+	if		profile3 then	activate "InstabilityChat"
+	else					activate "Chat"
+]
 
 component MainIMPage [
-		if 		profile1 then 	activate "NoDisabilityMainView"
-		else if profile2 then 	activate "ViewB"
-		else 					activate "ViewB"
+	if 		profile1 then 	activate "ChatMainView"
+
+	else 					activate "ChatMainView"
 ]

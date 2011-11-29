@@ -13,10 +13,7 @@
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
   </AuxValues>
 
-  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-    <Property name="columns" type="int" value="1"/>
-    <Property name="rows" type="int" value="2"/>
-  </Layout>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
   <SubComponents>
     <Container class="widgets.panel.AdaptivePanel" name="callPanel">
       <Properties>
@@ -77,10 +74,6 @@
                       </Group>
                     </DimensionLayout>
                   </Layout>
-                </Container>
-                <Container class="widgets.panel.AdaptivePanel" name="sendVideoImagePanel">
-
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
                 </Container>
               </SubComponents>
             </Container>

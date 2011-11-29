@@ -12,6 +12,7 @@ package assignment2;
 
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
+import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
 
@@ -53,14 +54,15 @@ public class VideoChat extends javax.swing.JPanel {
         path = DMSLConnector.getInstance().getClient(false).Evaluate("CloseButton");
         closeButton.setIcon(new ImageIcon(getClass().getResource(path)));        
     }
+	
+	public JPanel getButtonsPanel ()
+		{ return buttonsPanel; }
     
-    public void ShowSwapButton (boolean show) {
-        swapButton.setVisible(show);
-    }
+    public void ShowSwapButton (boolean show) 
+		{ swapButton.setVisible(show); }
     
-    public void ShowFullScreenButton (boolean show) {
-        fullScreenButton.setVisible(show);
-    }    
+    public void ShowFullScreenButton (boolean show) 
+		{ fullScreenButton.setVisible(show); }    
 
     /** This method is called from within the constructor to
      * initialize the form.

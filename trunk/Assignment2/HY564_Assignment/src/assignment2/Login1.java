@@ -183,7 +183,7 @@ public class Login1 extends javax.swing.JPanel {
     }//GEN-LAST:event_colorBlindButtonActionPerformed
 
     private void instabilityButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_instabilityButtonActionPerformed
-        initAdaptation("no_disability");
+        initAdaptation("instability");
         MainWindowPC.showPanel(new AccessibleIM());
     }//GEN-LAST:event_instabilityButtonActionPerformed
 

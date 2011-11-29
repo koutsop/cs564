@@ -13,6 +13,7 @@ package assignment2.Instability;
 import assignment2.Utility;
 import assignment2.VideoChat;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
 
@@ -32,14 +33,15 @@ public class Call extends javax.swing.JPanel {
         
 		int size = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("sendVideoImagePanel"));
         Utility.SetJComponentSize(marigiannaPanel, size, size);
-		
         int width   = parentSize.width;
-        int height  = (parentSize.height/2) - 10; //10 Vertical Gap
+        int height  = (int)(parentSize.height/2.5) - 10; //10 Vertical Gap
         VideoChat chat   = new VideoChat(new Dimension(width, height));
+		((FlowLayout)chat.getButtonsPanel().getLayout()).setAlignment(FlowLayout.RIGHT);
         chat.ShowSwapButton(false);
         chat.ShowFullScreenButton(false);
         chat.setVisible(true);
-        chatPanel.add(chat);    
+        chatPanel.add(chat);  
+		Utility.SetJComponentSize(gapPanel, parentSize.width - size, parentSize.height-height-20);
 	}
 
 	/** This method is called from within the constructor to
@@ -56,10 +58,7 @@ public class Call extends javax.swing.JPanel {
         imagePanel = new widgets.panel.AdaptivePanel();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         marigiannaPanel = new widgets.panel.AdaptivePanel();
-        sendVideoImagePanel = new widgets.panel.AdaptivePanel();
         chatPanel = new widgets.panel.AdaptivePanel();
-
-        setLayout(new java.awt.GridLayout(2, 1));
 
         callPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
         callPanel.setLayout(new java.awt.BorderLayout());
@@ -88,9 +87,6 @@ public class Call extends javax.swing.JPanel {
 
         adaptivePanel2.add(marigiannaPanel);
 
-        sendVideoImagePanel.setLayout(new javax.swing.BoxLayout(sendVideoImagePanel, javax.swing.BoxLayout.LINE_AXIS));
-        adaptivePanel2.add(sendVideoImagePanel);
-
         imagePanel.add(adaptivePanel2, java.awt.BorderLayout.CENTER);
 
         callPanel.add(imagePanel, java.awt.BorderLayout.EAST);
@@ -105,6 +101,5 @@ public class Call extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel gapPanel;
     private widgets.panel.AdaptivePanel imagePanel;
     private widgets.panel.AdaptivePanel marigiannaPanel;
-    private widgets.panel.AdaptivePanel sendVideoImagePanel;
     // End of variables declaration//GEN-END:variables
 }
