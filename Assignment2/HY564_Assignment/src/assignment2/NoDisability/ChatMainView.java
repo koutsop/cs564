@@ -11,6 +11,7 @@
 package assignment2.NoDisability;
 
 import AdaptableWindows.AdaptableCall;
+import AdaptableWindows.AdaptableMyProfile;
 import AdaptableWindows.AdaptableVideoCall;
 import assignment2.Chat;
 import assignment2.Contact;
@@ -66,8 +67,8 @@ public class ChatMainView extends javax.swing.JPanel {
 		groupButton2.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
 		
         selectMenuButton(myProfileButton);
-        showInContentPanel(new MyProfile(contentPanel.getPreferredSize()));
-		this.updateUI();
+        showInContentPanel(new AdaptableMyProfile(contentPanel.getPreferredSize()));
+		//this.updateUI();
     }
     
     private void SetPanelsSize() {
@@ -512,7 +513,7 @@ public class ChatMainView extends javax.swing.JPanel {
 
     private void myProfileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myProfileButtonActionPerformed
         selectMenuButton(myProfileButton);
-        showInContentPanel(new MyProfile(contentPanel.getPreferredSize()));
+        showInContentPanel(new AdaptableMyProfile(contentPanel.getPreferredSize()));
     }//GEN-LAST:event_myProfileButtonActionPerformed
 
     private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed

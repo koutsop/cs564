@@ -29,7 +29,7 @@ public class MyProfile extends javax.swing.JPanel {
         
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
-        Utility.SetJComponentSize(this, parentSize);
+        Utility.SetJComponentSize(jScrollPane1, parentSize);
         
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("OnlineButton");
         onlineButton.setIcon(new ImageIcon(getClass().getResource(path)));  
@@ -185,9 +185,6 @@ public class MyProfile extends javax.swing.JPanel {
 
         adaptivePanel37.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        profileDataPanel.setMaximumSize(new java.awt.Dimension(400, 600));
-        profileDataPanel.setMinimumSize(new java.awt.Dimension(400, 600));
-        profileDataPanel.setPreferredSize(new java.awt.Dimension(400, 600));
         profileDataPanel.setLayout(new java.awt.GridLayout(14, 2, 0, 10));
 
         adaptivePanel18.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
