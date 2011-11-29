@@ -32,7 +32,7 @@ public class VideoCall extends javax.swing.JPanel {
 
         int size = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("sendVideoImagePanel"));
         Utility.SetJComponentSize(sendVideoImagePanel, size, size);
-        System.err.println("=================================" + sendVideoImagePanel.getPreferredSize());
+        
         int width   = parentSize.width;
         int height  = (parentSize.height/2) - 10; //10 Vertical Gap
         VideoChat chat   = new VideoChat(new Dimension(width, height));
