@@ -11,7 +11,7 @@
 package assignment2.Instability;
 
 //import assignment2.NoDisability.AddContact;
-import assignment2.AdaptableIMView;
+import AdaptableWindows.AdaptableIMView;
 import assignment2.AdaptableSettingsView;
 import assignment2.Exit;
 import javax.swing.JPanel;
