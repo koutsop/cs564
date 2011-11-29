@@ -10,7 +10,7 @@
  */
 package assignment2.Instability;
 
-import assignment2.Utility;
+import Utility.Utility;
 import assignment2.VideoChat;
 import java.awt.Dimension;
 import java.awt.FlowLayout;

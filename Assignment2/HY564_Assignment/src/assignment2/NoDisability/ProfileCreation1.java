@@ -11,7 +11,7 @@
 package assignment2.NoDisability;
 
 import assignment2.Login1;
-import assignment2.Utility;
+import Utility.Utility;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import pc.MainWindowPC;

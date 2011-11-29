@@ -51,7 +51,7 @@ public class AddContact extends javax.swing.JPanel {
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
-        contentPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 20, 0));
+        contentPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.PAGE_AXIS));
 

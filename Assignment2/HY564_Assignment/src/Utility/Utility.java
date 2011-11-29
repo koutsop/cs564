@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package assignment2;
+package Utility;
 
 import java.awt.Dimension;
 import javax.swing.JComponent;
