@@ -11,7 +11,7 @@
 package assignment2.NoDisability;
 
 import assignment2.AccessibleIM;
-import assignment2.AdaptableIMView;
+import AdaptableWindows.AdaptableIMView;
 import assignment2.AdaptableSettingsView;
 import assignment2.Chat;
 import pc.MainWindowPC;

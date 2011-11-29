@@ -8,7 +8,7 @@
  *
  * Created on 23 Νοε 2011, 2:29:16 μμ
  */
-package assignment2;
+package AdaptableWindows;
 
 import assignment2.NoDisability.ChatMainView;
 import demo.ViewB;

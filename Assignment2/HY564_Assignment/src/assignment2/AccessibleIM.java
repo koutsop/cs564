@@ -10,7 +10,7 @@
  */
 package assignment2;
 
-import assignment2.NoDisability.AddContact;
+import AdaptableWindows.AdaptableIMView;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 

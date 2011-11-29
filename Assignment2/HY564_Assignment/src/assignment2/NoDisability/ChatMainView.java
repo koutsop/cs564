@@ -10,17 +10,16 @@
  */
 package assignment2.NoDisability;
 
-import assignment2.Call;
+import AdaptableWindows.AdaptableCall;
+import AdaptableWindows.AdaptableVideoCall;
 import assignment2.Chat;
 import assignment2.Contact;
 import assignment2.MyProfile;
 import assignment2.Utility;
-import assignment2.VideoCall;
 import java.awt.Component;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-import javax.swing.JComponent;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
@@ -494,7 +493,7 @@ public class ChatMainView extends javax.swing.JPanel {
 
     private void videoCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_videoCallButtonActionPerformed
         selectMenuButton(videoCallButton);
-        showInContentPanel(new VideoCall(contentPanel.getPreferredSize()));
+        showInContentPanel(new AdaptableVideoCall(contentPanel.getPreferredSize()));
     }//GEN-LAST:event_videoCallButtonActionPerformed
 
     private void addContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addContactButtonActionPerformed
@@ -508,7 +507,7 @@ public class ChatMainView extends javax.swing.JPanel {
 
     private void callButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callButtonActionPerformed
         selectMenuButton(callButton);
-        showInContentPanel(new Call(contentPanel.getPreferredSize()));
+        showInContentPanel(new AdaptableCall(contentPanel.getPreferredSize()));
     }//GEN-LAST:event_callButtonActionPerformed
 
     private void myProfileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myProfileButtonActionPerformed
