@@ -233,6 +233,322 @@ component LoginLabel [
    activate "LoginPanel.Label"
 ]
 
+// =========================================================
+component ContactImg [
+    activate "ContactPanel.AvatarPanel"
+]
+
+component StatusAvailableImg [
+    activate "ContactPanel.StatusAvailablePanel"
+]
+
+component StatusIdleImg [
+    activate "ContactPanel.StatusIdlePanel"
+]
+
+component StatusBusyImg [
+    activate "ContactPanel.StatusBusyPanel"
+]
+
+
+component captchaImg [
+    activate "Panel.Content.Captcha"
+]
+
+component ReceiveContactImg [
+    activate "Panel.ReceiveVideoPanel"
+]
+
+//	=======================================================
+//	buttons images
+//	=======================================================
+
+component CancelButton [
+    if		profile1 then	activate "/images/profile_no_disability/x.png"
+	else if	profile2 then	activate "/images/profile_color_blind/x.png"
+	else if	profile3 then	activate "/images/profile_instability/x.png"
+	else if	profile4 then	activate "/images/profile_instability/x.png"
+	else if profile5 then	activate "/images/profile_spots/x.png"
+	else if	profile6 then	activate "/images/profile_pda/x.png"
+    else					activate "/images/profile_no_disability/x.png"
+]
+
+component AcceptanceButton [
+    if		profile1 then	activate "/images/profile_no_disability/tick.png"
+	else if	profile2 then	activate "/images/profile_color_blind/tick.png"
+	else if	profile3 then	activate "/images/profile_instability/tick.png"
+	else if	profile4 then	activate "/images/profile_instability/tick.png"
+	else if profile5 then	activate "/images/profile_spots/tick.png"
+	else if	profile6 then	activate "/images/profile_pda/tick.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component ListenButton [
+    if		profile1 then	activate "/images/profile_no_disability/help.png"
+	else if	profile2 then	activate "/images/profile_color_blind/help.png"
+	else if	profile3 then	activate "/images/profile_instability/help.png"
+	else if	profile4 then	activate "/images/profile_instability/help.png"
+	else if profile5 then	activate "/images/profile_spots/help.png"
+	else if	profile6 then	activate "/images/profile_pda/help.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+component HelpButton [
+    if		profile1 then	activate "/images/profile_no_disability/listen.gif"
+	else if	profile2 then	activate "/images/profile_color_blind/listen.gif"
+	else if	profile3 then	activate "/images/profile_instability/listen.gif"
+	else if	profile4 then	activate "/images/profile_instability/listen.gif"
+	else if profile5 then	activate "/images/profile_spots/listen.gif"
+	else if	profile6 then	activate "/images/profile_pda/listen.gif"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+component RefreshButton [
+    if		profile1 then	activate "/images/profile_no_disability/refresh.gif"
+	else if	profile2 then	activate "/images/profile_color_blind/refresh.gif"
+	else if	profile3 then	activate "/images/profile_instability/refresh.gif"
+	else if	profile4 then	activate "/images/profile_instability/refresh.gif"
+	else if profile5 then	activate "/images/profile_spots/refresh.gif"
+	else if	profile6 then	activate "/images/profile_pda/refresh.gif"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component OfflineButton [
+    if		profile1 then	activate "/images/profile_no_disability/status_offline.png"
+	else if	profile2 then	activate "/images/profile_color_blind/status_offline.png"
+	else if	profile3 then	activate "/images/profile_instability/status_offline.png"
+	else if	profile4 then	activate "/images/profile_instability/status_offline.png"
+	else if profile5 then	activate "/images/profile_spots/status_offline.png"
+	else if	profile6 then	activate "/images/profile_pda/status_offline.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+component OnlineButton [
+    if		profile1 then	activate "/images/profile_no_disability/status_online.png"
+	else if	profile2 then	activate "/images/profile_color_blind/status_online.png"
+	else if	profile3 then	activate "/images/profile_instability/status_online.png"
+	else if	profile4 then	activate "/images/profile_instability/status_online.png"
+	else if profile5 then	activate "/images/profile_spots/status_online.png"
+	else if	profile6 then	activate "/images/profile_pda/status_online.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+component BusyButton [
+    if		profile1 then	activate "/images/profile_no_disability/status_busy.png"
+	else if	profile2 then	activate "/images/profile_color_blind/status_busy.png"
+	else if	profile3 then	activate "/images/profile_instability/status_busy.png"
+	else if	profile4 then	activate "/images/profile_instability/status_busy.png"
+	else if profile5 then	activate "/images/profile_spots/status_busy.png"
+	else if	profile6 then	activate "/images/profile_pda/status_busy.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+component AwayButton [
+    if		profile1 then	activate "/images/profile_no_disability/status_away.png"
+	else if	profile2 then	activate "/images/profile_color_blind/status_away.png"
+	else if	profile3 then	activate "/images/profile_instability/status_away.png"
+	else if	profile4 then	activate "/images/profile_instability/status_away.png"
+	else if profile5 then	activate "/images/profile_spots/status_away.png"
+	else if	profile6 then	activate "/images/profile_pda/status_away.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component VideoCallButton [
+    if		profile1 then	activate "/images/profile_no_disability/video_call.png"
+	else if	profile2 then	activate "/images/profile_color_blind/video_call.png"
+	else if	profile3 then	activate "/images/profile_instability/video_call.png"
+	else if	profile4 then	activate "/images/profile_instability/video_call.png"
+	else if profile5 then	activate "/images/profile_spots/video_call.png"
+	else if	profile6 then	activate "/images/profile_pda/video_call.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component CallButton [
+    if		profile1 then	activate "/images/profile_no_disability/call.png"
+	else if	profile2 then	activate "/images/profile_color_blind/call.png"
+	else if	profile3 then	activate "/images/profile_instability/call.png"
+	else if	profile4 then	activate "/images/profile_instability/call.png"
+	else if profile5 then	activate "/images/profile_spots/call.png"
+	else if	profile6 then	activate "/images/profile_pda/call.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component SendFileButton [
+    if		profile1 then	activate "/images/profile_no_disability/document_up.png"
+	else if	profile2 then	activate "/images/profile_color_blind/document_up.png"
+	else if	profile3 then	activate "/images/profile_instability/document_up.png"
+	else if	profile4 then	activate "/images/profile_instability/document_up.png"
+	else if profile5 then	activate "/images/profile_spots/document_up.png"
+	else if	profile6 then	activate "/images/profile_pda/document_up.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component MuteButton [
+    if		profile1 then	activate "/images/profile_no_disability/mute.png"
+	else if	profile2 then	activate "/images/profile_color_blind/mute.png"
+	else if	profile3 then	activate "/images/profile_instability/mute.png"
+	else if	profile4 then	activate "/images/profile_instability/mute.png"
+	else if profile5 then	activate "/images/profile_spots/mute.png"
+	else if	profile6 then	activate "/images/profile_pda/mute.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component VolumeUpButton [
+    if		profile1 then	activate "/images/profile_no_disability/volume_up.png"
+	else if	profile2 then	activate "/images/profile_color_blind/volume_up.png"
+	else if	profile3 then	activate "/images/profile_instability/volume_up.png"
+	else if	profile4 then	activate "/images/profile_instability/volume_up.png"
+	else if profile5 then	activate "/images/profile_spots/volume_up.png"
+	else if	profile6 then	activate "/images/profile_pda/volume_up.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component VolumeDownButton [
+    if		profile1 then	activate "/images/profile_no_disability/volume_down.png"
+	else if	profile2 then	activate "/images/profile_color_blind/volume_down.png"
+	else if	profile3 then	activate "/images/profile_instability/volume_down.png"
+	else if	profile4 then	activate "/images/profile_instability/volume_down.png"
+	else if profile5 then	activate "/images/profile_spots/volume_down.png"
+	else if	profile6 then	activate "/images/profile_pda/volume_down.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component FullScreenButton [
+    if		profile1 then	activate "/images/profile_no_disability/fullscreen.png"
+	else if	profile2 then	activate "/images/profile_color_blind/fullscreen.png"
+	else if	profile3 then	activate "/images/profile_instability/fullscreen.png"
+	else if	profile4 then	activate "/images/profile_instability/fullscreen.png"
+	else if profile5 then	activate "/images/profile_spots/fullscreen.png"
+	else if	profile6 then	activate "/images/profile_pda/fullscreen.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component SwapButton [
+    if		profile1 then	activate "/images/profile_no_disability/swap.png"
+	else if	profile2 then	activate "/images/profile_color_blind/swap.png"
+	else if	profile3 then	activate "/images/profile_instability/swap.png"
+	else if	profile4 then	activate "/images/profile_instability/swap.png"
+	else if profile5 then	activate "/images/profile_spots/swap.png"
+	else if	profile6 then	activate "/images/profile_pda/swap.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component AddButton [
+    if		profile1 then	activate "/images/profile_no_disability/add.png"
+	else if	profile2 then	activate "/images/profile_color_blind/add.png"
+	else if	profile3 then	activate "/images/profile_instability/add.png"
+	else if	profile4 then	activate "/images/profile_instability/add.png"
+	else if profile5 then	activate "/images/profile_spots/add.png"
+	else if	profile6 then	activate "/images/profile_pda/add.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component CloseButton [
+    if		profile1 then	activate "/images/profile_no_disability/cloase.png"
+	else if	profile2 then	activate "/images/profile_color_blind/cloase.png"
+	else if	profile3 then	activate "/images/profile_instability/cloase.png"
+	else if	profile4 then	activate "/images/profile_instability/cloase.png"
+	else if profile5 then	activate "/images/profile_spots/cloase.png"
+	else if	profile6 then	activate "/images/profile_pda/cloase.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component RemoveButton [
+    if		profile1 then	activate "/images/profile_no_disability/remove.png"
+	else if	profile2 then	activate "/images/profile_color_blind/remove.png"
+	else if	profile3 then	activate "/images/profile_instability/remove.png"
+	else if	profile4 then	activate "/images/profile_instability/remove.png"
+	else if profile5 then	activate "/images/profile_spots/remove.png"
+	else if	profile6 then	activate "/images/profile_pda/remove.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component SearchButton [
+    if		profile1 then	activate "/images/profile_no_disability/search.png"
+	else if	profile2 then	activate "/images/profile_color_blind/search.png"
+	else if	profile3 then	activate "/images/profile_instability/search.png"
+	else if	profile4 then	activate "/images/profile_instability/search.png"
+	else if profile5 then	activate "/images/profile_spots/search.png"
+	else if	profile6 then	activate "/images/profile_pda/search.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component GroupButton [
+    if		profile1 then	activate "/images/profile_no_disability/group.png"
+	else if	profile2 then	activate "/images/profile_color_blind/group.png"
+	else if	profile3 then	activate "/images/profile_instability/group.png"
+	else if	profile4 then	activate "/images/profile_instability/group.png"
+	else if profile5 then	activate "/images/profile_spots/group.png"
+	else if	profile6 then	activate "/images/profile_pda/group.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component CollapseAddButton [
+    if		profile1 then	activate "/images/profile_no_disability/button_plus.png"
+	else if	profile2 then	activate "/images/profile_color_blind/button_plus.png"
+	else if	profile3 then	activate "/images/profile_instability/button_plus.png"
+	else if	profile4 then	activate "/images/profile_instability/button_plus.png"
+	else if profile5 then	activate "/images/profile_spots/button_plus.png"
+	else if	profile6 then	activate "/images/profile_pda/button_plus.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+
+component GroupSubButton [
+    if		profile1 then	activate "/images/profile_no_disability/button_minus.png"
+	else if	profile2 then	activate "/images/profile_color_blind/button_minus.png"
+	else if	profile3 then	activate "/images/profile_instability/button_minus.png"
+	else if	profile4 then	activate "/images/profile_instability/button_minus.png"
+	else if profile5 then	activate "/images/profile_spots/button_minus.png"
+	else if	profile6 then	activate "/images/profile_pda/button_minus.png"
+    else					activate "/images/profile_no_disability/tick.png"
+]
+//==========================================
+//      Panels size
+//==========================================
+
+component PagesNavigationButtonsWidth [
+	if 		profile1 then 	activate "5"	//
+	else if profile2 then 	activate "2"	//color blind
+	else if profile3 then 	activate "10"	//instability
+	else if profile4 then 	activate "2"	//low vision
+	else if profile5 then 	activate "2"	//spots
+	else if profile6 then 	activate "2"	//pda
+	else 					activate "-1"  	
+]
+
+
+//for chating
+component ContactListWidth [
+	if 		profile1 then 	activate "270"	//27% of wondow's width (1000)
+	else if profile2 then 	activate "290"	//color blind
+	else if profile3 then 	activate "245"	//instability
+	else if profile4 then 	activate "290"	//low vision
+	else if profile5 then 	activate "245"	//spots
+	else if profile6 then 	activate "290"	//pda
+	else 					activate "-1"  
+] 
+
+component sendVideoImagePanel [
+	if 		profile1 then 	activate "100" 
+	else if profile2 then 	activate "100"
+	else if profile3 then 	activate "200"
+	else if profile4 then 	activate "100"
+	else if profile5 then 	activate "200"	//spots
+	else if profile6 then 	activate "290"	//pda
+	else 					activate "-1"  
+]
+
+
+//==========================================
+
+component SpotChat [
+	if		profile5 then	activate "SpotChat"
+	else					activate "Chat"
+]
+
+component MainIMPage [
+	if 		profile1 then 	activate "ChatMainView"
+	else 					activate "ChatMainView"
+]
+
+
+// ===========================================
+
 //==========================================
 component ContactImgHeight [	//to width kai height pou 8a exei to avatar gia sthn lista me ths epafes
 	if 		profile1 then 	activate "75"
@@ -291,222 +607,4 @@ component ContactWidth [
 	else if profile5 then 	activate "230"	//spots
 	else if profile6 then 	activate "50"
 	else 					activate "-1"
-]
-
-component ContactImg [
-    activate "ContactPanel.AvatarPanel"
-]
-
-component StatusAvailableImg [
-    activate "ContactPanel.StatusAvailablePanel"
-]
-
-component StatusIdleImg [
-    activate "ContactPanel.StatusIdlePanel"
-]
-
-component StatusBusyImg [
-    activate "ContactPanel.StatusBusyPanel"
-]
-
-
-component captchaImg [
-    activate "Panel.Content.Captcha"
-]
-
-component ReceiveContactImg [
-    activate "Panel.ReceiveVideoPanel"
-]
-
-
-
-
-
-component CancelButton [
-    if		profile1 then activate "/images/profile_no_disability/x.png"
-	else if profile5 then activate "/images/profile_spots/x.png"
-    else activate "/images/profile_no_disability/x.png"
-]
-
-component AcceptanceButton [
-    if		profile1 then activate "/images/profile_no_disability/tick.png"
-	else if profile5 then activate "/images/profile_spots/tick.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-component ListenButton [
-    if		profile1 then activate "/images/profile_no_disability/help.png"
-	else if profile5 then activate "/images/profile_spots/help.png"
-    else activate "/images/profile_no_disability/help.png"
-]
-component HelpButton [
-    if		profile1 then activate "/images/profile_no_disability/listen.gif"
-	else if profile5 then activate "/images/profile_spots/listen.gif"
-    else activate "/images/profile_no_disability/listen.gif"
-]
-component RefreshButton [
-    if		profile1 then activate "/images/profile_no_disability/refresh.gif"
-	else if profile5 then activate "/images/profile_spots/refresh.gif"
-    else activate "/images/profile_no_disability/refresh.gif"
-]
-
-component OfflineButton [
-    if		profile1 then activate "/images/profile_no_disability/status_offline.png"
-	else if profile5 then activate "/images/profile_spots/status_offline.png"
-    else activate "/images/profile_no_disability/status_offline.png"
-]
-component OnlineButton [
-    if		profile1 then activate "/images/profile_no_disability/status_online.png"
-	else if profile5 then activate "/images/profile_spots/status_online.png"
-    else activate "/images/profile_no_disability/status_online.png"
-]
-component BusyButton [
-    if		profile1 then activate "/images/profile_no_disability/status_busy.png"
-	else if profile5 then activate "/images/profile_spots/status_busy.png"
-    else activate "/images/profile_no_disability/status_busy.png"
-]
-component AwayButton [
-    if		profile1 then activate "/images/profile_no_disability/status_away.png"
-	else if profile5 then activate "/images/profile_spots/status_away.png"
-    else activate "/images/profile_no_disability/status_away.png"
-]
-
-component VideoCallButton [
-    if		profile1 then activate "/images/profile_no_disability/video_call.png"
-	else if profile5 then activate "/images/profile_spots/video_call.png"
-    else activate "/images/profile_no_disability/x.png"
-]
-
-component CallButton [
-    if		profile1 then activate "/images/profile_no_disability/call.png"
-	else if profile5 then activate "/images/profile_spots/call.png"
-    else activate "/images/profile_no_disability/x.png"
-]
-
-component SendFileButton [
-    if		profile1 then activate "/images/profile_no_disability/document_up.png"
-	else if profile5 then activate "/images/profile_spots/document_up.png"
-    else activate "/images/profile_no_disability/x.png"
-]
-
-component MuteButton [
-    if		profile1 then activate "/images/profile_no_disability/mute.png"
-	else if profile5 then activate "/images/profile_spots/mute.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-component VolumeUpButton [
-    if		profile1 then activate "/images/profile_no_disability/volume_up.png"
-	else if profile5 then activate "/images/profile_spots/volume_up.png"
-    else activate "/images/profile_no_disability/x.png"
-]
-
-component VolumeDownButton [
-    if		profile1 then activate "/images/profile_no_disability/volume_down.png"
-	else if profile5 then activate "/images/profile_spots/volume_down.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-component FullScreenButton [
-    if		profile1 then activate "/images/profile_no_disability/fullscreen.png"
-	else if profile5 then activate "/images/profile_spots/fullscreen.png"
-    else activate "/images/profile_no_disability/x.png"
-]
-
-component SwapButton [
-    if		profile1 then activate "/images/profile_no_disability/swap.png"
-	else if profile5 then activate "/images/profile_spots/swap.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-component AddButton [
-    if		profile1 then activate "/images/profile_no_disability/add.png"
-	else if profile5 then activate "/images/profile_spots/add.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-component CloseButton [
-    if		profile1 then activate "/images/profile_no_disability/cloase.png"
-	else if profile5 then activate "/images/profile_spots/cloase.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-component RemoveButton [
-    if		profile1 then activate "/images/profile_no_disability/remove.png"
-	else if profile5 then activate "/images/profile_spots/remove.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-component SearchButton [
-    if		profile1 then activate "/images/profile_no_disability/search.png"
-	else if profile5 then activate "/images/profile_spots/search.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-component GroupButton [
-    if		profile1 then activate "/images/profile_no_disability/group.png"
-	else if profile5 then activate "/images/profile_spots/group.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-
-
-component CollapseAddButton [
-    if		profile1 then activate "/images/profile_no_disability/button_plus_green.png"
-	else if profile5 then activate "/images/profile_spots/button_plus_green.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-
-component GroupSubButton [
-    if		profile1 then activate "/images/profile_no_disability/button_minus_green.png"
-	else if profile5 then activate "/images/profile_spots/button_minus_green.png"
-    else activate "/images/profile_no_disability/tick.png"
-]
-//==========================================
-//      Panels size
-//==========================================
-
-component PagesNavigationButtonsWidth [
-	if 		profile1 then 	activate "5"	//
-	else if profile2 then 	activate "2"	//color blind
-	else if profile3 then 	activate "10"	//instability
-	else if profile4 then 	activate "2"	//low vision
-	else if profile5 then 	activate "2"	//spots
-	else if profile6 then 	activate "2"	//pda
-	else 					activate "-1"  	
-]
-
-
-//for chating
-component ContactListWidth [
-	if 		profile1 then 	activate "270"	//27% of wondow's width (1000)
-	else if profile2 then 	activate "290"	//color blind
-	else if profile3 then 	activate "245"	//instability
-	else if profile4 then 	activate "290"	//low vision
-	else if profile5 then 	activate "245"	//spots
-	else if profile6 then 	activate "290"	//pda
-	else 					activate "-1"  
-] 
-
-component sendVideoImagePanel [
-	if 		profile1 then 	activate "100" 
-	else if profile2 then 	activate "100"
-	else if profile3 then 	activate "200"
-	else if profile4 then 	activate "100"
-	else if profile5 then 	activate "200"	//spots
-	else if profile6 then 	activate "290"	//pda
-	else 					activate "-1"  
-]
-
-
-//==========================================
-
-component SpotChat [
-	if		profile5 then	activate "SpotChat"
-	else					activate "Chat"
-]
-
-component MainIMPage [
-	if 		profile1 then 	activate "ChatMainView"
-	else 					activate "ChatMainView"
 ]
