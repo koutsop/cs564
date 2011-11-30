@@ -28,11 +28,11 @@ public class AdaptableCall extends javax.swing.JPanel {
         initComponents();
         
         p.add(new assignment2.Call(parentSize), "Chat");
-        p.add(new assignment2.Instability.Call(parentSize), "InstabilityChat");
+        p.add(new assignment2.Spots.Call(parentSize), "SpotChat");
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("InstabilityChat");
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
         System.out.println("View:" + pid);
         cl.show(p, pid);
         p.revalidate();

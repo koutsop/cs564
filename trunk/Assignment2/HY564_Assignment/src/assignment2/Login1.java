@@ -68,20 +68,32 @@ public class Login1 extends javax.swing.JPanel {
         lowVisionButton = new widgets.button.AdaptiveButton();
         adaptivePanel8 = new widgets.panel.AdaptivePanel();
         adaptiveLabel5 = new widgets.label.AdaptiveLabel();
+        spotsPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel9 = new widgets.panel.AdaptivePanel();
+        spotsButton = new widgets.button.AdaptiveButton();
+        adaptivePanel10 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel6 = new widgets.label.AdaptiveLabel();
+        pdaPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel11 = new widgets.panel.AdaptivePanel();
+        adaptiveButton2 = new widgets.button.AdaptiveButton();
+        adaptivePanel12 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel7 = new widgets.label.AdaptiveLabel();
         downPanel = new widgets.panel.AdaptivePanel();
         registerButton = new widgets.button.AdaptiveButton();
 
-        setBorder(javax.swing.BorderFactory.createEmptyBorder(40, 0, 40, 0));
+        setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 0, 10, 0));
         setPreferredSize(new java.awt.Dimension(1000, 688));
-        setLayout(new java.awt.BorderLayout(0, 30));
+        setLayout(new java.awt.BorderLayout(0, 15));
 
-        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
+        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 0, 36));
         adaptiveLabel1.setText("Καλώς Ορίσατε");
         upPanel.add(adaptiveLabel1);
 
         add(upPanel, java.awt.BorderLayout.PAGE_START);
 
-        modlePanel.setLayout(new java.awt.GridLayout(2, 2, 20, 20));
+        modlePanel.setLayout(new java.awt.GridLayout(3, 2, 20, 20));
+
+        noDisabilityPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptivePanel1.setLayout(new java.awt.BorderLayout());
 
@@ -103,6 +115,8 @@ public class Login1 extends javax.swing.JPanel {
 
         modlePanel.add(noDisabilityPanel);
 
+        colorBlindPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
         adaptivePanel3.setLayout(new java.awt.BorderLayout());
 
         colorBlindButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
@@ -122,6 +136,8 @@ public class Login1 extends javax.swing.JPanel {
         colorBlindPanel.add(adaptivePanel3);
 
         modlePanel.add(colorBlindPanel);
+
+        instabilityPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptivePanel6.setLayout(new java.awt.BorderLayout());
 
@@ -143,6 +159,8 @@ public class Login1 extends javax.swing.JPanel {
 
         modlePanel.add(instabilityPanel);
 
+        lowVisionPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
         adaptivePanel7.setLayout(new java.awt.BorderLayout());
 
         lowVisionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
@@ -163,9 +181,48 @@ public class Login1 extends javax.swing.JPanel {
 
         modlePanel.add(lowVisionPanel);
 
+        spotsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptivePanel9.setLayout(new java.awt.BorderLayout());
+
+        spotsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        spotsButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                spotsButtonActionPerformed(evt);
+            }
+        });
+        adaptivePanel9.add(spotsButton, java.awt.BorderLayout.CENTER);
+
+        adaptiveLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        adaptiveLabel6.setText("Κηλίδες");
+        adaptivePanel10.add(adaptiveLabel6);
+
+        adaptivePanel9.add(adaptivePanel10, java.awt.BorderLayout.SOUTH);
+
+        spotsPanel.add(adaptivePanel9);
+
+        modlePanel.add(spotsPanel);
+
+        pdaPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptivePanel11.setLayout(new java.awt.BorderLayout());
+
+        adaptiveButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        adaptivePanel11.add(adaptiveButton2, java.awt.BorderLayout.CENTER);
+
+        adaptiveLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        adaptiveLabel7.setText("PDA");
+        adaptivePanel12.add(adaptiveLabel7);
+
+        adaptivePanel11.add(adaptivePanel12, java.awt.BorderLayout.SOUTH);
+
+        pdaPanel.add(adaptivePanel11);
+
+        modlePanel.add(pdaPanel);
+
         add(modlePanel, java.awt.BorderLayout.CENTER);
 
-        registerButton.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        registerButton.setFont(new java.awt.Font("Tahoma", 0, 24));
         registerButton.setFunction("LoginButton");
         registerButton.setText("Δεν έχετε λογαριασμό;");
         registerButton.addActionListener(new java.awt.event.ActionListener() {
@@ -189,8 +246,7 @@ public class Login1 extends javax.swing.JPanel {
 
     private void lowVisionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowVisionButtonActionPerformed
         initAdaptation("no_disability");
-        MainWindowPC.showPanel(new AccessibleIM());
-       
+        MainWindowPC.showPanel(new AccessibleIM()); 
     }//GEN-LAST:event_lowVisionButtonActionPerformed
 
 private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
@@ -202,13 +258,24 @@ private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GE
         MainWindowPC.showPanel(new AccessibleIM());
 	}//GEN-LAST:event_boDisabilityButtonActionPerformed
 
+	private void spotsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_spotsButtonActionPerformed
+		initAdaptation("spots");
+        MainWindowPC.showPanel(new AccessibleIM());
+	}//GEN-LAST:event_spotsButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.button.AdaptiveButton adaptiveButton2;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
     private widgets.label.AdaptiveLabel adaptiveLabel4;
     private widgets.label.AdaptiveLabel adaptiveLabel5;
+    private widgets.label.AdaptiveLabel adaptiveLabel6;
+    private widgets.label.AdaptiveLabel adaptiveLabel7;
     private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel10;
+    private widgets.panel.AdaptivePanel adaptivePanel11;
+    private widgets.panel.AdaptivePanel adaptivePanel12;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
@@ -216,6 +283,7 @@ private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private widgets.panel.AdaptivePanel adaptivePanel6;
     private widgets.panel.AdaptivePanel adaptivePanel7;
     private widgets.panel.AdaptivePanel adaptivePanel8;
+    private widgets.panel.AdaptivePanel adaptivePanel9;
     private widgets.button.AdaptiveButton boDisabilityButton;
     private widgets.button.AdaptiveButton colorBlindButton;
     private widgets.panel.AdaptivePanel colorBlindPanel;
@@ -226,7 +294,10 @@ private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private widgets.panel.AdaptivePanel lowVisionPanel;
     private widgets.panel.AdaptivePanel modlePanel;
     private widgets.panel.AdaptivePanel noDisabilityPanel;
+    private widgets.panel.AdaptivePanel pdaPanel;
     private widgets.button.AdaptiveButton registerButton;
+    private widgets.button.AdaptiveButton spotsButton;
+    private widgets.panel.AdaptivePanel spotsPanel;
     private widgets.panel.AdaptivePanel upPanel;
     // End of variables declaration//GEN-END:variables
 }

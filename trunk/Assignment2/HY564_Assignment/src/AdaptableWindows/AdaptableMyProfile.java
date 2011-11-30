@@ -28,11 +28,11 @@ public class AdaptableMyProfile extends javax.swing.JPanel {
         initComponents();
         
         p.add(new assignment2.MyProfile(parentSize), "Chat");
-        p.add(new assignment2.Instability.MyProfile(parentSize), "InstabilityChat");
+        p.add(new assignment2.Spots.MyProfile(parentSize), "SpotChat");
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("InstabilityChat");
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
         System.out.println("View:" + pid);
         cl.show(p, pid);
         p.revalidate();

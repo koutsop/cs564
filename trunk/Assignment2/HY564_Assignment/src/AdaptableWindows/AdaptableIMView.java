@@ -36,7 +36,7 @@ public class AdaptableIMView extends javax.swing.JPanel {
 
         CardLayout cl = (CardLayout)(p.getLayout());
         String pid = DMSLConnector.getInstance().getClient(false).Evaluate("MainIMPage");
-        System.out.println("View:" + pid);
+        System.out.println("- View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         
