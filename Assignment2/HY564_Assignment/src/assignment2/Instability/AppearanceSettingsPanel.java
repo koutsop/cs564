@@ -29,10 +29,10 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         Adaptation.automaticallyAdapt(this);
 		
 		iconPath = DMSLConnector.getInstance().getClient(false).Evaluate("AcceptanceButton");
-		enableButtonIcon(adaptiveButton1);
+		showButtonIcon(adaptiveButton1);
 	}
 	
-	private void enableButtonIcon (JButton button) {
+	private void showButtonIcon (JButton button) {
 		adaptiveButton1.setIcon(null);
 		adaptiveButton2.setIcon(null);
 		adaptiveButton3.setIcon(null);
@@ -101,6 +101,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel3.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
 
+        adaptiveButton1.setHorizontalAlignment(2);
         adaptiveButton1.setText("Classic");
         adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,6 +110,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton1);
 
+        adaptiveButton2.setHorizontalAlignment(2);
         adaptiveButton2.setText("Classic Picture");
         adaptiveButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,6 +119,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton2);
 
+        adaptiveButton3.setHorizontalAlignment(2);
         adaptiveButton3.setText("Bubble");
         adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,6 +128,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton3);
 
+        adaptiveButton4.setHorizontalAlignment(2);
         adaptiveButton4.setText("Bubble Picture");
         adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -133,6 +137,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton4);
 
+        adaptiveButton5.setHorizontalAlignment(2);
         adaptiveButton5.setText("Ping Pong");
         adaptiveButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -141,6 +146,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton5);
 
+        adaptiveButton6.setHorizontalAlignment(2);
         adaptiveButton6.setText("Ping Pong Picture");
         adaptiveButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,27 +207,27 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
 	private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
-		enableButtonIcon(adaptiveButton1);
+		showButtonIcon(adaptiveButton1);
 	}//GEN-LAST:event_adaptiveButton1ActionPerformed
 
 	private void adaptiveButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton2ActionPerformed
-		enableButtonIcon(adaptiveButton2);
+		showButtonIcon(adaptiveButton2);
 	}//GEN-LAST:event_adaptiveButton2ActionPerformed
 
 	private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed
-		enableButtonIcon(adaptiveButton3);
+		showButtonIcon(adaptiveButton3);
 	}//GEN-LAST:event_adaptiveButton3ActionPerformed
 
 	private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
-		enableButtonIcon(adaptiveButton4);
+		showButtonIcon(adaptiveButton4);
 	}//GEN-LAST:event_adaptiveButton4ActionPerformed
 
 	private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
-		enableButtonIcon(adaptiveButton5);
+		showButtonIcon(adaptiveButton5);
 	}//GEN-LAST:event_adaptiveButton5ActionPerformed
 
 	private void adaptiveButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton6ActionPerformed
-		enableButtonIcon(adaptiveButton6);
+		showButtonIcon(adaptiveButton6);
 	}//GEN-LAST:event_adaptiveButton6ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -30,17 +30,98 @@ public class test extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        leftPanel = new widgets.panel.AdaptivePanel();
+        centerPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel1 = new widgets.panel.AdaptivePanel();
+        mainMenuButton1 = new widgets.button.MainMenuButton();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        adaptiveList1 = new widgets.list.AdaptiveList();
+        rightPanel = new widgets.panel.AdaptivePanel();
+
+        setLayout(new java.awt.BorderLayout());
+
+        leftPanel.setMaximumSize(new java.awt.Dimension(100, 300));
+        leftPanel.setMinimumSize(new java.awt.Dimension(100, 300));
+
+        javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
+        leftPanel.setLayout(leftPanelLayout);
+        leftPanelLayout.setHorizontalGroup(
+            leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        leftPanelLayout.setVerticalGroup(
+            leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 300, Short.MAX_VALUE)
         );
+
+        add(leftPanel, java.awt.BorderLayout.WEST);
+
+        centerPanel.setLayout(new java.awt.BorderLayout(50, 0));
+
+        adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        mainMenuButton1.setMaximumSize(new java.awt.Dimension(150, 42));
+        mainMenuButton1.setMinimumSize(new java.awt.Dimension(150, 42));
+        mainMenuButton1.setPreferredSize(new java.awt.Dimension(150, 42));
+        mainMenuButton1.setText("Άρση Αποκλεισμού");
+        adaptivePanel1.add(mainMenuButton1);
+
+        centerPanel.add(adaptivePanel1, java.awt.BorderLayout.EAST);
+
+        javax.swing.GroupLayout adaptivePanel2Layout = new javax.swing.GroupLayout(adaptivePanel2);
+        adaptivePanel2.setLayout(adaptivePanel2Layout);
+        adaptivePanel2Layout.setHorizontalGroup(
+            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 200, Short.MAX_VALUE)
+        );
+        adaptivePanel2Layout.setVerticalGroup(
+            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        centerPanel.add(adaptivePanel2, java.awt.BorderLayout.SOUTH);
+
+        adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptiveList1.setModel(new javax.swing.AbstractListModel() {
+            String[] strings = { "maraki@hotmail.com", "koutsop@gmail.com", "testmail@hotmail.com", "gavros666@hotmail.com", "giveTeam3A10@hotmail.com" };
+            public int getSize() { return strings.length; }
+            public Object getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane1.setViewportView(adaptiveList1);
+
+        adaptivePanel3.add(jScrollPane1);
+
+        centerPanel.add(adaptivePanel3, java.awt.BorderLayout.CENTER);
+
+        add(centerPanel, java.awt.BorderLayout.CENTER);
+
+        rightPanel.setPreferredSize(new java.awt.Dimension(100, 300));
+
+        javax.swing.GroupLayout rightPanelLayout = new javax.swing.GroupLayout(rightPanel);
+        rightPanel.setLayout(rightPanelLayout);
+        rightPanelLayout.setHorizontalGroup(
+            rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        rightPanelLayout.setVerticalGroup(
+            rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        add(rightPanel, java.awt.BorderLayout.EAST);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.list.AdaptiveList adaptiveList1;
+    private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel3;
+    private widgets.panel.AdaptivePanel centerPanel;
+    private javax.swing.JScrollPane jScrollPane1;
+    private widgets.panel.AdaptivePanel leftPanel;
+    private widgets.button.MainMenuButton mainMenuButton1;
+    private widgets.panel.AdaptivePanel rightPanel;
     // End of variables declaration//GEN-END:variables
 }

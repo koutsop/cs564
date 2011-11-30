@@ -35,12 +35,11 @@ public class BlockedSettingsPanel extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         adaptiveList1 = new widgets.list.AdaptiveList();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
-        mainMenuButton1 = new widgets.button.MainMenuButton();
+        adaptiveButton1 = new widgets.button.AdaptiveButton();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
         rightPanel = new widgets.panel.AdaptivePanel();
 
-        setMaximumSize(new java.awt.Dimension(1000, 600));
-        setPreferredSize(new java.awt.Dimension(999, 300));
-        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
+        setLayout(new java.awt.BorderLayout());
 
         leftPanel.setMaximumSize(new java.awt.Dimension(100, 300));
         leftPanel.setMinimumSize(new java.awt.Dimension(100, 300));
@@ -54,17 +53,12 @@ public class BlockedSettingsPanel extends javax.swing.JPanel {
         );
         leftPanelLayout.setVerticalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 364, Short.MAX_VALUE)
         );
 
-        add(leftPanel);
+        add(leftPanel, java.awt.BorderLayout.WEST);
 
-        centerPanel.setMaximumSize(new java.awt.Dimension(1000, 600));
-        centerPanel.setPreferredSize(new java.awt.Dimension(943, 300));
-        centerPanel.setLayout(new javax.swing.BoxLayout(centerPanel, javax.swing.BoxLayout.LINE_AXIS));
-
-        jScrollPane1.setMaximumSize(new java.awt.Dimension(650, 500));
-        jScrollPane1.setPreferredSize(new java.awt.Dimension(650, 500));
+        centerPanel.setLayout(new java.awt.BorderLayout(50, 0));
 
         adaptiveList1.setModel(new javax.swing.AbstractListModel() {
             String[] strings = { "maraki@hotmail.com", "koutsop@gmail.com", "testmail@hotmail.com", "gavros666@hotmail.com", "giveTeam3A10@hotmail.com" };
@@ -73,33 +67,29 @@ public class BlockedSettingsPanel extends javax.swing.JPanel {
         });
         jScrollPane1.setViewportView(adaptiveList1);
 
-        centerPanel.add(jScrollPane1);
+        centerPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
-        mainMenuButton1.setMaximumSize(new java.awt.Dimension(200, 42));
-        mainMenuButton1.setMinimumSize(new java.awt.Dimension(150, 42));
-        mainMenuButton1.setPreferredSize(new java.awt.Dimension(150, 42));
-        mainMenuButton1.setText("Άρση Αποκλεισμού");
+        adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        javax.swing.GroupLayout adaptivePanel1Layout = new javax.swing.GroupLayout(adaptivePanel1);
-        adaptivePanel1.setLayout(adaptivePanel1Layout);
-        adaptivePanel1Layout.setHorizontalGroup(
-            adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, adaptivePanel1Layout.createSequentialGroup()
-                .addContainerGap(36, Short.MAX_VALUE)
-                .addComponent(mainMenuButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+        adaptiveButton1.setText("Άρση Αποκλεισμού");
+        adaptivePanel1.add(adaptiveButton1);
+
+        centerPanel.add(adaptivePanel1, java.awt.BorderLayout.EAST);
+
+        javax.swing.GroupLayout adaptivePanel2Layout = new javax.swing.GroupLayout(adaptivePanel2);
+        adaptivePanel2.setLayout(adaptivePanel2Layout);
+        adaptivePanel2Layout.setHorizontalGroup(
+            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 749, Short.MAX_VALUE)
         );
-        adaptivePanel1Layout.setVerticalGroup(
-            adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(adaptivePanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(mainMenuButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(247, Short.MAX_VALUE))
+        adaptivePanel2Layout.setVerticalGroup(
+            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        centerPanel.add(adaptivePanel1);
+        centerPanel.add(adaptivePanel2, java.awt.BorderLayout.SOUTH);
 
-        add(centerPanel);
+        add(centerPanel, java.awt.BorderLayout.CENTER);
 
         rightPanel.setPreferredSize(new java.awt.Dimension(100, 300));
 
@@ -107,23 +97,24 @@ public class BlockedSettingsPanel extends javax.swing.JPanel {
         rightPanel.setLayout(rightPanelLayout);
         rightPanelLayout.setHorizontalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 77, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
         rightPanelLayout.setVerticalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 364, Short.MAX_VALUE)
         );
 
-        add(rightPanel);
+        add(rightPanel, java.awt.BorderLayout.EAST);
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.list.AdaptiveList adaptiveList1;
     private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel centerPanel;
     private javax.swing.JScrollPane jScrollPane1;
     private widgets.panel.AdaptivePanel leftPanel;
-    private widgets.button.MainMenuButton mainMenuButton1;
     private widgets.panel.AdaptivePanel rightPanel;
     // End of variables declaration//GEN-END:variables
 }
