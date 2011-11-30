@@ -22,6 +22,7 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
     public AddContactsInNewTeam(JPanel parent) {
         initComponents();
         this.myParent = parent;
+		adaptivePanel5.add(new PagesNavigationButtons());
     }
 
     /** This method is called from within the constructor to
@@ -86,16 +87,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         adaptiveLabel17 = new widgets.label.AdaptiveLabel();
         adaptiveButton11 = new widgets.button.AdaptiveButton();
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
-        adaptiveLabel5 = new widgets.label.AdaptiveLabel();
-        adaptiveButton15 = new widgets.button.AdaptiveButton();
-        adaptiveButton16 = new widgets.button.AdaptiveButton();
-        adaptiveButton17 = new widgets.button.AdaptiveButton();
-        adaptiveButton18 = new widgets.button.AdaptiveButton();
-        adaptiveLabel6 = new widgets.label.AdaptiveLabel();
-        adaptiveButton19 = new widgets.button.AdaptiveButton();
-        adaptiveButton21 = new widgets.button.AdaptiveButton();
-        adaptiveButton22 = new widgets.button.AdaptiveButton();
-        adaptiveButton23 = new widgets.button.AdaptiveButton();
 
         setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
@@ -535,49 +526,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         contentPanel.add(adaptivePanel2, java.awt.BorderLayout.CENTER);
 
         adaptivePanel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 20, 20, 20));
-        adaptivePanel5.setLayout(new javax.swing.BoxLayout(adaptivePanel5, javax.swing.BoxLayout.LINE_AXIS));
-
-        adaptiveLabel5.setText("Σελίδα:  ");
-        adaptivePanel5.add(adaptiveLabel5);
-
-        adaptiveButton15.setText("<< Προηγούμενο");
-        adaptivePanel5.add(adaptiveButton15);
-
-        adaptiveButton16.setSelected(true);
-        adaptiveButton16.setText("1");
-        adaptiveButton16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton16ActionPerformed(evt);
-            }
-        });
-        adaptivePanel5.add(adaptiveButton16);
-
-        adaptiveButton17.setText("2");
-        adaptivePanel5.add(adaptiveButton17);
-
-        adaptiveButton18.setText("3");
-        adaptiveButton18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton18ActionPerformed(evt);
-            }
-        });
-        adaptivePanel5.add(adaptiveButton18);
-
-        adaptiveLabel6.setText("...");
-        adaptivePanel5.add(adaptiveLabel6);
-
-        adaptiveButton19.setText("19");
-        adaptivePanel5.add(adaptiveButton19);
-
-        adaptiveButton21.setText("20");
-        adaptivePanel5.add(adaptiveButton21);
-
-        adaptiveButton22.setText("21");
-        adaptivePanel5.add(adaptiveButton22);
-
-        adaptiveButton23.setText("Επόμενο >>");
-        adaptivePanel5.add(adaptiveButton23);
-
         contentPanel.add(adaptivePanel5, java.awt.BorderLayout.PAGE_END);
 
         add(contentPanel);
@@ -590,14 +538,6 @@ private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//G
 private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
 // TODO add your handling code here:
 }//GEN-LAST:event_adaptiveButton5ActionPerformed
-
-private void adaptiveButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton16ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton16ActionPerformed
-
-private void adaptiveButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton18ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton18ActionPerformed
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
    Groups r = new Groups(myParent);
@@ -641,14 +581,6 @@ private void adaptiveButton11ActionPerformed(java.awt.event.ActionEvent evt) {//
     private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton10;
     private widgets.button.AdaptiveButton adaptiveButton11;
-    private widgets.button.AdaptiveButton adaptiveButton15;
-    private widgets.button.AdaptiveButton adaptiveButton16;
-    private widgets.button.AdaptiveButton adaptiveButton17;
-    private widgets.button.AdaptiveButton adaptiveButton18;
-    private widgets.button.AdaptiveButton adaptiveButton19;
-    private widgets.button.AdaptiveButton adaptiveButton21;
-    private widgets.button.AdaptiveButton adaptiveButton22;
-    private widgets.button.AdaptiveButton adaptiveButton23;
     private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.button.AdaptiveButton adaptiveButton4;
     private widgets.button.AdaptiveButton adaptiveButton5;
@@ -665,8 +597,6 @@ private void adaptiveButton11ActionPerformed(java.awt.event.ActionEvent evt) {//
     private widgets.label.AdaptiveLabel adaptiveLabel16;
     private widgets.label.AdaptiveLabel adaptiveLabel17;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
-    private widgets.label.AdaptiveLabel adaptiveLabel5;
-    private widgets.label.AdaptiveLabel adaptiveLabel6;
     private widgets.label.AdaptiveLabel adaptiveLabel9;
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel10;
