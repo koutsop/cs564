@@ -68,12 +68,14 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
         appearanceButton = new widgets.button.SecMenuButton();
         contentPanel = new widgets.panel.AdaptivePanel();
         bottomPanel = new widgets.panel.AdaptivePanel();
-        adaptivePanel1 = new widgets.panel.AdaptivePanel();
+        adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
+        adaptivePanel1 = new widgets.panel.AdaptivePanel();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptiveButton6 = new widgets.button.AdaptiveButton();
         adaptiveButton5 = new widgets.button.AdaptiveButton();
-        adaptivePanel3 = new widgets.panel.AdaptivePanel();
 
         secMenuButton1.setText("secMenuButton1");
 
@@ -146,13 +148,25 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
         bottomPanel.setPreferredSize(new java.awt.Dimension(1000, 50));
         bottomPanel.setLayout(new javax.swing.BoxLayout(bottomPanel, javax.swing.BoxLayout.LINE_AXIS));
 
+        adaptivePanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptiveButton4.setText("Βοήθεια");
+        adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton4ActionPerformed(evt);
+            }
+        });
+        adaptivePanel5.add(adaptiveButton4);
+
+        bottomPanel.add(adaptivePanel5);
+
         adaptivePanel1.setPreferredSize(new java.awt.Dimension(30, 110));
 
         javax.swing.GroupLayout adaptivePanel1Layout = new javax.swing.GroupLayout(adaptivePanel1);
         adaptivePanel1.setLayout(adaptivePanel1Layout);
         adaptivePanel1Layout.setHorizontalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
+            .addGap(0, 198, Short.MAX_VALUE)
         );
         adaptivePanel1Layout.setVerticalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -161,57 +175,13 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
 
         bottomPanel.add(adaptivePanel1);
 
-        adaptiveButton4.setText("Βοήθεια");
-        adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton4ActionPerformed(evt);
-            }
-        });
-        bottomPanel.add(adaptiveButton4);
-
-        adaptiveButton6.setText("ΟΚ");
-        adaptiveButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton6ActionPerformed(evt);
-            }
-        });
-
-        adaptiveButton5.setText("Άκυρο");
-        adaptiveButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton5ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout adaptivePanel2Layout = new javax.swing.GroupLayout(adaptivePanel2);
-        adaptivePanel2.setLayout(adaptivePanel2Layout);
-        adaptivePanel2Layout.setHorizontalGroup(
-            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, adaptivePanel2Layout.createSequentialGroup()
-                .addContainerGap(703, Short.MAX_VALUE)
-                .addComponent(adaptiveButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(adaptiveButton5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        adaptivePanel2Layout.setVerticalGroup(
-            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, adaptivePanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(adaptiveButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(adaptiveButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(33, 33, 33))
-        );
-
-        bottomPanel.add(adaptivePanel2);
-
         adaptivePanel3.setPreferredSize(new java.awt.Dimension(30, 110));
 
         javax.swing.GroupLayout adaptivePanel3Layout = new javax.swing.GroupLayout(adaptivePanel3);
         adaptivePanel3.setLayout(adaptivePanel3Layout);
         adaptivePanel3Layout.setHorizontalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
+            .addGap(0, 198, Short.MAX_VALUE)
         );
         adaptivePanel3Layout.setVerticalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -219,6 +189,30 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
         );
 
         bottomPanel.add(adaptivePanel3);
+
+        adaptivePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptivePanel4.setLayout(new java.awt.GridLayout(1, 2, 20, 0));
+
+        adaptiveButton6.setText("ΟΚ");
+        adaptiveButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton6ActionPerformed(evt);
+            }
+        });
+        adaptivePanel4.add(adaptiveButton6);
+
+        adaptiveButton5.setText("Άκυρο");
+        adaptiveButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton5ActionPerformed(evt);
+            }
+        });
+        adaptivePanel4.add(adaptiveButton5);
+
+        adaptivePanel2.add(adaptivePanel4);
+
+        bottomPanel.add(adaptivePanel2);
 
         jPanel1.add(bottomPanel, java.awt.BorderLayout.PAGE_END);
 
@@ -363,6 +357,8 @@ private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
+    private widgets.panel.AdaptivePanel adaptivePanel4;
+    private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.button.SecMenuButton appearanceButton;
     private widgets.button.SecMenuButton blockedButton;
     private widgets.panel.AdaptivePanel bottomPanel;

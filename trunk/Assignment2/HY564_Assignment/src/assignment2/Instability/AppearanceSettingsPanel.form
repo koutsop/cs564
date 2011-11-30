@@ -102,6 +102,7 @@
                   <SubComponents>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton1">
                       <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Classic"/>
                       </Properties>
                       <Events>
@@ -110,6 +111,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton2">
                       <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Classic Picture"/>
                       </Properties>
                       <Events>
@@ -118,6 +120,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
                       <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Bubble"/>
                       </Properties>
                       <Events>
@@ -126,6 +129,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
                       <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Bubble Picture"/>
                       </Properties>
                       <Events>
@@ -134,6 +138,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
                       <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Ping Pong"/>
                       </Properties>
                       <Events>
@@ -142,6 +147,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton6">
                       <Properties>
+                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Ping Pong Picture"/>
                       </Properties>
                       <Events>
