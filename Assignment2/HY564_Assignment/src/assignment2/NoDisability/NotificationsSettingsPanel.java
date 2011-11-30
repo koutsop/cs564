@@ -75,17 +75,19 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(999, 500));
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
+        leftPanel.setMaximumSize(new java.awt.Dimension(100, 300));
+        leftPanel.setMinimumSize(new java.awt.Dimension(100, 300));
         leftPanel.setPreferredSize(new java.awt.Dimension(100, 300));
 
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
         leftPanel.setLayout(leftPanelLayout);
         leftPanelLayout.setHorizontalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 91, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
         leftPanelLayout.setVerticalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 535, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         add(leftPanel);
@@ -161,7 +163,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
             .addGroup(adaptivePanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(adaptiveCheckBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(740, Short.MAX_VALUE))
+                .addContainerGap(733, Short.MAX_VALUE))
         );
         adaptivePanel4Layout.setVerticalGroup(
             adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -181,7 +183,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         rightPanel.setLayout(rightPanelLayout);
         rightPanelLayout.setHorizontalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 91, Short.MAX_VALUE)
+            .addGap(0, 90, Short.MAX_VALUE)
         );
         rightPanelLayout.setVerticalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -51,17 +51,19 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(999, 300));
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
+        leftPanel.setMaximumSize(new java.awt.Dimension(100, 300));
+        leftPanel.setMinimumSize(new java.awt.Dimension(100, 300));
         leftPanel.setPreferredSize(new java.awt.Dimension(100, 300));
 
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
         leftPanel.setLayout(leftPanelLayout);
         leftPanelLayout.setHorizontalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 74, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
         leftPanelLayout.setVerticalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 190, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         add(leftPanel);
@@ -82,7 +84,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
             adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(adaptivePanel4Layout.createSequentialGroup()
                 .addComponent(startupCheckBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(502, Short.MAX_VALUE))
+                .addContainerGap(480, Short.MAX_VALUE))
         );
         adaptivePanel4Layout.setVerticalGroup(
             adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -115,7 +117,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel2.setLayout(adaptivePanel2Layout);
         adaptivePanel2Layout.setHorizontalGroup(
             adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 97, Short.MAX_VALUE)
+            .addGap(0, 91, Short.MAX_VALUE)
         );
         adaptivePanel2Layout.setVerticalGroup(
             adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -136,7 +138,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel3.setLayout(adaptivePanel3Layout);
         adaptivePanel3Layout.setHorizontalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 97, Short.MAX_VALUE)
+            .addGap(0, 91, Short.MAX_VALUE)
         );
         adaptivePanel3Layout.setVerticalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -156,28 +158,28 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel7.setMaximumSize(new java.awt.Dimension(1000, 100));
         adaptivePanel7.setPreferredSize(new java.awt.Dimension(943, 80));
 
-        previewLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        previewLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18));
         previewLabel.setText("Έτσι θα φαίνεται το κείμενό σας!");
 
         javax.swing.GroupLayout adaptivePanel7Layout = new javax.swing.GroupLayout(adaptivePanel7);
         adaptivePanel7.setLayout(adaptivePanel7Layout);
         adaptivePanel7Layout.setHorizontalGroup(
             adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 799, Short.MAX_VALUE)
+            .addGap(0, 777, Short.MAX_VALUE)
             .addGroup(adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(adaptivePanel7Layout.createSequentialGroup()
-                    .addGap(0, 261, Short.MAX_VALUE)
+                    .addGap(0, 250, Short.MAX_VALUE)
                     .addComponent(previewLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 261, Short.MAX_VALUE)))
+                    .addGap(0, 250, Short.MAX_VALUE)))
         );
         adaptivePanel7Layout.setVerticalGroup(
             adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 91, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
             .addGroup(adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(adaptivePanel7Layout.createSequentialGroup()
-                    .addGap(0, 33, Short.MAX_VALUE)
+                    .addGap(0, 37, Short.MAX_VALUE)
                     .addComponent(previewLabel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 32, Short.MAX_VALUE)))
+                    .addGap(0, 37, Short.MAX_VALUE)))
         );
 
         centerPanel.add(adaptivePanel7);
@@ -190,11 +192,11 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         rightPanel.setLayout(rightPanelLayout);
         rightPanelLayout.setHorizontalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 74, Short.MAX_VALUE)
+            .addGap(0, 71, Short.MAX_VALUE)
         );
         rightPanelLayout.setVerticalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 190, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         add(rightPanel);

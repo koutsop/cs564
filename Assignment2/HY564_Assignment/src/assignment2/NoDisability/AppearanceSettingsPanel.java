@@ -74,11 +74,6 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         adaptiveComboBox1.setMaximumSize(new java.awt.Dimension(112, 20));
         adaptiveComboBox1.setMinimumSize(new java.awt.Dimension(112, 20));
         adaptiveComboBox1.setPreferredSize(new java.awt.Dimension(112, 20));
-        adaptiveComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveComboBox1ActionPerformed(evt);
-            }
-        });
         adaptivePanel1.add(adaptiveComboBox1);
 
         centerPanel.add(adaptivePanel1, java.awt.BorderLayout.NORTH);
@@ -99,7 +94,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         adaptivePanel2.setLayout(adaptivePanel2Layout);
         adaptivePanel2Layout.setHorizontalGroup(
             adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 800, Short.MAX_VALUE)
+            .addGap(0, 761, Short.MAX_VALUE)
         );
         adaptivePanel2Layout.setVerticalGroup(
             adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -125,10 +120,6 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
 
         add(rightPanel);
     }// </editor-fold>//GEN-END:initComponents
-
-private void adaptiveComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveComboBox1ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveComboBox1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox1;

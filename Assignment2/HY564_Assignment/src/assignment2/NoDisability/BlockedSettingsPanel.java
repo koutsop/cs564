@@ -42,17 +42,19 @@ public class BlockedSettingsPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(999, 300));
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
+        leftPanel.setMaximumSize(new java.awt.Dimension(100, 300));
+        leftPanel.setMinimumSize(new java.awt.Dimension(100, 300));
         leftPanel.setPreferredSize(new java.awt.Dimension(100, 300));
 
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
         leftPanel.setLayout(leftPanelLayout);
         leftPanelLayout.setHorizontalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 79, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
         leftPanelLayout.setVerticalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 190, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         add(leftPanel);
@@ -83,7 +85,7 @@ public class BlockedSettingsPanel extends javax.swing.JPanel {
         adaptivePanel1Layout.setHorizontalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, adaptivePanel1Layout.createSequentialGroup()
-                .addContainerGap(50, Short.MAX_VALUE)
+                .addContainerGap(36, Short.MAX_VALUE)
                 .addComponent(mainMenuButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -92,7 +94,7 @@ public class BlockedSettingsPanel extends javax.swing.JPanel {
             .addGroup(adaptivePanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(mainMenuButton1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addContainerGap(247, Short.MAX_VALUE))
         );
 
         centerPanel.add(adaptivePanel1);
@@ -105,11 +107,11 @@ public class BlockedSettingsPanel extends javax.swing.JPanel {
         rightPanel.setLayout(rightPanelLayout);
         rightPanelLayout.setHorizontalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 79, Short.MAX_VALUE)
+            .addGap(0, 77, Short.MAX_VALUE)
         );
         rightPanelLayout.setVerticalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 190, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         add(rightPanel);

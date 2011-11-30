@@ -34,29 +34,27 @@ public class HistorySettingsPanel extends javax.swing.JPanel {
         centerPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         startupCheckBox = new widgets.checkbox.AdaptiveCheckBox();
-        rightPanel = new widgets.panel.AdaptivePanel();
 
-        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
+        setLayout(new java.awt.BorderLayout());
 
-        leftPanel.setPreferredSize(new java.awt.Dimension(100, 600));
+        leftPanel.setMaximumSize(new java.awt.Dimension(100, 300));
+        leftPanel.setMinimumSize(new java.awt.Dimension(100, 300));
+        leftPanel.setPreferredSize(new java.awt.Dimension(100, 300));
 
         javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
         leftPanel.setLayout(leftPanelLayout);
         leftPanelLayout.setHorizontalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 79, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
         leftPanelLayout.setVerticalGroup(
             leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 137, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
-        add(leftPanel);
+        add(leftPanel, java.awt.BorderLayout.WEST);
 
-        centerPanel.setLayout(new javax.swing.BoxLayout(centerPanel, javax.swing.BoxLayout.PAGE_AXIS));
-
-        adaptivePanel4.setMaximumSize(new java.awt.Dimension(1000, 600));
-        adaptivePanel4.setPreferredSize(new java.awt.Dimension(943, 600));
+        centerPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         startupCheckBox.setHorizontalAlignment(0);
         startupCheckBox.setText("Αποθήκευση ιστορικού συνομιλίας");
@@ -67,41 +65,25 @@ public class HistorySettingsPanel extends javax.swing.JPanel {
             adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(adaptivePanel4Layout.createSequentialGroup()
                 .addComponent(startupCheckBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(602, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         adaptivePanel4Layout.setVerticalGroup(
             adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(adaptivePanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(startupCheckBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         centerPanel.add(adaptivePanel4);
 
-        add(centerPanel);
-
-        rightPanel.setPreferredSize(new java.awt.Dimension(100, 600));
-
-        javax.swing.GroupLayout rightPanelLayout = new javax.swing.GroupLayout(rightPanel);
-        rightPanel.setLayout(rightPanelLayout);
-        rightPanelLayout.setHorizontalGroup(
-            rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 79, Short.MAX_VALUE)
-        );
-        rightPanelLayout.setVerticalGroup(
-            rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 137, Short.MAX_VALUE)
-        );
-
-        add(rightPanel);
+        add(centerPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel centerPanel;
     private widgets.panel.AdaptivePanel leftPanel;
-    private widgets.panel.AdaptivePanel rightPanel;
     private widgets.checkbox.AdaptiveCheckBox startupCheckBox;
     // End of variables declaration//GEN-END:variables
 }

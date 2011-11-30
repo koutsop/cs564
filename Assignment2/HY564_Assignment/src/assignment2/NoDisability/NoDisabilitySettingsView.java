@@ -245,7 +245,7 @@ public class NoDisabilitySettingsView extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
 private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
-// TODO add your handling code here:
+
 }//GEN-LAST:event_adaptiveButton4ActionPerformed
 
     
@@ -258,7 +258,7 @@ MainWindowPC.showPanel(new AccessibleIM());
 }//GEN-LAST:event_adaptiveButton5ActionPerformed
 
 private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generalButtonActionPerformed
-// TODO add your handling code here:
+
     // Set the appropriate tab as selected
    generalButton.setSelected(true);
    historyButton.setSelected(false);
@@ -279,15 +279,15 @@ private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN
 }//GEN-LAST:event_generalButtonActionPerformed
 
 private void historyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyButtonActionPerformed
-  generalButton.setSelected(false);
-   historyButton.setSelected(true);
-   appearanceButton.setSelected(false);
-   blockedButton.setSelected(false);
-   notificationsButton.setSelected(false);
+	generalButton.setSelected(false);
+	historyButton.setSelected(true);
+	appearanceButton.setSelected(false);
+	blockedButton.setSelected(false);
+	notificationsButton.setSelected(false);
   
-   // Instantiate the new screen
-   HistorySettingsPanel historySettings = new HistorySettingsPanel();
-   historySettings.setVisible(true);
+	// Instantiate the new screen
+	assignment2.Instability.HistorySettingsPanel historySettings = new assignment2.Instability.HistorySettingsPanel();
+	historySettings.setVisible(true);
 
   // Chat a = new Chat();
    // Remove the contents of the content panel & add the new screen
@@ -318,7 +318,7 @@ private void blockedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN
 }//GEN-LAST:event_blockedButtonActionPerformed
 
 private void notificationsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificationsButtonActionPerformed
-// TODO add your handling code here:
+
      generalButton.setSelected(false);
    historyButton.setSelected(false);
    appearanceButton.setSelected(false);
@@ -326,7 +326,7 @@ private void notificationsButtonActionPerformed(java.awt.event.ActionEvent evt) 
    notificationsButton.setSelected(true);
   
    // Instantiate the new screen
-   NotificationsSettingsPanel notificationsSettings = new NotificationsSettingsPanel();
+   assignment2.Instability.NotificationsSettingsPanel notificationsSettings = new assignment2.Instability.NotificationsSettingsPanel();
    notificationsSettings.setVisible(true);
 
   // Chat a = new Chat();
@@ -345,7 +345,7 @@ private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//
    notificationsButton.setSelected(false);
   
    // Instantiate the new screen
-   AppearanceSettingsPanel appearanceSettings = new AppearanceSettingsPanel();
+   assignment2.Instability.AppearanceSettingsPanel appearanceSettings = new assignment2.Instability.AppearanceSettingsPanel();
    appearanceSettings.setVisible(true);
 
   // Chat a = new Chat();
