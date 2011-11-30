@@ -8,7 +8,7 @@
  *
  * Created on 29 Νοε 2011, 8:46:28 πμ
  */
-package assignment2.Instability;
+package assignment2.Spots;
 
 import Utility.Utility;
 import java.awt.Dimension;

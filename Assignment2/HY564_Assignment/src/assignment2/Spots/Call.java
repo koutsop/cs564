@@ -8,7 +8,7 @@
  *
  * Created on 29 Νοε 2011, 1:00:09 πμ
  */
-package assignment2.Instability;
+package assignment2.Spots;
 
 import Utility.Utility;
 import assignment2.VideoChat;

@@ -8,7 +8,7 @@
  *
  * Created on 29 Νοε 2011, 9:47:38 πμ
  */
-package assignment2.Instability;
+package assignment2.Spots;
 
 import Utility.Utility;
 import java.awt.Dimension;
@@ -176,7 +176,7 @@ public class Chat extends javax.swing.JPanel {
 
         adaptivePanel3.setLayout(new javax.swing.BoxLayout(adaptivePanel3, javax.swing.BoxLayout.PAGE_AXIS));
 
-        nameLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        nameLabel.setFont(new java.awt.Font("Tahoma", 1, 11));
         nameLabel.setText("Marigianna Skouradakh:");
         adaptivePanel3.add(nameLabel);
 
