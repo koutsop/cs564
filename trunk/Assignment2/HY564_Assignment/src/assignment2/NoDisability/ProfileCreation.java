@@ -22,11 +22,11 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class ProfileCreation1 extends javax.swing.JPanel {
+public class ProfileCreation extends javax.swing.JPanel {
    
 
     /** Creates new form ProfileCreation */
-   public ProfileCreation1(Dimension parentSize) {
+   public ProfileCreation(Dimension parentSize) {
     
 		initComponents();
 		Adaptation.automaticallySetRuntime(this);

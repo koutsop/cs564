@@ -11,7 +11,7 @@
 package assignment2;
 
 //import assignment2.NoDisability.AddContact;
-import assignment2.NoDisability.ProfileCreation1;
+import assignment2.NoDisability.ProfileCreation;
 import java.awt.Dimension;
 import pc.MainWindowPC;
 import utilities.Adaptation;
@@ -292,7 +292,7 @@ public class Login1 extends javax.swing.JPanel {
     }//GEN-LAST:event_lowVisionButtonActionPerformed
 
 private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
-     MainWindowPC.showPanel(new ProfileCreation1(new Dimension(980, 680)));
+     MainWindowPC.showPanel(new ProfileCreation(new Dimension(980, 680)));
 }//GEN-LAST:event_registerButtonActionPerformed
 
 	private void boDisabilityButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boDisabilityButtonActionPerformed
