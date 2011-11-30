@@ -83,7 +83,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         adaptiveTextBox1.setColumns(20);
         adaptiveTextBox1.setEditable(false);
         adaptiveTextBox1.setRows(5);
-        adaptiveTextBox1.setText("koutsop: Hey! This is a text message!\nmarigianna: Hey ! Yeah I get it!\nkoutsop: Are you getting it without any problems?\nmarigianna: Oh yes. I can read it perfectly.\nkoutsop: ok! Nice to speak to you!");
+        adaptiveTextBox1.setText("koutsop:    Hey! This is a text message!\nmarigianna: Hey ! Yeah I get it!\nkoutsop:    Are you getting it without any problems?\nmarigianna: Oh yes. I can read it perfectly.\nkoutsop:    ok! Nice to speak to you!");
         jScrollPane1.setViewportView(adaptiveTextBox1);
 
         centerPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);

@@ -1,7 +1,5 @@
 package assignment2;
 
-import pc.MainWindowPC;
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -83,7 +81,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel2Layout.setVerticalGroup(
             adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 32, Short.MAX_VALUE)
+            .addGap(0, 33, Short.MAX_VALUE)
         );
 
         add(adaptivePanel2);
@@ -149,12 +147,6 @@ public class Login extends javax.swing.JPanel {
 
         passwordLabel.setText("Κωδικός χρήστη:");
         adaptivePanel14.add(passwordLabel);
-
-        passwordTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                passwordTextFieldActionPerformed(evt);
-            }
-        });
         adaptivePanel14.add(passwordTextField);
 
         adaptivePanel12.add(adaptivePanel14);
@@ -189,11 +181,6 @@ public class Login extends javax.swing.JPanel {
 
         adaptivePanel16.add(adaptivePanel17);
 
-        adaptivePanel18.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                adaptivePanel18FocusLost(evt);
-            }
-        });
         adaptivePanel18.setLayout(new javax.swing.BoxLayout(adaptivePanel18, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptivePanel20.setPreferredSize(new java.awt.Dimension(132, 5));
@@ -268,11 +255,11 @@ public class Login extends javax.swing.JPanel {
         adaptivePanel5.setLayout(adaptivePanel5Layout);
         adaptivePanel5Layout.setHorizontalGroup(
             adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 164, Short.MAX_VALUE)
+            .addGap(0, 165, Short.MAX_VALUE)
         );
         adaptivePanel5Layout.setVerticalGroup(
             adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 24, Short.MAX_VALUE)
+            .addGap(0, 23, Short.MAX_VALUE)
         );
 
         adaptivePanel3.add(adaptivePanel5);
@@ -285,11 +272,6 @@ public class Login extends javax.swing.JPanel {
         adaptivePanel6.setLayout(new javax.swing.BoxLayout(adaptivePanel6, javax.swing.BoxLayout.PAGE_AXIS));
 
         signInButton.setText("Σύνδεση");
-        signInButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                signInButtonActionPerformed(evt);
-            }
-        });
         adaptivePanel6.add(signInButton);
 
         adaptivePanel3.add(adaptivePanel6);
@@ -298,11 +280,11 @@ public class Login extends javax.swing.JPanel {
         adaptivePanel7.setLayout(adaptivePanel7Layout);
         adaptivePanel7Layout.setHorizontalGroup(
             adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 164, Short.MAX_VALUE)
+            .addGap(0, 165, Short.MAX_VALUE)
         );
         adaptivePanel7Layout.setVerticalGroup(
             adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 24, Short.MAX_VALUE)
+            .addGap(0, 23, Short.MAX_VALUE)
         );
 
         adaptivePanel3.add(adaptivePanel7);
@@ -319,7 +301,7 @@ public class Login extends javax.swing.JPanel {
         );
         adaptivePanel21Layout.setVerticalGroup(
             adaptivePanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
+            .addGap(0, 11, Short.MAX_VALUE)
         );
 
         add(adaptivePanel21);
@@ -330,21 +312,16 @@ public class Login extends javax.swing.JPanel {
         adaptivePanel9.setLayout(adaptivePanel9Layout);
         adaptivePanel9Layout.setHorizontalGroup(
             adaptivePanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 101, Short.MAX_VALUE)
         );
         adaptivePanel9Layout.setVerticalGroup(
             adaptivePanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 48, Short.MAX_VALUE)
+            .addGap(0, 47, Short.MAX_VALUE)
         );
 
         adaptivePanel8.add(adaptivePanel9);
 
         adaptivePanel10.setMaximumSize(new java.awt.Dimension(222, 48));
-        adaptivePanel10.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                adaptivePanel10FocusLost(evt);
-            }
-        });
         adaptivePanel10.setLayout(new javax.swing.BoxLayout(adaptivePanel10, javax.swing.BoxLayout.PAGE_AXIS));
 
         forgotPasswordButton.setMaximumSize(new java.awt.Dimension(190, 24));
@@ -354,11 +331,6 @@ public class Login extends javax.swing.JPanel {
         signUpButton.setMaximumSize(new java.awt.Dimension(187, 24));
         signUpButton.setPreferredSize(new java.awt.Dimension(187, 24));
         signUpButton.setText("Δεν έχετε λογαριασμο;");
-        signUpButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                signUpButtonActionPerformed(evt);
-            }
-        });
         adaptivePanel10.add(signUpButton);
 
         adaptivePanel8.add(adaptivePanel10);
@@ -367,11 +339,11 @@ public class Login extends javax.swing.JPanel {
         adaptivePanel11.setLayout(adaptivePanel11Layout);
         adaptivePanel11Layout.setHorizontalGroup(
             adaptivePanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
+            .addGap(0, 101, Short.MAX_VALUE)
         );
         adaptivePanel11Layout.setVerticalGroup(
             adaptivePanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 48, Short.MAX_VALUE)
+            .addGap(0, 47, Short.MAX_VALUE)
         );
 
         adaptivePanel8.add(adaptivePanel11);
@@ -410,33 +382,12 @@ public class Login extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
 private void adaptivePanel6FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_adaptivePanel6FocusLost
-// TODO add your handling code here:
+
 }//GEN-LAST:event_adaptivePanel6FocusLost
 
 private void adaptivePanel14FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_adaptivePanel14FocusLost
-// TODO add your handling code here:
+
 }//GEN-LAST:event_adaptivePanel14FocusLost
-
-private void adaptivePanel18FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_adaptivePanel18FocusLost
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptivePanel18FocusLost
-
-private void adaptivePanel10FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_adaptivePanel10FocusLost
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptivePanel10FocusLost
-
-private void passwordTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordTextFieldActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_passwordTextFieldActionPerformed
-
-private void signInButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signInButtonActionPerformed
-        //AdaptableIMView im = new AdaptableIMView();       
-        //MainWindowPC.showPanel(im);
-}//GEN-LAST:event_signInButtonActionPerformed
-
-private void signUpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signUpButtonActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_signUpButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.checkbox.AdaptiveCheckBox adaptiveCheckBox1;

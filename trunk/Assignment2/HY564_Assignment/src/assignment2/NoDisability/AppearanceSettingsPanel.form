@@ -125,7 +125,7 @@
                 <Property name="columns" type="int" value="20"/>
                 <Property name="editable" type="boolean" value="false"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="koutsop: Hey! This is a text message!&#xa;marigianna: Hey ! Yeah I get it!&#xa;koutsop: Are you getting it without any problems?&#xa;marigianna: Oh yes. I can read it perfectly.&#xa;koutsop: ok! Nice to speak to you!"/>
+                <Property name="text" type="java.lang.String" value="koutsop:    Hey! This is a text message!&#xa;marigianna: Hey ! Yeah I get it!&#xa;koutsop:    Are you getting it without any problems?&#xa;marigianna: Oh yes. I can read it perfectly.&#xa;koutsop:    ok! Nice to speak to you!"/>
               </Properties>
             </Component>
           </SubComponents>
