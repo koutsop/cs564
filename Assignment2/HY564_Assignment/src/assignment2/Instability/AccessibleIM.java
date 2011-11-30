@@ -21,10 +21,10 @@ import utilities.Adaptation;
  *
  * @author koutsop
  */
-public class AccessibleIM1 extends javax.swing.JPanel {
+public class AccessibleIM extends javax.swing.JPanel {
 
     /** Creates new form AccessibleIM */
-    public AccessibleIM1() {
+    public AccessibleIM() {
         initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
