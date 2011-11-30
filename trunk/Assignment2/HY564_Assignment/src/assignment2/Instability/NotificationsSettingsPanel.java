@@ -249,17 +249,19 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         add(centerPanel);
 
+        rightPanel.setMaximumSize(new java.awt.Dimension(100, 300));
+        rightPanel.setMinimumSize(new java.awt.Dimension(100, 300));
         rightPanel.setPreferredSize(new java.awt.Dimension(100, 300));
 
         javax.swing.GroupLayout rightPanelLayout = new javax.swing.GroupLayout(rightPanel);
         rightPanel.setLayout(rightPanelLayout);
         rightPanelLayout.setHorizontalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 24, Short.MAX_VALUE)
+            .addGap(0, 100, Short.MAX_VALUE)
         );
         rightPanelLayout.setVerticalGroup(
             rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 658, Short.MAX_VALUE)
+            .addGap(0, 300, Short.MAX_VALUE)
         );
 
         add(rightPanel);
