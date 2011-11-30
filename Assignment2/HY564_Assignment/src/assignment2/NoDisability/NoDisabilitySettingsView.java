@@ -11,9 +11,6 @@
 package assignment2.NoDisability;
 
 import assignment2.AccessibleIM;
-import AdaptableWindows.AdaptableIMView;
-import assignment2.AdaptableSettingsView;
-import assignment2.Chat;
 import pc.MainWindowPC;
 import utilities.Adaptation;
 
@@ -244,11 +241,11 @@ private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//G
 
     
 private void adaptiveButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton6ActionPerformed
-MainWindowPC.showPanel(new AccessibleIM());
+	MainWindowPC.showPanel(new AccessibleIM());
 }//GEN-LAST:event_adaptiveButton6ActionPerformed
 
 private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
-MainWindowPC.showPanel(new AccessibleIM());
+	MainWindowPC.showPanel(new AccessibleIM());
 }//GEN-LAST:event_adaptiveButton5ActionPerformed
 
 private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generalButtonActionPerformed
@@ -292,7 +289,6 @@ private void historyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN
 }//GEN-LAST:event_historyButtonActionPerformed
 
 private void blockedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_blockedButtonActionPerformed
-// TODO add your handling code here:
     generalButton.setSelected(false);
    historyButton.setSelected(false);
    appearanceButton.setSelected(false);
