@@ -267,7 +267,7 @@ private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN
    notificationsButton.setSelected(false);
   
    // Instantiate the new screen
-   GeneralSettingsPanel generalSettings = new GeneralSettingsPanel();
+   assignment2.Instability.GeneralSettingsPanel generalSettings = new assignment2.Instability.GeneralSettingsPanel();
    generalSettings.setVisible(true);
 
   // Chat a = new Chat();
