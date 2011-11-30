@@ -36,7 +36,6 @@ public class HistorySettingsPanel extends javax.swing.JPanel {
         startupCheckBox = new widgets.checkbox.AdaptiveCheckBox();
         rightPanel = new widgets.panel.AdaptivePanel();
 
-        setPreferredSize(new java.awt.Dimension(999, 300));
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         leftPanel.setPreferredSize(new java.awt.Dimension(100, 600));
