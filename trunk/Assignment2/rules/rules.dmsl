@@ -466,6 +466,17 @@ component GroupSubButton [
 //      Panels size
 //==========================================
 
+component PagesNavigationButtonsWidth [
+	if 		profile1 then 	activate "5"	//
+	else if profile2 then 	activate "2"	//color blind
+	else if profile3 then 	activate "10"	//instability
+	else if profile4 then 	activate "2"	//low vision
+	else if profile5 then 	activate "2"	//spots
+	else if profile6 then 	activate "2"	//pda
+	else 					activate "-1"  	
+]
+
+
 //for chating
 component ContactListWidth [
 	if 		profile1 then 	activate "270"	//27% of wondow's width (1000)

@@ -48,24 +48,28 @@ private JPanel myParent;
         adaptiveLabel2 = new widgets.label.AdaptiveLabel();
         adaptivePanel8 = new widgets.panel.AdaptivePanel();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptiveButton3 = new widgets.button.AdaptiveButton();
         adaptivePanel9 = new widgets.panel.AdaptivePanel();
         adaptivePanel10 = new widgets.panel.AdaptivePanel();
         adaptiveLabel3 = new widgets.label.AdaptiveLabel();
         adaptivePanel11 = new widgets.panel.AdaptivePanel();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
+        adaptivePanel20 = new widgets.panel.AdaptivePanel();
         adaptiveButton5 = new widgets.button.AdaptiveButton();
         adaptivePanel12 = new widgets.panel.AdaptivePanel();
         adaptivePanel13 = new widgets.panel.AdaptivePanel();
         adaptiveLabel4 = new widgets.label.AdaptiveLabel();
         adaptivePanel14 = new widgets.panel.AdaptivePanel();
         adaptiveButton6 = new widgets.button.AdaptiveButton();
+        adaptivePanel19 = new widgets.panel.AdaptivePanel();
         adaptiveButton7 = new widgets.button.AdaptiveButton();
         adaptivePanel15 = new widgets.panel.AdaptivePanel();
         adaptivePanel16 = new widgets.panel.AdaptivePanel();
         adaptiveLabel5 = new widgets.label.AdaptiveLabel();
         adaptivePanel17 = new widgets.panel.AdaptivePanel();
         adaptiveButton8 = new widgets.button.AdaptiveButton();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptiveButton9 = new widgets.button.AdaptiveButton();
         adaptivePanel18 = new widgets.panel.AdaptivePanel();
 
@@ -124,6 +128,7 @@ private JPanel myParent;
             }
         });
         adaptivePanel8.add(adaptiveButton2);
+        adaptivePanel8.add(adaptivePanel2);
 
         adaptiveButton3.setText("Διαγραφή");
         adaptivePanel8.add(adaptiveButton3);
@@ -144,6 +149,7 @@ private JPanel myParent;
 
         adaptiveButton4.setText("Εμφάνιση");
         adaptivePanel11.add(adaptiveButton4);
+        adaptivePanel11.add(adaptivePanel20);
 
         adaptiveButton5.setText("Διαγραφή");
         adaptivePanel11.add(adaptiveButton5);
@@ -164,6 +170,7 @@ private JPanel myParent;
 
         adaptiveButton6.setText("Εμφάνιση");
         adaptivePanel14.add(adaptiveButton6);
+        adaptivePanel14.add(adaptivePanel19);
 
         adaptiveButton7.setText("Διαγραφή");
         adaptivePanel14.add(adaptiveButton7);
@@ -184,6 +191,7 @@ private JPanel myParent;
 
         adaptiveButton8.setText("Εμφάνιση");
         adaptivePanel17.add(adaptiveButton8);
+        adaptivePanel17.add(adaptivePanel3);
 
         adaptiveButton9.setText("Διαγραφή");
         adaptivePanel17.add(adaptiveButton9);
@@ -250,6 +258,10 @@ AddContactsInTeam r = new AddContactsInTeam(myParent);
     private widgets.panel.AdaptivePanel adaptivePanel16;
     private widgets.panel.AdaptivePanel adaptivePanel17;
     private widgets.panel.AdaptivePanel adaptivePanel18;
+    private widgets.panel.AdaptivePanel adaptivePanel19;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel20;
+    private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;

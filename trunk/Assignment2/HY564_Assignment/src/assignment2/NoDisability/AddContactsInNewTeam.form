@@ -989,66 +989,7 @@
             </Constraint>
           </Constraints>
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
-          <SubComponents>
-            <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel5">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="&#x3a3;&#x3b5;&#x3bb;&#x3af;&#x3b4;&#x3b1;:  "/>
-              </Properties>
-            </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton15">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="&lt;&lt; &#x3a0;&#x3c1;&#x3bf;&#x3b7;&#x3b3;&#x3bf;&#x3cd;&#x3bc;&#x3b5;&#x3bd;&#x3bf;"/>
-              </Properties>
-            </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton16">
-              <Properties>
-                <Property name="selected" type="boolean" value="true"/>
-                <Property name="text" type="java.lang.String" value="1"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton16ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton17">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="2"/>
-              </Properties>
-            </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton18">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="3"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton18ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel6">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="..."/>
-              </Properties>
-            </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton19">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="19"/>
-              </Properties>
-            </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton21">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="20"/>
-              </Properties>
-            </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton22">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="21"/>
-              </Properties>
-            </Component>
-            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton23">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="&#x395;&#x3c0;&#x3cc;&#x3bc;&#x3b5;&#x3bd;&#x3bf; &gt;&gt;"/>
-              </Properties>
-            </Component>
-          </SubComponents>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
         </Container>
       </SubComponents>
     </Container>

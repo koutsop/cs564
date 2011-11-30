@@ -29,9 +29,9 @@ public class AdaptableIMView extends javax.swing.JPanel {
     /** Creates new form AdaptableIMView */
     public AdaptableIMView(Dimension menuSize, JPanel parent) {
         initComponents();
-        
+        //TODO na to sbisw auto edw to window malon den xriazetai pou8ena ma pou8ena
+		//mias kai to main chat window 8a einai to idio
         p.add(new ChatMainView(menuSize, parent), "ChatMainView");
-        p.add(new ViewB(), viewB);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
