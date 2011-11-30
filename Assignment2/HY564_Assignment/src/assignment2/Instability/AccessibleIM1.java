@@ -45,7 +45,6 @@ public class AccessibleIM1 extends javax.swing.JPanel {
         imButton = new widgets.button.MainMenuButton();
         settingsButton = new widgets.button.MainMenuButton();
         exitButton = new widgets.button.MainMenuButton();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
         contentsPanel = new widgets.panel.AdaptivePanel();
         virtualKeyboard = new widgets.panel.AdaptivePanel();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
@@ -119,14 +118,6 @@ public class AccessibleIM1 extends javax.swing.JPanel {
             }
         });
         menuPanel.add(exitButton);
-
-        adaptiveButton1.setText("Αναζήτηση επαφής");
-        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton1ActionPerformed(evt);
-            }
-        });
-        menuPanel.add(adaptiveButton1);
 
         add(menuPanel, java.awt.BorderLayout.NORTH);
 
@@ -321,13 +312,7 @@ public class AccessibleIM1 extends javax.swing.JPanel {
         showPanel(new Exit());        
     }//GEN-LAST:event_exitButtonActionPerformed
 
-private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
-	imButton.setVisible(true);
-	//showPanel(new AddContact());
-}//GEN-LAST:event_adaptiveButton1ActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton10;
     private widgets.button.AdaptiveButton adaptiveButton11;
     private widgets.button.AdaptiveButton adaptiveButton12;
