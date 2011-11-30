@@ -66,6 +66,9 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         leftPanel = new widgets.panel.AdaptivePanel();
         centerPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel1 = new widgets.panel.AdaptivePanel();
+        adaptiveButton1 = new widgets.button.AdaptiveButton();
+        adaptivePanel22 = new widgets.panel.AdaptivePanel();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptivePanel13 = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
@@ -97,8 +100,6 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveButton2 = new widgets.button.AdaptiveButton();
         adaptivePanel21 = new widgets.panel.AdaptivePanel();
         adaptivePanel7 = new widgets.panel.AdaptivePanel();
-        adaptivePanel1 = new widgets.panel.AdaptivePanel();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
         rightPanel = new widgets.panel.AdaptivePanel();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
@@ -121,7 +122,21 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         centerPanel.setMaximumSize(new java.awt.Dimension(1000, 600));
         centerPanel.setPreferredSize(new java.awt.Dimension(943, 300));
-        centerPanel.setLayout(new java.awt.GridLayout(5, 1, 20, 20));
+        centerPanel.setLayout(new java.awt.BorderLayout());
+
+        adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 20));
+
+        adaptiveButton1.setText("Προβολή ειδοποιήσεων");
+        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton1ActionPerformed(evt);
+            }
+        });
+        adaptivePanel1.add(adaptiveButton1);
+
+        centerPanel.add(adaptivePanel1, java.awt.BorderLayout.SOUTH);
+
+        adaptivePanel22.setLayout(new java.awt.GridLayout(4, 1, 20, 20));
 
         adaptivePanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
         adaptivePanel2.setPreferredSize(new java.awt.Dimension(790, 65));
@@ -165,7 +180,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         );
         adaptivePanel15Layout.setVerticalGroup(
             adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 102, Short.MAX_VALUE)
+            .addGap(0, 117, Short.MAX_VALUE)
         );
 
         adaptivePanel13.add(adaptivePanel15, java.awt.BorderLayout.WEST);
@@ -176,16 +191,16 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptivePanel14.setLayout(adaptivePanel14Layout);
         adaptivePanel14Layout.setHorizontalGroup(
             adaptivePanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 377, Short.MAX_VALUE)
+            .addGap(0, 499, Short.MAX_VALUE)
         );
         adaptivePanel14Layout.setVerticalGroup(
             adaptivePanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 102, Short.MAX_VALUE)
+            .addGap(0, 117, Short.MAX_VALUE)
         );
 
         adaptivePanel2.add(adaptivePanel14);
 
-        centerPanel.add(adaptivePanel2);
+        adaptivePanel22.add(adaptivePanel2);
 
         adaptivePanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
         adaptivePanel3.setLayout(new java.awt.GridLayout(1, 2));
@@ -228,7 +243,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         );
         adaptivePanel17Layout.setVerticalGroup(
             adaptivePanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 102, Short.MAX_VALUE)
+            .addGap(0, 117, Short.MAX_VALUE)
         );
 
         adaptivePanel10.add(adaptivePanel17, java.awt.BorderLayout.WEST);
@@ -239,16 +254,16 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptivePanel12.setLayout(adaptivePanel12Layout);
         adaptivePanel12Layout.setHorizontalGroup(
             adaptivePanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 377, Short.MAX_VALUE)
+            .addGap(0, 499, Short.MAX_VALUE)
         );
         adaptivePanel12Layout.setVerticalGroup(
             adaptivePanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 102, Short.MAX_VALUE)
+            .addGap(0, 117, Short.MAX_VALUE)
         );
 
         adaptivePanel3.add(adaptivePanel12);
 
-        centerPanel.add(adaptivePanel3);
+        adaptivePanel22.add(adaptivePanel3);
 
         adaptivePanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
         adaptivePanel11.setLayout(new java.awt.GridLayout(1, 2));
@@ -291,7 +306,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         );
         adaptivePanel19Layout.setVerticalGroup(
             adaptivePanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 102, Short.MAX_VALUE)
+            .addGap(0, 117, Short.MAX_VALUE)
         );
 
         adaptivePanel8.add(adaptivePanel19, java.awt.BorderLayout.WEST);
@@ -302,16 +317,16 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptivePanel9.setLayout(adaptivePanel9Layout);
         adaptivePanel9Layout.setHorizontalGroup(
             adaptivePanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 377, Short.MAX_VALUE)
+            .addGap(0, 499, Short.MAX_VALUE)
         );
         adaptivePanel9Layout.setVerticalGroup(
             adaptivePanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 102, Short.MAX_VALUE)
+            .addGap(0, 117, Short.MAX_VALUE)
         );
 
         adaptivePanel11.add(adaptivePanel9);
 
-        centerPanel.add(adaptivePanel11);
+        adaptivePanel22.add(adaptivePanel11);
 
         adaptivePanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
         adaptivePanel6.setLayout(new java.awt.GridLayout(1, 2));
@@ -345,7 +360,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         );
         adaptivePanel21Layout.setVerticalGroup(
             adaptivePanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 102, Short.MAX_VALUE)
+            .addGap(0, 117, Short.MAX_VALUE)
         );
 
         adaptivePanel5.add(adaptivePanel21, java.awt.BorderLayout.WEST);
@@ -356,28 +371,18 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptivePanel7.setLayout(adaptivePanel7Layout);
         adaptivePanel7Layout.setHorizontalGroup(
             adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 377, Short.MAX_VALUE)
+            .addGap(0, 499, Short.MAX_VALUE)
         );
         adaptivePanel7Layout.setVerticalGroup(
             adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 102, Short.MAX_VALUE)
+            .addGap(0, 117, Short.MAX_VALUE)
         );
 
         adaptivePanel6.add(adaptivePanel7);
 
-        centerPanel.add(adaptivePanel6);
+        adaptivePanel22.add(adaptivePanel6);
 
-        adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
-
-        adaptiveButton1.setText("Προβολή ειδοποιήσεων");
-        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton1ActionPerformed(evt);
-            }
-        });
-        adaptivePanel1.add(adaptiveButton1);
-
-        centerPanel.add(adaptivePanel1);
+        centerPanel.add(adaptivePanel22, java.awt.BorderLayout.CENTER);
 
         add(centerPanel);
 
@@ -466,6 +471,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel20;
     private widgets.panel.AdaptivePanel adaptivePanel21;
+    private widgets.panel.AdaptivePanel adaptivePanel22;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
