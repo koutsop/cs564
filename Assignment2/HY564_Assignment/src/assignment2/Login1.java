@@ -50,32 +50,38 @@ public class Login1 extends javax.swing.JPanel {
         modlePanel = new widgets.panel.AdaptivePanel();
         noDisabilityPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
+        adaptivePanel14 = new widgets.panel.AdaptivePanel();
         boDisabilityButton = new widgets.button.AdaptiveButton();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptiveLabel2 = new widgets.label.AdaptiveLabel();
         colorBlindPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
+        adaptivePanel15 = new widgets.panel.AdaptivePanel();
         colorBlindButton = new widgets.button.AdaptiveButton();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptiveLabel3 = new widgets.label.AdaptiveLabel();
         instabilityPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel6 = new widgets.panel.AdaptivePanel();
+        adaptivePanel16 = new widgets.panel.AdaptivePanel();
         instabilityButton = new widgets.button.AdaptiveButton();
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptiveLabel4 = new widgets.label.AdaptiveLabel();
         lowVisionPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel7 = new widgets.panel.AdaptivePanel();
+        adaptivePanel17 = new widgets.panel.AdaptivePanel();
         lowVisionButton = new widgets.button.AdaptiveButton();
         adaptivePanel8 = new widgets.panel.AdaptivePanel();
         adaptiveLabel5 = new widgets.label.AdaptiveLabel();
         spotsPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel9 = new widgets.panel.AdaptivePanel();
+        adaptivePanel18 = new widgets.panel.AdaptivePanel();
         spotsButton = new widgets.button.AdaptiveButton();
         adaptivePanel10 = new widgets.panel.AdaptivePanel();
         adaptiveLabel6 = new widgets.label.AdaptiveLabel();
         pdaPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel11 = new widgets.panel.AdaptivePanel();
-        adaptiveButton2 = new widgets.button.AdaptiveButton();
+        adaptivePanel13 = new widgets.panel.AdaptivePanel();
+        pdaButton = new widgets.button.AdaptiveButton();
         adaptivePanel12 = new widgets.panel.AdaptivePanel();
         adaptiveLabel7 = new widgets.label.AdaptiveLabel();
         downPanel = new widgets.panel.AdaptivePanel();
@@ -85,17 +91,21 @@ public class Login1 extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1000, 688));
         setLayout(new java.awt.BorderLayout(0, 15));
 
+        upPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
         adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 0, 36));
         adaptiveLabel1.setText("Καλώς Ορίσατε");
         upPanel.add(adaptiveLabel1);
 
         add(upPanel, java.awt.BorderLayout.PAGE_START);
 
-        modlePanel.setLayout(new java.awt.GridLayout(3, 2, 20, 20));
+        modlePanel.setLayout(new java.awt.GridLayout(3, 2, 20, 15));
 
         noDisabilityPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptivePanel1.setLayout(new java.awt.BorderLayout());
+
+        adaptivePanel14.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         boDisabilityButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
         boDisabilityButton.addActionListener(new java.awt.event.ActionListener() {
@@ -103,9 +113,13 @@ public class Login1 extends javax.swing.JPanel {
                 boDisabilityButtonActionPerformed(evt);
             }
         });
-        adaptivePanel1.add(boDisabilityButton, java.awt.BorderLayout.CENTER);
+        adaptivePanel14.add(boDisabilityButton);
 
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        adaptivePanel1.add(adaptivePanel14, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 0, 24));
         adaptiveLabel2.setText("No Disability");
         adaptivePanel2.add(adaptiveLabel2);
 
@@ -119,15 +133,21 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel3.setLayout(new java.awt.BorderLayout());
 
+        adaptivePanel15.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
         colorBlindButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
         colorBlindButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 colorBlindButtonActionPerformed(evt);
             }
         });
-        adaptivePanel3.add(colorBlindButton, java.awt.BorderLayout.CENTER);
+        adaptivePanel15.add(colorBlindButton);
 
-        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        adaptivePanel3.add(adaptivePanel15, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 0, 24));
         adaptiveLabel3.setText("Color Blind");
         adaptivePanel4.add(adaptiveLabel3);
 
@@ -141,15 +161,21 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel6.setLayout(new java.awt.BorderLayout());
 
+        adaptivePanel16.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
         instabilityButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
         instabilityButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 instabilityButtonActionPerformed(evt);
             }
         });
-        adaptivePanel6.add(instabilityButton, java.awt.BorderLayout.CENTER);
+        adaptivePanel16.add(instabilityButton);
 
-        adaptiveLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        adaptivePanel6.add(adaptivePanel16, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptiveLabel4.setFont(new java.awt.Font("Tahoma", 0, 24));
         adaptiveLabel4.setText("Instability");
         adaptivePanel5.add(adaptiveLabel4);
 
@@ -163,15 +189,21 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel7.setLayout(new java.awt.BorderLayout());
 
+        adaptivePanel17.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
         lowVisionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
         lowVisionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lowVisionButtonActionPerformed(evt);
             }
         });
-        adaptivePanel7.add(lowVisionButton, java.awt.BorderLayout.CENTER);
+        adaptivePanel17.add(lowVisionButton);
 
-        adaptiveLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        adaptivePanel7.add(adaptivePanel17, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptiveLabel5.setFont(new java.awt.Font("Tahoma", 0, 24));
         adaptiveLabel5.setText("Low Vision");
         adaptivePanel8.add(adaptiveLabel5);
 
@@ -185,15 +217,21 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel9.setLayout(new java.awt.BorderLayout());
 
+        adaptivePanel18.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
         spotsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
         spotsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 spotsButtonActionPerformed(evt);
             }
         });
-        adaptivePanel9.add(spotsButton, java.awt.BorderLayout.CENTER);
+        adaptivePanel18.add(spotsButton);
 
-        adaptiveLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        adaptivePanel9.add(adaptivePanel18, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptiveLabel6.setFont(new java.awt.Font("Tahoma", 0, 24));
         adaptiveLabel6.setText("Κηλίδες");
         adaptivePanel10.add(adaptiveLabel6);
 
@@ -207,10 +245,14 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel11.setLayout(new java.awt.BorderLayout());
 
-        adaptiveButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
-        adaptivePanel11.add(adaptiveButton2, java.awt.BorderLayout.CENTER);
+        pdaButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        adaptivePanel13.add(pdaButton);
 
-        adaptiveLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        adaptivePanel11.add(adaptivePanel13, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel12.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        adaptiveLabel7.setFont(new java.awt.Font("Tahoma", 0, 24));
         adaptiveLabel7.setText("PDA");
         adaptivePanel12.add(adaptiveLabel7);
 
@@ -241,7 +283,7 @@ public class Login1 extends javax.swing.JPanel {
 
     private void instabilityButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_instabilityButtonActionPerformed
         initAdaptation("instability");
-        MainWindowPC.showPanel(new AccessibleIM());
+        MainWindowPC.showPanel(new assignment2.Instability.AccessibleIM());
     }//GEN-LAST:event_instabilityButtonActionPerformed
 
     private void lowVisionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowVisionButtonActionPerformed
@@ -264,7 +306,6 @@ private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GE
 	}//GEN-LAST:event_spotsButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.button.AdaptiveButton adaptiveButton2;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
@@ -276,6 +317,12 @@ private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private widgets.panel.AdaptivePanel adaptivePanel10;
     private widgets.panel.AdaptivePanel adaptivePanel11;
     private widgets.panel.AdaptivePanel adaptivePanel12;
+    private widgets.panel.AdaptivePanel adaptivePanel13;
+    private widgets.panel.AdaptivePanel adaptivePanel14;
+    private widgets.panel.AdaptivePanel adaptivePanel15;
+    private widgets.panel.AdaptivePanel adaptivePanel16;
+    private widgets.panel.AdaptivePanel adaptivePanel17;
+    private widgets.panel.AdaptivePanel adaptivePanel18;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
@@ -294,6 +341,7 @@ private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GE
     private widgets.panel.AdaptivePanel lowVisionPanel;
     private widgets.panel.AdaptivePanel modlePanel;
     private widgets.panel.AdaptivePanel noDisabilityPanel;
+    private widgets.button.AdaptiveButton pdaButton;
     private widgets.panel.AdaptivePanel pdaPanel;
     private widgets.button.AdaptiveButton registerButton;
     private widgets.button.AdaptiveButton spotsButton;
