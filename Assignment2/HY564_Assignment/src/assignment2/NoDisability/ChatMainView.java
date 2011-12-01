@@ -14,9 +14,7 @@ import AdaptableWindows.AdaptableCall;
 import AdaptableWindows.AdaptableChat;
 import AdaptableWindows.AdaptableMyProfile;
 import AdaptableWindows.AdaptableVideoCall;
-import assignment2.Chat;
 import assignment2.Contact;
-import assignment2.MyProfile;
 import Utility.Utility;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -68,7 +66,7 @@ public class ChatMainView extends javax.swing.JPanel {
 		groupButton2.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
 		
         selectMenuButton(myProfileButton);
-        showInContentPanel(new AdaptableMyProfile(contentPanel.getPreferredSize()));
+        showInContentPanel(new AdaptableMyProfile());
 		//this.updateUI();
     }
     
@@ -489,12 +487,12 @@ public class ChatMainView extends javax.swing.JPanel {
 
     private void chatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chatButtonActionPerformed
         selectMenuButton(chatButton);
-        showInContentPanel(new AdaptableChat(contentPanel.getPreferredSize()));
+        showInContentPanel(new AdaptableChat());
     }//GEN-LAST:event_chatButtonActionPerformed
 
     private void videoCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_videoCallButtonActionPerformed
         selectMenuButton(videoCallButton);
-        showInContentPanel(new AdaptableVideoCall(contentPanel.getPreferredSize()));
+        showInContentPanel(new AdaptableVideoCall());
     }//GEN-LAST:event_videoCallButtonActionPerformed
 
     private void addContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addContactButtonActionPerformed
@@ -508,12 +506,12 @@ public class ChatMainView extends javax.swing.JPanel {
 
     private void callButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callButtonActionPerformed
         selectMenuButton(callButton);
-        showInContentPanel(new AdaptableCall(contentPanel.getPreferredSize()));
+        showInContentPanel(new AdaptableCall());
     }//GEN-LAST:event_callButtonActionPerformed
 
     private void myProfileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myProfileButtonActionPerformed
         selectMenuButton(myProfileButton);
-        showInContentPanel(new AdaptableMyProfile(contentPanel.getPreferredSize()));
+        showInContentPanel(new AdaptableMyProfile());
     }//GEN-LAST:event_myProfileButtonActionPerformed
 
     private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed

@@ -24,12 +24,11 @@ import utilities.DMSLConnector;
 public class VideoChat extends javax.swing.JPanel {
 
     /** Creates new form VideoChat */
-    public VideoChat(Dimension parentSize) {
+    public VideoChat() {
         initComponents();
         
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
-        Utility.SetJComponentSize(this, parentSize);
         
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("SendFileButton");
         sendFileButton.setIcon(new ImageIcon(getClass().getResource(path)));

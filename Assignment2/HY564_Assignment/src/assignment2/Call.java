@@ -10,7 +10,6 @@
  */
 package assignment2;
 
-import Utility.Utility;
 import java.awt.Dimension;
 import utilities.Adaptation;
 
@@ -21,20 +20,15 @@ import utilities.Adaptation;
 public class Call extends javax.swing.JPanel {
 
     /** Creates new form Call */
-    public Call(Dimension parentSize) {
+    public Call() {
         initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         
-        Utility.SetJComponentSize(this, parentSize); 
-
-        int width   = parentSize.width;
-        int height  = (parentSize.height/2) - 10; //10 Vertical Gap
-        VideoChat chat   = new VideoChat(new Dimension(width, height));
+        VideoChat chat   = new VideoChat();
         chat.ShowSwapButton(false);
         chat.ShowFullScreenButton(false);
         chat.setVisible(true);
-        //chat.ShowVideoCallButton(false);
         chatPanel.add(chat);        
     }
 
@@ -70,6 +64,8 @@ public class Call extends javax.swing.JPanel {
         callPanel.add(receivePanell, java.awt.BorderLayout.CENTER);
 
         add(callPanel);
+
+        chatPanel.setLayout(new javax.swing.BoxLayout(chatPanel, javax.swing.BoxLayout.LINE_AXIS));
         add(chatPanel);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables

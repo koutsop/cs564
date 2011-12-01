@@ -23,12 +23,11 @@ import utilities.DMSLConnector;
 public class MyProfile extends javax.swing.JPanel {
 
     /** Creates new form MyProfile */
-    public MyProfile(Dimension parentSize) {
+    public MyProfile() {
         initComponents();
         
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
-        Utility.SetJComponentSize(jScrollPane1, parentSize);
         
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("OnlineButton");
         onlineButton.setIcon(new ImageIcon(getClass().getResource(path)));  

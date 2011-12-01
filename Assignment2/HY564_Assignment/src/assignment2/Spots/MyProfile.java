@@ -23,11 +23,10 @@ import utilities.DMSLConnector;
 public class MyProfile extends javax.swing.JPanel {
 
 	/** Creates new form MyProfile */
-	public MyProfile(Dimension parentSize) {
+	public MyProfile() {
 		initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
-        Utility.SetJComponentSize(jScrollPane1, parentSize);
         
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("OnlineButton");
         onlineButton.setIcon(new ImageIcon(getClass().getResource(path)));  
@@ -137,7 +136,7 @@ public class MyProfile extends javax.swing.JPanel {
         cancelButton = new widgets.button.AdaptiveButton();
         adaptivePanel36 = new widgets.panel.AdaptivePanel();
 
-        setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 0, 0));
+        setLayout(new java.awt.BorderLayout());
 
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
@@ -486,7 +485,7 @@ public class MyProfile extends javax.swing.JPanel {
 
         jScrollPane1.setViewportView(contentPanel);
 
-        add(jScrollPane1);
+        add(jScrollPane1, java.awt.BorderLayout.EAST);
     }// </editor-fold>//GEN-END:initComponents
 
 	private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed

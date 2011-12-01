@@ -24,11 +24,11 @@ public class AdaptableCall extends javax.swing.JPanel {
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AdaptableCall */
-	public AdaptableCall(Dimension parentSize) {
+	public AdaptableCall() {
         initComponents();
         
-        p.add(new assignment2.Call(parentSize), "Chat");
-        p.add(new assignment2.Spots.Call(parentSize), "SpotChat");
+        p.add(new assignment2.Call(), "Chat");
+        p.add(new assignment2.Spots.Call(), "SpotChat");
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
@@ -50,6 +50,8 @@ public class AdaptableCall extends javax.swing.JPanel {
 	@SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables
