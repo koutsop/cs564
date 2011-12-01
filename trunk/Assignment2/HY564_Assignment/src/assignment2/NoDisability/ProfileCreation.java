@@ -11,8 +11,6 @@
 package assignment2.NoDisability;
 
 import assignment2.Login1;
-import Utility.Utility;
-import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import pc.MainWindowPC;
 import utilities.Adaptation;
@@ -26,12 +24,11 @@ public class ProfileCreation extends javax.swing.JPanel {
    
 
     /** Creates new form ProfileCreation */
-   public ProfileCreation(Dimension parentSize) {
+   public ProfileCreation() {
     
 		initComponents();
 		Adaptation.automaticallySetRuntime(this);
 		Adaptation.automaticallyAdapt(this);
-		Utility.SetJComponentSize(jScrollPane1, parentSize);
 
 		String path = DMSLConnector.getInstance().getClient(false).Evaluate("RefreshButton");
 		refreshButton.setIcon(new ImageIcon(getClass().getResource(path)));
