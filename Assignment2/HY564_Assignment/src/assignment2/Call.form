@@ -25,8 +25,7 @@
       <SubComponents>
         <Container class="widgets.panel.AdaptivePanel" name="receivePanell">
           <Properties>
-            <Property name="function" type="java.lang.String" value="marigiannaImg"/>
-            <Property name="name" type="java.lang.String" value="Panel.Content.MarigiannaImage" noResource="true"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -34,7 +33,28 @@
             </Constraint>
           </Constraints>
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+            <Property name="columns" type="int" value="3"/>
+            <Property name="rows" type="int" value="1"/>
+          </Layout>
+          <SubComponents>
+            <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+            </Container>
+            <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel2">
+              <Properties>
+                <Property name="function" type="java.lang.String" value="marigiannaImg"/>
+                <Property name="name" type="java.lang.String" value="Panel.Content.MarigiannaImage" noResource="true"/>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+            </Container>
+            <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel3">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+            </Container>
+          </SubComponents>
         </Container>
       </SubComponents>
     </Container>

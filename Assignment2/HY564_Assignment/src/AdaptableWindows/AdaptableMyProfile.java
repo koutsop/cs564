@@ -10,6 +10,7 @@
  */
 package AdaptableWindows;
 
+import assignment2.MyProfile;
 import java.awt.CardLayout;
 import java.awt.Dimension;
 import javax.swing.JPanel;
@@ -26,10 +27,14 @@ public class AdaptableMyProfile extends javax.swing.JPanel {
 	/** Creates new form AdaptableMyProfile */
 	public AdaptableMyProfile(Dimension parentSize) {
         initComponents();
-        
-        p.add(new assignment2.MyProfile(parentSize), "Chat");
+        MyProfile a;
+		
+        p.add(a = new assignment2.MyProfile(parentSize), "Chat");
         p.add(new assignment2.Spots.MyProfile(parentSize), "SpotChat");
         this.add(p);
+		
+		System.err.println(parentSize);
+		System.err.println(a.getPreferredSize());
 
         CardLayout cl = (CardLayout)(p.getLayout());
         String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");

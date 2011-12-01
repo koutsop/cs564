@@ -62,6 +62,9 @@ public class ProfileCreation extends javax.swing.JPanel {
         adaptiveComboBox2 = new widgets.combobox.AdaptiveComboBox();
         jScrollPane1 = new javax.swing.JScrollPane();
         contentPanel = new widgets.panel.AdaptivePanel();
+        topPanel = new widgets.panel.AdaptivePanel();
+        adaptiveLabel13 = new widgets.label.AdaptiveLabel();
+        westPanel = new widgets.panel.AdaptivePanel();
         profileDataPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel14 = new widgets.panel.AdaptivePanel();
         adaptiveLabel1 = new widgets.label.AdaptiveLabel();
@@ -128,16 +131,13 @@ public class ProfileCreation extends javax.swing.JPanel {
         adaptiveLabel14 = new widgets.label.AdaptiveLabel();
         adaptivePanel30 = new widgets.panel.AdaptivePanel();
         adaptiveTextField4 = new widgets.textfield.AdaptiveTextField();
+        eastPanel = new widgets.panel.AdaptivePanel();
         buttonData = new widgets.panel.AdaptivePanel();
         adaptivePanel31 = new widgets.panel.AdaptivePanel();
         acceptanceButton = new widgets.button.AdaptiveButton();
         adaptivePanel33 = new widgets.panel.AdaptivePanel();
         cancelButton = new widgets.button.AdaptiveButton();
         adaptivePanel32 = new widgets.panel.AdaptivePanel();
-        eastPanel = new widgets.panel.AdaptivePanel();
-        westPanel = new widgets.panel.AdaptivePanel();
-        topPanel = new widgets.panel.AdaptivePanel();
-        adaptiveLabel13 = new widgets.label.AdaptiveLabel();
 
         adaptiveLabel5.setText("adaptiveLabel5");
 
@@ -146,6 +146,25 @@ public class ProfileCreation extends javax.swing.JPanel {
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         contentPanel.setLayout(new java.awt.BorderLayout());
+
+        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 14));
+        adaptiveLabel13.setText("Δημιουργία Λογαριασμού");
+        topPanel.add(adaptiveLabel13);
+
+        contentPanel.add(topPanel, java.awt.BorderLayout.NORTH);
+
+        javax.swing.GroupLayout westPanelLayout = new javax.swing.GroupLayout(westPanel);
+        westPanel.setLayout(westPanelLayout);
+        westPanelLayout.setHorizontalGroup(
+            westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 251, Short.MAX_VALUE)
+        );
+        westPanelLayout.setVerticalGroup(
+            westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 822, Short.MAX_VALUE)
+        );
+
+        contentPanel.add(westPanel, java.awt.BorderLayout.WEST);
 
         profileDataPanel.setLayout(new java.awt.GridLayout(16, 2, 0, 10));
 
@@ -439,6 +458,19 @@ public class ProfileCreation extends javax.swing.JPanel {
 
         contentPanel.add(profileDataPanel, java.awt.BorderLayout.CENTER);
 
+        javax.swing.GroupLayout eastPanelLayout = new javax.swing.GroupLayout(eastPanel);
+        eastPanel.setLayout(eastPanelLayout);
+        eastPanelLayout.setHorizontalGroup(
+            eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 251, Short.MAX_VALUE)
+        );
+        eastPanelLayout.setVerticalGroup(
+            eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 822, Short.MAX_VALUE)
+        );
+
+        contentPanel.add(eastPanel, java.awt.BorderLayout.EAST);
+
         buttonData.setLayout(new javax.swing.BoxLayout(buttonData, javax.swing.BoxLayout.LINE_AXIS));
 
         javax.swing.GroupLayout adaptivePanel31Layout = new javax.swing.GroupLayout(adaptivePanel31);
@@ -501,38 +533,6 @@ public class ProfileCreation extends javax.swing.JPanel {
         buttonData.add(adaptivePanel32);
 
         contentPanel.add(buttonData, java.awt.BorderLayout.SOUTH);
-
-        javax.swing.GroupLayout eastPanelLayout = new javax.swing.GroupLayout(eastPanel);
-        eastPanel.setLayout(eastPanelLayout);
-        eastPanelLayout.setHorizontalGroup(
-            eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 251, Short.MAX_VALUE)
-        );
-        eastPanelLayout.setVerticalGroup(
-            eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 822, Short.MAX_VALUE)
-        );
-
-        contentPanel.add(eastPanel, java.awt.BorderLayout.EAST);
-
-        javax.swing.GroupLayout westPanelLayout = new javax.swing.GroupLayout(westPanel);
-        westPanel.setLayout(westPanelLayout);
-        westPanelLayout.setHorizontalGroup(
-            westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 251, Short.MAX_VALUE)
-        );
-        westPanelLayout.setVerticalGroup(
-            westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 822, Short.MAX_VALUE)
-        );
-
-        contentPanel.add(westPanel, java.awt.BorderLayout.WEST);
-
-        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 14));
-        adaptiveLabel13.setText("Δημιουργία Λογαριασμού");
-        topPanel.add(adaptiveLabel13);
-
-        contentPanel.add(topPanel, java.awt.BorderLayout.NORTH);
 
         jScrollPane1.setViewportView(contentPanel);
 

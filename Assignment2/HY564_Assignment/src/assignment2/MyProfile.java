@@ -13,7 +13,6 @@ package assignment2;
 import Utility.Utility;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
-import pc.MainWindowPC;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
 
@@ -160,11 +159,6 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel31.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         adaptiveButton3.setText("Επιλογή Εικόνας");
-        adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton3ActionPerformed(evt);
-            }
-        });
         adaptivePanel31.add(adaptiveButton3);
 
         adaptivePanel30.add(adaptivePanel31);
@@ -225,11 +219,6 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptiveTextField2.setText("Κουτσόπουλος");
-        adaptiveTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField2ActionPerformed(evt);
-            }
-        });
         adaptivePanel2.add(adaptiveTextField2);
 
         profileDataPanel.add(adaptivePanel2);
@@ -244,11 +233,6 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel3.setLayout(new javax.swing.BoxLayout(adaptivePanel3, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptiveTextField3.setText("koutsop@gmal.com");
-        adaptiveTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField3ActionPerformed(evt);
-            }
-        });
         adaptivePanel3.add(adaptiveTextField3);
 
         profileDataPanel.add(adaptivePanel3);
@@ -355,11 +339,6 @@ public class MyProfile extends javax.swing.JPanel {
         adaptiveComboBox8.setMaximumSize(new java.awt.Dimension(200, 40));
         adaptiveComboBox8.setMinimumSize(new java.awt.Dimension(200, 40));
         adaptiveComboBox8.setPreferredSize(new java.awt.Dimension(200, 40));
-        adaptiveComboBox8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveComboBox8ActionPerformed(evt);
-            }
-        });
         adaptivePanel28.add(adaptiveComboBox8);
 
         profileDataPanel.add(adaptivePanel28);
@@ -388,11 +367,6 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel11.setLayout(new javax.swing.BoxLayout(adaptivePanel11, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptiveTextField11.setText("**********");
-        adaptiveTextField11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField11ActionPerformed(evt);
-            }
-        });
         adaptivePanel11.add(adaptiveTextField11);
 
         profileDataPanel.add(adaptivePanel11);
@@ -431,11 +405,6 @@ public class MyProfile extends javax.swing.JPanel {
         buttonData.add(adaptivePanel34);
 
         acceptanceButton.setText("Αποθήκευση");
-        acceptanceButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                acceptanceButtonActionPerformed(evt);
-            }
-        });
         buttonData.add(acceptanceButton);
 
         adaptivePanel35.setMaximumSize(new java.awt.Dimension(30, 30));
@@ -455,11 +424,6 @@ public class MyProfile extends javax.swing.JPanel {
         buttonData.add(adaptivePanel35);
 
         cancelButton.setText("Ακύρωση");
-        cancelButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cancelButtonActionPerformed(evt);
-            }
-        });
         buttonData.add(cancelButton);
 
         javax.swing.GroupLayout adaptivePanel36Layout = new javax.swing.GroupLayout(adaptivePanel36);
@@ -481,34 +445,6 @@ public class MyProfile extends javax.swing.JPanel {
 
         add(jScrollPane1);
     }// </editor-fold>//GEN-END:initComponents
-
-	private void adaptiveTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField11ActionPerformed
-		// TODO add your handling code here:
-	}//GEN-LAST:event_adaptiveTextField11ActionPerformed
-
-private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton3ActionPerformed
-
-private void adaptiveTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField2ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField2ActionPerformed
-
-private void adaptiveTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField3ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField3ActionPerformed
-
-private void adaptiveComboBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveComboBox8ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveComboBox8ActionPerformed
-
-private void acceptanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptanceButtonActionPerformed
-       
-}//GEN-LAST:event_acceptanceButtonActionPerformed
-
-private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
-
-}//GEN-LAST:event_cancelButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton acceptanceButton;
