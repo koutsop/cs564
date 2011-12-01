@@ -4,7 +4,7 @@
  */
 
 /*
- * DisabilitySettingsMainView.java
+ * SettingsMainView.java
  *
  * Created on Nov 24, 2011, 8:03:00 PM
  */
@@ -21,10 +21,10 @@ import utilities.Adaptation;
  *
  * @author Marigianna
  */
-public class DisabilitySettingsMainView extends javax.swing.JPanel {
+public class SettingsMainView extends javax.swing.JPanel {
 
-    /** Creates new form DisabilitySettingsMainView */
-    public DisabilitySettingsMainView() {
+    /** Creates new form SettingsMainView */
+    public SettingsMainView() {
 		initComponents();
         Adaptation.automaticallySetRuntime(this);
 		Adaptation.automaticallyAdapt(this);
@@ -172,7 +172,7 @@ public class DisabilitySettingsMainView extends javax.swing.JPanel {
         adaptivePanel1.setLayout(adaptivePanel1Layout);
         adaptivePanel1Layout.setHorizontalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 308, Short.MAX_VALUE)
+            .addGap(0, 401, Short.MAX_VALUE)
         );
         adaptivePanel1Layout.setVerticalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -185,7 +185,7 @@ public class DisabilitySettingsMainView extends javax.swing.JPanel {
         adaptivePanel3.setLayout(adaptivePanel3Layout);
         adaptivePanel3Layout.setHorizontalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 308, Short.MAX_VALUE)
+            .addGap(0, 401, Short.MAX_VALUE)
         );
         adaptivePanel3Layout.setVerticalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
