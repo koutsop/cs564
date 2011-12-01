@@ -60,6 +60,7 @@ public class MyProfile extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         contentPanel = new widgets.panel.AdaptivePanel();
         profileImagePanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel33 = new widgets.panel.AdaptivePanel();
         adaptivePanel29 = new widgets.panel.AdaptivePanel();
         adaptivePanel30 = new widgets.panel.AdaptivePanel();
         adaptivePanel31 = new widgets.panel.AdaptivePanel();
@@ -130,19 +131,31 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel12 = new widgets.panel.AdaptivePanel();
         adaptiveTextField12 = new widgets.textfield.AdaptiveTextField();
         buttonData = new widgets.panel.AdaptivePanel();
-        adaptivePanel34 = new widgets.panel.AdaptivePanel();
         acceptanceButton = new widgets.button.AdaptiveButton();
-        adaptivePanel35 = new widgets.panel.AdaptivePanel();
         cancelButton = new widgets.button.AdaptiveButton();
-        adaptivePanel36 = new widgets.panel.AdaptivePanel();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
-
-        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         contentPanel.setLayout(new java.awt.BorderLayout());
 
         profileImagePanel.setLayout(new java.awt.BorderLayout());
+
+        adaptivePanel33.setMaximumSize(new java.awt.Dimension(1, 20));
+        adaptivePanel33.setMinimumSize(new java.awt.Dimension(1, 20));
+        adaptivePanel33.setPreferredSize(new java.awt.Dimension(1, 20));
+
+        javax.swing.GroupLayout adaptivePanel33Layout = new javax.swing.GroupLayout(adaptivePanel33);
+        adaptivePanel33.setLayout(adaptivePanel33Layout);
+        adaptivePanel33Layout.setHorizontalGroup(
+            adaptivePanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 329, Short.MAX_VALUE)
+        );
+        adaptivePanel33Layout.setVerticalGroup(
+            adaptivePanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 20, Short.MAX_VALUE)
+        );
+
+        profileImagePanel.add(adaptivePanel33, java.awt.BorderLayout.NORTH);
 
         adaptivePanel29.setFunction("koutsopImg");
         adaptivePanel29.setMaximumSize(new java.awt.Dimension(100, 100));
@@ -388,55 +401,13 @@ public class MyProfile extends javax.swing.JPanel {
 
         contentPanel.add(adaptivePanel37, java.awt.BorderLayout.CENTER);
 
-        buttonData.setLayout(new javax.swing.BoxLayout(buttonData, javax.swing.BoxLayout.LINE_AXIS));
-
-        javax.swing.GroupLayout adaptivePanel34Layout = new javax.swing.GroupLayout(adaptivePanel34);
-        adaptivePanel34.setLayout(adaptivePanel34Layout);
-        adaptivePanel34Layout.setHorizontalGroup(
-            adaptivePanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 222, Short.MAX_VALUE)
-        );
-        adaptivePanel34Layout.setVerticalGroup(
-            adaptivePanel34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-        );
-
-        buttonData.add(adaptivePanel34);
+        buttonData.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 100, 30));
 
         acceptanceButton.setText("Αποθήκευση");
         buttonData.add(acceptanceButton);
 
-        adaptivePanel35.setMaximumSize(new java.awt.Dimension(30, 30));
-        adaptivePanel35.setMinimumSize(new java.awt.Dimension(30, 30));
-
-        javax.swing.GroupLayout adaptivePanel35Layout = new javax.swing.GroupLayout(adaptivePanel35);
-        adaptivePanel35.setLayout(adaptivePanel35Layout);
-        adaptivePanel35Layout.setHorizontalGroup(
-            adaptivePanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
-        );
-        adaptivePanel35Layout.setVerticalGroup(
-            adaptivePanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 30, Short.MAX_VALUE)
-        );
-
-        buttonData.add(adaptivePanel35);
-
         cancelButton.setText("Ακύρωση");
         buttonData.add(cancelButton);
-
-        javax.swing.GroupLayout adaptivePanel36Layout = new javax.swing.GroupLayout(adaptivePanel36);
-        adaptivePanel36.setLayout(adaptivePanel36Layout);
-        adaptivePanel36Layout.setHorizontalGroup(
-            adaptivePanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 222, Short.MAX_VALUE)
-        );
-        adaptivePanel36Layout.setVerticalGroup(
-            adaptivePanel36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
-        );
-
-        buttonData.add(adaptivePanel36);
 
         contentPanel.add(buttonData, java.awt.BorderLayout.SOUTH);
 
@@ -496,9 +467,7 @@ public class MyProfile extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel30;
     private widgets.panel.AdaptivePanel adaptivePanel31;
     private widgets.panel.AdaptivePanel adaptivePanel32;
-    private widgets.panel.AdaptivePanel adaptivePanel34;
-    private widgets.panel.AdaptivePanel adaptivePanel35;
-    private widgets.panel.AdaptivePanel adaptivePanel36;
+    private widgets.panel.AdaptivePanel adaptivePanel33;
     private widgets.panel.AdaptivePanel adaptivePanel37;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;

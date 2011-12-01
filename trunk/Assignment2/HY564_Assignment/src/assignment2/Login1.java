@@ -13,8 +13,8 @@ package assignment2;
 //import assignment2.NoDisability.AddContact;
 import AdaptableWindows.AdaptableIMMainView;
 import assignment2.NoDisability.ProfileCreation;
-import java.awt.Dimension;
 import pc.MainWindowPC;
+import pda.MainWindowPDA;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
 
@@ -246,6 +246,11 @@ public class Login1 extends javax.swing.JPanel {
         adaptivePanel11.setLayout(new java.awt.BorderLayout());
 
         pdaButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        pdaButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pdaButtonActionPerformed(evt);
+            }
+        });
         adaptivePanel13.add(pdaButton);
 
         adaptivePanel11.add(adaptivePanel13, java.awt.BorderLayout.CENTER);
@@ -304,6 +309,11 @@ private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GE
 		initAdaptation("spots");
         MainWindowPC.showPanel(new AdaptableIMMainView());
 	}//GEN-LAST:event_spotsButtonActionPerformed
+
+	private void pdaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pdaButtonActionPerformed
+		MainWindowPDA window = new MainWindowPDA();
+		window.setVisible(true);
+	}//GEN-LAST:event_pdaButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.label.AdaptiveLabel adaptiveLabel1;
