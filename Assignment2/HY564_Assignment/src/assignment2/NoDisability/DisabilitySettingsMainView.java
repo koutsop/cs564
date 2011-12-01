@@ -62,6 +62,9 @@ public class DisabilitySettingsMainView extends javax.swing.JPanel {
 		// Set the appropriate tab as selected
 		selecteButton(selectedButton);
 
+		System.out.println(instabilitySetings.getPreferredSize());
+		System.out.println(contentPanel.getPreferredSize());
+		
 		// Instantiate the new screen
 		AddaptableSettingsView settings = new AddaptableSettingsView(
 												commonSetings,
