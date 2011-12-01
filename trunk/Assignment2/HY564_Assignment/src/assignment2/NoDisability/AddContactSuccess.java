@@ -146,7 +146,7 @@ private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//G
 	JPanel myParent = (JPanel)getParent();
 	
 	// Instantiate the new screen
-	SearchContact r = new SearchContact();
+	SearchForNewContact r = new SearchForNewContact();
 	r.setVisible(true);
 
 	// Chat a = new Chat();

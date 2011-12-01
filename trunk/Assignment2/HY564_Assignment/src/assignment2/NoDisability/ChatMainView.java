@@ -502,7 +502,7 @@ public class ChatMainView extends javax.swing.JPanel {
         JPanel myParent = (JPanel)this.getParent();
 		((AccessibleIMInterface)myParent.getParent()).ShowIMButton(true);
 		
-		SearchContact c	= new SearchContact();    
+		SearchForNewContact c	= new SearchForNewContact();    
         myParent.removeAll();
         c.setVisible(true);
         myParent.add(c);

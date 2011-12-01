@@ -4,7 +4,7 @@
  */
 
 /*
- * SearchToAddContact.java
+ * SearchForNewContact.java
  *
  * Created on 1 Δεκ 2011, 6:02:46 μμ
  */
@@ -19,10 +19,10 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class SearchToAddContact extends javax.swing.JPanel {
+public class SearchForNewContact extends javax.swing.JPanel {
 
-	/** Creates new form SearchToAddContact */
-	public SearchToAddContact() {
+	/** Creates new form SearchForNewContact */
+	public SearchForNewContact() {
         initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);

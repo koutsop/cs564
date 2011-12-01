@@ -49,19 +49,19 @@ public class PDAMainView extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        menuPanel = new widgets.panel.AdaptivePanel();
+        buttonsPanel = new widgets.panel.AdaptivePanel();
+        menuButtonsPanels = new widgets.panel.AdaptivePanel();
         profileButton = new widgets.button.MainMenuButton();
         settingsButton = new widgets.button.MainMenuButton();
-        chatButton = new widgets.button.MainMenuButton();
-        mainPanel = new widgets.panel.AdaptivePanel();
-        manageContentsPanel = new widgets.panel.AdaptivePanel();
-        adaptivePanel3 = new widgets.panel.AdaptivePanel();
+        hellpButton = new widgets.button.MainMenuButton();
+        contactsButtonsPanel = new widgets.panel.AdaptivePanel();
         addContactButton = new widgets.button.AdaptiveButton();
         removeContactButton = new widgets.button.AdaptiveButton();
         groupContactsButton = new widgets.button.AdaptiveButton();
         searchPanel = new widgets.panel.AdaptivePanel();
         adaptiveTextField1 = new widgets.textfield.AdaptiveTextField();
         searchButton = new widgets.button.AdaptiveButton();
+        contacstListPanel = new widgets.panel.AdaptivePanel();
         contentsPanel = new widgets.panel.AdaptivePanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
@@ -93,7 +93,9 @@ public class PDAMainView extends javax.swing.JPanel {
 
         setLayout(new java.awt.BorderLayout(0, 5));
 
-        menuPanel.setLayout(new java.awt.GridLayout(1, 3));
+        buttonsPanel.setLayout(new javax.swing.BoxLayout(buttonsPanel, javax.swing.BoxLayout.PAGE_AXIS));
+
+        menuButtonsPanels.setLayout(new java.awt.GridLayout(1, 3));
 
         profileButton.setText("Profile");
         profileButton.addActionListener(new java.awt.event.ActionListener() {
@@ -101,59 +103,67 @@ public class PDAMainView extends javax.swing.JPanel {
                 profileButtonActionPerformed(evt);
             }
         });
-        menuPanel.add(profileButton);
+        menuButtonsPanels.add(profileButton);
 
         settingsButton.setText("Settings");
-        menuPanel.add(settingsButton);
-
-        chatButton.setText("Hellp");
-        chatButton.addActionListener(new java.awt.event.ActionListener() {
+        settingsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                chatButtonActionPerformed(evt);
+                settingsButtonActionPerformed(evt);
             }
         });
-        menuPanel.add(chatButton);
+        menuButtonsPanels.add(settingsButton);
 
-        add(menuPanel, java.awt.BorderLayout.NORTH);
+        hellpButton.setText("Hellp");
+        hellpButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hellpButtonActionPerformed(evt);
+            }
+        });
+        menuButtonsPanels.add(hellpButton);
 
-        mainPanel.setLayout(new java.awt.BorderLayout(0, 5));
+        buttonsPanel.add(menuButtonsPanels);
 
-        manageContentsPanel.setLayout(new java.awt.BorderLayout(0, 3));
+        contactsButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 0));
-
+        addContactButton.setFunction("ContactsActionButton");
         addContactButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addContactButtonActionPerformed(evt);
             }
         });
-        adaptivePanel3.add(addContactButton);
+        contactsButtonsPanel.add(addContactButton);
 
+        removeContactButton.setFunction("ContactsActionButton");
         removeContactButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removeContactButtonActionPerformed(evt);
             }
         });
-        adaptivePanel3.add(removeContactButton);
+        contactsButtonsPanel.add(removeContactButton);
 
+        groupContactsButton.setFunction("ContactsActionButton");
         groupContactsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 groupContactsButtonActionPerformed(evt);
             }
         });
-        adaptivePanel3.add(groupContactsButton);
+        contactsButtonsPanel.add(groupContactsButton);
 
-        manageContentsPanel.add(adaptivePanel3, java.awt.BorderLayout.NORTH);
+        buttonsPanel.add(contactsButtonsPanel);
 
         searchPanel.setLayout(new java.awt.BorderLayout(10, 0));
 
         adaptiveTextField1.setText("adaptiveTextField1");
         searchPanel.add(adaptiveTextField1, java.awt.BorderLayout.CENTER);
+
+        searchButton.setFunction("ContactsActionButton");
         searchPanel.add(searchButton, java.awt.BorderLayout.EAST);
 
-        manageContentsPanel.add(searchPanel, java.awt.BorderLayout.SOUTH);
+        buttonsPanel.add(searchPanel);
 
-        mainPanel.add(manageContentsPanel, java.awt.BorderLayout.NORTH);
+        add(buttonsPanel, java.awt.BorderLayout.NORTH);
+
+        contacstListPanel.setLayout(new javax.swing.BoxLayout(contacstListPanel, javax.swing.BoxLayout.LINE_AXIS));
 
         contentsPanel.setLayout(new javax.swing.BoxLayout(contentsPanel, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -169,7 +179,7 @@ public class PDAMainView extends javax.swing.JPanel {
         adaptivePanel2.setLayout(adaptivePanel2Layout);
         adaptivePanel2Layout.setHorizontalGroup(
             adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 404, Short.MAX_VALUE)
+            .addGap(0, 641, Short.MAX_VALUE)
         );
         adaptivePanel2Layout.setVerticalGroup(
             adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -254,9 +264,9 @@ public class PDAMainView extends javax.swing.JPanel {
 
         contentsPanel.add(jScrollPane1);
 
-        mainPanel.add(contentsPanel, java.awt.BorderLayout.CENTER);
+        contacstListPanel.add(contentsPanel);
 
-        add(mainPanel, java.awt.BorderLayout.CENTER);
+        add(contacstListPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
 	private void OnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OnMouseClicked
@@ -269,7 +279,7 @@ public class PDAMainView extends javax.swing.JPanel {
 	}//GEN-LAST:event_OnMouseClicked
 
 	private void addContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addContactButtonActionPerformed
-		MainWindowPDA.showPanel(new SearchToAddContact());
+		MainWindowPDA.showPanel(new SearchForNewContact());
 	}//GEN-LAST:event_addContactButtonActionPerformed
 
 	private void removeContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeContactButtonActionPerformed
@@ -280,13 +290,17 @@ public class PDAMainView extends javax.swing.JPanel {
 		
 	}//GEN-LAST:event_groupContactsButtonActionPerformed
 
-	private void chatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chatButtonActionPerformed
-		MainWindowPDA.showPanel(new PDAMainView());
-	}//GEN-LAST:event_chatButtonActionPerformed
+	private void hellpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hellpButtonActionPerformed
+		MainWindowPDA.showPanel(new Hellp());
+	}//GEN-LAST:event_hellpButtonActionPerformed
 
 	private void profileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profileButtonActionPerformed
 		MainWindowPDA.showPanel(new Profile());
 	}//GEN-LAST:event_profileButtonActionPerformed
+
+	private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
+		MainWindowPDA.showPanel(new SettingsMainView());
+	}//GEN-LAST:event_settingsButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton10;
@@ -315,16 +329,16 @@ public class PDAMainView extends javax.swing.JPanel {
     private widgets.button.AdaptiveButton adaptiveButton9;
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel2;
-    private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
     private widgets.button.AdaptiveButton addContactButton;
-    private widgets.button.MainMenuButton chatButton;
+    private widgets.panel.AdaptivePanel buttonsPanel;
+    private widgets.panel.AdaptivePanel contacstListPanel;
+    private widgets.panel.AdaptivePanel contactsButtonsPanel;
     private widgets.panel.AdaptivePanel contentsPanel;
     private widgets.button.AdaptiveButton groupContactsButton;
+    private widgets.button.MainMenuButton hellpButton;
     private javax.swing.JScrollPane jScrollPane1;
-    private widgets.panel.AdaptivePanel mainPanel;
-    private widgets.panel.AdaptivePanel manageContentsPanel;
-    private widgets.panel.AdaptivePanel menuPanel;
+    private widgets.panel.AdaptivePanel menuButtonsPanels;
     private widgets.button.MainMenuButton profileButton;
     private widgets.button.AdaptiveButton removeContactButton;
     private widgets.button.AdaptiveButton searchButton;

@@ -633,7 +633,7 @@ private void adaptiveButton11ActionPerformed(java.awt.event.ActionEvent evt) {//
 		JPanel myParent = (JPanel)getParent();
 
 		// Instantiate the new screen
-		SearchContact c	= new SearchContact(); 
+		SearchForNewContact c	= new SearchForNewContact(); 
 		c.setVisible(true);
 
 		// Remove the contents of the content panel & add the new screen

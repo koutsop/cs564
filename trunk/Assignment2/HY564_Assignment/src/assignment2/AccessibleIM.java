@@ -11,7 +11,7 @@
 package assignment2;
 
 import assignment2.NoDisability.ChatMainView;
-import assignment2.NoDisability.DisabilitySettingsMainView;
+import assignment2.NoDisability.SettingsMainView;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 
@@ -101,7 +101,7 @@ public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInte
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
 		ShowIMButton(true);
-        showPanel(new DisabilitySettingsMainView());	//TODO DisabilitySettingsMainView prepei na dexetai os orisma ton patera?
+        showPanel(new SettingsMainView());	//TODO SettingsMainView prepei na dexetai os orisma ton patera?
     }//GEN-LAST:event_settingsButtonActionPerformed
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed

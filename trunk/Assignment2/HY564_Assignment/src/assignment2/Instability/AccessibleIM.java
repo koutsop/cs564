@@ -14,7 +14,7 @@ package assignment2.Instability;
 import assignment2.AccessibleIMInterface;
 import assignment2.Exit;
 import assignment2.NoDisability.ChatMainView;
-import assignment2.NoDisability.DisabilitySettingsMainView;
+import assignment2.NoDisability.SettingsMainView;
 import java.awt.Dimension;
 import javax.swing.JPanel;
 import utilities.Adaptation;
@@ -320,7 +320,7 @@ public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInte
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
         ShowIMButton(true);
-        showPanel(new DisabilitySettingsMainView());	//TODO Edw 8elei mipos ton patera?
+        showPanel(new SettingsMainView());	//TODO Edw 8elei mipos ton patera?
     }//GEN-LAST:event_settingsButtonActionPerformed
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed

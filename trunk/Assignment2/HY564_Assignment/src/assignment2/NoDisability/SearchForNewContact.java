@@ -4,7 +4,7 @@
  */
 
 /*
- * SearchContact.java
+ * SearchForNewContact.java
  *
  * Created on Nov 26, 2011, 8:47:56 PM
  */
@@ -17,9 +17,9 @@ import utilities.Adaptation;
  *
  * @author Marigianna
  */
-public class SearchContact extends javax.swing.JPanel {
-    /** Creates new form SearchContact */
-    public SearchContact() {
+public class SearchForNewContact extends javax.swing.JPanel {
+    /** Creates new form SearchForNewContact */
+    public SearchForNewContact() {
         initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);	
