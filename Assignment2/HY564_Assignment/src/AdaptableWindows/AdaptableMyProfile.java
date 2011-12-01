@@ -27,18 +27,14 @@ public class AdaptableMyProfile extends javax.swing.JPanel {
 	/** Creates new form AdaptableMyProfile */
 	public AdaptableMyProfile(Dimension parentSize) {
         initComponents();
-        MyProfile a;
 		
-        p.add(a = new assignment2.MyProfile(parentSize), "Chat");
+        p.add(new assignment2.MyProfile(parentSize), "Chat");
         p.add(new assignment2.Spots.MyProfile(parentSize), "SpotChat");
         this.add(p);
-		
-		System.err.println(parentSize);
-		System.err.println(a.getPreferredSize());
 
         CardLayout cl = (CardLayout)(p.getLayout());
         String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
-        System.out.println("View:" + pid);
+        System.out.println("Profile View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         

@@ -34,7 +34,7 @@ public class AddaptableSettingsView extends javax.swing.JPanel {
 
         CardLayout cl = (CardLayout)(p.getLayout());
         String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
-        System.out.println("Setings view View:" + pid);
+        System.out.println("Setings View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         
