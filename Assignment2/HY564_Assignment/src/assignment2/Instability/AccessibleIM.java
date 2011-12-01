@@ -4,7 +4,7 @@
  */
 
 /*
- * InstabilityAccessibleIM.java
+ * AccessibleIM.java
  *
  * Created on 25 Νοε 2011, 12:23:30 μμ
  */
@@ -22,10 +22,10 @@ import utilities.Adaptation;
  *
  * @author koutsop
  */
-public class InstabilityAccessibleIM extends javax.swing.JPanel {
+public class AccessibleIM extends javax.swing.JPanel {
 
-    /** Creates new form InstabilityAccessibleIM */
-    public InstabilityAccessibleIM() {
+    /** Creates new form AccessibleIM */
+    public AccessibleIM() {
         initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
