@@ -11,7 +11,6 @@
 package assignment2.Spots;
 
 import Utility.Utility;
-import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
@@ -24,7 +23,7 @@ import utilities.DMSLConnector;
 public class Chat extends javax.swing.JPanel {
 
 	/** Creates new form Chat */
-	public Chat(Dimension parentSize) {
+	public Chat() {
 		initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
@@ -40,10 +39,6 @@ public class Chat extends javax.swing.JPanel {
         
         Utility.SetJComponentSize(avatarPanel, contactImgWidth, contactImgHeight);
         Utility.SetJComponentSize(statusAvatarPanel, statusImgWidth, statusImgHeight);
-        
-        //Utility.SetJComponentSize(imagePanel, new Dimension(100, 100));
-        
-        Utility.SetJComponentSize(this, parentSize); 
         
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("VideoCallButton");
         videoCallButton.setIcon(new ImageIcon(getClass().getResource(path)));

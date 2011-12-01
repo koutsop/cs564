@@ -22,19 +22,19 @@ import utilities.DMSLConnector;
 public class VideoCall extends javax.swing.JPanel {
 
     /** Creates new form VideoCall */
-    public VideoCall(Dimension parentSize) {
+    public VideoCall() {
         initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         
-        Utility.SetJComponentSize(this, parentSize); 
+        //Utility.SetJComponentSize(this, parentSize); 
 
         int size = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("sendVideoImagePanel"));
         Utility.SetJComponentSize(sendVideoImagePanel, size, size);
         
-        int width   = parentSize.width;
-        int height  = (parentSize.height/2) - 10; //10 Vertical Gap
-        VideoChat chat   = new VideoChat(new Dimension(width, height));
+        //int width   = parentSize.width;
+        //int height  = (parentSize.height/2) - 10; //10 Vertical Gap
+        VideoChat chat   = new VideoChat();
         chat.setVisible(true);
         //chat.ShowVideoCallButton(false);
         chatPanel.add(chat);
@@ -114,6 +114,8 @@ public class VideoCall extends javax.swing.JPanel {
         videoPanel.add(sendVideoPanel, java.awt.BorderLayout.EAST);
 
         add(videoPanel);
+
+        chatPanel.setLayout(new javax.swing.BoxLayout(chatPanel, javax.swing.BoxLayout.LINE_AXIS));
         add(chatPanel);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables

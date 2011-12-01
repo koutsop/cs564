@@ -23,11 +23,11 @@ import utilities.DMSLConnector;
 public class AdaptableVideoCall extends javax.swing.JPanel {
 	JPanel p = new JPanel(new CardLayout());
 	/** Creates new form AdaptableVideoCall */
-	public AdaptableVideoCall(Dimension parentSize) {
+	public AdaptableVideoCall() {
         initComponents();
         
-        p.add(new assignment2.VideoCall(parentSize), "Chat");
-        p.add(new assignment2.Spots.VideoCall(parentSize), "SpotChat");
+        p.add(new assignment2.VideoCall(), "Chat");
+        p.add(new assignment2.Spots.VideoCall(), "SpotChat");
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
@@ -49,6 +49,8 @@ public class AdaptableVideoCall extends javax.swing.JPanel {
 	@SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables

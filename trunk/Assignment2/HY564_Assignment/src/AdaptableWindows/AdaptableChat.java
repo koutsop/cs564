@@ -10,7 +10,6 @@
  */
 package AdaptableWindows;
 import java.awt.CardLayout;
-import java.awt.Dimension;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
@@ -23,11 +22,11 @@ public class AdaptableChat extends javax.swing.JPanel {
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AdaptableChat */
-	public AdaptableChat(Dimension parentSize) {
+	public AdaptableChat() {
         initComponents();
         
-        p.add(new assignment2.Chat(parentSize), "Chat");
-        p.add(new assignment2.Spots.Chat(parentSize), "SpotChat");
+        p.add(new assignment2.Chat(), "Chat");
+        p.add(new assignment2.Spots.Chat(), "SpotChat");
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
@@ -49,6 +48,8 @@ public class AdaptableChat extends javax.swing.JPanel {
 	@SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables

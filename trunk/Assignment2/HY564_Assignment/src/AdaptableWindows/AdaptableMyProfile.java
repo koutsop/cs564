@@ -25,11 +25,11 @@ public class AdaptableMyProfile extends javax.swing.JPanel {
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AdaptableMyProfile */
-	public AdaptableMyProfile(Dimension parentSize) {
+	public AdaptableMyProfile() {
         initComponents();
 		
-        p.add(new assignment2.MyProfile(parentSize), "Chat");
-        p.add(new assignment2.Spots.MyProfile(parentSize), "SpotChat");
+        p.add(new assignment2.MyProfile(), "Chat");
+        p.add(new assignment2.Spots.MyProfile(), "SpotChat");
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
@@ -51,6 +51,8 @@ public class AdaptableMyProfile extends javax.swing.JPanel {
 	@SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     // End of variables declaration//GEN-END:variables

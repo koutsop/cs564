@@ -24,24 +24,24 @@ import utilities.DMSLConnector;
 public class Call extends javax.swing.JPanel {
 
 	/** Creates new form Call */
-	public Call(Dimension parentSize) {
-        initComponents();
-        Adaptation.automaticallySetRuntime(this);
-        Adaptation.automaticallyAdapt(this);
-        
-        Utility.SetJComponentSize(this, parentSize); 
-        
-		int size = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("sendVideoImagePanel"));
-        Utility.SetJComponentSize(marigiannaPanel, size, size);
-        int width   = parentSize.width;
-        int height  = (int)(parentSize.height/2.3) - 10; //10 Vertical Gap
-        VideoChat chat   = new VideoChat(new Dimension(width, height));
-		((FlowLayout)chat.getButtonsPanel().getLayout()).setAlignment(FlowLayout.RIGHT);
-        chat.ShowSwapButton(false);
-        chat.ShowFullScreenButton(false);
-        chat.setVisible(true);
-        chatPanel.add(chat);  
-		Utility.SetJComponentSize(gapPanel, parentSize.width - size, parentSize.height-height-20);
+	public Call() {
+//        initComponents();
+//        Adaptation.automaticallySetRuntime(this);
+//        Adaptation.automaticallyAdapt(this);
+//        
+//        Utility.SetJComponentSize(this, parentSize); 
+//        
+//		int size = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("sendVideoImagePanel"));
+//        Utility.SetJComponentSize(marigiannaPanel, size, size);
+//        int width   = parentSize.width;
+//        int height  = (int)(parentSize.height/2.3) - 10; //10 Vertical Gap
+//        VideoChat chat   = new VideoChat(new Dimension(width, height));
+//		((FlowLayout)chat.getButtonsPanel().getLayout()).setAlignment(FlowLayout.RIGHT);
+//        chat.ShowSwapButton(false);
+//        chat.ShowFullScreenButton(false);
+//        chat.setVisible(true);
+//        chatPanel.add(chat);  
+//		Utility.SetJComponentSize(gapPanel, parentSize.width - size, parentSize.height-height-20);
 	}
 
 	/** This method is called from within the constructor to
