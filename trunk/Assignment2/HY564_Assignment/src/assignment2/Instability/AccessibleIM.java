@@ -32,7 +32,7 @@ public class AccessibleIM extends javax.swing.JPanel {
         imButton.setVisible(false);
 		int width  = menuPanel.getPreferredSize().width + virtualKeyboardPanel.getPreferredSize().width;
 		int height = menuPanel.getPreferredSize().height + virtualKeyboardPanel.getPreferredSize().height;
-        showPanel(new ChatMainView(new Dimension(width, height), contentsPanel));
+        showPanel(new ChatMainView(new Dimension(width, height)));
     }
 
     /** This method is called from within the constructor to
@@ -314,7 +314,7 @@ public class AccessibleIM extends javax.swing.JPanel {
         imButton.setVisible(false);
 		int width  = menuPanel.getPreferredSize().width + virtualKeyboardPanel.getPreferredSize().width;
 		int height = menuPanel.getPreferredSize().height + virtualKeyboardPanel.getPreferredSize().height;
-        showPanel(new ChatMainView(new Dimension(width, height), contentsPanel));
+        showPanel(new ChatMainView(new Dimension(width, height)));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed

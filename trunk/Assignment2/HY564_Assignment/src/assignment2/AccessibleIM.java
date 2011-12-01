@@ -27,7 +27,7 @@ public class AccessibleIM extends javax.swing.JPanel {
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         imButton.setVisible(false);
-        showPanel(new ChatMainView(menuPanel.getPreferredSize(), contentsPanel));
+        showPanel(new ChatMainView(menuPanel.getPreferredSize()));
     }
 
     /** This method is called from within the constructor to
@@ -96,7 +96,7 @@ public class AccessibleIM extends javax.swing.JPanel {
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
         imButton.setVisible(false);
-        showPanel(new ChatMainView(menuPanel.getPreferredSize(), contentsPanel));
+        showPanel(new ChatMainView(menuPanel.getPreferredSize()));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed

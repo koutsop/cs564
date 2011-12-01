@@ -29,11 +29,11 @@ public class DisabilitySettingsMainView extends javax.swing.JPanel {
         Adaptation.automaticallySetRuntime(this);
 		Adaptation.automaticallyAdapt(this);
         
-		//activate General Settings
-		selecteButton(generalButton);
-				
-		GeneralSettingsPanel generalSettings = new GeneralSettingsPanel();
-		showPanel(generalSettings);
+		newActionPerformed(
+			generalButton,
+			new assignment2.NoDisability.GeneralSettingsPanel(),
+			new assignment2.Instability.GeneralSettingsPanel()			
+		);
     }
 	
 	private  void selecteButton(JButton button) {

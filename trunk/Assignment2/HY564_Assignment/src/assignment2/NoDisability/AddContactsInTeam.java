@@ -11,17 +11,18 @@
 package assignment2.NoDisability;
 
 import javax.swing.JPanel;
+import utilities.Adaptation;
 
 /**
  *
  * @author Marigianna
  */
 public class AddContactsInTeam extends javax.swing.JPanel {
-    JPanel myParent;
     /** Creates new form AddContactResults */
-    public AddContactsInTeam(JPanel parent) {
+    public AddContactsInTeam() {
         initComponents();
-        this.myParent = parent;
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);
 		adaptivePanel5.add(new PagesNavigationButtons());
     }
 
@@ -152,11 +153,6 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel7.add(adaptiveLabel21);
 
         adaptiveButton9.setText("Αφαίρεση");
-        adaptiveButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton9ActionPerformed(evt);
-            }
-        });
         descrPanel7.add(adaptiveButton9);
 
         adaptivePanel13.add(descrPanel7, java.awt.BorderLayout.CENTER);
@@ -197,11 +193,6 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel8.add(adaptiveLabel23);
 
         adaptiveButton10.setText("Αφαίρεση");
-        adaptiveButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton10ActionPerformed(evt);
-            }
-        });
         descrPanel8.add(adaptiveButton10);
 
         adaptivePanel14.add(descrPanel8, java.awt.BorderLayout.CENTER);
@@ -242,11 +233,6 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel1.add(adaptiveLabel9);
 
         adaptiveButton3.setText("Προσθήκη");
-        adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton3ActionPerformed(evt);
-            }
-        });
         descrPanel1.add(adaptiveButton3);
 
         adaptivePanel7.add(descrPanel1, java.awt.BorderLayout.CENTER);
@@ -287,11 +273,6 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel6.add(adaptiveLabel19);
 
         adaptiveButton8.setText("Αφαίρεση");
-        adaptiveButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton8ActionPerformed(evt);
-            }
-        });
         descrPanel6.add(adaptiveButton8);
 
         adaptivePanel12.add(descrPanel6, java.awt.BorderLayout.CENTER);
@@ -332,11 +313,6 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel4.add(adaptiveLabel12);
 
         adaptiveButton6.setText("Προσθήκη");
-        adaptiveButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton6ActionPerformed(evt);
-            }
-        });
         descrPanel4.add(adaptiveButton6);
 
         adaptivePanel10.add(descrPanel4, java.awt.BorderLayout.CENTER);
@@ -377,11 +353,6 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel9.add(adaptiveLabel25);
 
         adaptiveButton11.setText("Αφαίρεση");
-        adaptiveButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton11ActionPerformed(evt);
-            }
-        });
         descrPanel9.add(adaptiveButton11);
 
         adaptivePanel15.add(descrPanel9, java.awt.BorderLayout.CENTER);
@@ -422,11 +393,6 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel2.add(adaptiveLabel11);
 
         adaptiveButton4.setText("Προσθήκη");
-        adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton4ActionPerformed(evt);
-            }
-        });
         descrPanel2.add(adaptiveButton4);
 
         adaptivePanel8.add(descrPanel2, java.awt.BorderLayout.CENTER);
@@ -467,11 +433,6 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel5.add(adaptiveLabel10);
 
         adaptiveButton7.setText("Προσθήκη");
-        adaptiveButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton7ActionPerformed(evt);
-            }
-        });
         descrPanel5.add(adaptiveButton7);
 
         adaptivePanel11.add(descrPanel5, java.awt.BorderLayout.CENTER);
@@ -512,11 +473,6 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel10.add(adaptiveLabel14);
 
         adaptiveButton12.setText("Προσθήκη");
-        adaptiveButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton12ActionPerformed(evt);
-            }
-        });
         descrPanel10.add(adaptiveButton12);
 
         adaptivePanel16.add(descrPanel10, java.awt.BorderLayout.CENTER);
@@ -532,51 +488,15 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         add(contentPanel);
     }// </editor-fold>//GEN-END:initComponents
 
-private void adaptiveButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton8ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton8ActionPerformed
-
-private void adaptiveButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton9ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton9ActionPerformed
-
-private void adaptiveButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton10ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton10ActionPerformed
-
-private void adaptiveButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton11ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton11ActionPerformed
-
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
-   Groups r = new Groups(myParent);
-   r.setVisible(true);
-   myParent.removeAll();
-   myParent.add(r);
-   myParent.repaint();
-   myParent.validate();
+	JPanel myParent = (JPanel)getParent();
+	Groups r = new Groups();
+	r.setVisible(true);
+	myParent.removeAll();
+	myParent.add(r);
+	myParent.repaint();
+	myParent.validate();
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
-
-private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
-   
-  
-}//GEN-LAST:event_adaptiveButton4ActionPerformed
-
-private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton3ActionPerformed
-
-private void adaptiveButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton6ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton6ActionPerformed
-
-private void adaptiveButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton7ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton7ActionPerformed
-
-private void adaptiveButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton12ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveButton12ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;

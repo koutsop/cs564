@@ -17,11 +17,9 @@ import javax.swing.JPanel;
  * @author Marigianna
  */
 public class AddContactResults extends javax.swing.JPanel {
-    JPanel myParent;
     /** Creates new form AddContactResults */
-    public AddContactResults(JPanel parent) {
+    public AddContactResults() {
         initComponents();
-        this.myParent = parent;
 		adaptivePanel5.add(new PagesNavigationButtons());
     }
 
@@ -127,6 +125,11 @@ public class AddContactResults extends javax.swing.JPanel {
         adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         adaptiveButton1.setText("Νέα Αναζήτηση");
+        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton1ActionPerformed(evt);
+            }
+        });
         adaptivePanel4.add(adaptiveButton1);
 
         adaptivePanel1.add(adaptivePanel4);
@@ -576,51 +579,69 @@ public class AddContactResults extends javax.swing.JPanel {
         add(contentPanel);
     }// </editor-fold>//GEN-END:initComponents
 
+	private void AddContact () {
+		JPanel myParent = (JPanel)getParent();
+
+		// Instantiate the new screen
+		AddContactRequest r = new AddContactRequest();
+		r.setVisible(true);
+
+		// Remove the contents of the content panel & add the new screen
+		myParent.removeAll();
+		myParent.add(r);
+		myParent.repaint();
+		myParent.validate();		
+	}
+	
 private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed
-// TODO add your handling code here:
+	AddContact();
 }//GEN-LAST:event_adaptiveButton3ActionPerformed
 
 private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
-   
-   // Instantiate the new screen
-   AddContactRequest r = new AddContactRequest(myParent);
-   r.setVisible(true);
-
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   myParent.removeAll();
-   myParent.add(r);
-   myParent.repaint();
-   myParent.validate();
+	AddContact();
 }//GEN-LAST:event_adaptiveButton4ActionPerformed
 
 private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
-// TODO add your handling code here:
+	AddContact();
 }//GEN-LAST:event_adaptiveButton5ActionPerformed
 
 private void adaptiveButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton6ActionPerformed
-// TODO add your handling code here:
+	AddContact();
 }//GEN-LAST:event_adaptiveButton6ActionPerformed
 
 private void adaptiveButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton7ActionPerformed
-// TODO add your handling code here:
+	AddContact();
 }//GEN-LAST:event_adaptiveButton7ActionPerformed
 
 private void adaptiveButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton8ActionPerformed
-// TODO add your handling code here:
+	AddContact();
 }//GEN-LAST:event_adaptiveButton8ActionPerformed
 
 private void adaptiveButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton9ActionPerformed
-// TODO add your handling code here:
+	AddContact();
 }//GEN-LAST:event_adaptiveButton9ActionPerformed
 
 private void adaptiveButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton10ActionPerformed
-// TODO add your handling code here:
+	AddContact();
 }//GEN-LAST:event_adaptiveButton10ActionPerformed
 
 private void adaptiveButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton11ActionPerformed
-// TODO add your handling code here:
+	AddContact();
 }//GEN-LAST:event_adaptiveButton11ActionPerformed
+
+	private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
+		JPanel myParent = (JPanel)getParent();
+
+		// Instantiate the new screen
+		SearchContact c	= new SearchContact(); 
+		c.setVisible(true);
+
+		// Remove the contents of the content panel & add the new screen
+		myParent.removeAll();
+		myParent.add(c);
+		myParent.repaint();
+		myParent.validate();			
+	}//GEN-LAST:event_adaptiveButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;

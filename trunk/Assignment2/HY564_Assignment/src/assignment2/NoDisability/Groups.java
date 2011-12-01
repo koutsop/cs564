@@ -11,19 +11,19 @@
 package assignment2.NoDisability;
 
 import javax.swing.JPanel;
+import utilities.Adaptation;
 
 /**
  *
  * @author Marigianna
  */
 public class Groups extends javax.swing.JPanel {
-private JPanel myParent;
-    /** Creates new form AddContact */
-        
+    
     /** Creates new form Groups */
-    Groups(JPanel parent) {
-       initComponents();
-        this.myParent = parent;
+    Groups() {
+		initComponents();
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);		
     }
 
     /** This method is called from within the constructor to
@@ -207,30 +207,33 @@ private JPanel myParent;
     }// </editor-fold>//GEN-END:initComponents
 
 private void adaptiveTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField1ActionPerformed
-  AddContactsInTeam r = new AddContactsInTeam(myParent);
-   r.setVisible(true);
-   myParent.removeAll();
-   myParent.add(r);
-   myParent.repaint();
-   myParent.validate();
+	JPanel myParent = (JPanel)getParent();
+	AddContactsInTeam r = new AddContactsInTeam();
+	r.setVisible(true);
+	myParent.removeAll();
+	myParent.add(r);
+	myParent.repaint();
+	myParent.validate();
 }//GEN-LAST:event_adaptiveTextField1ActionPerformed
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
- AddContactsInNewTeam r = new AddContactsInNewTeam(myParent);
-   r.setVisible(true);
-   myParent.removeAll();
-   myParent.add(r);
-   myParent.repaint();
-   myParent.validate();
+	JPanel myParent = (JPanel)getParent();
+	AddContactsInNewTeam r = new AddContactsInNewTeam();
+	r.setVisible(true);
+	myParent.removeAll();
+	myParent.add(r);
+	myParent.repaint();
+	myParent.validate();
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
 
 private void adaptiveButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton2ActionPerformed
-AddContactsInTeam r = new AddContactsInTeam(myParent);
-   r.setVisible(true);
-   myParent.removeAll();
-   myParent.add(r);
-   myParent.repaint();
-   myParent.validate();
+	JPanel myParent = (JPanel)getParent();
+	AddContactsInTeam r = new AddContactsInTeam();
+	r.setVisible(true);
+	myParent.removeAll();
+	myParent.add(r);
+	myParent.repaint();
+	myParent.validate();
 }//GEN-LAST:event_adaptiveButton2ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

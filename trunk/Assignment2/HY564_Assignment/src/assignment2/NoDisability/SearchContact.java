@@ -4,22 +4,25 @@
  */
 
 /*
- * AddContact.java
+ * SearchContact.java
  *
  * Created on Nov 26, 2011, 8:47:56 PM
  */
 package assignment2.NoDisability;
 
 import javax.swing.JPanel;
+import utilities.Adaptation;
 
 /**
  *
  * @author Marigianna
  */
-public class AddContact extends javax.swing.JPanel {
-    /** Creates new form AddContact */
-    public AddContact() {
+public class SearchContact extends javax.swing.JPanel {
+    /** Creates new form SearchContact */
+    public SearchContact() {
         initComponents();
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);		
     }
 
     /** This method is called from within the constructor to
