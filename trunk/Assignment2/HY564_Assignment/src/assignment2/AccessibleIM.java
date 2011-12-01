@@ -10,7 +10,8 @@
  */
 package assignment2;
 
-import AdaptableWindows.AdaptableIMView;
+import assignment2.NoDisability.ChatMainView;
+import assignment2.NoDisability.DisabilitySettingsMainView;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 
@@ -26,7 +27,7 @@ public class AccessibleIM extends javax.swing.JPanel {
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         imButton.setVisible(false);
-        showPanel(new AdaptableIMView(menuPanel.getPreferredSize(), contentsPanel));
+        showPanel(new ChatMainView(menuPanel.getPreferredSize(), contentsPanel));
     }
 
     /** This method is called from within the constructor to
@@ -95,12 +96,12 @@ public class AccessibleIM extends javax.swing.JPanel {
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
         imButton.setVisible(false);
-        showPanel(new AdaptableIMView(menuPanel.getPreferredSize(), contentsPanel));
+        showPanel(new ChatMainView(menuPanel.getPreferredSize(), contentsPanel));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
         imButton.setVisible(true);
-        showPanel(new AdaptableSettingsView());
+        showPanel(new DisabilitySettingsMainView());	//TODO DisabilitySettingsMainView prepei na dexetai os orisma ton patera?
     }//GEN-LAST:event_settingsButtonActionPerformed
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed

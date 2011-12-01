@@ -11,6 +11,7 @@
 package assignment2;
 
 //import assignment2.NoDisability.AddContact;
+import AdaptableWindows.AdaptableIMMainView;
 import assignment2.NoDisability.ProfileCreation;
 import java.awt.Dimension;
 import pc.MainWindowPC;
@@ -278,17 +279,17 @@ public class Login1 extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
     private void colorBlindButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorBlindButtonActionPerformed
         initAdaptation("no_disability");
-        MainWindowPC.showPanel(new AccessibleIM());
+        MainWindowPC.showPanel(new AdaptableIMMainView());
     }//GEN-LAST:event_colorBlindButtonActionPerformed
 
     private void instabilityButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_instabilityButtonActionPerformed
         initAdaptation("instability");
-        MainWindowPC.showPanel(new assignment2.Instability.AccessibleIM());
+        MainWindowPC.showPanel(new AdaptableIMMainView());
     }//GEN-LAST:event_instabilityButtonActionPerformed
 
     private void lowVisionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowVisionButtonActionPerformed
         initAdaptation("no_disability");
-        MainWindowPC.showPanel(new AccessibleIM()); 
+        MainWindowPC.showPanel(new AdaptableIMMainView()); 
     }//GEN-LAST:event_lowVisionButtonActionPerformed
 
 private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerButtonActionPerformed
@@ -297,12 +298,12 @@ private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GE
 
 	private void boDisabilityButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_boDisabilityButtonActionPerformed
 		initAdaptation("no_disability");
-        MainWindowPC.showPanel(new AccessibleIM());
+        MainWindowPC.showPanel(new AdaptableIMMainView());
 	}//GEN-LAST:event_boDisabilityButtonActionPerformed
 
 	private void spotsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_spotsButtonActionPerformed
 		initAdaptation("spots");
-        MainWindowPC.showPanel(new AccessibleIM());
+        MainWindowPC.showPanel(new AdaptableIMMainView());
 	}//GEN-LAST:event_spotsButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

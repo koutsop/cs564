@@ -4,13 +4,13 @@
  */
 
 /*
- * NoDisabilitySettingsView.java
+ * DisabilitySettingsMainView.java
  *
  * Created on Nov 24, 2011, 8:03:00 PM
  */
 package assignment2.NoDisability;
 
-import assignment2.AccessibleIM;
+import AdaptableWindows.AdaptableIMMainView;
 import pc.MainWindowPC;
 import utilities.Adaptation;
 
@@ -18,10 +18,10 @@ import utilities.Adaptation;
  *
  * @author Marigianna
  */
-public class NoDisabilitySettingsView extends javax.swing.JPanel {
+public class DisabilitySettingsMainView extends javax.swing.JPanel {
 
-    /** Creates new form NoDisabilitySettingsView */
-    public NoDisabilitySettingsView() {
+    /** Creates new form DisabilitySettingsMainView */
+    public DisabilitySettingsMainView() {
         initComponents();
          Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
@@ -241,11 +241,11 @@ private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//G
 
     
 private void adaptiveButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton6ActionPerformed
-	MainWindowPC.showPanel(new AccessibleIM());
+	MainWindowPC.showPanel(new AdaptableIMMainView());
 }//GEN-LAST:event_adaptiveButton6ActionPerformed
 
 private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
-	MainWindowPC.showPanel(new AccessibleIM());
+	MainWindowPC.showPanel(new AdaptableIMMainView());
 }//GEN-LAST:event_adaptiveButton5ActionPerformed
 
 private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generalButtonActionPerformed
