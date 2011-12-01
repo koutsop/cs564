@@ -40,9 +40,7 @@ public class Chat extends javax.swing.JPanel {
         
         Utility.SetJComponentSize(avatarPanel, contactImgWidth, contactImgHeight);
         Utility.SetJComponentSize(statusAvatarPanel, statusImgWidth, statusImgHeight);
-        
-        //Utility.SetJComponentSize(imagePanel, new Dimension(100, 100));
-        
+               
         Utility.SetJComponentSize(this, parentSize); 
         
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("VideoCallButton");
@@ -59,8 +57,6 @@ public class Chat extends javax.swing.JPanel {
         
         path = DMSLConnector.getInstance().getClient(false).Evaluate("CloseButton");
         closeButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
-        System.out.println(this.getPreferredSize());
     }
  
     /** This method is called from within the constructor to

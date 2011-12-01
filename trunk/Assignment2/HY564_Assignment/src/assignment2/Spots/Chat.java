@@ -58,9 +58,7 @@ public class Chat extends javax.swing.JPanel {
         addButton.setIcon(new ImageIcon(getClass().getResource(path)));  
         
         path = DMSLConnector.getInstance().getClient(false).Evaluate("CloseButton");
-        closeButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
-        System.out.println(this.getPreferredSize());		
+        closeButton.setIcon(new ImageIcon(getClass().getResource(path)));	
 	}
 
 	/** This method is called from within the constructor to
