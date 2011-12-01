@@ -19,14 +19,16 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class AdaptableChat extends javax.swing.JPanel {
+	final static String viewCommonChat	= "Chat";
+    final static String viewSpotChat	= "SpotChat";
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AdaptableChat */
 	public AdaptableChat() {
         initComponents();
         
-        p.add(new assignment2.Chat(), "Chat");
-        p.add(new assignment2.Spots.Chat(), "SpotChat");
+        p.add(new assignment2.Chat(), viewCommonChat);
+        p.add(new assignment2.Spots.Chat(), viewSpotChat);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
