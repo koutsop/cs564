@@ -164,11 +164,6 @@ public class ProfileCreation extends javax.swing.JPanel {
         adaptiveTextField1.setMaximumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField1.setMinimumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField1.setPreferredSize(new java.awt.Dimension(200, 40));
-        adaptiveTextField1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField1ActionPerformed(evt);
-            }
-        });
         adaptivePanel1.add(adaptiveTextField1);
 
         profileDataPanel.add(adaptivePanel1);
@@ -185,11 +180,6 @@ public class ProfileCreation extends javax.swing.JPanel {
         adaptiveTextField2.setMaximumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField2.setMinimumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField2.setPreferredSize(new java.awt.Dimension(200, 40));
-        adaptiveTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField2ActionPerformed(evt);
-            }
-        });
         adaptivePanel2.add(adaptiveTextField2);
 
         profileDataPanel.add(adaptivePanel2);
@@ -206,11 +196,6 @@ public class ProfileCreation extends javax.swing.JPanel {
         adaptiveTextField3.setMaximumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField3.setMinimumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField3.setPreferredSize(new java.awt.Dimension(200, 40));
-        adaptiveTextField3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField3ActionPerformed(evt);
-            }
-        });
         adaptivePanel3.add(adaptiveTextField3);
 
         profileDataPanel.add(adaptivePanel3);
@@ -359,11 +344,6 @@ public class ProfileCreation extends javax.swing.JPanel {
         adaptiveTextField13.setMaximumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField13.setMinimumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField13.setPreferredSize(new java.awt.Dimension(200, 40));
-        adaptiveTextField13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField13ActionPerformed(evt);
-            }
-        });
         adaptivePanel10.add(adaptiveTextField13);
 
         profileDataPanel.add(adaptivePanel10);
@@ -380,11 +360,6 @@ public class ProfileCreation extends javax.swing.JPanel {
         adaptiveTextField11.setMaximumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField11.setMinimumSize(new java.awt.Dimension(200, 40));
         adaptiveTextField11.setPreferredSize(new java.awt.Dimension(200, 40));
-        adaptiveTextField11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveTextField11ActionPerformed(evt);
-            }
-        });
         adaptivePanel11.add(adaptiveTextField11);
 
         profileDataPanel.add(adaptivePanel11);
@@ -473,7 +448,7 @@ public class ProfileCreation extends javax.swing.JPanel {
         adaptivePanel31.setLayout(adaptivePanel31Layout);
         adaptivePanel31Layout.setHorizontalGroup(
             adaptivePanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 299, Short.MAX_VALUE)
+            .addGap(0, 306, Short.MAX_VALUE)
         );
         adaptivePanel31Layout.setVerticalGroup(
             adaptivePanel31Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -519,7 +494,7 @@ public class ProfileCreation extends javax.swing.JPanel {
         adaptivePanel32.setLayout(adaptivePanel32Layout);
         adaptivePanel32Layout.setHorizontalGroup(
             adaptivePanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 299, Short.MAX_VALUE)
+            .addGap(0, 306, Short.MAX_VALUE)
         );
         adaptivePanel32Layout.setVerticalGroup(
             adaptivePanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -567,29 +542,9 @@ public class ProfileCreation extends javax.swing.JPanel {
         add(jScrollPane1);
     }// </editor-fold>//GEN-END:initComponents
 
-private void adaptiveTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField2ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField2ActionPerformed
-
-private void adaptiveTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField3ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField3ActionPerformed
-
-private void adaptiveTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField11ActionPerformed
-		// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField11ActionPerformed
-
 private void acceptanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptanceButtonActionPerformed
         MainWindowPC.showPanel(new Login1());
 }//GEN-LAST:event_acceptanceButtonActionPerformed
-
-private void adaptiveTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField1ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField1ActionPerformed
-
-private void adaptiveTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField13ActionPerformed
-// TODO add your handling code here:
-}//GEN-LAST:event_adaptiveTextField13ActionPerformed
 
 private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
        MainWindowPC.showPanel(new Login1());

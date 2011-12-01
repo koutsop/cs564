@@ -534,19 +534,6 @@ component sendVideoImagePanel [
 ]
 
 
-//==========================================
-
-component SpotChat [
-	if		profile5 then	activate "SpotChat"
-	else					activate "Chat"
-]
-
-component MainIMPage [
-	if 		profile1 then 	activate "ChatMainView"
-	else 					activate "ChatMainView"
-]
-
-
 // ===========================================
 
 //==========================================
@@ -607,4 +594,21 @@ component ContactWidth [
 	else if profile5 then 	activate "230"	//spots
 	else if profile6 then 	activate "50"
 	else 					activate "-1"
+]
+
+
+//==========================================
+//
+//	Addaptable Windows
+//
+//==========================================
+component SpotChat [
+	if		profile5 then	activate "SpotChat"
+	else					activate "Chat"
+]
+
+component MainIMView [
+	if 		profile3 then 	activate "InstabilityMainView"
+	else if profile6 then 	activate "PDAMainView"
+	else 					activate "CommonMainView"
 ]

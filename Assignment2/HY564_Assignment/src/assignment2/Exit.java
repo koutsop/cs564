@@ -10,7 +10,7 @@
  */
 package assignment2;
 
-import javax.swing.Icon;
+import AdaptableWindows.AdaptableIMMainView;
 import javax.swing.ImageIcon;
 import pc.MainWindowPC;
 import utilities.Adaptation;
@@ -75,7 +75,7 @@ public class Exit extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
-        MainWindowPC.showPanel(new AccessibleIM());
+        MainWindowPC.showPanel(new AdaptableIMMainView());
     }//GEN-LAST:event_cancelButtonActionPerformed
 
     private void acceptanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_acceptanceButtonActionPerformed
