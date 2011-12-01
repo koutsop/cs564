@@ -19,7 +19,7 @@ import utilities.Adaptation;
  *
  * @author koutsop
  */
-public class AccessibleIM extends javax.swing.JPanel {
+public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInterface {
 
     /** Creates new form AccessibleIM */
     public AccessibleIM() {
@@ -95,17 +95,17 @@ public class AccessibleIM extends javax.swing.JPanel {
     }
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
-        imButton.setVisible(false);
+		ShowIMButton(false);
         showPanel(new ChatMainView(menuPanel.getPreferredSize()));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
-        imButton.setVisible(true);
+		ShowIMButton(true);
         showPanel(new DisabilitySettingsMainView());	//TODO DisabilitySettingsMainView prepei na dexetai os orisma ton patera?
     }//GEN-LAST:event_settingsButtonActionPerformed
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
-        imButton.setVisible(true);
+		ShowIMButton(true);
         showPanel(new Exit());        
     }//GEN-LAST:event_exitButtonActionPerformed
 
@@ -116,4 +116,8 @@ public class AccessibleIM extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel menuPanel;
     private widgets.button.MainMenuButton settingsButton;
     // End of variables declaration//GEN-END:variables
+
+	public void ShowIMButton(boolean show) {
+		imButton.setVisible(show);
+	}
 }

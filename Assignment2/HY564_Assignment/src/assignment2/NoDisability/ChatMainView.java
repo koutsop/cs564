@@ -16,6 +16,7 @@ import AdaptableWindows.AdaptableMyProfile;
 import AdaptableWindows.AdaptableVideoCall;
 import assignment2.Contact;
 import Utility.Utility;
+import assignment2.AccessibleIMInterface;
 import java.awt.Component;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
@@ -499,6 +500,8 @@ public class ChatMainView extends javax.swing.JPanel {
 
     private void addContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addContactButtonActionPerformed
         JPanel myParent = (JPanel)this.getParent();
+		((AccessibleIMInterface)myParent.getParent()).ShowIMButton(true);
+		
 		SearchContact c	= new SearchContact();    
         myParent.removeAll();
         c.setVisible(true);
@@ -519,6 +522,8 @@ public class ChatMainView extends javax.swing.JPanel {
 
     private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed
         JPanel myParent = (JPanel)this.getParent();
+		((AccessibleIMInterface)myParent.getParent()).ShowIMButton(true);
+		
 		Groups c = new Groups();    
         myParent.removeAll();
         c.setVisible(true);

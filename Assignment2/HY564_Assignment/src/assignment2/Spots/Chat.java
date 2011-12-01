@@ -75,9 +75,14 @@ public class Chat extends javax.swing.JPanel {
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         statusAvatarPanel = new widgets.panel.AdaptivePanel();
         statusLabel = new widgets.label.AdaptiveLabel();
+        adaptivePanel5 = new widgets.panel.AdaptivePanel();
+        chatButtonsPanel = new widgets.panel.AdaptivePanel();
+        videoCallButton = new widgets.button.AdaptiveButton();
+        callButton = new widgets.button.AdaptiveButton();
+        sendFileButton = new widgets.button.AdaptiveButton();
+        addButton = new widgets.button.AdaptiveButton();
+        closeButton = new widgets.button.AdaptiveButton();
         centerPanel = new widgets.panel.AdaptivePanel();
-        northGapPanel = new widgets.panel.AdaptivePanel();
-        centerPanel1 = new widgets.panel.AdaptivePanel();
         receivePanel = new widgets.panel.AdaptivePanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         scroolContentPanel = new widgets.panel.AdaptivePanel();
@@ -134,20 +139,14 @@ public class Chat extends javax.swing.JPanel {
         senderTextPanel4 = new widgets.panel.AdaptivePanel();
         adaptiveLabel7 = new widgets.label.AdaptiveLabel();
         adaptiveLabel8 = new widgets.label.AdaptiveLabel();
+        adaptivePanel6 = new widgets.panel.AdaptivePanel();
         sendPanel = new widgets.panel.AdaptivePanel();
-        chatButtonsPanel = new widgets.panel.AdaptivePanel();
-        videoCallButton = new widgets.button.AdaptiveButton();
-        callButton = new widgets.button.AdaptiveButton();
-        sendFileButton = new widgets.button.AdaptiveButton();
-        addButton = new widgets.button.AdaptiveButton();
-        closeButton = new widgets.button.AdaptiveButton();
-        chatPanel = new widgets.panel.AdaptivePanel();
         sendButonPanel = new widgets.panel.AdaptivePanel();
         sendButton = new widgets.button.AdaptiveButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         adaptiveTextBox2 = new widgets.textbox.AdaptiveTextBox();
 
-        setLayout(new java.awt.BorderLayout());
+        setLayout(new java.awt.GridLayout(3, 1));
 
         contactPanel.setMaximumSize(new java.awt.Dimension(32767, 100));
         contactPanel.setMinimumSize(new java.awt.Dimension(125, 100));
@@ -191,27 +190,32 @@ public class Chat extends javax.swing.JPanel {
 
         contactPanel.add(adaptivePanel2);
 
-        add(contactPanel, java.awt.BorderLayout.NORTH);
+        add(contactPanel);
 
-        centerPanel.setLayout(new java.awt.BorderLayout());
+        adaptivePanel5.setLayout(new java.awt.BorderLayout());
 
-        northGapPanel.setMinimumSize(new java.awt.Dimension(0, 200));
-        northGapPanel.setPreferredSize(new java.awt.Dimension(400, 200));
+        chatButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 10, 10));
 
-        javax.swing.GroupLayout northGapPanelLayout = new javax.swing.GroupLayout(northGapPanel);
-        northGapPanel.setLayout(northGapPanelLayout);
-        northGapPanelLayout.setHorizontalGroup(
-            northGapPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        northGapPanelLayout.setVerticalGroup(
-            northGapPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
-        );
+        videoCallButton.setFunction("ChatButton");
+        chatButtonsPanel.add(videoCallButton);
 
-        centerPanel.add(northGapPanel, java.awt.BorderLayout.NORTH);
+        callButton.setFunction("ChatButton");
+        chatButtonsPanel.add(callButton);
 
-        centerPanel1.setLayout(new javax.swing.BoxLayout(centerPanel1, javax.swing.BoxLayout.PAGE_AXIS));
+        sendFileButton.setFunction("ChatButton");
+        chatButtonsPanel.add(sendFileButton);
+
+        addButton.setFunction("ChatButton");
+        chatButtonsPanel.add(addButton);
+
+        closeButton.setFunction("ChatButton");
+        chatButtonsPanel.add(closeButton);
+
+        adaptivePanel5.add(chatButtonsPanel, java.awt.BorderLayout.SOUTH);
+
+        add(adaptivePanel5);
+
+        centerPanel.setLayout(new javax.swing.BoxLayout(centerPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
         receivePanel.setLayout(new javax.swing.BoxLayout(receivePanel, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -450,30 +454,14 @@ public class Chat extends javax.swing.JPanel {
 
         receivePanel.add(jScrollPane2);
 
-        centerPanel1.add(receivePanel);
+        centerPanel.add(receivePanel);
+
+        adaptivePanel6.setMaximumSize(new java.awt.Dimension(20, 20));
+        adaptivePanel6.setMinimumSize(new java.awt.Dimension(20, 20));
+        adaptivePanel6.setPreferredSize(new java.awt.Dimension(20, 20));
+        centerPanel.add(adaptivePanel6);
 
         sendPanel.setLayout(new java.awt.BorderLayout(0, 5));
-
-        chatButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 5));
-
-        videoCallButton.setFunction("ChatButton");
-        chatButtonsPanel.add(videoCallButton);
-
-        callButton.setFunction("ChatButton");
-        chatButtonsPanel.add(callButton);
-
-        sendFileButton.setFunction("ChatButton");
-        chatButtonsPanel.add(sendFileButton);
-
-        addButton.setFunction("ChatButton");
-        chatButtonsPanel.add(addButton);
-
-        closeButton.setFunction("ChatButton");
-        chatButtonsPanel.add(closeButton);
-
-        sendPanel.add(chatButtonsPanel, java.awt.BorderLayout.NORTH);
-
-        chatPanel.setLayout(new java.awt.BorderLayout(15, 15));
 
         sendButonPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
@@ -481,7 +469,7 @@ public class Chat extends javax.swing.JPanel {
         sendButton.setText("Send");
         sendButonPanel.add(sendButton);
 
-        chatPanel.add(sendButonPanel, java.awt.BorderLayout.EAST);
+        sendPanel.add(sendButonPanel, java.awt.BorderLayout.EAST);
 
         jScrollPane1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 2, true));
 
@@ -489,15 +477,11 @@ public class Chat extends javax.swing.JPanel {
         adaptiveTextBox2.setRows(5);
         jScrollPane1.setViewportView(adaptiveTextBox2);
 
-        chatPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+        sendPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
-        sendPanel.add(chatPanel, java.awt.BorderLayout.CENTER);
+        centerPanel.add(sendPanel);
 
-        centerPanel1.add(sendPanel);
-
-        centerPanel.add(centerPanel1, java.awt.BorderLayout.CENTER);
-
-        add(centerPanel, java.awt.BorderLayout.CENTER);
+        add(centerPanel);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.label.AdaptiveLabel adaptiveLabel1;
@@ -512,14 +496,14 @@ public class Chat extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
+    private widgets.panel.AdaptivePanel adaptivePanel5;
+    private widgets.panel.AdaptivePanel adaptivePanel6;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox2;
     private widgets.button.AdaptiveButton addButton;
     private widgets.panel.AdaptivePanel avatarPanel;
     private widgets.button.AdaptiveButton callButton;
     private widgets.panel.AdaptivePanel centerPanel;
-    private widgets.panel.AdaptivePanel centerPanel1;
     private widgets.panel.AdaptivePanel chatButtonsPanel;
-    private widgets.panel.AdaptivePanel chatPanel;
     private widgets.button.AdaptiveButton closeButton;
     private widgets.panel.AdaptivePanel contactPanel;
     private widgets.panel.AdaptivePanel conversationKoutsopPanel;
@@ -530,7 +514,6 @@ public class Chat extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private widgets.label.AdaptiveLabel nameLabel;
-    private widgets.panel.AdaptivePanel northGapPanel;
     private widgets.panel.AdaptivePanel northPanel;
     private widgets.panel.AdaptivePanel northPanel1;
     private widgets.panel.AdaptivePanel northPanel2;

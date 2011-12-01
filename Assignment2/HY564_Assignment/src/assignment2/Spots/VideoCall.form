@@ -16,10 +16,11 @@
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
     <Property name="columns" type="int" value="1"/>
-    <Property name="rows" type="int" value="2"/>
+    <Property name="rows" type="int" value="3"/>
+    <Property name="verticalGap" type="int" value="10"/>
   </Layout>
   <SubComponents>
-    <Container class="widgets.panel.AdaptivePanel" name="videoPanel">
+    <Container class="widgets.panel.AdaptivePanel" name="callPanel">
       <Properties>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -30,7 +31,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
       <SubComponents>
-        <Container class="widgets.panel.AdaptivePanel" name="receiveVideoPanel">
+        <Container class="widgets.panel.AdaptivePanel" name="gapPanel">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
               <BorderConstraints direction="Center"/>
@@ -39,9 +40,10 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
         </Container>
-        <Container class="widgets.panel.AdaptivePanel" name="sendVideoPanel">
+        <Container class="widgets.panel.AdaptivePanel" name="marigiannaPanel">
           <Properties>
-            <Property name="alignmentY" type="float" value="0.0"/>
+            <Property name="function" type="java.lang.String" value="marigiannaImg"/>
+            <Property name="name" type="java.lang.String" value="Panel.Content.MarigiannaImage" noResource="true"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -49,88 +51,74 @@
             </Constraint>
           </Constraints>
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
-          <SubComponents>
-            <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel2">
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-                  <BorderConstraints direction="Center"/>
-                </Constraint>
-              </Constraints>
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="93" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="widgets.panel.AdaptivePanel" name="myPanel">
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-                <Property name="columns" type="int" value="1"/>
-                <Property name="rows" type="int" value="2"/>
-                <Property name="verticalGap" type="int" value="5"/>
-              </Layout>
-              <SubComponents>
-                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
-                  <Properties>
-                    <Property name="function" type="java.lang.String" value="marigiannaImg"/>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.MarigiannaImage" noResource="true"/>
-                  </Properties>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+      <SubComponents>
+        <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel4">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center"/>
+            </Constraint>
+          </Constraints>
 
-                  <Layout>
-                    <DimensionLayout dim="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="144" max="32767" attributes="0"/>
-                      </Group>
-                    </DimensionLayout>
-                    <DimensionLayout dim="1">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <EmptySpace min="0" pref="72" max="32767" attributes="0"/>
-                      </Group>
-                    </DimensionLayout>
-                  </Layout>
-                </Container>
-                <Container class="widgets.panel.AdaptivePanel" name="sendVideoImagePanel">
-                  <Properties>
-                    <Property name="function" type="java.lang.String" value="koutsopImg"/>
-                    <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
-                  </Properties>
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="93" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+        </Container>
+        <Container class="widgets.panel.AdaptivePanel" name="koutsopPanel">
+          <Properties>
+            <Property name="function" type="java.lang.String" value="koutsopImg"/>
+            <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="East"/>
+            </Constraint>
+          </Constraints>
 
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
-                </Container>
-              </SubComponents>
-            </Container>
-            <Container class="widgets.panel.AdaptivePanel" name="westPanel">
-              <Properties>
-                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[5, 32767]"/>
-                </Property>
-                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[5, 100]"/>
-                </Property>
-                <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                  <Dimension value="[5, 305]"/>
-                </Property>
-              </Properties>
-              <Constraints>
-                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-                  <BorderConstraints direction="West"/>
-                </Constraint>
-              </Constraints>
-
-              <Layout>
-                <DimensionLayout dim="0">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="5" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="150" max="32767" attributes="0"/>
-                  </Group>
-                </DimensionLayout>
-              </Layout>
-            </Container>
-          </SubComponents>
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <EmptySpace min="0" pref="93" max="32767" attributes="0"/>
+              </Group>
+            </DimensionLayout>
+          </Layout>
         </Container>
       </SubComponents>
     </Container>
     <Container class="widgets.panel.AdaptivePanel" name="chatPanel">
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
     </Container>
   </SubComponents>
 </Form>

@@ -25,23 +25,19 @@ public class Call extends javax.swing.JPanel {
 
 	/** Creates new form Call */
 	public Call() {
-//        initComponents();
-//        Adaptation.automaticallySetRuntime(this);
-//        Adaptation.automaticallyAdapt(this);
-//        
-//        Utility.SetJComponentSize(this, parentSize); 
-//        
-//		int size = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("sendVideoImagePanel"));
-//        Utility.SetJComponentSize(marigiannaPanel, size, size);
-//        int width   = parentSize.width;
-//        int height  = (int)(parentSize.height/2.3) - 10; //10 Vertical Gap
-//        VideoChat chat   = new VideoChat(new Dimension(width, height));
-//		((FlowLayout)chat.getButtonsPanel().getLayout()).setAlignment(FlowLayout.RIGHT);
-//        chat.ShowSwapButton(false);
-//        chat.ShowFullScreenButton(false);
-//        chat.setVisible(true);
-//        chatPanel.add(chat);  
-//		Utility.SetJComponentSize(gapPanel, parentSize.width - size, parentSize.height-height-20);
+        initComponents();
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);
+        
+              
+		int size = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("sendVideoImagePanel"));
+        Utility.SetJComponentSize(marigiannaPanel, size, size);
+        VideoChat chat   = new VideoChat();
+		((FlowLayout)chat.getButtonsPanel().getLayout()).setAlignment(FlowLayout.RIGHT);
+        chat.ShowSwapButton(false);
+        chat.ShowFullScreenButton(false);
+        chat.setVisible(true);
+        chatPanel.add(chat);  
 	}
 
 	/** This method is called from within the constructor to
@@ -55,23 +51,17 @@ public class Call extends javax.swing.JPanel {
 
         callPanel = new widgets.panel.AdaptivePanel();
         gapPanel = new widgets.panel.AdaptivePanel();
-        imagePanel = new widgets.panel.AdaptivePanel();
-        adaptivePanel2 = new widgets.panel.AdaptivePanel();
         marigiannaPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel1 = new widgets.panel.AdaptivePanel();
         chatPanel = new widgets.panel.AdaptivePanel();
 
-        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.PAGE_AXIS));
+        setLayout(new java.awt.GridLayout(3, 1, 0, 10));
 
         callPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 0));
         callPanel.setLayout(new java.awt.BorderLayout());
 
         gapPanel.setLayout(new javax.swing.BoxLayout(gapPanel, javax.swing.BoxLayout.LINE_AXIS));
         callPanel.add(gapPanel, java.awt.BorderLayout.CENTER);
-
-        imagePanel.setAlignmentY(0.0F);
-        imagePanel.setLayout(new java.awt.BorderLayout());
-
-        adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.LINE_AXIS));
 
         marigiannaPanel.setFunction("marigiannaImg");
         marigiannaPanel.setName("Panel.Content.MarigiannaImage"); // NOI18N
@@ -80,28 +70,38 @@ public class Call extends javax.swing.JPanel {
         marigiannaPanel.setLayout(marigiannaPanelLayout);
         marigiannaPanelLayout.setHorizontalGroup(
             marigiannaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 144, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
         marigiannaPanelLayout.setVerticalGroup(
             marigiannaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 290, Short.MAX_VALUE)
+            .addGap(0, 93, Short.MAX_VALUE)
         );
 
-        adaptivePanel2.add(marigiannaPanel);
-
-        imagePanel.add(adaptivePanel2, java.awt.BorderLayout.CENTER);
-
-        callPanel.add(imagePanel, java.awt.BorderLayout.EAST);
+        callPanel.add(marigiannaPanel, java.awt.BorderLayout.EAST);
 
         add(callPanel);
+
+        javax.swing.GroupLayout adaptivePanel1Layout = new javax.swing.GroupLayout(adaptivePanel1);
+        adaptivePanel1.setLayout(adaptivePanel1Layout);
+        adaptivePanel1Layout.setHorizontalGroup(
+            adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        adaptivePanel1Layout.setVerticalGroup(
+            adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 93, Short.MAX_VALUE)
+        );
+
+        add(adaptivePanel1);
+
+        chatPanel.setLayout(new javax.swing.BoxLayout(chatPanel, javax.swing.BoxLayout.LINE_AXIS));
         add(chatPanel);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel callPanel;
     private widgets.panel.AdaptivePanel chatPanel;
     private widgets.panel.AdaptivePanel gapPanel;
-    private widgets.panel.AdaptivePanel imagePanel;
     private widgets.panel.AdaptivePanel marigiannaPanel;
     // End of variables declaration//GEN-END:variables
 }
