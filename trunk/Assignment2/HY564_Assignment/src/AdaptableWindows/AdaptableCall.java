@@ -11,7 +11,6 @@
 package AdaptableWindows;
 
 import java.awt.CardLayout;
-import java.awt.Dimension;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
@@ -21,14 +20,16 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class AdaptableCall extends javax.swing.JPanel {
+	final static String viewCommonChat	= "Chat";
+    final static String viewSpotChat	= "SpotChat";
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AdaptableCall */
 	public AdaptableCall() {
         initComponents();
         
-        p.add(new assignment2.Call(), "Chat");
-        p.add(new assignment2.Spots.Call(), "SpotChat");
+        p.add(new assignment2.Call(), viewCommonChat);
+        p.add(new assignment2.Spots.Call(), viewSpotChat);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
