@@ -11,9 +11,9 @@
 package assignment2.Instability;
 
 //import assignment2.NoDisability.AddContact;
-import AdaptableWindows.AdaptableIMView;
-import assignment2.AdaptableSettingsView;
 import assignment2.Exit;
+import assignment2.NoDisability.ChatMainView;
+import assignment2.NoDisability.DisabilitySettingsMainView;
 import java.awt.Dimension;
 import javax.swing.JPanel;
 import utilities.Adaptation;
@@ -32,7 +32,7 @@ public class AccessibleIM extends javax.swing.JPanel {
         imButton.setVisible(false);
 		int width  = menuPanel.getPreferredSize().width + virtualKeyboardPanel.getPreferredSize().width;
 		int height = menuPanel.getPreferredSize().height + virtualKeyboardPanel.getPreferredSize().height;
-        showPanel(new AdaptableIMView(new Dimension(width, height), contentsPanel));
+        showPanel(new ChatMainView(new Dimension(width, height), contentsPanel));
     }
 
     /** This method is called from within the constructor to
@@ -312,12 +312,14 @@ public class AccessibleIM extends javax.swing.JPanel {
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
         imButton.setVisible(false);
-//        showPanel(new AdaptableIMView(menuPanel.getPreferredSize()));
+		int width  = menuPanel.getPreferredSize().width + virtualKeyboardPanel.getPreferredSize().width;
+		int height = menuPanel.getPreferredSize().height + virtualKeyboardPanel.getPreferredSize().height;
+        showPanel(new ChatMainView(new Dimension(width, height), contentsPanel));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
         imButton.setVisible(true);
-        showPanel(new AdaptableSettingsView());
+        showPanel(new DisabilitySettingsMainView());	//TODO Edw 8elei mipos ton patera?
     }//GEN-LAST:event_settingsButtonActionPerformed
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
