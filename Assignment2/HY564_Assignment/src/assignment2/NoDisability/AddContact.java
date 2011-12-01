@@ -17,11 +17,9 @@ import javax.swing.JPanel;
  * @author Marigianna
  */
 public class AddContact extends javax.swing.JPanel {
-    private JPanel myParent;
     /** Creates new form AddContact */
-    public AddContact(JPanel parent) {
+    public AddContact() {
         initComponents();
-        this.myParent = parent;
     }
 
     /** This method is called from within the constructor to
@@ -105,15 +103,14 @@ public class AddContact extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
-
-  
-   // Instantiate the new screen
-   AddContactResults r = new AddContactResults(myParent);
-   r.setVisible(true);
-   myParent.removeAll();
-   myParent.add(r);
-   myParent.repaint();
-   myParent.validate();
+	// Instantiate the new screen
+	JPanel myParent = (JPanel)this.getParent();
+	AddContactResults r = new AddContactResults();
+	r.setVisible(true);
+	myParent.removeAll();
+	myParent.add(r);
+	myParent.repaint();
+	myParent.validate();
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
