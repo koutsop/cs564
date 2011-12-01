@@ -11,6 +11,7 @@
 package assignment2.Instability;
 
 //import assignment2.NoDisability.AddContact;
+import assignment2.AccessibleIMInterface;
 import assignment2.Exit;
 import assignment2.NoDisability.ChatMainView;
 import assignment2.NoDisability.DisabilitySettingsMainView;
@@ -22,7 +23,7 @@ import utilities.Adaptation;
  *
  * @author koutsop
  */
-public class AccessibleIM extends javax.swing.JPanel {
+public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInterface {
 
     /** Creates new form AccessibleIM */
     public AccessibleIM() {
@@ -311,19 +312,19 @@ public class AccessibleIM extends javax.swing.JPanel {
     }
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
-        imButton.setVisible(false);
+        ShowIMButton(false);
 		int width  = menuPanel.getPreferredSize().width + virtualKeyboardPanel.getPreferredSize().width;
 		int height = menuPanel.getPreferredSize().height + virtualKeyboardPanel.getPreferredSize().height;
         showPanel(new ChatMainView(new Dimension(width, height)));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
-        imButton.setVisible(true);
+        ShowIMButton(true);
         showPanel(new DisabilitySettingsMainView());	//TODO Edw 8elei mipos ton patera?
     }//GEN-LAST:event_settingsButtonActionPerformed
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
-        imButton.setVisible(true);
+        ShowIMButton(true);
         showPanel(new Exit());        
     }//GEN-LAST:event_exitButtonActionPerformed
 
@@ -377,4 +378,8 @@ public class AccessibleIM extends javax.swing.JPanel {
     private widgets.button.MainMenuButton settingsButton;
     private widgets.panel.AdaptivePanel virtualKeyboardPanel;
     // End of variables declaration//GEN-END:variables
+
+	public void ShowIMButton(boolean show) {
+		imButton.setVisible(show);
+	}
 }

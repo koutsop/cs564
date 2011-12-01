@@ -22,7 +22,7 @@ public class SearchContact extends javax.swing.JPanel {
     public SearchContact() {
         initComponents();
         Adaptation.automaticallySetRuntime(this);
-        Adaptation.automaticallyAdapt(this);		
+        Adaptation.automaticallyAdapt(this);	
     }
 
     /** This method is called from within the constructor to

@@ -139,6 +139,7 @@ public class VideoChat extends javax.swing.JPanel {
         senderTextPanel4 = new widgets.panel.AdaptivePanel();
         adaptiveLabel7 = new widgets.label.AdaptiveLabel();
         adaptiveLabel8 = new widgets.label.AdaptiveLabel();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
         sendPanel = new widgets.panel.AdaptivePanel();
         sendButonPanel = new widgets.panel.AdaptivePanel();
         sendButton = new widgets.button.AdaptiveButton();
@@ -146,7 +147,7 @@ public class VideoChat extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         adaptiveTextBox1 = new widgets.textbox.AdaptiveTextBox();
 
-        setLayout(new java.awt.BorderLayout(0, 10));
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.PAGE_AXIS));
 
         receivePanel.setLayout(new java.awt.BorderLayout(0, 10));
 
@@ -200,7 +201,7 @@ public class VideoChat extends javax.swing.JPanel {
 
         senderInfoPanel3.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel1.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel1.setText("Koutsop:");
         senderInfoPanel3.add(senderNameLabel1);
 
@@ -244,7 +245,7 @@ public class VideoChat extends javax.swing.JPanel {
 
         senderInfoPanel.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel.setText("Marigianna:");
         senderInfoPanel.add(senderNameLabel);
 
@@ -291,7 +292,7 @@ public class VideoChat extends javax.swing.JPanel {
 
         senderInfoPanel5.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel2.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel2.setText("Koutsop:");
         senderInfoPanel5.add(senderNameLabel2);
 
@@ -335,7 +336,7 @@ public class VideoChat extends javax.swing.JPanel {
 
         senderInfoPanel7.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel3.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel3.setText("Marigianna:");
         senderInfoPanel7.add(senderNameLabel3);
 
@@ -382,7 +383,7 @@ public class VideoChat extends javax.swing.JPanel {
 
         senderInfoPanel9.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        senderNameLabel4.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel4.setText("Marigianna:");
         senderInfoPanel9.add(senderNameLabel4);
 
@@ -415,7 +416,10 @@ public class VideoChat extends javax.swing.JPanel {
 
         receivePanel.add(adaptivePanel1, java.awt.BorderLayout.CENTER);
 
-        add(receivePanel, java.awt.BorderLayout.CENTER);
+        add(receivePanel);
+
+        adaptivePanel3.setMaximumSize(new java.awt.Dimension(10, 10));
+        add(adaptivePanel3);
 
         sendPanel.setLayout(new java.awt.BorderLayout(10, 0));
 
@@ -438,7 +442,7 @@ public class VideoChat extends javax.swing.JPanel {
 
         sendPanel.add(adaptivePanel2, java.awt.BorderLayout.CENTER);
 
-        add(sendPanel, java.awt.BorderLayout.SOUTH);
+        add(sendPanel);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.label.AdaptiveLabel adaptiveLabel1;
@@ -451,6 +455,7 @@ public class VideoChat extends javax.swing.JPanel {
     private widgets.label.AdaptiveLabel adaptiveLabel8;
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
     private widgets.button.AdaptiveButton addButton;
     private widgets.panel.AdaptivePanel buttonsPanel;
