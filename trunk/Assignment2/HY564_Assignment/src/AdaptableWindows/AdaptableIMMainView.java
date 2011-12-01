@@ -10,8 +10,6 @@
  */
 package AdaptableWindows;
 
-import assignment2.AccessibleIM;
-import assignment2.Instability.InstabilityAccessibleIM;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import utilities.Adaptation;
@@ -32,9 +30,9 @@ public class AdaptableIMMainView extends javax.swing.JPanel {
 	public AdaptableIMMainView() {
 		initComponents();
         
-		p.add(new AccessibleIM(), viewA);
-        p.add(new InstabilityAccessibleIM(), viewB);
-		p.add(new InstabilityAccessibleIM(), viewC);	//Edw 8elw to pda
+		p.add(new assignment2.AccessibleIM(), viewA);
+        p.add(new assignment2.Instability.AccessibleIM(), viewB);
+		p.add(new assignment2.Instability.AccessibleIM(), viewC);	//Edw 8elw to pda
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
