@@ -88,8 +88,6 @@ public class Profile extends javax.swing.JPanel {
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
-        jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-
         contentPanel.setLayout(new java.awt.BorderLayout());
 
         profileImagePanel.setLayout(new java.awt.BorderLayout());
