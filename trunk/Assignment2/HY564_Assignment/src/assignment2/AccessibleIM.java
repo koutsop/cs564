@@ -39,19 +39,16 @@ public class AccessibleIM extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        contentsPanel = new widgets.panel.AdaptivePanel();
         menuPanel = new widgets.panel.AdaptivePanel();
         imButton = new widgets.button.MainMenuButton();
         settingsButton = new widgets.button.MainMenuButton();
         exitButton = new widgets.button.MainMenuButton();
+        contentsPanel = new widgets.panel.AdaptivePanel();
 
         setMaximumSize(new java.awt.Dimension(1000, 688));
         setMinimumSize(new java.awt.Dimension(1000, 688));
         setPreferredSize(new java.awt.Dimension(1000, 688));
         setLayout(new java.awt.BorderLayout());
-
-        contentsPanel.setLayout(new javax.swing.BoxLayout(contentsPanel, javax.swing.BoxLayout.LINE_AXIS));
-        add(contentsPanel, java.awt.BorderLayout.CENTER);
 
         menuPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
@@ -79,7 +76,10 @@ public class AccessibleIM extends javax.swing.JPanel {
         });
         menuPanel.add(exitButton);
 
-        add(menuPanel, java.awt.BorderLayout.PAGE_START);
+        add(menuPanel, java.awt.BorderLayout.NORTH);
+
+        contentsPanel.setLayout(new javax.swing.BoxLayout(contentsPanel, javax.swing.BoxLayout.LINE_AXIS));
+        add(contentsPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
 	public void setMyProfileVisible () {

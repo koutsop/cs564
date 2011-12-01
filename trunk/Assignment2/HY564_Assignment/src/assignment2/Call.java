@@ -49,21 +49,33 @@ public class Call extends javax.swing.JPanel {
 
         callPanel = new widgets.panel.AdaptivePanel();
         receivePanell = new widgets.panel.AdaptivePanel();
+        adaptivePanel1 = new widgets.panel.AdaptivePanel();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
         chatPanel = new widgets.panel.AdaptivePanel();
 
         setLayout(new java.awt.GridLayout(2, 1));
 
         callPanel.setLayout(new java.awt.BorderLayout());
 
-        receivePanell.setFunction("marigiannaImg");
-        receivePanell.setName("Panel.Content.MarigiannaImage"); // NOI18N
-        receivePanell.setLayout(new javax.swing.BoxLayout(receivePanell, javax.swing.BoxLayout.LINE_AXIS));
+        receivePanell.setName(""); // NOI18N
+        receivePanell.setLayout(new java.awt.GridLayout(1, 3));
+        receivePanell.add(adaptivePanel1);
+
+        adaptivePanel2.setFunction("marigiannaImg");
+        adaptivePanel2.setName("Panel.Content.MarigiannaImage"); // NOI18N
+        receivePanell.add(adaptivePanel2);
+        receivePanell.add(adaptivePanel3);
+
         callPanel.add(receivePanell, java.awt.BorderLayout.CENTER);
 
         add(callPanel);
         add(chatPanel);
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel callPanel;
     private widgets.panel.AdaptivePanel chatPanel;
     private widgets.panel.AdaptivePanel receivePanell;

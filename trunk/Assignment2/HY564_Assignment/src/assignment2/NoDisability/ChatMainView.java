@@ -163,7 +163,6 @@ public class ChatMainView extends javax.swing.JPanel {
     private void initComponents() {
 
         leftPanel = new widgets.panel.AdaptivePanel();
-        gapPanel1 = new widgets.panel.AdaptivePanel();
         LeftCenterPanel = new widgets.panel.AdaptivePanel();
         contactActionPanel = new widgets.panel.AdaptivePanel();
         buttonsPanel = new widgets.panel.AdaptivePanel();
@@ -205,12 +204,11 @@ public class ChatMainView extends javax.swing.JPanel {
         videoCallButton = new widgets.button.MainMenuButton();
         callButton = new widgets.button.MainMenuButton();
         contentPanel = new widgets.panel.AdaptivePanel();
-        rightPanel = new widgets.panel.AdaptivePanel();
 
+        setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10));
         setLayout(new java.awt.BorderLayout(10, 10));
 
-        leftPanel.setLayout(new java.awt.BorderLayout(0, 10));
-        leftPanel.add(gapPanel1, java.awt.BorderLayout.WEST);
+        leftPanel.setLayout(new javax.swing.BoxLayout(leftPanel, javax.swing.BoxLayout.LINE_AXIS));
 
         LeftCenterPanel.setLayout(new java.awt.BorderLayout(0, 10));
 
@@ -318,7 +316,7 @@ public class ChatMainView extends javax.swing.JPanel {
         );
         westPanelLayout.setVerticalGroup(
             westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 170, Short.MAX_VALUE)
+            .addGap(0, 173, Short.MAX_VALUE)
         );
 
         groupPanel.add(westPanel, java.awt.BorderLayout.WEST);
@@ -373,7 +371,7 @@ public class ChatMainView extends javax.swing.JPanel {
         );
         westPanel1Layout.setVerticalGroup(
             westPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 170, Short.MAX_VALUE)
+            .addGap(0, 173, Short.MAX_VALUE)
         );
 
         groupPanel1.add(westPanel1, java.awt.BorderLayout.WEST);
@@ -428,7 +426,7 @@ public class ChatMainView extends javax.swing.JPanel {
         );
         westPanel2Layout.setVerticalGroup(
             westPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 170, Short.MAX_VALUE)
+            .addGap(0, 173, Short.MAX_VALUE)
         );
 
         groupPanel2.add(westPanel2, java.awt.BorderLayout.WEST);
@@ -441,7 +439,7 @@ public class ChatMainView extends javax.swing.JPanel {
 
         LeftCenterPanel.add(contactsPanel, java.awt.BorderLayout.CENTER);
 
-        leftPanel.add(LeftCenterPanel, java.awt.BorderLayout.EAST);
+        leftPanel.add(LeftCenterPanel);
 
         add(leftPanel, java.awt.BorderLayout.LINE_START);
 
@@ -482,10 +480,11 @@ public class ChatMainView extends javax.swing.JPanel {
         tabPanel.add(callButton);
 
         mainPanel.add(tabPanel, java.awt.BorderLayout.PAGE_START);
+
+        contentPanel.setLayout(new javax.swing.BoxLayout(contentPanel, javax.swing.BoxLayout.LINE_AXIS));
         mainPanel.add(contentPanel, java.awt.BorderLayout.CENTER);
 
         add(mainPanel, java.awt.BorderLayout.CENTER);
-        add(rightPanel, java.awt.BorderLayout.EAST);
     }// </editor-fold>//GEN-END:initComponents
 
     private void chatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chatButtonActionPerformed
@@ -603,7 +602,6 @@ public class ChatMainView extends javax.swing.JPanel {
     private javax.swing.JScrollPane contactsListScrollPane;
     private widgets.panel.AdaptivePanel contactsPanel;
     private widgets.panel.AdaptivePanel contentPanel;
-    private widgets.panel.AdaptivePanel gapPanel1;
     private widgets.button.AdaptiveButton groupButton0;
     private widgets.button.AdaptiveButton groupButton1;
     private widgets.button.AdaptiveButton groupButton2;
@@ -621,7 +619,6 @@ public class ChatMainView extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel mainPanel;
     private widgets.button.MainMenuButton myProfileButton;
     private widgets.button.AdaptiveButton removeContactButton;
-    private widgets.panel.AdaptivePanel rightPanel;
     private widgets.button.AdaptiveButton searchButton;
     private widgets.panel.AdaptivePanel searchPanel;
     private widgets.panel.AdaptivePanel tabPanel;
