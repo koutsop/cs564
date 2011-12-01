@@ -10,16 +10,19 @@
  */
 package assignment2.NoDisability;
 
+import javax.swing.JPanel;
+import utilities.Adaptation;
+
 /**
  *
  * @author Marigianna
  */
 public class AddContactSuccess extends javax.swing.JPanel {
-    javax.swing.JPanel myParent;
     /** Creates new form AddContactSuccess */
-    public AddContactSuccess(javax.swing.JPanel parent) {
+    public AddContactSuccess() {
         initComponents();
-        this.myParent = parent;
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);		
     }
 
     /** This method is called from within the constructor to
@@ -140,16 +143,18 @@ public class AddContactSuccess extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
- // Instantiate the new screen
-   AddContact r = new AddContact(myParent);
-   r.setVisible(true);
+	JPanel myParent = (JPanel)getParent();
+	
+	// Instantiate the new screen
+	SearchContact r = new SearchContact();
+	r.setVisible(true);
 
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   myParent.removeAll();
-   myParent.add(r);
-   myParent.repaint();
-   myParent.validate();
+	// Chat a = new Chat();
+	// Remove the contents of the content panel & add the new screen
+	myParent.removeAll();
+	myParent.add(r);
+	myParent.repaint();
+	myParent.validate();
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

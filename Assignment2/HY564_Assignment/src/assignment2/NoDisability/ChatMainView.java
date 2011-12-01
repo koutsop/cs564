@@ -29,11 +29,13 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class ChatMainView extends javax.swing.JPanel {
-    private JPanel myParent;
-    
+   
     /** Creates new form NoDisabilityMainView */
-    public ChatMainView(Dimension menuSize, JPanel parent) {
-        this.myParent = parent;
+	//To menuSize to xriazomaste epidei 8eloume na dwsoume diastaseis sto contactList
+	//Apo tous rules pernoume to width alla oxi to height. Den mporoume na xrisimopoieisoume
+	//to diko mas heigt epidei den exoume ginei akoma add ston patera mas ara den exoume height akoma.
+
+    public ChatMainView(Dimension menuSize) {
         this.menuSize = menuSize;
         initComponents();
 		AddContacts();
@@ -496,7 +498,8 @@ public class ChatMainView extends javax.swing.JPanel {
     }//GEN-LAST:event_videoCallButtonActionPerformed
 
     private void addContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addContactButtonActionPerformed
-        AddContact c = new AddContact(myParent);    
+        JPanel myParent = (JPanel)this.getParent();
+		SearchContact c	= new SearchContact();    
         myParent.removeAll();
         c.setVisible(true);
         myParent.add(c);
@@ -515,7 +518,8 @@ public class ChatMainView extends javax.swing.JPanel {
     }//GEN-LAST:event_myProfileButtonActionPerformed
 
     private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed
-        Groups c = new Groups(myParent);    
+        JPanel myParent = (JPanel)this.getParent();
+		Groups c = new Groups();    
         myParent.removeAll();
         c.setVisible(true);
         myParent.add(c);
