@@ -11,6 +11,9 @@
 package assignment2.NoDisability;
 
 import AdaptableWindows.AdaptableIMMainView;
+import AdaptableWindows.AddaptableSettingsView;
+import javax.swing.JButton;
+import javax.swing.JPanel;
 import pc.MainWindowPC;
 import utilities.Adaptation;
 
@@ -22,29 +25,53 @@ public class DisabilitySettingsMainView extends javax.swing.JPanel {
 
     /** Creates new form DisabilitySettingsMainView */
     public DisabilitySettingsMainView() {
-        initComponents();
-         Adaptation.automaticallySetRuntime(this);
-        Adaptation.automaticallyAdapt(this);
-        //activate General Settings
-         generalButton.setSelected(true);
-   blockedButton.setSelected(false);
-   appearanceButton.setSelected(false);
-   blockedButton.setSelected(false);
-   notificationsButton.setSelected(false);
-  
-   // Instantiate the new screen
-   GeneralSettingsPanel generalSettings = new GeneralSettingsPanel();
-   generalSettings.setVisible(true);
-
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(generalSettings);
-   contentPanel.repaint();
-   contentPanel.validate();
-		//this.updateUI();
+		initComponents();
+        Adaptation.automaticallySetRuntime(this);
+		Adaptation.automaticallyAdapt(this);
+        
+		//activate General Settings
+		selecteButton(generalButton);
+				
+		GeneralSettingsPanel generalSettings = new GeneralSettingsPanel();
+		showPanel(generalSettings);
     }
+	
+	private  void selecteButton(JButton button) {
+        generalButton.setSelected(false);
+		historyButton.setSelected(false);
+		appearanceButton.setSelected(false);
+		blockedButton.setSelected(false);
+		notificationsButton.setSelected(false);
+		button.setSelected(true);
+		
+	}
+	
+	private void showPanel (JPanel p) {
+		contentPanel.removeAll();
+		p.setVisible(true);
+		contentPanel.add(p);
+		contentPanel.repaint();
+		contentPanel.validate();		
+	}
+	
+	private void newActionPerformed (
+					JButton selectedButton, 
+					JPanel commonSetings, 
+					JPanel instabilitySetings
+	) {
+		// Set the appropriate tab as selected
+		selecteButton(selectedButton);
 
+		// Instantiate the new screen
+		AddaptableSettingsView settings = new AddaptableSettingsView(
+												commonSetings,
+												instabilitySetings
+										);
+
+		// Remove the contents of the content panel & add the new screen
+		showPanel(settings);		
+	}
+	
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -55,7 +82,6 @@ public class DisabilitySettingsMainView extends javax.swing.JPanel {
     private void initComponents() {
 
         secMenuButton1 = new widgets.button.SecMenuButton();
-        jPanel1 = new javax.swing.JPanel();
         menuPanel = new widgets.panel.AdaptivePanel();
         tabbedPanel = new widgets.panel.AdaptivePanel();
         generalButton = new widgets.button.SecMenuButton();
@@ -76,13 +102,7 @@ public class DisabilitySettingsMainView extends javax.swing.JPanel {
 
         secMenuButton1.setText("secMenuButton1");
 
-        setMaximumSize(new java.awt.Dimension(1000, 630));
-        setPreferredSize(new java.awt.Dimension(1000, 630));
-
-        jPanel1.setMaximumSize(new java.awt.Dimension(1000, 630));
-        jPanel1.setMinimumSize(new java.awt.Dimension(1000, 630));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1000, 630));
-        jPanel1.setLayout(new java.awt.BorderLayout());
+        setLayout(new java.awt.BorderLayout());
 
         menuPanel.setLayout(new javax.swing.BoxLayout(menuPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
@@ -134,55 +154,42 @@ public class DisabilitySettingsMainView extends javax.swing.JPanel {
 
         menuPanel.add(tabbedPanel);
 
-        jPanel1.add(menuPanel, java.awt.BorderLayout.WEST);
+        add(menuPanel, java.awt.BorderLayout.WEST);
 
-        contentPanel.setMaximumSize(new java.awt.Dimension(1000, 600));
-        contentPanel.setMinimumSize(new java.awt.Dimension(1000, 350));
-        contentPanel.setPreferredSize(new java.awt.Dimension(1000, 600));
         contentPanel.setLayout(new javax.swing.BoxLayout(contentPanel, javax.swing.BoxLayout.LINE_AXIS));
-        jPanel1.add(contentPanel, java.awt.BorderLayout.CENTER);
+        add(contentPanel, java.awt.BorderLayout.CENTER);
 
-        bottomPanel.setPreferredSize(new java.awt.Dimension(1000, 50));
         bottomPanel.setLayout(new javax.swing.BoxLayout(bottomPanel, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptivePanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptiveButton4.setText("Βοήθεια");
-        adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton4ActionPerformed(evt);
-            }
-        });
         adaptivePanel5.add(adaptiveButton4);
 
         bottomPanel.add(adaptivePanel5);
-
-        adaptivePanel1.setPreferredSize(new java.awt.Dimension(30, 110));
 
         javax.swing.GroupLayout adaptivePanel1Layout = new javax.swing.GroupLayout(adaptivePanel1);
         adaptivePanel1.setLayout(adaptivePanel1Layout);
         adaptivePanel1Layout.setHorizontalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 198, Short.MAX_VALUE)
+            .addGap(0, 308, Short.MAX_VALUE)
         );
         adaptivePanel1Layout.setVerticalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 50, Short.MAX_VALUE)
+            .addGap(0, 25, Short.MAX_VALUE)
         );
 
         bottomPanel.add(adaptivePanel1);
-
-        adaptivePanel3.setPreferredSize(new java.awt.Dimension(30, 110));
 
         javax.swing.GroupLayout adaptivePanel3Layout = new javax.swing.GroupLayout(adaptivePanel3);
         adaptivePanel3.setLayout(adaptivePanel3Layout);
         adaptivePanel3Layout.setHorizontalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 198, Short.MAX_VALUE)
+            .addGap(0, 308, Short.MAX_VALUE)
         );
         adaptivePanel3Layout.setVerticalGroup(
             adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 50, Short.MAX_VALUE)
+            .addGap(0, 25, Short.MAX_VALUE)
         );
 
         bottomPanel.add(adaptivePanel3);
@@ -211,33 +218,8 @@ public class DisabilitySettingsMainView extends javax.swing.JPanel {
 
         bottomPanel.add(adaptivePanel2);
 
-        jPanel1.add(bottomPanel, java.awt.BorderLayout.PAGE_END);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1000, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 630, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-        );
+        add(bottomPanel, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
-
-private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
-
-}//GEN-LAST:event_adaptiveButton4ActionPerformed
 
     
 private void adaptiveButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton6ActionPerformed
@@ -249,101 +231,45 @@ private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//G
 }//GEN-LAST:event_adaptiveButton5ActionPerformed
 
 private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generalButtonActionPerformed
-
-    // Set the appropriate tab as selected
-   generalButton.setSelected(true);
-   historyButton.setSelected(false);
-   appearanceButton.setSelected(false);
-   blockedButton.setSelected(false);
-   notificationsButton.setSelected(false);
-  
-   // Instantiate the new screen
-   assignment2.Instability.GeneralSettingsPanel generalSettings = new assignment2.Instability.GeneralSettingsPanel();
-   generalSettings.setVisible(true);
-
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(generalSettings);
-   contentPanel.repaint();
-   contentPanel.validate();
+	newActionPerformed (
+		generalButton,
+		new assignment2.NoDisability.GeneralSettingsPanel(),
+		new assignment2.Instability.GeneralSettingsPanel()
+	);
 }//GEN-LAST:event_generalButtonActionPerformed
 
 private void historyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyButtonActionPerformed
-	generalButton.setSelected(false);
-	historyButton.setSelected(true);
-	appearanceButton.setSelected(false);
-	blockedButton.setSelected(false);
-	notificationsButton.setSelected(false);
-  
-	// Instantiate the new screen
-	assignment2.Instability.HistorySettingsPanel historySettings = new assignment2.Instability.HistorySettingsPanel();
-	historySettings.setVisible(true);
-
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(historySettings);
-   contentPanel.repaint();
-   contentPanel.validate();
+	newActionPerformed (
+		historyButton,
+		new assignment2.NoDisability.HistorySettingsPanel(),
+		new assignment2.Instability.HistorySettingsPanel()
+	);	
 }//GEN-LAST:event_historyButtonActionPerformed
 
 private void blockedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_blockedButtonActionPerformed
-    generalButton.setSelected(false);
-   historyButton.setSelected(false);
-   appearanceButton.setSelected(false);
-   blockedButton.setSelected(true);
-   notificationsButton.setSelected(false);
-  
-   // Instantiate the new screen
-   BlockedSettingsPanel blockedSettings = new BlockedSettingsPanel();
-   blockedSettings.setVisible(true);
+	selecteButton(blockedButton); 
+	
+	// Instantiate the new screen
+	BlockedSettingsPanel blockedSettings = new BlockedSettingsPanel();
 
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(blockedSettings);
-   contentPanel.repaint();
-   contentPanel.validate();
+	// Remove the contents of the content panel & add the new screen
+	showPanel(blockedSettings);
 }//GEN-LAST:event_blockedButtonActionPerformed
 
 private void notificationsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificationsButtonActionPerformed
-
-     generalButton.setSelected(false);
-   historyButton.setSelected(false);
-   appearanceButton.setSelected(false);
-   blockedButton.setSelected(false);
-   notificationsButton.setSelected(true);
-  
-   // Instantiate the new screen
-   assignment2.Instability.NotificationsSettingsPanel notificationsSettings = new assignment2.Instability.NotificationsSettingsPanel();
-   notificationsSettings.setVisible(true);
-
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(notificationsSettings);
-   contentPanel.repaint();
-   contentPanel.validate();
+	newActionPerformed (
+		notificationsButton,
+		new assignment2.NoDisability.NotificationsSettingsPanel(),
+		new assignment2.Instability.NotificationsSettingsPanel()
+	);	
 }//GEN-LAST:event_notificationsButtonActionPerformed
 
 private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appearanceButtonActionPerformed
-  generalButton.setSelected(false);
-   historyButton.setSelected(false);
-   appearanceButton.setSelected(true);
-   blockedButton.setSelected(false);
-   notificationsButton.setSelected(false);
-  
-   // Instantiate the new screen
-   assignment2.Instability.AppearanceSettingsPanel appearanceSettings = new assignment2.Instability.AppearanceSettingsPanel();
-   appearanceSettings.setVisible(true);
-
-  // Chat a = new Chat();
-   // Remove the contents of the content panel & add the new screen
-   contentPanel.removeAll();
-   contentPanel.add(appearanceSettings);
-   contentPanel.repaint();
-   contentPanel.validate();
+	newActionPerformed (
+		appearanceButton,
+		new assignment2.NoDisability.AppearanceSettingsPanel(),
+		new assignment2.Instability.AppearanceSettingsPanel()
+	);		
 }//GEN-LAST:event_appearanceButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -361,7 +287,6 @@ private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//
     private widgets.panel.AdaptivePanel contentPanel;
     private widgets.button.SecMenuButton generalButton;
     private widgets.button.SecMenuButton historyButton;
-    private javax.swing.JPanel jPanel1;
     private widgets.panel.AdaptivePanel menuPanel;
     private widgets.button.SecMenuButton notificationsButton;
     private widgets.button.SecMenuButton secMenuButton1;

@@ -67,7 +67,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         centerPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptiveButton1 = new widgets.button.AdaptiveButton();
-        adaptivePanel15 = new widgets.panel.AdaptivePanel();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptivePanel9 = new widgets.panel.AdaptivePanel();
@@ -114,14 +113,14 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         );
         westPanelLayout.setVerticalGroup(
             westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 362, Short.MAX_VALUE)
         );
 
         add(westPanel, java.awt.BorderLayout.WEST);
 
         centerPanel.setMaximumSize(new java.awt.Dimension(1000, 600));
         centerPanel.setPreferredSize(new java.awt.Dimension(943, 300));
-        centerPanel.setLayout(new javax.swing.BoxLayout(centerPanel, javax.swing.BoxLayout.PAGE_AXIS));
+        centerPanel.setLayout(new java.awt.BorderLayout(0, 30));
 
         adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
@@ -134,24 +133,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel1.add(adaptiveButton1);
 
-        centerPanel.add(adaptivePanel1);
-
-        adaptivePanel15.setMaximumSize(new java.awt.Dimension(100, 100));
-        adaptivePanel15.setMinimumSize(new java.awt.Dimension(100, 100));
-        adaptivePanel15.setPreferredSize(new java.awt.Dimension(100, 100));
-
-        javax.swing.GroupLayout adaptivePanel15Layout = new javax.swing.GroupLayout(adaptivePanel15);
-        adaptivePanel15.setLayout(adaptivePanel15Layout);
-        adaptivePanel15Layout.setHorizontalGroup(
-            adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        adaptivePanel15Layout.setVerticalGroup(
-            adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        centerPanel.add(adaptivePanel15);
+        centerPanel.add(adaptivePanel1, java.awt.BorderLayout.NORTH);
 
         adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -308,7 +290,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel2.add(adaptivePanel6);
 
-        centerPanel.add(adaptivePanel2);
+        centerPanel.add(adaptivePanel2, java.awt.BorderLayout.CENTER);
 
         adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
@@ -316,7 +298,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         previewLabel.setText("Έτσι θα φαίνεται το κείμενό σας!");
         adaptivePanel3.add(previewLabel);
 
-        centerPanel.add(adaptivePanel3);
+        centerPanel.add(adaptivePanel3, java.awt.BorderLayout.SOUTH);
 
         add(centerPanel, java.awt.BorderLayout.CENTER);
 
@@ -332,7 +314,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         );
         eastPanelLayout.setVerticalGroup(
             eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 362, Short.MAX_VALUE)
         );
 
         add(eastPanel, java.awt.BorderLayout.EAST);
@@ -408,7 +390,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel12;
     private widgets.panel.AdaptivePanel adaptivePanel13;
     private widgets.panel.AdaptivePanel adaptivePanel14;
-    private widgets.panel.AdaptivePanel adaptivePanel15;
     private widgets.panel.AdaptivePanel adaptivePanel16;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;

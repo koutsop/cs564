@@ -99,7 +99,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
-        adaptivePanel3.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        adaptivePanel3.setLayout(new java.awt.GridLayout(3, 2, 15, 15));
 
         adaptiveButton1.setHorizontalAlignment(2);
         adaptiveButton1.setText("Classic");
@@ -164,7 +164,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         adaptiveTextBox1.setColumns(20);
         adaptiveTextBox1.setEditable(false);
         adaptiveTextBox1.setRows(5);
-        adaptiveTextBox1.setText("koutsop: Hey! This is a text message!\nmarigianna: Hey ! Yeah I get it!\nkoutsop: Are you getting it without any problems?\nmarigianna: Oh yes. I can read it perfectly.\nkoutsop: ok! Nice to speak to you!");
+        adaptiveTextBox1.setText("koutsop:    Hey! This is a text message!\nmarigianna: Hey ! Yeah I get it!\nkoutsop:    Are you getting it without any problems?\nmarigianna: Oh yes. I can read it perfectly.\nkoutsop:    ok! Nice to speak to you!");
         jScrollPane1.setViewportView(adaptiveTextBox1);
 
         centerPanel.add(jScrollPane1);
@@ -196,7 +196,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         southPanel.setLayout(southPanelLayout);
         southPanelLayout.setHorizontalGroup(
             southPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 447, Short.MAX_VALUE)
+            .addGap(0, 586, Short.MAX_VALUE)
         );
         southPanelLayout.setVerticalGroup(
             southPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
