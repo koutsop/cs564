@@ -1,0 +1,305 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,44,0,0,1,-89"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+    <Property name="verticalGap" type="int" value="5"/>
+  </Layout>
+  <SubComponents>
+    <Container class="widgets.panel.AdaptivePanel" name="menuPanel">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="North"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+        <Property name="columns" type="int" value="3"/>
+        <Property name="rows" type="int" value="1"/>
+      </Layout>
+      <SubComponents>
+        <Component class="widgets.button.MainMenuButton" name="profileButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Profile"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="profileButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="widgets.button.MainMenuButton" name="settingsButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Settings"/>
+          </Properties>
+        </Component>
+        <Component class="widgets.button.MainMenuButton" name="chatButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Hellp"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="chatButtonActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="widgets.panel.AdaptivePanel" name="mainPanel">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+        <Property name="verticalGap" type="int" value="5"/>
+      </Layout>
+      <SubComponents>
+        <Container class="widgets.panel.AdaptivePanel" name="manageContentsPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="North"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+            <Property name="verticalGap" type="int" value="3"/>
+          </Layout>
+          <SubComponents>
+            <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel3">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="North"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                <Property name="alignment" type="int" value="0"/>
+                <Property name="verticalGap" type="int" value="0"/>
+              </Layout>
+              <SubComponents>
+                <Component class="widgets.button.AdaptiveButton" name="addContactButton">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addContactButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="widgets.button.AdaptiveButton" name="removeContactButton">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeContactButtonActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="widgets.button.AdaptiveButton" name="groupContactsButton">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupContactsButtonActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Container class="widgets.panel.AdaptivePanel" name="searchPanel">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="South"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+                <Property name="horizontalGap" type="int" value="10"/>
+              </Layout>
+              <SubComponents>
+                <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField1">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="adaptiveTextField1"/>
+                  </Properties>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="Center"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+                <Component class="widgets.button.AdaptiveButton" name="searchButton">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="East"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+        <Container class="widgets.panel.AdaptivePanel" name="contentsPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center"/>
+            </Constraint>
+          </Constraints>
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                    <Property name="axis" type="int" value="3"/>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel2">
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="OnMouseClicked"/>
+                      </Events>
+
+                      <Layout>
+                        <DimensionLayout dim="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="404" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                        <DimensionLayout dim="1">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+                          </Group>
+                        </DimensionLayout>
+                      </Layout>
+                    </Container>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton2"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton6">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton7">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton8">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton9">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton10">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton11">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton12">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton13">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton14">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton15">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton16">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton17">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton18">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton19">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton20">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton21">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton22">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton23">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton24">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton25">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="adaptiveButton3"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

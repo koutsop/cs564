@@ -1,6 +1,7 @@
 package pda;
 
 
+import assignment2.pda.PDAMainView;
 import demo.RestaurantDemo;
 import java.awt.Dimension;
 import javax.swing.JPanel;
@@ -25,10 +26,7 @@ import utilities.DMSLConnector;
 public class MainWindowPDA extends javax.swing.JFrame {
 
     public void initAdaptationParameters(){
-
-        /*Set user age to be 50*/
-        DMSLConnector.getInstance().getClient(false).SetAttribute("user.age", "50");
-
+        DMSLConnector.getInstance().getClient(false).SetAttribute("user.age", "pda");
     }
 
     /** Creates new form MainWindow */
@@ -39,16 +37,13 @@ public class MainWindowPDA extends javax.swing.JFrame {
 
         initComponents();
 
-        RestaurantDemo rd = new RestaurantDemo();
-        mainPanel.add(rd);
+        PDAMainView pda = new PDAMainView();
+        mainPanel.add(pda);
         
         this.setMinimumSize(new Dimension(360, 480));
         this.setMaximumSize(new Dimension(360, 480));
         this.setPreferredSize(new Dimension(360, 480));
         this.setResizable(false);
-
-        
-
     }
 
     /** This method is called from within the constructor to
@@ -68,18 +63,17 @@ public class MainWindowPDA extends javax.swing.JFrame {
                 formWindowClosing(evt);
             }
         });
-        getContentPane().setLayout(new java.awt.FlowLayout());
+        getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
+
+        mainPanel.setLayout(new javax.swing.BoxLayout(mainPanel, javax.swing.BoxLayout.LINE_AXIS));
         getContentPane().add(mainPanel);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public static void showPanel(JPanel p)
-    {
+    public static void showPanel(JPanel p) {
         mainPanel.removeAll();
-
         p.setVisible(true);
-        
         mainPanel.add(p);
         mainPanel.repaint();
         mainPanel.validate();
