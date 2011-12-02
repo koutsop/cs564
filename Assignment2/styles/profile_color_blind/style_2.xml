@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<synth>
+  
+ <!-- ======================================================= -->
+ <!-- FONTS -->
+ <!-- ======================================================= -->
+ 
+  <style id="backingStyle">
+    <!-- Make all the regions opaque-->
+    <opaque value="TRUE"/>
+    <font name="Arial" size="14"/>
+    <state>
+      <color value="#ffffd0" type="BACKGROUND"/>
+      <color value="BLACK" type="FOREGROUND"/>
+    </state>
+  </style>
+  <bind style="backingStyle" type="region" key=".*"/>
+	
+	<style id="h1">
+    <opaque value="TRUE"/>
+    <font name="Arial" size="16"/>
+    <state>
+      <color value="BLACK" type="FOREGROUND"/>
+    </state>
+  </style>
+  <bind style="h1" type="name" key="Button.MainNav.*"/>	
+	
+<!-- ======================================================= -->
+<!-- LABEL -->
+<!-- ======================================================= -->	
+		<!-- The style for label component. -->
+	<style id="Label">
+		<insets top="3" left="3" bottom="3" right="3"/>
+		<state value="ENABLED">
+			<color type="TEXT_FOREGROUND" value="#000000"/>
+		</state>
+		<state value="DISABLED">
+			<color type="TEXT_FOREGROUND" value="#999999"/>
+		</state>
+		<state value="SELECTED">
+			<color type="TEXT_FOREGROUND" value="#CC6600"/>
+			<color type="TEXT_BACKGROUND" value="#FFEEDD"/>
+		</state>
+	</style>
+	<bind style="Label" type="region" key="Label" />
+
+<!-- ======================================================= -->
+<!-- ARROW BUTTON -->
+<!-- ======================================================= -->
+ 
+	<style id="scrollBarArrowStyle">
+			<state>
+				<imagePainter method="arrowButtonForeground" path="images/ArrowButtonUpBg.png"  center="true" direction="north" />
+				<imagePainter method="arrowButtonForeground" path="images/ArrowButtonDownBg.png" center="true" direction="south" />
+				<imagePainter method="arrowButtonForeground" path="images/ArrowButtonLeftBg.png"  center="true" direction="west" />
+				<imagePainter method="arrowButtonForeground" path="images/ArrowButtonRightBg.png" center="true" direction="east" />
+			</state>
+	</style>
+	<bind style="scrollBarArrowStyle" type="REGION" key="ArrowButton" />
+	
+<!-- ======================================================= -->
+<!-- SCROLL BAR -->
+<!-- ======================================================= -->
+	
+	<style id="ScrollBarThumbStyle">
+    <state>
+        <imagePainter method="scrollBarThumbBackground" direction="horizontal" path="images/ScrollThumbHor.png" sourceInsets="3 3 3 3" />
+        <imagePainter method="scrollBarThumbBackground" direction="vertical" path="images/ScrollThumbVer.png" sourceInsets="3 3 3 3" />
+    </state>
+	</style>
+	<bind style="ScrollBarThumbStyle" type="REGION" key="ScrollBarThumb" />
+	
+	<style id="ScrollbarTrackStyle">
+    <state>
+        <imagePainter method="scrollBarTrackBackground" path="images/ScrollTrackBgHor.png" direction="horizontal" sourceInsets="3 3 3 3" />
+        <imagePainter method="scrollBarTrackBackground" path="images/ScrollTrackBgVer.png" direction="vertical" sourceInsets="3 3 3 3" />
+    </state>
+	</style>
+	<bind style="ScrollbarTrackStyle" type="REGION" key="ScrollBarTrack" />
+	
+<!-- ======================================================= -->
+<!-- PANELS & BARS -->
+<!-- ======================================================= -->
+<!--
+	<style id="Content">
+		<imagePainter method="panelBorder" path="images/Border.png" sourceInsets="1 1 1 1" paintCenter="false"/>
+		<imagePainter method="panelBackground" path="images/ContentBg.png" sourceInsets="2 2 2 2"/>		
+	</style>
+	<bind style="Content" type="name" key="Panel.Content.*"/> -->
+	
+<!-- ======================================================= -->
+<!-- BUTTONS -->
+<!-- ======================================================= -->
+	
+	<style id="MainNavButton">
+    <property key="Button.textShiftOffset" type="integer" value="1"/>
+    <state>
+			<imagePainter method="buttonBackground" path="images/MainNavButtonIdle.png" sourceInsets="10 10 10 10"/>	
+    </state>
+		<state value="PRESSED"> 
+	    <imagePainter method="buttonBackground" path="images/MainNavButtonPressed.png" sourceInsets="10 10 10 10"/>
+	  </state>
+	  <state value="SELECTED"> 
+	    <imagePainter method="buttonBackground" path="images/MainNavButtonSelected.png" sourceInsets="10 10 10 10"/>
+     </state>
+  </style>
+  <bind style="MainNavButton" type="name" key="Button.MainNav.*"/>
+
+	<style id="SecNavButton">
+    <property key="Button.textShiftOffset" type="integer" value="1"/>
+    <state>
+			<imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="10 10 10 10"/>	
+    </state>
+	<state value="PRESSED"> 
+	    <imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="10 10 10 10"/>
+	</state>
+	<state value="SELECTED"> 
+	    <imagePainter method="buttonBackground" path="images/SecNavButtonSelected.png" sourceInsets="10 10 10 10"/>
+	</state>
+  </style>
+  <bind style="SecNavButton" type="name" key="Button.SecNav.*"/>
+	
+	<style id="ContentButton">
+    <property key="Button.textShiftOffset" type="integer" value="1"/>
+    <state>
+			<imagePainter method="buttonBackground" path="images/ContentButton.png" sourceInsets="10 10 10 10"/>	
+    </state>
+	<state value="PRESSED"> 
+	    <imagePainter method="buttonBackground" path="images/ContentButtonPressed.png" sourceInsets="10 10 10 10"/>
+	</state>
+  </style>
+  <bind style="ContentButton" type="name" key="Button.Content.*"/>
+	
+<!-- ======================================================= -->
+<!-- TEXTBOX -->
+<!-- ======================================================= -->
+
+  <style id="TextFieldStyle">
+		<opaque value="TRUE"/>
+	  <insets top="4" left="6" bottom="4" right="6"/>
+    <state>
+       <color value="WHITE" type="BACKGROUND"/>       
+       <color value="BLACK" type="TEXT_FOREGROUND"/>
+			 <color value="LIGHT_GRAY" type="TEXT_BACKGROUND"/>
+			 <imagePainter method="textFieldBorder" path="images/TextBoxBorder.png" sourceInsets="4 6 4 6" paintCenter="false"/>
+    </state>
+  </style>
+  <bind style="TextFieldStyle" type="region" key="TextField"/>
+
+  <style id="FTextFieldStyle">
+		<opaque value="TRUE"/>
+    <insets top="4" left="6" bottom="4" right="6"/>
+    <state>
+       <color value="WHITE" type="BACKGROUND"/>       
+       <color value="BLACK" type="TEXT_FOREGROUND"/>
+			 <color value="LIGHT_GRAY" type="TEXT_BACKGROUND"/>
+			 <imagePainter method="formattedTextFieldBorder" path="images/TextBoxBorder.png" sourceInsets="4 6 4 6" paintCenter="false"/>
+    </state>
+  </style>
+  <bind style="FTextFieldStyle" type="region" key="FormattedTextField"/>
+
+	<style id="TextBox">
+		<opaque value="TRUE"/>
+    <insets top="4" left="6" bottom="4" right="6"/>
+    <state>
+       <color value="WHITE" type="BACKGROUND"/>       
+       <color value="BLACK" type="TEXT_FOREGROUND"/>
+			 <color value="LIGHT_GRAY" type="TEXT_BACKGROUND"/>
+			 <imagePainter method="textAreaBorder" path="images/TextBoxBorder.png" sourceInsets="4 6 4 6" paintCenter="false"/>
+    </state>
+  </style>
+  <bind style="TextBox" type="region" key="TextArea"/>
+
+<!-- ======================================================= -->
+<!-- CHECKBOX -->
+<!-- ======================================================= -->
+	
+	<style id="CheckBoxStyle">
+    <imageIcon id="check_off" path="images/CheckBoxIdle.png"/>
+    <imageIcon id="check_on" path="images/CheckBoxChecked.png"/>
+    <property key="CheckBox.icon" value="check_off"/>
+    <state value="SELECTED">   
+      <property key="CheckBox.icon" value="check_on"/>
+	  </state>
+  </style>
+  <bind style="CheckBoxStyle" type="region" key="Checkbox"/>	 
+
+<!-- ======================================================= -->
+<!-- RADIO BUTTON -->
+<!-- ======================================================= -->
+	
+	<style id="RadioButtonStyle">
+    <imageIcon id="radio_off" path="images/RadioButtonIdle.png"/>
+    <imageIcon id="radio_on" path="images/RadioButtonChecked.png"/>
+    <property key="RadioButton.icon" value="radio_off"/>
+    <state value="SELECTED">   
+      <property key="RadioButton.icon" value="radio_on"/>
+	  </state>
+  </style>
+  <bind style="RadioButtonStyle" type="region" key="RadioButton"/>	 
+
+<!-- ======================================================= -->
+<!-- LINK -->
+<!-- ======================================================= -->	
+	
+		<style id="h4">
+		<state>
+			<font name="Arial" size="12" style="BOLD"/>
+			<color value="#07697b" type="TEXT_FOREGROUND"/>
+		</state>
+		<state value="PRESSED">
+			<font name="Arial" size="12" style="PLAIN"/>
+			<color value="#fe9b74" type="TEXT_FOREGROUND"/>
+		</state>
+		<state value="SELECTED">
+			<font name="Arial" size="12" style="PLAIN"/>
+			<color value="#fe9b74" type="TEXT_FOREGROUND"/>
+		</state>
+  </style>
+  <bind style="h4" type="name" key="Link.*"/>
+
+<!-- ======================================================= -->
+<!-- LIST -->
+<!-- ======================================================= -->
+
+	<style id="ListStyle">
+		<insets top="5" left="8" bottom="5" right="8"/>
+		<property key="List.rendererUseUIBorder" type="boolean" value="false"/>
+		<property key="List.cellHeight" type="integer" value="21"/>
+		<property key="List.rendererUseListColors" type="boolean" value="true"/>
+		<imagePainter method="ListBorder" path="images/TextBoxBorder.png" sourceInsets="5 5 5 5" paintCenter="false"/>
+		
+		<state value="SELECTED">
+			<color type="TEXT_BACKGROUND" value="#fa946d"/>
+		</state>
+		<state value="ENABLED">
+			<color type="TEXT_FOREGROUND" value="BLUE"/>
+		</state>
+		<state value="DISABLED">
+			<color type="TEXT_FOREGROUND" value="#999999"/>
+		</state>
+	</style>
+	<bind style="ListStyle" type="region" key="List"/>
+	
+<!-- ======================================================= -->
+<!-- PROGRESS -->
+<!-- ======================================================= -->	
+	
+	<style id="progress">
+		<opaque value="FALSE"/>
+		<state>
+			<imagePainter method="progressBarBorder" path="images/ProgressBarBorder.png" sourceInsets="4 4 4 4"/>			
+			<imagePainter method="progressBarBackground" path="images/ProgressBarBg.png" sourceInsets="2 2 2 2"/>
+			<imagePainter method="progressBarForeground" path="images/ProgressBarFg.png" sourceInsets="2 2 2 2" paintCenter="true" stretch="true"/>
+		</state>
+	</style>
+  <bind style="progress" type="region" key="ProgressBar"/>	
+
+<!-- ======================================================= -->
+<!-- SLIDER -->
+<!-- ======================================================= -->	
+
+	<style id="SliderStyle">
+		<state>
+			<imagePainter method="sliderBackground" path="images/ContentBg.png" sourceInsets="4 4 4 4" paintCenter="true" stretch="true"/>
+		</state>
+	</style>
+	<bind style="SliderStyle" type="region" key="Slider"/>
+	
+	<style id="SliderTrackStyle">
+		<state>
+			<imagePainter method="sliderTrackBackground" path="images/SliderTrackBg.png" sourceInsets="4 4 4 4" paintCenter="true" stretch="true"/>
+		</state>
+	</style>
+	<bind style="SliderTrackStyle" type="region" key="SliderTrack"/>
+	
+	<style id="SliderThumbStyle">
+		<imagePainter method="sliderThumbBackground" path="images/SliderThumbBg.png" center="true"/>
+	</style>
+	<bind style="SliderThumbStyle" type="region" key="SliderThumb" />
+	
+
+<!-- ======================================================= -->
+<!-- TABLE -->
+<!-- ======================================================= -->
+	<style id="TableStyle">
+		<opaque value="TRUE"/>
+		<state value="SELECTED">
+			<color value="WHITE" type="TEXT_FOREGROUND"/>
+			<color value="#e6f288" type="TEXT_BACKGROUND"/>
+		</state>
+	</style>
+	<bind style="TableStyle" type="region" key="Table"/>
+	
+	<style id="TableHeaderStyle">
+		<opaque value="TRUE"/>
+		<insets top="1" left="1" bottom="1" right="1"/>
+		<state>
+			<imagePainter method="tableHeaderBorder" path="images/Border.png" sourceInsets="1 1 1 1" paintCenter="false"/>
+			<imagePainter method="tableHeaderBackground" path="images/TableHeaderBg.png" sourceInsets="2 2 2 2"/>		
+		</state>
+	</style>
+	<bind style="TableHeaderStyle" type="region" key="TableHeader"/>
+	
+<!-- ======================================================= -->
+<!-- SPINNER -->
+<!-- ======================================================= -->
+	
+	<style id="spinner">	
+		<state>
+			<imagePainter method="spinnerBorder" path="images/Border.png" sourceInsets="2 2 2 2" paintCenter="true"/>
+		</state>
+	</style>
+	<bind style="spinner" type="region" key="Spinner"/>
+	
+<!-- ======================================================= -->
+<!-- COMBOBOX -->
+<!-- ======================================================= -->
+
+	<style id="ComboBoxStyle">
+		<insets top="3" left="3" bottom="3" right="3"/>
+		<opaque value="true"/>
+		
+		<!--Take a look at this-->
+		<property key="ComboBox.rendererUseListColors" type="boolean" value="false"/>
+		<imagePainter method="comboBoxBorder" path="images/TextBoxBorder.png" sourceInsets="3 3 3 3" paintCenter="false"/>
+		
+	</style>
+	<bind style="ComboBoxStyle" type="region" key="ComboBox"/>
+
+
+		<!-- The style for the list renderer of JComboBox -->
+	<style id="ComboBox List Renderer">
+		<insets top="3" left="3" bottom="3" right="3"/>
+		<opaque value="true"/>
+		<state value="ENABLED">
+			<color type="TEXT_FOREGROUND" value="#000000"/>
+		</state>
+		<state value="DISABLED">
+			<color type="TEXT_FOREGROUND" value="#999999"/>
+		</state>
+		<state value="SELECTED">
+			<color type="TEXT_FOREGROUND" value="#fa946d"/>
+		</state>
+	</style>
+	<bind style="ComboBox List Renderer" type="name" key="ComboBox.listRenderer" />
+	
+<!-- ======================================================= -->
+<!-- IMAGE RELATED STYLES -->
+<!-- ======================================================= -->	
+ 	<style id="LoginLabelStyle">
+		<font name="Lucida" size="18" style="BOLD"/>
+	</style>   
+    <bind style="LoginLabelStyle" type="name" key="LoginPanel.Label"/>	
+    
+
+	<style id="MainTitleStyle">
+		<font name="Lucida" size="20" style="BOLD"/>
+		<state value="ENABLED">
+			<color type="TEXT_FOREGROUND" value="DARK_GRAY"/>
+		</state>
+	</style>
+	<bind style="MainTitleStyle" type="name" key="MainPanel.MainTitle.*"/>	
+	
+
+	<style id="AppetizerNameStyle">
+		<font name="Lucida" size="14" style="BOLD"/>
+		<state value="ENABLED">
+			<color type="TEXT_FOREGROUND" value="DARK_GRAY"/>
+		</state>
+	</style>
+	<bind style="AppetizerNameStyle" type="name" key="MainPanel.Appetizer.*"/>
+	
+    
+	<style id="GreekSalad">
+		<imagePainter method="panelBackground" path="images/common/greek.png" center="true"/>
+	</style>
+	<bind style="GreekSalad" type="name" key="Panel.Image.GreekSalad"/>
+
+	<style id="GardenSalad">
+		<imagePainter method="panelBackground" path="images/common/garden.png" center="true"/>
+	</style>
+	<bind style="GardenSalad" type="name" key="Panel.Image.GardenSalad"/>
+	
+	<style id="OnionSalad">
+		<imagePainter method="panelBackground" path="images/common/onion.png" center="true"/>
+	</style>
+	<bind style="OnionSalad" type="name" key="Panel.Image.OnionSalad"/>
+</synth>
