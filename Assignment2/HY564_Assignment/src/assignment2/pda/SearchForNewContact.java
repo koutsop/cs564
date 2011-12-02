@@ -28,10 +28,10 @@ public class SearchForNewContact extends javax.swing.JPanel {
         Adaptation.automaticallyAdapt(this);
 		
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("CancelButton");
-        noButton.setIcon(new ImageIcon(getClass().getResource(path)));
+        cancelButton.setIcon(new ImageIcon(getClass().getResource(path)));
 
         path = DMSLConnector.getInstance().getClient(false).Evaluate("AcceptanceButton");
-        yesButton.setIcon(new ImageIcon(getClass().getResource(path)));		
+        continueButton.setIcon(new ImageIcon(getClass().getResource(path)));		
 	}
 
 	/** This method is called from within the constructor to
@@ -49,8 +49,9 @@ public class SearchForNewContact extends javax.swing.JPanel {
         adaptiveLabel1 = new widgets.label.AdaptiveLabel();
         adaptiveTextField1 = new widgets.textfield.AdaptiveTextField();
         buttonsPabel = new widgets.panel.AdaptivePanel();
-        yesButton = new widgets.button.AdaptiveButton();
-        noButton = new widgets.button.AdaptiveButton();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        continueButton = new widgets.button.AdaptiveButton();
+        cancelButton = new widgets.button.AdaptiveButton();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -71,41 +72,46 @@ public class SearchForNewContact extends javax.swing.JPanel {
 
         buttonsPabel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 50, 50));
 
-        yesButton.setText("Ναι");
-        yesButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                yesButtonActionPerformed(evt);
-            }
-        });
-        buttonsPabel.add(yesButton);
+        adaptivePanel2.setLayout(new java.awt.GridLayout(1, 2, 30, 0));
 
-        noButton.setText("Οχι");
-        noButton.addActionListener(new java.awt.event.ActionListener() {
+        continueButton.setText("Continue");
+        continueButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                noButtonActionPerformed(evt);
+                continueButtonActionPerformed(evt);
             }
         });
-        buttonsPabel.add(noButton);
+        adaptivePanel2.add(continueButton);
+
+        cancelButton.setText("Cancel");
+        cancelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelButtonActionPerformed(evt);
+            }
+        });
+        adaptivePanel2.add(cancelButton);
+
+        buttonsPabel.add(adaptivePanel2);
 
         add(buttonsPabel, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
 
-	private void yesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yesButtonActionPerformed
-		MainWindowPDA.showPanel(new PDAMainView());
-	}//GEN-LAST:event_yesButtonActionPerformed
+	private void continueButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_continueButtonActionPerformed
+		MainWindowPDA.showPanel(new AddContactResultsPanel());
+	}//GEN-LAST:event_continueButtonActionPerformed
 
-	private void noButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_noButtonActionPerformed
+	private void cancelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelButtonActionPerformed
 		MainWindowPDA.showPanel(new PDAMainView());
-	}//GEN-LAST:event_noButtonActionPerformed
+	}//GEN-LAST:event_cancelButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
     private widgets.panel.AdaptivePanel buttonsPabel;
+    private widgets.button.AdaptiveButton cancelButton;
+    private widgets.button.AdaptiveButton continueButton;
     private widgets.panel.AdaptivePanel messagePanel;
-    private widgets.button.AdaptiveButton noButton;
-    private widgets.button.AdaptiveButton yesButton;
     // End of variables declaration//GEN-END:variables
 }

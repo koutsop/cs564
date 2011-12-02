@@ -90,7 +90,8 @@ public class Profile extends javax.swing.JPanel {
 
         contentPanel.setLayout(new java.awt.BorderLayout());
 
-        profileImagePanel.setLayout(new java.awt.BorderLayout());
+        profileImagePanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 1, 0));
+        profileImagePanel.setLayout(new java.awt.BorderLayout(8, 0));
 
         adaptivePanel29.setFunction("koutsopImg");
         adaptivePanel29.setMaximumSize(new java.awt.Dimension(100, 100));
@@ -100,7 +101,6 @@ public class Profile extends javax.swing.JPanel {
         adaptivePanel29.setLayout(new javax.swing.BoxLayout(adaptivePanel29, javax.swing.BoxLayout.LINE_AXIS));
         profileImagePanel.add(adaptivePanel29, java.awt.BorderLayout.WEST);
 
-        adaptivePanel30.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         adaptivePanel30.setLayout(new javax.swing.BoxLayout(adaptivePanel30, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptivePanel31.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
@@ -124,7 +124,7 @@ public class Profile extends javax.swing.JPanel {
 
         contentPanel.add(profileImagePanel, java.awt.BorderLayout.NORTH);
 
-        adaptivePanel37.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        adaptivePanel37.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 10));
 
         profileDataPanel.setLayout(new java.awt.GridLayout(3, 2, 0, 10));
 
@@ -174,7 +174,7 @@ public class Profile extends javax.swing.JPanel {
 
         contentPanel.add(adaptivePanel37, java.awt.BorderLayout.CENTER);
 
-        buttonData.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 50, 50));
+        buttonData.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 38, 50));
 
         acceptanceButton.setText("Αποθήκευση");
         acceptanceButton.addActionListener(new java.awt.event.ActionListener() {

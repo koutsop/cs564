@@ -131,7 +131,7 @@ public class SettingsMainView extends javax.swing.JPanel {
 			String value = (String)adaptiveList1.getSelectedValue();
 			
 			if (value.compareTo("General") == 0)
-				;//showPanel();
+				showPanel(new GeneralSettingsPanel());
 			else 
 			if (value.compareTo("Notifications") == 0)
 				showPanel(new NotificationsSettingsPanel());

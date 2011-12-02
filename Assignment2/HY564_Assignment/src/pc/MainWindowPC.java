@@ -73,7 +73,8 @@ public class MainWindowPC extends javax.swing.JFrame {
         mainPanel.add(p);
         mainPanel.repaint();
         mainPanel.validate();
-		frame.pack();
+		mainPanel.updateUI();
+		//frame.pack();
     }
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
