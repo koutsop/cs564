@@ -46,7 +46,7 @@ public class ChatMainView extends javax.swing.JPanel {
         is similar to the HTML <body> element) */
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
-		SetConactSizeImages();
+		SetContactSizeImages();
         SetPanelsSize ();
         
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("AddButton");
@@ -63,7 +63,7 @@ public class ChatMainView extends javax.swing.JPanel {
 		
 		
 		collpaseAddImgPath = DMSLConnector.getInstance().getClient(false).Evaluate("CollapseAddButton");
-		collapseSubImgPath = DMSLConnector.getInstance().getClient(false).Evaluate("GroupSubButton");
+		collapseSubImgPath = DMSLConnector.getInstance().getClient(false).Evaluate("CollapseSubButton");
         groupButton0.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
 		groupButton1.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
 		groupButton2.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
@@ -89,7 +89,7 @@ public class ChatMainView extends javax.swing.JPanel {
         );
     }
 	
-	private void SetConactSizeImages () {
+	private void SetContactSizeImages () {
 		int contactHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactHeight"));
 		int contactWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactWidth"));
 		int contactImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgHeight"));
@@ -177,6 +177,7 @@ public class ChatMainView extends javax.swing.JPanel {
         contactsPanel = new widgets.panel.AdaptivePanel();
         contactsListScrollPane = new javax.swing.JScrollPane();
         contactsListPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel5 = new widgets.panel.AdaptivePanel();
         groupPanel = new widgets.panel.AdaptivePanel();
         groupNamePanel = new widgets.panel.AdaptivePanel();
         groupButton0 = new widgets.button.AdaptiveButton();
@@ -267,9 +268,11 @@ public class ChatMainView extends javax.swing.JPanel {
 
         contactsPanel.setLayout(new javax.swing.BoxLayout(contactsPanel, javax.swing.BoxLayout.LINE_AXIS));
 
-        contactsListPanel.setLayout(new javax.swing.BoxLayout(contactsListPanel, javax.swing.BoxLayout.PAGE_AXIS));
+        contactsListPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
-        groupPanel.setLayout(new java.awt.BorderLayout());
+        adaptivePanel5.setLayout(new javax.swing.BoxLayout(adaptivePanel5, javax.swing.BoxLayout.PAGE_AXIS));
+
+        groupPanel.setLayout(new java.awt.BorderLayout(15, 0));
 
         groupNamePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
@@ -305,26 +308,26 @@ public class ChatMainView extends javax.swing.JPanel {
         groupContentPanel.setLayout(new java.awt.GridLayout(0, 1, 0, 20));
         groupPanel.add(groupContentPanel, java.awt.BorderLayout.CENTER);
 
-        westPanel.setMaximumSize(new java.awt.Dimension(15, 1));
-        westPanel.setMinimumSize(new java.awt.Dimension(15, 1));
-        westPanel.setPreferredSize(new java.awt.Dimension(15, 1));
+        westPanel.setMaximumSize(new java.awt.Dimension(1, 1));
+        westPanel.setMinimumSize(new java.awt.Dimension(1, 1));
+        westPanel.setPreferredSize(new java.awt.Dimension(1, 1));
 
         javax.swing.GroupLayout westPanelLayout = new javax.swing.GroupLayout(westPanel);
         westPanel.setLayout(westPanelLayout);
         westPanelLayout.setHorizontalGroup(
             westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 15, Short.MAX_VALUE)
+            .addGap(0, 1, Short.MAX_VALUE)
         );
         westPanelLayout.setVerticalGroup(
             westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 173, Short.MAX_VALUE)
+            .addGap(0, 1, Short.MAX_VALUE)
         );
 
         groupPanel.add(westPanel, java.awt.BorderLayout.WEST);
 
-        contactsListPanel.add(groupPanel);
+        adaptivePanel5.add(groupPanel);
 
-        groupPanel1.setLayout(new java.awt.BorderLayout());
+        groupPanel1.setLayout(new java.awt.BorderLayout(15, 0));
 
         groupNamePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
@@ -360,26 +363,26 @@ public class ChatMainView extends javax.swing.JPanel {
         groupContentPanel1.setLayout(new java.awt.GridLayout(0, 1, 0, 20));
         groupPanel1.add(groupContentPanel1, java.awt.BorderLayout.CENTER);
 
-        westPanel1.setMaximumSize(new java.awt.Dimension(15, 1));
-        westPanel1.setMinimumSize(new java.awt.Dimension(15, 1));
-        westPanel1.setPreferredSize(new java.awt.Dimension(15, 1));
+        westPanel1.setMaximumSize(new java.awt.Dimension(1, 1));
+        westPanel1.setMinimumSize(new java.awt.Dimension(1, 1));
+        westPanel1.setPreferredSize(new java.awt.Dimension(1, 1));
 
         javax.swing.GroupLayout westPanel1Layout = new javax.swing.GroupLayout(westPanel1);
         westPanel1.setLayout(westPanel1Layout);
         westPanel1Layout.setHorizontalGroup(
             westPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 15, Short.MAX_VALUE)
+            .addGap(0, 1, Short.MAX_VALUE)
         );
         westPanel1Layout.setVerticalGroup(
             westPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 173, Short.MAX_VALUE)
+            .addGap(0, 1, Short.MAX_VALUE)
         );
 
         groupPanel1.add(westPanel1, java.awt.BorderLayout.WEST);
 
-        contactsListPanel.add(groupPanel1);
+        adaptivePanel5.add(groupPanel1);
 
-        groupPanel2.setLayout(new java.awt.BorderLayout());
+        groupPanel2.setLayout(new java.awt.BorderLayout(15, 0));
 
         groupNamePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
@@ -415,24 +418,26 @@ public class ChatMainView extends javax.swing.JPanel {
         groupContentPanel2.setLayout(new java.awt.GridLayout(0, 1, 0, 20));
         groupPanel2.add(groupContentPanel2, java.awt.BorderLayout.CENTER);
 
-        westPanel2.setMaximumSize(new java.awt.Dimension(15, 1));
-        westPanel2.setMinimumSize(new java.awt.Dimension(15, 1));
-        westPanel2.setPreferredSize(new java.awt.Dimension(15, 1));
+        westPanel2.setMaximumSize(new java.awt.Dimension(1, 1));
+        westPanel2.setMinimumSize(new java.awt.Dimension(1, 1));
+        westPanel2.setPreferredSize(new java.awt.Dimension(1, 1));
 
         javax.swing.GroupLayout westPanel2Layout = new javax.swing.GroupLayout(westPanel2);
         westPanel2.setLayout(westPanel2Layout);
         westPanel2Layout.setHorizontalGroup(
             westPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 15, Short.MAX_VALUE)
+            .addGap(0, 1, Short.MAX_VALUE)
         );
         westPanel2Layout.setVerticalGroup(
             westPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 173, Short.MAX_VALUE)
+            .addGap(0, 1, Short.MAX_VALUE)
         );
 
         groupPanel2.add(westPanel2, java.awt.BorderLayout.WEST);
 
-        contactsListPanel.add(groupPanel2);
+        adaptivePanel5.add(groupPanel2);
+
+        contactsListPanel.add(adaptivePanel5);
 
         contactsListScrollPane.setViewportView(contactsListPanel);
 
@@ -546,19 +551,19 @@ public class ChatMainView extends javax.swing.JPanel {
 	}
 
     private void groupButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton0ActionPerformed
-		if (groupInitialHeight == -1)	//Do in fist call
+		if (groupInitialHeight == -1)	//Do in first call
 			groupInitialHeight = groupContentPanel.getPreferredSize().height;
 		CollapseGroup(groupContentPanel, groupButton0, groupInitialHeight);
     }//GEN-LAST:event_groupButton0ActionPerformed
 
     private void groupButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton1ActionPerformed
-		if (group1InitialHeight == -1)	//Do in fist call
+		if (group1InitialHeight == -1)	//Do in first call
 			group1InitialHeight = groupContentPanel1.getPreferredSize().height;		
 		CollapseGroup(groupContentPanel1, groupButton1, group1InitialHeight);
     }//GEN-LAST:event_groupButton1ActionPerformed
 
     private void groupButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton2ActionPerformed
-		if (group2InitialHeight == -1)	//Do in fist call
+		if (group2InitialHeight == -1)	//Do in first call
 			group2InitialHeight = groupContentPanel2.getPreferredSize().height;			
 		CollapseGroup(groupContentPanel2, groupButton2, group2InitialHeight);
     }//GEN-LAST:event_groupButton2ActionPerformed
@@ -580,14 +585,15 @@ public class ChatMainView extends javax.swing.JPanel {
     }
     
     private Dimension	menuSize;
-	private String		collpaseAddImgPath;
-	private String		collapseSubImgPath;
 	
 	/*********************************************/
 	//Collapse control variables
 	private int groupInitialHeight	= -1;
 	private int group1InitialHeight	= -1;
 	private int group2InitialHeight	= -1;
+	
+	private String collpaseAddImgPath;
+	private String collapseSubImgPath;	
 	/*********************************************/
 	
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -599,6 +605,7 @@ public class ChatMainView extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
+    private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
     private widgets.button.AdaptiveButton addContactButton;
     private widgets.panel.AdaptivePanel buttonsPanel;
