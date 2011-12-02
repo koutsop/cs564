@@ -10,7 +10,7 @@
     <opaque value="TRUE"/>
     <font name="Arial" size="12"/>
     <state>
-      <color value="WHITE" type="BACKGROUND"/>
+      <color value="#ffffd0" type="BACKGROUND"/>
       <color value="BLACK" type="FOREGROUND"/>
     </state>
   </style>
@@ -83,17 +83,22 @@
 <!-- PANELS & BARS -->
 <!-- ======================================================= -->
 
-	<style id="Content">
+	<!-- <style id="Content">
 		<imagePainter method="panelBorder" path="images/Border.png" sourceInsets="1 1 1 1" paintCenter="false"/>
 		<imagePainter method="panelBackground" path="images/ContentBg.png" sourceInsets="2 2 2 2"/>		
 	</style>
-	<bind style="Content" type="name" key="Panel.Content.*"/>
+	<bind style="Content" type="name" key="Panel.Content.*"/> -->
 	
 	<style id="WhitePanel">
 		<imagePainter method="panelBackground" path="images/WhiteContentBg.png" sourceInsets="2 2 2 2"/>
 	</style>
-	<bind style="WhitePanel" type="name" key="Panel.White.*"/>
+	<bind style="WhitePanel" type="name" key="Panel.White.*"/> 
 	
+	<style id="TransparentPanel">
+<imagePainter method="panelBackground" path="images/TransparentContentBg.png" sourceInsets="2 2 2 2"/>
+</style>
+<bind style="TransparentPanel" type="name" key="Panel.TransparentPanel.*"/>
+
 <!-- ======================================================= -->
 <!-- BUTTONS -->
 <!-- ======================================================= -->
@@ -101,10 +106,12 @@
 	<style id="MainNavButton">
     <property key="Button.textShiftOffset" type="integer" value="1"/>
     <state>
-			<imagePainter method="buttonBackground" path="images/MainNavButtonIdle.png" sourceInsets="20 20 20 20"/>	
+			<imagePainter method="buttonBackground" path="images/MainNavButtonIdle.png" sourceInsets="20 20 20 20"/>
+	<color type="TEXT_FOREGROUND" value="#FFFFFF"/>			
     </state>
 		<state value="PRESSED"> 
 			<imagePainter method="buttonBackground" path="images/MainNavButtonPressed.png" sourceInsets="20 20 20 20"/>
+				<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
 	  </state>
 	  <state value="SELECTED">
 			<imagePainter method="buttonBackground" path="images/MainNavButtonSelected.png" sourceInsets="20 20 20 20"/>
@@ -117,12 +124,15 @@
     <property key="Button.textShiftOffset" type="integer" value="1"/>
     <state>
 			<imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="10 10 10 10"/>	
+			<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
     </state>
 	<state value="PRESSED"> 
 	    <imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="10 10 10 10"/>
+		<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
 	</state>
 	<state value="SELECTED"> 
 	    <imagePainter method="buttonBackground" path="images/SecNavButtonSelected.png" sourceInsets="10 10 10 10"/>
+		<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
 	</state>
   </style>
   <bind style="SecNavButton" type="name" key="Button.SecNav.*"/>
@@ -130,16 +140,20 @@
 	<style id="ContentButton">
     <property key="Button.textShiftOffset" type="integer" value="1"/>
     <state>
-			<imagePainter method="buttonBackground" path="images/ContentButton.png" sourceInsets="10 10 10 10"/>	
+			<imagePainter method="buttonBackground" path="images/ContentButton.png" sourceInsets="10 10 10 10"/>
+			<color type="TEXT_FOREGROUND" value="#FFFFFF"/>			
     </state>
 	<state value="PRESSED"> 
 	    <imagePainter method="buttonBackground" path="images/ContentButtonPressed.png" sourceInsets="10 10 10 10"/>
+		<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
 	</state>
 	<state value="SELECTED"> 
 	    <imagePainter method="buttonBackground" path="images/ContentButtonSelected.png" sourceInsets="10 10 10 10"/>
+		<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
 	</state>
   </style>
   <bind style="ContentButton" type="name" key="Button.Content.*"/>
+  <bind style="ContentButton" type="name" key="Button.Chat.*"/>
     
 	<style id="SpinnerArrowButton">
 	<property key="Button.textShiftOffset" type="integer" value="1"/>
@@ -223,7 +237,7 @@
 <!-- LINK -->
 <!-- ======================================================= -->	
 	
-		<style id="h4">
+  <style id="h4">
 		<state>
 			<font name="Arial" size="12" style="BOLD"/>
 			<color value="#07697b" type="TEXT_FOREGROUND"/>
@@ -370,40 +384,106 @@
 <!-- CUSTOM STYLES -->
 <!-- ======================================================= -->
 
- 	<style id="LoginLabelStyle">
-		<font name="Lucida" size="18" style="BOLD"/>
-	</style>   
-    <bind style="LoginLabelStyle" type="name" key="LoginPanel.Label"/>	
+<!-- ====================================================================================== -->	
+	<style id="welcomeImage">
+		<imagePainter method="panelBackground" path="../../styles/profile_low_vision/images/welcome.png" center="true"/>
+	</style>
+	<bind style="welcomeImage" type="name" key="Panel.Image.Welcome"/>
     
-	<style id="MainTitleStyle">
-		<font name="Lucida" size="18" style="BOLD"/>
-		<state value="ENABLED">
-			<color type="TEXT_FOREGROUND" value="BLUE"/>
-		</state>
+	<style id="StatusAvailableImage">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_low_vision/images/status_online.png"
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
+        />
 	</style>
-	<bind style="MainTitleStyle" type="name" key="MainPanel.MainTitle.*"/>	
+	<bind style="StatusAvailableImage" type="name" key="ContactPanel.StatusAvailablePanel"/>
 	
-	<style id="AppetizerNameStyle">
-		<font name="Lucida" size="12"/>
-		<state value="ENABLED">
-			<color type="TEXT_FOREGROUND" value="BLUE"/>
-		</state>
+	<style id="StatusIdleImage">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_low_vision/images/status_away.png"
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
+        />
 	</style>
-	<bind style="AppetizerNameStyle" type="name" key="MainPanel.Appetizer.*"/>
-	
-	<style id="GreekSalad">
-		<imagePainter method="panelBackground" path="images/common/greek.png" center="true"/>
-	</style>
-	<bind style="GreekSalad" type="name" key="Panel.Image.GreekSalad"/>
+	<bind style="StatusIdleImage" type="name" key="ContactPanel.StatusIdlePanel"/>
 
-	<style id="GardenSalad">
-		<imagePainter method="panelBackground" path="images/common/garden.png" center="true"/>
+	<style id="StatusBusyImage">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_low_vision/images/status_busy.png"
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
+        />
 	</style>
-	<bind style="GardenSalad" type="name" key="Panel.Image.GardenSalad"/>
+	<bind style="StatusBusyImage" type="name" key="ContactPanel.StatusBusyPanel"/>
 	
-	<style id="OnionSalad">
-		<imagePainter method="panelBackground" path="images/common/onion.png" center="true"/>
+    
+    
+    
+<!-- ============================================================== -->    
+    <!-- Video and call styles (images)-->
+  	<style id="KoutsopImage">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_low_vision/images/koutsop.jpg"
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
+        />
 	</style>
-	<bind style="OnionSalad" type="name" key="Panel.Image.OnionSalad"/>
-	
+	<bind style="KoutsopImage" type="name" key="Panel.Content.KoutsopImage"/>    
+   
+ 
+	<style id="marigiannaImage">
+		<imagePainter 
+            method="panelBackground" 
+            path="../../styles/profile_low_vision/images/marigianna.jpg" 
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
+        />
+	</style>
+	<bind style="marigiannaImage" type="name" key="Panel.Content.MarigiannaImage"/> 
+       
+<!-- ============================================================== -->     
+    
+
+<!-- ============================================================== -->   
+    <!-- captha-->
+    <style id="captchaImage">
+		<imagePainter 
+			method="panelBackground" 
+			path="../../styles/profile_low_vision/images/captcha1.jpg" 
+            sourceInsets="1 1 1 1"
+            center="false"
+            stretch="true"
+		/>
+	</style>
+	<bind style="captchaImage" type="name" key="Panel.Content.Captcha"/>
+<!-- ============================================================== -->   
+    
+    
+    
+    <style id="ChatButton">
+        <property key="Button.textShiftOffset" type="integer" value="1"/>
+        <state>
+                <imagePainter method="buttonBackground" path="images/ContentButton.png" sourceInsets="10 10 10 10"/>	
+        </state>
+        <state value="PRESSED"> 
+            <imagePainter method="buttonBackground" path="images/ContentButtonPressed.png" sourceInsets="10 10 10 10"/>
+        </state>
+        <state value="SELECTED"> 
+            <imagePainter method="buttonBackground" path="images/ContentButtonSelected.png" sourceInsets="10 10 10 10"/>
+        </state>
+    </style>
+  <bind style="ChatButton" type="name" key="Button.Chat.*"/>
+  <bind style="ChatButton" type="name" key="Button.LoginButton.*"/> 
+  <bind style="ChatButton" type="name" key="Button.ContactsAction.*"/> 
+  
 </synth>

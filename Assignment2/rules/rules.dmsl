@@ -302,12 +302,12 @@ component HelpButton [
     else					activate "/images/profile_no_disability/tick.png"
 ]
 component RefreshButton [
-    if		profile1 then	activate "/images/profile_no_disability/refresh.gif"
-	else if	profile2 then	activate "/images/profile_color_blind/refresh.gif"
-	else if	profile3 then	activate "/images/profile_instability/refresh.gif"
-	else if	profile4 then	activate "/images/profile_instability/refresh.gif"
-	else if profile5 then	activate "/images/profile_spots/refresh.gif"
-	else if	profile6 then	activate "/images/profile_pda/refresh.gif"
+    if		profile1 then	activate "/images/profile_no_disability/refresh.png"
+	else if	profile2 then	activate "/images/profile_color_blind/refresh.png"
+	else if	profile3 then	activate "/images/profile_instability/refresh.png"
+	else if	profile4 then	activate "/images/profile_instability/refresh.png"
+	else if profile5 then	activate "/images/profile_spots/refresh.png"
+	else if	profile6 then	activate "/images/profile_pda/refresh.png"
     else					activate "/images/profile_no_disability/tick.png"
 ]
 
