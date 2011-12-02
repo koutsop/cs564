@@ -431,7 +431,7 @@ public class PDAMainView extends javax.swing.JPanel {
 	}//GEN-LAST:event_removeContactButtonActionPerformed
 
 	private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed
-		MainWindowPDA.showPanel(new VideoCall());
+		MainWindowPDA.showPanel(new Help());
 	}//GEN-LAST:event_groupContactsButtonActionPerformed
 
 	private void profileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profileButtonActionPerformed

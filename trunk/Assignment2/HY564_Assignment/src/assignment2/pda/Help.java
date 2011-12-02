@@ -33,35 +33,40 @@ public class Help extends javax.swing.JPanel {
     private void initComponents() {
 
         messagePanel = new widgets.panel.AdaptivePanel();
-        adaptiveLabel2 = new widgets.label.AdaptiveLabel();
-        adaptivePanel1 = new widgets.panel.AdaptivePanel();
-        adaptiveLabel1 = new widgets.label.AdaptiveLabel();
         adaptiveTextField1 = new widgets.textfield.AdaptiveTextField();
+        adaptiveButton1 = new widgets.button.AdaptiveButton();
+        adaptivePanel1 = new widgets.panel.AdaptivePanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
         buttonsPabel = new widgets.panel.AdaptivePanel();
-        searchButton = new widgets.button.AdaptiveButton();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
         cancelButton = new widgets.button.AdaptiveButton();
+        adaptivePanel4 = new widgets.panel.AdaptivePanel();
+        searchButton = new widgets.button.AdaptiveButton();
 
+        setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         setLayout(new java.awt.BorderLayout());
 
-        messagePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 50));
+        messagePanel.setLayout(new java.awt.BorderLayout(10, 0));
 
-        adaptiveLabel2.setText("Plitrologiste ena keyword gia gia bhh8eia?");
-        messagePanel.add(adaptiveLabel2);
+        adaptiveTextField1.setText("adaptiveTextField1");
+        messagePanel.add(adaptiveTextField1, java.awt.BorderLayout.CENTER);
+        messagePanel.add(adaptiveButton1, java.awt.BorderLayout.EAST);
 
         add(messagePanel, java.awt.BorderLayout.NORTH);
 
-        adaptiveLabel1.setText("e-mail:");
-        adaptivePanel1.add(adaptiveLabel1);
+        adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveTextField1.setText("adaptiveTextField1");
-        adaptivePanel1.add(adaptiveTextField1);
+        adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.LINE_AXIS));
+        jScrollPane1.setViewportView(adaptivePanel2);
+
+        adaptivePanel1.add(jScrollPane1);
 
         add(adaptivePanel1, java.awt.BorderLayout.CENTER);
 
-        buttonsPabel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 50, 50));
+        buttonsPabel.setLayout(new java.awt.GridLayout(1, 2));
 
-        searchButton.setText("Αναζήτηση");
-        buttonsPabel.add(searchButton);
+        adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         cancelButton.setText("Ακήρωση");
         cancelButton.addActionListener(new java.awt.event.ActionListener() {
@@ -69,7 +74,16 @@ public class Help extends javax.swing.JPanel {
                 cancelButtonActionPerformed(evt);
             }
         });
-        buttonsPabel.add(cancelButton);
+        adaptivePanel3.add(cancelButton);
+
+        buttonsPabel.add(adaptivePanel3);
+
+        adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
+
+        searchButton.setText("Πίσω");
+        adaptivePanel4.add(searchButton);
+
+        buttonsPabel.add(adaptivePanel4);
 
         add(buttonsPabel, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
@@ -79,12 +93,15 @@ public class Help extends javax.swing.JPanel {
 	}//GEN-LAST:event_cancelButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private widgets.label.AdaptiveLabel adaptiveLabel1;
-    private widgets.label.AdaptiveLabel adaptiveLabel2;
+    private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel3;
+    private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
     private widgets.panel.AdaptivePanel buttonsPabel;
     private widgets.button.AdaptiveButton cancelButton;
+    private javax.swing.JScrollPane jScrollPane1;
     private widgets.panel.AdaptivePanel messagePanel;
     private widgets.button.AdaptiveButton searchButton;
     // End of variables declaration//GEN-END:variables
