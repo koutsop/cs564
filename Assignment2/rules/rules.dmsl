@@ -225,16 +225,19 @@ component AppetizerName [
 ]
 
 component marigiannaImg [
-		activate "Panel.Content.MarigiannaImage"
+	activate "Panel.Content.MarigiannaImage"
 ]
 
 component koutsopImg [
-		activate "Panel.Content.KoutsopImage"
+	activate "Panel.Content.KoutsopImage"
 ]
 
+component BigTickImg [
+	activate "Panel.Content.BigTick"
+]
 
 component welcomeImg [
-		activate "Panel.Image.Welcome"
+	activate "Panel.Image.Welcome"
 ]
 
 component LoginLabel [
