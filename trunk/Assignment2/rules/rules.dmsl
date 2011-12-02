@@ -180,9 +180,17 @@ component "Link.Visited.Underline.Color"[
 component LoginButton[
 		activate "Button.LoginButton"
 ]
-component "Button.LoginButton.Height" [ activate "70" ]
-component "Button.LoginButton.Width.StdPadding" [ activate "12" ]
-component "Button.LoginButton.Width.ExtraPercPadding" [ activate "30" ]
+component "Button.LoginButton.Height"                   [ activate "70" ]
+component "Button.LoginButton.Width.StdPadding"         [ activate "12" ]
+component "Button.LoginButton.Width.ExtraPercPadding"   [ activate "30" ]
+
+
+component EmptyButton[
+		activate "Button.Empty"
+]
+component "Button.Empty.Height"                [ activate "0" ]
+component "Button.Empty.Width.StdPadding"      [ activate "0" ]
+component "Button.Empty.Width.ExtraPercPadding"[ activate "0" ]
 
 
 //==================================================//
@@ -262,6 +270,27 @@ component ReceiveContactImg [
 //	=======================================================
 //	buttons images
 //	=======================================================
+
+component MuteVideoPDAButton [
+    if	profile6 then	activate "/images/profile_pda/mute1.png"
+    else				activate "/images/profile_no_disability/x.png"
+]
+
+component CloseVideoPDAButton [
+    if	profile6 then	activate "/images/profile_pda/close2.png"
+    else				activate "/images/profile_no_disability/close2.png"
+]
+
+component EndCallPDAButton [
+    if	profile6 then	activate "/images/profile_pda/endCall.png"
+    else				activate "/images/profile_no_disability/x.png"
+]
+
+component SwapVideoPDAButton [
+    if	profile6 then	activate "/images/profile_pda/swap2.png"
+    else				activate "/images/profile_no_disability/x.png"
+]
+
 
 component CancelButton [
     if		profile1 then	activate "/images/profile_no_disability/x.png"
@@ -488,7 +517,7 @@ component CollapseAddButton [
     else					activate "/images/profile_no_disability/tick.png"
 ]
 
-component GroupSubButton [
+component CollapseSubButton [
     if		profile1 then	activate "/images/profile_no_disability/button_minus.png"
 	else if	profile2 then	activate "/images/profile_color_blind/button_minus.png"
 	else if	profile3 then	activate "/images/profile_instability/button_minus.png"

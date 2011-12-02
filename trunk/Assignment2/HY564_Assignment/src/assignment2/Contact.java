@@ -92,11 +92,6 @@ public class Contact extends javax.swing.JPanel {
         statusLabel = new widgets.label.AdaptiveLabel();
 
         setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 2));
-        addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ChatWithContact(evt);
-            }
-        });
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         avatarPanel.setMaximumSize(new java.awt.Dimension(0, 0));
@@ -128,12 +123,6 @@ public class Contact extends javax.swing.JPanel {
 
         add(namePanel);
     }// </editor-fold>//GEN-END:initComponents
-
-	private void ChatWithContact(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ChatWithContact
-		JOptionPane pane = new JOptionPane();
-		JDialog d = pane.createDialog(null, "title");
-		d.setVisible(true);
-	}//GEN-LAST:event_ChatWithContact
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.panel.AdaptivePanel avatarPanel;
