@@ -296,7 +296,7 @@ public class Login1 extends javax.swing.JPanel {
     }//GEN-LAST:event_instabilityButtonActionPerformed
 
     private void lowVisionButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_lowVisionButtonActionPerformed
-        initAdaptation("no_disability");
+        initAdaptation("low_vision");
         MainWindowPC.showPanel(new AdaptableIMMainView()); 
     }//GEN-LAST:event_lowVisionButtonActionPerformed
 

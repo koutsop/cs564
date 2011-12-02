@@ -8,7 +8,7 @@
   <style id="backingStyle">
     <!-- Make all the regions opaque-->
     <opaque value="TRUE"/>
-    <font name="Arial" size="12"/>
+    <font name="Arial" size="28"/>
     <state>
       <color value="#ffffd0" type="BACKGROUND"/>
       <color value="BLACK" type="FOREGROUND"/>
@@ -18,7 +18,7 @@
 	
   <style id="h1">
     <opaque value="TRUE"/>
-    <font name="Arial" size="14"/>
+  <font name="Arial" size="28"/>
     <state>
       <color value="BLACK" type="FOREGROUND"/>
     </state>

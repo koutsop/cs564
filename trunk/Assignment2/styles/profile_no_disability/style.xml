@@ -94,6 +94,25 @@
 	</style>
 	<bind style="WhitePanel" type="name" key="Panel.White.*"/> 
 	
+		<style id="TransparentPanel">
+<imagePainter method="panelBackground" path="images/TransparentContentBg.png" sourceInsets="2 2 2 2"/>
+</style>
+
+<bind style="TransparentPanel" type="name" key="Panel.TransparentPanel.*"/>
+<style id="TransparentButton">
+<property key="Button.textShiftOffset" type="integer" value="1"/>
+<state>
+<imagePainter method="buttonBackground" path="images/TransparentContentBg.png.png" sourceInsets="20 20 20 20"/>
+</state>
+<state value="PRESSED">
+<imagePainter method="buttonBackground" path="images/TransparentContentBg.png.png" sourceInsets="20 20 20 20"/>
+</state>
+<state value="SELECTED">
+<imagePainter method="buttonBackground" path="images/TransparentContentBg.png.png" sourceInsets="20 20 20 20"/>
+<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
+</state>
+</style>
+<bind style="TransparentButton" type="name" key="Button.Empty.*"/>
 <!-- ======================================================= -->
 <!-- BUTTONS -->
 <!-- ======================================================= -->
