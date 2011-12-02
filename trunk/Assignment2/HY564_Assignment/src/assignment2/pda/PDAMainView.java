@@ -53,7 +53,6 @@ public class PDAMainView extends javax.swing.JPanel {
         menuButtonsPanels = new widgets.panel.AdaptivePanel();
         profileButton = new widgets.button.MainMenuButton();
         settingsButton = new widgets.button.MainMenuButton();
-        hellpButton = new widgets.button.MainMenuButton();
         contactsButtonsPanel = new widgets.panel.AdaptivePanel();
         addContactButton = new widgets.button.AdaptiveButton();
         removeContactButton = new widgets.button.AdaptiveButton();
@@ -111,14 +110,6 @@ public class PDAMainView extends javax.swing.JPanel {
             }
         });
         menuButtonsPanels.add(settingsButton);
-
-        hellpButton.setText("Help");
-        hellpButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                hellpButtonActionPerformed(evt);
-            }
-        });
-        menuButtonsPanels.add(hellpButton);
 
         buttonsPanel.add(menuButtonsPanels);
 
@@ -261,10 +252,6 @@ public class PDAMainView extends javax.swing.JPanel {
 		
 	}//GEN-LAST:event_groupContactsButtonActionPerformed
 
-	private void hellpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hellpButtonActionPerformed
-		MainWindowPDA.showPanel(new Help());
-	}//GEN-LAST:event_hellpButtonActionPerformed
-
 	private void profileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profileButtonActionPerformed
 		MainWindowPDA.showPanel(new Profile());
 	}//GEN-LAST:event_profileButtonActionPerformed
@@ -306,7 +293,6 @@ public class PDAMainView extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel contactsButtonsPanel;
     private widgets.panel.AdaptivePanel contentsPanel;
     private widgets.button.AdaptiveButton groupContactsButton;
-    private widgets.button.MainMenuButton hellpButton;
     private javax.swing.JScrollPane jScrollPane1;
     private widgets.panel.AdaptivePanel menuButtonsPanels;
     private widgets.button.MainMenuButton profileButton;
