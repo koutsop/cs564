@@ -65,7 +65,6 @@ public class PDAMainView extends javax.swing.JPanel {
         contentsPanel = new widgets.panel.AdaptivePanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
-        adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
         adaptiveButton3 = new widgets.button.AdaptiveButton();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
@@ -113,7 +112,7 @@ public class PDAMainView extends javax.swing.JPanel {
         });
         menuButtonsPanels.add(settingsButton);
 
-        hellpButton.setText("Hellp");
+        hellpButton.setText("Help");
         hellpButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hellpButtonActionPerformed(evt);
@@ -168,25 +167,6 @@ public class PDAMainView extends javax.swing.JPanel {
         contentsPanel.setLayout(new javax.swing.BoxLayout(contentsPanel, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.PAGE_AXIS));
-
-        adaptivePanel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                OnMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout adaptivePanel2Layout = new javax.swing.GroupLayout(adaptivePanel2);
-        adaptivePanel2.setLayout(adaptivePanel2Layout);
-        adaptivePanel2Layout.setHorizontalGroup(
-            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 641, Short.MAX_VALUE)
-        );
-        adaptivePanel2Layout.setVerticalGroup(
-            adaptivePanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        adaptivePanel1.add(adaptivePanel2);
 
         adaptiveButton2.setText("adaptiveButton2");
         adaptivePanel1.add(adaptiveButton2);
@@ -269,15 +249,6 @@ public class PDAMainView extends javax.swing.JPanel {
         add(contacstListPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
-	private void OnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OnMouseClicked
-		System.err.println("Mouse cliked");
-		if (!border)
-			adaptivePanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-		else
-			adaptivePanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder());
-		border = !border;
-	}//GEN-LAST:event_OnMouseClicked
-
 	private void addContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addContactButtonActionPerformed
 		MainWindowPDA.showPanel(new SearchForNewContact());
 	}//GEN-LAST:event_addContactButtonActionPerformed
@@ -291,7 +262,7 @@ public class PDAMainView extends javax.swing.JPanel {
 	}//GEN-LAST:event_groupContactsButtonActionPerformed
 
 	private void hellpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hellpButtonActionPerformed
-		MainWindowPDA.showPanel(new Hellp());
+		MainWindowPDA.showPanel(new Help());
 	}//GEN-LAST:event_hellpButtonActionPerformed
 
 	private void profileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profileButtonActionPerformed
@@ -328,7 +299,6 @@ public class PDAMainView extends javax.swing.JPanel {
     private widgets.button.AdaptiveButton adaptiveButton8;
     private widgets.button.AdaptiveButton adaptiveButton9;
     private widgets.panel.AdaptivePanel adaptivePanel1;
-    private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
     private widgets.button.AdaptiveButton addContactButton;
     private widgets.panel.AdaptivePanel buttonsPanel;
