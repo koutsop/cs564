@@ -38,20 +38,20 @@
         <Property name="horizontalGap" type="int" value="100"/>
       </Layout>
       <SubComponents>
-        <Component class="widgets.button.MainMenuButton" name="cancelButton">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="&#x386;&#x3ba;&#x3c5;&#x3c1;&#x3bf;"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelButtonActionPerformed"/>
-          </Events>
-        </Component>
         <Component class="widgets.button.MainMenuButton" name="acceptanceButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="&#x391;&#x3c0;&#x3bf;&#x3b4;&#x3bf;&#x3c7;&#x3ae;"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="acceptanceButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="widgets.button.MainMenuButton" name="cancelButton">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="&#x386;&#x3ba;&#x3c5;&#x3c1;&#x3bf;"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelButtonActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

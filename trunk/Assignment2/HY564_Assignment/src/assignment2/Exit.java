@@ -45,8 +45,8 @@ public class Exit extends javax.swing.JPanel {
     private void initComponents() {
 
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
-        cancelButton = new widgets.button.MainMenuButton();
         acceptanceButton = new widgets.button.MainMenuButton();
+        cancelButton = new widgets.button.MainMenuButton();
 
         setMaximumSize(new java.awt.Dimension(1000, 620));
         setMinimumSize(new java.awt.Dimension(1000, 620));
@@ -55,14 +55,6 @@ public class Exit extends javax.swing.JPanel {
 
         adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 100, 5));
 
-        cancelButton.setText("Άκυρο");
-        cancelButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cancelButtonActionPerformed(evt);
-            }
-        });
-        adaptivePanel1.add(cancelButton);
-
         acceptanceButton.setText("Αποδοχή");
         acceptanceButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,6 +62,14 @@ public class Exit extends javax.swing.JPanel {
             }
         });
         adaptivePanel1.add(acceptanceButton);
+
+        cancelButton.setText("Άκυρο");
+        cancelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelButtonActionPerformed(evt);
+            }
+        });
+        adaptivePanel1.add(cancelButton);
 
         add(adaptivePanel1, java.awt.BorderLayout.PAGE_END);
     }// </editor-fold>//GEN-END:initComponents
