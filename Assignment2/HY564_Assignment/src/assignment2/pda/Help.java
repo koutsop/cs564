@@ -11,6 +11,7 @@
 package assignment2.pda;
 
 import pda.MainWindowPDA;
+import utilities.Adaptation;
 
 /**
  *
@@ -21,6 +22,8 @@ public class Help extends javax.swing.JPanel {
 	/** Creates new form Help */
 	public Help() {
 		initComponents();
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);	
 	}
 
 	/** This method is called from within the constructor to
@@ -32,12 +35,24 @@ public class Help extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        messagePanel = new widgets.panel.AdaptivePanel();
+        searchPanel = new widgets.panel.AdaptivePanel();
         adaptiveTextField1 = new widgets.textfield.AdaptiveTextField();
         adaptiveButton1 = new widgets.button.AdaptiveButton();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        adaptivePanel5 = new widgets.panel.AdaptivePanel();
+        adaptivePanel6 = new widgets.panel.AdaptivePanel();
+        adaptiveButton4 = new widgets.button.AdaptiveButton();
+        adaptivePanel7 = new widgets.panel.AdaptivePanel();
+        adaptiveButton3 = new widgets.button.AdaptiveButton();
+        adaptivePanel8 = new widgets.panel.AdaptivePanel();
+        adaptivePanel10 = new widgets.panel.AdaptivePanel();
+        adaptiveButton5 = new widgets.button.AdaptiveButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        adaptiveTextBox1 = new widgets.textbox.AdaptiveTextBox();
+        adaptivePanel9 = new widgets.panel.AdaptivePanel();
+        adaptiveButton2 = new widgets.button.AdaptiveButton();
         buttonsPabel = new widgets.panel.AdaptivePanel();
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
         cancelButton = new widgets.button.AdaptiveButton();
@@ -45,19 +60,65 @@ public class Help extends javax.swing.JPanel {
         searchButton = new widgets.button.AdaptiveButton();
 
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
-        setLayout(new java.awt.BorderLayout());
+        setLayout(new java.awt.BorderLayout(0, 10));
 
-        messagePanel.setLayout(new java.awt.BorderLayout(10, 0));
+        searchPanel.setLayout(new java.awt.BorderLayout(10, 0));
+        searchPanel.add(adaptiveTextField1, java.awt.BorderLayout.CENTER);
 
-        adaptiveTextField1.setText("adaptiveTextField1");
-        messagePanel.add(adaptiveTextField1, java.awt.BorderLayout.CENTER);
-        messagePanel.add(adaptiveButton1, java.awt.BorderLayout.EAST);
+        adaptiveButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/profile_pda/find.png"))); // NOI18N
+        adaptiveButton1.setFunction("EmptyButton");
+        adaptiveButton1.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        searchPanel.add(adaptiveButton1, java.awt.BorderLayout.EAST);
 
-        add(messagePanel, java.awt.BorderLayout.NORTH);
+        add(searchPanel, java.awt.BorderLayout.NORTH);
 
         adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptivePanel5.setLayout(new javax.swing.BoxLayout(adaptivePanel5, javax.swing.BoxLayout.PAGE_AXIS));
+
+        adaptivePanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveButton4.setText("How do I invite someone to chat?");
+        adaptivePanel6.add(adaptiveButton4);
+
+        adaptivePanel5.add(adaptivePanel6);
+
+        adaptivePanel7.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveButton3.setText("How do I send an instant message?");
+        adaptivePanel7.add(adaptiveButton3);
+
+        adaptivePanel5.add(adaptivePanel7);
+
+        adaptivePanel8.setLayout(new java.awt.BorderLayout());
+
+        adaptivePanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveButton5.setText("How do I add a picture?");
+        adaptivePanel10.add(adaptiveButton5);
+
+        adaptivePanel8.add(adaptivePanel10, java.awt.BorderLayout.NORTH);
+
+        adaptiveTextBox1.setColumns(20);
+        adaptiveTextBox1.setRows(5);
+        adaptiveTextBox1.setText("Sign in to Google Talk.\n\nClick the image next to your \nname, at the top of your \nFriends list.\n\nSelect one of the provided \npictures or click Browse... \nto uploadan image from \nanother location.\n\nYour picture will appear \nimmediately and your \nfriends will be ableto see it \nnext to your name and \nstatus message in his/her \nFriends lists.\n\nIf you upload your own picture,\njust make sure the image file is \na .JPG, .GIF, .BMP or .PNG. \nGoogle Talk will automatically \nresize the image in your file to 32x32.");
+        jScrollPane2.setViewportView(adaptiveTextBox1);
+
+        adaptivePanel8.add(jScrollPane2, java.awt.BorderLayout.CENTER);
+
+        adaptivePanel5.add(adaptivePanel8);
+
+        adaptivePanel9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
+
+        adaptiveButton2.setText("How do I add a picture?");
+        adaptivePanel9.add(adaptiveButton2);
+
+        adaptivePanel5.add(adaptivePanel9);
+
+        adaptivePanel2.add(adaptivePanel5);
+
         jScrollPane1.setViewportView(adaptivePanel2);
 
         adaptivePanel1.add(jScrollPane1);
@@ -66,7 +127,7 @@ public class Help extends javax.swing.JPanel {
 
         buttonsPabel.setLayout(new java.awt.GridLayout(1, 2));
 
-        adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         cancelButton.setText("Ακήρωση");
         cancelButton.addActionListener(new java.awt.event.ActionListener() {
@@ -78,9 +139,14 @@ public class Help extends javax.swing.JPanel {
 
         buttonsPabel.add(adaptivePanel3);
 
-        adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
+        adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 0, 0));
 
         searchButton.setText("Πίσω");
+        searchButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                searchButtonActionPerformed(evt);
+            }
+        });
         adaptivePanel4.add(searchButton);
 
         buttonsPabel.add(adaptivePanel4);
@@ -92,17 +158,33 @@ public class Help extends javax.swing.JPanel {
 		MainWindowPDA.showPanel(new PDAMainView());
 	}//GEN-LAST:event_cancelButtonActionPerformed
 
+	private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchButtonActionPerformed
+		MainWindowPDA.showPanel(new SettingsMainView());
+	}//GEN-LAST:event_searchButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
+    private widgets.button.AdaptiveButton adaptiveButton2;
+    private widgets.button.AdaptiveButton adaptiveButton3;
+    private widgets.button.AdaptiveButton adaptiveButton4;
+    private widgets.button.AdaptiveButton adaptiveButton5;
     private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel10;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
+    private widgets.panel.AdaptivePanel adaptivePanel5;
+    private widgets.panel.AdaptivePanel adaptivePanel6;
+    private widgets.panel.AdaptivePanel adaptivePanel7;
+    private widgets.panel.AdaptivePanel adaptivePanel8;
+    private widgets.panel.AdaptivePanel adaptivePanel9;
+    private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
     private widgets.panel.AdaptivePanel buttonsPabel;
     private widgets.button.AdaptiveButton cancelButton;
     private javax.swing.JScrollPane jScrollPane1;
-    private widgets.panel.AdaptivePanel messagePanel;
+    private javax.swing.JScrollPane jScrollPane2;
     private widgets.button.AdaptiveButton searchButton;
+    private widgets.panel.AdaptivePanel searchPanel;
     // End of variables declaration//GEN-END:variables
 }

@@ -83,12 +83,6 @@
 <!-- PANELS & BARS -->
 <!-- ======================================================= -->
 
-	<!-- <style id="Content">
-		<imagePainter method="panelBorder" path="images/Border.png" sourceInsets="1 1 1 1" paintCenter="false"/>
-		<imagePainter method="panelBackground" path="images/ContentBg.png" sourceInsets="2 2 2 2"/>		
-	</style>
-	<bind style="Content" type="name" key="Panel.Content.*"/> -->
-	
 	<style id="WhitePanel">
 		<imagePainter method="panelBackground" path="images/WhiteContentBg.png" sourceInsets="2 2 2 2"/>
 	</style>
@@ -98,7 +92,13 @@
 		<imagePainter method="panelBackground" path="images/TransparentContentBg.png" sourceInsets="2 2 2 2"/>
 	</style>
 	<bind style="TransparentPanel" type="name" key="Panel.TransparentPanel.*"/>     
-     
+
+
+	<style id="Content">
+		<imagePainter method="panelBorder" path="images/TextBoxBorder.png" sourceInsets="4 6 4 6" paintCenter="false"/>
+	</style>
+	<bind style="Content" type="name" key="Panel.Border.*"/>	 
+	 
 <!-- ======================================================= -->
 <!-- BUTTONS -->
 <!-- ======================================================= -->

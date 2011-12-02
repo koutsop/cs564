@@ -43,6 +43,7 @@ public class ChatSettingsPanel extends javax.swing.JPanel {
         adaptiveRadioButton2 = new widgets.radiobutton.AdaptiveRadioButton();
 
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        setName("Panel.Border"); // NOI18N
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptivePanel1.setLayout(new java.awt.BorderLayout(0, 10));

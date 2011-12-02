@@ -21,9 +21,11 @@
     <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,44,0,0,1,-112"/>
   </AuxValues>
 
-  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+    <Property name="verticalGap" type="int" value="10"/>
+  </Layout>
   <SubComponents>
-    <Container class="widgets.panel.AdaptivePanel" name="messagePanel">
+    <Container class="widgets.panel.AdaptivePanel" name="searchPanel">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
           <BorderConstraints direction="North"/>
@@ -35,9 +37,6 @@
       </Layout>
       <SubComponents>
         <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField1">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="adaptiveTextField1"/>
-          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
               <BorderConstraints direction="Center"/>
@@ -45,6 +44,15 @@
           </Constraints>
         </Component>
         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton1">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/profile_pda/find.png"/>
+            </Property>
+            <Property name="function" type="java.lang.String" value="EmptyButton"/>
+            <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+              <Insets value="[0, 0, 0, 0]"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
               <BorderConstraints direction="East"/>
@@ -69,6 +77,104 @@
             <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel2">
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+              <SubComponents>
+                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel5">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                    <Property name="axis" type="int" value="3"/>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel6">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                        <Property name="alignment" type="int" value="0"/>
+                        <Property name="horizontalGap" type="int" value="0"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="How do I invite someone to chat?"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel7">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                        <Property name="alignment" type="int" value="0"/>
+                        <Property name="horizontalGap" type="int" value="0"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="How do I send an instant message?"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel8">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                      <SubComponents>
+                        <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel10">
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                              <BorderConstraints direction="North"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                            <Property name="alignment" type="int" value="0"/>
+                            <Property name="horizontalGap" type="int" value="0"/>
+                          </Layout>
+                          <SubComponents>
+                            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
+                              <Properties>
+                                <Property name="text" type="java.lang.String" value="How do I add a picture?"/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                        <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+                          <AuxValues>
+                            <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                          </AuxValues>
+                          <Constraints>
+                            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                              <BorderConstraints direction="Center"/>
+                            </Constraint>
+                          </Constraints>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                          <SubComponents>
+                            <Component class="widgets.textbox.AdaptiveTextBox" name="adaptiveTextBox1">
+                              <Properties>
+                                <Property name="columns" type="int" value="20"/>
+                                <Property name="rows" type="int" value="5"/>
+                                <Property name="text" type="java.lang.String" value="Sign in to Google Talk.&#xa;&#xa;Click the image next to your &#xa;name, at the top of your &#xa;Friends list.&#xa;&#xa;Select one of the provided &#xa;pictures or click Browse... &#xa;to uploadan image from &#xa;another location.&#xa;&#xa;Your picture will appear &#xa;immediately and your &#xa;friends will be ableto see it &#xa;next to your name and &#xa;status message in his/her &#xa;Friends lists.&#xa;&#xa;If you upload your own picture,&#xa;just make sure the image file is &#xa;a .JPG, .GIF, .BMP or .PNG. &#xa;Google Talk will automatically &#xa;resize the image in your file to 32x32."/>
+                              </Properties>
+                            </Component>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel9">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                        <Property name="alignment" type="int" value="0"/>
+                        <Property name="horizontalGap" type="int" value="0"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton2">
+                          <Properties>
+                            <Property name="text" type="java.lang.String" value="How do I add a picture?"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
             </Container>
           </SubComponents>
         </Container>
@@ -90,6 +196,8 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
             <Property name="alignment" type="int" value="0"/>
+            <Property name="horizontalGap" type="int" value="0"/>
+            <Property name="verticalGap" type="int" value="0"/>
           </Layout>
           <SubComponents>
             <Component class="widgets.button.AdaptiveButton" name="cancelButton">
@@ -106,12 +214,17 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
             <Property name="alignment" type="int" value="2"/>
+            <Property name="horizontalGap" type="int" value="0"/>
+            <Property name="verticalGap" type="int" value="0"/>
           </Layout>
           <SubComponents>
             <Component class="widgets.button.AdaptiveButton" name="searchButton">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#x3a0;&#x3af;&#x3c3;&#x3c9;"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="searchButtonActionPerformed"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>

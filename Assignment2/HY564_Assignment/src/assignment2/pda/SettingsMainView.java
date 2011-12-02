@@ -78,7 +78,7 @@ public class SettingsMainView extends javax.swing.JPanel {
 
         add(westPanel, java.awt.BorderLayout.WEST);
 
-        centerPanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 1, true));
+        centerPanel.setName("Panel.Border"); // NOI18N
         centerPanel.setLayout(new javax.swing.BoxLayout(centerPanel, javax.swing.BoxLayout.LINE_AXIS));
         add(centerPanel, java.awt.BorderLayout.CENTER);
 

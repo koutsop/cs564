@@ -418,6 +418,11 @@ public class Chat extends javax.swing.JPanel {
         chatButtonsPanel.add(videoCallButton);
 
         callButton.setFunction("ChatButton");
+        callButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                callButtonActionPerformed(evt);
+            }
+        });
         chatButtonsPanel.add(callButton);
 
         addButton.setFunction("ChatButton");
@@ -463,6 +468,10 @@ public class Chat extends javax.swing.JPanel {
 	private void videoCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_videoCallButtonActionPerformed
 		MainWindowPDA.showPanel(new VideoCall());
 	}//GEN-LAST:event_videoCallButtonActionPerformed
+
+	private void callButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callButtonActionPerformed
+		MainWindowPDA.showPanel(new Call());
+	}//GEN-LAST:event_callButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.label.AdaptiveLabel adaptiveLabel1;

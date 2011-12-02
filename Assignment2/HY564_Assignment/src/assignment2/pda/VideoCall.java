@@ -27,19 +27,17 @@ public class VideoCall extends javax.swing.JPanel {
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);	
 		
-      String path = DMSLConnector.getInstance().getClient(false).Evaluate("MuteVideoPDAButton");
-      muteButton.setIcon(new ImageIcon(getClass().getResource(path)));		
-	  
-	  path = DMSLConnector.getInstance().getClient(false).Evaluate("CloseVideoPDAButton");
-      closeButton.setIcon(new ImageIcon(getClass().getResource(path)));	
-	  
-	  path = DMSLConnector.getInstance().getClient(false).Evaluate("EndCallPDAButton");
-      endCallButton.setIcon(new ImageIcon(getClass().getResource(path)));	
-	  
-	  path = DMSLConnector.getInstance().getClient(false).Evaluate("SwapVideoPDAButton");
-      swapButon.setIcon(new ImageIcon(getClass().getResource(path)));	
-		
-		//endCallButton.setb
+		String path = DMSLConnector.getInstance().getClient(false).Evaluate("MuteVideoPDAButton");
+		muteButton.setIcon(new ImageIcon(getClass().getResource(path)));		
+
+		path = DMSLConnector.getInstance().getClient(false).Evaluate("CloseVideoPDAButton");
+		closeButton.setIcon(new ImageIcon(getClass().getResource(path)));	
+
+		path = DMSLConnector.getInstance().getClient(false).Evaluate("EndCallPDAButton");
+		endCallButton.setIcon(new ImageIcon(getClass().getResource(path)));	
+
+		path = DMSLConnector.getInstance().getClient(false).Evaluate("SwapVideoPDAButton");
+		swapButon.setIcon(new ImageIcon(getClass().getResource(path)));	
 	}
 
 	/** This method is called from within the constructor to

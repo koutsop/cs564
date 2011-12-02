@@ -694,6 +694,9 @@
               <Properties>
                 <Property name="function" type="java.lang.String" value="ChatButton"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="callButtonActionPerformed"/>
+              </Events>
             </Component>
             <Component class="widgets.button.AdaptiveButton" name="addButton">
               <Properties>
