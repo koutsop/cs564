@@ -25,7 +25,7 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class PDAMainView extends javax.swing.JPanel {
-	private boolean border = false;
+
 	/** Creates new form PDAMainView */
 	public PDAMainView() {
 		initComponents();
@@ -217,6 +217,7 @@ public class PDAMainView extends javax.swing.JPanel {
 
         buttonsPanel.add(contactsButtonsPanel);
 
+        searchPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 5, 0, 5));
         searchPanel.setLayout(new java.awt.BorderLayout(10, 0));
 
         adaptiveTextField1.setText("adaptiveTextField1");
@@ -237,10 +238,16 @@ public class PDAMainView extends javax.swing.JPanel {
 
         adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.PAGE_AXIS));
 
+        groupPanel.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OnMouseClicked(evt);
+            }
+        });
         groupPanel.setLayout(new java.awt.BorderLayout(15, 0));
 
         groupNamePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
+        groupButton0.setFunction("EmptyButton");
         groupButton0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 groupButton0ActionPerformed(evt);
@@ -296,6 +303,7 @@ public class PDAMainView extends javax.swing.JPanel {
 
         groupNamePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
+        groupButton1.setFunction("EmptyButton");
         groupButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 groupButton1ActionPerformed(evt);
@@ -351,6 +359,7 @@ public class PDAMainView extends javax.swing.JPanel {
 
         groupNamePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
+        groupButton2.setFunction("EmptyButton");
         groupButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 groupButton2ActionPerformed(evt);
@@ -422,7 +431,7 @@ public class PDAMainView extends javax.swing.JPanel {
 	}//GEN-LAST:event_removeContactButtonActionPerformed
 
 	private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed
-		
+		MainWindowPDA.showPanel(new VideoCall());
 	}//GEN-LAST:event_groupContactsButtonActionPerformed
 
 	private void profileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profileButtonActionPerformed
@@ -450,7 +459,13 @@ public class PDAMainView extends javax.swing.JPanel {
 			group2InitialHeight = groupContentPanel2.getPreferredSize().height;			
 		CollapseGroup(groupContentPanel2, groupButton2, group2InitialHeight);
 	}//GEN-LAST:event_groupButton2ActionPerformed
-	
+
+	private void OnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OnMouseClicked
+		if (evt.getClickCount() == 2 && (evt.getPoint().x >= 0 && evt.getPoint().y <= 74)) {
+			MainWindowPDA.showPanel(new Chat());
+		}
+	}//GEN-LAST:event_OnMouseClicked
+
 	private void CollapseGroup (JPanel group, JButton button, int initialHeight) {
 		group.setVisible(!group.isVisible());
 		

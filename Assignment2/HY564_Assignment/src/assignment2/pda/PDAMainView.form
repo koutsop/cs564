@@ -87,6 +87,13 @@
           </SubComponents>
         </Container>
         <Container class="widgets.panel.AdaptivePanel" name="searchPanel">
+          <Properties>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+                <EmptyBorder bottom="0" left="5" right="5" top="0"/>
+              </Border>
+            </Property>
+          </Properties>
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
             <Property name="horizontalGap" type="int" value="10"/>
@@ -148,6 +155,9 @@
                       </Layout>
                       <SubComponents>
                         <Container class="widgets.panel.AdaptivePanel" name="groupPanel">
+                          <Events>
+                            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="OnMouseClicked"/>
+                          </Events>
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
                             <Property name="horizontalGap" type="int" value="15"/>
@@ -166,6 +176,9 @@
                               </Layout>
                               <SubComponents>
                                 <Component class="widgets.button.AdaptiveButton" name="groupButton0">
+                                  <Properties>
+                                    <Property name="function" type="java.lang.String" value="EmptyButton"/>
+                                  </Properties>
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupButton0ActionPerformed"/>
                                   </Events>
@@ -270,6 +283,9 @@
                               </Layout>
                               <SubComponents>
                                 <Component class="widgets.button.AdaptiveButton" name="groupButton1">
+                                  <Properties>
+                                    <Property name="function" type="java.lang.String" value="EmptyButton"/>
+                                  </Properties>
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupButton1ActionPerformed"/>
                                   </Events>
@@ -374,6 +390,9 @@
                               </Layout>
                               <SubComponents>
                                 <Component class="widgets.button.AdaptiveButton" name="groupButton2">
+                                  <Properties>
+                                    <Property name="function" type="java.lang.String" value="EmptyButton"/>
+                                  </Properties>
                                   <Events>
                                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupButton2ActionPerformed"/>
                                   </Events>
