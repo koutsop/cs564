@@ -51,7 +51,7 @@ public class SettingsMainView extends javax.swing.JPanel {
         centerPanel = new widgets.panel.AdaptivePanel();
         south = new widgets.panel.AdaptivePanel();
         hellpPanel = new widgets.panel.AdaptivePanel();
-        hellpButton = new widgets.button.AdaptiveButton();
+        helpButton = new widgets.button.AdaptiveButton();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         okButton = new widgets.button.AdaptiveButton();
@@ -86,8 +86,13 @@ public class SettingsMainView extends javax.swing.JPanel {
 
         hellpPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
-        hellpButton.setText("Hellp");
-        hellpPanel.add(hellpButton);
+        helpButton.setText("Βοήθεια");
+        helpButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                helpButtonActionPerformed(evt);
+            }
+        });
+        hellpPanel.add(helpButton);
 
         south.add(hellpPanel, java.awt.BorderLayout.WEST);
 
@@ -103,7 +108,7 @@ public class SettingsMainView extends javax.swing.JPanel {
         });
         adaptivePanel1.add(okButton);
 
-        cancelButton.setText("Cancel");
+        cancelButton.setText("Ακύρωση");
         cancelButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cancelButtonActionPerformed(evt);
@@ -139,6 +144,10 @@ public class SettingsMainView extends javax.swing.JPanel {
 				showPanel(new ChatSettingsPanel());
 		}
 	}//GEN-LAST:event_OnMouseClicked
+
+	private void helpButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpButtonActionPerformed
+		MainWindowPDA.showPanel(new Help());
+	}//GEN-LAST:event_helpButtonActionPerformed
 		
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.list.AdaptiveList adaptiveList1;
@@ -146,8 +155,8 @@ public class SettingsMainView extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.button.AdaptiveButton cancelButton;
     private widgets.panel.AdaptivePanel centerPanel;
-    private widgets.button.AdaptiveButton hellpButton;
     private widgets.panel.AdaptivePanel hellpPanel;
+    private widgets.button.AdaptiveButton helpButton;
     private javax.swing.JScrollPane jScrollPane1;
     private widgets.button.AdaptiveButton okButton;
     private widgets.panel.AdaptivePanel south;
