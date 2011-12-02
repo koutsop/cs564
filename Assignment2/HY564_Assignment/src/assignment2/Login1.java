@@ -120,7 +120,7 @@ public class Login1 extends javax.swing.JPanel {
         adaptivePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 0, 24));
-        adaptiveLabel2.setText("No Disability");
+        adaptiveLabel2.setText("Είσοδος");
         adaptivePanel2.add(adaptiveLabel2);
 
         adaptivePanel1.add(adaptivePanel2, java.awt.BorderLayout.SOUTH);
@@ -148,7 +148,7 @@ public class Login1 extends javax.swing.JPanel {
         adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 0, 24));
-        adaptiveLabel3.setText("Color Blind");
+        adaptiveLabel3.setText("Αχρωματοψία");
         adaptivePanel4.add(adaptiveLabel3);
 
         adaptivePanel3.add(adaptivePanel4, java.awt.BorderLayout.SOUTH);
@@ -176,7 +176,7 @@ public class Login1 extends javax.swing.JPanel {
         adaptivePanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptiveLabel4.setFont(new java.awt.Font("Tahoma", 0, 24));
-        adaptiveLabel4.setText("Instability");
+        adaptiveLabel4.setText("Αστάθεια");
         adaptivePanel5.add(adaptiveLabel4);
 
         adaptivePanel6.add(adaptivePanel5, java.awt.BorderLayout.SOUTH);
@@ -204,7 +204,7 @@ public class Login1 extends javax.swing.JPanel {
         adaptivePanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptiveLabel5.setFont(new java.awt.Font("Tahoma", 0, 24));
-        adaptiveLabel5.setText("Low Vision");
+        adaptiveLabel5.setText("Χαμηλή όραση");
         adaptivePanel8.add(adaptiveLabel5);
 
         adaptivePanel7.add(adaptivePanel8, java.awt.BorderLayout.SOUTH);
@@ -282,7 +282,7 @@ public class Login1 extends javax.swing.JPanel {
         add(downPanel, java.awt.BorderLayout.PAGE_END);
     }// </editor-fold>//GEN-END:initComponents
     private void colorBlindButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_colorBlindButtonActionPerformed
-        initAdaptation("no_disability");
+        initAdaptation("color_blind");
         MainWindowPC.showPanel(new AdaptableIMMainView());
     }//GEN-LAST:event_colorBlindButtonActionPerformed
 
