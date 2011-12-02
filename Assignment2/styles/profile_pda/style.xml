@@ -10,7 +10,7 @@
     <opaque value="TRUE"/>
     <font name="Arial" size="12"/>
     <state>
-      <color value="WHITE" type="BACKGROUND"/>
+      <color value="#ffffd0" type="BACKGROUND"/>
       <color value="BLACK" type="FOREGROUND"/>
     </state>
   </style>

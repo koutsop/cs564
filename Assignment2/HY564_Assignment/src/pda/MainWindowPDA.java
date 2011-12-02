@@ -2,7 +2,6 @@ package pda;
 
 
 import assignment2.pda.PDAMainView;
-import demo.RestaurantDemo;
 import java.awt.Dimension;
 import javax.swing.JPanel;
 import utilities.Adaptation;
@@ -26,7 +25,7 @@ import utilities.DMSLConnector;
 public class MainWindowPDA extends javax.swing.JFrame {
 
     public void initAdaptationParameters(){
-        DMSLConnector.getInstance().getClient(false).SetAttribute("user.age", "pda");
+        DMSLConnector.getInstance().getClient(false).SetAttribute("user.profile", "pda");
     }
 
     /** Creates new form MainWindow */

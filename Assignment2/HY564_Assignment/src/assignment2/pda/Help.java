@@ -4,7 +4,7 @@
  */
 
 /*
- * Hellp.java
+ * Help.java
  *
  * Created on 1 Δεκ 2011, 9:00:38 μμ
  */
@@ -16,10 +16,10 @@ import pda.MainWindowPDA;
  *
  * @author koutsop
  */
-public class Hellp extends javax.swing.JPanel {
+public class Help extends javax.swing.JPanel {
 
-	/** Creates new form Hellp */
-	public Hellp() {
+	/** Creates new form Help */
+	public Help() {
 		initComponents();
 	}
 

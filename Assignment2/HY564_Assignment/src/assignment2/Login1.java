@@ -89,11 +89,11 @@ public class Login1 extends javax.swing.JPanel {
 
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 0, 10, 0));
         setPreferredSize(new java.awt.Dimension(1000, 688));
-        setLayout(new java.awt.BorderLayout(0, 15));
+        setLayout(new java.awt.BorderLayout(0, 10));
 
         upPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 0, 36));
+        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 0, 30)); // NOI18N
         adaptiveLabel1.setText("Καλώς Ορίσατε");
         upPanel.add(adaptiveLabel1);
 
@@ -119,7 +119,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 0, 24));
+        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         adaptiveLabel2.setText("Είσοδος");
         adaptivePanel2.add(adaptiveLabel2);
 
@@ -147,7 +147,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 0, 24));
+        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         adaptiveLabel3.setText("Αχρωματοψία");
         adaptivePanel4.add(adaptiveLabel3);
 
@@ -175,7 +175,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel4.setFont(new java.awt.Font("Tahoma", 0, 24));
+        adaptiveLabel4.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         adaptiveLabel4.setText("Αστάθεια");
         adaptivePanel5.add(adaptiveLabel4);
 
@@ -203,7 +203,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel5.setFont(new java.awt.Font("Tahoma", 0, 24));
+        adaptiveLabel5.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         adaptiveLabel5.setText("Χαμηλή όραση");
         adaptivePanel8.add(adaptiveLabel5);
 
@@ -231,7 +231,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel6.setFont(new java.awt.Font("Tahoma", 0, 24));
+        adaptiveLabel6.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         adaptiveLabel6.setText("Κηλίδες");
         adaptivePanel10.add(adaptiveLabel6);
 
@@ -245,6 +245,8 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel11.setLayout(new java.awt.BorderLayout());
 
+        adaptivePanel13.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
         pdaButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
         pdaButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -257,7 +259,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel12.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel7.setFont(new java.awt.Font("Tahoma", 0, 24));
+        adaptiveLabel7.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
         adaptiveLabel7.setText("PDA");
         adaptivePanel12.add(adaptiveLabel7);
 
@@ -269,7 +271,9 @@ public class Login1 extends javax.swing.JPanel {
 
         add(modlePanel, java.awt.BorderLayout.CENTER);
 
-        registerButton.setFont(new java.awt.Font("Tahoma", 0, 24));
+        downPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        registerButton.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         registerButton.setFunction("LoginButton");
         registerButton.setText("Δεν έχετε λογαριασμό;");
         registerButton.addActionListener(new java.awt.event.ActionListener() {
@@ -311,8 +315,8 @@ private void registerButtonActionPerformed(java.awt.event.ActionEvent evt) {//GE
 	}//GEN-LAST:event_spotsButtonActionPerformed
 
 	private void pdaButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pdaButtonActionPerformed
-		MainWindowPDA window = new MainWindowPDA();
-		window.setVisible(true);
+		MainWindowPDA pda = new MainWindowPDA();
+		pda.setVisible(true);
 	}//GEN-LAST:event_pdaButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
