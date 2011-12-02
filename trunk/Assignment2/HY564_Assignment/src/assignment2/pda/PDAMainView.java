@@ -29,10 +29,12 @@ public class PDAMainView extends javax.swing.JPanel {
 	/** Creates new form PDAMainView */
 	public PDAMainView() {
 		initComponents();
-		AddContacts();
+
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
+		AddContacts();
 		SetContactSizeImages();
+		
 		
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("AddButton");
         addContactButton.setIcon(new ImageIcon(getClass().getResource(path)));  
@@ -431,7 +433,7 @@ public class PDAMainView extends javax.swing.JPanel {
 	}//GEN-LAST:event_removeContactButtonActionPerformed
 
 	private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed
-		MainWindowPDA.showPanel(new Help());
+		MainWindowPDA.showPanel(new Call());
 	}//GEN-LAST:event_groupContactsButtonActionPerformed
 
 	private void profileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_profileButtonActionPerformed

@@ -52,6 +52,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveCheckBox4 = new widgets.checkbox.AdaptiveCheckBox();
 
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        setName("Panel.Border"); // NOI18N
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptivePanel1.setLayout(new java.awt.BorderLayout(0, 10));
@@ -62,7 +63,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptivePanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         adaptivePanel2.setLayout(new java.awt.GridLayout(3, 1, 0, 15));
 
-        adaptivePanel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        adaptivePanel3.setName("Panel.Border"); // NOI18N
         adaptivePanel3.setLayout(new java.awt.GridLayout(2, 1));
 
         adaptivePanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 10));
@@ -81,7 +82,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel2.add(adaptivePanel3);
 
-        adaptivePanel4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        adaptivePanel4.setName("Panel.Border"); // NOI18N
         adaptivePanel4.setLayout(new java.awt.GridLayout(2, 1));
 
         adaptivePanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 10));
@@ -100,7 +101,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel2.add(adaptivePanel4);
 
-        adaptivePanel5.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        adaptivePanel5.setName("Panel.Border"); // NOI18N
         adaptivePanel5.setLayout(new java.awt.GridLayout(2, 1));
 
         adaptivePanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 10));

@@ -34,19 +34,84 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel1 = new widgets.label.AdaptiveLabel();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptiveCheckBox1 = new widgets.checkbox.AdaptiveCheckBox();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
+        adaptiveCheckBox2 = new widgets.checkbox.AdaptiveCheckBox();
+        adaptivePanel4 = new widgets.panel.AdaptivePanel();
+        adaptiveCheckBox3 = new widgets.checkbox.AdaptiveCheckBox();
+        adaptivePanel5 = new widgets.panel.AdaptivePanel();
+        adaptiveCheckBox4 = new widgets.checkbox.AdaptiveCheckBox();
 
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        setName("Panel.Border"); // NOI18N
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptivePanel1.setLayout(new java.awt.BorderLayout(0, 20));
 
-        adaptiveLabel1.setText("Chat");
+        adaptiveLabel1.setText("General");
         adaptivePanel1.add(adaptiveLabel1, java.awt.BorderLayout.PAGE_START);
 
-        adaptivePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 0));
+        adaptivePanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveCheckBox1.setText("Start automaticly");
         adaptivePanel2.add(adaptiveCheckBox1);
+
+        adaptivePanel3.setMaximumSize(new java.awt.Dimension(1, 20));
+        adaptivePanel3.setMinimumSize(new java.awt.Dimension(1, 20));
+
+        javax.swing.GroupLayout adaptivePanel3Layout = new javax.swing.GroupLayout(adaptivePanel3);
+        adaptivePanel3.setLayout(adaptivePanel3Layout);
+        adaptivePanel3Layout.setHorizontalGroup(
+            adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1, Short.MAX_VALUE)
+        );
+        adaptivePanel3Layout.setVerticalGroup(
+            adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 20, Short.MAX_VALUE)
+        );
+
+        adaptivePanel2.add(adaptivePanel3);
+
+        adaptiveCheckBox2.setText("Auto sign-in");
+        adaptivePanel2.add(adaptiveCheckBox2);
+
+        adaptivePanel4.setMaximumSize(new java.awt.Dimension(1, 20));
+        adaptivePanel4.setMinimumSize(new java.awt.Dimension(1, 20));
+
+        javax.swing.GroupLayout adaptivePanel4Layout = new javax.swing.GroupLayout(adaptivePanel4);
+        adaptivePanel4.setLayout(adaptivePanel4Layout);
+        adaptivePanel4Layout.setHorizontalGroup(
+            adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1, Short.MAX_VALUE)
+        );
+        adaptivePanel4Layout.setVerticalGroup(
+            adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 20, Short.MAX_VALUE)
+        );
+
+        adaptivePanel2.add(adaptivePanel4);
+
+        adaptiveCheckBox3.setText("Intercept Call");
+        adaptivePanel2.add(adaptiveCheckBox3);
+
+        adaptivePanel5.setMaximumSize(new java.awt.Dimension(1, 20));
+        adaptivePanel5.setMinimumSize(new java.awt.Dimension(1, 20));
+
+        javax.swing.GroupLayout adaptivePanel5Layout = new javax.swing.GroupLayout(adaptivePanel5);
+        adaptivePanel5.setLayout(adaptivePanel5Layout);
+        adaptivePanel5Layout.setHorizontalGroup(
+            adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1, Short.MAX_VALUE)
+        );
+        adaptivePanel5Layout.setVerticalGroup(
+            adaptivePanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 20, Short.MAX_VALUE)
+        );
+
+        adaptivePanel2.add(adaptivePanel5);
+
+        adaptiveCheckBox4.setText("Automaticly updates");
+        adaptivePanel2.add(adaptiveCheckBox4);
 
         adaptivePanel1.add(adaptivePanel2, java.awt.BorderLayout.CENTER);
 
@@ -54,8 +119,14 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.checkbox.AdaptiveCheckBox adaptiveCheckBox1;
+    private widgets.checkbox.AdaptiveCheckBox adaptiveCheckBox2;
+    private widgets.checkbox.AdaptiveCheckBox adaptiveCheckBox3;
+    private widgets.checkbox.AdaptiveCheckBox adaptiveCheckBox4;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel3;
+    private widgets.panel.AdaptivePanel adaptivePanel4;
+    private widgets.panel.AdaptivePanel adaptivePanel5;
     // End of variables declaration//GEN-END:variables
 }
