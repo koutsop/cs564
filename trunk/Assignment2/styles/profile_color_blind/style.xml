@@ -381,14 +381,14 @@
 
 <!-- ====================================================================================== -->	
 	<style id="welcomeImage">
-		<imagePainter method="panelBackground" path="../../styles/profile_color_blind/images/welcome.png" center="true"/>
+		<imagePainter method="panelBackground" path="images/welcome.png" center="true"/>
 	</style>
 	<bind style="welcomeImage" type="name" key="Panel.Image.Welcome"/>
     
 	<style id="StatusAvailableImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_color_blind/images/status_online.png"
+            path="images/status_online.png"
             sourceInsets="1 1 1 1"
             center="false"
             stretch="true"
@@ -399,7 +399,7 @@
 	<style id="StatusIdleImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_color_blind/images/status_away.png"
+            path="images/status_away.png"
             sourceInsets="1 1 1 1"
             center="false"
             stretch="true"
@@ -410,7 +410,7 @@
 	<style id="StatusBusyImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_color_blind/images/status_busy.png"
+            path="images/status_busy.png"
             sourceInsets="1 1 1 1"
             center="false"
             stretch="true"
@@ -426,7 +426,7 @@
   	<style id="KoutsopImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_color_blind/images/koutsop.jpg"
+            path="images/koutsop.jpg"
             sourceInsets="1 1 1 1"
             center="false"
             stretch="true"
@@ -438,7 +438,7 @@
 	<style id="marigiannaImage">
 		<imagePainter 
             method="panelBackground" 
-            path="../../styles/profile_color_blind/images/marigianna.jpg" 
+            path="images/marigianna.jpg" 
             sourceInsets="1 1 1 1"
             center="false"
             stretch="true"
@@ -454,7 +454,7 @@
     <style id="captchaImage">
 		<imagePainter 
 			method="panelBackground" 
-			path="../../styles/profile_color_blind/images/captcha1.jpg" 
+			path="images/captcha1.jpg" 
             sourceInsets="1 1 1 1"
             center="false"
             stretch="true"
