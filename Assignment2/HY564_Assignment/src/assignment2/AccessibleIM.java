@@ -12,6 +12,7 @@ package assignment2;
 
 import assignment2.AdaptableViews.AdaptableChatMainView;
 import assignment2.NoDisability.SettingsMainView;
+import javax.swing.JButton;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 
@@ -95,18 +96,21 @@ public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInte
     }
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
+		SetMenuButtonSelected(null);
 		ShowIMButton(false);
         showPanel(new AdaptableChatMainView(menuPanel.getPreferredSize()));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed
+        SetMenuButtonSelected(settingsButton);
 		ShowIMButton(true);
-        showPanel(new SettingsMainView());	//TODO SettingsMainView prepei na dexetai os orisma ton patera?
+        showPanel(new SettingsMainView());
     }//GEN-LAST:event_settingsButtonActionPerformed
 
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
+		SetMenuButtonSelected(exitButton);
 		ShowIMButton(true);
-        showPanel(new Exit());        
+		showPanel(new Exit());        
     }//GEN-LAST:event_exitButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -116,7 +120,12 @@ public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInte
     private widgets.panel.AdaptivePanel menuPanel;
     private widgets.button.MainMenuButton settingsButton;
     // End of variables declaration//GEN-END:variables
-
+	private void SetMenuButtonSelected (JButton button) {
+		exitButton.setSelected(false);
+		settingsButton.setSelected(false);
+		if (button != null)
+			button.setSelected(true);
+	}
 	public void ShowIMButton(boolean show) {
 		imButton.setVisible(show);
 	}
