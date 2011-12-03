@@ -32,8 +32,8 @@ public class AddaptableBlockedSettingsView extends javax.swing.JPanel {
 	public AddaptableBlockedSettingsView() {
 		initComponents();
 
-		//p.add(assignment2.NoDisability.BlockedSettingsPanel(), commonSettings);
-		//p.add(assignment2.LowVision.BlockedSettingsPanel, lowVision);
+		p.add(new assignment2.NoDisability.BlockedSettingsPanel(), commonSettings);
+		//p.add(new assignment2.LowVision.BlockedSettingsPanel, lowVision);
 		this.add(p);
 
 		CardLayout cl = (CardLayout)(p.getLayout());
