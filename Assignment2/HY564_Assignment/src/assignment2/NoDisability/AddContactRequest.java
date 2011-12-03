@@ -54,7 +54,6 @@ public class AddContactRequest extends javax.swing.JPanel {
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptiveButton3 = new widgets.button.AdaptiveButton();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
-        adaptivePanel8 = new widgets.panel.AdaptivePanel();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
@@ -70,9 +69,9 @@ public class AddContactRequest extends javax.swing.JPanel {
 
         centerPanel.setLayout(new javax.swing.BoxLayout(centerPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
-        adaptivePanel1.setMaximumSize(new java.awt.Dimension(500, 400));
-        adaptivePanel1.setMinimumSize(new java.awt.Dimension(500, 400));
-        adaptivePanel1.setPreferredSize(new java.awt.Dimension(500, 400));
+        adaptivePanel1.setMaximumSize(new java.awt.Dimension(500, 370));
+        adaptivePanel1.setMinimumSize(new java.awt.Dimension(500, 370));
+        adaptivePanel1.setPreferredSize(new java.awt.Dimension(500, 370));
         adaptivePanel1.setLayout(new java.awt.BorderLayout(20, 20));
 
         javax.swing.GroupLayout adaptivePanel6Layout = new javax.swing.GroupLayout(adaptivePanel6);
@@ -101,7 +100,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel4Layout.setVerticalGroup(
             adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 108, Short.MAX_VALUE)
+            .addGap(0, 97, Short.MAX_VALUE)
         );
 
         adaptivePanel3.add(adaptivePanel4);
@@ -117,7 +116,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel7Layout.setVerticalGroup(
             adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 108, Short.MAX_VALUE)
+            .addGap(0, 97, Short.MAX_VALUE)
         );
 
         adaptivePanel3.add(adaptivePanel7);
@@ -149,7 +148,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel9Layout.setVerticalGroup(
             adaptivePanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 108, Short.MAX_VALUE)
+            .addGap(0, 97, Short.MAX_VALUE)
         );
 
         adaptivePanel2.add(adaptivePanel9);
@@ -165,7 +164,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel10Layout.setVerticalGroup(
             adaptivePanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 108, Short.MAX_VALUE)
+            .addGap(0, 97, Short.MAX_VALUE)
         );
 
         adaptivePanel2.add(adaptivePanel10);
@@ -178,7 +177,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel11Layout.setVerticalGroup(
             adaptivePanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 108, Short.MAX_VALUE)
+            .addGap(0, 97, Short.MAX_VALUE)
         );
 
         adaptivePanel2.add(adaptivePanel11);
@@ -202,19 +201,6 @@ public class AddContactRequest extends javax.swing.JPanel {
         adaptivePanel5.add(adaptiveButton4);
 
         adaptivePanel1.add(adaptivePanel5, java.awt.BorderLayout.SOUTH);
-
-        javax.swing.GroupLayout adaptivePanel8Layout = new javax.swing.GroupLayout(adaptivePanel8);
-        adaptivePanel8.setLayout(adaptivePanel8Layout);
-        adaptivePanel8Layout.setHorizontalGroup(
-            adaptivePanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 260, Short.MAX_VALUE)
-        );
-        adaptivePanel8Layout.setVerticalGroup(
-            adaptivePanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 324, Short.MAX_VALUE)
-        );
-
-        adaptivePanel1.add(adaptivePanel8, java.awt.BorderLayout.CENTER);
 
         centerPanel.add(adaptivePanel1);
 
@@ -265,7 +251,6 @@ private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//G
     private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;
     private widgets.panel.AdaptivePanel adaptivePanel7;
-    private widgets.panel.AdaptivePanel adaptivePanel8;
     private widgets.panel.AdaptivePanel adaptivePanel9;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
     private widgets.panel.AdaptivePanel centerPanel;

@@ -489,7 +489,7 @@ public class AddContactsInTeam extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
-	JPanel myParent = (JPanel)getParent();
+	JPanel myParent = (JPanel)getParent().getParent();
 	Groups r = new Groups();
 	r.setVisible(true);
 	myParent.removeAll();

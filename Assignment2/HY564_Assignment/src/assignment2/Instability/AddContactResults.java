@@ -281,8 +281,8 @@ private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//G
 	myParent.repaint();
 	myParent.validate();
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
-private void AddContact () {
-		JPanel myParent = (JPanel)getParent();
+	private void AddContact () {
+		JPanel myParent = (JPanel)getParent().getParent();
 
 		// Instantiate the new screen
 		AddContactRequest r = new AddContactRequest();
