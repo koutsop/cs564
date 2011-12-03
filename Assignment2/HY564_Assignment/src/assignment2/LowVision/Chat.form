@@ -1,0 +1,726 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,91,0,0,1,-47"/>
+  </AuxValues>
+
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+    <Property name="verticalGap" type="int" value="10"/>
+  </Layout>
+  <SubComponents>
+    <Container class="widgets.panel.AdaptivePanel" name="contactPanel">
+      <Properties>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[32767, 100]"/>
+        </Property>
+        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[125, 100]"/>
+        </Property>
+      </Properties>
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="North"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+        <Property name="axis" type="int" value="3"/>
+      </Layout>
+      <SubComponents>
+        <Container class="widgets.panel.AdaptivePanel" name="statusPanel">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+          <SubComponents>
+            <Component class="widgets.label.AdaptiveLabel" name="nameLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Marigianna Skouradakh: Pame xoro?"/>
+              </Properties>
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                  <BorderConstraints direction="South"/>
+                </Constraint>
+              </Constraints>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="widgets.panel.AdaptivePanel" name="chatButtonsPanel">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+            <Property name="alignment" type="int" value="2"/>
+            <Property name="horizontalGap" type="int" value="10"/>
+          </Layout>
+          <SubComponents>
+            <Component class="widgets.button.AdaptiveButton" name="videoCallButton">
+              <Properties>
+                <Property name="function" type="java.lang.String" value="ChatButton"/>
+              </Properties>
+            </Component>
+            <Component class="widgets.button.AdaptiveButton" name="callButton">
+              <Properties>
+                <Property name="function" type="java.lang.String" value="ChatButton"/>
+              </Properties>
+            </Component>
+            <Component class="widgets.button.AdaptiveButton" name="sendFileButton">
+              <Properties>
+                <Property name="function" type="java.lang.String" value="ChatButton"/>
+              </Properties>
+            </Component>
+            <Component class="widgets.button.AdaptiveButton" name="addButton">
+              <Properties>
+                <Property name="function" type="java.lang.String" value="ChatButton"/>
+              </Properties>
+            </Component>
+            <Component class="widgets.button.AdaptiveButton" name="closeButton">
+              <Properties>
+                <Property name="function" type="java.lang.String" value="ChatButton"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
+      <Constraints>
+        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+          <BorderConstraints direction="Center"/>
+        </Constraint>
+      </Constraints>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+      <SubComponents>
+        <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel2">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+            <Property name="columns" type="int" value="1"/>
+            <Property name="rows" type="int" value="2"/>
+            <Property name="verticalGap" type="int" value="10"/>
+          </Layout>
+          <SubComponents>
+            <Container class="widgets.panel.AdaptivePanel" name="receivePanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder roundedCorners="true" thickness="2"/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+              <SubComponents>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Container class="widgets.panel.AdaptivePanel" name="scroolContentPanel">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="1"/>
+                        <Property name="rows" type="int" value="5"/>
+                        <Property name="verticalGap" type="int" value="20"/>
+                      </Layout>
+                      <SubComponents>
+                        <Container class="widgets.panel.AdaptivePanel" name="conversationKoutsopPanel">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="3">
+                                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                          <SubComponents>
+                            <Container class="widgets.panel.AdaptivePanel" name="senderPanel2">
+                              <Properties>
+                                <Property name="name" type="java.lang.String" value="Panel.ChatBox" noResource="true"/>
+                              </Properties>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                              <SubComponents>
+                                <Container class="widgets.panel.AdaptivePanel" name="northPanel1">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="North"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                    <Property name="alignment" type="int" value="0"/>
+                                    <Property name="horizontalGap" type="int" value="0"/>
+                                    <Property name="verticalGap" type="int" value="10"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel2">
+
+                                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                        <Property name="verticalGap" type="int" value="0"/>
+                                      </Layout>
+                                      <SubComponents>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderImagePanel1">
+                                          <Properties>
+                                            <Property name="function" type="java.lang.String" value="koutsopImg"/>
+                                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
+                                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                          </Properties>
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                                        </Container>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel3">
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                                            <Property name="columns" type="int" value="1"/>
+                                            <Property name="rows" type="int" value="2"/>
+                                            <Property name="verticalGap" type="int" value="5"/>
+                                          </Layout>
+                                          <SubComponents>
+                                            <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel1">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Koutsop:"/>
+                                              </Properties>
+                                            </Component>
+                                            <Component class="widgets.label.AdaptiveLabel" name="timeLabel1">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Sent at 12:03 PM on Sunday"/>
+                                              </Properties>
+                                            </Component>
+                                          </SubComponents>
+                                        </Container>
+                                      </SubComponents>
+                                    </Container>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="widgets.panel.AdaptivePanel" name="senderTextPanel1">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="Center"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                                    <Property name="axis" type="int" value="3"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel3">
+                                      <Properties>
+                                        <Property name="text" type="java.lang.String" value="Pws paei eisai kala? Elpizw na eisai kala. Ta leme"/>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                              </SubComponents>
+                            </Container>
+                          </SubComponents>
+                        </Container>
+                        <Container class="widgets.panel.AdaptivePanel" name="conversationMarigiannaPanel">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="3">
+                                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                          <SubComponents>
+                            <Container class="widgets.panel.AdaptivePanel" name="senderPanel1">
+                              <Properties>
+                                <Property name="name" type="java.lang.String" value="Panel.ChatBox" noResource="true"/>
+                              </Properties>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                              <SubComponents>
+                                <Container class="widgets.panel.AdaptivePanel" name="northPanel">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="North"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                    <Property name="alignment" type="int" value="0"/>
+                                    <Property name="horizontalGap" type="int" value="0"/>
+                                    <Property name="verticalGap" type="int" value="10"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel1">
+
+                                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                        <Property name="verticalGap" type="int" value="0"/>
+                                      </Layout>
+                                      <SubComponents>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderImagePanel">
+                                          <Properties>
+                                            <Property name="function" type="java.lang.String" value="marigiannaImg"/>
+                                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="name" type="java.lang.String" value="Panel.Content.MarigiannaImage" noResource="true"/>
+                                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                          </Properties>
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                                        </Container>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel">
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                                            <Property name="columns" type="int" value="1"/>
+                                            <Property name="rows" type="int" value="2"/>
+                                            <Property name="verticalGap" type="int" value="5"/>
+                                          </Layout>
+                                          <SubComponents>
+                                            <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Marigianna:"/>
+                                              </Properties>
+                                            </Component>
+                                            <Component class="widgets.label.AdaptiveLabel" name="timeLabel">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Sent at 12:03 PM on Sunday"/>
+                                              </Properties>
+                                            </Component>
+                                          </SubComponents>
+                                        </Container>
+                                      </SubComponents>
+                                    </Container>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="widgets.panel.AdaptivePanel" name="senderTextPanel">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="Center"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                                    <Property name="axis" type="int" value="3"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel2">
+                                      <Properties>
+                                        <Property name="text" type="java.lang.String" value="Bariemai thn zwh mou n to 3reis auto lalalalalalalalalalaalalalal"/>
+                                      </Properties>
+                                    </Component>
+                                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel1">
+                                      <Properties>
+                                        <Property name="text" type="java.lang.String" value="Bariemai thn zwh mou n to 3reis auto"/>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                              </SubComponents>
+                            </Container>
+                          </SubComponents>
+                        </Container>
+                        <Container class="widgets.panel.AdaptivePanel" name="conversationKoutsopPanel1">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="3">
+                                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                          <SubComponents>
+                            <Container class="widgets.panel.AdaptivePanel" name="senderPanel3">
+                              <Properties>
+                                <Property name="name" type="java.lang.String" value="Panel.ChatBox" noResource="true"/>
+                              </Properties>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                              <SubComponents>
+                                <Container class="widgets.panel.AdaptivePanel" name="northPanel2">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="North"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                    <Property name="alignment" type="int" value="0"/>
+                                    <Property name="horizontalGap" type="int" value="0"/>
+                                    <Property name="verticalGap" type="int" value="10"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel4">
+
+                                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                        <Property name="verticalGap" type="int" value="0"/>
+                                      </Layout>
+                                      <SubComponents>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderImagePanel2">
+                                          <Properties>
+                                            <Property name="function" type="java.lang.String" value="koutsopImg"/>
+                                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
+                                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                          </Properties>
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                                        </Container>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel5">
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                                            <Property name="columns" type="int" value="1"/>
+                                            <Property name="rows" type="int" value="2"/>
+                                            <Property name="verticalGap" type="int" value="5"/>
+                                          </Layout>
+                                          <SubComponents>
+                                            <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel2">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Koutsop:"/>
+                                              </Properties>
+                                            </Component>
+                                            <Component class="widgets.label.AdaptiveLabel" name="timeLabel2">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Sent at 12:03 PM on Sunday"/>
+                                              </Properties>
+                                            </Component>
+                                          </SubComponents>
+                                        </Container>
+                                      </SubComponents>
+                                    </Container>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="widgets.panel.AdaptivePanel" name="senderTextPanel2">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="Center"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                                    <Property name="axis" type="int" value="3"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel4">
+                                      <Properties>
+                                        <Property name="text" type="java.lang.String" value="Pws paei eisai kala? Elpizw na eisai kala. Ta leme"/>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                              </SubComponents>
+                            </Container>
+                          </SubComponents>
+                        </Container>
+                        <Container class="widgets.panel.AdaptivePanel" name="conversationMarigiannaPanel1">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="3">
+                                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                          <SubComponents>
+                            <Container class="widgets.panel.AdaptivePanel" name="senderPanel4">
+                              <Properties>
+                                <Property name="name" type="java.lang.String" value="Panel.ChatBox" noResource="true"/>
+                              </Properties>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                              <SubComponents>
+                                <Container class="widgets.panel.AdaptivePanel" name="northPanel3">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="North"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                    <Property name="alignment" type="int" value="0"/>
+                                    <Property name="horizontalGap" type="int" value="0"/>
+                                    <Property name="verticalGap" type="int" value="10"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel6">
+
+                                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                        <Property name="verticalGap" type="int" value="0"/>
+                                      </Layout>
+                                      <SubComponents>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderImagePanel3">
+                                          <Properties>
+                                            <Property name="function" type="java.lang.String" value="marigiannaImg"/>
+                                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="name" type="java.lang.String" value="Panel.Content.MarigiannaImage" noResource="true"/>
+                                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                          </Properties>
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                                        </Container>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel7">
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                                            <Property name="columns" type="int" value="1"/>
+                                            <Property name="rows" type="int" value="2"/>
+                                            <Property name="verticalGap" type="int" value="5"/>
+                                          </Layout>
+                                          <SubComponents>
+                                            <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel3">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Marigianna:"/>
+                                              </Properties>
+                                            </Component>
+                                            <Component class="widgets.label.AdaptiveLabel" name="timeLabel3">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Sent at 12:03 PM on Sunday"/>
+                                              </Properties>
+                                            </Component>
+                                          </SubComponents>
+                                        </Container>
+                                      </SubComponents>
+                                    </Container>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="widgets.panel.AdaptivePanel" name="senderTextPanel3">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="Center"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                                    <Property name="axis" type="int" value="3"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel5">
+                                      <Properties>
+                                        <Property name="text" type="java.lang.String" value="Bariemai thn zwh mou n to 3reis auto lalalalalalalalalalaalalalal"/>
+                                      </Properties>
+                                    </Component>
+                                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel6">
+                                      <Properties>
+                                        <Property name="text" type="java.lang.String" value="Bariemai thn zwh mou n to 3reis auto"/>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                              </SubComponents>
+                            </Container>
+                          </SubComponents>
+                        </Container>
+                        <Container class="widgets.panel.AdaptivePanel" name="conversationMarigiannaPanel2">
+                          <Properties>
+                            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                                <LineBorder roundedCorners="true" thickness="3">
+                                  <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                                </LineBorder>
+                              </Border>
+                            </Property>
+                          </Properties>
+
+                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                          <SubComponents>
+                            <Container class="widgets.panel.AdaptivePanel" name="senderPanel5">
+                              <Properties>
+                                <Property name="name" type="java.lang.String" value="Panel.ChatBox" noResource="true"/>
+                              </Properties>
+
+                              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+                              <SubComponents>
+                                <Container class="widgets.panel.AdaptivePanel" name="northPanel4">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="North"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                    <Property name="alignment" type="int" value="0"/>
+                                    <Property name="horizontalGap" type="int" value="0"/>
+                                    <Property name="verticalGap" type="int" value="10"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel8">
+
+                                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                                        <Property name="verticalGap" type="int" value="0"/>
+                                      </Layout>
+                                      <SubComponents>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderImagePanel4">
+                                          <Properties>
+                                            <Property name="function" type="java.lang.String" value="marigiannaImg"/>
+                                            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                            <Property name="name" type="java.lang.String" value="Panel.Content.MarigiannaImage" noResource="true"/>
+                                            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                                              <Dimension value="[50, 50]"/>
+                                            </Property>
+                                          </Properties>
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout"/>
+                                        </Container>
+                                        <Container class="widgets.panel.AdaptivePanel" name="senderInfoPanel9">
+
+                                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                                            <Property name="columns" type="int" value="1"/>
+                                            <Property name="rows" type="int" value="2"/>
+                                            <Property name="verticalGap" type="int" value="5"/>
+                                          </Layout>
+                                          <SubComponents>
+                                            <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel4">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Marigianna:"/>
+                                              </Properties>
+                                            </Component>
+                                            <Component class="widgets.label.AdaptiveLabel" name="timeLabel4">
+                                              <Properties>
+                                                <Property name="text" type="java.lang.String" value="Sent at 12:03 PM on Sunday"/>
+                                              </Properties>
+                                            </Component>
+                                          </SubComponents>
+                                        </Container>
+                                      </SubComponents>
+                                    </Container>
+                                  </SubComponents>
+                                </Container>
+                                <Container class="widgets.panel.AdaptivePanel" name="senderTextPanel4">
+                                  <Constraints>
+                                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                                      <BorderConstraints direction="Center"/>
+                                    </Constraint>
+                                  </Constraints>
+
+                                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+                                    <Property name="axis" type="int" value="3"/>
+                                  </Layout>
+                                  <SubComponents>
+                                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel7">
+                                      <Properties>
+                                        <Property name="text" type="java.lang.String" value="Bariemai thn zwh mou n to 3reis auto lalalalalalalalalalaalalalal"/>
+                                      </Properties>
+                                    </Component>
+                                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel8">
+                                      <Properties>
+                                        <Property name="text" type="java.lang.String" value="Bariemai thn zwh mou n to 3reis auto"/>
+                                      </Properties>
+                                    </Component>
+                                  </SubComponents>
+                                </Container>
+                              </SubComponents>
+                            </Container>
+                          </SubComponents>
+                        </Container>
+                      </SubComponents>
+                    </Container>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+            <Container class="widgets.panel.AdaptivePanel" name="sendPanel">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout">
+                <Property name="horizontalGap" type="int" value="10"/>
+                <Property name="verticalGap" type="int" value="5"/>
+              </Layout>
+              <SubComponents>
+                <Container class="widgets.panel.AdaptivePanel" name="sendButonPanel">
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="East"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="horizontalGap" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.button.AdaptiveButton" name="sendButton">
+                      <Properties>
+                        <Property name="function" type="java.lang.String" value="ChatButton"/>
+                        <Property name="text" type="java.lang.String" value="Send"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                  <Properties>
+                    <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                      <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                        <LineBorder roundedCorners="true" thickness="2">
+                          <Color PropertyName="color" blue="cc" green="cc" red="cc" type="rgb"/>
+                        </LineBorder>
+                      </Border>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+                      <BorderConstraints direction="Center"/>
+                    </Constraint>
+                  </Constraints>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="widgets.textbox.AdaptiveTextBox" name="adaptiveTextBox2">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+              </SubComponents>
+            </Container>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>

@@ -4,16 +4,14 @@
  */
 
 /*
- * VideoChat.java
+ * Chat.java
  *
- * Created on 26 Νοε 2011, 4:12:05 μμ
+ * Created on 25 Νοε 2011, 11:44:48 πμ
  */
-package assignment2;
+package assignment2.LowVision;
 
 import assignment2.Utility.Utility;
-import java.awt.Dimension;
 import javax.swing.ImageIcon;
-import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
 
@@ -21,49 +19,43 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class VideoChat extends javax.swing.JPanel {
+public class Chat extends javax.swing.JPanel {
 
-    /** Creates new form VideoChat */
-    public VideoChat() {
+    /** Creates new form Chat */
+    public Chat() {
         initComponents();
         
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
+//        int contactImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgHeight"));
+//		int contactImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgWidth"));
+//		int statusImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgHeight"));
+//		int statusImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgWidth"));
+//		
+//		assert	contactImgHeight	!= -1 && 
+//				contactImgWidth		!= -1 && 
+//				statusImgHeight		!= -1 && 
+//				statusImgWidth		!= -1;
+//        
+//        Utility.SetJComponentSize(avatarPanel, contactImgWidth, contactImgHeight);
+//        Utility.SetJComponentSize(statusAvatarPanel, statusImgWidth, statusImgHeight);
         
-        String path = DMSLConnector.getInstance().getClient(false).Evaluate("SendFileButton");
+        String path = DMSLConnector.getInstance().getClient(false).Evaluate("VideoCallButton");
+        videoCallButton.setIcon(new ImageIcon(getClass().getResource(path)));
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("CallButton");
+        callButton.setIcon(new ImageIcon(getClass().getResource(path)));
+        
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("SendFileButton");
         sendFileButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("MuteButton");
-        muteButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("VolumeUpButton");
-        volumeUpButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("VolumeDownButton");
-        volumeDownButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("FullScreenButton");
-        fullScreenButton.setIcon(new ImageIcon(getClass().getResource(path)));
-        
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("SwapButton");
-        swapButton.setIcon(new ImageIcon(getClass().getResource(path)));
         
         path = DMSLConnector.getInstance().getClient(false).Evaluate("AddButton");
         addButton.setIcon(new ImageIcon(getClass().getResource(path)));  
         
         path = DMSLConnector.getInstance().getClient(false).Evaluate("CloseButton");
-        closeButton.setIcon(new ImageIcon(getClass().getResource(path)));        
+        closeButton.setIcon(new ImageIcon(getClass().getResource(path)));
     }
-	
-	public JPanel getButtonsPanel ()
-		{ return buttonsPanel; }
-    
-    public void ShowSwapButton (boolean show) 
-		{ swapButton.setVisible(show); }
-    
-    public void ShowFullScreenButton (boolean show) 
-		{ fullScreenButton.setVisible(show); }    
-
+ 
     /** This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
@@ -73,17 +65,18 @@ public class VideoChat extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        receivePanel = new widgets.panel.AdaptivePanel();
-        buttonsPanel = new widgets.panel.AdaptivePanel();
+        contactPanel = new widgets.panel.AdaptivePanel();
+        statusPanel = new widgets.panel.AdaptivePanel();
+        nameLabel = new widgets.label.AdaptiveLabel();
+        chatButtonsPanel = new widgets.panel.AdaptivePanel();
+        videoCallButton = new widgets.button.AdaptiveButton();
+        callButton = new widgets.button.AdaptiveButton();
         sendFileButton = new widgets.button.AdaptiveButton();
-        muteButton = new widgets.button.AdaptiveButton();
-        volumeUpButton = new widgets.button.AdaptiveButton();
-        volumeDownButton = new widgets.button.AdaptiveButton();
-        fullScreenButton = new widgets.button.AdaptiveButton();
-        swapButton = new widgets.button.AdaptiveButton();
         addButton = new widgets.button.AdaptiveButton();
         closeButton = new widgets.button.AdaptiveButton();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        receivePanel = new widgets.panel.AdaptivePanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         scroolContentPanel = new widgets.panel.AdaptivePanel();
         conversationKoutsopPanel = new widgets.panel.AdaptivePanel();
@@ -139,45 +132,52 @@ public class VideoChat extends javax.swing.JPanel {
         senderTextPanel4 = new widgets.panel.AdaptivePanel();
         adaptiveLabel7 = new widgets.label.AdaptiveLabel();
         adaptiveLabel8 = new widgets.label.AdaptiveLabel();
-        adaptivePanel3 = new widgets.panel.AdaptivePanel();
         sendPanel = new widgets.panel.AdaptivePanel();
         sendButonPanel = new widgets.panel.AdaptivePanel();
         sendButton = new widgets.button.AdaptiveButton();
-        adaptivePanel2 = new widgets.panel.AdaptivePanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        adaptiveTextBox1 = new widgets.textbox.AdaptiveTextBox();
+        adaptiveTextBox2 = new widgets.textbox.AdaptiveTextBox();
 
-        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.PAGE_AXIS));
+        setLayout(new java.awt.BorderLayout(0, 10));
 
-        receivePanel.setLayout(new java.awt.BorderLayout(0, 10));
+        contactPanel.setMaximumSize(new java.awt.Dimension(32767, 100));
+        contactPanel.setMinimumSize(new java.awt.Dimension(125, 100));
+        contactPanel.setLayout(new javax.swing.BoxLayout(contactPanel, javax.swing.BoxLayout.PAGE_AXIS));
+
+        statusPanel.setLayout(new java.awt.BorderLayout());
+
+        nameLabel.setText("Marigianna Skouradakh: Pame xoro?");
+        statusPanel.add(nameLabel, java.awt.BorderLayout.SOUTH);
+
+        contactPanel.add(statusPanel);
+
+        chatButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 10, 5));
+
+        videoCallButton.setFunction("ChatButton");
+        chatButtonsPanel.add(videoCallButton);
+
+        callButton.setFunction("ChatButton");
+        chatButtonsPanel.add(callButton);
 
         sendFileButton.setFunction("ChatButton");
-        buttonsPanel.add(sendFileButton);
-
-        muteButton.setFunction("ChatButton");
-        buttonsPanel.add(muteButton);
-
-        volumeUpButton.setFunction("ChatButton");
-        buttonsPanel.add(volumeUpButton);
-
-        volumeDownButton.setFunction("ChatButton");
-        buttonsPanel.add(volumeDownButton);
-
-        fullScreenButton.setFunction("ChatButton");
-        buttonsPanel.add(fullScreenButton);
-
-        swapButton.setFunction("ChatButton");
-        buttonsPanel.add(swapButton);
+        chatButtonsPanel.add(sendFileButton);
 
         addButton.setFunction("ChatButton");
-        buttonsPanel.add(addButton);
+        chatButtonsPanel.add(addButton);
 
         closeButton.setFunction("ChatButton");
-        buttonsPanel.add(closeButton);
+        chatButtonsPanel.add(closeButton);
 
-        receivePanel.add(buttonsPanel, java.awt.BorderLayout.NORTH);
+        contactPanel.add(chatButtonsPanel);
+
+        add(contactPanel, java.awt.BorderLayout.NORTH);
 
         adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptivePanel2.setLayout(new java.awt.GridLayout(2, 1, 0, 10));
+
+        receivePanel.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
+        receivePanel.setLayout(new javax.swing.BoxLayout(receivePanel, javax.swing.BoxLayout.LINE_AXIS));
 
         scroolContentPanel.setLayout(new java.awt.GridLayout(5, 1, 0, 20));
 
@@ -407,16 +407,11 @@ public class VideoChat extends javax.swing.JPanel {
 
         jScrollPane2.setViewportView(scroolContentPanel);
 
-        adaptivePanel1.add(jScrollPane2);
+        receivePanel.add(jScrollPane2);
 
-        receivePanel.add(adaptivePanel1, java.awt.BorderLayout.CENTER);
+        adaptivePanel2.add(receivePanel);
 
-        add(receivePanel);
-
-        adaptivePanel3.setMaximumSize(new java.awt.Dimension(10, 10));
-        add(adaptivePanel3);
-
-        sendPanel.setLayout(new java.awt.BorderLayout(10, 0));
+        sendPanel.setLayout(new java.awt.BorderLayout(10, 5));
 
         sendButonPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
@@ -424,21 +419,23 @@ public class VideoChat extends javax.swing.JPanel {
         sendButton.setText("Send");
         sendButonPanel.add(sendButton);
 
-        sendPanel.add(sendButonPanel, java.awt.BorderLayout.LINE_END);
+        sendPanel.add(sendButonPanel, java.awt.BorderLayout.EAST);
 
-        adaptivePanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.LINE_AXIS));
+        jScrollPane1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 2, true));
 
-        adaptiveTextBox1.setColumns(20);
-        adaptiveTextBox1.setRows(5);
-        jScrollPane1.setViewportView(adaptiveTextBox1);
+        adaptiveTextBox2.setColumns(20);
+        adaptiveTextBox2.setRows(5);
+        jScrollPane1.setViewportView(adaptiveTextBox2);
 
-        adaptivePanel2.add(jScrollPane1);
+        sendPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
 
-        sendPanel.add(adaptivePanel2, java.awt.BorderLayout.CENTER);
+        adaptivePanel2.add(sendPanel);
 
-        add(sendPanel);
+        adaptivePanel1.add(adaptivePanel2);
+
+        add(adaptivePanel1, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
@@ -450,20 +447,20 @@ public class VideoChat extends javax.swing.JPanel {
     private widgets.label.AdaptiveLabel adaptiveLabel8;
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel2;
-    private widgets.panel.AdaptivePanel adaptivePanel3;
-    private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
+    private widgets.textbox.AdaptiveTextBox adaptiveTextBox2;
     private widgets.button.AdaptiveButton addButton;
-    private widgets.panel.AdaptivePanel buttonsPanel;
+    private widgets.button.AdaptiveButton callButton;
+    private widgets.panel.AdaptivePanel chatButtonsPanel;
     private widgets.button.AdaptiveButton closeButton;
+    private widgets.panel.AdaptivePanel contactPanel;
     private widgets.panel.AdaptivePanel conversationKoutsopPanel;
     private widgets.panel.AdaptivePanel conversationKoutsopPanel1;
     private widgets.panel.AdaptivePanel conversationMarigiannaPanel;
     private widgets.panel.AdaptivePanel conversationMarigiannaPanel1;
     private widgets.panel.AdaptivePanel conversationMarigiannaPanel2;
-    private widgets.button.AdaptiveButton fullScreenButton;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private widgets.button.AdaptiveButton muteButton;
+    private widgets.label.AdaptiveLabel nameLabel;
     private widgets.panel.AdaptivePanel northPanel;
     private widgets.panel.AdaptivePanel northPanel1;
     private widgets.panel.AdaptivePanel northPanel2;
@@ -505,13 +502,12 @@ public class VideoChat extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel senderTextPanel2;
     private widgets.panel.AdaptivePanel senderTextPanel3;
     private widgets.panel.AdaptivePanel senderTextPanel4;
-    private widgets.button.AdaptiveButton swapButton;
+    private widgets.panel.AdaptivePanel statusPanel;
     private widgets.label.AdaptiveLabel timeLabel;
     private widgets.label.AdaptiveLabel timeLabel1;
     private widgets.label.AdaptiveLabel timeLabel2;
     private widgets.label.AdaptiveLabel timeLabel3;
     private widgets.label.AdaptiveLabel timeLabel4;
-    private widgets.button.AdaptiveButton volumeDownButton;
-    private widgets.button.AdaptiveButton volumeUpButton;
+    private widgets.button.AdaptiveButton videoCallButton;
     // End of variables declaration//GEN-END:variables
 }

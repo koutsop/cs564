@@ -33,7 +33,7 @@ public class AdaptableCall extends javax.swing.JPanel {
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("ChatViews");
         System.out.println("Call View:" + pid);
         cl.show(p, pid);
         p.revalidate();
