@@ -161,6 +161,7 @@
     <property key="Button.textShiftOffset" type="integer" value="1"/>
     <state>
 			<imagePainter method="buttonBackground" path="images/ContentButton.png" sourceInsets="10 10 10 10"/>	
+			
     </state>
 	<state value="PRESSED"> 
 	    <imagePainter method="buttonBackground" path="images/ContentButtonPressed.png" sourceInsets="10 10 10 10"/>
