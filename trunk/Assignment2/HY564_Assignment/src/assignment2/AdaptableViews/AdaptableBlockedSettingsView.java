@@ -4,7 +4,7 @@
  */
 
 /*
- * AddaptableBlockedSettingsView.java
+ * AdaptableBlockedSettingsView.java
  *
  * Created on 1 Δεκ 2011, 3:21:43 πμ
  */
@@ -22,14 +22,14 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AddaptableBlockedSettingsView extends javax.swing.JPanel {
+public class AdaptableBlockedSettingsView extends javax.swing.JPanel {
 	private final String commonSettings			= "CommonSettings";
 	private final String lowVision				= "LowVisionSettings";
 
 	JPanel p = new JPanel(new CardLayout());
 	
-	/** Creates new form AddaptableBlockedSettingsView */
-	public AddaptableBlockedSettingsView() {
+	/** Creates new form AdaptableBlockedSettingsView */
+	public AdaptableBlockedSettingsView() {
 		initComponents();
 
 		p.add(new assignment2.NoDisability.BlockedSettingsPanel(), commonSettings);

@@ -19,25 +19,25 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AddaptableAppearanceSettingsView extends javax.swing.JPanel {
+public class AdaptableNotificationsSettingsView extends javax.swing.JPanel {
 	private final String commonSettings			= "CommonSettings";
 	private final String lowVision				= "LowVisionSettings";
 	private final String instabilitySettings	= "InstabilitySettings";
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AddaptableGeneralSettingsView */
-	public AddaptableAppearanceSettingsView() {
+	public AdaptableNotificationsSettingsView() {
 		initComponents();
 		initComponents();
         
-		p.add(new assignment2.NoDisability.AppearanceSettingsPanel(), commonSettings);
-        p.add(new assignment2.LowVision.AppearanceSettingsPanel(), lowVision);
-		p.add(new assignment2.Instability.AppearanceSettingsPanel(), instabilitySettings);
+		p.add(new assignment2.NoDisability.NotificationsSettingsPanel(), commonSettings);
+        p.add(new assignment2.LowVision.NotificationsSettingsPanel(), lowVision);
+		p.add(new assignment2.Instability.NotificationsSettingsPanel(), instabilitySettings);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
         String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
-        System.out.println("Appearance Setings View:" + pid);
+        System.out.println("Notification Settigns View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         

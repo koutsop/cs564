@@ -11,11 +11,11 @@
 package assignment2.NoDisability;
 
 import assignment2.AdaptableViews.AdaptableIMMainView;
-import assignment2.AdaptableViews.AddaptableAppearanceSettingsView;
-import assignment2.AdaptableViews.AddaptableBlockedSettingsView;
-import assignment2.AdaptableViews.AddaptableGeneralSettingsView;
-import assignment2.AdaptableViews.AddaptableHistorySettingsView;
-import assignment2.AdaptableViews.AddaptableNotificationsSettingsView;
+import assignment2.AdaptableViews.AdaptableAppearanceSettingsView;
+import assignment2.AdaptableViews.AdaptableBlockedSettingsView;
+import assignment2.AdaptableViews.AdaptableGeneralSettingsView;
+import assignment2.AdaptableViews.AdaptableHistorySettingsView;
+import assignment2.AdaptableViews.AdaptableNotificationsSettingsView;
 import assignment2.Help;
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -35,7 +35,7 @@ public class SettingsMainView extends javax.swing.JPanel {
 		Adaptation.automaticallyAdapt(this);
 		
 		selecteButton(generalButton);
-		showPanel(new AddaptableGeneralSettingsView());
+		showPanel(new AdaptableGeneralSettingsView());
     }
 	
 	private  void selecteButton(JButton button) {
@@ -197,27 +197,27 @@ private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//G
 
 private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generalButtonActionPerformed
 	selecteButton(generalButton);
-	showPanel(new AddaptableGeneralSettingsView());
+	showPanel(new AdaptableGeneralSettingsView());
 }//GEN-LAST:event_generalButtonActionPerformed
 
 private void historyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyButtonActionPerformed
 	selecteButton(historyButton);
-	showPanel(new AddaptableHistorySettingsView());		
+	showPanel(new AdaptableHistorySettingsView());		
 }//GEN-LAST:event_historyButtonActionPerformed
 
 private void blockedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_blockedButtonActionPerformed
 	selecteButton(blockedButton); 
-	showPanel(new AddaptableBlockedSettingsView());
+	showPanel(new AdaptableBlockedSettingsView());
 }//GEN-LAST:event_blockedButtonActionPerformed
 
 private void notificationsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificationsButtonActionPerformed
 	selecteButton(notificationsButton);
-	showPanel(new AddaptableNotificationsSettingsView());		
+	showPanel(new AdaptableNotificationsSettingsView());		
 }//GEN-LAST:event_notificationsButtonActionPerformed
 
 private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appearanceButtonActionPerformed
 	selecteButton(appearanceButton);
-	showPanel(new AddaptableAppearanceSettingsView());			
+	showPanel(new AdaptableAppearanceSettingsView());			
 }//GEN-LAST:event_appearanceButtonActionPerformed
 
 private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
