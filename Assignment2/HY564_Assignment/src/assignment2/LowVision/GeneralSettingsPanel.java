@@ -60,7 +60,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         northPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         startupCheckBox.setHorizontalAlignment(0);
-        startupCheckBox.setText("Έναρξη εφαρμογής κατά την εκκίνηση του λειτουργικού");
+        startupCheckBox.setText("Έναρξη εφαρμογής κατά την εκκίνηση");
         northPanel.add(startupCheckBox);
 
         adaptivePanel1.add(northPanel, java.awt.BorderLayout.NORTH);
@@ -93,6 +93,8 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptiveLabel3.setText("Μέγεθος: ");
         sizePanel.add(adaptiveLabel3);
+
+        adaptiveSpinner1.setValue(40);
         sizePanel.add(adaptiveSpinner1);
 
         fontsPanel.add(sizePanel);
@@ -101,7 +103,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel1.add(centalPanel, java.awt.BorderLayout.CENTER);
 
-        previewLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 50)); // NOI18N
+        previewLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 40)); // NOI18N
         previewLabel.setText("Έτσι θα φαίνεται το κείμενό σας!");
         southPanel.add(previewLabel);
 

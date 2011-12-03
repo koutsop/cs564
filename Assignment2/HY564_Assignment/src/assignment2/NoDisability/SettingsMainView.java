@@ -12,6 +12,7 @@ package assignment2.NoDisability;
 
 import assignment2.AdaptableViews.AdaptableIMMainView;
 import assignment2.AdaptableViews.AddaptableAppearanceSettingsView;
+import assignment2.AdaptableViews.AddaptableBlockedSettingsView;
 import assignment2.AdaptableViews.AddaptableGeneralSettingsView;
 import assignment2.AdaptableViews.AddaptableHistorySettingsView;
 import assignment2.AdaptableViews.AddaptableNotificationsSettingsView;
@@ -206,12 +207,7 @@ private void historyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN
 
 private void blockedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_blockedButtonActionPerformed
 	selecteButton(blockedButton); 
-	
-	// Instantiate the new screen
-	BlockedSettingsPanel blockedSettings = new BlockedSettingsPanel();
-
-	// Remove the contents of the content panel & add the new screen
-	showPanel(blockedSettings);
+	showPanel(new AddaptableBlockedSettingsView());
 }//GEN-LAST:event_blockedButtonActionPerformed
 
 private void notificationsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificationsButtonActionPerformed
