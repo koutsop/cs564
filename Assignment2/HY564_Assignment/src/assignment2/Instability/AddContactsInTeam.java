@@ -10,6 +10,7 @@
  */
 package assignment2.Instability;
 
+import assignment2.NoDisability.AddContactRequest;
 import assignment2.NoDisability.Groups;
 import assignment2.NoDisability.PagesNavigationButtons;
 import javax.swing.JPanel;
@@ -125,6 +126,11 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel7.add(adaptiveLabel21);
 
         adaptiveButton9.setText("Αφαίρεση");
+        adaptiveButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton9ActionPerformed(evt);
+            }
+        });
         descrPanel7.add(adaptiveButton9);
 
         adaptivePanel13.add(descrPanel7, java.awt.BorderLayout.CENTER);
@@ -197,6 +203,11 @@ public class AddContactsInTeam extends javax.swing.JPanel {
         descrPanel1.add(adaptiveLabel9);
 
         adaptiveButton3.setText("Προσθήκη");
+        adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton3ActionPerformed(evt);
+            }
+        });
         descrPanel1.add(adaptiveButton3);
 
         adaptivePanel7.add(descrPanel1, java.awt.BorderLayout.CENTER);
@@ -257,6 +268,29 @@ private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//G
 	myParent.repaint();
 	myParent.validate();
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
+
+
+private void AddContact () {
+		JPanel myParent = (JPanel)getParent();
+
+		// Instantiate the new screen
+		AddContactRequest r = new AddContactRequest();
+		r.setVisible(true);
+
+		// Remove the contents of the content panel & add the new screen
+		myParent.removeAll();
+		myParent.add(r);
+		myParent.repaint();
+		myParent.validate();		
+	}
+private void adaptiveButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton9ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveButton9ActionPerformed
+
+private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed
+// TODO add your handling code here:
+	AddContact();
+}//GEN-LAST:event_adaptiveButton3ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;

@@ -78,12 +78,20 @@ component "Button.Height" [
 
 	if profile1 then activate "28"
 	else if profile2 then activate "31"
-	else if profile3 then activate "34"
+	else if profile3 then activate "60"
 	else if profile4 then activate "36"
 	else activate "28"
 ]
 component "Button.Width.StdPadding" [ activate "12" ]
 component "Button.Width.ExtraPercPadding" [ activate "30" ]
+
+component VirtualKeyboardButton [
+	activate "Button.VirtualKeyboard"
+]
+component "Button.VirtualKeyboard.Height" [ activate "34" ]
+component "Button.VirtualKeyboard.Width.StdPadding" [ activate "12" ]
+component "Button.VirtualKeyboard.Width.ExtraPercPadding" [ activate "30" ]
+
 
 //*************************
 // Main Menu Button
@@ -92,7 +100,7 @@ component "Button.Width.ExtraPercPadding" [ activate "30" ]
 component "Button.MainNavigation.Width" [ 
 	
 	if profile1 or profile2 then activate "160" //was 150
-	else if profile3 then activate "140"
+	else if profile3 then activate "200"
 	else if profile4 then activate "200"
 	else activate "130"
 
@@ -101,7 +109,7 @@ component "Button.MainNavigation.Height" [
 
 	if profile1 then activate "50" //was 50
 	else if profile2 then activate "55"
-	else if profile3 then activate "60"
+	else if profile3 then activate "80"
 	else if profile4 then activate "100"
 	else activate "50"
 
@@ -115,7 +123,7 @@ component "Button.SecNavigation.Width" [
 	
 	if profile1 then activate "120"	//was 100
 	else if profile2 then activate "110"
-	else if profile3 then activate "120"
+	else if profile3 then activate "180"
 	else if profile4 then activate "220"
 	else activate "100"
 
@@ -124,7 +132,7 @@ component "Button.SecNavigation.Height" [
 
 	if profile1 then activate "45" //was 41
 	else if profile2 then activate "44"
-	else if profile3 then activate "47"
+	else if profile3 then activate "70"
 	else if profile4 then activate "80"
 	else activate "41"
 

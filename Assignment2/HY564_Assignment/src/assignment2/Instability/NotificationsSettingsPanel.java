@@ -103,6 +103,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel1.setText("Ειδοποιήσεις Chat");
         adaptivePanel4.add(adaptiveLabel1);
 
+        adaptiveButton7.setFunction("VirtualKeyboardButton");
         adaptiveButton7.setText("Αναπαραγωγή ήχου");
         adaptiveButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,6 +112,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel4.add(adaptiveButton7);
 
+        adaptiveButton8.setFunction("VirtualKeyboardButton");
         adaptiveButton8.setText("Προβολή ειδοποιήσεων");
         adaptiveButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,6 +133,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel2.setText("Ειδοποιήσεις Κλήσης");
         adaptivePanel16.add(adaptiveLabel2);
 
+        adaptiveButton5.setFunction("VirtualKeyboardButton");
         adaptiveButton5.setText("Αναπαραγωγή ήχου");
         adaptiveButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,6 +142,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel16.add(adaptiveButton5);
 
+        adaptiveButton6.setFunction("VirtualKeyboardButton");
         adaptiveButton6.setText("Προβολή ειδοποιήσεων");
         adaptiveButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,6 +163,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel3.setText("Ειδοποιήσεις Κλήσης");
         adaptivePanel18.add(adaptiveLabel3);
 
+        adaptiveButton3.setFunction("VirtualKeyboardButton");
         adaptiveButton3.setText("Αναπαραγωγή ήχου");
         adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,6 +172,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel18.add(adaptiveButton3);
 
+        adaptiveButton4.setFunction("VirtualKeyboardButton");
         adaptiveButton4.setText("Προβολή ειδοποιήσεων");
         adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -187,6 +193,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel4.setText("Ειδοποιήσεις Εισόδου Επαφών");
         adaptivePanel20.add(adaptiveLabel4);
 
+        adaptiveButton2.setFunction("VirtualKeyboardButton");
         adaptiveButton2.setText("Ενεργοποίηση όλων των ειδοποιήσεων");
         adaptiveButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -205,6 +212,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         noAllPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 10));
 
+        adaptiveButton1.setFunction("VirtualKeyboardButton");
         adaptiveButton1.setText("Προβολή ειδοποιήσεων");
         adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

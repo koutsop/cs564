@@ -66,6 +66,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton7">
                       <Properties>
+                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
                         <Property name="text" type="java.lang.String" value="&#x391;&#x3bd;&#x3b1;&#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3b3;&#x3c9;&#x3b3;&#x3ae; &#x3ae;&#x3c7;&#x3bf;&#x3c5;"/>
                       </Properties>
                       <Events>
@@ -74,6 +75,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton8">
                       <Properties>
+                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
                         <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
                       </Properties>
                       <Events>
@@ -110,6 +112,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
                       <Properties>
+                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
                         <Property name="text" type="java.lang.String" value="&#x391;&#x3bd;&#x3b1;&#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3b3;&#x3c9;&#x3b3;&#x3ae; &#x3ae;&#x3c7;&#x3bf;&#x3c5;"/>
                       </Properties>
                       <Events>
@@ -118,6 +121,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton6">
                       <Properties>
+                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
                         <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
                       </Properties>
                       <Events>
@@ -154,6 +158,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
                       <Properties>
+                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
                         <Property name="text" type="java.lang.String" value="&#x391;&#x3bd;&#x3b1;&#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3b3;&#x3c9;&#x3b3;&#x3ae; &#x3ae;&#x3c7;&#x3bf;&#x3c5;"/>
                       </Properties>
                       <Events>
@@ -162,6 +167,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
                       <Properties>
+                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
                         <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
                       </Properties>
                       <Events>
@@ -198,6 +204,7 @@
                     </Component>
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton2">
                       <Properties>
+                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
                         <Property name="text" type="java.lang.String" value="&#x395;&#x3bd;&#x3b5;&#x3c1;&#x3b3;&#x3bf;&#x3c0;&#x3bf;&#x3af;&#x3b7;&#x3c3;&#x3b7; &#x3cc;&#x3bb;&#x3c9;&#x3bd; &#x3c4;&#x3c9;&#x3bd; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
                       </Properties>
                       <Events>
@@ -222,6 +229,7 @@
       <SubComponents>
         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton1">
           <Properties>
+            <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
             <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
           </Properties>
           <Events>

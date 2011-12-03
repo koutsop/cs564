@@ -150,7 +150,9 @@
 	</state>
   </style>
   <bind style="ContentButton" type="name" key="Button.Content.*"/>
+  <bind style="ContentButton" type="name" key="Button.VirtualKeyboard.*"/>
   <bind style="ContentButton" type="name" key="Button.Chat.*"/>
+  
     
 	<style id="SpinnerArrowButton">
 	<property key="Button.textShiftOffset" type="integer" value="1"/>
