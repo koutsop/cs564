@@ -87,7 +87,7 @@ public class ChatMainView extends javax.swing.JPanel {
         });
         tabPanel.add(contactsButton);
 
-        myProfileButton.setText("To προφίλ μου");
+        myProfileButton.setText("Προφίλ");
         myProfileButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 myProfileButtonActionPerformed(evt);
@@ -95,7 +95,7 @@ public class ChatMainView extends javax.swing.JPanel {
         });
         tabPanel.add(myProfileButton);
 
-        chatButton.setText("Επικοινωνία: Koutsop");
+        chatButton.setText("Επικοινωνία");
         chatButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chatButtonActionPerformed(evt);
@@ -103,7 +103,7 @@ public class ChatMainView extends javax.swing.JPanel {
         });
         tabPanel.add(chatButton);
 
-        videoCallButton.setText("Κλήση Βίντεο: koutsop");
+        videoCallButton.setText("Βίντεο");
         videoCallButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 videoCallButtonActionPerformed(evt);
@@ -111,7 +111,7 @@ public class ChatMainView extends javax.swing.JPanel {
         });
         tabPanel.add(videoCallButton);
 
-        callButton.setText("Κλήση: koutsop");
+        callButton.setText("Κλήση");
         callButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 callButtonActionPerformed(evt);

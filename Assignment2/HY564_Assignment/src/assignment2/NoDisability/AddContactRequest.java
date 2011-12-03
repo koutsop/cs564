@@ -44,7 +44,6 @@ public class AddContactRequest extends javax.swing.JPanel {
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptivePanel7 = new widgets.panel.AdaptivePanel();
-        adaptivePanel8 = new widgets.panel.AdaptivePanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         adaptiveTextBox1 = new widgets.textbox.AdaptiveTextBox();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
@@ -54,16 +53,15 @@ public class AddContactRequest extends javax.swing.JPanel {
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptiveButton3 = new widgets.button.AdaptiveButton();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
+        adaptivePanel8 = new widgets.panel.AdaptivePanel();
 
         setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         contentPanel.setLayout(new java.awt.BorderLayout(10, 20));
 
-        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 14));
         adaptiveLabel1.setText("Προσθήκη του χρήστη : ");
         topPanel.add(adaptiveLabel1);
 
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 3, 12));
         adaptiveLabel2.setText("Κουτσόπουλος Νικόλαος");
         topPanel.add(adaptiveLabel2);
 
@@ -102,7 +100,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel4Layout.setVerticalGroup(
             adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 107, Short.MAX_VALUE)
+            .addGap(0, 108, Short.MAX_VALUE)
         );
 
         adaptivePanel3.add(adaptivePanel4);
@@ -118,23 +116,10 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel7Layout.setVerticalGroup(
             adaptivePanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 107, Short.MAX_VALUE)
+            .addGap(0, 108, Short.MAX_VALUE)
         );
 
         adaptivePanel3.add(adaptivePanel7);
-
-        javax.swing.GroupLayout adaptivePanel8Layout = new javax.swing.GroupLayout(adaptivePanel8);
-        adaptivePanel8.setLayout(adaptivePanel8Layout);
-        adaptivePanel8Layout.setHorizontalGroup(
-            adaptivePanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        adaptivePanel8Layout.setVerticalGroup(
-            adaptivePanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 107, Short.MAX_VALUE)
-        );
-
-        adaptivePanel3.add(adaptivePanel8);
 
         adaptivePanel1.add(adaptivePanel3, java.awt.BorderLayout.WEST);
 
@@ -163,7 +148,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel9Layout.setVerticalGroup(
             adaptivePanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 107, Short.MAX_VALUE)
+            .addGap(0, 108, Short.MAX_VALUE)
         );
 
         adaptivePanel2.add(adaptivePanel9);
@@ -179,7 +164,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel10Layout.setVerticalGroup(
             adaptivePanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 107, Short.MAX_VALUE)
+            .addGap(0, 108, Short.MAX_VALUE)
         );
 
         adaptivePanel2.add(adaptivePanel10);
@@ -192,7 +177,7 @@ public class AddContactRequest extends javax.swing.JPanel {
         );
         adaptivePanel11Layout.setVerticalGroup(
             adaptivePanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 107, Short.MAX_VALUE)
+            .addGap(0, 108, Short.MAX_VALUE)
         );
 
         adaptivePanel2.add(adaptivePanel11);
@@ -216,6 +201,19 @@ public class AddContactRequest extends javax.swing.JPanel {
         adaptivePanel5.add(adaptiveButton4);
 
         adaptivePanel1.add(adaptivePanel5, java.awt.BorderLayout.SOUTH);
+
+        javax.swing.GroupLayout adaptivePanel8Layout = new javax.swing.GroupLayout(adaptivePanel8);
+        adaptivePanel8.setLayout(adaptivePanel8Layout);
+        adaptivePanel8Layout.setHorizontalGroup(
+            adaptivePanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 260, Short.MAX_VALUE)
+        );
+        adaptivePanel8Layout.setVerticalGroup(
+            adaptivePanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 324, Short.MAX_VALUE)
+        );
+
+        adaptivePanel1.add(adaptivePanel8, java.awt.BorderLayout.CENTER);
 
         centerPanel.add(adaptivePanel1);
 
