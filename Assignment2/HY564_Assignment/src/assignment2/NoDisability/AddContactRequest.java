@@ -10,6 +10,7 @@
  */
 package assignment2.NoDisability;
 
+import assignment2.AdaptableViews.AdaptableAddContactResults;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 
@@ -240,7 +241,7 @@ private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//G
 private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
 	JPanel myParent = (JPanel)getParent();
 	
-	AddContactResults r = new AddContactResults();
+	AdaptableAddContactResults r = new AdaptableAddContactResults();
 	r.setVisible(true);
 
 	// Remove the contents of the content panel & add the new screen

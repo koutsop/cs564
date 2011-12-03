@@ -260,7 +260,7 @@
 	<style id="ListStyle">
 		<insets top="5" left="8" bottom="5" right="8"/>
 		<property key="List.rendererUseUIBorder" type="boolean" value="false"/>
-		<property key="List.cellHeight" type="integer" value="21"/>
+		<property key="List.cellHeight" type="integer" value="32"/>
 		<property key="List.rendererUseListColors" type="boolean" value="true"/>
 		<imagePainter method="ListBorder" path="images/TextBoxBorder.png" sourceInsets="5 5 5 5" paintCenter="false"/>
 		

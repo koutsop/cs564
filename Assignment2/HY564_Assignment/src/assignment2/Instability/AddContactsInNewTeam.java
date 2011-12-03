@@ -75,7 +75,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
 
         adaptivePanel3.setLayout(new javax.swing.BoxLayout(adaptivePanel3, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 1, 14));
         adaptiveLabel2.setText("Επιλέξτε τις επαφές που θέλετε να προσθέσετε ή να αφαιρέσετε από την ομάδα");
         adaptivePanel3.add(adaptiveLabel2);
 
@@ -98,9 +97,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         adaptivePanel2.setLayout(new java.awt.GridLayout(3, 3, 20, 20));
 
         adaptivePanel8.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(0, 0, 153)));
-        adaptivePanel8.setMaximumSize(new java.awt.Dimension(150, 100));
-        adaptivePanel8.setMinimumSize(new java.awt.Dimension(150, 100));
-        adaptivePanel8.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel8.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel2.setFunction("koutsopImg");
@@ -126,7 +122,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         descrPanel2.setLayout(new javax.swing.BoxLayout(descrPanel2, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel11.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel11.setText("Νικόλαος Κουτσόπουλος");
         descrPanel2.add(adaptiveLabel11);
 
@@ -138,9 +133,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         adaptivePanel2.add(adaptivePanel8);
 
         adaptivePanel7.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(0, 0, 153)));
-        adaptivePanel7.setMaximumSize(new java.awt.Dimension(150, 100));
-        adaptivePanel7.setMinimumSize(new java.awt.Dimension(150, 100));
-        adaptivePanel7.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel7.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel1.setFunction("koutsopImg");
@@ -166,7 +158,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         descrPanel1.setLayout(new javax.swing.BoxLayout(descrPanel1, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel9.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel9.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel9.setText("Νικόλαος Κουτσόπουλος");
         descrPanel1.add(adaptiveLabel9);
 
@@ -178,9 +169,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         adaptivePanel2.add(adaptivePanel7);
 
         adaptivePanel9.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(0, 0, 153)));
-        adaptivePanel9.setMaximumSize(new java.awt.Dimension(150, 100));
-        adaptivePanel9.setMinimumSize(new java.awt.Dimension(150, 100));
-        adaptivePanel9.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel9.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel3.setFunction("koutsopImg");
@@ -206,7 +194,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         descrPanel3.setLayout(new javax.swing.BoxLayout(descrPanel3, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel13.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel13.setText("Νικόλαος Κουτσόπουλος");
         descrPanel3.add(adaptiveLabel13);
 
@@ -218,9 +205,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         adaptivePanel2.add(adaptivePanel9);
 
         adaptivePanel10.setBorder(javax.swing.BorderFactory.createMatteBorder(5, 5, 5, 5, new java.awt.Color(0, 0, 153)));
-        adaptivePanel10.setMaximumSize(new java.awt.Dimension(150, 100));
-        adaptivePanel10.setMinimumSize(new java.awt.Dimension(150, 100));
-        adaptivePanel10.setPreferredSize(new java.awt.Dimension(150, 100));
         adaptivePanel10.setLayout(new java.awt.BorderLayout(10, 10));
 
         picturePanel4.setFunction("koutsopImg");
@@ -246,7 +230,6 @@ public class AddContactsInNewTeam extends javax.swing.JPanel {
         descrPanel4.setLayout(new javax.swing.BoxLayout(descrPanel4, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel12.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel12.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel12.setText("Νικόλαος Κουτσόπουλος");
         descrPanel4.add(adaptiveLabel12);
 
