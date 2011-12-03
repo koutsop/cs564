@@ -10,7 +10,7 @@
  */
 package assignment2.Spots;
 
-import Utility.Utility;
+import assignment2.Utility.Utility;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import utilities.Adaptation;

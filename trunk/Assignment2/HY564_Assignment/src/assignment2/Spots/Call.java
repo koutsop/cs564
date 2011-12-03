@@ -10,7 +10,7 @@
  */
 package assignment2.Spots;
 
-import Utility.Utility;
+import assignment2.Utility.Utility;
 import assignment2.VideoChat;
 import java.awt.Dimension;
 import java.awt.FlowLayout;

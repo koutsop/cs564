@@ -4,11 +4,11 @@
  */
 
 /*
- * AddaptableGeneralSettingsView.java
+ * AdaptableMyProfile.java
  *
- * Created on 3 Δεκ 2011, 10:30:13 πμ
+ * Created on 29 Νοε 2011, 8:46:54 πμ
  */
-package AdaptableWindows;
+package assignment2.AdaptableViews;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
@@ -19,31 +19,30 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AddaptableGeneralSettingsView extends javax.swing.JPanel {
-	private final String commonSettings			= "CommonSettings";
-	private final String lowVision				= "LowVision";
-	private final String instabilitySettings	= "InstabilitySettings";
+public class AdaptableMyProfile extends javax.swing.JPanel {
+	final static String viewCommonProfile		= "CommonProfile";
+    final static String viewSpotProfile			= "SpotProfile";	
+	final static String viewLowVisionProfile	= "LowVisionProfile";
 	JPanel p = new JPanel(new CardLayout());
 	
-	/** Creates new form AddaptableGeneralSettingsView */
-	public AddaptableGeneralSettingsView() {
-		initComponents();
-		initComponents();
-        
-		p.add(new assignment2.NoDisability.GeneralSettingsPanel(), commonSettings);
-        //p.add(instabilitySettingsView, lowVision);
-		p.add(new assignment2.Instability.GeneralSettingsPanel(), instabilitySettings);
+	/** Creates new form AdaptableMyProfile */
+	public AdaptableMyProfile() {
+        initComponents();
+		
+        p.add(new assignment2.MyProfile(), viewCommonProfile);
+        p.add(new assignment2.Spots.MyProfile(), viewSpotProfile);
+		p.add(new assignment2.LowVision.MyProfile(), viewLowVisionProfile);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
-        System.out.println("General Setings View:" + pid);
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("AdaptableMyProfile");
+        System.out.println("Profile View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
-        this.updateUI();		
+        this.updateUI();  
 	}
 
 	/** This method is called from within the constructor to

@@ -10,7 +10,7 @@
  */
 package assignment2;
 
-import AdaptableWindows.AdaptableIMMainView;
+import assignment2.AdaptableViews.AdaptableIMMainView;
 import javax.swing.ImageIcon;
 import pc.MainWindowPC;
 import utilities.Adaptation;

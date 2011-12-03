@@ -4,43 +4,47 @@
  */
 
 /*
- * AdaptableVideoCall.java
+ * AddaptableBlockedSettingsView.java
  *
- * Created on 29 Νοε 2011, 12:53:38 πμ
+ * Created on 1 Δεκ 2011, 3:21:43 πμ
  */
-package AdaptableWindows;
+package assignment2.AdaptableViews;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
 
+
+
+
 /**
  *
  * @author koutsop
  */
-public class AdaptableVideoCall extends javax.swing.JPanel {
-	final static String viewCommonChat	= "Chat";
-    final static String viewSpotChat	= "SpotChat";	
+public class AddaptableBlockedSettingsView extends javax.swing.JPanel {
+	private final String commonSettings			= "CommonSettings";
+	private final String lowVision				= "LowVision";
+
 	JPanel p = new JPanel(new CardLayout());
 	
-	/** Creates new form AdaptableVideoCall */
-	public AdaptableVideoCall() {
-        initComponents();
-        
-        p.add(new assignment2.VideoCall(), viewCommonChat);
-        p.add(new assignment2.Spots.VideoCall(), viewSpotChat);
-        this.add(p);
+	/** Creates new form AddaptableBlockedSettingsView */
+	public AddaptableBlockedSettingsView() {
+		initComponents();
 
-        CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
-        System.out.println("Video Call View:" + pid);
-        cl.show(p, pid);
-        p.revalidate();
-        
-        Adaptation.automaticallySetRuntime(this);
-        Adaptation.automaticallyAdapt(this);
-        this.updateUI();  
+		//p.add(assignment2.NoDisability.BlockedSettingsPanel(), commonSettings);
+		//p.add(assignment2.LowVision.BlockedSettingsPanel, lowVision);
+		this.add(p);
+
+		CardLayout cl = (CardLayout)(p.getLayout());
+		String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
+		System.out.println("Setings View:" + pid);
+		cl.show(p, pid);
+		p.revalidate();
+
+		Adaptation.automaticallySetRuntime(this);
+		Adaptation.automaticallyAdapt(this);
+		this.updateUI();
 	}
 
 	/** This method is called from within the constructor to
