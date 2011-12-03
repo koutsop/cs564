@@ -11,7 +11,10 @@
 package assignment2.NoDisability;
 
 import AdaptableWindows.AdaptableIMMainView;
-import AdaptableWindows.AddaptableSettingsView;
+import AdaptableWindows.AddaptableAppearanceSettingsView;
+import AdaptableWindows.AddaptableGeneralSettingsView;
+import AdaptableWindows.AddaptableHistorySettingsView;
+import AdaptableWindows.AddaptableNotificationsSettingsView;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import pc.MainWindowPC;
@@ -29,11 +32,8 @@ public class SettingsMainView extends javax.swing.JPanel {
         Adaptation.automaticallySetRuntime(this);
 		Adaptation.automaticallyAdapt(this);
         
-		newActionPerformed(
-			generalButton,
-			new assignment2.NoDisability.GeneralSettingsPanel(),
-			new assignment2.Instability.GeneralSettingsPanel()			
-		);
+		selecteButton(generalButton);
+		showPanel(new AddaptableGeneralSettingsView());
     }
 	
 	private  void selecteButton(JButton button) {
@@ -52,24 +52,6 @@ public class SettingsMainView extends javax.swing.JPanel {
 		contentPanel.add(p);
 		contentPanel.repaint();
 		contentPanel.validate();		
-	}
-	
-	private void newActionPerformed (
-					JButton selectedButton, 
-					JPanel commonSetings, 
-					JPanel instabilitySetings
-	) {
-		// Set the appropriate tab as selected
-		selecteButton(selectedButton);
-
-		// Instantiate the new screen
-		AddaptableSettingsView settings = new AddaptableSettingsView(
-												commonSetings,
-												instabilitySetings
-										);
-
-		// Remove the contents of the content panel & add the new screen
-		showPanel(settings);		
 	}
 	
     /** This method is called from within the constructor to
@@ -231,19 +213,13 @@ private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//G
 }//GEN-LAST:event_adaptiveButton5ActionPerformed
 
 private void generalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generalButtonActionPerformed
-	newActionPerformed (
-		generalButton,
-		new assignment2.NoDisability.GeneralSettingsPanel(),
-		new assignment2.Instability.GeneralSettingsPanel()
-	);
+	selecteButton(generalButton);
+	showPanel(new AddaptableGeneralSettingsView());
 }//GEN-LAST:event_generalButtonActionPerformed
 
 private void historyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_historyButtonActionPerformed
-	newActionPerformed (
-		historyButton,
-		new assignment2.NoDisability.HistorySettingsPanel(),
-		new assignment2.Instability.HistorySettingsPanel()
-	);	
+	selecteButton(historyButton);
+	showPanel(new AddaptableHistorySettingsView());		
 }//GEN-LAST:event_historyButtonActionPerformed
 
 private void blockedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_blockedButtonActionPerformed
@@ -257,19 +233,13 @@ private void blockedButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN
 }//GEN-LAST:event_blockedButtonActionPerformed
 
 private void notificationsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_notificationsButtonActionPerformed
-	newActionPerformed (
-		notificationsButton,
-		new assignment2.NoDisability.NotificationsSettingsPanel(),
-		new assignment2.Instability.NotificationsSettingsPanel()
-	);	
+	selecteButton(notificationsButton);
+	showPanel(new AddaptableNotificationsSettingsView());		
 }//GEN-LAST:event_notificationsButtonActionPerformed
 
 private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_appearanceButtonActionPerformed
-	newActionPerformed (
-		appearanceButton,
-		new assignment2.NoDisability.AppearanceSettingsPanel(),
-		new assignment2.Instability.AppearanceSettingsPanel()
-	);		
+	selecteButton(appearanceButton);
+	showPanel(new AddaptableAppearanceSettingsView());			
 }//GEN-LAST:event_appearanceButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
