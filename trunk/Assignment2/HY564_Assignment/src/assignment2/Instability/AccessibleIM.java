@@ -215,7 +215,7 @@ public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInte
         adaptiveButton20.setText("O");
         keyboardPanel.add(adaptiveButton20);
 
-        adaptiveButton21.setFunction("VirtualKeyboardButtonull");
+        adaptiveButton21.setFunction("VirtualKeyboardButton");
         adaptiveButton21.setText("P");
         keyboardPanel.add(adaptiveButton21);
 

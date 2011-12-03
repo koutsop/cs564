@@ -32,7 +32,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 		
 		iconPath = DMSLConnector.getInstance().getClient(false).Evaluate("AcceptanceButton");
 		adaptiveButton1.setIcon(new ImageIcon(getClass().getResource(iconPath)));
-		adaptiveButton13.setIcon(new ImageIcon(getClass().getResource(iconPath)));
+		//adaptiveButton13.setIcon(new ImageIcon(getClass().getResource(iconPath)));
 		showFontButtonIcon(adaptiveButton3);
 		showStyleButtonIcon(adaptiveButton9);
 	}
@@ -69,8 +69,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         centerPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptiveButton1 = new widgets.button.AdaptiveButton();
-        adaptivePanel15 = new widgets.panel.AdaptivePanel();
-        adaptiveButton13 = new widgets.button.AdaptiveButton();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptivePanel9 = new widgets.panel.AdaptivePanel();
@@ -126,8 +124,9 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         centerPanel.setPreferredSize(new java.awt.Dimension(943, 300));
         centerPanel.setLayout(new java.awt.BorderLayout(0, 30));
 
-        adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.PAGE_AXIS));
+        adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
+        adaptiveButton1.setFunction("VirtualKeyboardButton");
         adaptiveButton1.setHorizontalAlignment(2);
         adaptiveButton1.setText("Έναρξη εφαρμογής κατά την εκκίνηση του λειτουργικού");
         adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -136,32 +135,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
             }
         });
         adaptivePanel1.add(adaptiveButton1);
-
-        adaptivePanel15.setMaximumSize(new java.awt.Dimension(1, 15));
-        adaptivePanel15.setMinimumSize(new java.awt.Dimension(1, 15));
-        adaptivePanel15.setPreferredSize(new java.awt.Dimension(1, 15));
-
-        javax.swing.GroupLayout adaptivePanel15Layout = new javax.swing.GroupLayout(adaptivePanel15);
-        adaptivePanel15.setLayout(adaptivePanel15Layout);
-        adaptivePanel15Layout.setHorizontalGroup(
-            adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1, Short.MAX_VALUE)
-        );
-        adaptivePanel15Layout.setVerticalGroup(
-            adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 15, Short.MAX_VALUE)
-        );
-
-        adaptivePanel1.add(adaptivePanel15);
-
-        adaptiveButton13.setHorizontalAlignment(2);
-        adaptiveButton13.setText("Emafanish tou malaka");
-        adaptiveButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton13ActionPerformed(evt);
-            }
-        });
-        adaptivePanel1.add(adaptiveButton13);
 
         centerPanel.add(adaptivePanel1, java.awt.BorderLayout.NORTH);
 
@@ -178,8 +151,9 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
-        adaptivePanel11.setLayout(new java.awt.GridLayout(6, 1, 0, 15));
+        adaptivePanel11.setLayout(new java.awt.GridLayout(6, 1, 0, 5));
 
+        adaptiveButton3.setFunction("VirtualKeyboardButton");
         adaptiveButton3.setHorizontalAlignment(2);
         adaptiveButton3.setText("Arial");
         adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -189,6 +163,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel11.add(adaptiveButton3);
 
+        adaptiveButton4.setFunction("VirtualKeyboardButton");
         adaptiveButton4.setHorizontalAlignment(2);
         adaptiveButton4.setText("Comic Sans MS");
         adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -198,6 +173,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel11.add(adaptiveButton4);
 
+        adaptiveButton5.setFunction("VirtualKeyboardButton");
         adaptiveButton5.setHorizontalAlignment(2);
         adaptiveButton5.setText("Dialog");
         adaptiveButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -207,6 +183,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel11.add(adaptiveButton5);
 
+        adaptiveButton6.setFunction("VirtualKeyboardButton");
         adaptiveButton6.setHorizontalAlignment(2);
         adaptiveButton6.setText("Magneto");
         adaptiveButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -216,6 +193,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel11.add(adaptiveButton6);
 
+        adaptiveButton7.setFunction("VirtualKeyboardButton");
         adaptiveButton7.setHorizontalAlignment(2);
         adaptiveButton7.setText("Papyrus");
         adaptiveButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -225,6 +203,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel11.add(adaptiveButton7);
 
+        adaptiveButton8.setFunction("VirtualKeyboardButton");
         adaptiveButton8.setHorizontalAlignment(2);
         adaptiveButton8.setText("Times New Roman");
         adaptiveButton8.addActionListener(new java.awt.event.ActionListener() {
@@ -253,6 +232,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel14.setLayout(new java.awt.GridLayout(4, 1, 0, 10));
 
+        adaptiveButton9.setFunction("VirtualKeyboardButton");
         adaptiveButton9.setHorizontalAlignment(2);
         adaptiveButton9.setText("Plain");
         adaptiveButton9.addActionListener(new java.awt.event.ActionListener() {
@@ -262,6 +242,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel14.add(adaptiveButton9);
 
+        adaptiveButton10.setFunction("VirtualKeyboardButton");
         adaptiveButton10.setHorizontalAlignment(2);
         adaptiveButton10.setText("Bold");
         adaptiveButton10.addActionListener(new java.awt.event.ActionListener() {
@@ -271,6 +252,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel14.add(adaptiveButton10);
 
+        adaptiveButton11.setFunction("VirtualKeyboardButton");
         adaptiveButton11.setHorizontalAlignment(2);
         adaptiveButton11.setText("Italic");
         adaptiveButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -280,6 +262,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel14.add(adaptiveButton11);
 
+        adaptiveButton12.setFunction("VirtualKeyboardButton");
         adaptiveButton12.setHorizontalAlignment(2);
         adaptiveButton12.setText("Bold Italic");
         adaptiveButton12.addActionListener(new java.awt.event.ActionListener() {
@@ -311,6 +294,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptiveTextField1.setText("1");
         adaptivePanel16.add(adaptiveTextField1);
 
+        adaptiveButton2.setFunction("VirtualKeyboardButton");
         adaptiveButton2.setText("Καταχώτηση");
         adaptivePanel16.add(adaptiveButton2);
 
@@ -378,10 +362,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 		showFontButtonIcon(adaptiveButton7);
 	}//GEN-LAST:event_adaptiveButton7ActionPerformed
 
-	private void adaptiveButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton8ActionPerformed
-		showFontButtonIcon(adaptiveButton8);
-	}//GEN-LAST:event_adaptiveButton8ActionPerformed
-
 	private void adaptiveButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton9ActionPerformed
 		showStyleButtonIcon(adaptiveButton9);
 	}//GEN-LAST:event_adaptiveButton9ActionPerformed
@@ -398,20 +378,15 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 		showStyleButtonIcon(adaptiveButton12);
 	}//GEN-LAST:event_adaptiveButton12ActionPerformed
 
-	private void adaptiveButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton13ActionPerformed
-		if (showStartAutomaticllyButtonIcon1)
-			adaptiveButton13.setIcon(null);
-		else
-			adaptiveButton13.setIcon(new ImageIcon(getClass().getResource(iconPath)));
-		showStartAutomaticllyButtonIcon1 = !showStartAutomaticllyButtonIcon1;
-	}//GEN-LAST:event_adaptiveButton13ActionPerformed
+private void adaptiveButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton8ActionPerformed
+		showFontButtonIcon(adaptiveButton8);
+}//GEN-LAST:event_adaptiveButton8ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton10;
     private widgets.button.AdaptiveButton adaptiveButton11;
     private widgets.button.AdaptiveButton adaptiveButton12;
-    private widgets.button.AdaptiveButton adaptiveButton13;
     private widgets.button.AdaptiveButton adaptiveButton2;
     private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.button.AdaptiveButton adaptiveButton4;
@@ -429,7 +404,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel12;
     private widgets.panel.AdaptivePanel adaptivePanel13;
     private widgets.panel.AdaptivePanel adaptivePanel14;
-    private widgets.panel.AdaptivePanel adaptivePanel15;
     private widgets.panel.AdaptivePanel adaptivePanel16;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;

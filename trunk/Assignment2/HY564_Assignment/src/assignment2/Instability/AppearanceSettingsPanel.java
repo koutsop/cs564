@@ -101,6 +101,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel3.setLayout(new java.awt.GridLayout(3, 2, 15, 15));
 
+        adaptiveButton1.setFunction("VirtualKeyboardButton");
         adaptiveButton1.setHorizontalAlignment(2);
         adaptiveButton1.setText("Classic");
         adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -110,6 +111,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton1);
 
+        adaptiveButton2.setFunction("VirtualKeyboardButton");
         adaptiveButton2.setHorizontalAlignment(2);
         adaptiveButton2.setText("Classic Picture");
         adaptiveButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -119,6 +121,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton2);
 
+        adaptiveButton3.setFunction("VirtualKeyboardButton");
         adaptiveButton3.setHorizontalAlignment(2);
         adaptiveButton3.setText("Bubble");
         adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -128,6 +131,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton3);
 
+        adaptiveButton4.setFunction("VirtualKeyboardButton");
         adaptiveButton4.setHorizontalAlignment(2);
         adaptiveButton4.setText("Bubble Picture");
         adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -137,6 +141,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton4);
 
+        adaptiveButton5.setFunction("VirtualKeyboardButton");
         adaptiveButton5.setHorizontalAlignment(2);
         adaptiveButton5.setText("Ping Pong");
         adaptiveButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -146,6 +151,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         });
         adaptivePanel3.add(adaptiveButton5);
 
+        adaptiveButton6.setFunction("VirtualKeyboardButton");
         adaptiveButton6.setHorizontalAlignment(2);
         adaptiveButton6.setText("Ping Pong Picture");
         adaptiveButton6.addActionListener(new java.awt.event.ActionListener() {
@@ -196,7 +202,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         southPanel.setLayout(southPanelLayout);
         southPanelLayout.setHorizontalGroup(
             southPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 586, Short.MAX_VALUE)
+            .addGap(0, 618, Short.MAX_VALUE)
         );
         southPanelLayout.setVerticalGroup(
             southPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

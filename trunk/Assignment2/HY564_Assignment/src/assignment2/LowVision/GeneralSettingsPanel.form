@@ -46,14 +46,42 @@
             </Constraint>
           </Constraints>
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-            <Property name="alignment" type="int" value="0"/>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+            <Property name="axis" type="int" value="3"/>
           </Layout>
           <SubComponents>
             <Component class="widgets.checkbox.AdaptiveCheckBox" name="startupCheckBox">
               <Properties>
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="&#x388;&#x3bd;&#x3b1;&#x3c1;&#x3be;&#x3b7; &#x3b5;&#x3c6;&#x3b1;&#x3c1;&#x3bc;&#x3bf;&#x3b3;&#x3ae;&#x3c2; &#x3ba;&#x3b1;&#x3c4;&#x3ac; &#x3c4;&#x3b7;&#x3bd; &#x3b5;&#x3ba;&#x3ba;&#x3af;&#x3bd;&#x3b7;&#x3c3;&#x3b7;"/>
+              </Properties>
+            </Component>
+            <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel15">
+              <Properties>
+                <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1, 15]"/>
+                </Property>
+                <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                  <Dimension value="[1, 15]"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="15" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+            </Container>
+            <Component class="widgets.checkbox.AdaptiveCheckBox" name="adaptiveCheckBox1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="adaptiveCheckBox1"/>
               </Properties>
             </Component>
           </SubComponents>

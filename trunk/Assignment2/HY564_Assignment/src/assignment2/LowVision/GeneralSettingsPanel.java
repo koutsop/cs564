@@ -37,6 +37,8 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         northPanel = new widgets.panel.AdaptivePanel();
         startupCheckBox = new widgets.checkbox.AdaptiveCheckBox();
+        adaptivePanel15 = new widgets.panel.AdaptivePanel();
+        adaptiveCheckBox1 = new widgets.checkbox.AdaptiveCheckBox();
         centalPanel = new widgets.panel.AdaptivePanel();
         fontsPanel = new widgets.panel.AdaptivePanel();
         fontPanel = new widgets.panel.AdaptivePanel();
@@ -58,11 +60,30 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel1.setMaximumSize(new java.awt.Dimension(307, 169));
         adaptivePanel1.setLayout(new java.awt.BorderLayout());
 
-        northPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        northPanel.setLayout(new javax.swing.BoxLayout(northPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
         startupCheckBox.setHorizontalAlignment(0);
         startupCheckBox.setText("Έναρξη εφαρμογής κατά την εκκίνηση");
         northPanel.add(startupCheckBox);
+
+        adaptivePanel15.setMaximumSize(new java.awt.Dimension(1, 15));
+        adaptivePanel15.setMinimumSize(new java.awt.Dimension(1, 15));
+
+        javax.swing.GroupLayout adaptivePanel15Layout = new javax.swing.GroupLayout(adaptivePanel15);
+        adaptivePanel15.setLayout(adaptivePanel15Layout);
+        adaptivePanel15Layout.setHorizontalGroup(
+            adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1, Short.MAX_VALUE)
+        );
+        adaptivePanel15Layout.setVerticalGroup(
+            adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 15, Short.MAX_VALUE)
+        );
+
+        northPanel.add(adaptivePanel15);
+
+        adaptiveCheckBox1.setText("adaptiveCheckBox1");
+        northPanel.add(adaptiveCheckBox1);
 
         adaptivePanel1.add(northPanel, java.awt.BorderLayout.NORTH);
 
@@ -114,12 +135,14 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.checkbox.AdaptiveCheckBox adaptiveCheckBox1;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox1;
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox2;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
     private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel15;
     private widgets.spinner.AdaptiveSpinner adaptiveSpinner1;
     private widgets.panel.AdaptivePanel centalPanel;
     private widgets.panel.AdaptivePanel fontPanel;
