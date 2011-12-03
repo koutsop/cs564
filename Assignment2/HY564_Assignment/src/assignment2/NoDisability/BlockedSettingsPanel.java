@@ -4,7 +4,7 @@
  */
 
 /*
- * GeneralSettingsPanel.java
+ * BlockedSettingsPanel.java
  *
  * Created on Nov 25, 2011, 1:25:47 PM
  */
@@ -16,7 +16,7 @@ package assignment2.NoDisability;
  */
 public class BlockedSettingsPanel extends javax.swing.JPanel {
 
-    /** Creates new form GeneralSettingsPanel */
+    /** Creates new form BlockedSettingsPanel */
     public BlockedSettingsPanel() {
         initComponents();
     }
