@@ -109,12 +109,14 @@ public class AddContactResults extends javax.swing.JPanel {
 
         adaptivePanel3.setLayout(new javax.swing.BoxLayout(adaptivePanel3, javax.swing.BoxLayout.LINE_AXIS));
 
+        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         adaptiveLabel2.setText("Βρέθηκαν περισσότερα από 200 αποτελέσματα ");
         adaptivePanel3.add(adaptiveLabel2);
 
         adaptiveLabel1.setText("για");
         adaptivePanel3.add(adaptiveLabel1);
 
+        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel3.setText("Νικόλαος");
         adaptivePanel3.add(adaptiveLabel3);
 
@@ -167,7 +169,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel2.setLayout(new javax.swing.BoxLayout(descrPanel2, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel11.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel11.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel11.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel11.setText("Νικόλαος Κουτσόπουλος");
         descrPanel2.add(adaptiveLabel11);
 
@@ -215,7 +217,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel1.setLayout(new javax.swing.BoxLayout(descrPanel1, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel9.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel9.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel9.setText("Νικόλαος Κουτσόπουλος");
         descrPanel1.add(adaptiveLabel9);
 
@@ -263,7 +265,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel3.setLayout(new javax.swing.BoxLayout(descrPanel3, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel13.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel13.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel13.setText("Νικόλαος Κουτσόπουλος");
         descrPanel3.add(adaptiveLabel13);
 
@@ -311,7 +313,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel4.setLayout(new javax.swing.BoxLayout(descrPanel4, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel15.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel15.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel15.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel15.setText("Νικόλαος Κουτσόπουλος");
         descrPanel4.add(adaptiveLabel15);
 
@@ -359,7 +361,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel5.setLayout(new javax.swing.BoxLayout(descrPanel5, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel17.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel17.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel17.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel17.setText("Νικόλαος Κουτσόπουλος");
         descrPanel5.add(adaptiveLabel17);
 
@@ -407,7 +409,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel6.setLayout(new javax.swing.BoxLayout(descrPanel6, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel19.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel19.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel19.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel19.setText("Νικόλαος Κουτσόπουλος");
         descrPanel6.add(adaptiveLabel19);
 
@@ -455,7 +457,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel7.setLayout(new javax.swing.BoxLayout(descrPanel7, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel21.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel21.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel21.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel21.setText("Νικόλαος Κουτσόπουλος");
         descrPanel7.add(adaptiveLabel21);
 
@@ -503,7 +505,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel8.setLayout(new javax.swing.BoxLayout(descrPanel8, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel23.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel23.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel23.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel23.setText("Νικόλαος Κουτσόπουλος");
         descrPanel8.add(adaptiveLabel23);
 
@@ -551,7 +553,7 @@ public class AddContactResults extends javax.swing.JPanel {
         descrPanel9.setLayout(new javax.swing.BoxLayout(descrPanel9, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveLabel25.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
-        adaptiveLabel25.setFont(new java.awt.Font("Tahoma", 1, 11));
+        adaptiveLabel25.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         adaptiveLabel25.setText("Νικόλαος Κουτσόπουλος");
         descrPanel9.add(adaptiveLabel25);
 

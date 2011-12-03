@@ -61,14 +61,12 @@ public class SearchForNewContact extends javax.swing.JPanel {
         adaptivePanel5.setLayout(new javax.swing.BoxLayout(adaptivePanel5, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptiveLabel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 1, 10, 1));
-        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 13));
         adaptiveLabel1.setText("Προσθήκη Επαφής");
         adaptivePanel5.add(adaptiveLabel1);
 
         adaptivePanel1.add(adaptivePanel5);
 
         adaptiveLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 10, 1));
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 2, 12));
         adaptiveLabel2.setText("Εισάγετε όλα τα πεδία που γνωρίζετε:");
         adaptivePanel4.add(adaptiveLabel2);
 
