@@ -4,11 +4,12 @@
  */
 
 /*
- * AdaptableChat.java
+ * AddaptableGeneralSettingsView.java
  *
- * Created on 29 Νοε 2011, 10:26:02 πμ
+ * Created on 3 Δεκ 2011, 10:30:13 πμ
  */
-package AdaptableWindows;
+package assignment2.AdaptableViews;
+
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import utilities.Adaptation;
@@ -18,28 +19,31 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AdaptableChat extends javax.swing.JPanel {
-	final static String viewCommonChat	= "Chat";
-    final static String viewSpotChat	= "SpotChat";
+public class AddaptableGeneralSettingsView extends javax.swing.JPanel {
+	private final String commonSettings			= "CommonSettings";
+	private final String lowVision				= "LowVision";
+	private final String instabilitySettings	= "InstabilitySettings";
 	JPanel p = new JPanel(new CardLayout());
 	
-	/** Creates new form AdaptableChat */
-	public AdaptableChat() {
-        initComponents();
+	/** Creates new form AddaptableGeneralSettingsView */
+	public AddaptableGeneralSettingsView() {
+		initComponents();
+		initComponents();
         
-        p.add(new assignment2.Chat(), viewCommonChat);
-        p.add(new assignment2.Spots.Chat(), viewSpotChat);
+		p.add(new assignment2.NoDisability.GeneralSettingsPanel(), commonSettings);
+        //p.add(instabilitySettingsView, lowVision);
+		p.add(new assignment2.Instability.GeneralSettingsPanel(), instabilitySettings);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
-        System.out.println("Chat View:" + pid);
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
+        System.out.println("General Setings View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
-        this.updateUI();  
+        this.updateUI();		
 	}
 
 	/** This method is called from within the constructor to

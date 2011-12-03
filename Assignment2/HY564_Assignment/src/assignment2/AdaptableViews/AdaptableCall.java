@@ -4,11 +4,11 @@
  */
 
 /*
- * AddaptableGeneralSettingsView.java
+ * AdaptableCall.java
  *
- * Created on 3 Δεκ 2011, 10:30:13 πμ
+ * Created on 29 Νοε 2011, 12:58:55 πμ
  */
-package AdaptableWindows;
+package assignment2.AdaptableViews;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
@@ -19,31 +19,28 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AddaptableHistorySettingsView extends javax.swing.JPanel {
-	private final String commonSettings			= "CommonSettings";
-	private final String lowVision				= "LowVision";
-	private final String instabilitySettings	= "InstabilitySettings";
+public class AdaptableCall extends javax.swing.JPanel {
+	final static String viewCommonChat	= "Chat";
+    final static String viewSpotChat	= "SpotChat";
 	JPanel p = new JPanel(new CardLayout());
 	
-	/** Creates new form AddaptableGeneralSettingsView */
-	public AddaptableHistorySettingsView() {
-		initComponents();
-		initComponents();
+	/** Creates new form AdaptableCall */
+	public AdaptableCall() {
+        initComponents();
         
-		p.add(new assignment2.NoDisability.HistorySettingsPanel(), commonSettings);
-        //p.add(instabilitySettingsView, lowVision);
-		p.add(new assignment2.Instability.HistorySettingsPanel(), instabilitySettings);
+        p.add(new assignment2.Call(), viewCommonChat);
+        p.add(new assignment2.Spots.Call(), viewSpotChat);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
-        System.out.println("General Setings View:" + pid);
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
+        System.out.println("Call View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
-        this.updateUI();		
+        this.updateUI(); 
 	}
 
 	/** This method is called from within the constructor to

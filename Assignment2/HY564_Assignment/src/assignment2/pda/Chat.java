@@ -10,7 +10,7 @@
  */
 package assignment2.pda;
 
-import Utility.Utility;
+import assignment2.Utility.Utility;
 import javax.swing.ImageIcon;
 import pda.MainWindowPDA;
 import utilities.Adaptation;

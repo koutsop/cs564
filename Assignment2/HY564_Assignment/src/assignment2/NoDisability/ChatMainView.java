@@ -10,12 +10,12 @@
  */
 package assignment2.NoDisability;
 
-import AdaptableWindows.AdaptableCall;
-import AdaptableWindows.AdaptableChat;
-import AdaptableWindows.AdaptableMyProfile;
-import AdaptableWindows.AdaptableVideoCall;
+import assignment2.AdaptableViews.AdaptableCall;
+import assignment2.AdaptableViews.AdaptableChat;
+import assignment2.AdaptableViews.AdaptableMyProfile;
+import assignment2.AdaptableViews.AdaptableVideoCall;
 import assignment2.Contact;
-import Utility.Utility;
+import assignment2.Utility.Utility;
 import assignment2.AccessibleIMInterface;
 import java.awt.Component;
 import java.awt.Dimension;

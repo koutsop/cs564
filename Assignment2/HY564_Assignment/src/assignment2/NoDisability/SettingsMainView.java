@@ -10,11 +10,11 @@
  */
 package assignment2.NoDisability;
 
-import AdaptableWindows.AdaptableIMMainView;
-import AdaptableWindows.AddaptableAppearanceSettingsView;
-import AdaptableWindows.AddaptableGeneralSettingsView;
-import AdaptableWindows.AddaptableHistorySettingsView;
-import AdaptableWindows.AddaptableNotificationsSettingsView;
+import assignment2.AdaptableViews.AdaptableIMMainView;
+import assignment2.AdaptableViews.AddaptableAppearanceSettingsView;
+import assignment2.AdaptableViews.AddaptableGeneralSettingsView;
+import assignment2.AdaptableViews.AddaptableHistorySettingsView;
+import assignment2.AdaptableViews.AddaptableNotificationsSettingsView;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import pc.MainWindowPC;

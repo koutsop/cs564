@@ -11,7 +11,7 @@
 package assignment2;
 
 //import assignment2.NoDisability.AddContact;
-import AdaptableWindows.AdaptableIMMainView;
+import assignment2.AdaptableViews.AdaptableIMMainView;
 import assignment2.NoDisability.ProfileCreation;
 import pc.MainWindowPC;
 import pda.MainWindowPDA;

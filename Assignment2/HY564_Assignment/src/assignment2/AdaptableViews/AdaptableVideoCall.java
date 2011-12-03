@@ -4,11 +4,11 @@
  */
 
 /*
- * AdaptableMyProfile.java
+ * AdaptableVideoCall.java
  *
- * Created on 29 Νοε 2011, 8:46:54 πμ
+ * Created on 29 Νοε 2011, 12:53:38 πμ
  */
-package AdaptableWindows;
+package assignment2.AdaptableViews;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
@@ -19,24 +19,22 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AdaptableMyProfile extends javax.swing.JPanel {
-	final static String viewCommonProfile		= "CommonProfile";
-    final static String viewSpotProfile			= "SpotProfile";	
-	final static String viewLowVisionProfile	= "LowVisionProfile";
+public class AdaptableVideoCall extends javax.swing.JPanel {
+	final static String viewCommonChat	= "Chat";
+    final static String viewSpotChat	= "SpotChat";	
 	JPanel p = new JPanel(new CardLayout());
 	
-	/** Creates new form AdaptableMyProfile */
-	public AdaptableMyProfile() {
+	/** Creates new form AdaptableVideoCall */
+	public AdaptableVideoCall() {
         initComponents();
-		
-        p.add(new assignment2.MyProfile(), viewCommonProfile);
-        p.add(new assignment2.Spots.MyProfile(), viewSpotProfile);
-		p.add(new assignment2.LowVision.MyProfile(), viewLowVisionProfile);
+        
+        p.add(new assignment2.VideoCall(), viewCommonChat);
+        p.add(new assignment2.Spots.VideoCall(), viewSpotChat);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("AdaptableMyProfile");
-        System.out.println("Profile View:" + pid);
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
+        System.out.println("Video Call View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         

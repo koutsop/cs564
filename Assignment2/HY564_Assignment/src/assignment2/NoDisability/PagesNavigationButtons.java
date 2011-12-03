@@ -26,14 +26,14 @@ public class PagesNavigationButtons extends javax.swing.JPanel {
         Adaptation.automaticallyAdapt(this);
 		
 		int width = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("PagesNavigationButtonsWidth"));
-		Utility.Utility.SetJComponentSize(gapPanel1, width, 3);
-		Utility.Utility.SetJComponentSize(gapPanel2, width, 3);
-		Utility.Utility.SetJComponentSize(gapPanel3, width, 3);		
-		Utility.Utility.SetJComponentSize(gapPanel4, width, 3);
-		Utility.Utility.SetJComponentSize(gapPanel5, width, 3);
-		Utility.Utility.SetJComponentSize(gapPanel6, width, 3);		
-		Utility.Utility.SetJComponentSize(gapPanel7, width, 3);
-		Utility.Utility.SetJComponentSize(gapPanel8, width, 3);
+		assignment2.Utility.Utility.SetJComponentSize(gapPanel1, width, 3);
+		assignment2.Utility.Utility.SetJComponentSize(gapPanel2, width, 3);
+		assignment2.Utility.Utility.SetJComponentSize(gapPanel3, width, 3);		
+		assignment2.Utility.Utility.SetJComponentSize(gapPanel4, width, 3);
+		assignment2.Utility.Utility.SetJComponentSize(gapPanel5, width, 3);
+		assignment2.Utility.Utility.SetJComponentSize(gapPanel6, width, 3);		
+		assignment2.Utility.Utility.SetJComponentSize(gapPanel7, width, 3);
+		assignment2.Utility.Utility.SetJComponentSize(gapPanel8, width, 3);
 		
 	}
 

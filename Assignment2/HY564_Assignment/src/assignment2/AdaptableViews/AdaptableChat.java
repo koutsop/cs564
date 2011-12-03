@@ -4,47 +4,42 @@
  */
 
 /*
- * AddaptableBlockedSettingsView.java
+ * AdaptableChat.java
  *
- * Created on 1 Δεκ 2011, 3:21:43 πμ
+ * Created on 29 Νοε 2011, 10:26:02 πμ
  */
-package AdaptableWindows;
-
+package assignment2.AdaptableViews;
 import java.awt.CardLayout;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 import utilities.DMSLConnector;
 
-
-
-
 /**
  *
  * @author koutsop
  */
-public class AddaptableBlockedSettingsView extends javax.swing.JPanel {
-	private final String commonSettings			= "CommonSettings";
-	private final String lowVision				= "LowVision";
-
+public class AdaptableChat extends javax.swing.JPanel {
+	final static String viewCommonChat	= "Chat";
+    final static String viewSpotChat	= "SpotChat";
 	JPanel p = new JPanel(new CardLayout());
 	
-	/** Creates new form AddaptableBlockedSettingsView */
-	public AddaptableBlockedSettingsView() {
-		initComponents();
+	/** Creates new form AdaptableChat */
+	public AdaptableChat() {
+        initComponents();
+        
+        p.add(new assignment2.Chat(), viewCommonChat);
+        p.add(new assignment2.Spots.Chat(), viewSpotChat);
+        this.add(p);
 
-		//p.add(assignment2.NoDisability.BlockedSettingsPanel(), commonSettings);
-		//p.add(assignment2.LowVision.BlockedSettingsPanel, lowVision);
-		this.add(p);
-
-		CardLayout cl = (CardLayout)(p.getLayout());
-		String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
-		System.out.println("Setings View:" + pid);
-		cl.show(p, pid);
-		p.revalidate();
-
-		Adaptation.automaticallySetRuntime(this);
-		Adaptation.automaticallyAdapt(this);
-		this.updateUI();
+        CardLayout cl = (CardLayout)(p.getLayout());
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
+        System.out.println("Chat View:" + pid);
+        cl.show(p, pid);
+        p.revalidate();
+        
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);
+        this.updateUI();  
 	}
 
 	/** This method is called from within the constructor to

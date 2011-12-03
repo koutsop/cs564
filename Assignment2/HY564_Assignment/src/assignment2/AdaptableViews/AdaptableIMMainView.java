@@ -8,7 +8,7 @@
  *
  * Created on 1 Δεκ 2011, 1:44:35 πμ
  */
-package AdaptableWindows;
+package assignment2.AdaptableViews;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;

@@ -8,7 +8,7 @@
  *
  * Created on 3 Δεκ 2011, 10:30:13 πμ
  */
-package AdaptableWindows;
+package assignment2.AdaptableViews;
 
 import java.awt.CardLayout;
 import javax.swing.JPanel;
@@ -19,20 +19,20 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AddaptableNotificationsSettingsView extends javax.swing.JPanel {
+public class AddaptableAppearanceSettingsView extends javax.swing.JPanel {
 	private final String commonSettings			= "CommonSettings";
 	private final String lowVision				= "LowVision";
 	private final String instabilitySettings	= "InstabilitySettings";
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AddaptableGeneralSettingsView */
-	public AddaptableNotificationsSettingsView() {
+	public AddaptableAppearanceSettingsView() {
 		initComponents();
 		initComponents();
         
-		p.add(new assignment2.NoDisability.NotificationsSettingsPanel(), commonSettings);
+		p.add(new assignment2.NoDisability.AppearanceSettingsPanel(), commonSettings);
         //p.add(instabilitySettingsView, lowVision);
-		p.add(new assignment2.Instability.NotificationsSettingsPanel(), instabilitySettings);
+		p.add(new assignment2.Instability.AppearanceSettingsPanel(), instabilitySettings);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
