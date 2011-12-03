@@ -4,7 +4,7 @@
  */
 
 /*
- * AddaptableGeneralSettingsView.java
+ * AdaptableGeneralSettingsView.java
  *
  * Created on 3 Δεκ 2011, 10:30:13 πμ
  */
@@ -19,14 +19,14 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AddaptableGeneralSettingsView extends javax.swing.JPanel {
+public class AdaptableGeneralSettingsView extends javax.swing.JPanel {
 	private final String commonSettings			= "CommonSettings";
 	private final String lowVision				= "LowVisionSettings";
 	private final String instabilitySettings	= "InstabilitySettings";
 	JPanel p = new JPanel(new CardLayout());
 	
-	/** Creates new form AddaptableGeneralSettingsView */
-	public AddaptableGeneralSettingsView() {
+	/** Creates new form AdaptableGeneralSettingsView */
+	public AdaptableGeneralSettingsView() {
 		initComponents();
 		initComponents();
 

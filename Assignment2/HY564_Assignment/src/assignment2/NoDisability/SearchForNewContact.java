@@ -11,7 +11,7 @@
 package assignment2.NoDisability;
 
 import assignment2.AdaptableViews.AdaptableAddContactResults;
-import assignment2.AdaptableViews.AddaptableGeneralSettingsView;
+import assignment2.AdaptableViews.AdaptableGeneralSettingsView;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 

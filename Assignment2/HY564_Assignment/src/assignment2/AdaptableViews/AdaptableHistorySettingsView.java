@@ -19,14 +19,14 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AddaptableHistorySettingsView extends javax.swing.JPanel {
+public class AdaptableHistorySettingsView extends javax.swing.JPanel {
 	private final String commonSettings			= "CommonSettings";
 	private final String lowVision				= "LowVision";
 	private final String instabilitySettings	= "InstabilitySettings";
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AddaptableGeneralSettingsView */
-	public AddaptableHistorySettingsView() {
+	public AdaptableHistorySettingsView() {
 		initComponents();
 		initComponents();
         
