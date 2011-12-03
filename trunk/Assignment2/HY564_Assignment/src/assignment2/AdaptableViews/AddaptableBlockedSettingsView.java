@@ -24,7 +24,7 @@ import utilities.DMSLConnector;
  */
 public class AddaptableBlockedSettingsView extends javax.swing.JPanel {
 	private final String commonSettings			= "CommonSettings";
-	private final String lowVision				= "LowVision";
+	private final String lowVision				= "LowVisionSettings";
 
 	JPanel p = new JPanel(new CardLayout());
 	
@@ -33,12 +33,12 @@ public class AddaptableBlockedSettingsView extends javax.swing.JPanel {
 		initComponents();
 
 		p.add(new assignment2.NoDisability.BlockedSettingsPanel(), commonSettings);
-		//p.add(new assignment2.LowVision.BlockedSettingsPanel, lowVision);
+		p.add(new assignment2.LowVision.BlockedSettingsPanel(), lowVision);
 		this.add(p);
 
 		CardLayout cl = (CardLayout)(p.getLayout());
 		String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
-		System.out.println("Setings View:" + pid);
+		System.out.println("Blocked Setings View:" + pid);
 		cl.show(p, pid);
 		p.revalidate();
 
