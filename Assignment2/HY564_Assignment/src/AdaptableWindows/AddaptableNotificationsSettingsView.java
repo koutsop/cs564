@@ -4,9 +4,9 @@
  */
 
 /*
- * AddaptableSettingsView.java
+ * AddaptableGeneralSettingsView.java
  *
- * Created on 1 Δεκ 2011, 3:21:43 πμ
+ * Created on 3 Δεκ 2011, 10:30:13 πμ
  */
 package AdaptableWindows;
 
@@ -19,28 +19,31 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class AddaptableSettingsView extends javax.swing.JPanel {
-	private final String viewA = "CommonSettings";
-	private final String viewB = "InstabilitySettings";
+public class AddaptableNotificationsSettingsView extends javax.swing.JPanel {
+	private final String commonSettings			= "CommonSettings";
+	private final String lowVision				= "LowVision";
+	private final String instabilitySettings	= "InstabilitySettings";
 	JPanel p = new JPanel(new CardLayout());
 	
-	/** Creates new form AddaptableSettingsView */
-	public AddaptableSettingsView(JPanel commonSettignsView, JPanel instabilitySettingsView) {
+	/** Creates new form AddaptableGeneralSettingsView */
+	public AddaptableNotificationsSettingsView() {
+		initComponents();
 		initComponents();
         
-		p.add(commonSettignsView, viewA);
-        p.add(instabilitySettingsView, viewB);
+		p.add(new assignment2.NoDisability.NotificationsSettingsPanel(), commonSettings);
+        //p.add(instabilitySettingsView, lowVision);
+		p.add(new assignment2.Instability.NotificationsSettingsPanel(), instabilitySettings);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
         String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
-        System.out.println("Setings View:" + pid);
+        System.out.println("General Setings View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
-        this.updateUI();
+        this.updateUI();		
 	}
 
 	/** This method is called from within the constructor to

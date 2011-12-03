@@ -650,13 +650,14 @@ component AdaptableMyProfile [
 	else					activate "CommonProfile"
 ]
 
+component SettingsView [
+	if		profile4 then	activate "LowVisionProfile"
+	if 		profile3 then 	activate "InstabilitySettings"
+	else 					activate "CommonSettings"
+]
+
 component MainIMView [
 	if 		profile3 then 	activate "InstabilityMainView"
 	else if profile6 then 	activate "PDAMainView"
 	else 					activate "CommonMainView"
-]
-
-component SettingsView [
-	if 		profile3 then 	activate "InstabilitySettings"
-	else 					activate "CommonSettings"
 ]
