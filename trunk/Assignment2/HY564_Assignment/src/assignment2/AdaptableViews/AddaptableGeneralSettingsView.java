@@ -21,7 +21,7 @@ import utilities.DMSLConnector;
  */
 public class AddaptableGeneralSettingsView extends javax.swing.JPanel {
 	private final String commonSettings			= "CommonSettings";
-	private final String lowVision				= "LowVision";
+	private final String lowVision				= "LowVisionSettings";
 	private final String instabilitySettings	= "InstabilitySettings";
 	JPanel p = new JPanel(new CardLayout());
 	
@@ -31,13 +31,13 @@ public class AddaptableGeneralSettingsView extends javax.swing.JPanel {
 		initComponents();
         
 		p.add(new assignment2.NoDisability.GeneralSettingsPanel(), commonSettings);
-        //p.add(instabilitySettingsView, lowVision);
+        p.add(new assignment2.LowVision.GeneralSettingsPanel(), lowVision);
 		p.add(new assignment2.Instability.GeneralSettingsPanel(), instabilitySettings);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
         String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
-        System.out.println("General Setings View:" + pid);
+        System.out.println("General Setings View:>" + pid + "<");
         cl.show(p, pid);
         p.revalidate();
         
