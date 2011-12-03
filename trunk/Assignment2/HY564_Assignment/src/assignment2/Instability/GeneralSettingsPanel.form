@@ -148,7 +148,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Arial"/>
                           </Properties>
                           <Events>
@@ -158,7 +157,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Comic Sans MS"/>
                           </Properties>
                           <Events>
@@ -168,7 +166,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Dialog"/>
                           </Properties>
                           <Events>
@@ -178,7 +175,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton6">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Magneto"/>
                           </Properties>
                           <Events>
@@ -188,7 +184,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton7">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Papyrus"/>
                           </Properties>
                           <Events>
@@ -198,7 +193,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton8">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Times New Roman"/>
                           </Properties>
                           <Events>
@@ -259,7 +253,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton9">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Plain"/>
                           </Properties>
                           <Events>
@@ -269,7 +262,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton10">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Bold"/>
                           </Properties>
                           <Events>
@@ -279,7 +271,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton11">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Italic"/>
                           </Properties>
                           <Events>
@@ -289,7 +280,6 @@
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton12">
                           <Properties>
                             <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                            <Property name="horizontalAlignment" type="int" value="2"/>
                             <Property name="text" type="java.lang.String" value="Bold Italic"/>
                           </Properties>
                           <Events>
