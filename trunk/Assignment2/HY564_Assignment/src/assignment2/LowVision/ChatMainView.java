@@ -10,21 +10,15 @@
  */
 package assignment2.LowVision;
 
-import assignment2.NoDisability.*;
 import assignment2.AdaptableViews.AdaptableCall;
 import assignment2.AdaptableViews.AdaptableChat;
 import assignment2.AdaptableViews.AdaptableMyProfile;
 import assignment2.AdaptableViews.AdaptableVideoCall;
-import assignment2.Contact;
 import assignment2.Utility.Utility;
-import assignment2.AccessibleIMInterface;
-import java.awt.Component;
 import java.awt.Dimension;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import utilities.Adaptation;
-import utilities.DMSLConnector;
 
 /**
  *
@@ -33,13 +27,9 @@ import utilities.DMSLConnector;
 public class ChatMainView extends javax.swing.JPanel {
    
     /** Creates new form NoDisabilityMainView */
-    public ChatMainView() {
+    public ChatMainView(Dimension menuSize) {
         initComponents();
 
-		
-		/*Update specific components so as to impose specific rules (both methods take as argument
-        the  main container/placeholder the holds all the widgets placed into the UI. This concept
-        is similar to the HTML <body> element) */
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
 		
@@ -48,11 +38,11 @@ public class ChatMainView extends javax.swing.JPanel {
     }
 	
     private void showInContentPanel (JPanel p) {
-        contentPanel.removeAll();
+		contentPanel.removeAll();
         p.setVisible(true);
         contentPanel.add(p);
         contentPanel.repaint();
-        contentPanel.validate();       
+        contentPanel.validate();    		
     }
     
     private void selectMenuButton (JButton button) {
@@ -137,30 +127,26 @@ public class ChatMainView extends javax.swing.JPanel {
         add(mainPanel, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void chatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chatButtonActionPerformed
-        selectMenuButton(chatButton);
-        showInContentPanel(new AdaptableChat());
-    }//GEN-LAST:event_chatButtonActionPerformed
-
-    private void videoCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_videoCallButtonActionPerformed
-        selectMenuButton(videoCallButton);
-        showInContentPanel(new AdaptableVideoCall());
-    }//GEN-LAST:event_videoCallButtonActionPerformed
-
-    private void callButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callButtonActionPerformed
-        selectMenuButton(callButton);
-        showInContentPanel(new AdaptableCall());
-    }//GEN-LAST:event_callButtonActionPerformed
-
-    private void myProfileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myProfileButtonActionPerformed
-        selectMenuButton(myProfileButton);
-        showInContentPanel(new AdaptableMyProfile());
-    }//GEN-LAST:event_myProfileButtonActionPerformed
-
 	private void contactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contactsButtonActionPerformed
 		selectMenuButton(contactsButton);
 		showInContentPanel(new ContactsListPanel());
 	}//GEN-LAST:event_contactsButtonActionPerformed
+
+	private void myProfileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myProfileButtonActionPerformed
+
+		selectMenuButton(myProfileButton); 		showInContentPanel(new AdaptableMyProfile()); 	}//GEN-LAST:event_myProfileButtonActionPerformed
+
+	private void chatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chatButtonActionPerformed
+
+		selectMenuButton(chatButton); 		showInContentPanel(new AdaptableChat()); 	}//GEN-LAST:event_chatButtonActionPerformed
+
+	private void videoCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_videoCallButtonActionPerformed
+
+		selectMenuButton(videoCallButton); 		showInContentPanel(new AdaptableVideoCall()); 	}//GEN-LAST:event_videoCallButtonActionPerformed
+
+	private void callButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callButtonActionPerformed
+
+		selectMenuButton(callButton); 		showInContentPanel(new AdaptableCall()); 	}//GEN-LAST:event_callButtonActionPerformed
     
 	
     // Variables declaration - do not modify//GEN-BEGIN:variables
