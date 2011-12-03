@@ -32,7 +32,7 @@ public class AdaptableChatMainView extends javax.swing.JPanel {
         initComponents();
 		
 		p.add(new assignment2.NoDisability.ChatMainView(menuSize), viewA);
-        p.add(new assignment2.LowVision.ChatMainView(), viewB);
+        p.add(new assignment2.LowVision.ChatMainView(menuSize), viewB);
 		
         this.add(p);
 

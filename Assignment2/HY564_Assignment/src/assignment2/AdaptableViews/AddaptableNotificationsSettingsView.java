@@ -37,7 +37,7 @@ public class AddaptableNotificationsSettingsView extends javax.swing.JPanel {
 
         CardLayout cl = (CardLayout)(p.getLayout());
         String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SettingsView");
-        System.out.println("General Setings View:" + pid);
+        System.out.println("Notification Settigns View:" + pid);
         cl.show(p, pid);
         p.revalidate();
         
