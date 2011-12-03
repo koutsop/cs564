@@ -4,7 +4,7 @@
  */
 
 /*
- * GeneralSettingsPanel.java
+ * NotificationsSettingsPanel.java
  *
  * Created on Nov 25, 2011, 1:25:47 PM
  */
@@ -18,7 +18,7 @@ import assignment2.NoDisability.*;
  */
 public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
-    /** Creates new form GeneralSettingsPanel */
+    /** Creates new form NotificationsSettingsPanel */
     public NotificationsSettingsPanel() {
         initComponents();
     }
