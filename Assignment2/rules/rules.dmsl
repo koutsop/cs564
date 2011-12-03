@@ -81,7 +81,6 @@ component "Button.Height" [
 	else if profile3 then activate "34"
 	else if profile4 then activate "36"
 	else activate "28"
-
 ]
 component "Button.Width.StdPadding" [ activate "12" ]
 component "Button.Width.ExtraPercPadding" [ activate "30" ]
@@ -92,7 +91,7 @@ component "Button.Width.ExtraPercPadding" [ activate "30" ]
 
 component "Button.MainNavigation.Width" [ 
 	
-	if profile1 or profile2 then activate "130"
+	if profile1 or profile2 then activate "160" //was 150
 	else if profile3 then activate "140"
 	else if profile4 then activate "150"
 	else activate "130"
@@ -100,7 +99,7 @@ component "Button.MainNavigation.Width" [
 ]
 component "Button.MainNavigation.Height" [ 
 
-	if profile1 then activate "50"
+	if profile1 then activate "50" //was 50
 	else if profile2 then activate "55"
 	else if profile3 then activate "60"
 	else if profile4 then activate "65"
@@ -114,7 +113,7 @@ component "Button.MainNavigation.Height" [
 
 component "Button.SecNavigation.Width" [
 	
-	if profile1 then activate "100"
+	if profile1 then activate "120"	//was 100
 	else if profile2 then activate "110"
 	else if profile3 then activate "120"
 	else if profile4 then activate "130"
@@ -123,7 +122,7 @@ component "Button.SecNavigation.Width" [
 ]
 component "Button.SecNavigation.Height" [
 
-	if profile1 then activate "41"
+	if profile1 then activate "45" //was 41
 	else if profile2 then activate "44"
 	else if profile3 then activate "47"
 	else if profile4 then activate "50"
@@ -539,6 +538,8 @@ component CollapseSubButton [
 	else if	profile6 then	activate "/images/profile_pda/button_minus.png"
     else					activate "/images/profile_no_disability/tick.png"
 ]
+
+
 //==========================================
 //      Panels size
 //==========================================

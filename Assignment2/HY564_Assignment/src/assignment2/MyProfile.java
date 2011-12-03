@@ -148,7 +148,7 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel33.setLayout(adaptivePanel33Layout);
         adaptivePanel33Layout.setHorizontalGroup(
             adaptivePanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 329, Short.MAX_VALUE)
+            .addGap(0, 533, Short.MAX_VALUE)
         );
         adaptivePanel33Layout.setVerticalGroup(
             adaptivePanel33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -178,6 +178,11 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel32.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         onlineButton.setSelected(true);
+        onlineButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                onlineButtonActionPerformed(evt);
+            }
+        });
         adaptivePanel32.add(onlineButton);
         adaptivePanel32.add(awayButton);
         adaptivePanel32.add(busyButton);
@@ -415,6 +420,10 @@ public class MyProfile extends javax.swing.JPanel {
 
         add(jScrollPane1);
     }// </editor-fold>//GEN-END:initComponents
+
+private void onlineButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_onlineButtonActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_onlineButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton acceptanceButton;
