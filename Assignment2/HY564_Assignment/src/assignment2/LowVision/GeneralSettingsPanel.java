@@ -34,6 +34,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        adaptivePanel1 = new widgets.panel.AdaptivePanel();
         northPanel = new widgets.panel.AdaptivePanel();
         startupCheckBox = new widgets.checkbox.AdaptiveCheckBox();
         centalPanel = new widgets.panel.AdaptivePanel();
@@ -50,15 +51,23 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         southPanel = new widgets.panel.AdaptivePanel();
         previewLabel = new widgets.label.AdaptiveLabel();
 
-        setLayout(new java.awt.BorderLayout());
+        setMaximumSize(new java.awt.Dimension(307, 169));
+        setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 50, 0));
+
+        adaptivePanel1.setMaximumSize(new java.awt.Dimension(307, 169));
+        adaptivePanel1.setLayout(new java.awt.BorderLayout());
+
+        northPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         startupCheckBox.setHorizontalAlignment(0);
         startupCheckBox.setText("Έναρξη εφαρμογής κατά την εκκίνηση του λειτουργικού");
         northPanel.add(startupCheckBox);
 
-        add(northPanel, java.awt.BorderLayout.NORTH);
+        adaptivePanel1.add(northPanel, java.awt.BorderLayout.NORTH);
 
-        fontsPanel.setLayout(new java.awt.GridLayout(3, 1));
+        centalPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+
+        fontsPanel.setLayout(new java.awt.GridLayout(3, 1, 0, 20));
 
         fontPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
@@ -90,13 +99,15 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         centalPanel.add(fontsPanel);
 
-        add(centalPanel, java.awt.BorderLayout.CENTER);
+        adaptivePanel1.add(centalPanel, java.awt.BorderLayout.CENTER);
 
-        previewLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 18));
+        previewLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 50)); // NOI18N
         previewLabel.setText("Έτσι θα φαίνεται το κείμενό σας!");
         southPanel.add(previewLabel);
 
-        add(southPanel, java.awt.BorderLayout.SOUTH);
+        adaptivePanel1.add(southPanel, java.awt.BorderLayout.SOUTH);
+
+        add(adaptivePanel1);
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -105,6 +116,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
+    private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.spinner.AdaptiveSpinner adaptiveSpinner1;
     private widgets.panel.AdaptivePanel centalPanel;
     private widgets.panel.AdaptivePanel fontPanel;

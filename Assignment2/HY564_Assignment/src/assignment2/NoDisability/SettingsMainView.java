@@ -31,7 +31,7 @@ public class SettingsMainView extends javax.swing.JPanel {
 		initComponents();
         Adaptation.automaticallySetRuntime(this);
 		Adaptation.automaticallyAdapt(this);
-        
+		
 		selecteButton(generalButton);
 		showPanel(new AddaptableGeneralSettingsView());
     }
@@ -46,7 +46,7 @@ public class SettingsMainView extends javax.swing.JPanel {
 		
 	}
 	
-	private void showPanel (JPanel p) {
+	private void showPanel (JPanel p) {	
 		contentPanel.removeAll();
 		p.setVisible(true);
 		contentPanel.add(p);
@@ -83,6 +83,9 @@ public class SettingsMainView extends javax.swing.JPanel {
         secMenuButton1.setText("secMenuButton1");
 
         setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 10, 10));
+        setMaximumSize(new java.awt.Dimension(1000, 720));
+        setMinimumSize(new java.awt.Dimension(1000, 720));
+        setPreferredSize(new java.awt.Dimension(1000, 720));
         setLayout(new java.awt.BorderLayout());
 
         menuPanel.setLayout(new javax.swing.BoxLayout(menuPanel, javax.swing.BoxLayout.PAGE_AXIS));
@@ -137,7 +140,7 @@ public class SettingsMainView extends javax.swing.JPanel {
 
         add(menuPanel, java.awt.BorderLayout.WEST);
 
-        contentPanel.setLayout(new javax.swing.BoxLayout(contentPanel, javax.swing.BoxLayout.LINE_AXIS));
+        contentPanel.setLayout(new javax.swing.BoxLayout(contentPanel, javax.swing.BoxLayout.PAGE_AXIS));
         add(contentPanel, java.awt.BorderLayout.CENTER);
 
         bottomPanel.setLayout(new java.awt.BorderLayout());

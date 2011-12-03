@@ -1,6 +1,11 @@
 <?xml version="1.1" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <Properties>
+    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[307, 169]"/>
+    </Property>
+  </Properties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
@@ -11,135 +16,156 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,44,0,0,1,-112"/>
   </AuxValues>
 
-  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+    <Property name="alignment" type="int" value="0"/>
+    <Property name="horizontalGap" type="int" value="50"/>
+    <Property name="verticalGap" type="int" value="0"/>
+  </Layout>
   <SubComponents>
-    <Container class="widgets.panel.AdaptivePanel" name="northPanel">
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-          <BorderConstraints direction="North"/>
-        </Constraint>
-      </Constraints>
+    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
+      <Properties>
+        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[307, 169]"/>
+        </Property>
+      </Properties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
       <SubComponents>
-        <Component class="widgets.checkbox.AdaptiveCheckBox" name="startupCheckBox">
-          <Properties>
-            <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="text" type="java.lang.String" value="&#x388;&#x3bd;&#x3b1;&#x3c1;&#x3be;&#x3b7; &#x3b5;&#x3c6;&#x3b1;&#x3c1;&#x3bc;&#x3bf;&#x3b3;&#x3ae;&#x3c2; &#x3ba;&#x3b1;&#x3c4;&#x3ac; &#x3c4;&#x3b7;&#x3bd; &#x3b5;&#x3ba;&#x3ba;&#x3af;&#x3bd;&#x3b7;&#x3c3;&#x3b7; &#x3c4;&#x3bf;&#x3c5; &#x3bb;&#x3b5;&#x3b9;&#x3c4;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3b9;&#x3ba;&#x3bf;&#x3cd;"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
-    <Container class="widgets.panel.AdaptivePanel" name="centalPanel">
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-          <BorderConstraints direction="Center"/>
-        </Constraint>
-      </Constraints>
+        <Container class="widgets.panel.AdaptivePanel" name="northPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="North"/>
+            </Constraint>
+          </Constraints>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
-      <SubComponents>
-        <Container class="widgets.panel.AdaptivePanel" name="fontsPanel">
-
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-            <Property name="columns" type="int" value="1"/>
-            <Property name="rows" type="int" value="3"/>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+            <Property name="alignment" type="int" value="0"/>
           </Layout>
           <SubComponents>
-            <Container class="widgets.panel.AdaptivePanel" name="fontPanel">
+            <Component class="widgets.checkbox.AdaptiveCheckBox" name="startupCheckBox">
+              <Properties>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value="&#x388;&#x3bd;&#x3b1;&#x3c1;&#x3be;&#x3b7; &#x3b5;&#x3c6;&#x3b1;&#x3c1;&#x3bc;&#x3bf;&#x3b3;&#x3ae;&#x3c2; &#x3ba;&#x3b1;&#x3c4;&#x3ac; &#x3c4;&#x3b7;&#x3bd; &#x3b5;&#x3ba;&#x3ba;&#x3af;&#x3bd;&#x3b7;&#x3c3;&#x3b7; &#x3c4;&#x3bf;&#x3c5; &#x3bb;&#x3b5;&#x3b9;&#x3c4;&#x3bf;&#x3c5;&#x3c1;&#x3b3;&#x3b9;&#x3ba;&#x3bf;&#x3cd;"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="widgets.panel.AdaptivePanel" name="centalPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="Center"/>
+            </Constraint>
+          </Constraints>
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                <Property name="alignment" type="int" value="0"/>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+            <Property name="alignment" type="int" value="0"/>
+          </Layout>
+          <SubComponents>
+            <Container class="widgets.panel.AdaptivePanel" name="fontsPanel">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                <Property name="columns" type="int" value="1"/>
+                <Property name="rows" type="int" value="3"/>
+                <Property name="verticalGap" type="int" value="20"/>
               </Layout>
               <SubComponents>
-                <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel1">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="&#x393;&#x3c1;&#x3b1;&#x3bc;&#x3bc;&#x3b1;&#x3c4;&#x3bf;&#x3c3;&#x3b5;&#x3b9;&#x3c1;&#x3ac;: "/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.combobox.AdaptiveComboBox" name="adaptiveComboBox1">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="7">
-                        <StringItem index="0" value="Arial"/>
-                        <StringItem index="1" value="Comic Sans MS"/>
-                        <StringItem index="2" value="Dialog"/>
-                        <StringItem index="3" value="Magneto"/>
-                        <StringItem index="4" value="Papyrus"/>
-                        <StringItem index="5" value="Times New Roman"/>
-                        <StringItem index="6" value=""/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
-            <Container class="widgets.panel.AdaptivePanel" name="stylePanel">
+                <Container class="widgets.panel.AdaptivePanel" name="fontPanel">
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                <Property name="alignment" type="int" value="0"/>
-              </Layout>
-              <SubComponents>
-                <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel2">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="&#x3a3;&#x3c4;&#x3cd;&#x3bb;: "/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.combobox.AdaptiveComboBox" name="adaptiveComboBox2">
-                  <Properties>
-                    <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-                      <StringArray count="4">
-                        <StringItem index="0" value="Plain"/>
-                        <StringItem index="1" value="Bold"/>
-                        <StringItem index="2" value="Italic"/>
-                        <StringItem index="3" value="Bold Italic"/>
-                      </StringArray>
-                    </Property>
-                  </Properties>
-                </Component>
-              </SubComponents>
-            </Container>
-            <Container class="widgets.panel.AdaptivePanel" name="sizePanel">
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel1">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x393;&#x3c1;&#x3b1;&#x3bc;&#x3bc;&#x3b1;&#x3c4;&#x3bf;&#x3c3;&#x3b5;&#x3b9;&#x3c1;&#x3ac;: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.combobox.AdaptiveComboBox" name="adaptiveComboBox1">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="7">
+                            <StringItem index="0" value="Arial"/>
+                            <StringItem index="1" value="Comic Sans MS"/>
+                            <StringItem index="2" value="Dialog"/>
+                            <StringItem index="3" value="Magneto"/>
+                            <StringItem index="4" value="Papyrus"/>
+                            <StringItem index="5" value="Times New Roman"/>
+                            <StringItem index="6" value=""/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="stylePanel">
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                <Property name="alignment" type="int" value="0"/>
-              </Layout>
-              <SubComponents>
-                <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel3">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="&#x39c;&#x3ad;&#x3b3;&#x3b5;&#x3b8;&#x3bf;&#x3c2;: "/>
-                  </Properties>
-                </Component>
-                <Component class="widgets.spinner.AdaptiveSpinner" name="adaptiveSpinner1">
-                  <AuxValues>
-                    <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value=""/>
-                  </AuxValues>
-                </Component>
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel2">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x3a3;&#x3c4;&#x3cd;&#x3bb;: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.combobox.AdaptiveComboBox" name="adaptiveComboBox2">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="4">
+                            <StringItem index="0" value="Plain"/>
+                            <StringItem index="1" value="Bold"/>
+                            <StringItem index="2" value="Italic"/>
+                            <StringItem index="3" value="Bold Italic"/>
+                          </StringArray>
+                        </Property>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="widgets.panel.AdaptivePanel" name="sizePanel">
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel3">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="&#x39c;&#x3ad;&#x3b3;&#x3b5;&#x3b8;&#x3bf;&#x3c2;: "/>
+                      </Properties>
+                    </Component>
+                    <Component class="widgets.spinner.AdaptiveSpinner" name="adaptiveSpinner1">
+                      <AuxValues>
+                        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value=""/>
+                      </AuxValues>
+                    </Component>
+                  </SubComponents>
+                </Container>
               </SubComponents>
             </Container>
           </SubComponents>
         </Container>
-      </SubComponents>
-    </Container>
-    <Container class="widgets.panel.AdaptivePanel" name="southPanel">
-      <Constraints>
-        <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
-          <BorderConstraints direction="South"/>
-        </Constraint>
-      </Constraints>
+        <Container class="widgets.panel.AdaptivePanel" name="southPanel">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
+              <BorderConstraints direction="South"/>
+            </Constraint>
+          </Constraints>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
-      <SubComponents>
-        <Component class="widgets.label.AdaptiveLabel" name="previewLabel">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Comic Sans MS" size="18" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="&#x388;&#x3c4;&#x3c3;&#x3b9; &#x3b8;&#x3b1; &#x3c6;&#x3b1;&#x3af;&#x3bd;&#x3b5;&#x3c4;&#x3b1;&#x3b9; &#x3c4;&#x3bf; &#x3ba;&#x3b5;&#x3af;&#x3bc;&#x3b5;&#x3bd;&#x3cc; &#x3c3;&#x3b1;&#x3c2;!"/>
-          </Properties>
-        </Component>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+          <SubComponents>
+            <Component class="widgets.label.AdaptiveLabel" name="previewLabel">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Comic Sans MS" size="50" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="&#x388;&#x3c4;&#x3c3;&#x3b9; &#x3b8;&#x3b1; &#x3c6;&#x3b1;&#x3af;&#x3bd;&#x3b5;&#x3c4;&#x3b1;&#x3b9; &#x3c4;&#x3bf; &#x3ba;&#x3b5;&#x3af;&#x3bc;&#x3b5;&#x3bd;&#x3cc; &#x3c3;&#x3b1;&#x3c2;!"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>
