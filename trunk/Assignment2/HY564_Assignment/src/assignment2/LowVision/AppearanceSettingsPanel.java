@@ -34,6 +34,7 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptiveLabel1 = new widgets.label.AdaptiveLabel();
+        adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptiveComboBox1 = new widgets.combobox.AdaptiveComboBox();
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
@@ -51,13 +52,17 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel1.setText("Επιλέξτε το θέμα: ");
         adaptivePanel1.add(adaptiveLabel1, java.awt.BorderLayout.NORTH);
 
+        adaptivePanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
+
         adaptiveComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Classic", "Classic Picture", "Bubble", "Bubble Picture", "Ping Pong", "Ping Pong Picture" }));
         adaptiveComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 adaptiveComboBox1ActionPerformed(evt);
             }
         });
-        adaptivePanel1.add(adaptiveComboBox1, java.awt.BorderLayout.CENTER);
+        adaptivePanel5.add(adaptiveComboBox1);
+
+        adaptivePanel1.add(adaptivePanel5, java.awt.BorderLayout.CENTER);
         adaptivePanel1.add(adaptivePanel3, java.awt.BorderLayout.SOUTH);
         adaptivePanel1.add(adaptivePanel4, java.awt.BorderLayout.EAST);
 
@@ -91,6 +96,7 @@ private void adaptiveComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {/
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
+    private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
