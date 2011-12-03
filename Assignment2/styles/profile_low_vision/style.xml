@@ -375,7 +375,7 @@
 		</state>
 		<state value="SELECTED">
 			<color type="TEXT_FOREGROUND" value="#374000"/>
-			<font name="Arial" size="12" style="BOLD"/>
+			<font name="Arial" size="28" style="BOLD"/>
 		</state>
 	</style>
 	<bind style="ComboBox List Renderer" type="name" key="ComboBox.listRenderer" />

@@ -15,6 +15,7 @@ import assignment2.AdaptableViews.AddaptableAppearanceSettingsView;
 import assignment2.AdaptableViews.AddaptableGeneralSettingsView;
 import assignment2.AdaptableViews.AddaptableHistorySettingsView;
 import assignment2.AdaptableViews.AddaptableNotificationsSettingsView;
+import assignment2.Help;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import pc.MainWindowPC;
@@ -148,6 +149,11 @@ public class SettingsMainView extends javax.swing.JPanel {
         adaptivePanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptiveButton4.setText("Βοήθεια");
+        adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton4ActionPerformed(evt);
+            }
+        });
         adaptivePanel5.add(adaptiveButton4);
 
         bottomPanel.add(adaptivePanel5, java.awt.BorderLayout.WEST);
@@ -217,6 +223,11 @@ private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//
 	selecteButton(appearanceButton);
 	showPanel(new AddaptableAppearanceSettingsView());			
 }//GEN-LAST:event_appearanceButtonActionPerformed
+
+private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
+// TODO add your handling code here:
+	showPanel(new Help());		
+}//GEN-LAST:event_adaptiveButton4ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton4;

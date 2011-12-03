@@ -17,6 +17,7 @@ import assignment2.AdaptableViews.AdaptableVideoCall;
 import assignment2.Contact;
 import assignment2.Utility.Utility;
 import assignment2.AccessibleIMInterface;
+import assignment2.DeleteContact;
 import java.awt.Component;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
@@ -227,6 +228,11 @@ public class ChatMainView extends javax.swing.JPanel {
         buttonsPanel.add(addContactButton);
 
         removeContactButton.setFunction("ContactsActionButton");
+        removeContactButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeContactButtonActionPerformed(evt);
+            }
+        });
         buttonsPanel.add(removeContactButton);
 
         groupContactsButton.setFunction("ContactsActionButton");
@@ -573,6 +579,22 @@ public class ChatMainView extends javax.swing.JPanel {
 			group2InitialHeight = groupContentPanel2.getPreferredSize().height;			
 		CollapseGroup(groupContentPanel2, groupButton2, group2InitialHeight);
     }//GEN-LAST:event_groupButton2ActionPerformed
+
+private void removeContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeContactButtonActionPerformed
+// TODO add your handling code here:
+	JPanel myParent = (JPanel)getParent();	
+		while ( (!(myParent instanceof AccessibleIMInterface)) && myParent != null)
+			 myParent = (JPanel)myParent.getParent();
+		((AccessibleIMInterface)myParent).ShowIMButton(true);
+		
+		myParent = (JPanel)getParent().getParent();
+		DeleteContact c	= new DeleteContact();    
+        myParent.removeAll();
+        c.setVisible(true);
+        myParent.add(c);
+        myParent.repaint();
+        myParent.validate();     
+}//GEN-LAST:event_removeContactButtonActionPerformed
           
     private void showInContentPanel (JPanel p) {
         contentPanel.removeAll();

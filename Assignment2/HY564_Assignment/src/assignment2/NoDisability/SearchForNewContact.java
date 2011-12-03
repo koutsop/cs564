@@ -10,6 +10,8 @@
  */
 package assignment2.NoDisability;
 
+import assignment2.AdaptableViews.AdaptableAddContactResults;
+import assignment2.AdaptableViews.AddaptableGeneralSettingsView;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 
@@ -108,7 +110,7 @@ public class SearchForNewContact extends javax.swing.JPanel {
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
 	// Instantiate the new screen
 	JPanel myParent = (JPanel)this.getParent();
-	AddContactResults r = new AddContactResults();
+	AdaptableAddContactResults r = new AdaptableAddContactResults();
 	r.setVisible(true);
 	myParent.removeAll();
 	myParent.add(r);
