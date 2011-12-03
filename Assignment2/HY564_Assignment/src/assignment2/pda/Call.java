@@ -53,7 +53,7 @@ public class Call extends javax.swing.JPanel {
         closeButton = new widgets.button.AdaptiveButton();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
-        koutsopPanel = new widgets.panel.AdaptivePanel();
+        marigiannaPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel8 = new widgets.panel.AdaptivePanel();
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
         endCallButton = new widgets.button.AdaptiveButton();
@@ -96,21 +96,21 @@ public class Call extends javax.swing.JPanel {
         adaptivePanel2.setLayout(new java.awt.BorderLayout(60, 0));
         adaptivePanel2.add(adaptivePanel1, java.awt.BorderLayout.EAST);
 
-        koutsopPanel.setFunction("KoutsopImg");
-        koutsopPanel.setName("Panel.Content.KoutsopImage"); // NOI18N
+        marigiannaPanel.setFunction("marigiannaImg");
+        marigiannaPanel.setName("Panel.Content.MarigiannaImage"); // NOI18N
 
-        javax.swing.GroupLayout koutsopPanelLayout = new javax.swing.GroupLayout(koutsopPanel);
-        koutsopPanel.setLayout(koutsopPanelLayout);
-        koutsopPanelLayout.setHorizontalGroup(
-            koutsopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout marigiannaPanelLayout = new javax.swing.GroupLayout(marigiannaPanel);
+        marigiannaPanel.setLayout(marigiannaPanelLayout);
+        marigiannaPanelLayout.setHorizontalGroup(
+            marigiannaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 415, Short.MAX_VALUE)
         );
-        koutsopPanelLayout.setVerticalGroup(
-            koutsopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        marigiannaPanelLayout.setVerticalGroup(
+            marigiannaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 186, Short.MAX_VALUE)
         );
 
-        adaptivePanel2.add(koutsopPanel, java.awt.BorderLayout.CENTER);
+        adaptivePanel2.add(marigiannaPanel, java.awt.BorderLayout.CENTER);
         adaptivePanel2.add(adaptivePanel8, java.awt.BorderLayout.WEST);
 
         add(adaptivePanel2, java.awt.BorderLayout.CENTER);
@@ -149,7 +149,7 @@ public class Call extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel8;
     private widgets.button.AdaptiveButton closeButton;
     private widgets.button.AdaptiveButton endCallButton;
-    private widgets.panel.AdaptivePanel koutsopPanel;
+    private widgets.panel.AdaptivePanel marigiannaPanel;
     private widgets.button.AdaptiveButton muteButton;
     // End of variables declaration//GEN-END:variables
 }

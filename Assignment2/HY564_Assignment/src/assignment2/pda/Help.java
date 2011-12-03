@@ -10,8 +10,10 @@
  */
 package assignment2.pda;
 
+import javax.swing.ImageIcon;
 import pda.MainWindowPDA;
 import utilities.Adaptation;
+import utilities.DMSLConnector;
 
 /**
  *
@@ -24,6 +26,10 @@ public class Help extends javax.swing.JPanel {
 		initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);	
+		
+		String path = DMSLConnector.getInstance().getClient(false).Evaluate("SearchButton");
+		adaptiveButton1.setIcon(new ImageIcon(getClass().getResource(path)));				
+		
 	}
 
 	/** This method is called from within the constructor to
@@ -65,7 +71,6 @@ public class Help extends javax.swing.JPanel {
         searchPanel.setLayout(new java.awt.BorderLayout(10, 0));
         searchPanel.add(adaptiveTextField1, java.awt.BorderLayout.CENTER);
 
-        adaptiveButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/profile_pda/find.png"))); // NOI18N
         adaptiveButton1.setFunction("EmptyButton");
         adaptiveButton1.setMargin(new java.awt.Insets(0, 0, 0, 0));
         searchPanel.add(adaptiveButton1, java.awt.BorderLayout.EAST);

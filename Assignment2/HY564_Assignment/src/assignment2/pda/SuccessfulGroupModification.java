@@ -11,6 +11,7 @@
 package assignment2.pda;
 
 import pda.MainWindowPDA;
+import utilities.Adaptation;
 
 /**
  *
@@ -21,6 +22,8 @@ public class SuccessfulGroupModification extends javax.swing.JPanel {
 	/** Creates new form SuccessfulGroupCreation */
 	public SuccessfulGroupModification() {
 		initComponents();
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);		
 	}
 
 	/** This method is called from within the constructor to

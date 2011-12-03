@@ -58,11 +58,26 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
             <Property name="alignment" type="int" value="0"/>
+            <Property name="horizontalGap" type="int" value="0"/>
           </Layout>
           <SubComponents>
+            <Component class="widgets.button.AdaptiveButton" name="loggoutButton">
+              <Properties>
+                <Property name="function" type="java.lang.String" value="EmptyButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loggoutButtonActionPerformed"/>
+              </Events>
+            </Component>
             <Component class="widgets.button.AdaptiveButton" name="addContactButton">
               <Properties>
-                <Property name="function" type="java.lang.String" value="ContactsActionButton"/>
+                <Property name="function" type="java.lang.String" value="EmptyButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addContactButtonActionPerformed"/>
@@ -70,7 +85,10 @@
             </Component>
             <Component class="widgets.button.AdaptiveButton" name="removeContactButton">
               <Properties>
-                <Property name="function" type="java.lang.String" value="ContactsActionButton"/>
+                <Property name="function" type="java.lang.String" value="EmptyButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="removeContactButtonActionPerformed"/>
@@ -78,7 +96,10 @@
             </Component>
             <Component class="widgets.button.AdaptiveButton" name="groupContactsButton">
               <Properties>
-                <Property name="function" type="java.lang.String" value="ContactsActionButton"/>
+                <Property name="function" type="java.lang.String" value="EmptyButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="groupContactsButtonActionPerformed"/>
@@ -111,7 +132,10 @@
             </Component>
             <Component class="widgets.button.AdaptiveButton" name="searchButton">
               <Properties>
-                <Property name="function" type="java.lang.String" value="ContactsActionButton"/>
+                <Property name="function" type="java.lang.String" value="EmptyButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
               </Properties>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">

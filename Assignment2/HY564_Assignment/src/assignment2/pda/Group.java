@@ -11,6 +11,7 @@
 package assignment2.pda;
 
 import pda.MainWindowPDA;
+import utilities.Adaptation;
 
 /**
  *
@@ -21,6 +22,8 @@ public class Group extends javax.swing.JPanel {
 	/** Creates new form NewGroup */
 	public Group() {
 		initComponents();
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);
 		
 		adaptiveCheckBox1.setSelected(true);
 		adaptiveCheckBox3.setSelected(true);

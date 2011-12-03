@@ -110,10 +110,10 @@
 
           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
         </Container>
-        <Container class="widgets.panel.AdaptivePanel" name="koutsopPanel">
+        <Container class="widgets.panel.AdaptivePanel" name="marigiannaPanel">
           <Properties>
-            <Property name="function" type="java.lang.String" value="KoutsopImg"/>
-            <Property name="name" type="java.lang.String" value="Panel.Content.KoutsopImage" noResource="true"/>
+            <Property name="function" type="java.lang.String" value="marigiannaImg"/>
+            <Property name="name" type="java.lang.String" value="Panel.Content.MarigiannaImage" noResource="true"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
