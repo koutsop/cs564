@@ -4,20 +4,18 @@
  */
 
 /*
- * NoDisabilityMainView.java
+ * ContactsListPanel.java
  *
- * Created on 23 Νοε 2011, 3:56:11 μμ
+ * Created on 3 Δεκ 2011, 1:46:29 μμ
  */
-package assignment2.NoDisability;
+package assignment2.LowVision;
 
-import assignment2.AdaptableViews.AdaptableCall;
-import assignment2.AdaptableViews.AdaptableChat;
-import assignment2.AdaptableViews.AdaptableMyProfile;
-import assignment2.AdaptableViews.AdaptableVideoCall;
-import assignment2.Contact;
-import assignment2.Utility.Utility;
 import assignment2.AccessibleIMInterface;
+import assignment2.Contact;
+import assignment2.NoDisability.Groups;
+import assignment2.NoDisability.SearchForNewContact;
 import java.awt.Component;
+import java.awt.Container;
 import java.awt.Dimension;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -29,26 +27,17 @@ import utilities.DMSLConnector;
  *
  * @author koutsop
  */
-public class ChatMainView extends javax.swing.JPanel {
-   
-    /** Creates new form NoDisabilityMainView */
-	//To menuSize to xriazomaste epidei 8eloume na dwsoume diastaseis sto contactList
-	//Apo tous rules pernoume to width alla oxi to height. Den mporoume na xrisimopoieisoume
-	//to diko mas heigt epidei den exoume ginei akoma add ston patera mas ara den exoume height akoma.
+public class ContactsListPanel extends javax.swing.JPanel {
 
-    public ChatMainView(Dimension menuSize) {
-        this.menuSize = menuSize;
-        initComponents();
-		AddContacts();
-		
-		/*Update specific components so as to impose specific rules (both methods take as argument
-        the  main container/placeholder the holds all the widgets placed into the UI. This concept
-        is similar to the HTML <body> element) */
-        Adaptation.automaticallySetRuntime(this);
+	/** Creates new form ContactsListPanel */
+	public ContactsListPanel() {
+		initComponents();
+		Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
+		
+		AddContacts();
 		SetContactSizeImages();
-        SetPanelsSize ();
-        
+		
         String path = DMSLConnector.getInstance().getClient(false).Evaluate("AddButton");
         addContactButton.setIcon(new ImageIcon(getClass().getResource(path)));  
         
@@ -61,64 +50,11 @@ public class ChatMainView extends javax.swing.JPanel {
         path = DMSLConnector.getInstance().getClient(false).Evaluate("RemoveButton");
         removeContactButton.setIcon(new ImageIcon(getClass().getResource(path)));
 		
-		
 		collpaseAddImgPath = DMSLConnector.getInstance().getClient(false).Evaluate("CollapseAddButton");
 		collapseSubImgPath = DMSLConnector.getInstance().getClient(false).Evaluate("CollapseSubButton");
         groupButton0.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
 		groupButton1.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
-		groupButton2.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
-		
-        selectMenuButton(myProfileButton);
-        showInContentPanel(new AdaptableMyProfile());
-		//this.updateUI();
-    }
-    
-    private void SetPanelsSize() {
-        final int windowWidth   = 1000;
-        final int windowHeight  = 680; // window's max height: 720, - 40 for the title bar
-        int height              = windowHeight - menuSize.height;
-        int contactListWidth    = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactListWidth"));
-        
-        Utility.SetJComponentSize(this, windowWidth, height);
-        Utility.SetJComponentSize(contactsListScrollPane, contactListWidth, height);
-        Utility.SetJComponentSize(mainPanel, windowWidth - contactListWidth, height);
-        Utility.SetJComponentSize(
-            contentPanel, 
-            windowWidth - contactListWidth - 40,                //20 is left and right window's border, 20 border gap
-            height - tabPanel.getPreferredSize().height - 10    //10 bottom window's border
-        );
-    }
-	
-	private void SetContactSizeImages () {
-		int contactHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactHeight"));
-		int contactWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactWidth"));
-		int contactImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgHeight"));
-		int contactImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgWidth"));
-		int statusImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgHeight"));
-		int statusImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgWidth"));
-		
-		assert	contactHeight		!= -1 &&
-				contactWidth		!= -1 &&
-				contactImgHeight	!= -1 && 
-				contactImgWidth		!= -1 && 
-				statusImgHeight		!= -1 && 
-				statusImgWidth		!= -1;
-		
-		for (Component contact: groupContentPanel.getComponents()) {
-			//((Contact)contact).SetContactSize(contactWidth, contactHeight);
-			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
-            ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
-		}
-		for (Component contact: groupContentPanel1.getComponents()) {
-			//((Contact)contact).SetContactSize(contactWidth, contactHeight);
-			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
-            ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
-		}
-		for (Component contact: groupContentPanel2.getComponents()) {
-			//((Contact)contact).SetContactSize(contactWidth, contactHeight);
-			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
-            ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
-		}	
+		groupButton2.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));				
 	}
 	
 	private void AddContacts () {
@@ -153,17 +89,58 @@ public class ChatMainView extends javax.swing.JPanel {
         groupContentPanel2.add(new Contact("marigiannaImg", "Panel.Content.MarigiannaImage", "StatusBusyImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
         groupContentPanel2.add(new Contact("koutsopImg", "Panel.Content.KoutsopImage", "StatusAvailableImg", "Koutsopoulos Nikolaos", "H zwh einai skata", "available"));
 	}
-
-    /** This method is called from within the constructor to
-     * initialize the form.
-     * WARNING: Do NOT modify this code. The content of this method is
-     * always regenerated by the Form Editor.
-     */
-    @SuppressWarnings("unchecked")
+	
+	private void SetContactSizeImages () {
+		int contactHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactHeight"));
+		int contactWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactWidth"));
+		int contactImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgHeight"));
+		int contactImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("ContactImgWidth"));
+		int statusImgHeight = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgHeight"));
+		int statusImgWidth = Integer.parseInt(DMSLConnector.getInstance().getClient(false).Evaluate("StatusImgWidth"));
+		
+		assert	contactHeight		!= -1 &&
+				contactWidth		!= -1 &&
+				contactImgHeight	!= -1 && 
+				contactImgWidth		!= -1 && 
+				statusImgHeight		!= -1 && 
+				statusImgWidth		!= -1;
+		
+		for (Component contact: groupContentPanel.getComponents()) {
+			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
+            ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
+		}
+		for (Component contact: groupContentPanel1.getComponents()) {
+			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
+            ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
+		}
+		for (Component contact: groupContentPanel2.getComponents()) {
+			((Contact)contact).SetAvatarDimensionPanel(contactImgWidth, contactImgHeight);
+            ((Contact)contact).SetStatusDimensionPanel(statusImgWidth, statusImgHeight);
+		}	
+	}	
+	
+	private void CollapseGroup (JPanel group, JButton button, int initialHeight) {
+		group.setVisible(!group.isVisible());
+		
+		if (group.isVisible()) {
+			button.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
+			group.setPreferredSize(new Dimension(group.getPreferredSize().width, initialHeight));
+		}
+		else {
+			button.setIcon(new ImageIcon(getClass().getResource(collapseSubImgPath)));
+			group.setPreferredSize(new Dimension(group.getPreferredSize().width, 0));				
+		}
+	}	
+	
+	/** This method is called from within the constructor to
+	 * initialize the form.
+	 * WARNING: Do NOT modify this code. The content of this method is
+	 * always regenerated by the Form Editor.
+	 */
+	@SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        leftPanel = new widgets.panel.AdaptivePanel();
         LeftCenterPanel = new widgets.panel.AdaptivePanel();
         contactActionPanel = new widgets.panel.AdaptivePanel();
         buttonsPanel = new widgets.panel.AdaptivePanel();
@@ -199,22 +176,12 @@ public class ChatMainView extends javax.swing.JPanel {
         adaptiveLabel3 = new widgets.label.AdaptiveLabel();
         groupContentPanel2 = new widgets.panel.AdaptivePanel();
         westPanel2 = new widgets.panel.AdaptivePanel();
-        mainPanel = new widgets.panel.AdaptivePanel();
-        tabPanel = new widgets.panel.AdaptivePanel();
-        myProfileButton = new widgets.button.MainMenuButton();
-        chatButton = new widgets.button.MainMenuButton();
-        videoCallButton = new widgets.button.MainMenuButton();
-        callButton = new widgets.button.MainMenuButton();
-        contentPanel = new widgets.panel.AdaptivePanel();
 
-        setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10));
-        setLayout(new java.awt.BorderLayout(10, 10));
-
-        leftPanel.setLayout(new javax.swing.BoxLayout(leftPanel, javax.swing.BoxLayout.LINE_AXIS));
+        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
 
         LeftCenterPanel.setLayout(new java.awt.BorderLayout(0, 10));
 
-        contactActionPanel.setLayout(new java.awt.BorderLayout(0, 10));
+        contactActionPanel.setLayout(new java.awt.GridLayout(1, 2));
 
         buttonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 0));
 
@@ -237,14 +204,13 @@ public class ChatMainView extends javax.swing.JPanel {
         });
         buttonsPanel.add(groupContactsButton);
 
-        contactActionPanel.add(buttonsPanel, java.awt.BorderLayout.NORTH);
+        contactActionPanel.add(buttonsPanel);
 
         searchPanel.setLayout(new javax.swing.BoxLayout(searchPanel, javax.swing.BoxLayout.LINE_AXIS));
         searchPanel.add(adaptiveTextField1);
 
         adaptivePanel3.setMaximumSize(new java.awt.Dimension(3, 1));
         adaptivePanel3.setMinimumSize(new java.awt.Dimension(3, 1));
-        adaptivePanel3.setPreferredSize(new java.awt.Dimension(3, 1));
 
         javax.swing.GroupLayout adaptivePanel3Layout = new javax.swing.GroupLayout(adaptivePanel3);
         adaptivePanel3.setLayout(adaptivePanel3Layout);
@@ -262,7 +228,7 @@ public class ChatMainView extends javax.swing.JPanel {
         searchButton.setFunction("ContactsActionButton");
         searchPanel.add(searchButton);
 
-        contactActionPanel.add(searchPanel, java.awt.BorderLayout.CENTER);
+        contactActionPanel.add(searchPanel);
 
         LeftCenterPanel.add(contactActionPanel, java.awt.BorderLayout.NORTH);
 
@@ -310,7 +276,6 @@ public class ChatMainView extends javax.swing.JPanel {
 
         westPanel.setMaximumSize(new java.awt.Dimension(1, 1));
         westPanel.setMinimumSize(new java.awt.Dimension(1, 1));
-        westPanel.setPreferredSize(new java.awt.Dimension(1, 1));
 
         javax.swing.GroupLayout westPanelLayout = new javax.swing.GroupLayout(westPanel);
         westPanel.setLayout(westPanelLayout);
@@ -365,7 +330,6 @@ public class ChatMainView extends javax.swing.JPanel {
 
         westPanel1.setMaximumSize(new java.awt.Dimension(1, 1));
         westPanel1.setMinimumSize(new java.awt.Dimension(1, 1));
-        westPanel1.setPreferredSize(new java.awt.Dimension(1, 1));
 
         javax.swing.GroupLayout westPanel1Layout = new javax.swing.GroupLayout(westPanel1);
         westPanel1.setLayout(westPanel1Layout);
@@ -420,7 +384,6 @@ public class ChatMainView extends javax.swing.JPanel {
 
         westPanel2.setMaximumSize(new java.awt.Dimension(1, 1));
         westPanel2.setMinimumSize(new java.awt.Dimension(1, 1));
-        westPanel2.setPreferredSize(new java.awt.Dimension(1, 1));
 
         javax.swing.GroupLayout westPanel2Layout = new javax.swing.GroupLayout(westPanel2);
         westPanel2.setLayout(westPanel2Layout);
@@ -445,65 +408,28 @@ public class ChatMainView extends javax.swing.JPanel {
 
         LeftCenterPanel.add(contactsPanel, java.awt.BorderLayout.CENTER);
 
-        leftPanel.add(LeftCenterPanel);
-
-        add(leftPanel, java.awt.BorderLayout.LINE_START);
-
-        mainPanel.setLayout(new java.awt.BorderLayout());
-
-        tabPanel.setLayout(new java.awt.GridLayout(1, 3, 0, 30));
-
-        myProfileButton.setText("To προφίλ μου");
-        myProfileButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                myProfileButtonActionPerformed(evt);
-            }
-        });
-        tabPanel.add(myProfileButton);
-
-        chatButton.setText("Επικοινωνία: Koutsop");
-        chatButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                chatButtonActionPerformed(evt);
-            }
-        });
-        tabPanel.add(chatButton);
-
-        videoCallButton.setText("Κλήση Βίντεο: koutsop");
-        videoCallButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                videoCallButtonActionPerformed(evt);
-            }
-        });
-        tabPanel.add(videoCallButton);
-
-        callButton.setText("Κλήση: koutsop");
-        callButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                callButtonActionPerformed(evt);
-            }
-        });
-        tabPanel.add(callButton);
-
-        mainPanel.add(tabPanel, java.awt.BorderLayout.PAGE_START);
-
-        contentPanel.setLayout(new javax.swing.BoxLayout(contentPanel, javax.swing.BoxLayout.LINE_AXIS));
-        mainPanel.add(contentPanel, java.awt.BorderLayout.CENTER);
-
-        add(mainPanel, java.awt.BorderLayout.CENTER);
+        add(LeftCenterPanel);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void chatButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chatButtonActionPerformed
-        selectMenuButton(chatButton);
-        showInContentPanel(new AdaptableChat());
-    }//GEN-LAST:event_chatButtonActionPerformed
+	private void groupButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton0ActionPerformed
+		if (groupInitialHeight == -1)	//Do in first call
+			groupInitialHeight = groupContentPanel.getPreferredSize().height;
+		CollapseGroup(groupContentPanel, groupButton0, groupInitialHeight);
+	}//GEN-LAST:event_groupButton0ActionPerformed
 
-    private void videoCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_videoCallButtonActionPerformed
-        selectMenuButton(videoCallButton);
-        showInContentPanel(new AdaptableVideoCall());
-    }//GEN-LAST:event_videoCallButtonActionPerformed
+	private void groupButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton1ActionPerformed
+		if (group1InitialHeight == -1)	//Do in first call
+			group1InitialHeight = groupContentPanel1.getPreferredSize().height;		
+		CollapseGroup(groupContentPanel1, groupButton1, group1InitialHeight);
+	}//GEN-LAST:event_groupButton1ActionPerformed
 
-    private void addContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addContactButtonActionPerformed
+	private void groupButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton2ActionPerformed
+		if (group2InitialHeight == -1)	//Do in first call
+			group2InitialHeight = groupContentPanel2.getPreferredSize().height;			
+		CollapseGroup(groupContentPanel2, groupButton2, group2InitialHeight);
+	}//GEN-LAST:event_groupButton2ActionPerformed
+
+	private void addContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addContactButtonActionPerformed
 		JPanel myParent = (JPanel)getParent();	
 		while ( (!(myParent instanceof AccessibleIMInterface)) && myParent != null)
 			 myParent = (JPanel)myParent.getParent();
@@ -515,20 +441,10 @@ public class ChatMainView extends javax.swing.JPanel {
         c.setVisible(true);
         myParent.add(c);
         myParent.repaint();
-        myParent.validate();         
-    }//GEN-LAST:event_addContactButtonActionPerformed
+        myParent.validate();   
+	}//GEN-LAST:event_addContactButtonActionPerformed
 
-    private void callButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_callButtonActionPerformed
-        selectMenuButton(callButton);
-        showInContentPanel(new AdaptableCall());
-    }//GEN-LAST:event_callButtonActionPerformed
-
-    private void myProfileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_myProfileButtonActionPerformed
-        selectMenuButton(myProfileButton);
-        showInContentPanel(new AdaptableMyProfile());
-    }//GEN-LAST:event_myProfileButtonActionPerformed
-
-    private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed
+	private void groupContactsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupContactsButtonActionPerformed
 		JPanel myParent = (JPanel)getParent();	
 		while ( (!(myParent instanceof AccessibleIMInterface)) && myParent != null)
 			 myParent = (JPanel)myParent.getParent();
@@ -541,56 +457,7 @@ public class ChatMainView extends javax.swing.JPanel {
         myParent.add(c);
         myParent.repaint();
         myParent.validate(); 
-    }//GEN-LAST:event_groupContactsButtonActionPerformed
-
-	private void CollapseGroup (JPanel group, JButton button, int initialHeight) {
-		group.setVisible(!group.isVisible());
-		
-		if (group.isVisible()) {
-			button.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
-			group.setPreferredSize(new Dimension(group.getPreferredSize().width, initialHeight));
-		}
-		else {
-			button.setIcon(new ImageIcon(getClass().getResource(collapseSubImgPath)));
-			group.setPreferredSize(new Dimension(group.getPreferredSize().width, 0));				
-		}
-	}
-
-    private void groupButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton0ActionPerformed
-		if (groupInitialHeight == -1)	//Do in first call
-			groupInitialHeight = groupContentPanel.getPreferredSize().height;
-		CollapseGroup(groupContentPanel, groupButton0, groupInitialHeight);
-    }//GEN-LAST:event_groupButton0ActionPerformed
-
-    private void groupButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton1ActionPerformed
-		if (group1InitialHeight == -1)	//Do in first call
-			group1InitialHeight = groupContentPanel1.getPreferredSize().height;		
-		CollapseGroup(groupContentPanel1, groupButton1, group1InitialHeight);
-    }//GEN-LAST:event_groupButton1ActionPerformed
-
-    private void groupButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_groupButton2ActionPerformed
-		if (group2InitialHeight == -1)	//Do in first call
-			group2InitialHeight = groupContentPanel2.getPreferredSize().height;			
-		CollapseGroup(groupContentPanel2, groupButton2, group2InitialHeight);
-    }//GEN-LAST:event_groupButton2ActionPerformed
-          
-    private void showInContentPanel (JPanel p) {
-        contentPanel.removeAll();
-        p.setVisible(true);
-        contentPanel.add(p);
-        contentPanel.repaint();
-        contentPanel.validate();       
-    }
-    
-    private void selectMenuButton (JButton button) {
-        chatButton.setSelected(false);
-        videoCallButton.setSelected(false);
-        callButton.setSelected(false);
-        myProfileButton.setSelected(false);
-        button.setSelected(true);
-    }
-    
-    private Dimension	menuSize;
+	}//GEN-LAST:event_groupContactsButtonActionPerformed
 	
 	/*********************************************/
 	//Collapse control variables
@@ -615,13 +482,10 @@ public class ChatMainView extends javax.swing.JPanel {
     private widgets.textfield.AdaptiveTextField adaptiveTextField1;
     private widgets.button.AdaptiveButton addContactButton;
     private widgets.panel.AdaptivePanel buttonsPanel;
-    private widgets.button.MainMenuButton callButton;
-    private widgets.button.MainMenuButton chatButton;
     private widgets.panel.AdaptivePanel contactActionPanel;
     private widgets.panel.AdaptivePanel contactsListPanel;
     private javax.swing.JScrollPane contactsListScrollPane;
     private widgets.panel.AdaptivePanel contactsPanel;
-    private widgets.panel.AdaptivePanel contentPanel;
     private widgets.button.AdaptiveButton groupButton0;
     private widgets.button.AdaptiveButton groupButton1;
     private widgets.button.AdaptiveButton groupButton2;
@@ -635,14 +499,9 @@ public class ChatMainView extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel groupPanel;
     private widgets.panel.AdaptivePanel groupPanel1;
     private widgets.panel.AdaptivePanel groupPanel2;
-    private widgets.panel.AdaptivePanel leftPanel;
-    private widgets.panel.AdaptivePanel mainPanel;
-    private widgets.button.MainMenuButton myProfileButton;
     private widgets.button.AdaptiveButton removeContactButton;
     private widgets.button.AdaptiveButton searchButton;
     private widgets.panel.AdaptivePanel searchPanel;
-    private widgets.panel.AdaptivePanel tabPanel;
-    private widgets.button.MainMenuButton videoCallButton;
     private widgets.panel.AdaptivePanel westPanel;
     private widgets.panel.AdaptivePanel westPanel1;
     private widgets.panel.AdaptivePanel westPanel2;

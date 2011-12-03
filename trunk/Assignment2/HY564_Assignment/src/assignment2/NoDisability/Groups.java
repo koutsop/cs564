@@ -20,7 +20,7 @@ import utilities.Adaptation;
 public class Groups extends javax.swing.JPanel {
     
     /** Creates new form Groups */
-    Groups() {
+    public Groups() {
 		initComponents();
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);		
