@@ -657,8 +657,8 @@ component AdaptableMyProfile [
 ]
 
 component SettingsView [
-	if		profile4 then	activate "LowVisionProfile"
-	if 		profile3 then 	activate "InstabilitySettings"
+    if      profile3 then 	activate "InstabilitySettings"
+    else if	profile4 then	activate "LowVisionSettings"
 	else 					activate "CommonSettings"
 ]
 
