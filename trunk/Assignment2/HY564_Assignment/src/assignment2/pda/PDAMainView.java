@@ -48,6 +48,9 @@ public class PDAMainView extends javax.swing.JPanel {
         path = DMSLConnector.getInstance().getClient(false).Evaluate("RemoveButton");
         removeContactButton.setIcon(new ImageIcon(getClass().getResource(path)));
 		
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("LogoutButton");
+        loggoutButton.setIcon(new ImageIcon(getClass().getResource(path)));		
+		
 		collpaseAddImgPath = DMSLConnector.getInstance().getClient(false).Evaluate("CollapseAddButton");
 		collapseSubImgPath = DMSLConnector.getInstance().getClient(false).Evaluate("CollapseSubButton");
         groupButton0.setIcon(new ImageIcon(getClass().getResource(collpaseAddImgPath)));
@@ -134,6 +137,7 @@ public class PDAMainView extends javax.swing.JPanel {
         profileButton = new widgets.button.MainMenuButton();
         settingsButton = new widgets.button.MainMenuButton();
         contactsButtonsPanel = new widgets.panel.AdaptivePanel();
+        loggoutButton = new widgets.button.AdaptiveButton();
         addContactButton = new widgets.button.AdaptiveButton();
         removeContactButton = new widgets.button.AdaptiveButton();
         groupContactsButton = new widgets.button.AdaptiveButton();
@@ -191,9 +195,19 @@ public class PDAMainView extends javax.swing.JPanel {
 
         buttonsPanel.add(menuButtonsPanels);
 
-        contactsButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
+        contactsButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        addContactButton.setFunction("ContactsActionButton");
+        loggoutButton.setFunction("EmptyButton");
+        loggoutButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        loggoutButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loggoutButtonActionPerformed(evt);
+            }
+        });
+        contactsButtonsPanel.add(loggoutButton);
+
+        addContactButton.setFunction("EmptyButton");
+        addContactButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
         addContactButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addContactButtonActionPerformed(evt);
@@ -201,7 +215,8 @@ public class PDAMainView extends javax.swing.JPanel {
         });
         contactsButtonsPanel.add(addContactButton);
 
-        removeContactButton.setFunction("ContactsActionButton");
+        removeContactButton.setFunction("EmptyButton");
+        removeContactButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
         removeContactButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removeContactButtonActionPerformed(evt);
@@ -209,7 +224,8 @@ public class PDAMainView extends javax.swing.JPanel {
         });
         contactsButtonsPanel.add(removeContactButton);
 
-        groupContactsButton.setFunction("ContactsActionButton");
+        groupContactsButton.setFunction("EmptyButton");
+        groupContactsButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
         groupContactsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 groupContactsButtonActionPerformed(evt);
@@ -225,7 +241,8 @@ public class PDAMainView extends javax.swing.JPanel {
         adaptiveTextField1.setText("adaptiveTextField1");
         searchPanel.add(adaptiveTextField1, java.awt.BorderLayout.CENTER);
 
-        searchButton.setFunction("ContactsActionButton");
+        searchButton.setFunction("EmptyButton");
+        searchButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
         searchPanel.add(searchButton, java.awt.BorderLayout.EAST);
 
         buttonsPanel.add(searchPanel);
@@ -468,6 +485,10 @@ public class PDAMainView extends javax.swing.JPanel {
 		}
 	}//GEN-LAST:event_OnMouseClicked
 
+	private void loggoutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loggoutButtonActionPerformed
+		MainWindowPDA.showPanel(new Login());
+	}//GEN-LAST:event_loggoutButtonActionPerformed
+
 	private void CollapseGroup (JPanel group, JButton button, int initialHeight) {
 		group.setVisible(!group.isVisible());
 		
@@ -520,6 +541,7 @@ public class PDAMainView extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel groupPanel1;
     private widgets.panel.AdaptivePanel groupPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private widgets.button.AdaptiveButton loggoutButton;
     private widgets.panel.AdaptivePanel menuButtonsPanels;
     private widgets.button.MainMenuButton profileButton;
     private widgets.button.AdaptiveButton removeContactButton;

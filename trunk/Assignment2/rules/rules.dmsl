@@ -274,6 +274,11 @@ component ReceiveContactImg [
 //	buttons images
 //	=======================================================
 
+component LogoutButton [
+	if	profile6 then	activate "/images/profile_pda/exit.png"
+    else				activate "/images/profile_no_disability/x.png"
+]
+
 component MuteVideoPDAButton [
     if	profile6 then	activate "/images/profile_pda/mute1.png"
     else				activate "/images/profile_no_disability/x.png"
@@ -496,7 +501,7 @@ component SearchButton [
 	else if	profile3 then	activate "/images/profile_instability/search.png"
 	else if	profile4 then	activate "/images/profile_low_vision/search.png"
 	else if profile5 then	activate "/images/profile_spots/search.png"
-	else if	profile6 then	activate "/images/profile_pda/search.png"
+	else if	profile6 then	activate "/images/profile_pda/find.png"
     else					activate "/images/profile_no_disability/tick.png"
 ]
 

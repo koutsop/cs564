@@ -1,6 +1,7 @@
 package pda;
 
 
+import assignment2.pda.Login;
 import assignment2.pda.PDAMainView;
 import java.awt.Dimension;
 import javax.swing.JPanel;
@@ -36,8 +37,8 @@ public class MainWindowPDA extends javax.swing.JFrame {
 
         initComponents();
 
-        PDAMainView pda = new PDAMainView();
-        mainPanel.add(pda);
+        Login login = new Login();
+        mainPanel.add(login);
         
         this.setMinimumSize(new Dimension(360, 480));
         this.setMaximumSize(new Dimension(360, 480));

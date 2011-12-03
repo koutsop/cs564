@@ -10,6 +10,8 @@
  */
 package assignment2.pda;
 
+import utilities.Adaptation;
+
 /**
  *
  * @author koutsop
@@ -19,6 +21,8 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 	/** Creates new form NotificationsSettingsPanel */
 	public NotificationsSettingsPanel() {
 		initComponents();
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);		
 	}
 
 	/** This method is called from within the constructor to

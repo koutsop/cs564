@@ -27,8 +27,7 @@ public class Login1 extends javax.swing.JPanel {
     /** Creates new form Login1 */
     public Login1() {
         initComponents();
-		Adaptation.automaticallySetRuntime(this);
-        Adaptation.automaticallyAdapt(this);		
+		initAdaptation("no_disability");
     }
     
     private void initAdaptation(String profile){

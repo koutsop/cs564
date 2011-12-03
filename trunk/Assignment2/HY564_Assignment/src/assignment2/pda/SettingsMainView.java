@@ -11,11 +11,9 @@
 package assignment2.pda;
 
 import java.awt.event.MouseEvent;
-import javax.sound.midi.SysexMessage;
 import javax.swing.JPanel;
-import javax.swing.event.ListSelectionEvent;
-import javax.swing.event.ListSelectionListener;
 import pda.MainWindowPDA;
+import utilities.Adaptation;
 
 /**
  *
@@ -26,6 +24,8 @@ public class SettingsMainView extends javax.swing.JPanel {
 	/** Creates new form SettingsMainView */
 	public SettingsMainView() {
 		initComponents();
+        Adaptation.automaticallySetRuntime(this);
+        Adaptation.automaticallyAdapt(this);		
 	}
 	
 	private void showPanel (JPanel p) {
