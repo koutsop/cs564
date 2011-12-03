@@ -21,6 +21,7 @@ import utilities.DMSLConnector;
  */
 public class GeneralSettingsPanel extends javax.swing.JPanel {
 	private boolean showStartAutomaticllyButtonIcon = true;
+	private boolean showStartAutomaticllyButtonIcon1 = true;
 	private String	iconPath;
 
 	/** Creates new form GeneralSettingsPanel */
@@ -31,6 +32,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 		
 		iconPath = DMSLConnector.getInstance().getClient(false).Evaluate("AcceptanceButton");
 		adaptiveButton1.setIcon(new ImageIcon(getClass().getResource(iconPath)));
+		adaptiveButton13.setIcon(new ImageIcon(getClass().getResource(iconPath)));
 		showFontButtonIcon(adaptiveButton3);
 		showStyleButtonIcon(adaptiveButton9);
 	}
@@ -67,6 +69,8 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         centerPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptiveButton1 = new widgets.button.AdaptiveButton();
+        adaptivePanel15 = new widgets.panel.AdaptivePanel();
+        adaptiveButton13 = new widgets.button.AdaptiveButton();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptivePanel9 = new widgets.panel.AdaptivePanel();
@@ -113,7 +117,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         );
         westPanelLayout.setVerticalGroup(
             westPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 362, Short.MAX_VALUE)
+            .addGap(0, 392, Short.MAX_VALUE)
         );
 
         add(westPanel, java.awt.BorderLayout.WEST);
@@ -122,7 +126,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         centerPanel.setPreferredSize(new java.awt.Dimension(943, 300));
         centerPanel.setLayout(new java.awt.BorderLayout(0, 30));
 
-        adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
+        adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveButton1.setHorizontalAlignment(2);
         adaptiveButton1.setText("Έναρξη εφαρμογής κατά την εκκίνηση του λειτουργικού");
@@ -132,6 +136,32 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
             }
         });
         adaptivePanel1.add(adaptiveButton1);
+
+        adaptivePanel15.setMaximumSize(new java.awt.Dimension(1, 15));
+        adaptivePanel15.setMinimumSize(new java.awt.Dimension(1, 15));
+        adaptivePanel15.setPreferredSize(new java.awt.Dimension(1, 15));
+
+        javax.swing.GroupLayout adaptivePanel15Layout = new javax.swing.GroupLayout(adaptivePanel15);
+        adaptivePanel15.setLayout(adaptivePanel15Layout);
+        adaptivePanel15Layout.setHorizontalGroup(
+            adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1, Short.MAX_VALUE)
+        );
+        adaptivePanel15Layout.setVerticalGroup(
+            adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 15, Short.MAX_VALUE)
+        );
+
+        adaptivePanel1.add(adaptivePanel15);
+
+        adaptiveButton13.setHorizontalAlignment(2);
+        adaptiveButton13.setText("Emafanish tou malaka");
+        adaptiveButton13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton13ActionPerformed(evt);
+            }
+        });
+        adaptivePanel1.add(adaptiveButton13);
 
         centerPanel.add(adaptivePanel1, java.awt.BorderLayout.NORTH);
 
@@ -314,7 +344,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         );
         eastPanelLayout.setVerticalGroup(
             eastPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 362, Short.MAX_VALUE)
+            .addGap(0, 392, Short.MAX_VALUE)
         );
 
         add(eastPanel, java.awt.BorderLayout.EAST);
@@ -368,11 +398,20 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 		showStyleButtonIcon(adaptiveButton12);
 	}//GEN-LAST:event_adaptiveButton12ActionPerformed
 
+	private void adaptiveButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton13ActionPerformed
+		if (showStartAutomaticllyButtonIcon1)
+			adaptiveButton13.setIcon(null);
+		else
+			adaptiveButton13.setIcon(new ImageIcon(getClass().getResource(iconPath)));
+		showStartAutomaticllyButtonIcon1 = !showStartAutomaticllyButtonIcon1;
+	}//GEN-LAST:event_adaptiveButton13ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton10;
     private widgets.button.AdaptiveButton adaptiveButton11;
     private widgets.button.AdaptiveButton adaptiveButton12;
+    private widgets.button.AdaptiveButton adaptiveButton13;
     private widgets.button.AdaptiveButton adaptiveButton2;
     private widgets.button.AdaptiveButton adaptiveButton3;
     private widgets.button.AdaptiveButton adaptiveButton4;
@@ -390,6 +429,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel12;
     private widgets.panel.AdaptivePanel adaptivePanel13;
     private widgets.panel.AdaptivePanel adaptivePanel14;
+    private widgets.panel.AdaptivePanel adaptivePanel15;
     private widgets.panel.AdaptivePanel adaptivePanel16;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
