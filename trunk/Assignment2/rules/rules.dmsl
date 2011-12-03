@@ -662,6 +662,25 @@ component SettingsView [
 	else 					activate "CommonSettings"
 ]
 
+component AddContactResults [
+    if profile3		 then 	activate "AddContactResultsBig"
+    else if	profile4 then	activate "AddContactResultsBig"
+	else 					activate "AddContactResults"
+]
+
+component AddContactsInNewTeam [
+    if profile3		 then 	activate "AddContactsInNewTeamBig"
+    else if	profile4 then	activate "AddContactsInNewTeamBig"
+	else 					activate "AddContactsInNewTeam"
+]
+
+component AddContactsInTeam [
+    if profile3		 then 	activate "AddContactsInTeamBig"
+    else if	profile4 then	activate "AddContactsInTeamBig"
+	else 					activate "AddContactsInTeam"
+]
+
+
 component MainIMChatView [
 	if 		profile4 then 	activate "LowVisionChatMainView"
 	else 					activate "CommonChatMainView"

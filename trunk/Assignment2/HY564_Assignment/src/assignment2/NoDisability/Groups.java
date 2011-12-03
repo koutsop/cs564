@@ -10,6 +10,8 @@
  */
 package assignment2.NoDisability;
 
+import assignment2.AdaptableViews.AdaptableAddContactsInNewTeam;
+import assignment2.AdaptableViews.AdaptableAddContactsInTeam;
 import javax.swing.JPanel;
 import utilities.Adaptation;
 
@@ -218,7 +220,7 @@ private void adaptiveTextField1ActionPerformed(java.awt.event.ActionEvent evt) {
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
 	JPanel myParent = (JPanel)getParent();
-	AddContactsInNewTeam r = new AddContactsInNewTeam();
+	AdaptableAddContactsInNewTeam r = new AdaptableAddContactsInNewTeam();
 	r.setVisible(true);
 	myParent.removeAll();
 	myParent.add(r);
@@ -228,7 +230,7 @@ private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//G
 
 private void adaptiveButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton2ActionPerformed
 	JPanel myParent = (JPanel)getParent();
-	AddContactsInTeam r = new AddContactsInTeam();
+	AdaptableAddContactsInTeam r = new AdaptableAddContactsInTeam();
 	r.setVisible(true);
 	myParent.removeAll();
 	myParent.add(r);

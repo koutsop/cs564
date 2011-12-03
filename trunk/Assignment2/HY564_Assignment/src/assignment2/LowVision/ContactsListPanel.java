@@ -12,6 +12,7 @@ package assignment2.LowVision;
 
 import assignment2.AccessibleIMInterface;
 import assignment2.Contact;
+import assignment2.DeleteContact;
 import assignment2.NoDisability.Groups;
 import assignment2.NoDisability.SearchForNewContact;
 import java.awt.Component;
@@ -194,6 +195,11 @@ public class ContactsListPanel extends javax.swing.JPanel {
         buttonsPanel.add(addContactButton);
 
         removeContactButton.setFunction("ContactsActionButton");
+        removeContactButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeContactButtonActionPerformed(evt);
+            }
+        });
         buttonsPanel.add(removeContactButton);
 
         groupContactsButton.setFunction("ContactsActionButton");
@@ -458,6 +464,22 @@ public class ContactsListPanel extends javax.swing.JPanel {
         myParent.repaint();
         myParent.validate(); 
 	}//GEN-LAST:event_groupContactsButtonActionPerformed
+
+private void removeContactButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeContactButtonActionPerformed
+// TODO add your handling code here:
+		JPanel myParent = (JPanel)getParent();	
+		while ( (!(myParent instanceof AccessibleIMInterface)) && myParent != null)
+			 myParent = (JPanel)myParent.getParent();
+		((AccessibleIMInterface)myParent).ShowIMButton(true);
+		
+		myParent = (JPanel)getParent().getParent();
+		DeleteContact c = new DeleteContact();    
+        myParent.removeAll();
+        c.setVisible(true);
+        myParent.add(c);
+        myParent.repaint();
+        myParent.validate(); 
+}//GEN-LAST:event_removeContactButtonActionPerformed
 	
 	/*********************************************/
 	//Collapse control variables
