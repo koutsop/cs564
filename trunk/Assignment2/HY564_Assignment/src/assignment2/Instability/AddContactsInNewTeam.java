@@ -279,38 +279,26 @@ private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//G
 	myParent.validate();
 }//GEN-LAST:event_adaptiveButton1ActionPerformed
 
-private void AddContact () {
-		JPanel myParent = (JPanel)getParent();
 
-		// Instantiate the new screen
-		AddContactRequest r = new AddContactRequest();
-		r.setVisible(true);
-
-		// Remove the contents of the content panel & add the new screen
-		myParent.removeAll();
-		myParent.add(r);
-		myParent.repaint();
-		myParent.validate();		
-	}
 
 private void adaptiveButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton4ActionPerformed
 // TODO add your handling code here:
-	AddContact();
+
 }//GEN-LAST:event_adaptiveButton4ActionPerformed
 
 private void adaptiveButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton3ActionPerformed
 // TODO add your handling code here:
-	AddContact();
+	
 }//GEN-LAST:event_adaptiveButton3ActionPerformed
 
 private void adaptiveButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton5ActionPerformed
 // TODO add your handling code here:
-	AddContact();
+	
 }//GEN-LAST:event_adaptiveButton5ActionPerformed
 
 private void adaptiveButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton6ActionPerformed
 // TODO add your handling code here:
-	AddContact();
+	
 }//GEN-LAST:event_adaptiveButton6ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

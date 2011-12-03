@@ -273,7 +273,7 @@ public class AddContactResults extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
 private void adaptiveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton1ActionPerformed
-	JPanel myParent = (JPanel)getParent();
+	JPanel myParent = (JPanel)getParent().getParent();
 	SearchForNewContact r = new SearchForNewContact();
 	r.setVisible(true);
 	myParent.removeAll();
