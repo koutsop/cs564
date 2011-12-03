@@ -35,6 +35,8 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptiveLabel1 = new widgets.label.AdaptiveLabel();
         adaptiveComboBox1 = new widgets.combobox.AdaptiveComboBox();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
+        adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         adaptiveTextBox1 = new widgets.textbox.AdaptiveTextBox();
@@ -44,18 +46,20 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(1000, 300));
         setLayout(new java.awt.BorderLayout());
 
-        adaptivePanel1.setMaximumSize(new java.awt.Dimension(199, 100));
-        adaptivePanel1.setPreferredSize(new java.awt.Dimension(199, 100));
-        adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.LINE_AXIS));
+        adaptivePanel1.setLayout(new java.awt.BorderLayout(50, 0));
 
         adaptiveLabel1.setText("Επιλέξτε το θέμα: ");
-        adaptivePanel1.add(adaptiveLabel1);
+        adaptivePanel1.add(adaptiveLabel1, java.awt.BorderLayout.NORTH);
 
         adaptiveComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Classic", "Classic Picture", "Bubble", "Bubble Picture", "Ping Pong", "Ping Pong Picture" }));
-        adaptiveComboBox1.setMaximumSize(new java.awt.Dimension(112, 20));
-        adaptiveComboBox1.setMinimumSize(new java.awt.Dimension(112, 20));
-        adaptiveComboBox1.setPreferredSize(new java.awt.Dimension(112, 20));
-        adaptivePanel1.add(adaptiveComboBox1);
+        adaptiveComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveComboBox1ActionPerformed(evt);
+            }
+        });
+        adaptivePanel1.add(adaptiveComboBox1, java.awt.BorderLayout.CENTER);
+        adaptivePanel1.add(adaptivePanel3, java.awt.BorderLayout.SOUTH);
+        adaptivePanel1.add(adaptivePanel4, java.awt.BorderLayout.EAST);
 
         add(adaptivePanel1, java.awt.BorderLayout.NORTH);
 
@@ -76,11 +80,17 @@ public class AppearanceSettingsPanel extends javax.swing.JPanel {
         add(adaptivePanel2, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
 
+private void adaptiveComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveComboBox1ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveComboBox1ActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.combobox.AdaptiveComboBox adaptiveComboBox1;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel3;
+    private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.textbox.AdaptiveTextBox adaptiveTextBox1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
