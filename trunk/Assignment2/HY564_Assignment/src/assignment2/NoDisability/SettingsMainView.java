@@ -75,8 +75,6 @@ public class SettingsMainView extends javax.swing.JPanel {
         bottomPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
-        adaptivePanel1 = new widgets.panel.AdaptivePanel();
-        adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptiveButton6 = new widgets.button.AdaptiveButton();
@@ -84,6 +82,7 @@ public class SettingsMainView extends javax.swing.JPanel {
 
         secMenuButton1.setText("secMenuButton1");
 
+        setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 10, 10));
         setLayout(new java.awt.BorderLayout());
 
         menuPanel.setLayout(new javax.swing.BoxLayout(menuPanel, javax.swing.BoxLayout.PAGE_AXIS));
@@ -141,40 +140,14 @@ public class SettingsMainView extends javax.swing.JPanel {
         contentPanel.setLayout(new javax.swing.BoxLayout(contentPanel, javax.swing.BoxLayout.LINE_AXIS));
         add(contentPanel, java.awt.BorderLayout.CENTER);
 
-        bottomPanel.setLayout(new javax.swing.BoxLayout(bottomPanel, javax.swing.BoxLayout.LINE_AXIS));
+        bottomPanel.setLayout(new java.awt.BorderLayout());
 
         adaptivePanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
         adaptiveButton4.setText("Βοήθεια");
         adaptivePanel5.add(adaptiveButton4);
 
-        bottomPanel.add(adaptivePanel5);
-
-        javax.swing.GroupLayout adaptivePanel1Layout = new javax.swing.GroupLayout(adaptivePanel1);
-        adaptivePanel1.setLayout(adaptivePanel1Layout);
-        adaptivePanel1Layout.setHorizontalGroup(
-            adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 401, Short.MAX_VALUE)
-        );
-        adaptivePanel1Layout.setVerticalGroup(
-            adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 25, Short.MAX_VALUE)
-        );
-
-        bottomPanel.add(adaptivePanel1);
-
-        javax.swing.GroupLayout adaptivePanel3Layout = new javax.swing.GroupLayout(adaptivePanel3);
-        adaptivePanel3.setLayout(adaptivePanel3Layout);
-        adaptivePanel3Layout.setHorizontalGroup(
-            adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 401, Short.MAX_VALUE)
-        );
-        adaptivePanel3Layout.setVerticalGroup(
-            adaptivePanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 25, Short.MAX_VALUE)
-        );
-
-        bottomPanel.add(adaptivePanel3);
+        bottomPanel.add(adaptivePanel5, java.awt.BorderLayout.WEST);
 
         adaptivePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
@@ -198,7 +171,7 @@ public class SettingsMainView extends javax.swing.JPanel {
 
         adaptivePanel2.add(adaptivePanel4);
 
-        bottomPanel.add(adaptivePanel2);
+        bottomPanel.add(adaptivePanel2, java.awt.BorderLayout.EAST);
 
         add(bottomPanel, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
@@ -246,9 +219,7 @@ private void appearanceButtonActionPerformed(java.awt.event.ActionEvent evt) {//
     private widgets.button.AdaptiveButton adaptiveButton4;
     private widgets.button.AdaptiveButton adaptiveButton5;
     private widgets.button.AdaptiveButton adaptiveButton6;
-    private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel2;
-    private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.button.SecMenuButton appearanceButton;

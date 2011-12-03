@@ -4,7 +4,7 @@
  */
 
 /*
- * GeneralSettingsPanel.java
+ * AppearanceSettingsPanel.java
  *
  * Created on Nov 25, 2011, 1:25:47 PM
  */
@@ -16,7 +16,7 @@ package assignment2.NoDisability;
  */
 public class AppearanceSettingsPanel extends javax.swing.JPanel {
 
-    /** Creates new form GeneralSettingsPanel */
+    /** Creates new form AppearanceSettingsPanel */
     public AppearanceSettingsPanel() {
         initComponents();
     }
