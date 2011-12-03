@@ -554,7 +554,7 @@ component ContactListWidth [
 	if 		profile1 then 	activate "270"	//27% of wondow's width (1000)
 	else if profile2 then 	activate "290"	//color blind
 	else if profile3 then 	activate "245"	//instability
-	else if profile4 then 	activate "290"	//low vision
+	else if profile4 then 	activate "470"	//low vision
 	else if profile5 then 	activate "245"	//spots
 	else if profile6 then 	activate "290"	//pda
 	else 					activate "-1"  
@@ -578,7 +578,7 @@ component ContactImgHeight [	//to width kai height pou 8a exei to avatar gia sth
 	if 		profile1 then 	activate "75"
 	else if profile2 then 	activate "21"
 	else if profile3 then 	activate "50"
-	else if profile4 then 	activate "27"
+	else if profile4 then 	activate "100"
 	else if profile5 then 	activate "50"	//spots
 	else if profile6 then 	activate "50"
 	else 					activate "-1"
@@ -587,7 +587,7 @@ component ContactImgWidth [
 	if 		profile1 then 	activate "75"
 	else if profile2 then 	activate "21"
 	else if profile3 then 	activate "50"
-	else if profile4 then 	activate "27"
+	else if profile4 then 	activate "100"
 	else if profile5 then 	activate "50"	//spots
 	else if profile6 then 	activate "50"
 	else 					activate "-1"
@@ -597,7 +597,7 @@ component StatusImgHeight [
 	if 		profile1 then 	activate "20"
 	else if profile2 then 	activate "21"
 	else if profile3 then 	activate "20"
-	else if profile4 then 	activate "27"
+	else if profile4 then 	activate "32"
 	else if profile5 then 	activate "20"	//spots
 	else if profile6 then 	activate "32"
 	else 					activate "-1"
@@ -607,7 +607,7 @@ component StatusImgWidth [
 	if 		profile1 then 	activate "20"
 	else if profile2 then 	activate "21"
 	else if profile3 then 	activate "20"
-	else if profile4 then 	activate "27"
+	else if profile4 then 	activate "32"
 	else if profile5 then 	activate "20"	//spots
 	else if profile6 then 	activate "32"
 	else 					activate "-1"
@@ -642,6 +642,12 @@ component ContactWidth [
 component SpotChat [
 	if		profile5 then	activate "SpotChat"
 	else					activate "Chat"
+]
+
+component AdaptableMyProfile [
+	if		profile4 then	activate "LowVisionProfile"
+	else if	profile5 then	activate "SpotProfile"
+	else					activate "CommonProfile"
 ]
 
 component MainIMView [

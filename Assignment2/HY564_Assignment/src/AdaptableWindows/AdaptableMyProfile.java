@@ -20,20 +20,22 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class AdaptableMyProfile extends javax.swing.JPanel {
-	final static String viewCommonChat	= "Chat";
-    final static String viewSpotChat	= "SpotChat";	
+	final static String viewCommonProfile		= "CommonProfile";
+    final static String viewSpotProfile			= "SpotProfile";	
+	final static String viewLowVisionProfile	= "LowVisionProfile";
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AdaptableMyProfile */
 	public AdaptableMyProfile() {
         initComponents();
 		
-        p.add(new assignment2.MyProfile(), viewCommonChat);
-        p.add(new assignment2.Spots.MyProfile(), viewSpotChat);
+        p.add(new assignment2.MyProfile(), viewCommonProfile);
+        p.add(new assignment2.Spots.MyProfile(), viewSpotProfile);
+		p.add(new assignment2.LowVision.MyProfile(), viewLowVisionProfile);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("AdaptableMyProfile");
         System.out.println("Profile View:" + pid);
         cl.show(p, pid);
         p.revalidate();
