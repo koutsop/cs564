@@ -21,7 +21,7 @@ import utilities.DMSLConnector;
  */
 public class AddaptableAppearanceSettingsView extends javax.swing.JPanel {
 	private final String commonSettings			= "CommonSettings";
-	private final String lowVision				= "LowVision";
+	private final String lowVision				= "LowVisionSettings";
 	private final String instabilitySettings	= "InstabilitySettings";
 	JPanel p = new JPanel(new CardLayout());
 	
@@ -31,7 +31,7 @@ public class AddaptableAppearanceSettingsView extends javax.swing.JPanel {
 		initComponents();
         
 		p.add(new assignment2.NoDisability.AppearanceSettingsPanel(), commonSettings);
-        //p.add(instabilitySettingsView, lowVision);
+        p.add(new assignment2.LowVision.AppearanceSettingsPanel(), lowVision);
 		p.add(new assignment2.Instability.AppearanceSettingsPanel(), instabilitySettings);
         this.add(p);
 
