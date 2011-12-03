@@ -109,14 +109,12 @@ public class AddContactResults extends javax.swing.JPanel {
 
         adaptivePanel3.setLayout(new javax.swing.BoxLayout(adaptivePanel3, javax.swing.BoxLayout.LINE_AXIS));
 
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 1, 14));
         adaptiveLabel2.setText("Βρέθηκαν περισσότερα από 200 αποτελέσματα ");
         adaptivePanel3.add(adaptiveLabel2);
 
         adaptiveLabel1.setText("για");
         adaptivePanel3.add(adaptiveLabel1);
 
-        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 1, 11));
         adaptiveLabel3.setText("Νικόλαος");
         adaptivePanel3.add(adaptiveLabel3);
 

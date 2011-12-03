@@ -281,15 +281,15 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel4.setLayout(new javax.swing.BoxLayout(adaptivePanel4, javax.swing.BoxLayout.LINE_AXIS));
 
         adaptiveComboBox2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31" }));
-        adaptiveComboBox2.setFont(new java.awt.Font("Tahoma", 0, 8));
+        adaptiveComboBox2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         adaptivePanel4.add(adaptiveComboBox2);
 
         adaptiveComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "05", "06", "07", "08", "09", "10", "11", "12", " " }));
-        adaptiveComboBox3.setFont(new java.awt.Font("Tahoma", 0, 8));
+        adaptiveComboBox3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         adaptivePanel4.add(adaptiveComboBox3);
 
         adaptiveComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1984", "1990", "2000" }));
-        adaptiveComboBox4.setFont(new java.awt.Font("Tahoma", 0, 8));
+        adaptiveComboBox4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         adaptivePanel4.add(adaptiveComboBox4);
 
         profileDataPanel.add(adaptivePanel4);
@@ -381,6 +381,12 @@ public class MyProfile extends javax.swing.JPanel {
         profileDataPanel.add(adaptivePanel25);
 
         adaptivePanel9.setLayout(new javax.swing.BoxLayout(adaptivePanel9, javax.swing.BoxLayout.LINE_AXIS));
+
+        adaptiveTextField9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveTextField9ActionPerformed(evt);
+            }
+        });
         adaptivePanel9.add(adaptiveTextField9);
 
         profileDataPanel.add(adaptivePanel9);
@@ -484,6 +490,10 @@ public class MyProfile extends javax.swing.JPanel {
 
         add(jScrollPane1);
     }// </editor-fold>//GEN-END:initComponents
+
+private void adaptiveTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveTextField9ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_adaptiveTextField9ActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton acceptanceButton;
