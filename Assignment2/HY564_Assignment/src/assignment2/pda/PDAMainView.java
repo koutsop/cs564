@@ -478,6 +478,7 @@ public class PDAMainView extends javax.swing.JPanel {
 	}//GEN-LAST:event_groupButton2ActionPerformed
 
 	private void OnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OnMouseClicked
+		System.out.println(evt.getPoint());
 		if (evt.getClickCount() == 2 && (evt.getPoint().x >= 0 && evt.getPoint().y <= 74)) {
 			MainWindowPDA.showPanel(new Chat());
 		}

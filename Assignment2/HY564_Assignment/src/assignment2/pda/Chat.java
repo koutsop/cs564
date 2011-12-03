@@ -586,7 +586,6 @@ public class Chat extends javax.swing.JPanel {
 
         adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 7, 5));
 
-        adaptiveButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/profile_pda/arrow_up1.png"))); // NOI18N
         adaptiveButton20.setMargin(new java.awt.Insets(0, 0, 0, 0));
         adaptivePanel4.add(adaptiveButton20);
 
