@@ -61,7 +61,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel1.setLayout(new java.awt.BorderLayout(0, 10));
 
-        adaptiveLabel1.setText("Notifications");
+        adaptiveLabel1.setText("Ειδοποιήσεις");
         adaptivePanel1.add(adaptiveLabel1, java.awt.BorderLayout.NORTH);
 
         adaptivePanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
@@ -72,14 +72,14 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 10));
 
-        adaptiveLabel2.setText("Incoming Chat");
+        adaptiveLabel2.setText("Εισερχόμενο μήνυμα");
         adaptivePanel6.add(adaptiveLabel2);
 
         adaptivePanel3.add(adaptivePanel6);
 
         adaptivePanel7.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 0));
 
-        adaptiveCheckBox1.setText("Show Notification");
+        adaptiveCheckBox1.setText("Εμφάνιση ειδοποιήσεων");
         adaptivePanel7.add(adaptiveCheckBox1);
 
         adaptivePanel3.add(adaptivePanel7);
@@ -91,14 +91,14 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 10));
 
-        adaptiveLabel3.setText("Incoming Call");
+        adaptiveLabel3.setText("Εισερχόμενη κλήση");
         adaptivePanel8.add(adaptiveLabel3);
 
         adaptivePanel4.add(adaptivePanel8);
 
         adaptivePanel9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 0));
 
-        adaptiveCheckBox2.setText("Show Notification");
+        adaptiveCheckBox2.setText("Εμφάνιση ειδοποιήσεων");
         adaptivePanel9.add(adaptiveCheckBox2);
 
         adaptivePanel4.add(adaptivePanel9);
@@ -110,14 +110,14 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 10));
 
-        adaptiveLabel4.setText("Incoming Video Call");
+        adaptiveLabel4.setText("Εισερχόμενη βίντεο κλήση");
         adaptivePanel10.add(adaptiveLabel4);
 
         adaptivePanel5.add(adaptivePanel10);
 
         adaptivePanel11.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 0));
 
-        adaptiveCheckBox3.setText("Show Notification");
+        adaptiveCheckBox3.setText("Εμφάνιση ειδοποιήσεων");
         adaptivePanel11.add(adaptiveCheckBox3);
 
         adaptivePanel5.add(adaptivePanel11);
@@ -129,7 +129,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptivePanel12.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 10, 0, 10));
         adaptivePanel12.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
-        adaptiveCheckBox4.setText("Disaboke all notifications");
+        adaptiveCheckBox4.setText("Απενεργοποίηση όλων");
         adaptivePanel12.add(adaptiveCheckBox4);
 
         adaptivePanel1.add(adaptivePanel12, java.awt.BorderLayout.SOUTH);

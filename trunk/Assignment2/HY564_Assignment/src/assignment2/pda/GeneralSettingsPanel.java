@@ -51,13 +51,13 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel1.setLayout(new java.awt.BorderLayout(0, 20));
 
-        adaptiveLabel1.setText("General");
+        adaptiveLabel1.setText("Γενικά");
         adaptivePanel1.add(adaptiveLabel1, java.awt.BorderLayout.PAGE_START);
 
         adaptivePanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.PAGE_AXIS));
 
-        adaptiveCheckBox1.setText("Start automaticly");
+        adaptiveCheckBox1.setText("Αυτόματη έναρξη");
         adaptivePanel2.add(adaptiveCheckBox1);
 
         adaptivePanel3.setMaximumSize(new java.awt.Dimension(1, 20));
@@ -76,7 +76,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel2.add(adaptivePanel3);
 
-        adaptiveCheckBox2.setText("Auto sign-in");
+        adaptiveCheckBox2.setText("Αυτόματη σύνδεση");
         adaptivePanel2.add(adaptiveCheckBox2);
 
         adaptivePanel4.setMaximumSize(new java.awt.Dimension(1, 20));
@@ -95,7 +95,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel2.add(adaptivePanel4);
 
-        adaptiveCheckBox3.setText("Intercept Call");
+        adaptiveCheckBox3.setText("Παρεμπόδηση κλήσεων");
         adaptivePanel2.add(adaptiveCheckBox3);
 
         adaptivePanel5.setMaximumSize(new java.awt.Dimension(1, 20));
@@ -114,7 +114,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel2.add(adaptivePanel5);
 
-        adaptiveCheckBox4.setText("Automaticly updates");
+        adaptiveCheckBox4.setText("Αυτόματες ενημερώσεις");
         adaptivePanel2.add(adaptiveCheckBox4);
 
         adaptivePanel1.add(adaptivePanel2, java.awt.BorderLayout.CENTER);

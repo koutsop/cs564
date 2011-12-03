@@ -65,7 +65,7 @@ public class SearchForNewContact extends javax.swing.JPanel {
         adaptiveLabel1.setText("e-mail:");
         adaptivePanel1.add(adaptiveLabel1);
 
-        adaptiveTextField1.setText("adaptiveTextField1");
+        adaptiveTextField1.setText("hy564@csd.uoc.gr");
         adaptivePanel1.add(adaptiveTextField1);
 
         add(adaptivePanel1, java.awt.BorderLayout.CENTER);
@@ -74,7 +74,7 @@ public class SearchForNewContact extends javax.swing.JPanel {
 
         adaptivePanel2.setLayout(new java.awt.GridLayout(1, 2, 30, 0));
 
-        continueButton.setText("Continue");
+        continueButton.setText("Συνέχεια");
         continueButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 continueButtonActionPerformed(evt);
@@ -82,7 +82,7 @@ public class SearchForNewContact extends javax.swing.JPanel {
         });
         adaptivePanel2.add(continueButton);
 
-        cancelButton.setText("Cancel");
+        cancelButton.setText("Ακύρωση");
         cancelButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cancelButtonActionPerformed(evt);

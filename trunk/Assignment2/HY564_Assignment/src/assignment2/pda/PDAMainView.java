@@ -177,7 +177,7 @@ public class PDAMainView extends javax.swing.JPanel {
 
         menuButtonsPanels.setLayout(new java.awt.GridLayout(1, 3));
 
-        profileButton.setText("Profile");
+        profileButton.setText("Το προφίλ μου");
         profileButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 profileButtonActionPerformed(evt);
@@ -185,7 +185,7 @@ public class PDAMainView extends javax.swing.JPanel {
         });
         menuButtonsPanels.add(profileButton);
 
-        settingsButton.setText("Settings");
+        settingsButton.setText("Ρυθμίσεις");
         settingsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 settingsButtonActionPerformed(evt);
@@ -237,8 +237,6 @@ public class PDAMainView extends javax.swing.JPanel {
 
         searchPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 5, 0, 5));
         searchPanel.setLayout(new java.awt.BorderLayout(10, 0));
-
-        adaptiveTextField1.setText("adaptiveTextField1");
         searchPanel.add(adaptiveTextField1, java.awt.BorderLayout.CENTER);
 
         searchButton.setFunction("EmptyButton");
@@ -290,7 +288,7 @@ public class PDAMainView extends javax.swing.JPanel {
 
         groupNamePanel.add(adaptivePanel3);
 
-        adaptiveLabel1.setText("Active Conversations");
+        adaptiveLabel1.setText("Ενεργές Συνομιλίες");
         groupNamePanel.add(adaptiveLabel1);
 
         groupPanel.add(groupNamePanel, java.awt.BorderLayout.NORTH);

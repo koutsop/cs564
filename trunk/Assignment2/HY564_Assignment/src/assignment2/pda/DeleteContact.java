@@ -53,7 +53,7 @@ public class DeleteContact extends javax.swing.JPanel {
 
         messagePanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 50));
 
-        confirmationMessagePanel.setText("Eiste bebeos oti 8elete na diagrayete thn epafh?");
+        confirmationMessagePanel.setText("Είστε βέβαιος ότι θέλετε να διαγράψετε αυτή την επαφή;");
         messagePanel.add(confirmationMessagePanel);
 
         add(messagePanel, java.awt.BorderLayout.NORTH);

@@ -47,7 +47,7 @@ public class SuccessfulGroupCreation extends javax.swing.JPanel {
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         setLayout(new java.awt.BorderLayout());
 
-        adaptiveLabel1.setText("Επιτυχή Προσθήκη Ομάδας");
+        adaptiveLabel1.setText("Επιτυχής Προσθήκη Ομάδας");
         adaptivePanel2.add(adaptiveLabel1);
 
         add(adaptivePanel2, java.awt.BorderLayout.NORTH);
@@ -63,7 +63,7 @@ public class SuccessfulGroupCreation extends javax.swing.JPanel {
         );
         adaptivePanel1Layout.setVerticalGroup(
             adaptivePanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 229, Short.MAX_VALUE)
+            .addGap(0, 230, Short.MAX_VALUE)
         );
 
         add(adaptivePanel1, java.awt.BorderLayout.CENTER);

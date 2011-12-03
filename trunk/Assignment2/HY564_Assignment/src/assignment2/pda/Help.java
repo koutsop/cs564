@@ -85,14 +85,14 @@ public class Help extends javax.swing.JPanel {
 
         adaptivePanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveButton4.setText("How do I invite someone to chat?");
+        adaptiveButton4.setText("Πώς να προσκαλέσω κάποιον για συνομιλία;");
         adaptivePanel6.add(adaptiveButton4);
 
         adaptivePanel5.add(adaptivePanel6);
 
         adaptivePanel7.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveButton3.setText("How do I send an instant message?");
+        adaptiveButton3.setText("Πώς στέλνω ένα μήνυμα συνομιλίας;");
         adaptivePanel7.add(adaptiveButton3);
 
         adaptivePanel5.add(adaptivePanel7);
@@ -101,7 +101,7 @@ public class Help extends javax.swing.JPanel {
 
         adaptivePanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveButton5.setText("How do I add a picture?");
+        adaptiveButton5.setText("Πώς προσθέτω μια εικόνα;");
         adaptivePanel10.add(adaptiveButton5);
 
         adaptivePanel8.add(adaptivePanel10, java.awt.BorderLayout.NORTH);
@@ -117,7 +117,7 @@ public class Help extends javax.swing.JPanel {
 
         adaptivePanel9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
-        adaptiveButton2.setText("How do I add a picture?");
+        adaptiveButton2.setText("Πώς κάνω βίντεο κλήση;");
         adaptivePanel9.add(adaptiveButton2);
 
         adaptivePanel5.add(adaptivePanel9);
@@ -134,7 +134,7 @@ public class Help extends javax.swing.JPanel {
 
         adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
-        cancelButton.setText("Ακήρωση");
+        cancelButton.setText("Ακύρωση");
         cancelButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cancelButtonActionPerformed(evt);

@@ -130,16 +130,16 @@ public class AddContactResultsPanel extends javax.swing.JPanel {
         adaptivePanel53 = new widgets.panel.AdaptivePanel();
         addButton9 = new widgets.button.AdaptiveButton();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
-        adaptivePanel54 = new widgets.panel.AdaptivePanel();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
         adaptivePanel55 = new widgets.panel.AdaptivePanel();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
+        adaptivePanel54 = new widgets.panel.AdaptivePanel();
+        adaptiveButton1 = new widgets.button.AdaptiveButton();
 
         setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         setLayout(new java.awt.BorderLayout(0, 15));
 
         adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 16));
-        adaptiveLabel1.setText("Search results");
+        adaptiveLabel1.setText("Αποτελέσματα Αναζήτησης");
         add(adaptiveLabel1, java.awt.BorderLayout.NORTH);
 
         adaptivePanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 2, true));
@@ -696,19 +696,7 @@ public class AddContactResultsPanel extends javax.swing.JPanel {
 
         adaptivePanel2.setLayout(new java.awt.GridLayout(1, 2));
 
-        adaptivePanel54.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
-
-        adaptiveButton1.setText("Aκύρωση");
-        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton1ActionPerformed(evt);
-            }
-        });
-        adaptivePanel54.add(adaptiveButton1);
-
-        adaptivePanel2.add(adaptivePanel54);
-
-        adaptivePanel55.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 0, 0));
+        adaptivePanel55.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveButton2.setText("Νέα Αναζήτηση");
         adaptiveButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -719,6 +707,18 @@ public class AddContactResultsPanel extends javax.swing.JPanel {
         adaptivePanel55.add(adaptiveButton2);
 
         adaptivePanel2.add(adaptivePanel55);
+
+        adaptivePanel54.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 0, 0));
+
+        adaptiveButton1.setText("Aκύρωση");
+        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton1ActionPerformed(evt);
+            }
+        });
+        adaptivePanel54.add(adaptiveButton1);
+
+        adaptivePanel2.add(adaptivePanel54);
 
         add(adaptivePanel2, java.awt.BorderLayout.PAGE_END);
     }// </editor-fold>//GEN-END:initComponents
