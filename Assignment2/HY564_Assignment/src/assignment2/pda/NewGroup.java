@@ -74,10 +74,10 @@ public class NewGroup extends javax.swing.JPanel {
         adaptiveLabel9 = new widgets.label.AdaptiveLabel();
         adaptiveCheckBox8 = new widgets.checkbox.AdaptiveCheckBox();
         buttonsPabel = new widgets.panel.AdaptivePanel();
-        adaptivePanel3 = new widgets.panel.AdaptivePanel();
-        cancelButton = new widgets.button.AdaptiveButton();
         adaptivePanel15 = new widgets.panel.AdaptivePanel();
         continueButton = new widgets.button.AdaptiveButton();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
+        cancelButton = new widgets.button.AdaptiveButton();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         searchButton = new widgets.button.AdaptiveButton();
 
@@ -316,19 +316,7 @@ public class NewGroup extends javax.swing.JPanel {
 
         buttonsPabel.setLayout(new java.awt.GridLayout(1, 3));
 
-        adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
-
-        cancelButton.setText("Ακήρωση");
-        cancelButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cancelButtonActionPerformed(evt);
-            }
-        });
-        adaptivePanel3.add(cancelButton);
-
-        buttonsPabel.add(adaptivePanel3);
-
-        adaptivePanel15.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+        adaptivePanel15.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         continueButton.setText("Συνέχεια");
         continueButton.addActionListener(new java.awt.event.ActionListener() {
@@ -339,6 +327,18 @@ public class NewGroup extends javax.swing.JPanel {
         adaptivePanel15.add(continueButton);
 
         buttonsPabel.add(adaptivePanel15);
+
+        adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+        cancelButton.setText("Ακύρωση");
+        cancelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelButtonActionPerformed(evt);
+            }
+        });
+        adaptivePanel3.add(cancelButton);
+
+        buttonsPabel.add(adaptivePanel3);
 
         adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 0, 0));
 

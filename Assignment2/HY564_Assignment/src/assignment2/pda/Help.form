@@ -90,7 +90,7 @@
                       <SubComponents>
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="How do I invite someone to chat?"/>
+                            <Property name="text" type="java.lang.String" value="&#x3a0;&#x3ce;&#x3c2; &#x3bd;&#x3b1; &#x3c0;&#x3c1;&#x3bf;&#x3c3;&#x3ba;&#x3b1;&#x3bb;&#x3ad;&#x3c3;&#x3c9; &#x3ba;&#x3ac;&#x3c0;&#x3bf;&#x3b9;&#x3bf;&#x3bd; &#x3b3;&#x3b9;&#x3b1; &#x3c3;&#x3c5;&#x3bd;&#x3bf;&#x3bc;&#x3b9;&#x3bb;&#x3af;&#x3b1;;"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -104,7 +104,7 @@
                       <SubComponents>
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="How do I send an instant message?"/>
+                            <Property name="text" type="java.lang.String" value="&#x3a0;&#x3ce;&#x3c2; &#x3c3;&#x3c4;&#x3ad;&#x3bb;&#x3bd;&#x3c9; &#x3ad;&#x3bd;&#x3b1; &#x3bc;&#x3ae;&#x3bd;&#x3c5;&#x3bc;&#x3b1; &#x3c3;&#x3c5;&#x3bd;&#x3bf;&#x3bc;&#x3b9;&#x3bb;&#x3af;&#x3b1;&#x3c2;;"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -127,7 +127,7 @@
                           <SubComponents>
                             <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
                               <Properties>
-                                <Property name="text" type="java.lang.String" value="How do I add a picture?"/>
+                                <Property name="text" type="java.lang.String" value="&#x3a0;&#x3ce;&#x3c2; &#x3c0;&#x3c1;&#x3bf;&#x3c3;&#x3b8;&#x3ad;&#x3c4;&#x3c9; &#x3bc;&#x3b9;&#x3b1; &#x3b5;&#x3b9;&#x3ba;&#x3cc;&#x3bd;&#x3b1;;"/>
                               </Properties>
                             </Component>
                           </SubComponents>
@@ -164,7 +164,7 @@
                       <SubComponents>
                         <Component class="widgets.button.AdaptiveButton" name="adaptiveButton2">
                           <Properties>
-                            <Property name="text" type="java.lang.String" value="How do I add a picture?"/>
+                            <Property name="text" type="java.lang.String" value="&#x3a0;&#x3ce;&#x3c2; &#x3ba;&#x3ac;&#x3bd;&#x3c9; &#x3b2;&#x3af;&#x3bd;&#x3c4;&#x3b5;&#x3bf; &#x3ba;&#x3bb;&#x3ae;&#x3c3;&#x3b7;;"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -199,7 +199,7 @@
           <SubComponents>
             <Component class="widgets.button.AdaptiveButton" name="cancelButton">
               <Properties>
-                <Property name="text" type="java.lang.String" value="&#x391;&#x3ba;&#x3ae;&#x3c1;&#x3c9;&#x3c3;&#x3b7;"/>
+                <Property name="text" type="java.lang.String" value="&#x391;&#x3ba;&#x3cd;&#x3c1;&#x3c9;&#x3c3;&#x3b7;"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cancelButtonActionPerformed"/>

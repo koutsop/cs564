@@ -32,7 +32,7 @@
       <SubComponents>
         <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Notifications"/>
+            <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2;"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -79,7 +79,7 @@
                   <SubComponents>
                     <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel2">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Incoming Chat"/>
+                        <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3c3;&#x3b5;&#x3c1;&#x3c7;&#x3cc;&#x3bc;&#x3b5;&#x3bd;&#x3bf; &#x3bc;&#x3ae;&#x3bd;&#x3c5;&#x3bc;&#x3b1;"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -93,7 +93,7 @@
                   <SubComponents>
                     <Component class="widgets.checkbox.AdaptiveCheckBox" name="adaptiveCheckBox1">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Show Notification"/>
+                        <Property name="text" type="java.lang.String" value="&#x395;&#x3bc;&#x3c6;&#x3ac;&#x3bd;&#x3b9;&#x3c3;&#x3b7; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -119,7 +119,7 @@
                   <SubComponents>
                     <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel3">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Incoming Call"/>
+                        <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3c3;&#x3b5;&#x3c1;&#x3c7;&#x3cc;&#x3bc;&#x3b5;&#x3bd;&#x3b7; &#x3ba;&#x3bb;&#x3ae;&#x3c3;&#x3b7;"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -133,7 +133,7 @@
                   <SubComponents>
                     <Component class="widgets.checkbox.AdaptiveCheckBox" name="adaptiveCheckBox2">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Show Notification"/>
+                        <Property name="text" type="java.lang.String" value="&#x395;&#x3bc;&#x3c6;&#x3ac;&#x3bd;&#x3b9;&#x3c3;&#x3b7; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -159,7 +159,7 @@
                   <SubComponents>
                     <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel4">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Incoming Video Call"/>
+                        <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3c3;&#x3b5;&#x3c1;&#x3c7;&#x3cc;&#x3bc;&#x3b5;&#x3bd;&#x3b7; &#x3b2;&#x3af;&#x3bd;&#x3c4;&#x3b5;&#x3bf; &#x3ba;&#x3bb;&#x3ae;&#x3c3;&#x3b7;"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -173,7 +173,7 @@
                   <SubComponents>
                     <Component class="widgets.checkbox.AdaptiveCheckBox" name="adaptiveCheckBox3">
                       <Properties>
-                        <Property name="text" type="java.lang.String" value="Show Notification"/>
+                        <Property name="text" type="java.lang.String" value="&#x395;&#x3bc;&#x3c6;&#x3ac;&#x3bd;&#x3b9;&#x3c3;&#x3b7; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
                       </Properties>
                     </Component>
                   </SubComponents>
@@ -204,7 +204,7 @@
           <SubComponents>
             <Component class="widgets.checkbox.AdaptiveCheckBox" name="adaptiveCheckBox4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Disaboke all notifications"/>
+                <Property name="text" type="java.lang.String" value="&#x391;&#x3c0;&#x3b5;&#x3bd;&#x3b5;&#x3c1;&#x3b3;&#x3bf;&#x3c0;&#x3bf;&#x3af;&#x3b7;&#x3c3;&#x3b7; &#x3cc;&#x3bb;&#x3c9;&#x3bd;"/>
               </Properties>
             </Component>
           </SubComponents>

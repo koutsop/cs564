@@ -48,13 +48,13 @@ public class ChatSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel1.setLayout(new java.awt.BorderLayout(0, 10));
 
-        adaptiveLabel1.setText("Chat");
+        adaptiveLabel1.setText("Ιστορικό");
         adaptivePanel1.add(adaptiveLabel1, java.awt.BorderLayout.NORTH);
 
         adaptivePanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10));
         adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.PAGE_AXIS));
 
-        adaptiveRadioButton1.setText("Save chat history");
+        adaptiveRadioButton1.setText("Αποθήκευση ιστορικού συνομιλίας");
         adaptivePanel2.add(adaptiveRadioButton1);
 
         adaptivePanel3.setMaximumSize(new java.awt.Dimension(1, 20));
@@ -74,7 +74,7 @@ public class ChatSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel2.add(adaptivePanel3);
 
-        adaptiveRadioButton2.setText("Don't save chat history");
+        adaptiveRadioButton2.setText("Όχι αποθήκευση ιστορικού συνομιλίας");
         adaptiveRadioButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 adaptiveRadioButton2ActionPerformed(evt);

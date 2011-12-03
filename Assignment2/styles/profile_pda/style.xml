@@ -122,12 +122,17 @@
     <property key="Button.textShiftOffset" type="integer" value="1"/>
     <state>
 			<imagePainter method="buttonBackground" path="images/MainNavButtonIdle.png" sourceInsets="20 20 20 20"/>	
+			<font name="Comic Sans Ms" size="13" style="BOLD"/>
+			<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
     </state>
 		<state value="PRESSED"> 
 			<imagePainter method="buttonBackground" path="images/MainNavButtonPressed.png" sourceInsets="20 20 20 20"/>
+			<font name="Comic Sans Ms" size="13" style="BOLD"/>
+			<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
 	  </state>
 	  <state value="SELECTED">
 			<imagePainter method="buttonBackground" path="images/MainNavButtonSelected.png" sourceInsets="20 20 20 20"/>
+			<font name="Comic Sans Ms" size="13" style="BOLD"/>
 			<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
      </state>
   </style>
@@ -137,12 +142,18 @@
     <property key="Button.textShiftOffset" type="integer" value="1"/>
     <state>
 			<imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="10 10 10 10"/>	
+				<font name="Comic Sans Ms" size="12" style="BOLD"/>
+			<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
     </state>
 	<state value="PRESSED"> 
 	    <imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="10 10 10 10"/>
+		<font name="Comic Sans Ms" size="12" style="BOLD"/>
+			<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
 	</state>
 	<state value="SELECTED"> 
 	    <imagePainter method="buttonBackground" path="images/SecNavButtonSelected.png" sourceInsets="10 10 10 10"/>
+			<font name="Comic Sans Ms" size="12" style="BOLD"/>
+			<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
 	</state>
   </style>
   <bind style="SecNavButton" type="name" key="Button.SecNav.*"/>

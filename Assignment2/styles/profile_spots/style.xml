@@ -10,7 +10,7 @@
     <opaque value="TRUE"/>
     <font name="Arial" size="12"/>
     <state>
-      <color value="WHITE" type="BACKGROUND"/>
+      <color value="#ffffd0" type="BACKGROUND"/>
       <color value="BLACK" type="FOREGROUND"/>
     </state>
   </style>
@@ -94,6 +94,25 @@
 	</style>
 	<bind style="WhitePanel" type="name" key="Panel.White.*"/> 
 	
+		<style id="TransparentPanel">
+<imagePainter method="panelBackground" path="images/TransparentContentBg.png" sourceInsets="2 2 2 2"/>
+</style>
+
+<bind style="TransparentPanel" type="name" key="Panel.TransparentPanel.*"/>
+<style id="TransparentButton">
+<property key="Button.textShiftOffset" type="integer" value="1"/>
+<state>
+<imagePainter method="buttonBackground" path="images/TransparentContentBg.png.png" sourceInsets="20 20 20 20"/>
+</state>
+<state value="PRESSED">
+<imagePainter method="buttonBackground" path="images/TransparentContentBg.png.png" sourceInsets="20 20 20 20"/>
+</state>
+<state value="SELECTED">
+<imagePainter method="buttonBackground" path="images/TransparentContentBg.png.png" sourceInsets="20 20 20 20"/>
+<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
+</state>
+</style>
+<bind style="TransparentButton" type="name" key="Button.Empty.*"/>
 <!-- ======================================================= -->
 <!-- BUTTONS -->
 <!-- ======================================================= -->
@@ -102,13 +121,18 @@
     <property key="Button.textShiftOffset" type="integer" value="1"/>
     <state>
 			<imagePainter method="buttonBackground" path="images/MainNavButtonIdle.png" sourceInsets="20 20 20 20"/>	
+						<font name="Comis Sans MS" size="13" style="BOLD"/>
+				<color type="TEXT_FOREGROUND" value="WHITE" font=""/>
     </state>
 		<state value="PRESSED"> 
 			<imagePainter method="buttonBackground" path="images/MainNavButtonPressed.png" sourceInsets="20 20 20 20"/>
+						<font name="Comis Sans MS" size="13" style="BOLD"/>
+				<color type="TEXT_FOREGROUND" value="WHITE"/>
 	  </state>
 	  <state value="SELECTED">
 			<imagePainter method="buttonBackground" path="images/MainNavButtonSelected.png" sourceInsets="20 20 20 20"/>
-			<color type="TEXT_FOREGROUND" value="#FFFFFF"/>
+						<font name="Comis Sans MS" size="13" style="BOLD"/>
+			<color type="TEXT_FOREGROUND" value="WHITE"/>
      </state>
   </style>
   <bind style="MainNavButton" type="name" key="Button.MainNav.*"/>
@@ -116,13 +140,19 @@
 	<style id="SecNavButton">
     <property key="Button.textShiftOffset" type="integer" value="1"/>
     <state>
-			<imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="10 10 10 10"/>	
+			<imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="20 20 20 20"/>	
+			<font name="Comis Sans MS" size="12" style="BOLD"/>
+			<color type="TEXT_FOREGROUND" value="WHITE"/>
     </state>
 	<state value="PRESSED"> 
-	    <imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="10 10 10 10"/>
+	    <imagePainter method="buttonBackground" path="images/SecNavButtonIdle.png" sourceInsets="20 20 20 20"/>
+		<font name="Comis Sans MS" size="12" style="BOLD"/>
+			<color type="TEXT_FOREGROUND" value="WHITE"/>
 	</state>
 	<state value="SELECTED"> 
-	    <imagePainter method="buttonBackground" path="images/SecNavButtonSelected.png" sourceInsets="10 10 10 10"/>
+	    <imagePainter method="buttonBackground" path="images/SecNavButtonSelected.png" sourceInsets="20 20 20 20"/>
+		<font name="Comis Sans MS" size="12" style="BOLD"/>
+			<color type="TEXT_FOREGROUND" value="WHITE"/>
 	</state>
   </style>
   <bind style="SecNavButton" type="name" key="Button.SecNav.*"/>
@@ -131,6 +161,7 @@
     <property key="Button.textShiftOffset" type="integer" value="1"/>
     <state>
 			<imagePainter method="buttonBackground" path="images/ContentButton.png" sourceInsets="10 10 10 10"/>	
+			
     </state>
 	<state value="PRESSED"> 
 	    <imagePainter method="buttonBackground" path="images/ContentButtonPressed.png" sourceInsets="10 10 10 10"/>

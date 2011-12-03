@@ -32,7 +32,7 @@
       <SubComponents>
         <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="General"/>
+            <Property name="text" type="java.lang.String" value="&#x393;&#x3b5;&#x3bd;&#x3b9;&#x3ba;&#x3ac;"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -60,7 +60,7 @@
           <SubComponents>
             <Component class="widgets.checkbox.AdaptiveCheckBox" name="adaptiveCheckBox1">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Start automaticly"/>
+                <Property name="text" type="java.lang.String" value="&#x391;&#x3c5;&#x3c4;&#x3cc;&#x3bc;&#x3b1;&#x3c4;&#x3b7; &#x3ad;&#x3bd;&#x3b1;&#x3c1;&#x3be;&#x3b7;"/>
               </Properties>
             </Component>
             <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel3">
@@ -88,7 +88,7 @@
             </Container>
             <Component class="widgets.checkbox.AdaptiveCheckBox" name="adaptiveCheckBox2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Auto sign-in"/>
+                <Property name="text" type="java.lang.String" value="&#x391;&#x3c5;&#x3c4;&#x3cc;&#x3bc;&#x3b1;&#x3c4;&#x3b7; &#x3c3;&#x3cd;&#x3bd;&#x3b4;&#x3b5;&#x3c3;&#x3b7;"/>
               </Properties>
             </Component>
             <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel4">
@@ -116,7 +116,7 @@
             </Container>
             <Component class="widgets.checkbox.AdaptiveCheckBox" name="adaptiveCheckBox3">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Intercept Call"/>
+                <Property name="text" type="java.lang.String" value="&#x3a0;&#x3b1;&#x3c1;&#x3b5;&#x3bc;&#x3c0;&#x3cc;&#x3b4;&#x3b7;&#x3c3;&#x3b7; &#x3ba;&#x3bb;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
               </Properties>
             </Component>
             <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel5">
@@ -144,7 +144,7 @@
             </Container>
             <Component class="widgets.checkbox.AdaptiveCheckBox" name="adaptiveCheckBox4">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Automaticly updates"/>
+                <Property name="text" type="java.lang.String" value="&#x391;&#x3c5;&#x3c4;&#x3cc;&#x3bc;&#x3b1;&#x3c4;&#x3b5;&#x3c2; &#x3b5;&#x3bd;&#x3b7;&#x3bc;&#x3b5;&#x3c1;&#x3ce;&#x3c3;&#x3b5;&#x3b9;&#x3c2;"/>
               </Properties>
             </Component>
           </SubComponents>

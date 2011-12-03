@@ -63,7 +63,7 @@ public class SettingsMainView extends javax.swing.JPanel {
         westPanel.setLayout(new javax.swing.BoxLayout(westPanel, javax.swing.BoxLayout.PAGE_AXIS));
 
         adaptiveList1.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "General", "Chat", "Notifications", " ", " ", " " };
+            String[] strings = { "Γενικά", "Συνομιλίες", "Ειδοποιήσεις" };
             public int getSize() { return strings.length; }
             public Object getElementAt(int i) { return strings[i]; }
         });
@@ -135,10 +135,10 @@ public class SettingsMainView extends javax.swing.JPanel {
 		if (evt.getClickCount() == 1 && evt.getButton() == MouseEvent.BUTTON1) {
 			String value = (String)adaptiveList1.getSelectedValue();
 			
-			if (value.compareTo("General") == 0)
+			if (value.compareTo("Γενικά") == 0)
 				showPanel(new GeneralSettingsPanel());
 			else 
-			if (value.compareTo("Notifications") == 0)
+			if (value.compareTo("Ειδοποιήσεις") == 0)
 				showPanel(new NotificationsSettingsPanel());
 			else
 				showPanel(new ChatSettingsPanel());
