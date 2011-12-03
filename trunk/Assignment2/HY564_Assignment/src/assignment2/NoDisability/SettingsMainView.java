@@ -46,7 +46,7 @@ public class SettingsMainView extends javax.swing.JPanel {
 		
 	}
 	
-	private void showPanel (JPanel p) {	
+	private void showPanel (JPanel p) {
 		contentPanel.removeAll();
 		p.setVisible(true);
 		contentPanel.add(p);

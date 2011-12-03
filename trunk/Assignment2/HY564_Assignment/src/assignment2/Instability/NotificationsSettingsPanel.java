@@ -71,27 +71,34 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptivePanel13 = new widgets.panel.AdaptivePanel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptiveLabel1 = new widgets.label.AdaptiveLabel();
+        adaptivePanel7 = new widgets.panel.AdaptivePanel();
         adaptiveButton7 = new widgets.button.AdaptiveButton();
+        adaptivePanel9 = new widgets.panel.AdaptivePanel();
         adaptiveButton8 = new widgets.button.AdaptiveButton();
         adaptivePanel15 = new widgets.panel.AdaptivePanel();
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptivePanel10 = new widgets.panel.AdaptivePanel();
         adaptivePanel16 = new widgets.panel.AdaptivePanel();
         adaptiveLabel2 = new widgets.label.AdaptiveLabel();
+        adaptivePanel23 = new widgets.panel.AdaptivePanel();
         adaptiveButton5 = new widgets.button.AdaptiveButton();
+        adaptivePanel24 = new widgets.panel.AdaptivePanel();
         adaptiveButton6 = new widgets.button.AdaptiveButton();
         adaptivePanel17 = new widgets.panel.AdaptivePanel();
         adaptivePanel11 = new widgets.panel.AdaptivePanel();
         adaptivePanel8 = new widgets.panel.AdaptivePanel();
         adaptivePanel18 = new widgets.panel.AdaptivePanel();
         adaptiveLabel3 = new widgets.label.AdaptiveLabel();
+        adaptivePanel12 = new widgets.panel.AdaptivePanel();
         adaptiveButton3 = new widgets.button.AdaptiveButton();
+        adaptivePanel14 = new widgets.panel.AdaptivePanel();
         adaptiveButton4 = new widgets.button.AdaptiveButton();
         adaptivePanel19 = new widgets.panel.AdaptivePanel();
         adaptivePanel6 = new widgets.panel.AdaptivePanel();
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptivePanel20 = new widgets.panel.AdaptivePanel();
         adaptiveLabel4 = new widgets.label.AdaptiveLabel();
+        adaptivePanel25 = new widgets.panel.AdaptivePanel();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
         adaptivePanel21 = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
@@ -120,7 +127,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         centerPanel.setPreferredSize(new java.awt.Dimension(943, 300));
         centerPanel.setLayout(new java.awt.BorderLayout());
 
-        adaptivePanel22.setLayout(new java.awt.GridLayout(2, 2, 20, 20));
+        adaptivePanel22.setLayout(new java.awt.GridLayout(2, 2, 20, 10));
 
         adaptivePanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
         adaptivePanel2.setPreferredSize(new java.awt.Dimension(790, 65));
@@ -134,6 +141,8 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel1.setText("Ειδοποιήσεις Chat");
         adaptivePanel4.add(adaptiveLabel1);
 
+        adaptivePanel7.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
+
         adaptiveButton7.setHorizontalAlignment(2);
         adaptiveButton7.setText("Αναπαραγωγή ήχου");
         adaptiveButton7.addActionListener(new java.awt.event.ActionListener() {
@@ -141,7 +150,11 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
                 adaptiveButton7ActionPerformed(evt);
             }
         });
-        adaptivePanel4.add(adaptiveButton7);
+        adaptivePanel7.add(adaptiveButton7);
+
+        adaptivePanel4.add(adaptivePanel7);
+
+        adaptivePanel9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveButton8.setHorizontalAlignment(2);
         adaptiveButton8.setText("Προβολή ειδοποποιήσεων");
@@ -150,7 +163,9 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
                 adaptiveButton8ActionPerformed(evt);
             }
         });
-        adaptivePanel4.add(adaptiveButton8);
+        adaptivePanel9.add(adaptiveButton8);
+
+        adaptivePanel4.add(adaptivePanel9);
 
         adaptivePanel13.add(adaptivePanel4, java.awt.BorderLayout.CENTER);
 
@@ -164,7 +179,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         );
         adaptivePanel15Layout.setVerticalGroup(
             adaptivePanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
+            .addGap(0, 106, Short.MAX_VALUE)
         );
 
         adaptivePanel13.add(adaptivePanel15, java.awt.BorderLayout.WEST);
@@ -184,6 +199,8 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel2.setText("Ειδοποιήσεις Κλήσης");
         adaptivePanel16.add(adaptiveLabel2);
 
+        adaptivePanel23.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
+
         adaptiveButton5.setHorizontalAlignment(2);
         adaptiveButton5.setText("Αναπαραγωγή ήχου");
         adaptiveButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -191,7 +208,11 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
                 adaptiveButton5ActionPerformed(evt);
             }
         });
-        adaptivePanel16.add(adaptiveButton5);
+        adaptivePanel23.add(adaptiveButton5);
+
+        adaptivePanel16.add(adaptivePanel23);
+
+        adaptivePanel24.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveButton6.setHorizontalAlignment(2);
         adaptiveButton6.setText("Προβολή ειδοποιήσεων");
@@ -200,7 +221,9 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
                 adaptiveButton6ActionPerformed(evt);
             }
         });
-        adaptivePanel16.add(adaptiveButton6);
+        adaptivePanel24.add(adaptiveButton6);
+
+        adaptivePanel16.add(adaptivePanel24);
 
         adaptivePanel10.add(adaptivePanel16, java.awt.BorderLayout.CENTER);
 
@@ -214,7 +237,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         );
         adaptivePanel17Layout.setVerticalGroup(
             adaptivePanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
+            .addGap(0, 106, Short.MAX_VALUE)
         );
 
         adaptivePanel10.add(adaptivePanel17, java.awt.BorderLayout.WEST);
@@ -234,6 +257,8 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel3.setText("Ειδοποιήσεις Κλήσης");
         adaptivePanel18.add(adaptiveLabel3);
 
+        adaptivePanel12.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
+
         adaptiveButton3.setHorizontalAlignment(2);
         adaptiveButton3.setText("Αναπαραγωγή ήχου");
         adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -241,7 +266,11 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
                 adaptiveButton3ActionPerformed(evt);
             }
         });
-        adaptivePanel18.add(adaptiveButton3);
+        adaptivePanel12.add(adaptiveButton3);
+
+        adaptivePanel18.add(adaptivePanel12);
+
+        adaptivePanel14.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveButton4.setHorizontalAlignment(2);
         adaptiveButton4.setText("Προβολή ειδοποιήσεων");
@@ -250,7 +279,9 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
                 adaptiveButton4ActionPerformed(evt);
             }
         });
-        adaptivePanel18.add(adaptiveButton4);
+        adaptivePanel14.add(adaptiveButton4);
+
+        adaptivePanel18.add(adaptivePanel14);
 
         adaptivePanel8.add(adaptivePanel18, java.awt.BorderLayout.CENTER);
 
@@ -264,7 +295,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         );
         adaptivePanel19Layout.setVerticalGroup(
             adaptivePanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
+            .addGap(0, 106, Short.MAX_VALUE)
         );
 
         adaptivePanel8.add(adaptivePanel19, java.awt.BorderLayout.WEST);
@@ -284,6 +315,8 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptiveLabel4.setText("Ειδοποιήσεις Εισόδου Επαφών");
         adaptivePanel20.add(adaptiveLabel4);
 
+        adaptivePanel25.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
+
         adaptiveButton2.setHorizontalAlignment(2);
         adaptiveButton2.setText("Ενεργοποίηση όλων των ειδοποιήσεων");
         adaptiveButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -291,7 +324,9 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
                 adaptiveButton2ActionPerformed(evt);
             }
         });
-        adaptivePanel20.add(adaptiveButton2);
+        adaptivePanel25.add(adaptiveButton2);
+
+        adaptivePanel20.add(adaptivePanel25);
 
         adaptivePanel5.add(adaptivePanel20, java.awt.BorderLayout.CENTER);
 
@@ -305,7 +340,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         );
         adaptivePanel21Layout.setVerticalGroup(
             adaptivePanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 200, Short.MAX_VALUE)
+            .addGap(0, 106, Short.MAX_VALUE)
         );
 
         adaptivePanel5.add(adaptivePanel21, java.awt.BorderLayout.WEST);
@@ -404,7 +439,9 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel10;
     private widgets.panel.AdaptivePanel adaptivePanel11;
+    private widgets.panel.AdaptivePanel adaptivePanel12;
     private widgets.panel.AdaptivePanel adaptivePanel13;
+    private widgets.panel.AdaptivePanel adaptivePanel14;
     private widgets.panel.AdaptivePanel adaptivePanel15;
     private widgets.panel.AdaptivePanel adaptivePanel16;
     private widgets.panel.AdaptivePanel adaptivePanel17;
@@ -414,11 +451,16 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel20;
     private widgets.panel.AdaptivePanel adaptivePanel21;
     private widgets.panel.AdaptivePanel adaptivePanel22;
+    private widgets.panel.AdaptivePanel adaptivePanel23;
+    private widgets.panel.AdaptivePanel adaptivePanel24;
+    private widgets.panel.AdaptivePanel adaptivePanel25;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
     private widgets.panel.AdaptivePanel adaptivePanel6;
+    private widgets.panel.AdaptivePanel adaptivePanel7;
     private widgets.panel.AdaptivePanel adaptivePanel8;
+    private widgets.panel.AdaptivePanel adaptivePanel9;
     private widgets.panel.AdaptivePanel centerPanel;
     private widgets.panel.AdaptivePanel leftPanel;
     private widgets.panel.AdaptivePanel rightPanel;
