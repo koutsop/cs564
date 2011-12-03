@@ -71,7 +71,6 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel32 = new widgets.panel.AdaptivePanel();
         onlineButton = new widgets.button.AdaptiveButton();
         awayButton = new widgets.button.AdaptiveButton();
-        adaptivePanel34 = new widgets.panel.AdaptivePanel();
         busyButton = new widgets.button.AdaptiveButton();
         offlineButton = new widgets.button.AdaptiveButton();
         adaptivePanel37 = new widgets.panel.AdaptivePanel();
@@ -80,56 +79,69 @@ public class MyProfile extends javax.swing.JPanel {
         adaptiveLabel13 = new widgets.label.AdaptiveLabel();
         adaptivePanel13 = new widgets.panel.AdaptivePanel();
         adaptiveTextField13 = new widgets.textfield.AdaptiveTextField();
+        gapPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel14 = new widgets.panel.AdaptivePanel();
         adaptiveLabel1 = new widgets.label.AdaptiveLabel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptiveTextField1 = new widgets.textfield.AdaptiveTextField();
+        gapPanel1 = new widgets.panel.AdaptivePanel();
         adaptivePanel15 = new widgets.panel.AdaptivePanel();
         adaptiveLabel2 = new widgets.label.AdaptiveLabel();
         adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptiveTextField2 = new widgets.textfield.AdaptiveTextField();
+        gapPanel2 = new widgets.panel.AdaptivePanel();
         adaptivePanel16 = new widgets.panel.AdaptivePanel();
         adaptiveLabel3 = new widgets.label.AdaptiveLabel();
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
         adaptiveTextField3 = new widgets.textfield.AdaptiveTextField();
+        gapPanel3 = new widgets.panel.AdaptivePanel();
         adaptivePanel17 = new widgets.panel.AdaptivePanel();
         adaptiveLabel4 = new widgets.label.AdaptiveLabel();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
         adaptiveComboBox2 = new widgets.combobox.AdaptiveComboBox();
         adaptiveComboBox3 = new widgets.combobox.AdaptiveComboBox();
         adaptiveComboBox4 = new widgets.combobox.AdaptiveComboBox();
+        gapPanel4 = new widgets.panel.AdaptivePanel();
         adaptivePanel21 = new widgets.panel.AdaptivePanel();
         adaptiveLabel5 = new widgets.label.AdaptiveLabel();
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptiveLabel15 = new widgets.label.AdaptiveLabel();
+        gapPanel5 = new widgets.panel.AdaptivePanel();
         adaptivePanel22 = new widgets.panel.AdaptivePanel();
         adaptiveLabel6 = new widgets.label.AdaptiveLabel();
         adaptivePanel6 = new widgets.panel.AdaptivePanel();
         adaptiveComboBox5 = new widgets.combobox.AdaptiveComboBox();
+        gapPanel7 = new widgets.panel.AdaptivePanel();
         adaptivePanel23 = new widgets.panel.AdaptivePanel();
         adaptiveLabel7 = new widgets.label.AdaptiveLabel();
         adaptivePanel7 = new widgets.panel.AdaptivePanel();
         adaptiveTextField7 = new widgets.textfield.AdaptiveTextField();
+        gapPanel6 = new widgets.panel.AdaptivePanel();
         adaptivePanel24 = new widgets.panel.AdaptivePanel();
         adaptiveLabel8 = new widgets.label.AdaptiveLabel();
         adaptivePanel8 = new widgets.panel.AdaptivePanel();
         adaptiveComboBox1 = new widgets.combobox.AdaptiveComboBox();
+        gapPanel8 = new widgets.panel.AdaptivePanel();
         adaptivePanel25 = new widgets.panel.AdaptivePanel();
         adaptiveLabel9 = new widgets.label.AdaptiveLabel();
         adaptivePanel9 = new widgets.panel.AdaptivePanel();
         adaptiveTextField9 = new widgets.textfield.AdaptiveTextField();
+        gapPanel9 = new widgets.panel.AdaptivePanel();
         adaptivePanel27 = new widgets.panel.AdaptivePanel();
         adaptiveLabel19 = new widgets.label.AdaptiveLabel();
         adaptivePanel28 = new widgets.panel.AdaptivePanel();
         adaptiveComboBox8 = new widgets.combobox.AdaptiveComboBox();
+        gapPanel11 = new widgets.panel.AdaptivePanel();
         adaptivePanel26 = new widgets.panel.AdaptivePanel();
         adaptiveLabel10 = new widgets.label.AdaptiveLabel();
         adaptivePanel10 = new widgets.panel.AdaptivePanel();
         adaptiveLabel14 = new widgets.label.AdaptiveLabel();
+        gapPanel10 = new widgets.panel.AdaptivePanel();
         adaptivePanel20 = new widgets.panel.AdaptivePanel();
         adaptiveLabel11 = new widgets.label.AdaptiveLabel();
         adaptivePanel11 = new widgets.panel.AdaptivePanel();
         adaptiveTextField11 = new widgets.textfield.AdaptiveTextField();
+        gapPanel12 = new widgets.panel.AdaptivePanel();
         adaptivePanel19 = new widgets.panel.AdaptivePanel();
         adaptiveLabel12 = new widgets.label.AdaptiveLabel();
         adaptivePanel12 = new widgets.panel.AdaptivePanel();
@@ -163,19 +175,15 @@ public class MyProfile extends javax.swing.JPanel {
 
         adaptivePanel30.add(adaptivePanel31);
 
-        adaptivePanel32.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 20));
+        adaptivePanel32.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 20, 20));
 
         onlineButton.setSelected(true);
         adaptivePanel32.add(onlineButton);
         adaptivePanel32.add(awayButton);
+        adaptivePanel32.add(busyButton);
+        adaptivePanel32.add(offlineButton);
 
         adaptivePanel30.add(adaptivePanel32);
-
-        adaptivePanel34.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 20));
-        adaptivePanel34.add(busyButton);
-        adaptivePanel34.add(offlineButton);
-
-        adaptivePanel30.add(adaptivePanel34);
 
         adaptivePanel38.add(adaptivePanel30);
 
@@ -201,6 +209,11 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel13);
 
+        gapPanel.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel);
+
         adaptivePanel14.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         adaptiveLabel1.setText("Όνομα");
@@ -214,6 +227,11 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel1.add(adaptiveTextField1);
 
         profileDataPanel.add(adaptivePanel1);
+
+        gapPanel1.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel1.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel1.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel1);
 
         adaptivePanel15.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
@@ -229,6 +247,11 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel2);
 
+        gapPanel2.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel2.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel2.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel2);
+
         adaptivePanel16.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         adaptiveLabel3.setText("Ε-mail");
@@ -242,6 +265,11 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel3.add(adaptiveTextField3);
 
         profileDataPanel.add(adaptivePanel3);
+
+        gapPanel3.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel3.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel3.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel3);
 
         adaptivePanel17.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
@@ -266,6 +294,11 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel4);
 
+        gapPanel4.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel4.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel4.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel4);
+
         adaptivePanel21.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         adaptiveLabel5.setText("Φύλλο  ");
@@ -279,6 +312,11 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel21.add(adaptivePanel5);
 
         profileDataPanel.add(adaptivePanel21);
+
+        gapPanel5.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel5.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel5.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel5);
 
         adaptivePanel22.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
@@ -294,6 +332,11 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel6);
 
+        gapPanel7.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel7.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel7.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel7);
+
         adaptivePanel23.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         adaptiveLabel7.setText("Πόλη ");
@@ -305,6 +348,11 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel7.add(adaptiveTextField7);
 
         profileDataPanel.add(adaptivePanel7);
+
+        gapPanel6.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel6.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel6.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel6);
 
         adaptivePanel24.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
@@ -320,6 +368,11 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel8);
 
+        gapPanel8.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel8.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel8.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel8);
+
         adaptivePanel25.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         adaptiveLabel9.setText("Τηλέφωνο");
@@ -331,6 +384,11 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel9.add(adaptiveTextField9);
 
         profileDataPanel.add(adaptivePanel9);
+
+        gapPanel9.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel9.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel9.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel9);
 
         adaptivePanel27.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
@@ -349,6 +407,11 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel28);
 
+        gapPanel11.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel11.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel11.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel11);
+
         adaptivePanel26.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         adaptiveLabel10.setText("Όνομα Χρήστη");
@@ -363,6 +426,11 @@ public class MyProfile extends javax.swing.JPanel {
 
         profileDataPanel.add(adaptivePanel26);
 
+        gapPanel10.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel10.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel10.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel10);
+
         adaptivePanel20.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
         adaptiveLabel11.setText("Κωδικός");
@@ -376,6 +444,11 @@ public class MyProfile extends javax.swing.JPanel {
         adaptivePanel11.add(adaptiveTextField11);
 
         profileDataPanel.add(adaptivePanel11);
+
+        gapPanel12.setMaximumSize(new java.awt.Dimension(1, 20));
+        gapPanel12.setMinimumSize(new java.awt.Dimension(1, 20));
+        gapPanel12.setPreferredSize(new java.awt.Dimension(1, 20));
+        profileDataPanel.add(gapPanel12);
 
         adaptivePanel19.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 5));
 
@@ -395,7 +468,7 @@ public class MyProfile extends javax.swing.JPanel {
 
         contentPanel.add(adaptivePanel37, java.awt.BorderLayout.CENTER);
 
-        adaptivePanel33.setLayout(new java.awt.GridLayout(2, 1, 0, 20));
+        adaptivePanel33.setLayout(new java.awt.GridLayout(1, 2, 15, 20));
 
         acceptanceButton.setText("Αποθήκευση");
         adaptivePanel33.add(acceptanceButton);
@@ -464,7 +537,6 @@ public class MyProfile extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel31;
     private widgets.panel.AdaptivePanel adaptivePanel32;
     private widgets.panel.AdaptivePanel adaptivePanel33;
-    private widgets.panel.AdaptivePanel adaptivePanel34;
     private widgets.panel.AdaptivePanel adaptivePanel37;
     private widgets.panel.AdaptivePanel adaptivePanel38;
     private widgets.panel.AdaptivePanel adaptivePanel4;
@@ -486,6 +558,19 @@ public class MyProfile extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel buttonData;
     private widgets.button.AdaptiveButton cancelButton;
     private widgets.panel.AdaptivePanel contentPanel;
+    private widgets.panel.AdaptivePanel gapPanel;
+    private widgets.panel.AdaptivePanel gapPanel1;
+    private widgets.panel.AdaptivePanel gapPanel10;
+    private widgets.panel.AdaptivePanel gapPanel11;
+    private widgets.panel.AdaptivePanel gapPanel12;
+    private widgets.panel.AdaptivePanel gapPanel2;
+    private widgets.panel.AdaptivePanel gapPanel3;
+    private widgets.panel.AdaptivePanel gapPanel4;
+    private widgets.panel.AdaptivePanel gapPanel5;
+    private widgets.panel.AdaptivePanel gapPanel6;
+    private widgets.panel.AdaptivePanel gapPanel7;
+    private widgets.panel.AdaptivePanel gapPanel8;
+    private widgets.panel.AdaptivePanel gapPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private widgets.button.AdaptiveButton offlineButton;
     private widgets.button.AdaptiveButton onlineButton;

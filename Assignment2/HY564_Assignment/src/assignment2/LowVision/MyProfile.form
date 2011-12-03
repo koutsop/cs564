@@ -87,7 +87,7 @@
                         <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel32">
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                            <Property name="horizontalGap" type="int" value="10"/>
+                            <Property name="horizontalGap" type="int" value="20"/>
                             <Property name="verticalGap" type="int" value="20"/>
                           </Layout>
                           <SubComponents>
@@ -98,15 +98,6 @@
                             </Component>
                             <Component class="widgets.button.AdaptiveButton" name="awayButton">
                             </Component>
-                          </SubComponents>
-                        </Container>
-                        <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel34">
-
-                          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                            <Property name="horizontalGap" type="int" value="10"/>
-                            <Property name="verticalGap" type="int" value="20"/>
-                          </Layout>
-                          <SubComponents>
                             <Component class="widgets.button.AdaptiveButton" name="busyButton">
                             </Component>
                             <Component class="widgets.button.AdaptiveButton" name="offlineButton">
@@ -161,6 +152,21 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+                    </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel14">
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
@@ -185,6 +191,21 @@
                           </Properties>
                         </Component>
                       </SubComponents>
+                    </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel1">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
                     </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel15">
 
@@ -211,6 +232,21 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel2">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+                    </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel16">
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
@@ -235,6 +271,21 @@
                           </Properties>
                         </Component>
                       </SubComponents>
+                    </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel3">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
                     </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel17">
 
@@ -332,6 +383,21 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel4">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+                    </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel21">
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
@@ -359,6 +425,21 @@
                           </SubComponents>
                         </Container>
                       </SubComponents>
+                    </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel5">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
                     </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel22">
 
@@ -394,6 +475,21 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel7">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+                    </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel23">
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
@@ -415,6 +511,21 @@
                         <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField7">
                         </Component>
                       </SubComponents>
+                    </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel6">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
                     </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel24">
 
@@ -451,6 +562,21 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel8">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+                    </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel25">
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
@@ -472,6 +598,21 @@
                         <Component class="widgets.textfield.AdaptiveTextField" name="adaptiveTextField9">
                         </Component>
                       </SubComponents>
+                    </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel9">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
                     </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel27">
 
@@ -514,6 +655,21 @@
                         </Component>
                       </SubComponents>
                     </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel11">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+                    </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel26">
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
@@ -542,6 +698,21 @@
                         </Container>
                       </SubComponents>
                     </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel10">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
+                    </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel20">
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
@@ -566,6 +737,21 @@
                           </Properties>
                         </Component>
                       </SubComponents>
+                    </Container>
+                    <Container class="widgets.panel.AdaptivePanel" name="gapPanel12">
+                      <Properties>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[1, 20]"/>
+                        </Property>
+                      </Properties>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
                     </Container>
                     <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel19">
 
@@ -608,8 +794,9 @@
                 <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel33">
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-                    <Property name="columns" type="int" value="1"/>
-                    <Property name="rows" type="int" value="2"/>
+                    <Property name="columns" type="int" value="2"/>
+                    <Property name="horizontalGap" type="int" value="15"/>
+                    <Property name="rows" type="int" value="1"/>
                     <Property name="verticalGap" type="int" value="20"/>
                   </Layout>
                   <SubComponents>

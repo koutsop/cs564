@@ -10,7 +10,7 @@
  */
 package assignment2;
 
-import assignment2.NoDisability.ChatMainView;
+import assignment2.AdaptableViews.AdaptableChatMainView;
 import assignment2.NoDisability.SettingsMainView;
 import javax.swing.JPanel;
 import utilities.Adaptation;
@@ -27,7 +27,7 @@ public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInte
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         imButton.setVisible(false);
-        showPanel(new ChatMainView(menuPanel.getPreferredSize()));
+		showPanel(new AdaptableChatMainView(menuPanel.getPreferredSize()));
     }
 
     /** This method is called from within the constructor to
@@ -96,7 +96,7 @@ public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInte
     
     private void imButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_imButtonActionPerformed
 		ShowIMButton(false);
-        showPanel(new ChatMainView(menuPanel.getPreferredSize()));
+        showPanel(new AdaptableChatMainView(menuPanel.getPreferredSize()));
     }//GEN-LAST:event_imButtonActionPerformed
 
     private void settingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_settingsButtonActionPerformed

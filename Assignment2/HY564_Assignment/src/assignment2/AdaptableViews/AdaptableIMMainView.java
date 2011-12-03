@@ -32,7 +32,7 @@ public class AdaptableIMMainView extends javax.swing.JPanel {
         
 		p.add(new assignment2.AccessibleIM(), viewA);
         p.add(new assignment2.Instability.AccessibleIM(), viewB);
-		p.add(new assignment2.Instability.AccessibleIM(), viewC);	//Edw 8elw to pda
+		p.add(new assignment2.pda.PDAMainView(), viewC);	//Edw 8elw to pda
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());

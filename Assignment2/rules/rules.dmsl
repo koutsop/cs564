@@ -583,7 +583,7 @@ component ContactImgHeight [	//to width kai height pou 8a exei to avatar gia sth
 	if 		profile1 then 	activate "75"
 	else if profile2 then 	activate "21"
 	else if profile3 then 	activate "50"
-	else if profile4 then 	activate "100"
+	else if profile4 then 	activate "150"
 	else if profile5 then 	activate "50"	//spots
 	else if profile6 then 	activate "50"
 	else 					activate "-1"
@@ -592,7 +592,7 @@ component ContactImgWidth [
 	if 		profile1 then 	activate "75"
 	else if profile2 then 	activate "21"
 	else if profile3 then 	activate "50"
-	else if profile4 then 	activate "100"
+	else if profile4 then 	activate "150"
 	else if profile5 then 	activate "50"	//spots
 	else if profile6 then 	activate "50"
 	else 					activate "-1"
@@ -602,7 +602,7 @@ component StatusImgHeight [
 	if 		profile1 then 	activate "20"
 	else if profile2 then 	activate "21"
 	else if profile3 then 	activate "20"
-	else if profile4 then 	activate "32"
+	else if profile4 then 	activate "64"
 	else if profile5 then 	activate "20"	//spots
 	else if profile6 then 	activate "32"
 	else 					activate "-1"
@@ -612,7 +612,7 @@ component StatusImgWidth [
 	if 		profile1 then 	activate "20"
 	else if profile2 then 	activate "21"
 	else if profile3 then 	activate "20"
-	else if profile4 then 	activate "32"
+	else if profile4 then 	activate "64"
 	else if profile5 then 	activate "20"	//spots
 	else if profile6 then 	activate "32"
 	else 					activate "-1"
@@ -659,6 +659,11 @@ component SettingsView [
 	if		profile4 then	activate "LowVisionProfile"
 	if 		profile3 then 	activate "InstabilitySettings"
 	else 					activate "CommonSettings"
+]
+
+component MainIMChatView [
+	if 		profile4 then 	activate "LowVisionChatMainView"
+	else 					activate "CommonChatMainView"
 ]
 
 component MainIMView [
