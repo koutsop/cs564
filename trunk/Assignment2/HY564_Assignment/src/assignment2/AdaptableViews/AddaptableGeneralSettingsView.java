@@ -29,7 +29,7 @@ public class AddaptableGeneralSettingsView extends javax.swing.JPanel {
 	public AddaptableGeneralSettingsView() {
 		initComponents();
 		initComponents();
-        
+
 		p.add(new assignment2.NoDisability.GeneralSettingsPanel(), commonSettings);
         p.add(new assignment2.LowVision.GeneralSettingsPanel(), lowVision);
 		p.add(new assignment2.Instability.GeneralSettingsPanel(), instabilitySettings);
@@ -40,7 +40,7 @@ public class AddaptableGeneralSettingsView extends javax.swing.JPanel {
         System.out.println("General Setings View:>" + pid + "<");
         cl.show(p, pid);
         p.revalidate();
-        
+ 	
         Adaptation.automaticallySetRuntime(this);
         Adaptation.automaticallyAdapt(this);
         this.updateUI();		
