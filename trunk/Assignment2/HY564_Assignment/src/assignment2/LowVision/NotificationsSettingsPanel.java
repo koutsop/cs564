@@ -34,26 +34,33 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
         adaptiveCheckBox8 = new widgets.checkbox.AdaptiveCheckBox();
-        leftPanel = new widgets.panel.AdaptivePanel();
-        centerPanel = new widgets.panel.AdaptivePanel();
-        adaptivePanel2 = new widgets.panel.AdaptivePanel();
-        adaptiveLabel1 = new widgets.label.AdaptiveLabel();
-        adaptiveCheckBox1 = new widgets.checkbox.AdaptiveCheckBox();
-        adaptiveCheckBox2 = new widgets.checkbox.AdaptiveCheckBox();
+        adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptivePanel3 = new widgets.panel.AdaptivePanel();
+        centerPanel = new widgets.panel.AdaptivePanel();
+        ap1 = new widgets.panel.AdaptivePanel();
+        adaptivePanel7 = new widgets.panel.AdaptivePanel();
+        adaptiveLabel1 = new widgets.label.AdaptiveLabel();
+        adaptivePanel8 = new widgets.panel.AdaptivePanel();
+        adaptiveCheckBox1 = new widgets.checkbox.AdaptiveCheckBox();
+        adaptivePanel9 = new widgets.panel.AdaptivePanel();
+        adaptiveCheckBox2 = new widgets.checkbox.AdaptiveCheckBox();
+        ap2 = new widgets.panel.AdaptivePanel();
+        adaptivePanel10 = new widgets.panel.AdaptivePanel();
         adaptiveLabel2 = new widgets.label.AdaptiveLabel();
+        adaptivePanel12 = new widgets.panel.AdaptivePanel();
         adaptiveCheckBox3 = new widgets.checkbox.AdaptiveCheckBox();
+        adaptivePanel13 = new widgets.panel.AdaptivePanel();
         adaptiveCheckBox4 = new widgets.checkbox.AdaptiveCheckBox();
-        adaptivePanel11 = new widgets.panel.AdaptivePanel();
+        ap3 = new widgets.panel.AdaptivePanel();
         adaptiveLabel3 = new widgets.label.AdaptiveLabel();
         adaptiveCheckBox5 = new widgets.checkbox.AdaptiveCheckBox();
         adaptiveCheckBox7 = new widgets.checkbox.AdaptiveCheckBox();
-        adaptivePanel6 = new widgets.panel.AdaptivePanel();
+        ap4 = new widgets.panel.AdaptivePanel();
         adaptiveLabel4 = new widgets.label.AdaptiveLabel();
         adaptiveCheckBox6 = new widgets.checkbox.AdaptiveCheckBox();
         adaptivePanel4 = new widgets.panel.AdaptivePanel();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
         adaptiveCheckBox9 = new widgets.checkbox.AdaptiveCheckBox();
-        rightPanel = new widgets.panel.AdaptivePanel();
 
         adaptiveCheckBox8.setText("Προβολή ειδοποιήσεων");
 
@@ -73,126 +80,125 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        setMaximumSize(new java.awt.Dimension(1000, 600));
-        setPreferredSize(new java.awt.Dimension(999, 500));
-        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.LINE_AXIS));
+        setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 15, 0, 0));
+        setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        leftPanel.setMaximumSize(new java.awt.Dimension(100, 300));
-        leftPanel.setMinimumSize(new java.awt.Dimension(100, 300));
-        leftPanel.setPreferredSize(new java.awt.Dimension(100, 300));
+        adaptivePanel1.setLayout(new javax.swing.BoxLayout(adaptivePanel1, javax.swing.BoxLayout.PAGE_AXIS));
 
-        javax.swing.GroupLayout leftPanelLayout = new javax.swing.GroupLayout(leftPanel);
-        leftPanel.setLayout(leftPanelLayout);
-        leftPanelLayout.setHorizontalGroup(
-            leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        leftPanelLayout.setVerticalGroup(
-            leftPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        adaptivePanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
-        add(leftPanel);
+        centerPanel.setLayout(new java.awt.GridLayout(2, 2, 5, 20));
 
-        centerPanel.setMaximumSize(new java.awt.Dimension(1000, 600));
-        centerPanel.setPreferredSize(new java.awt.Dimension(943, 300));
-        centerPanel.setLayout(new java.awt.GridLayout(5, 1, 20, 20));
+        ap1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        ap1.setLayout(new java.awt.GridLayout(3, 1, 10, 10));
 
-        adaptivePanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
-        adaptivePanel2.setPreferredSize(new java.awt.Dimension(790, 65));
-        adaptivePanel2.setLayout(new java.awt.GridLayout(3, 1, 10, 10));
+        adaptivePanel7.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 1, 12));
         adaptiveLabel1.setText("Ειδοποιήσεις Chat");
-        adaptivePanel2.add(adaptiveLabel1);
+        adaptivePanel7.add(adaptiveLabel1);
+
+        ap1.add(adaptivePanel7);
+
+        adaptivePanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveCheckBox1.setText("Αναπαραγωγή ήχου");
-        adaptivePanel2.add(adaptiveCheckBox1);
+        adaptivePanel8.add(adaptiveCheckBox1);
+
+        ap1.add(adaptivePanel8);
+
+        adaptivePanel9.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveCheckBox2.setText("Προβολή ειδοποποιήσεων");
-        adaptivePanel2.add(adaptiveCheckBox2);
+        adaptivePanel9.add(adaptiveCheckBox2);
 
-        centerPanel.add(adaptivePanel2);
+        ap1.add(adaptivePanel9);
 
-        adaptivePanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
-        adaptivePanel3.setLayout(new java.awt.GridLayout(3, 1, 10, 10));
+        centerPanel.add(ap1);
+
+        ap2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        ap2.setLayout(new java.awt.GridLayout(3, 1, 10, 10));
+
+        adaptivePanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 1, 12));
         adaptiveLabel2.setText("Ειδοποιήσεις Κλήσης");
-        adaptivePanel3.add(adaptiveLabel2);
+        adaptivePanel10.add(adaptiveLabel2);
+
+        ap2.add(adaptivePanel10);
+
+        adaptivePanel12.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveCheckBox3.setText("Αναπαραγωγή ήχου");
-        adaptivePanel3.add(adaptiveCheckBox3);
+        adaptivePanel12.add(adaptiveCheckBox3);
+
+        ap2.add(adaptivePanel12);
+
+        adaptivePanel13.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveCheckBox4.setText("Προβολή ειδοποιήσεων");
-        adaptivePanel3.add(adaptiveCheckBox4);
+        adaptivePanel13.add(adaptiveCheckBox4);
 
-        centerPanel.add(adaptivePanel3);
+        ap2.add(adaptivePanel13);
 
-        adaptivePanel11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
-        adaptivePanel11.setLayout(new java.awt.GridLayout(3, 1, 10, 10));
+        centerPanel.add(ap2);
+
+        ap3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        ap3.setLayout(new java.awt.GridLayout(3, 1, 10, 10));
 
         adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 1, 12));
         adaptiveLabel3.setText("Ειδοποιήσεις Κλήσης");
-        adaptivePanel11.add(adaptiveLabel3);
+        ap3.add(adaptiveLabel3);
 
         adaptiveCheckBox5.setText("Αναπαραγωγή ήχου");
-        adaptivePanel11.add(adaptiveCheckBox5);
+        ap3.add(adaptiveCheckBox5);
 
         adaptiveCheckBox7.setText("Προβολή ειδοποιήσεων");
-        adaptivePanel11.add(adaptiveCheckBox7);
+        ap3.add(adaptiveCheckBox7);
 
-        centerPanel.add(adaptivePanel11);
+        centerPanel.add(ap3);
 
-        adaptivePanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
-        adaptivePanel6.setLayout(new java.awt.GridLayout(3, 1, 10, 10));
+        ap4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(102, 102, 102)));
+        ap4.setLayout(new java.awt.GridLayout(3, 1, 10, 10));
 
         adaptiveLabel4.setFont(new java.awt.Font("Tahoma", 1, 12));
         adaptiveLabel4.setText("Ειδοποιήσεις Εισόδου Επαφών");
-        adaptivePanel6.add(adaptiveLabel4);
+        ap4.add(adaptiveLabel4);
 
-        adaptiveCheckBox6.setText("Ενεργοποίηση όλων των ειδοποιήσεων");
-        adaptivePanel6.add(adaptiveCheckBox6);
+        adaptiveCheckBox6.setText("Ενεργοποίηση όλων");
+        ap4.add(adaptiveCheckBox6);
 
-        centerPanel.add(adaptivePanel6);
+        centerPanel.add(ap4);
 
-        adaptiveCheckBox9.setText("Προβολή ειδοποιήσεων");
+        adaptivePanel3.add(centerPanel);
+
+        adaptivePanel1.add(adaptivePanel3);
+
+        adaptivePanel4.setMaximumSize(new java.awt.Dimension(1, 20));
+        adaptivePanel4.setMinimumSize(new java.awt.Dimension(1, 20));
+        adaptivePanel4.setPreferredSize(new java.awt.Dimension(1, 20));
 
         javax.swing.GroupLayout adaptivePanel4Layout = new javax.swing.GroupLayout(adaptivePanel4);
         adaptivePanel4.setLayout(adaptivePanel4Layout);
         adaptivePanel4Layout.setHorizontalGroup(
             adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(adaptivePanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(adaptiveCheckBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(733, Short.MAX_VALUE))
+            .addGap(0, 1, Short.MAX_VALUE)
         );
         adaptivePanel4Layout.setVerticalGroup(
             adaptivePanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(adaptivePanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(adaptiveCheckBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(61, Short.MAX_VALUE))
+            .addGap(0, 20, Short.MAX_VALUE)
         );
 
-        centerPanel.add(adaptivePanel4);
+        adaptivePanel1.add(adaptivePanel4);
 
-        add(centerPanel);
+        adaptivePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
-        rightPanel.setPreferredSize(new java.awt.Dimension(100, 300));
+        adaptiveCheckBox9.setText("Προβολή ειδοποιήσεων");
+        adaptivePanel2.add(adaptiveCheckBox9);
 
-        javax.swing.GroupLayout rightPanelLayout = new javax.swing.GroupLayout(rightPanel);
-        rightPanel.setLayout(rightPanelLayout);
-        rightPanelLayout.setHorizontalGroup(
-            rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 90, Short.MAX_VALUE)
-        );
-        rightPanelLayout.setVerticalGroup(
-            rightPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 535, Short.MAX_VALUE)
-        );
+        adaptivePanel1.add(adaptivePanel2);
 
-        add(rightPanel);
+        add(adaptivePanel1);
     }// </editor-fold>//GEN-END:initComponents
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -209,14 +215,21 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
     private widgets.label.AdaptiveLabel adaptiveLabel4;
-    private widgets.panel.AdaptivePanel adaptivePanel11;
+    private widgets.panel.AdaptivePanel adaptivePanel1;
+    private widgets.panel.AdaptivePanel adaptivePanel10;
+    private widgets.panel.AdaptivePanel adaptivePanel12;
+    private widgets.panel.AdaptivePanel adaptivePanel13;
     private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel3;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;
-    private widgets.panel.AdaptivePanel adaptivePanel6;
+    private widgets.panel.AdaptivePanel adaptivePanel7;
+    private widgets.panel.AdaptivePanel adaptivePanel8;
+    private widgets.panel.AdaptivePanel adaptivePanel9;
+    private widgets.panel.AdaptivePanel ap1;
+    private widgets.panel.AdaptivePanel ap2;
+    private widgets.panel.AdaptivePanel ap3;
+    private widgets.panel.AdaptivePanel ap4;
     private widgets.panel.AdaptivePanel centerPanel;
-    private widgets.panel.AdaptivePanel leftPanel;
-    private widgets.panel.AdaptivePanel rightPanel;
     // End of variables declaration//GEN-END:variables
 }
