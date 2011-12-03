@@ -64,6 +64,9 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        noAllPanel = new widgets.panel.AdaptivePanel();
+        adaptiveButton1 = new widgets.button.AdaptiveButton();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         adaptivePanel5 = new widgets.panel.AdaptivePanel();
         no1Panel = new widgets.panel.AdaptivePanel();
@@ -85,11 +88,24 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
         adaptivePanel20 = new widgets.panel.AdaptivePanel();
         adaptiveLabel4 = new widgets.label.AdaptiveLabel();
         adaptiveButton2 = new widgets.button.AdaptiveButton();
-        noAllPanel = new widgets.panel.AdaptivePanel();
-        adaptiveButton1 = new widgets.button.AdaptiveButton();
 
         setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 30, 0, 0));
-        setLayout(new javax.swing.BoxLayout(this, javax.swing.BoxLayout.PAGE_AXIS));
+        setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
+
+        adaptivePanel2.setLayout(new javax.swing.BoxLayout(adaptivePanel2, javax.swing.BoxLayout.PAGE_AXIS));
+
+        noAllPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 10));
+
+        adaptiveButton1.setFunction("VirtualKeyboardButton");
+        adaptiveButton1.setText("Προβολή ειδοποιήσεων");
+        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton1ActionPerformed(evt);
+            }
+        });
+        noAllPanel.add(adaptiveButton1);
+
+        adaptivePanel2.add(noAllPanel);
 
         adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 0));
 
@@ -208,20 +224,9 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel1.add(adaptivePanel5);
 
-        add(adaptivePanel1);
+        adaptivePanel2.add(adaptivePanel1);
 
-        noAllPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 10));
-
-        adaptiveButton1.setFunction("VirtualKeyboardButton");
-        adaptiveButton1.setText("Προβολή ειδοποιήσεων");
-        adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                adaptiveButton1ActionPerformed(evt);
-            }
-        });
-        noAllPanel.add(adaptiveButton1);
-
-        add(noAllPanel);
+        add(adaptivePanel2);
     }// </editor-fold>//GEN-END:initComponents
 
 	private void adaptiveButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton7ActionPerformed
@@ -280,6 +285,7 @@ public class NotificationsSettingsPanel extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel adaptivePanel1;
     private widgets.panel.AdaptivePanel adaptivePanel16;
     private widgets.panel.AdaptivePanel adaptivePanel18;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
     private widgets.panel.AdaptivePanel adaptivePanel20;
     private widgets.panel.AdaptivePanel adaptivePanel4;
     private widgets.panel.AdaptivePanel adaptivePanel5;

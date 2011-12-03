@@ -21,221 +21,231 @@
     <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,0,-7,0,0,3,114"/>
   </AuxValues>
 
-  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
-    <Property name="axis" type="int" value="3"/>
+  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+    <Property name="alignment" type="int" value="0"/>
+    <Property name="horizontalGap" type="int" value="0"/>
+    <Property name="verticalGap" type="int" value="0"/>
   </Layout>
   <SubComponents>
-    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
+    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel2">
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-        <Property name="alignment" type="int" value="0"/>
-        <Property name="horizontalGap" type="int" value="10"/>
-        <Property name="verticalGap" type="int" value="0"/>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBoxLayout">
+        <Property name="axis" type="int" value="3"/>
       </Layout>
       <SubComponents>
-        <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel5">
+        <Container class="widgets.panel.AdaptivePanel" name="noAllPanel">
 
-          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-            <Property name="columns" type="int" value="2"/>
-            <Property name="rows" type="int" value="2"/>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+            <Property name="alignment" type="int" value="0"/>
+            <Property name="horizontalGap" type="int" value="10"/>
+            <Property name="verticalGap" type="int" value="10"/>
           </Layout>
           <SubComponents>
-            <Container class="widgets.panel.AdaptivePanel" name="no1Panel">
+            <Component class="widgets.button.AdaptiveButton" name="adaptiveButton1">
+              <Properties>
+                <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+                <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton1ActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel1">
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                <Property name="alignment" type="int" value="0"/>
-                <Property name="horizontalGap" type="int" value="0"/>
-                <Property name="verticalGap" type="int" value="0"/>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+            <Property name="alignment" type="int" value="0"/>
+            <Property name="horizontalGap" type="int" value="10"/>
+            <Property name="verticalGap" type="int" value="0"/>
+          </Layout>
+          <SubComponents>
+            <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel5">
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                <Property name="columns" type="int" value="2"/>
+                <Property name="rows" type="int" value="2"/>
               </Layout>
               <SubComponents>
-                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel4">
+                <Container class="widgets.panel.AdaptivePanel" name="no1Panel">
 
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-                    <Property name="columns" type="int" value="1"/>
-                    <Property name="rows" type="int" value="3"/>
-                    <Property name="verticalGap" type="int" value="10"/>
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="0"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel1">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Tahoma" size="12" style="1"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2; Chat"/>
-                      </Properties>
-                    </Component>
-                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton7">
-                      <Properties>
-                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="text" type="java.lang.String" value="&#x391;&#x3bd;&#x3b1;&#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3b3;&#x3c9;&#x3b3;&#x3ae; &#x3ae;&#x3c7;&#x3bf;&#x3c5;"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton7ActionPerformed"/>
-                      </Events>
-                    </Component>
-                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton8">
-                      <Properties>
-                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton8ActionPerformed"/>
-                      </Events>
-                    </Component>
+                    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel4">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="1"/>
+                        <Property name="rows" type="int" value="3"/>
+                        <Property name="verticalGap" type="int" value="10"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel1">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="12" style="1"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2; Chat"/>
+                          </Properties>
+                        </Component>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton7">
+                          <Properties>
+                            <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+                            <Property name="text" type="java.lang.String" value="&#x391;&#x3bd;&#x3b1;&#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3b3;&#x3c9;&#x3b3;&#x3ae; &#x3ae;&#x3c7;&#x3bf;&#x3c5;"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton7ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton8">
+                          <Properties>
+                            <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+                            <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton8ActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
                   </SubComponents>
                 </Container>
-              </SubComponents>
-            </Container>
-            <Container class="widgets.panel.AdaptivePanel" name="no2Panel">
+                <Container class="widgets.panel.AdaptivePanel" name="no2Panel">
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                <Property name="alignment" type="int" value="0"/>
-                <Property name="horizontalGap" type="int" value="0"/>
-                <Property name="verticalGap" type="int" value="0"/>
-              </Layout>
-              <SubComponents>
-                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel16">
-
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-                    <Property name="columns" type="int" value="1"/>
-                    <Property name="rows" type="int" value="3"/>
-                    <Property name="verticalGap" type="int" value="10"/>
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="0"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel2">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Tahoma" size="12" style="1"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2; &#x39a;&#x3bb;&#x3ae;&#x3c3;&#x3b7;&#x3c2;"/>
-                      </Properties>
-                    </Component>
-                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
-                      <Properties>
-                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="text" type="java.lang.String" value="&#x391;&#x3bd;&#x3b1;&#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3b3;&#x3c9;&#x3b3;&#x3ae; &#x3ae;&#x3c7;&#x3bf;&#x3c5;"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton5ActionPerformed"/>
-                      </Events>
-                    </Component>
-                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton6">
-                      <Properties>
-                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton6ActionPerformed"/>
-                      </Events>
-                    </Component>
+                    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel16">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="1"/>
+                        <Property name="rows" type="int" value="3"/>
+                        <Property name="verticalGap" type="int" value="10"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel2">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="12" style="1"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2; &#x39a;&#x3bb;&#x3ae;&#x3c3;&#x3b7;&#x3c2;"/>
+                          </Properties>
+                        </Component>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
+                          <Properties>
+                            <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+                            <Property name="text" type="java.lang.String" value="&#x391;&#x3bd;&#x3b1;&#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3b3;&#x3c9;&#x3b3;&#x3ae; &#x3ae;&#x3c7;&#x3bf;&#x3c5;"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton5ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton6">
+                          <Properties>
+                            <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+                            <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton6ActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
                   </SubComponents>
                 </Container>
-              </SubComponents>
-            </Container>
-            <Container class="widgets.panel.AdaptivePanel" name="no3Panel">
+                <Container class="widgets.panel.AdaptivePanel" name="no3Panel">
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                <Property name="alignment" type="int" value="0"/>
-                <Property name="horizontalGap" type="int" value="0"/>
-                <Property name="verticalGap" type="int" value="0"/>
-              </Layout>
-              <SubComponents>
-                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel18">
-
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-                    <Property name="columns" type="int" value="1"/>
-                    <Property name="rows" type="int" value="3"/>
-                    <Property name="verticalGap" type="int" value="10"/>
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="0"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel3">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Tahoma" size="12" style="1"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2; &#x39a;&#x3bb;&#x3ae;&#x3c3;&#x3b7;&#x3c2;"/>
-                      </Properties>
-                    </Component>
-                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
-                      <Properties>
-                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="text" type="java.lang.String" value="&#x391;&#x3bd;&#x3b1;&#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3b3;&#x3c9;&#x3b3;&#x3ae; &#x3ae;&#x3c7;&#x3bf;&#x3c5;"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton3ActionPerformed"/>
-                      </Events>
-                    </Component>
-                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
-                      <Properties>
-                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton4ActionPerformed"/>
-                      </Events>
-                    </Component>
+                    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel18">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="1"/>
+                        <Property name="rows" type="int" value="3"/>
+                        <Property name="verticalGap" type="int" value="10"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel3">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="12" style="1"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2; &#x39a;&#x3bb;&#x3ae;&#x3c3;&#x3b7;&#x3c2;"/>
+                          </Properties>
+                        </Component>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
+                          <Properties>
+                            <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+                            <Property name="text" type="java.lang.String" value="&#x391;&#x3bd;&#x3b1;&#x3c0;&#x3b1;&#x3c1;&#x3b1;&#x3b3;&#x3c9;&#x3b3;&#x3ae; &#x3ae;&#x3c7;&#x3bf;&#x3c5;"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton3ActionPerformed"/>
+                          </Events>
+                        </Component>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
+                          <Properties>
+                            <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+                            <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton4ActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
                   </SubComponents>
                 </Container>
-              </SubComponents>
-            </Container>
-            <Container class="widgets.panel.AdaptivePanel" name="no4Panel">
+                <Container class="widgets.panel.AdaptivePanel" name="no4Panel">
 
-              <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-                <Property name="alignment" type="int" value="0"/>
-                <Property name="horizontalGap" type="int" value="0"/>
-                <Property name="verticalGap" type="int" value="0"/>
-              </Layout>
-              <SubComponents>
-                <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel20">
-
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
-                    <Property name="columns" type="int" value="1"/>
-                    <Property name="rows" type="int" value="3"/>
-                    <Property name="verticalGap" type="int" value="10"/>
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
+                    <Property name="alignment" type="int" value="0"/>
+                    <Property name="horizontalGap" type="int" value="0"/>
+                    <Property name="verticalGap" type="int" value="0"/>
                   </Layout>
                   <SubComponents>
-                    <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel4">
-                      <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Tahoma" size="12" style="1"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2; &#x395;&#x3b9;&#x3c3;&#x3cc;&#x3b4;&#x3bf;&#x3c5; &#x395;&#x3c0;&#x3b1;&#x3c6;&#x3ce;&#x3bd;"/>
-                      </Properties>
-                    </Component>
-                    <Component class="widgets.button.AdaptiveButton" name="adaptiveButton2">
-                      <Properties>
-                        <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="text" type="java.lang.String" value="&#x395;&#x3bd;&#x3b5;&#x3c1;&#x3b3;&#x3bf;&#x3c0;&#x3bf;&#x3af;&#x3b7;&#x3c3;&#x3b7; &#x3cc;&#x3bb;&#x3c9;&#x3bd; &#x3c4;&#x3c9;&#x3bd; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton2ActionPerformed"/>
-                      </Events>
-                    </Component>
+                    <Container class="widgets.panel.AdaptivePanel" name="adaptivePanel20">
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
+                        <Property name="columns" type="int" value="1"/>
+                        <Property name="rows" type="int" value="3"/>
+                        <Property name="verticalGap" type="int" value="10"/>
+                      </Layout>
+                      <SubComponents>
+                        <Component class="widgets.label.AdaptiveLabel" name="adaptiveLabel4">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="12" style="1"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="&#x395;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3b9;&#x3c2; &#x395;&#x3b9;&#x3c3;&#x3cc;&#x3b4;&#x3bf;&#x3c5; &#x395;&#x3c0;&#x3b1;&#x3c6;&#x3ce;&#x3bd;"/>
+                          </Properties>
+                        </Component>
+                        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton2">
+                          <Properties>
+                            <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
+                            <Property name="text" type="java.lang.String" value="&#x395;&#x3bd;&#x3b5;&#x3c1;&#x3b3;&#x3bf;&#x3c0;&#x3bf;&#x3af;&#x3b7;&#x3c3;&#x3b7; &#x3cc;&#x3bb;&#x3c9;&#x3bd; &#x3c4;&#x3c9;&#x3bd; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
+                          </Properties>
+                          <Events>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton2ActionPerformed"/>
+                          </Events>
+                        </Component>
+                      </SubComponents>
+                    </Container>
                   </SubComponents>
                 </Container>
               </SubComponents>
             </Container>
           </SubComponents>
         </Container>
-      </SubComponents>
-    </Container>
-    <Container class="widgets.panel.AdaptivePanel" name="noAllPanel">
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout">
-        <Property name="alignment" type="int" value="0"/>
-        <Property name="horizontalGap" type="int" value="10"/>
-        <Property name="verticalGap" type="int" value="10"/>
-      </Layout>
-      <SubComponents>
-        <Component class="widgets.button.AdaptiveButton" name="adaptiveButton1">
-          <Properties>
-            <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-            <Property name="text" type="java.lang.String" value="&#x3a0;&#x3c1;&#x3bf;&#x3b2;&#x3bf;&#x3bb;&#x3ae; &#x3b5;&#x3b9;&#x3b4;&#x3bf;&#x3c0;&#x3bf;&#x3b9;&#x3ae;&#x3c3;&#x3b5;&#x3c9;&#x3bd;"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="adaptiveButton1ActionPerformed"/>
-          </Events>
-        </Component>
       </SubComponents>
     </Container>
   </SubComponents>

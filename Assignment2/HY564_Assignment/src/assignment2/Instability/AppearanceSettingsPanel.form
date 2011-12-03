@@ -11,7 +11,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,24,0,0,2,106"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,24,0,0,2,114"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
@@ -104,7 +104,6 @@
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton1">
                       <Properties>
                         <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Classic"/>
                       </Properties>
                       <Events>
@@ -114,7 +113,6 @@
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton2">
                       <Properties>
                         <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Classic Picture"/>
                       </Properties>
                       <Events>
@@ -124,7 +122,6 @@
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton3">
                       <Properties>
                         <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Bubble"/>
                       </Properties>
                       <Events>
@@ -134,7 +131,6 @@
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton4">
                       <Properties>
                         <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Bubble Picture"/>
                       </Properties>
                       <Events>
@@ -144,7 +140,6 @@
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton5">
                       <Properties>
                         <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Ping Pong"/>
                       </Properties>
                       <Events>
@@ -154,7 +149,6 @@
                     <Component class="widgets.button.AdaptiveButton" name="adaptiveButton6">
                       <Properties>
                         <Property name="function" type="java.lang.String" value="VirtualKeyboardButton"/>
-                        <Property name="horizontalAlignment" type="int" value="2"/>
                         <Property name="text" type="java.lang.String" value="Ping Pong Picture"/>
                       </Properties>
                       <Events>
@@ -238,7 +232,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="618" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="626" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">

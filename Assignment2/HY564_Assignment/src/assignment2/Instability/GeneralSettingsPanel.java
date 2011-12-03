@@ -154,7 +154,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel11.setLayout(new java.awt.GridLayout(6, 1, 0, 5));
 
         adaptiveButton3.setFunction("VirtualKeyboardButton");
-        adaptiveButton3.setHorizontalAlignment(2);
         adaptiveButton3.setText("Arial");
         adaptiveButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,7 +163,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel11.add(adaptiveButton3);
 
         adaptiveButton4.setFunction("VirtualKeyboardButton");
-        adaptiveButton4.setHorizontalAlignment(2);
         adaptiveButton4.setText("Comic Sans MS");
         adaptiveButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -174,7 +172,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel11.add(adaptiveButton4);
 
         adaptiveButton5.setFunction("VirtualKeyboardButton");
-        adaptiveButton5.setHorizontalAlignment(2);
         adaptiveButton5.setText("Dialog");
         adaptiveButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,7 +181,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel11.add(adaptiveButton5);
 
         adaptiveButton6.setFunction("VirtualKeyboardButton");
-        adaptiveButton6.setHorizontalAlignment(2);
         adaptiveButton6.setText("Magneto");
         adaptiveButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,7 +190,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel11.add(adaptiveButton6);
 
         adaptiveButton7.setFunction("VirtualKeyboardButton");
-        adaptiveButton7.setHorizontalAlignment(2);
         adaptiveButton7.setText("Papyrus");
         adaptiveButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -204,7 +199,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel11.add(adaptiveButton7);
 
         adaptiveButton8.setFunction("VirtualKeyboardButton");
-        adaptiveButton8.setHorizontalAlignment(2);
         adaptiveButton8.setText("Times New Roman");
         adaptiveButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -233,7 +227,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel14.setLayout(new java.awt.GridLayout(4, 1, 0, 10));
 
         adaptiveButton9.setFunction("VirtualKeyboardButton");
-        adaptiveButton9.setHorizontalAlignment(2);
         adaptiveButton9.setText("Plain");
         adaptiveButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -243,7 +236,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel14.add(adaptiveButton9);
 
         adaptiveButton10.setFunction("VirtualKeyboardButton");
-        adaptiveButton10.setHorizontalAlignment(2);
         adaptiveButton10.setText("Bold");
         adaptiveButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -253,7 +245,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel14.add(adaptiveButton10);
 
         adaptiveButton11.setFunction("VirtualKeyboardButton");
-        adaptiveButton11.setHorizontalAlignment(2);
         adaptiveButton11.setText("Italic");
         adaptiveButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -263,7 +254,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel14.add(adaptiveButton11);
 
         adaptiveButton12.setFunction("VirtualKeyboardButton");
-        adaptiveButton12.setHorizontalAlignment(2);
         adaptiveButton12.setText("Bold Italic");
         adaptiveButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
