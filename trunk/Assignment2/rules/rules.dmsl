@@ -279,6 +279,11 @@ component LogoutButton [
     else				activate "/images/profile_no_disability/x.png"
 ]
 
+component ArrowUpButton [
+	if	profile6 then	activate "/images/profile_pda/arrow_up.png"
+    else				activate "/images/profile_no_disability/x.png"
+]
+
 component MuteVideoPDAButton [
     if	profile6 then	activate "/images/profile_pda/mute1.png"
     else				activate "/images/profile_no_disability/x.png"

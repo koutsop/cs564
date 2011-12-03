@@ -21,7 +21,7 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class Chat extends javax.swing.JPanel {
-
+	private boolean isVisible = false;
     /** Creates new form Chat */
     public Chat() {
         initComponents();
@@ -52,7 +52,19 @@ public class Chat extends javax.swing.JPanel {
         
         path = DMSLConnector.getInstance().getClient(false).Evaluate("CloseButton");
         closeButton.setIcon(new ImageIcon(getClass().getResource(path)));
+		
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("ArrowUpButton");
+        closeButton.setIcon(new ImageIcon(getClass().getResource(path)));		
+		
+		SetPreferencesButtonsVisibility(false);
     }
+	
+	private void SetPreferencesButtonsVisibility (boolean b) {
+		videoCallButton.setVisible(b);
+		callButton.setVisible(b);
+		addButton.setVisible(b);
+		closeButton.setVisible(b);
+	}
  
     /** This method is called from within the constructor to
      * initialize the form.
@@ -64,11 +76,18 @@ public class Chat extends javax.swing.JPanel {
     private void initComponents() {
 
         contactPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel6 = new widgets.panel.AdaptivePanel();
         avatarPanel = new widgets.panel.AdaptivePanel();
         statusPanel = new widgets.panel.AdaptivePanel();
         adaptivePanel1 = new widgets.panel.AdaptivePanel();
         statusAvatarPanel = new widgets.panel.AdaptivePanel();
+        adaptiveButton32 = new widgets.button.AdaptiveButton();
         nameLabel = new widgets.label.AdaptiveLabel();
+        chatButtonsPanel = new widgets.panel.AdaptivePanel();
+        videoCallButton = new widgets.button.AdaptiveButton();
+        callButton = new widgets.button.AdaptiveButton();
+        addButton = new widgets.button.AdaptiveButton();
+        closeButton = new widgets.button.AdaptiveButton();
         receivePanel = new widgets.panel.AdaptivePanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         scroolContentPanel = new widgets.panel.AdaptivePanel();
@@ -126,26 +145,56 @@ public class Chat extends javax.swing.JPanel {
         adaptiveLabel7 = new widgets.label.AdaptiveLabel();
         adaptiveLabel8 = new widgets.label.AdaptiveLabel();
         sendPanel = new widgets.panel.AdaptivePanel();
-        chatButtonsPanel = new widgets.panel.AdaptivePanel();
-        videoCallButton = new widgets.button.AdaptiveButton();
-        callButton = new widgets.button.AdaptiveButton();
-        addButton = new widgets.button.AdaptiveButton();
-        closeButton = new widgets.button.AdaptiveButton();
-        chatPanel = new widgets.panel.AdaptivePanel();
-        sendButonPanel = new widgets.panel.AdaptivePanel();
-        sendButton = new widgets.button.AdaptiveButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        adaptiveTextBox2 = new widgets.textbox.AdaptiveTextBox();
+        sendTextPanel = new widgets.panel.AdaptivePanel();
+        adaptiveTextField1 = new widgets.textfield.AdaptiveTextField();
+        virtualKeyboardPanel = new widgets.panel.AdaptivePanel();
+        adaptivePanel2 = new widgets.panel.AdaptivePanel();
+        adaptiveButton1 = new widgets.button.AdaptiveButton();
+        adaptiveButton2 = new widgets.button.AdaptiveButton();
+        adaptiveButton10 = new widgets.button.AdaptiveButton();
+        adaptiveButton9 = new widgets.button.AdaptiveButton();
+        adaptiveButton8 = new widgets.button.AdaptiveButton();
+        adaptiveButton7 = new widgets.button.AdaptiveButton();
+        adaptiveButton6 = new widgets.button.AdaptiveButton();
+        adaptiveButton5 = new widgets.button.AdaptiveButton();
+        adaptiveButton4 = new widgets.button.AdaptiveButton();
+        adaptiveButton3 = new widgets.button.AdaptiveButton();
+        adaptivePanel3 = new widgets.panel.AdaptivePanel();
+        adaptiveButton11 = new widgets.button.AdaptiveButton();
+        adaptiveButton12 = new widgets.button.AdaptiveButton();
+        adaptiveButton13 = new widgets.button.AdaptiveButton();
+        adaptiveButton14 = new widgets.button.AdaptiveButton();
+        adaptiveButton15 = new widgets.button.AdaptiveButton();
+        adaptiveButton16 = new widgets.button.AdaptiveButton();
+        adaptiveButton17 = new widgets.button.AdaptiveButton();
+        adaptiveButton18 = new widgets.button.AdaptiveButton();
+        adaptiveButton19 = new widgets.button.AdaptiveButton();
+        adaptivePanel4 = new widgets.panel.AdaptivePanel();
+        adaptiveButton20 = new widgets.button.AdaptiveButton();
+        adaptiveButton21 = new widgets.button.AdaptiveButton();
+        adaptiveButton22 = new widgets.button.AdaptiveButton();
+        adaptiveButton23 = new widgets.button.AdaptiveButton();
+        adaptiveButton24 = new widgets.button.AdaptiveButton();
+        adaptiveButton25 = new widgets.button.AdaptiveButton();
+        adaptiveButton26 = new widgets.button.AdaptiveButton();
+        adaptiveButton27 = new widgets.button.AdaptiveButton();
+        adaptiveButton31 = new widgets.button.AdaptiveButton();
+        adaptivePanel5 = new widgets.panel.AdaptivePanel();
+        adaptiveButton28 = new widgets.button.AdaptiveButton();
+        adaptiveButton29 = new widgets.button.AdaptiveButton();
+        adaptiveButton30 = new widgets.button.AdaptiveButton();
 
         setLayout(new java.awt.BorderLayout(0, 10));
 
         contactPanel.setMaximumSize(new java.awt.Dimension(32767, 100));
         contactPanel.setMinimumSize(new java.awt.Dimension(125, 100));
-        contactPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 10));
+        contactPanel.setLayout(new java.awt.BorderLayout());
+
+        adaptivePanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 0));
 
         avatarPanel.setFunction("marigiannaImg");
         avatarPanel.setName("Panel.Content.MarigiannaImage"); // NOI18N
-        contactPanel.add(avatarPanel);
+        adaptivePanel6.add(avatarPanel);
 
         statusPanel.setLayout(new java.awt.BorderLayout());
 
@@ -156,12 +205,53 @@ public class Chat extends javax.swing.JPanel {
         statusAvatarPanel.setLayout(new javax.swing.BoxLayout(statusAvatarPanel, javax.swing.BoxLayout.LINE_AXIS));
         adaptivePanel1.add(statusAvatarPanel);
 
+        adaptiveButton32.setText("Επιλογές");
+        adaptiveButton32.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adaptiveButton32ActionPerformed(evt);
+            }
+        });
+        adaptivePanel1.add(adaptiveButton32);
+
         statusPanel.add(adaptivePanel1, java.awt.BorderLayout.NORTH);
 
         nameLabel.setText("Marigianna Skouradakh: Pame xoro?");
         statusPanel.add(nameLabel, java.awt.BorderLayout.SOUTH);
 
-        contactPanel.add(statusPanel);
+        adaptivePanel6.add(statusPanel);
+
+        contactPanel.add(adaptivePanel6, java.awt.BorderLayout.NORTH);
+
+        chatButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 0));
+
+        videoCallButton.setFunction("ChatButton");
+        videoCallButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                videoCallButtonActionPerformed(evt);
+            }
+        });
+        chatButtonsPanel.add(videoCallButton);
+
+        callButton.setFunction("ChatButton");
+        callButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                callButtonActionPerformed(evt);
+            }
+        });
+        chatButtonsPanel.add(callButton);
+
+        addButton.setFunction("ChatButton");
+        chatButtonsPanel.add(addButton);
+
+        closeButton.setFunction("ChatButton");
+        closeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                closeButtonActionPerformed(evt);
+            }
+        });
+        chatButtonsPanel.add(closeButton);
+
+        contactPanel.add(chatButtonsPanel, java.awt.BorderLayout.CENTER);
 
         add(contactPanel, java.awt.BorderLayout.NORTH);
 
@@ -407,63 +497,155 @@ public class Chat extends javax.swing.JPanel {
 
         sendPanel.setLayout(new java.awt.BorderLayout(0, 5));
 
-        chatButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 5));
+        sendTextPanel.setLayout(new javax.swing.BoxLayout(sendTextPanel, javax.swing.BoxLayout.LINE_AXIS));
+        sendTextPanel.add(adaptiveTextField1);
 
-        videoCallButton.setFunction("ChatButton");
-        videoCallButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                videoCallButtonActionPerformed(evt);
-            }
-        });
-        chatButtonsPanel.add(videoCallButton);
+        sendPanel.add(sendTextPanel, java.awt.BorderLayout.NORTH);
 
-        callButton.setFunction("ChatButton");
-        callButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                callButtonActionPerformed(evt);
-            }
-        });
-        chatButtonsPanel.add(callButton);
+        virtualKeyboardPanel.setLayout(new java.awt.GridLayout(4, 1));
 
-        addButton.setFunction("ChatButton");
-        chatButtonsPanel.add(addButton);
+        adaptiveButton1.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton1.setText("Q");
+        adaptivePanel2.add(adaptiveButton1);
 
-        closeButton.setFunction("ChatButton");
-        closeButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                closeButtonActionPerformed(evt);
-            }
-        });
-        chatButtonsPanel.add(closeButton);
+        adaptiveButton2.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton2.setText("W");
+        adaptivePanel2.add(adaptiveButton2);
 
-        sendPanel.add(chatButtonsPanel, java.awt.BorderLayout.NORTH);
+        adaptiveButton10.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton10.setText("E");
+        adaptivePanel2.add(adaptiveButton10);
 
-        chatPanel.setLayout(new java.awt.BorderLayout(15, 15));
+        adaptiveButton9.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton9.setText("R");
+        adaptivePanel2.add(adaptiveButton9);
 
-        sendButonPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+        adaptiveButton8.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton8.setText("T");
+        adaptivePanel2.add(adaptiveButton8);
 
-        sendButton.setFunction("ChatButton");
-        sendButton.setText("Send");
-        sendButonPanel.add(sendButton);
+        adaptiveButton7.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton7.setText("Y");
+        adaptivePanel2.add(adaptiveButton7);
 
-        chatPanel.add(sendButonPanel, java.awt.BorderLayout.EAST);
+        adaptiveButton6.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton6.setText("U");
+        adaptivePanel2.add(adaptiveButton6);
 
-        jScrollPane1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 2, true));
+        adaptiveButton5.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton5.setText("I");
+        adaptivePanel2.add(adaptiveButton5);
 
-        adaptiveTextBox2.setColumns(20);
-        adaptiveTextBox2.setRows(5);
-        jScrollPane1.setViewportView(adaptiveTextBox2);
+        adaptiveButton4.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton4.setText("O");
+        adaptivePanel2.add(adaptiveButton4);
 
-        chatPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+        adaptiveButton3.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton3.setText("P");
+        adaptivePanel2.add(adaptiveButton3);
 
-        sendPanel.add(chatPanel, java.awt.BorderLayout.CENTER);
+        virtualKeyboardPanel.add(adaptivePanel2);
+
+        adaptiveButton11.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton11.setText("A");
+        adaptivePanel3.add(adaptiveButton11);
+
+        adaptiveButton12.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton12.setText("S");
+        adaptivePanel3.add(adaptiveButton12);
+
+        adaptiveButton13.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton13.setText("D");
+        adaptivePanel3.add(adaptiveButton13);
+
+        adaptiveButton14.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton14.setText("F");
+        adaptivePanel3.add(adaptiveButton14);
+
+        adaptiveButton15.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton15.setText("G");
+        adaptivePanel3.add(adaptiveButton15);
+
+        adaptiveButton16.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton16.setText("H");
+        adaptivePanel3.add(adaptiveButton16);
+
+        adaptiveButton17.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton17.setText("J");
+        adaptivePanel3.add(adaptiveButton17);
+
+        adaptiveButton18.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton18.setText("K");
+        adaptivePanel3.add(adaptiveButton18);
+
+        adaptiveButton19.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton19.setText("L");
+        adaptivePanel3.add(adaptiveButton19);
+
+        virtualKeyboardPanel.add(adaptivePanel3);
+
+        adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 7, 5));
+
+        adaptiveButton20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/profile_pda/arrow_up1.png"))); // NOI18N
+        adaptiveButton20.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptivePanel4.add(adaptiveButton20);
+
+        adaptiveButton21.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton21.setText("z");
+        adaptivePanel4.add(adaptiveButton21);
+
+        adaptiveButton22.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton22.setText("x");
+        adaptivePanel4.add(adaptiveButton22);
+
+        adaptiveButton23.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton23.setText("c");
+        adaptivePanel4.add(adaptiveButton23);
+
+        adaptiveButton24.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton24.setText("v");
+        adaptivePanel4.add(adaptiveButton24);
+
+        adaptiveButton25.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton25.setText("b");
+        adaptivePanel4.add(adaptiveButton25);
+
+        adaptiveButton26.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton26.setText("n");
+        adaptivePanel4.add(adaptiveButton26);
+
+        adaptiveButton27.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton27.setText("m");
+        adaptivePanel4.add(adaptiveButton27);
+
+        adaptiveButton31.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        adaptiveButton31.setText("del");
+        adaptivePanel4.add(adaptiveButton31);
+
+        virtualKeyboardPanel.add(adaptivePanel4);
+
+        adaptivePanel5.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 4, 4, 4));
+        adaptivePanel5.setLayout(new java.awt.BorderLayout(15, 0));
+
+        adaptiveButton28.setText(".?123");
+        adaptivePanel5.add(adaptiveButton28, java.awt.BorderLayout.WEST);
+
+        adaptiveButton29.setText("SPACE");
+        adaptivePanel5.add(adaptiveButton29, java.awt.BorderLayout.CENTER);
+
+        adaptiveButton30.setText("return");
+        adaptivePanel5.add(adaptiveButton30, java.awt.BorderLayout.EAST);
+
+        virtualKeyboardPanel.add(adaptivePanel5);
+
+        sendPanel.add(virtualKeyboardPanel, java.awt.BorderLayout.CENTER);
 
         add(sendPanel, java.awt.BorderLayout.SOUTH);
     }// </editor-fold>//GEN-END:initComponents
 
-	private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
-		MainWindowPDA.showPanel(new PDAMainView());
-	}//GEN-LAST:event_closeButtonActionPerformed
+	private void adaptiveButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adaptiveButton32ActionPerformed
+		SetPreferencesButtonsVisibility(isVisible = !isVisible);
+	}//GEN-LAST:event_adaptiveButton32ActionPerformed
 
 	private void videoCallButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_videoCallButtonActionPerformed
 		MainWindowPDA.showPanel(new VideoCall());
@@ -473,7 +655,43 @@ public class Chat extends javax.swing.JPanel {
 		MainWindowPDA.showPanel(new Call());
 	}//GEN-LAST:event_callButtonActionPerformed
 
+	private void closeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_closeButtonActionPerformed
+		MainWindowPDA.showPanel(new PDAMainView());
+	}//GEN-LAST:event_closeButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private widgets.button.AdaptiveButton adaptiveButton1;
+    private widgets.button.AdaptiveButton adaptiveButton10;
+    private widgets.button.AdaptiveButton adaptiveButton11;
+    private widgets.button.AdaptiveButton adaptiveButton12;
+    private widgets.button.AdaptiveButton adaptiveButton13;
+    private widgets.button.AdaptiveButton adaptiveButton14;
+    private widgets.button.AdaptiveButton adaptiveButton15;
+    private widgets.button.AdaptiveButton adaptiveButton16;
+    private widgets.button.AdaptiveButton adaptiveButton17;
+    private widgets.button.AdaptiveButton adaptiveButton18;
+    private widgets.button.AdaptiveButton adaptiveButton19;
+    private widgets.button.AdaptiveButton adaptiveButton2;
+    private widgets.button.AdaptiveButton adaptiveButton20;
+    private widgets.button.AdaptiveButton adaptiveButton21;
+    private widgets.button.AdaptiveButton adaptiveButton22;
+    private widgets.button.AdaptiveButton adaptiveButton23;
+    private widgets.button.AdaptiveButton adaptiveButton24;
+    private widgets.button.AdaptiveButton adaptiveButton25;
+    private widgets.button.AdaptiveButton adaptiveButton26;
+    private widgets.button.AdaptiveButton adaptiveButton27;
+    private widgets.button.AdaptiveButton adaptiveButton28;
+    private widgets.button.AdaptiveButton adaptiveButton29;
+    private widgets.button.AdaptiveButton adaptiveButton3;
+    private widgets.button.AdaptiveButton adaptiveButton30;
+    private widgets.button.AdaptiveButton adaptiveButton31;
+    private widgets.button.AdaptiveButton adaptiveButton32;
+    private widgets.button.AdaptiveButton adaptiveButton4;
+    private widgets.button.AdaptiveButton adaptiveButton5;
+    private widgets.button.AdaptiveButton adaptiveButton6;
+    private widgets.button.AdaptiveButton adaptiveButton7;
+    private widgets.button.AdaptiveButton adaptiveButton8;
+    private widgets.button.AdaptiveButton adaptiveButton9;
     private widgets.label.AdaptiveLabel adaptiveLabel1;
     private widgets.label.AdaptiveLabel adaptiveLabel2;
     private widgets.label.AdaptiveLabel adaptiveLabel3;
@@ -483,12 +701,16 @@ public class Chat extends javax.swing.JPanel {
     private widgets.label.AdaptiveLabel adaptiveLabel7;
     private widgets.label.AdaptiveLabel adaptiveLabel8;
     private widgets.panel.AdaptivePanel adaptivePanel1;
-    private widgets.textbox.AdaptiveTextBox adaptiveTextBox2;
+    private widgets.panel.AdaptivePanel adaptivePanel2;
+    private widgets.panel.AdaptivePanel adaptivePanel3;
+    private widgets.panel.AdaptivePanel adaptivePanel4;
+    private widgets.panel.AdaptivePanel adaptivePanel5;
+    private widgets.panel.AdaptivePanel adaptivePanel6;
+    private widgets.textfield.AdaptiveTextField adaptiveTextField1;
     private widgets.button.AdaptiveButton addButton;
     private widgets.panel.AdaptivePanel avatarPanel;
     private widgets.button.AdaptiveButton callButton;
     private widgets.panel.AdaptivePanel chatButtonsPanel;
-    private widgets.panel.AdaptivePanel chatPanel;
     private widgets.button.AdaptiveButton closeButton;
     private widgets.panel.AdaptivePanel contactPanel;
     private widgets.panel.AdaptivePanel conversationKoutsopPanel;
@@ -496,7 +718,6 @@ public class Chat extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel conversationMarigiannaPanel;
     private widgets.panel.AdaptivePanel conversationMarigiannaPanel1;
     private widgets.panel.AdaptivePanel conversationMarigiannaPanel2;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private widgets.label.AdaptiveLabel nameLabel;
     private widgets.panel.AdaptivePanel northPanel;
@@ -506,9 +727,8 @@ public class Chat extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel northPanel4;
     private widgets.panel.AdaptivePanel receivePanel;
     private widgets.panel.AdaptivePanel scroolContentPanel;
-    private widgets.panel.AdaptivePanel sendButonPanel;
-    private widgets.button.AdaptiveButton sendButton;
     private widgets.panel.AdaptivePanel sendPanel;
+    private widgets.panel.AdaptivePanel sendTextPanel;
     private widgets.panel.AdaptivePanel senderImagePanel;
     private widgets.panel.AdaptivePanel senderImagePanel1;
     private widgets.panel.AdaptivePanel senderImagePanel2;
@@ -547,5 +767,6 @@ public class Chat extends javax.swing.JPanel {
     private widgets.label.AdaptiveLabel timeLabel3;
     private widgets.label.AdaptiveLabel timeLabel4;
     private widgets.button.AdaptiveButton videoCallButton;
+    private widgets.panel.AdaptivePanel virtualKeyboardPanel;
     // End of variables declaration//GEN-END:variables
 }
