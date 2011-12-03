@@ -173,9 +173,6 @@
                                   <SubComponents>
                                     <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel1">
                                       <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Tahoma" size="11" style="1"/>
-                                        </Property>
                                         <Property name="text" type="java.lang.String" value="Koutsop:"/>
                                       </Properties>
                                     </Component>
@@ -278,9 +275,6 @@
                                   <SubComponents>
                                     <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel">
                                       <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Tahoma" size="11" style="1"/>
-                                        </Property>
                                         <Property name="text" type="java.lang.String" value="Marigianna:"/>
                                       </Properties>
                                     </Component>
@@ -388,9 +382,6 @@
                                   <SubComponents>
                                     <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel2">
                                       <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Tahoma" size="11" style="1"/>
-                                        </Property>
                                         <Property name="text" type="java.lang.String" value="Koutsop:"/>
                                       </Properties>
                                     </Component>
@@ -493,9 +484,6 @@
                                   <SubComponents>
                                     <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel3">
                                       <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Tahoma" size="11" style="1"/>
-                                        </Property>
                                         <Property name="text" type="java.lang.String" value="Marigianna:"/>
                                       </Properties>
                                     </Component>
@@ -603,9 +591,6 @@
                                   <SubComponents>
                                     <Component class="widgets.label.AdaptiveLabel" name="senderNameLabel4">
                                       <Properties>
-                                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                                          <Font name="Tahoma" size="11" style="1"/>
-                                        </Property>
                                         <Property name="text" type="java.lang.String" value="Marigianna:"/>
                                       </Properties>
                                     </Component>

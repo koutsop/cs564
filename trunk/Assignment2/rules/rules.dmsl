@@ -645,8 +645,9 @@ component ContactWidth [
 //	Addaptable Windows
 //
 //==========================================
-component SpotChat [
-	if		profile5 then	activate "SpotChat"
+component ChatViews [
+    if      profile4 then   activate "LowVisitionChat"
+	else if	profile5 then	activate "SpotChat"
 	else					activate "Chat"
 ]
 

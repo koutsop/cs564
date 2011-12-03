@@ -21,6 +21,7 @@ import utilities.DMSLConnector;
  */
 public class AdaptableVideoCall extends javax.swing.JPanel {
 	final static String viewCommonChat	= "Chat";
+	final static String viewLowViewChat	= "LowVisitionChat";
     final static String viewSpotChat	= "SpotChat";	
 	JPanel p = new JPanel(new CardLayout());
 	
@@ -29,11 +30,12 @@ public class AdaptableVideoCall extends javax.swing.JPanel {
         initComponents();
         
         p.add(new assignment2.VideoCall(), viewCommonChat);
+		p.add(new assignment2.LowVision.VideoCall(), viewCommonChat);
         p.add(new assignment2.Spots.VideoCall(), viewSpotChat);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("ChatViews");
         System.out.println("Video Call View:" + pid);
         cl.show(p, pid);
         p.revalidate();

@@ -192,7 +192,6 @@ public class Chat extends javax.swing.JPanel {
 
         senderInfoPanel3.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel1.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel1.setText("Koutsop:");
         senderInfoPanel3.add(senderNameLabel1);
 
@@ -236,7 +235,6 @@ public class Chat extends javax.swing.JPanel {
 
         senderInfoPanel.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel.setText("Marigianna:");
         senderInfoPanel.add(senderNameLabel);
 
@@ -283,7 +281,6 @@ public class Chat extends javax.swing.JPanel {
 
         senderInfoPanel5.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel2.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel2.setText("Koutsop:");
         senderInfoPanel5.add(senderNameLabel2);
 
@@ -327,7 +324,6 @@ public class Chat extends javax.swing.JPanel {
 
         senderInfoPanel7.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel3.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel3.setText("Marigianna:");
         senderInfoPanel7.add(senderNameLabel3);
 
@@ -374,7 +370,6 @@ public class Chat extends javax.swing.JPanel {
 
         senderInfoPanel9.setLayout(new java.awt.GridLayout(2, 1, 0, 5));
 
-        senderNameLabel4.setFont(new java.awt.Font("Tahoma", 1, 11));
         senderNameLabel4.setText("Marigianna:");
         senderInfoPanel9.add(senderNameLabel4);
 

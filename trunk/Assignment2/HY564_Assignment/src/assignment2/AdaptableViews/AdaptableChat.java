@@ -19,8 +19,9 @@ import utilities.DMSLConnector;
  * @author koutsop
  */
 public class AdaptableChat extends javax.swing.JPanel {
-	final static String viewCommonChat	= "Chat";
-    final static String viewSpotChat	= "SpotChat";
+	final static String viewCommonChat		= "Chat";
+	final static String viewLowVisionChat	= "LowVisitionChat";
+    final static String viewSpotChat		= "SpotChat";
 	JPanel p = new JPanel(new CardLayout());
 	
 	/** Creates new form AdaptableChat */
@@ -28,11 +29,12 @@ public class AdaptableChat extends javax.swing.JPanel {
         initComponents();
         
         p.add(new assignment2.Chat(), viewCommonChat);
+		p.add(new assignment2.LowVision.Chat(), viewLowVisionChat);
         p.add(new assignment2.Spots.Chat(), viewSpotChat);
         this.add(p);
 
         CardLayout cl = (CardLayout)(p.getLayout());
-        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("SpotChat");
+        String pid = DMSLConnector.getInstance().getClient(false).Evaluate("ChatViews");
         System.out.println("Chat View:" + pid);
         cl.show(p, pid);
         p.revalidate();
