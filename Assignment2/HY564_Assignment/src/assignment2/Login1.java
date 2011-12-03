@@ -92,7 +92,7 @@ public class Login1 extends javax.swing.JPanel {
 
         upPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 0, 30)); // NOI18N
+        adaptiveLabel1.setFont(new java.awt.Font("Tahoma", 0, 30));
         adaptiveLabel1.setText("Καλώς Ορίσατε");
         upPanel.add(adaptiveLabel1);
 
@@ -106,7 +106,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel14.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        boDisabilityButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        boDisabilityButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/entrance.jpg"))); // NOI18N
         boDisabilityButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 boDisabilityButtonActionPerformed(evt);
@@ -118,7 +118,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        adaptiveLabel2.setFont(new java.awt.Font("Tahoma", 0, 20));
         adaptiveLabel2.setText("Είσοδος");
         adaptivePanel2.add(adaptiveLabel2);
 
@@ -134,7 +134,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel15.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        colorBlindButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        colorBlindButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/color_blind.jpg"))); // NOI18N
         colorBlindButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 colorBlindButtonActionPerformed(evt);
@@ -146,7 +146,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        adaptiveLabel3.setFont(new java.awt.Font("Tahoma", 0, 20));
         adaptiveLabel3.setText("Αχρωματοψία");
         adaptivePanel4.add(adaptiveLabel3);
 
@@ -162,7 +162,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel16.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        instabilityButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        instabilityButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/unstable.jpg"))); // NOI18N
         instabilityButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 instabilityButtonActionPerformed(evt);
@@ -174,7 +174,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel5.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel4.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        adaptiveLabel4.setFont(new java.awt.Font("Tahoma", 0, 20));
         adaptiveLabel4.setText("Αστάθεια");
         adaptivePanel5.add(adaptiveLabel4);
 
@@ -190,7 +190,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel17.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        lowVisionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        lowVisionButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/low_vision.jpg"))); // NOI18N
         lowVisionButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lowVisionButtonActionPerformed(evt);
@@ -202,7 +202,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel8.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel5.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        adaptiveLabel5.setFont(new java.awt.Font("Tahoma", 0, 20));
         adaptiveLabel5.setText("Χαμηλή όραση");
         adaptivePanel8.add(adaptiveLabel5);
 
@@ -218,7 +218,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel18.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        spotsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        spotsButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/spot.jpg"))); // NOI18N
         spotsButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 spotsButtonActionPerformed(evt);
@@ -230,7 +230,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel10.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel6.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        adaptiveLabel6.setFont(new java.awt.Font("Tahoma", 0, 20));
         adaptiveLabel6.setText("Κηλίδες");
         adaptivePanel10.add(adaptiveLabel6);
 
@@ -246,7 +246,8 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel13.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        pdaButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/defaultProfile.png"))); // NOI18N
+        pdaButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/pda.png"))); // NOI18N
+        pdaButton.setMnemonic('<');
         pdaButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pdaButtonActionPerformed(evt);
@@ -258,7 +259,7 @@ public class Login1 extends javax.swing.JPanel {
 
         adaptivePanel12.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        adaptiveLabel7.setFont(new java.awt.Font("Tahoma", 0, 20)); // NOI18N
+        adaptiveLabel7.setFont(new java.awt.Font("Tahoma", 0, 20));
         adaptiveLabel7.setText("PDA");
         adaptivePanel12.add(adaptiveLabel7);
 
@@ -272,7 +273,8 @@ public class Login1 extends javax.swing.JPanel {
 
         downPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
 
-        registerButton.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        registerButton.setMnemonic('<');
+        registerButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         registerButton.setFunction("LoginButton");
         registerButton.setText("Δεν έχετε λογαριασμό;");
         registerButton.addActionListener(new java.awt.event.ActionListener() {
