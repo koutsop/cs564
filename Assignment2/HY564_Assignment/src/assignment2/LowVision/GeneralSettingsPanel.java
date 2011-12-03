@@ -51,8 +51,9 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         southPanel = new widgets.panel.AdaptivePanel();
         previewLabel = new widgets.label.AdaptiveLabel();
 
+        setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 20, 0, 0));
         setMaximumSize(new java.awt.Dimension(307, 169));
-        setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 50, 0));
+        setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptivePanel1.setMaximumSize(new java.awt.Dimension(307, 169));
         adaptivePanel1.setLayout(new java.awt.BorderLayout());
@@ -103,7 +104,7 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
 
         adaptivePanel1.add(centalPanel, java.awt.BorderLayout.CENTER);
 
-        previewLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 40)); // NOI18N
+        previewLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 40));
         previewLabel.setText("Έτσι θα φαίνεται το κείμενό σας!");
         southPanel.add(previewLabel);
 

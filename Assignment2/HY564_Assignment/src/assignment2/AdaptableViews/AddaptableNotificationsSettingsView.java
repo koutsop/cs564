@@ -21,7 +21,7 @@ import utilities.DMSLConnector;
  */
 public class AddaptableNotificationsSettingsView extends javax.swing.JPanel {
 	private final String commonSettings			= "CommonSettings";
-	private final String lowVision				= "LowVision";
+	private final String lowVision				= "LowVisionSettings";
 	private final String instabilitySettings	= "InstabilitySettings";
 	JPanel p = new JPanel(new CardLayout());
 	
@@ -31,7 +31,7 @@ public class AddaptableNotificationsSettingsView extends javax.swing.JPanel {
 		initComponents();
         
 		p.add(new assignment2.NoDisability.NotificationsSettingsPanel(), commonSettings);
-        //p.add(instabilitySettingsView, lowVision);
+        p.add(new assignment2.LowVision.NotificationsSettingsPanel(), lowVision);
 		p.add(new assignment2.Instability.NotificationsSettingsPanel(), instabilitySettings);
         this.add(p);
 
