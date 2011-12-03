@@ -352,7 +352,7 @@
 <!-- ======================================================= -->
 
 	<style id="ComboBoxStyle">
-		<insets top="3" left="3" bottom="3" right="3"/>
+		<insets top="10" left="10" bottom="10" right="10"/>
 		<opaque value="true"/>
 		
 		<!--Take a look at this-->
