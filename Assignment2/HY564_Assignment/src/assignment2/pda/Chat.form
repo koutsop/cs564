@@ -118,6 +118,9 @@
             <Component class="widgets.button.AdaptiveButton" name="videoCallButton">
               <Properties>
                 <Property name="function" type="java.lang.String" value="ChatButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="videoCallButtonActionPerformed"/>
@@ -126,6 +129,9 @@
             <Component class="widgets.button.AdaptiveButton" name="callButton">
               <Properties>
                 <Property name="function" type="java.lang.String" value="ChatButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="callButtonActionPerformed"/>
@@ -134,14 +140,31 @@
             <Component class="widgets.button.AdaptiveButton" name="addButton">
               <Properties>
                 <Property name="function" type="java.lang.String" value="ChatButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
               </Properties>
             </Component>
             <Component class="widgets.button.AdaptiveButton" name="closeButton">
               <Properties>
                 <Property name="function" type="java.lang.String" value="ChatButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="closeButtonActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="widgets.button.AdaptiveButton" name="minimizeButton">
+              <Properties>
+                <Property name="function" type="java.lang.String" value="ChatButton"/>
+                <Property name="margin" type="java.awt.Insets" editor="org.netbeans.beaninfo.editors.InsetsEditor">
+                  <Insets value="[0, 0, 0, 0]"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="minimizeButtonActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>

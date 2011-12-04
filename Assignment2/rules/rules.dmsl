@@ -311,6 +311,15 @@ component SwapVideoPDAButton [
     else				activate "/images/profile_no_disability/x.png"
 ]
 
+component MinimizePDAButton [
+    if	profile6 then	activate "/images/profile_pda/minimize.png"
+    else				activate "/images/profile_no_disability/x.png"
+]
+
+component AddPDAButton [
+    if	profile6 then	activate "/images/profile_pda/add2.png"
+    else				activate "/images/profile_no_disability/x.png"
+]
 
 component CancelButton [
     if		profile1 then	activate "/images/profile_no_disability/x.png"
