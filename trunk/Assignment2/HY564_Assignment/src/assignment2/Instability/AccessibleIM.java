@@ -132,13 +132,14 @@ public class AccessibleIM extends javax.swing.JPanel implements AccessibleIMInte
         contentsPanel.setLayout(new javax.swing.BoxLayout(contentsPanel, javax.swing.BoxLayout.LINE_AXIS));
         add(contentsPanel, java.awt.BorderLayout.CENTER);
 
-        virtualKeyboardPanel.setLayout(new java.awt.BorderLayout());
+        virtualKeyboardPanel.setLayout(new java.awt.BorderLayout(0, 10));
 
-        gapKeyboardNorthPanel.setMinimumSize(new java.awt.Dimension(10, 20));
-        gapKeyboardNorthPanel.setPreferredSize(new java.awt.Dimension(10, 20));
+        gapKeyboardNorthPanel.setMaximumSize(new java.awt.Dimension(0, 0));
+        gapKeyboardNorthPanel.setMinimumSize(new java.awt.Dimension(0, 0));
+        gapKeyboardNorthPanel.setPreferredSize(new java.awt.Dimension(0, 0));
         virtualKeyboardPanel.add(gapKeyboardNorthPanel, java.awt.BorderLayout.NORTH);
 
-        keyboardPanel.setLayout(new java.awt.GridLayout(4, 10, 10, 10));
+        keyboardPanel.setLayout(new java.awt.GridLayout(4, 10, 5, 10));
 
         adaptiveButton2.setFunction("VirtualKeyboardButton");
         adaptiveButton2.setText("1");

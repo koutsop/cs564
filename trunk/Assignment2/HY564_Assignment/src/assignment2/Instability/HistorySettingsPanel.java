@@ -68,7 +68,6 @@ public class HistorySettingsPanel extends javax.swing.JPanel {
         centerPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         choiceButton.setFunction("VirtualKeyboardButton");
-        choiceButton.setHorizontalAlignment(2);
         choiceButton.setText("Αποθήκευση ιστορικού συνομιλίας");
         choiceButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

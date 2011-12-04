@@ -77,7 +77,7 @@ public class ChatMainView extends javax.swing.JPanel {
 
         mainPanel.setLayout(new java.awt.BorderLayout());
 
-        tabPanel.setLayout(new java.awt.GridLayout(1, 3, 0, 30));
+        tabPanel.setLayout(new java.awt.GridLayout(1, 5));
 
         contactsButton.setText("Επαφές");
         contactsButton.addActionListener(new java.awt.event.ActionListener() {

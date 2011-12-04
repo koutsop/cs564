@@ -127,7 +127,6 @@ public class GeneralSettingsPanel extends javax.swing.JPanel {
         adaptivePanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 0, 0));
 
         adaptiveButton1.setFunction("VirtualKeyboardButton");
-        adaptiveButton1.setHorizontalAlignment(2);
         adaptiveButton1.setText("Έναρξη εφαρμογής κατά την εκκίνηση του λειτουργικού");
         adaptiveButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

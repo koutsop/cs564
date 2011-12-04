@@ -567,7 +567,7 @@ component PagesNavigationButtonsWidth [
 component ContactListWidth [
 	if 		profile1 then 	activate "270"	//27% of wondow's width (1000)
 	else if profile2 then 	activate "270"	//color blind
-	else if profile3 then 	activate "245"	//instability
+	else if profile3 then 	activate "270"	//instability
 	else if profile4 then 	activate "470"	//low vision
 	else if profile5 then 	activate "270"	//spots
 	else if profile6 then 	activate "270"	//pda
