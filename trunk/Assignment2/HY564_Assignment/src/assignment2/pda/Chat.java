@@ -47,7 +47,7 @@ public class Chat extends javax.swing.JPanel {
         path = DMSLConnector.getInstance().getClient(false).Evaluate("CallButton");
         callButton.setIcon(new ImageIcon(getClass().getResource(path)));
             
-        path = DMSLConnector.getInstance().getClient(false).Evaluate("AddButton");
+        path = DMSLConnector.getInstance().getClient(false).Evaluate("AddPDAButton");
         addButton.setIcon(new ImageIcon(getClass().getResource(path)));  
         
         path = DMSLConnector.getInstance().getClient(false).Evaluate("CloseButton");
@@ -55,6 +55,9 @@ public class Chat extends javax.swing.JPanel {
 		
         path = DMSLConnector.getInstance().getClient(false).Evaluate("ArrowUpButton");
         adaptiveButton20.setIcon(new ImageIcon(getClass().getResource(path)));		
+		
+		path = DMSLConnector.getInstance().getClient(false).Evaluate("MinimizePDAButton");
+        minimizeButton.setIcon(new ImageIcon(getClass().getResource(path)));		
 		
 		SetPreferencesButtonsVisibility(false);
     }
@@ -64,6 +67,7 @@ public class Chat extends javax.swing.JPanel {
 		callButton.setVisible(b);
 		addButton.setVisible(b);
 		closeButton.setVisible(b);
+		minimizeButton.setVisible(b);
 	}
  
     /** This method is called from within the constructor to
@@ -88,6 +92,7 @@ public class Chat extends javax.swing.JPanel {
         callButton = new widgets.button.AdaptiveButton();
         addButton = new widgets.button.AdaptiveButton();
         closeButton = new widgets.button.AdaptiveButton();
+        minimizeButton = new widgets.button.AdaptiveButton();
         receivePanel = new widgets.panel.AdaptivePanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         scroolContentPanel = new widgets.panel.AdaptivePanel();
@@ -225,6 +230,7 @@ public class Chat extends javax.swing.JPanel {
         chatButtonsPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 10, 0));
 
         videoCallButton.setFunction("ChatButton");
+        videoCallButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
         videoCallButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 videoCallButtonActionPerformed(evt);
@@ -233,6 +239,7 @@ public class Chat extends javax.swing.JPanel {
         chatButtonsPanel.add(videoCallButton);
 
         callButton.setFunction("ChatButton");
+        callButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
         callButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 callButtonActionPerformed(evt);
@@ -241,15 +248,26 @@ public class Chat extends javax.swing.JPanel {
         chatButtonsPanel.add(callButton);
 
         addButton.setFunction("ChatButton");
+        addButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
         chatButtonsPanel.add(addButton);
 
         closeButton.setFunction("ChatButton");
+        closeButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
         closeButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 closeButtonActionPerformed(evt);
             }
         });
         chatButtonsPanel.add(closeButton);
+
+        minimizeButton.setFunction("ChatButton");
+        minimizeButton.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        minimizeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                minimizeButtonActionPerformed(evt);
+            }
+        });
+        chatButtonsPanel.add(minimizeButton);
 
         contactPanel.add(chatButtonsPanel, java.awt.BorderLayout.CENTER);
 
@@ -658,6 +676,10 @@ public class Chat extends javax.swing.JPanel {
 		MainWindowPDA.showPanel(new PDAMainView());
 	}//GEN-LAST:event_closeButtonActionPerformed
 
+	private void minimizeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minimizeButtonActionPerformed
+		MainWindowPDA.showPanel(new PDAMainView());
+	}//GEN-LAST:event_minimizeButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private widgets.button.AdaptiveButton adaptiveButton1;
     private widgets.button.AdaptiveButton adaptiveButton10;
@@ -718,6 +740,7 @@ public class Chat extends javax.swing.JPanel {
     private widgets.panel.AdaptivePanel conversationMarigiannaPanel1;
     private widgets.panel.AdaptivePanel conversationMarigiannaPanel2;
     private javax.swing.JScrollPane jScrollPane2;
+    private widgets.button.AdaptiveButton minimizeButton;
     private widgets.label.AdaptiveLabel nameLabel;
     private widgets.panel.AdaptivePanel northPanel;
     private widgets.panel.AdaptivePanel northPanel1;
