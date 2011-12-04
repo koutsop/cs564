@@ -566,11 +566,11 @@ component PagesNavigationButtonsWidth [
 //for chating
 component ContactListWidth [
 	if 		profile1 then 	activate "270"	//27% of wondow's width (1000)
-	else if profile2 then 	activate "290"	//color blind
+	else if profile2 then 	activate "270"	//color blind
 	else if profile3 then 	activate "245"	//instability
 	else if profile4 then 	activate "470"	//low vision
-	else if profile5 then 	activate "245"	//spots
-	else if profile6 then 	activate "290"	//pda
+	else if profile5 then 	activate "270"	//spots
+	else if profile6 then 	activate "270"	//pda
 	else 					activate "-1"  
 ] 
 
@@ -590,39 +590,39 @@ component sendVideoImagePanel [
 //==========================================
 component ContactImgHeight [	//to width kai height pou 8a exei to avatar gia sthn lista me ths epafes
 	if 		profile1 then 	activate "75"
-	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "50"
+	else if profile2 then 	activate "75"
+	else if profile3 then 	activate "75"
 	else if profile4 then 	activate "150"
-	else if profile5 then 	activate "50"	//spots
-	else if profile6 then 	activate "50"
+	else if profile5 then 	activate "75"	//spots
+	else if profile6 then 	activate "64"
 	else 					activate "-1"
 ]
 component ContactImgWidth [
 	if 		profile1 then 	activate "75"
-	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "50"
+	else if profile2 then 	activate "75"
+	else if profile3 then 	activate "75"
 	else if profile4 then 	activate "150"
-	else if profile5 then 	activate "50"	//spots
-	else if profile6 then 	activate "50"
+	else if profile5 then 	activate "75"	//spots
+	else if profile6 then 	activate "64"
 	else 					activate "-1"
 ]
 
 component StatusImgHeight [
-	if 		profile1 then 	activate "20"
+	if 		profile1 then 	activate "21"
 	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "20"
+	else if profile3 then 	activate "21"
 	else if profile4 then 	activate "64"
-	else if profile5 then 	activate "20"	//spots
+	else if profile5 then 	activate "21"	//spots
 	else if profile6 then 	activate "32"
 	else 					activate "-1"
 ]
 
 component StatusImgWidth [
-	if 		profile1 then 	activate "20"
+	if 		profile1 then 	activate "21"
 	else if profile2 then 	activate "21"
-	else if profile3 then 	activate "20"
+	else if profile3 then 	activate "21"
 	else if profile4 then 	activate "64"
-	else if profile5 then 	activate "20"	//spots
+	else if profile5 then 	activate "21"	//spots
 	else if profile6 then 	activate "32"
 	else 					activate "-1"
 ]
