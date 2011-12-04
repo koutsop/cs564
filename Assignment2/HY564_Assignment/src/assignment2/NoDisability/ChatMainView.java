@@ -457,7 +457,7 @@ public class ChatMainView extends javax.swing.JPanel {
 
         mainPanel.setLayout(new java.awt.BorderLayout());
 
-        tabPanel.setLayout(new java.awt.GridLayout(1, 3, 0, 30));
+        tabPanel.setLayout(new java.awt.GridLayout(1, 4));
 
         myProfileButton.setText("To προφίλ μου");
         myProfileButton.addActionListener(new java.awt.event.ActionListener() {
