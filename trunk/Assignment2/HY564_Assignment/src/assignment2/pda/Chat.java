@@ -54,7 +54,7 @@ public class Chat extends javax.swing.JPanel {
         closeButton.setIcon(new ImageIcon(getClass().getResource(path)));
 		
         path = DMSLConnector.getInstance().getClient(false).Evaluate("ArrowUpButton");
-        closeButton.setIcon(new ImageIcon(getClass().getResource(path)));		
+        adaptiveButton20.setIcon(new ImageIcon(getClass().getResource(path)));		
 		
 		SetPreferencesButtonsVisibility(false);
     }

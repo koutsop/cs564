@@ -84,7 +84,7 @@ public class DeleteContact extends javax.swing.JPanel {
 	}//GEN-LAST:event_noButtonActionPerformed
 
 	private void yesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_yesButtonActionPerformed
-		MainWindowPDA.showPanel(new PDAMainView());
+		MainWindowPDA.showPanel(new SuccessfulContactDeletion());
 	}//GEN-LAST:event_yesButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
