@@ -11,7 +11,20 @@ and open the template in the editor.
 		
 		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
 		<script type="text/javascript" src="js/popup.js" ></script>
-		<script type="text/javascript">
+		<script type="text/javascript">	
+			function setWondersPosition (){
+				var windowWidth		= document.documentElement.clientWidth;  
+				var windowHeight	= document.documentElement.clientHeight; 
+
+				$("#chichenItza").css({  
+					"position": "fixed",  
+					"top": Math.floor(279*(windowHeight/582)),  
+					"left": Math.floor(80*(windowWidth/1024)),
+					"width": "14.45%",
+					"height": "17.1%"
+				}); 	
+			}
+							
 			var cliked = false;
 			$(document).keypress(function(e){  
 				var code = e.keyCode ? e.keyCode : e.which;
@@ -27,6 +40,7 @@ and open the template in the editor.
 					$(this).removeClass("blue");
 					$(this).addClass(cliked?"black":"blue");	
 					cliked = !cliked;
+					setWondersPosition();
 				});			
 				
 				$("img").click(function () {
@@ -52,13 +66,17 @@ and open the template in the editor.
 	</head>
 	<body>
 		<img src="material/7Wonders.png" alt="background image" id="bg" />
-
+		<div id="chichenItza">
+		</div>	
+		
+		
+		
 		<div id="content">
 			<div><h1>TODO write content</h1></div>
 			
 			<div id="popupContact">
 				<a id="popupContactClose">x</a> 
-				<h1>Title of our cool popup, yay!</h1> 
+				<h1>Title of our cool popup, yay!</h1> <button type="button">Click Me!</button>
 				<p id="contactArea">  
 					Here we have a simple but interesting sample of our new stuning and smooth popup. As you can see jQuery and CSS does it easy...  
 					<br/><br/>  
@@ -71,5 +89,7 @@ and open the template in the editor.
 			</div>	
 			<div id="backgroundPopup"></div>
 		</div>
+		
+		
 	</body>
 </html>
