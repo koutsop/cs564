@@ -1,0 +1,5 @@
+Chichen Itza: 
+top left: 80, 279
+size: 148, 99
+
+Great Wall of China
