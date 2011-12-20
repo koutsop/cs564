@@ -54,6 +54,10 @@ and open the template in the editor.
 					$("#backgroundPopup").click(function(){ disablePopup();}); 
 					//Press Escape event! 
 				});
+				
+				$(window).resize(function() {
+					setWondersPosition();
+				});
             });
         </script>
 		<link rel="stylesheet" href="css/index.css" type="text/css" />
@@ -64,7 +68,7 @@ and open the template in the editor.
 			.black	{ color: black; }
         </style>
 	</head>
-	<body>
+	<body onload="setWondersPosition();">
 		<img src="material/7Wonders.png" alt="background image" id="bg" />
 		<div id="chichenItza">
 		</div>	
