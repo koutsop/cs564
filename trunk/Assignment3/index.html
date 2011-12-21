@@ -1,7 +1,3 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,79 +7,11 @@ and open the template in the editor.
 		<link rel="stylesheet" href="css/index.css" type="text/css" />
 		<link rel="stylesheet" href="css/popup.css" type="text/css" />
 
-		<style type="text/css">
-            .blue	{ color: blue; }
-			.black	{ color: black; }
-        </style>		
-		
 		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
 		<script type="text/javascript" src="js/popup.js" ></script>
-		<script type="text/javascript">	
-            var activeWonder = null;
-            
-			function setWonderPosition (wonder, top, left, width, height) {
-				var windowWidth		= document.documentElement.clientWidth;  
-				var windowHeight	= document.documentElement.clientHeight; 
-
-				$(wonder).css({  
-					"position"	: "fixed",  
-					"top"		: Math.floor(left*(windowHeight/582)),		//582 image's normal width
-					"left"		: Math.floor(top*(windowWidth/1024)),		//1024 image's normal height
-					"width"		: (100* (width/1024)).toString() + "%",
-					"height"	: (100* (height/582)).toString() + "%",
-					"z-index"	: 0
-				}); 				
-			}
-			
-			function setWondersPosition (){
-				setWonderPosition("#chichenItza", 80, 279, 148, 100);
-				setWonderPosition("#greatWallOfChina", 809, 158, 140, 94);
-				setWonderPosition("#statueOfChristTheRedeemer", 381, 475, 144, 99);
-				setWonderPosition("#colosseum", 384, 160, 148, 89);
-				setWonderPosition("#petra", 538, 307, 122, 92);
-				setWonderPosition("#tajMahal", 698, 324, 131, 108);
-				setWonderPosition("#machuPicchu", 165, 418, 122, 107);
-			}
-			
-			function onClick (wonder) { 
-                activeWonder = wonder;
-				centerPopup(wonder);												//centering with css 
-				loadPopup(wonder);													//load popup 				
-			}
-
-			var cliked = false;
-			$(document).ready(function(){
-				$("h1").click(function(){
-					$(this).removeClass("black");
-					$(this).removeClass("blue");
-					$(this).addClass(cliked?"black":"blue");	
-					cliked = !cliked;
-					setWondersPosition();
-				});		
-				
-				$(window).resize(function() 
-					{ setWondersPosition(); });
-				$("#chichenItza").click(function () 
-					{ onClick("#chichenItzaPopup"); });
-				$("#greatWallOfChina").click(function () 
-					{ onClick("#greatWallOfChinaPopup"); });					
-                    
-                $(".popupClose").click(function()
-                    { disablePopup(activeWonder); });               //Click the x event!
-				$(".backgroundPopup").click(function()
-                    { disablePopup(activeWonder);});                //Click out event! 
-				$(document).keypress(function(e){                   //Press Escape event!
-					var code = e.keyCode ? e.keyCode : e.which;
-					alert(code);
-					if(e.keyCode==27 && popupIsEnabled)
-						disablePopup(activeWonder);  
-
-				}); 
-
-            });
-        </script>
-
+		<script type="text/javascript" src="js/index.js"></script>
 	</head>
+    
 	<body onload="setWondersPosition();">
 		<img src="material/7Wonders.png" alt="background image" id="bg" />
 		
@@ -103,7 +31,7 @@ and open the template in the editor.
 				<a class="popupClose">X</a> 
 				<h1>Chichen Itza Popup!</h1> 
 				<p id="chichenItzaArea">  
-					malakas malakas malakas
+					The famous Mayan pyramids of Chichén-Itzá are over 1500 years old and are located only 75 miles from Mérida. 
 				</p>
 			</div>	
 			<div class="backgroundPopup"></div>				
