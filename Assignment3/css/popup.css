@@ -35,19 +35,13 @@
 	display:block;  
 } 
 
-#chichenItzaPopup, #greatWallOfChinaPopup {  
-	display:none;
-	position:fixed;
-	height:384px;  
-	width:408px;  
-	background:#FFFFFF;  
-	border:2px solid #cecece;  
-	z-index:3;  
-	padding:12px;  
-	font-size:13px;  
-}  
-
-#chichenItzaPopup h1, #greatWallOfChinaPopup h1{  
+#tajMahalPopup h1
+#machuPicchuPopup h1,
+#chichenItzaPopup h1, 
+#greatWallOfChinaPopup h1,
+#statueOfChristTheRedeemerPopup h1,
+#colosseumPopup h1,
+#petraPopup h1{  
 	text-align:left;  
 	color:#6FA5FD;  
 	font-size:22px;  
@@ -55,6 +49,42 @@
 	border-bottom:1px dotted #D3D3D3;  
 	padding-bottom:2px;  
 	margin-bottom:20px;  
-}  
+}
+
+#tajMahalPopup,
+#chichenItzaPopup,
+#machuPicchuPopup,
+#greatWallOfChinaPopup,
+#statueOfChristTheRedeemerPopup,
+#colosseumPopup,
+#petraPopup {  
+	display:none;
+	position:fixed; 
+	background:#FFFFFF;  
+	border:2px solid #cecece;  
+	z-index:3;  
+	padding:12px;  
+	font-size:13px;  
+}
+#chichenItzaPopup {
+	width   :360px; 
+    height  :360px;  
+}
+
+#petraPopup,
+#machuPicchuPopup,
+#greatWallOfChinaPopup,
+#statueOfChristTheRedeemerPopup {
+ 	width   : 520px; 
+    height  : 400px;    
+}
+
+#tajMahalPopup,
+#colosseumPopup {
+  	width   : 680px; 
+    height  : 500px;    
+}
+
+  
  
 
