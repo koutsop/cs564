@@ -37,16 +37,27 @@ function onClick (wonder) {
     loadPopup(wonder);									//load popup 				
 }
 
-$(document).ready(function(){
-    $(".popupClose").click(function()
-        {disablePopup(activeWonder);});               //Click the x event!
+function stopVideo () {
+    if (popupIsEnabled)
+        $('video').each(function (videoIndex){$('video')[videoIndex].pause();});
+}
 
-    $(".backgroundPopup").click(function()
-        {disablePopup(activeWonder);});                //Click out event! 
+$(document).ready(function(){
+    $(".popupClose").click(function() {
+        stopVideo();
+        disablePopup(activeWonder);
+    });                                                 //Click the x event!
+
+    $(".backgroundPopup").click(function() {
+        stopVideo();
+        disablePopup(activeWonder);
+    });                                                 //Click out event! 
 
     $(document).keyup(function(e){                      //Pressed Escape event!
-        if(e.keyCode == 27 && popupIsEnabled)           //27 key code for ESC buton
+        if(e.keyCode == 27 && popupIsEnabled) {         //27 key code for ESC buton
+            stopVideo();
             disablePopup(activeWonder);  
+        }
 
     });				
 
@@ -68,31 +79,31 @@ $(document).ready(function(){
         {onClick("#machuPicchuPopup");});
         
     $("#chichenItza").hover(
-        function (){ $("#chichenItza").css({"opacity" : "0.6"}); }, 
-        function (){ $("#chichenItza").css({"opacity" : "0.0"}); }
+        function (){$("#chichenItza").css({"opacity" : "0.6"});}, 
+        function (){$("#chichenItza").css({"opacity" : "0.0"});}
     );
     $("#greatWallOfChina").hover(
-        function (){ $("#greatWallOfChina").css({"opacity" : "0.6"}); }, 
-        function (){ $("#greatWallOfChina").css({"opacity" : "0.0"}); }
+        function (){$("#greatWallOfChina").css({"opacity" : "0.6"});}, 
+        function (){$("#greatWallOfChina").css({"opacity" : "0.0"});}
     );
     $("#statueOfChristTheRedeemer").hover(
-        function (){ $("#statueOfChristTheRedeemer").css({"opacity" : "0.6"}); }, 
-        function (){ $("#statueOfChristTheRedeemer").css({"opacity" : "0.0"}); }
+        function (){$("#statueOfChristTheRedeemer").css({"opacity" : "0.6"});}, 
+        function (){$("#statueOfChristTheRedeemer").css({"opacity" : "0.0"});}
     );
     $("#colosseum").hover(
-        function (){ $("#colosseum").css({"opacity" : "0.6"}); }, 
-        function (){ $("#colosseum").css({"opacity" : "0.0"}); }
+        function (){$("#colosseum").css({"opacity" : "0.6"});}, 
+        function (){$("#colosseum").css({"opacity" : "0.0"});}
     );
     $("#petra").hover(
-        function (){ $("#petra").css({"opacity" : "0.6"}); }, 
-        function (){ $("#petra").css({"opacity" : "0.0"}); }
+        function (){$("#petra").css({"opacity" : "0.6"});}, 
+        function (){$("#petra").css({"opacity" : "0.0"});}
     );
     $("#tajMahal").hover(
-        function (){ $("#tajMahal").css({"opacity" : "0.6"}); }, 
-        function (){ $("#tajMahal").css({"opacity" : "0.0"}); }
+        function (){$("#tajMahal").css({"opacity" : "0.6"});}, 
+        function (){$("#tajMahal").css({"opacity" : "0.0"});}
     );
     $("#machuPicchu").hover(
-        function (){ $("#machuPicchu").css({"opacity" : "0.6"}); }, 
-        function (){ $("#machuPicchu").css({"opacity" : "0.0"}); }
+        function (){$("#machuPicchu").css({"opacity" : "0.6"});}, 
+        function (){$("#machuPicchu").css({"opacity" : "0.0"});}
     );      
 });
