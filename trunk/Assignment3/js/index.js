@@ -53,5 +53,15 @@ $(document).ready(function(){
     $("#chichenItza").click(function () 
         { onClick("#chichenItzaPopup"); });
     $("#greatWallOfChina").click(function () 
-        { onClick("#greatWallOfChinaPopup"); });					
+        { onClick("#greatWallOfChinaPopup"); });	
+    $("#statueOfChristTheRedeemer").click(function () 
+        { onClick("#statueOfChristTheRedeemerPopup"); });     
+    $("#colosseum").click(function () 
+        { onClick("#colosseumPopup"); });      
+    $("#petra").click(function () 
+        { onClick("#petraPopup"); }); 
+    $("#tajMahal").click(function () 
+        { onClick("#tajMahalPopup"); }); 
+    $("#machuPicchu").click(function () 
+        { onClick("#machuPicchuPopup"); });
 });
