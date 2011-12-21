@@ -2,6 +2,29 @@ overall: 1024x582
 
 Chichen Itza: 
 top left: 80, 279
-size: 148, 99
+size: 148, 100
 
 Great Wall of China
+top left: 809, 158
+size: 140x94
+
+Statue of Christ the Redeemer
+top left: 381, 475
+size: 144x99
+
+Colosseum
+top left: 384, 160
+size: 148x89
+
+Petra
+top left: 538, 307
+size: 122x92
+
+Taj Mahal
+top left: 698, 324
+size: 131x108
+
+Machu Picchu
+top left: 165, 418
+sizE: 122x107
+
