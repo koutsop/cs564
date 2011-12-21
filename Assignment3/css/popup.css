@@ -14,7 +14,6 @@
 .backgroundPopup{  
 	display:none;  
 	position:fixed;  
-	_position:absolute; /* hack for internet explorer 6*/  
 	height:100%;  
 	width:100%;  
 	top:0;  
