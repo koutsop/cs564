@@ -19,6 +19,8 @@ and open the template in the editor.
 		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
 		<script type="text/javascript" src="js/popup.js" ></script>
 		<script type="text/javascript">	
+            var activeWonder = null;
+            
 			function setWonderPosition (wonder, top, left, width, height) {
 				var windowWidth		= document.documentElement.clientWidth;  
 				var windowHeight	= document.documentElement.clientHeight; 
@@ -44,17 +46,9 @@ and open the template in the editor.
 			}
 			
 			function onClick (wonder) { 
+                activeWonder = wonder;
 				centerPopup(wonder);												//centering with css 
-				loadPopup(wonder);													//load popup 
-				$(".popupClose").click(function(){ disablePopup(wonder); });		//Click the x event!
-				$(".backgroundPopup").click(function(){ disablePopup(wonder);});	//Click out event! 
-				$(document).keypress(function(e){									//Press Escape event!
-					var code = e.keyCode ? e.keyCode : e.which;
-					alert(code);
-					if(e.keyCode==27 && popupIsEnabled)
-						disablePopup();  
-
-				}); 				
+				loadPopup(wonder);													//load popup 				
 			}
 
 			var cliked = false;
@@ -73,7 +67,18 @@ and open the template in the editor.
 					{ onClick("#chichenItzaPopup"); });
 				$("#greatWallOfChina").click(function () 
 					{ onClick("#greatWallOfChinaPopup"); });					
+                    
+                $(".popupClose").click(function()
+                    { disablePopup(activeWonder); });               //Click the x event!
+				$(".backgroundPopup").click(function()
+                    { disablePopup(activeWonder);});                //Click out event! 
+				$(document).keypress(function(e){                   //Press Escape event!
+					var code = e.keyCode ? e.keyCode : e.which;
+					alert(code);
+					if(e.keyCode==27 && popupIsEnabled)
+						disablePopup(activeWonder);  
 
+				}); 
 
             });
         </script>
