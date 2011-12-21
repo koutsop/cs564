@@ -8,32 +8,56 @@ and open the template in the editor.
 		<title></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
+		<link rel="stylesheet" href="css/index.css" type="text/css" />
+		<link rel="stylesheet" href="css/popup.css" type="text/css" />
+
+		<style type="text/css">
+            .blue	{ color: blue; }
+			.black	{ color: black; }
+        </style>		
 		
 		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
 		<script type="text/javascript" src="js/popup.js" ></script>
 		<script type="text/javascript">	
-			function setWondersPosition (){
+			function setWonderPosition (wonder, top, left, width, height) {
 				var windowWidth		= document.documentElement.clientWidth;  
 				var windowHeight	= document.documentElement.clientHeight; 
 
-				$("#chichenItza").css({  
-					"position": "fixed",  
-					"top": Math.floor(279*(windowHeight/582)),  
-					"left": Math.floor(80*(windowWidth/1024)),
-					"width": "14.45%",
-					"height": "17.1%"
-				}); 	
+				$(wonder).css({  
+					"position"	: "fixed",  
+					"top"		: Math.floor(left*(windowHeight/582)),		//582 image's normal width
+					"left"		: Math.floor(top*(windowWidth/1024)),		//1024 image's normal height
+					"width"		: (100* (width/1024)).toString() + "%",
+					"height"	: (100* (height/582)).toString() + "%",
+					"z-index"	: 0
+				}); 				
 			}
-							
-			var cliked = false;
-			$(document).keypress(function(e){  
-				var code = e.keyCode ? e.keyCode : e.which;
-				alert(code);
-				if(e.keyCode==27 && popupIsEnabled)
-					disablePopup();  
-					
-			});            
 			
+			function setWondersPosition (){
+				setWonderPosition("#chichenItza", 80, 279, 148, 100);
+				setWonderPosition("#greatWallOfChina", 809, 158, 140, 94);
+				setWonderPosition("#statueOfChristTheRedeemer", 381, 475, 144, 99);
+				setWonderPosition("#colosseum", 384, 160, 148, 89);
+				setWonderPosition("#petra", 538, 307, 122, 92);
+				setWonderPosition("#tajMahal", 698, 324, 131, 108);
+				setWonderPosition("#machuPicchu", 165, 418, 122, 107);
+			}
+			
+			function onClick (wonder) { 
+				centerPopup(wonder);												//centering with css 
+				loadPopup(wonder);													//load popup 
+				$(".popupClose").click(function(){ disablePopup(wonder); });		//Click the x event!
+				$(".backgroundPopup").click(function(){ disablePopup(wonder);});	//Click out event! 
+				$(document).keypress(function(e){									//Press Escape event!
+					var code = e.keyCode ? e.keyCode : e.which;
+					alert(code);
+					if(e.keyCode==27 && popupIsEnabled)
+						disablePopup();  
+
+				}); 				
+			}
+
+			var cliked = false;
 			$(document).ready(function(){
 				$("h1").click(function(){
 					$(this).removeClass("black");
@@ -41,57 +65,54 @@ and open the template in the editor.
 					$(this).addClass(cliked?"black":"blue");	
 					cliked = !cliked;
 					setWondersPosition();
-				});			
+				});		
 				
-				$("img").click(function () {
-					//centering with css 
-					centerPopup();  
-					//load popup 
-					loadPopup(); 
-					//Click the x event!
-					$("#popupContactClose").click(function(){ disablePopup(); });
-					//Click out event! 
-					$("#backgroundPopup").click(function(){ disablePopup();}); 
-					//Press Escape event! 
-				});
-				
-				$(window).resize(function() {
-					setWondersPosition();
-				});
+				$(window).resize(function() 
+					{ setWondersPosition(); });
+				$("#chichenItza").click(function () 
+					{ onClick("#chichenItzaPopup"); });
+				$("#greatWallOfChina").click(function () 
+					{ onClick("#greatWallOfChinaPopup"); });					
+
+
             });
         </script>
-		<link rel="stylesheet" href="css/index.css" type="text/css" />
-		<link rel="stylesheet" href="css/popup.css" type="text/css" />
 
-		<style type="text/css">
-            .blue	{ color: blue; }
-			.black	{ color: black; }
-        </style>
 	</head>
 	<body onload="setWondersPosition();">
 		<img src="material/7Wonders.png" alt="background image" id="bg" />
-		<div id="chichenItza">
-		</div>	
 		
-		
+		<div id="chichenItza"></div>	
+		<div id="greatWallOfChina"></div>	
+		<div id="statueOfChristTheRedeemer"></div>
+		<div id="colosseum"></div>
+		<div id="petra"></div>
+		<div id="tajMahal"></div>
+		<div id="machuPicchu"></div>
+
 		
 		<div id="content">
 			<div><h1>TODO write content</h1></div>
 			
-			<div id="popupContact">
-				<a id="popupContactClose">x</a> 
-				<h1>Title of our cool popup, yay!</h1> <button type="button">Click Me!</button>
-				<p id="contactArea">  
-					Here we have a simple but interesting sample of our new stuning and smooth popup. As you can see jQuery and CSS does it easy...  
-					<br/><br/>  
-					We can use it for popup-forms and more... just experiment!  
-					<br/><br/>  
-					Press ESCAPE, Click on X (right-top) or Click Out from the popup to close the popup!  
-					<br/><br/>  
-					<a href="http://www.yensdesign.com"><img src="logo.jpg" alt="Go to yensdesign.com"/></a>  
+			<div id="chichenItzaPopup">
+				<a class="popupClose">X</a> 
+				<h1>Chichen Itza Popup!</h1> 
+				<p id="chichenItzaArea">  
+					malakas malakas malakas
 				</p>
 			</div>	
-			<div id="backgroundPopup"></div>
+			<div class="backgroundPopup"></div>				
+
+			<div id="greatWallOfChinaPopup">
+				<a class="popupClose">X</a> 
+				<h1>Great Wall Of China Popup!</h1> 
+				<p id="greatWallOfChinaArea">  
+					malakas malakas malakas
+				</p>
+			</div>	
+			<div class="backgroundPopup"></div>			
+			
+		
 		</div>
 		
 		
