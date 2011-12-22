@@ -1,0 +1,28 @@
+/* 
+    Document   : tooltipe
+    Created on : Dec 22, 2011, 1:24:26 PM
+    Author     : koutsop
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+#tooltip {
+    position:absolute;
+    z-index:9999;
+    color:#fff;
+    font-size: 13px;
+    width:200px;    
+}
+ 
+#tooltip .tipBody {
+	border: 4px;
+	border-radius:10px;
+    background-color: #000;
+    padding:5px 15px 5px 15px;
+}
+
