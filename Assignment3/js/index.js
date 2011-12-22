@@ -39,7 +39,8 @@ function onClick (wonder) {
 
 function stopVideo () {
     if (popupIsEnabled)
-        $('video').each(function (videoIndex){$('video')[videoIndex].pause();});
+        $('video').each(function (videoIndex)
+			{$('video')[videoIndex].pause();});
 }
 
 $(document).ready(function(){
