@@ -7,20 +7,22 @@
 //SETTING UP OUR POPUP  
 var popupIsEnabled = false; 
 
-//loading popup 
+//------------------------------------------------------------------------------
+
 function loadPopup(id){  
 	//loads popup only if it is disabled  
 	if(!popupIsEnabled){  
-		$(".backgroundPopup").css({"opacity": "0.7"});  
+		$(".backgroundPopup").css({"opacity": "0.2"});  
 		$(".backgroundPopup").fadeIn("slow");  
 		$(id).fadeIn("slow");  
 		popupIsEnabled = true;  
 	}  
 }  
 
-//disabling popup
+//------------------------------------------------------------------------------
+
 function disablePopup(id){  
-	//disables popup only if it is enabled  
+	
 	if(popupIsEnabled){  
 		$(".backgroundPopup").fadeOut("slow");  
 		$(id).fadeOut("slow");  
@@ -28,7 +30,8 @@ function disablePopup(id){
 	}  
 } 
 
-//centering popup  
+//------------------------------------------------------------------------------
+
 function centerPopup(id){  
 	//request data for centering  
 	var windowWidth		= document.documentElement.clientWidth;  
@@ -44,3 +47,18 @@ function centerPopup(id){
 	});  
 }
 
+$(document).ready(function(){
+	$(".popupClose").hover(
+		function (){
+			$(".popupClose").css({
+				"border-color"	: "red",
+				"background"	: "transparent url(images/close_icon_double.png) 0 -20px"
+			});
+		}, 
+		function (){
+			$(".popupClose").css({
+				"border-color"	: "black",
+				"background"	: "url(images/close_icon_double.png) 0 0"
+			});
+		});
+});
