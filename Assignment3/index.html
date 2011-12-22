@@ -6,27 +6,34 @@
 		
 		<link rel="stylesheet" href="css/index.css" type="text/css" />
 		<link rel="stylesheet" href="css/popup.css" type="text/css" />
+        <link rel="stylesheet" href="css/tooltipe.css" type="text/css" />
 
 		<script type="text/javascript" src="js/jquery-1.7.1.js"></script>
 		<script type="text/javascript" src="js/popup.js" ></script>
 		<script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/tooltipe.js"></script>
+        <!--
         <script type="text/javascript"> 
             sessionStorage.lastname = "TheNewSevenWonders";
             document.write(sessionStorage.lastname);
         </script>
+        -->
         
 	</head>
     
 	<body onload="setWondersPosition();">
 		<img src="material/7Wonders.png" alt="background image" id="bg" />
 		
-		<div id="chichenItza" title="click for more inforamtion"></div>	
-		<div id="greatWallOfChina" title="click for more inforamtion"></div>	
-		<div id="statueOfChristTheRedeemer" title="click for more inforamtion"></div>
-		<div id="colosseum" title="click for more inforamtion"></div>
-		<div id="petra" title="click for more inforamtion"></div>
-		<div id="tajMahal" title="click for more inforamtion"></div>
-		<div id="machuPicchu" title="click for more inforamtion"></div>
+		<div class="tooltip" id="chichenItza" title="click for more inforamtion"></div>	
+		<div class="tooltip" id="greatWallOfChina" title="click for more inforamtion"></div>	
+		<div class="tooltip" id="statueOfChristTheRedeemer" title="click for more inforamtion"></div>
+		<div class="tooltip" id="colosseum" title="
+             <h1>Colosseum !</h1>
+             <p> The Colosseum, or the Coliseum, originally the Flavian Amphitheatre (Latin: Amphitheatrum Flavium, Italian Anfiteatro Flavio or Colosseo), is an elliptical amphitheatre in the centre of the city of Rome, Italy, the largest ever built in the Roman Empire.
+             </p>"></div>
+		<div class="tooltip" id="petra" title="click for more inforamtion"></div>
+		<div class="tooltip" id="tajMahal" title="click for more inforamtion"></div>
+		<div class="tooltip" id="machuPicchu" title="click for more inforamtion"></div>
 
 		
 		<div id="content">
