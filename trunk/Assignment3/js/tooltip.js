@@ -20,6 +20,8 @@ function setTooltipToRight () {
 }
 
 function setTooltipPosition (target) {
+	
+	
     var w = $('#tooltip').width();
     var h = $('#tooltip').height() + 10;    //10 height of bubble triangle
    
@@ -38,10 +40,9 @@ function setTooltipPosition (target) {
     }
     else
         $('#tooltip').css('top', -target.offsetTop );
-    
+	
     $('.tipFooter').css({
         "position"  : "relative",
-        "opacity"   : "1",
         "top"       : 0,
         "display"	: "block",  
         "width"		: 14,
@@ -50,9 +51,10 @@ function setTooltipPosition (target) {
 }
 
 $(document).ready(function() {
- 
+	
+	$('.myTooltip').live("mouseover", function () {$('#tooltip').fadeIn('slow');});
     //Select all anchor tag with rel set to tooltip
-    $('.tooltip').mouseover(function(e) {  
+    $('.myTooltip').mouseover(function(e) {  
         //Grab the title attribute's value and assign it to a variable
         var tip = $(this).attr('title');    
          
@@ -63,10 +65,6 @@ $(document).ready(function() {
         $(this).append('<div id="tooltip"><div class="tipHeader"></div><div class="tipBody">' + tip + '</div><div class="tipFooter"></div></div>');     
         
         setTooltipPosition(e.currentTarget);    
-        //Show the tooltip with faceIn effect
-        $('#tooltip').fadeIn('slow');
-        //$('#tooltip').fadeTo('10', 0.8);
-         
     }).mousemove(function(e) {
         //Keep changing the X and Y axis for the tooltip, thus, the tooltip move along with the mouse
         //$('#tooltip').css('top', e.pageY + 10 );

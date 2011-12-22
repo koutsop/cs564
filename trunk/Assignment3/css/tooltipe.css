@@ -12,10 +12,11 @@
 */
 
 #tooltip {
+	opacity: 1;
     position:absolute;
     z-index:9999;
     color:#fff;
-    font-size: 13px;
+    font-size: 14px;
     width:200px;    
 }
  
