@@ -39,7 +39,7 @@ function setTooltipPosition (target) {
         $('#tooltip').css('top', -h );
     }
     else
-        $('#tooltip').css('top', -target.offsetTop );
+        $('#tooltip').css('top', -target.offsetTop + 10 ); //10 extra space from window's border
 	
     $('.tipFooter').css({
         "position"  : "relative",
