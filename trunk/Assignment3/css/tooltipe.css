@@ -17,10 +17,17 @@
     z-index:9999;
     color:#fff;
     font-size: 14px;
-    width:200px;    
+    width:200px;  
 }
- 
-#tooltip .tipBody {
+
+#tooltip .tipCenter {
+    overflow: auto;
+	display: block;
+    clear: both;
+}
+
+#tooltip .tipBody { 
+    float: left;
 	border: 4px;
 	border-radius:10px;
     background-color: #000;
