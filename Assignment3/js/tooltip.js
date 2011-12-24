@@ -3,11 +3,18 @@
  * and open the template in the editor.
  */
 
+var arrowsSize = 28;
+
 function setTooltipToLeft (){
     $('.tipFooter').css({
         "left"      : -10,
         "float"     : "right",
-        "background": "url(images/left.png) no-repeat"
+        "background": "url(images/left.png) no-repeat",
+        "position"  : "relative",
+        "top"       : 0,
+        "display"	: "block",  
+        "width"		: arrowsSize,
+        "height"	: arrowsSize        
     });     
 }
 
@@ -15,39 +22,73 @@ function setTooltipToRight () {
     $('.tipFooter').css({
         "left"      : 10,
         "float"     : "left",
-        "background": "url(images/right.png) no-repeat"
-    });     
-}
-
-function setTooltipPosition (target) {
-	
-	
-    var w = $('#tooltip').width();
-    var h = $('#tooltip').height() + 10;    //10 height of bubble triangle
-   
-    //tooltip at right
-    if (target.offsetLeft + $(target).width() + w < $(window).width()) {
-        $('#tooltip').css('left', $(target).width() );
-        setTooltipToRight();
-    }
-    else {  //tooltip at left
-        $('#tooltip').css('left', -w );
-        setTooltipToLeft();   
-    }
-    
-    if (target.offsetTop - h > 0 ) {
-        $('#tooltip').css('top', -h );
-    }
-    else
-        $('#tooltip').css('top', -target.offsetTop + 10 ); //10 extra space from window's border
-	
-    $('.tipFooter').css({
+        "background": "url(images/right.png) no-repeat",
         "position"  : "relative",
         "top"       : 0,
         "display"	: "block",  
-        "width"		: 14,
-        "height"	: 14
-    }); 
+        "width"		: arrowsSize,
+        "height"	: arrowsSize        
+    });     
+}
+
+function setTooltipToLeftHor (h){
+    $('.rightTipBody').css({
+        "position"  : "absolute",
+        "top"       : h/2 - arrowsSize/2,          //edw na to ala3w
+        "display"	: "block",  
+        "width"		: arrowsSize,
+        "height"	: arrowsSize,
+        "left"      : 200,          //oso to width pou 8a exei to tooltip
+        "float"     : "left",
+        "background": "url(images/rightHorizontal.png) no-repeat"      
+    });     
+}
+
+function setTooltipToRightHor (h) {
+    $('.leftTipBody').css({
+        "position"  : "absolute",
+        "top"       : h/2 - arrowsSize/2,          //edw na to ala3w
+        "display"	: "block",  
+        "width"		: arrowsSize,
+        "height"	: arrowsSize,
+        "left"      : -arrowsSize, //oso to mege8os tou icon
+        "float"     : "left",
+        "background": "url(images/leftHorizontal.png) no-repeat"      
+    });         
+}
+
+function setTooltipPosition (target) {
+	var isRight = false;
+    var w       = $('#tooltip').width();
+    var h       = $('#tooltip').height();
+   
+    //tooltip at right
+    if (target.offsetLeft + $(target).width() + w < $(window).width())
+        isRight = true;
+
+    if (target.offsetTop - (h+arrowsSize) > 0 ) {   //xwraei sto para8iro
+        $('#tooltip').css('top', -(h+arrowsSize) );
+        if (isRight) {
+            $('#tooltip').css('left', $(target).width());
+            setTooltipToRight();
+        }
+        else {
+            $('#tooltip').css('left', -w);
+            setTooltipToLeft(); 
+        }
+        
+    }
+    else {  //problhma den xwraei
+        $('#tooltip').css('top', -((h - $(target).height())/2) ); 
+        if (isRight) {
+            $('#tooltip').css('left', $(target).width() + arrowsSize);
+            setTooltipToRightHor(h);
+        }
+        else {
+            $('#tooltip').css('left', -w -arrowsSize);
+            setTooltipToLeftHor(h); 
+        }        
+    } 
 }
 
 $(document).ready(function() {
@@ -62,7 +103,18 @@ $(document).ready(function() {
         $(this).attr('title','');
          
         //Append the tooltip template and its value
-        $(this).append('<div id="tooltip"><div class="tipHeader"></div><div class="tipBody">' + tip + '</div><div class="tipFooter"></div></div>');     
+        $(this).append(
+            '<div id="tooltip">\
+                <div class="tipHeader"></div>\
+                <div class="tipCenter">\
+                    <div class="leftTipBody"></div>\
+                    <div class="tipBody">'
+                        + tip +
+                    '</div>\
+                    <div class="rightTipBody"></div>\
+                </div>\
+                <div class="tipFooter"></div>\
+            </div></div>');        
         
         setTooltipPosition(e.currentTarget);    
     }).mousemove(function(e) {
