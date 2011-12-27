@@ -35,7 +35,6 @@ function loadBook() {
         height:             600,
         startingPage:       0,
         closed:             true,
-        closedFrontTitle:   $('.malakas'),
         covers:             true,
         next:               $('#next_page_button'),          			// selector for element to use as click trigger for next page
         prev:               $('#prev_page_button'),          			// selector for element to use as click trigger for previous page
