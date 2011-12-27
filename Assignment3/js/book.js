@@ -33,8 +33,8 @@ function loadBook() {
     $("#mybook").booklet({
         name:               "The 7 World",
         speed:              1500,
-        width:              800,
-        height:             500,
+        width:              900,
+        height:             600,
         next:               $('#next_page_button'),          			// selector for element to use as click trigger for next page
         prev:               $('#prev_page_button'),          			// selector for element to use as click trigger for previous page
         manual:             false,
