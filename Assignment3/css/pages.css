@@ -33,16 +33,9 @@ body {
     display: block;
      font-size: 14px;
       font-family: "Times New Roman", Courier, Garamond, serif;
-}*
-
-/*change local to url?*/
-@font-face {  
-  font-family: MyFont;  
-  src: local("MyFont"),  
-  local("MyFont"),  
-  url(font/hapole_marker.ttf);  
-  font-weight: bold;  
 }
+*/
+
 article
 {
     /*margin: 20%;
@@ -50,7 +43,7 @@ article
 	padding: 0;*/
     display: block;
      font-size: 13px;
-      font-family: 'myFont';
+      
       width: 430px;
       height: 530px;
       overflow: auto;
@@ -70,7 +63,9 @@ img.middle{
 
 
 p
-{text-align: justify;}
+{text-align: justify;
+font-family:'Comic Sans MS';
+}
 
 #content {
 	position:relative;
@@ -86,7 +81,7 @@ footer
 
 header h1
 {
-    font-family: 'myFont';
+    font-family:'Comic Sans MS';
     font-size: 15px;
     font-weight: bold; 
     text-align: center;
