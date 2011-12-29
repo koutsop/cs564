@@ -36,6 +36,12 @@ body {
 }
 */
 
+.page
+{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    clear: both;
+}
 article
 {
     /*margin: 20%;
@@ -46,7 +52,7 @@ article
       
       width: 430px;
       height: 530px;
-      overflow: auto;
+      clear: both;
 }
 
 img
@@ -65,6 +71,7 @@ img.middle{
 p
 {text-align: justify;
 font-family:'Comic Sans MS';
+clear: both;
 }
 
 #content {
@@ -90,6 +97,7 @@ header h1
 section
 {
     margin: 5%;    
+    clear: both;
 }
 
 h3
