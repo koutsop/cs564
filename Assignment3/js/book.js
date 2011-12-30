@@ -43,7 +43,7 @@ function loadBook() {
         overlays:           false
     });
     
-    var times = Math.floor((getValue('pageId')-1)/2);
+    var times = Math.floor((getValue('pageId'))/2);
     if (times > 0)
             $(document).everyTime(1600, function() {$('#mybook').booklet("next");}, times);
    /* $('#mybook').booklet({
