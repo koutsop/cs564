@@ -29,13 +29,13 @@ and open the template in the editor.
         <script type="text/javascript" src="js/book.js" ></script>
         <script type="text/javascript" src="js/jquery.timers-1.2.js" ></script>
         <script type="text/javascript" src="js/booklet/jquery.easing.1.3.js" ></script>
-        <script type="text/javascript" src="js/booklet/jquery.booklet.1.2.0.min.js" ></script>        
-
+        <script type="text/javascript" src="js/booklet/jquery.booklet.1.2.0.min.js" ></script>    
+        <script type="text/javascript" src="js/popup.js" ></script>
 
         <!-- photo gallery end -->
         <link type="text/css" rel="stylesheet" media="screen" href="js/booklet/jquery.booklet.1.2.0.css" /> 
         <link type="text/css" rel="stylesheet" media="screen" href="css/book.css" />
-
+        <link rel="stylesheet" href="css/popup.css" type="text/css" />
         <link rel="stylesheet" href="css/pages.css" type="text/css" />
     </head>
 
@@ -45,18 +45,16 @@ and open the template in the editor.
             <div id="prevButton"><a id="prev_page_button">prev</a></div>
             <div id="nextButton"><a id="next_page_button">next</a></div>
         </div>
-        <div class="malakas">
 
-        </div>
 
         <div class="book_wrapper">
             <div id="mybook">
                 <div class="b-load">
                     <div class="page"> 
                         <h3> Εξώφυλο</h3>
-                          <div style="clear:both"></div> 
+                        <div style="clear:both"></div> 
                     </div>
-                  
+
                     <div class="page">
                         <article>
                             <header>
@@ -74,11 +72,27 @@ and open the template in the editor.
                             <div style="clear:both"></div>
                             <div>
                                 <section>
-                                    <video width="350" height="300" controls="controls">
+                                    <img id="chichenItzaImg" class="middle" src="images/page1_1.jpg"/>
+                                    <footer><b>Figure 1:</b> El Castillo (Pyramidd of Kukulcán) in Chichén Itzá </footer>
+                                    <!--<video width="350" height="300" controls="controls">
                                         <source src="material/Chichen Itza.mp4" type="video/mp4" />
-                                    </video>
-                            </section>
-                              <!--  <footer><b>Figure 1:</b> El Castillo (Pyramidd of Kukulcán) in Chichén Itzá </footer>  -->
+                                    </video> -->
+                                    <div id="chichenItzaPopup">
+                                        <a href="#" class="popupClose"></a>
+                                        <h1>Chichen Itza Popup!</h1>
+                                        <p> The famous Mayan pyramids of Chichén-Itzá are over 1500 years old and are located only 75 miles from Mérida.
+                                        </p>
+
+                                        <center>
+                                            <video controls="controls">
+                                                <source src="material/Chichen Itza.mp4" type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                        </center>
+
+                                    </div>
+                                    <div class="backgroundPopup"></div>
+                                </section>
                             </div>
                             <div style="clear:both"></div>
                             <div>
@@ -88,10 +102,10 @@ and open the template in the editor.
                                     <footer><b>Figure 2:</b>Cenote Sagrado</footer>
                                 </section>
                             </div>
-  <div style="clear:both"></div> 
+                            <div style="clear:both"></div> 
                         </article>
                     </div>
-                  
+
                     <div class="page"> 
                         <article>
                             <header>
@@ -116,9 +130,11 @@ and open the template in the editor.
                             </div><div style="clear:both"></div>
                             <div>
                                 <section>
-                                    <video width="350" height="300" controls="controls">
-                                        <source src="material/The Great Wall of China.mp4" type="video/mp4" />
-                                    </video>
+                                    <img class="middle" src="images/page2_1.jpg"/>
+                                    <footer><b>Figure 3:</b> The great wall of China </footer> 
+                                    <!--  <video width="350" height="300" controls="controls">
+                                          <source src="material/The Great Wall of China.mp4" type="video/mp4" />
+                                      </video> -->
                                 </section>
                             </div><div style="clear:both"></div>
                             <div>
@@ -128,7 +144,7 @@ and open the template in the editor.
                             </div><div style="clear:both"></div>
                         </article>
                     </div> 
-                   
+
                     <div class="page"> 
                         <article>
                             <header>
@@ -155,16 +171,18 @@ and open the template in the editor.
                             <div style="clear:both"></div>
                             <div>
                                 <section>
-                                    <video width="350" height="300" controls="controls">
+                                    <!-- <video width="350" height="300" controls="controls">
                                         <source src="material/Christ the Redeemer.mp4" type="video/mp4" />
-                                    </video>
+                                    </video> -->
+                                    <img class="middle" src="images/page3_1.jpg"/>
+                                    <footer><b>Figure 4:</b>A view of the statue, as seen from a helicopter. </footer>
                                 </section>
                             </div>
                             <div style="clear:both"></div>
 
                         </article>
                     </div>
-              
+
                     <div class="page"> 
                         <article>
                             <header>
@@ -192,9 +210,11 @@ and open the template in the editor.
                             </div>
                             <div>
                                 <section>
-                                    <video width="350" height="300" controls="controls">
+                                    <!-- <video width="350" height="300" controls="controls">
                                         <source src="material/Colosseum.mp4" type="video/mp4" />
-                                    </video>
+                                    </video> -->
+                                    <img class="middle" src="images/page5_1.jpg"/>
+                                    <footer><b>Figure 5:</b> The exterior of the Colosseum </footer> </section>
                                 </section>
                             </div>
                             <div style="clear:both"></div>
@@ -208,7 +228,7 @@ and open the template in the editor.
                         </article>
 
                     </div>
-                    
+
                     <div class="page">
                         <article>
                             <header>
@@ -223,17 +243,18 @@ and open the template in the editor.
                             <div style="clear:both"></div>
                             <div>
                                 <section>
-                                    <video width="350" height="300" controls="controls">
-                                        <source src="material/Petra.mp4" type="video/mp4" />
-                                    </video>
-                                    <!--   <div style="width: 70%; margin-left: 15%;">
-                                           <img class="middle" src="images/page5_1.jpg"  style="float: left;" />
-                                           <img class="middle" src="images/page5_2.jpg"  style="float: right;"/>
-                                       </div> 
-                                       <div style="clear:both"></div>
-                                       <div>
-                                           <footer><b>Figure 6: a) </b> The end of the Siq, with its dramatic view of Al Khazneh ("The Treasury")<b> b)</b> Urn Tomb   </footer>
-                                       </div> -->
+                                    <!--   <video width="350" height="300" controls="controls">
+                                           <source src="material/Petra.mp4" type="video/mp4" />
+                                       </video> -->
+
+                                    <div style="width: 80%; margin-left: 15%;">
+                                        <img class="middle" src="images/page5_1.jpg"  style="float: left; width: 50%;"/>
+                                        <img class="middle" src="images/page5_2.jpg"  style="float: right; width: 50%;"/>
+                                    </div> 
+                                    <div style="clear:both"></div>
+                                    <div>
+                                        <footer><b>Figure 6: a) </b> The end of the Siq, with its dramatic view of Al Khazneh ("The Treasury")<b> b)</b> Urn Tomb   </footer>
+                                    </div> 
                                 </section>
 
                             </div>
@@ -254,102 +275,72 @@ and open the template in the editor.
                             <div style="clear:both"></div>    
                         </article>    
                     </div>
-                   
                     <div class="page">
                         <article>
                             <header>
                                 <h1> Taj Mahal</h1>
                             </header>
-                            <div>
-                                <section>
-                                    <p>
-                                        Taj Mahal is regarded as one of the eight wonders of the world, and some Western historians have noted that its architectural beauty has never been surpassed. The Taj is the most beautiful monument built by the Mughals, the Muslim rulers of India. Taj Mahal is built entirely of white marble. Its stunning architectural beauty is beyond adequate description, particularly at dawn and sunset. The Taj seems to glow in the light of the full moon. On a foggy morning, the visitors experience the Taj as if suspended when viewed from across the Jamuna river.
-                                    </p>        
-                                </section>
-                            </div>
-                            <div style="clear:both"></div>   
-                            <div>
-                                <section>
+                            <section><p>
+                                    Taj Mahal is regarded as one of the eight wonders of the world, and some Western historians have noted that its architectural beauty has never been surpassed. The Taj is the most beautiful monument built by the Mughals, the Muslim rulers of India. Taj Mahal is built entirely of white marble. Its stunning architectural beauty is beyond adequate description, particularly at dawn and sunset. The Taj seems to glow in the light of the full moon. On a foggy morning, the visitors experience the Taj as if suspended when viewed from across the Jamuna river.
+                                </p>        </section>
+                            <section>
 
-                                    <p> 
-                                        Taj Mahal was built by a Muslim, Emperor Shah Jahan (died 1666 C.E.) in the memory of his dear wife and queen Mumtaz Mahal at Agra, India. It is an "elegy in marble" or some say an expression of a "dream." Taj Mahal (meaning Crown Palace) is a Mausoleum that houses the grave of queen Mumtaz Mahal at the lower chamber. The grave of Shah Jahan was added to it later. The queen’s real name was Arjumand Banu. In the tradition of the Mughals, important ladies of the royal family were given another name at their marriage or at some other significant event in their lives, and that new name was commonly used by the public. Shah Jahan's real name was Shahab-ud-din, and he was known as Prince Khurram before ascending to the throne in 1628.    
-                                    </p>
-                                </section>
-                            </div>
-                            <div style="clear:both"></div>   
-                            <div style="float:left">
-                                <section>
-                                    <!--<img src="images/page6_1.jpg" style="float:left"/>
-                                    <footer><b>Figure 7:</b> Southern view of the Taj Mahal. </footer> -->
-                                    <video width="350" height="300" controls="controls">
-                                        <source src="material/Taj Mahal.mp4" type="video/mp4" />
-                                    </video>
-                                </section>
-                            </div>
-                            <div style="clear:both"></div>   
-                            <div>
-                                <section>
-                                    <p>
-                                        Taj Mahal was constructed over a period of twenty-two years, employing twenty thousand workers. It was completed in 1648 C.E. at a cost of 32 Million Rupees. The construction documents show that its master architect was Ustad ‘Isa, the renowned Islamic architect of his time. Expert craftsmen from Delhi, Qannauj, Lahore, and Multan were employed. In addition, many renowned Muslim craftsmen from Baghdad, Shiraz and Bukhara worked on many specialized tasks.
-                                    </p>
-                                </section>
 
-                            </div>
-                            <div style="clear:both"></div> 
-                            <div>
-                                <section>
-                                    <p>
-                                        The mausoleum is a part of a vast complex comprising of a main gateway, an elaborate garden, a mosque (to the left), a guest house (to the right), and several other palatial buildings. The large garden contains four reflecting pools dividing it at the center. Each of these four sections is further subdivided into four sections and then each into yet another four sections. Like the Taj, the garden elements serve like Arabesque, standing on their own and also constituting the whole.    
-                                    </p>
-                                </section>
-                            </div>
-                            <div style="clear:both"></div> 
+                                <p> 
+                                    Taj Mahal was built by a Muslim, Emperor Shah Jahan (died 1666 C.E.) in the memory of his dear wife and queen Mumtaz Mahal at Agra, India. It is an "elegy in marble" or some say an expression of a "dream." Taj Mahal (meaning Crown Palace) is a Mausoleum that houses the grave of queen Mumtaz Mahal at the lower chamber. The grave of Shah Jahan was added to it later. The queen’s real name was Arjumand Banu. In the tradition of the Mughals, important ladies of the royal family were given another name at their marriage or at some other significant event in their lives, and that new name was commonly used by the public. Shah Jahan's real name was Shahab-ud-din, and he was known as Prince Khurram before ascending to the throne in 1628.    
+                                </p> 
+
+
+                                <img src="images/page6_1.jpg" class="align-left"/>
+                                <footer><b>Figure 7:</b> Southern view of the Taj Mahal. </footer>
+
+
+                            </section>
+                            <section>
+                                <p>
+                                    Taj Mahal was constructed over a period of twenty-two years, employing twenty thousand workers. It was completed in 1648 C.E. at a cost of 32 Million Rupees. The construction documents show that its master architect was Ustad ‘Isa, the renowned Islamic architect of his time. Expert craftsmen from Delhi, Qannauj, Lahore, and Multan were employed. In addition, many renowned Muslim craftsmen from Baghdad, Shiraz and Bukhara worked on many specialized tasks.
+                                </p>
+                            </section>
+                            <section>
+                                <p>
+                                    The mausoleum is a part of a vast complex comprising of a main gateway, an elaborate garden, a mosque (to the left), a guest house (to the right), and several other palatial buildings. The large garden contains four reflecting pools dividing it at the center. Each of these four sections is further subdivided into four sections and then each into yet another four sections. Like the Taj, the garden elements serve like Arabesque, standing on their own and also constituting the whole.    
+                                </p>
+                            </section>
+                            <div style="clear:both"></div>  
                         </article>
+                        <div style="clear:both"></div>  
                     </div>
-               
+
+
                     <div class="page">
                         <article>
                             <header>
                                 <h1> Machu Picchu</h1>
                             </header>
-                            <div>
-                                <section><p>
-                                        Machu Picchu ("Old Peak") is a pre-Columbian 15th-century Inca site located 2,430 metres (7,970 ft) above sea level. It is situated on a mountain ridge above the Urubamba Valley in Peru, which is 80 kilometres northwest of Cusco and through which the Urubamba River flows. Most archaeologists believe that Machu Picchu was built as an estate for the Inca emperor Pachacuti (1438–1472). Often referred to as the "Lost City of the Incas", it is perhaps the most familiar icon of the Inca World.
-                                    </p>        
-                                </section>
-                            </div>
-                            <div style="clear:both"></div>
-                            <div>
-                                <section>
-                                    <p> 
-                                        Machu Picchu ("Old Peak") is a pre-Columbian 15th-century Inca site located 2,430 metres (7,970 ft) above sea level. It is situated on a mountain ridge above the Urubamba Valley in Peru, which is 80 kilometres northwest of Cusco and through which the Urubamba River flows. Most archaeologists believe that Machu Picchu was built as an estate for the Inca emperor Pachacuti (1438–1472). Often referred to as the "Lost City of the Incas", it is perhaps the most familiar icon of the Inca World.
-                                    </p>
-                                    <video width="350" height="300" controls="controls">
-                                        <source src="material/Machu Picchu.mp4" type="video/mp4" />
-                                    </video>
-                                    <!-- <div style="float:right; margin-top: 4%;">
-                                        <img src="images/page7_1.jpg" style="float:right"/>
-                                        <footer><b>Figure 8:</b> Southern view of the Taj Mahal. </footer>
-                                    </div> -->
-                                </section>
-                            </div>
-                            <div style="clear:both"></div>
-                            <div>
-                                <section>
-                                    <p>
-                                        Since the site was never known to the Spanish during their conquest, it is highly significant as a relatively intact cultural site. Machu Picchu was declared a Peruvian Historical Sanctuary in 1981 and a UNESCO World Heritage Site in 1983. In 2007, Machu Picchu was voted one of the New Seven Wonders of the World in a worldwide Internet poll.                </p>
-                                </section>
-                            </div>
-                            <div style="clear:both"></div>
-                            <div>
-                                <section>
-                                    <p>
-                                        Machu Picchu was built in the classical Inca style, with polished dry-stone walls. Its three primary buildings are the Intihuatana, the Temple of the Sun, and the Room of the Three Windows. These are located in what is known by archaeologists as the Sacred District of Machu Picchu. In September 2007, Peru and Yale University almost reached an agreement regarding the return of artifacts which Yale has held since Hiram Bingham removed them from Machu Picchu in the early 20th century. In November 2010, a Yale University representative agreed to return the artifacts to a Peruvian university.
-                                    </p>
-                                </section>
-                            </div>
-                            <div style="clear:both"></div>
+                            <section><p>
+                                    Machu Picchu ("Old Peak") is a pre-Columbian 15th-century Inca site located 2,430 metres (7,970 ft) above sea level. It is situated on a mountain ridge above the Urubamba Valley in Peru, which is 80 kilometres northwest of Cusco and through which the Urubamba River flows. Most archaeologists believe that Machu Picchu was built as an estate for the Inca emperor Pachacuti (1438–1472). Often referred to as the "Lost City of the Incas", it is perhaps the most familiar icon of the Inca World.
+                                </p>        </section>
+                            <section>
+                                <p> 
+                                    Machu Picchu ("Old Peak") is a pre-Columbian 15th-century Inca site located 2,430 metres (7,970 ft) above sea level. It is situated on a mountain ridge above the Urubamba Valley in Peru, which is 80 kilometres northwest of Cusco and through which the Urubamba River flows. Most archaeologists believe that Machu Picchu was built as an estate for the Inca emperor Pachacuti (1438–1472). Often referred to as the "Lost City of the Incas", it is perhaps the most familiar icon of the Inca World.
+                                </p>
+
+                                <img src="images/page7_1.jpg" class="align-right"/>
+                                <footer><b>Figure 8:</b> Southern view of the Taj Mahal. </footer>
+
+                            </section>
+                            <section>
+                                <p>
+                                    Since the site was never known to the Spanish during their conquest, it is highly significant as a relatively intact cultural site. Machu Picchu was declared a Peruvian Historical Sanctuary in 1981 and a UNESCO World Heritage Site in 1983. In 2007, Machu Picchu was voted one of the New Seven Wonders of the World in a worldwide Internet poll.                </p>
+                            </section>
+                            <section>
+                                <p>
+                                    Machu Picchu was built in the classical Inca style, with polished dry-stone walls. Its three primary buildings are the Intihuatana, the Temple of the Sun, and the Room of the Three Windows. These are located in what is known by archaeologists as the Sacred District of Machu Picchu. In September 2007, Peru and Yale University almost reached an agreement regarding the return of artifacts which Yale has held since Hiram Bingham removed them from Machu Picchu in the early 20th century. In November 2010, a Yale University representative agreed to return the artifacts to a Peruvian university.
+                                </p>
+                            </section>
+                            <div style="clear:both"></div>  
                         </article>
+                        <div style="clear:both"></div>  
                     </div>
                     <div class="finalPage"> 
                         <article>

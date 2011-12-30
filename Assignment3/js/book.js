@@ -95,3 +95,47 @@ function loadBook() {
 }
 
 
+var activeWonder = null;
+
+function onClick (wonder) { 
+    activeWonder = wonder;
+    centerPopup(wonder);								//centering with css 
+    loadPopup(wonder);									//load popup 				
+}
+
+//------------------------------------------------------------------------------
+
+function stopVideo () {
+    if (popupIsEnabled)
+        $('video').each(function (videoIndex)
+			{$('video')[videoIndex].pause();});
+}
+
+//------------------------------------------------------------------------------
+
+$(document).ready(function(){
+    $(".popupClose").click(function() {
+        stopVideo();
+        disablePopup(activeWonder);
+    });                                                 //Click the x event!
+
+    $(".backgroundPopup").click(function() {
+        stopVideo();
+        disablePopup(activeWonder);
+    });                                                 //Click out event! 
+
+    $(document).keyup(function(e){                      //Pressed Escape event!
+        if(e.keyCode == 27 && popupIsEnabled) {         //27 key code for ESC buton
+            stopVideo();
+            disablePopup(activeWonder);  
+        }
+
+    });
+    
+    $("#chichenItzaImg").hover(
+    alert("lala")
+    //onClick("#chichenItzaPopup")
+    );
+
+});
+
