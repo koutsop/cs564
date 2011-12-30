@@ -45,7 +45,7 @@ function centerPopup(id){
 		"top"       : windowHeight/2-popupHeight/2,  
 		"left"      : windowWidth/2-popupWidth/2,
         "opacity"   : "1",
-        "z-index"   : "999"
+        "z-index"   : "2147483647"
 	});  
 }
 
