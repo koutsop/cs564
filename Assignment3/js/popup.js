@@ -12,7 +12,7 @@ var popupIsEnabled = false;
 function loadPopup(id){  
 	//loads popup only if it is disabled  
 	if(!popupIsEnabled){  
-		$(".backgroundPopup").css({"opacity": "0.2"});  
+		$(".backgroundPopup").css({"opacity": "0.8"});  
 		$(".backgroundPopup").fadeIn("slow");  
 		$(id).fadeIn("slow");  
 		popupIsEnabled = true;  
@@ -34,16 +34,18 @@ function disablePopup(id){
 
 function centerPopup(id){  
 	//request data for centering  
-	var windowWidth		= document.documentElement.clientWidth;  
-	var windowHeight	= document.documentElement.clientHeight;  
+	var windowWidth		= window.outerWidth;
+	var windowHeight	= window.outerHeight;
 	var popupHeight		= $(id).height();  
 	var popupWidth		= $(id).width();  
 	
 	//centering  
 	$(id).css({  
-		"position": "absolute",  
-		"top": windowHeight/2-popupHeight/2,  
-		"left": windowWidth/2-popupWidth/2  
+		"position"  : "fixed",  
+		"top"       : windowHeight/2-popupHeight/2,  
+		"left"      : windowWidth/2-popupWidth/2,
+        "opacity"   : "1",
+        "z-index"   : "999"
 	});  
 }
 
