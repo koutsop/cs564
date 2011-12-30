@@ -97,7 +97,7 @@ function loadBook() {
 
 var activeWonder = null;
 
-function onClick (wonder) { 
+function onHover (wonder) { 
     activeWonder = wonder;
     centerPopup(wonder);								//centering with css 
     loadPopup(wonder);									//load popup 				
@@ -112,7 +112,7 @@ function stopVideo () {
 }
 
 //------------------------------------------------------------------------------
-
+var malakas = 0;
 $(document).ready(function(){
     $(".popupClose").click(function() {
         stopVideo();
@@ -132,10 +132,12 @@ $(document).ready(function(){
 
     });
     
-    $("#chichenItzaImg").hover(
-    alert("lala")
-    //onClick("#chichenItzaPopup")
-    );
+    $("#chichenItzaImg").hover(function (){
+        if (malakas != 0)
+            onHover("#chichenItzaPopup");
+        malakas = 1;
+    });
 
 });
+
 
