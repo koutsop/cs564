@@ -13,11 +13,11 @@
 
 #tooltip {
 	opacity: 1;
-    position:absolute;
+    position: fixed;
     z-index:9999;
     color:#fff;
     font-size: 14px;
-    width:200px;  
+    max-width:200px;  
 }
 
 #tooltip .tipCenter {

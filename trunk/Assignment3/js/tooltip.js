@@ -38,7 +38,7 @@ function setTooltipToLeftHor (h){
         "display"	: "block",  
         "width"		: arrowsSize,
         "height"	: arrowsSize,
-        "left"      : 200,          //oso to width pou 8a exei to tooltip
+        "left"      : $('#tooltip').width(),      //oso to width pou 8a exei to tooltip
         "float"     : "left",
         "background": "url(images/rightHorizontal.png) no-repeat"      
     });     
@@ -58,42 +58,43 @@ function setTooltipToRightHor (h) {
 }
 
 function setTooltipPosition (target) {
-	var isRight = false;
-    var w       = $('#tooltip').width();
-    var h       = $('#tooltip').height();
+	var offset      = $(target).offset();
+    var placeAtLeft   = false;
+    var w           = $('#tooltip').width();
+    var h           = $('#tooltip').height();
    
-    //tooltip at right
-    if (target.offsetLeft + $(target).width() + w < $(window).width())
-        isRight = true;
+    //tooltip at left
+    if (offset.left - w > 0)
+        placeAtLeft = true;
 
-    if (target.offsetTop - (h+arrowsSize) > 0 ) {   //xwraei sto para8iro
-        $('#tooltip').css('top', -(h+arrowsSize) );
-        if (isRight) {
-            $('#tooltip').css('left', $(target).width());
-            setTooltipToRight();
+    if (offset.top - (h+arrowsSize) > 0 ) {   //xwraei sto para8iro
+        $('#tooltip').css('top', offset.top -(h+arrowsSize) );
+        if (placeAtLeft){
+            $('#tooltip').css('left', offset.left -w);
+            setTooltipToLeft(); 
         }
         else {
-            $('#tooltip').css('left', -w);
-            setTooltipToLeft(); 
+            $('#tooltip').css('left',offset.left + $(target).width());
+            setTooltipToRight();
         }
         
     }
     else {  //problhma den xwraei
-        $('#tooltip').css('top', -((h - $(target).height())/2) ); 
-        if (isRight) {
-            $('#tooltip').css('left', $(target).width() + arrowsSize);
-            setTooltipToRightHor(h);
+        $('#tooltip').css('top', offset.top -((h - $(target).height())/2) ); 
+        if (placeAtLeft) {
+           $('#tooltip').css('left', offset.left -w -arrowsSize);
+            setTooltipToLeftHor(h);  
         }
         else {
-            $('#tooltip').css('left', -w -arrowsSize);
-            setTooltipToLeftHor(h); 
-        }        
+            $('#tooltip').css('left', offset.left + $(target).width() + arrowsSize);
+            setTooltipToRightHor(h);
+        }      
     } 
 }
 
-$(document).ready(function() {
+$(document).ready(function() {   
     //Select all anchor tag with rel set to tooltip
-    $('.myTooltip').mouseover(function(e) {  
+    $('.myTooltip').mouseover(function(e) {   
         //Grab the title attribute's value and assign it to a variable
         var tip = $(this).attr('title');    
          
