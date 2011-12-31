@@ -31,12 +31,14 @@ and open the template in the editor.
         <script type="text/javascript" src="js/booklet/jquery.easing.1.3.js" ></script>
         <script type="text/javascript" src="js/booklet/jquery.booklet.1.2.0.min.js" ></script>    
         <script type="text/javascript" src="js/popup.js" ></script>
+        <script type="text/javascript" src="js/tooltip.js" ></script>
 
         <!-- photo gallery end -->
         <link type="text/css" rel="stylesheet" media="screen" href="js/booklet/jquery.booklet.1.2.0.css" /> 
         <link type="text/css" rel="stylesheet" media="screen" href="css/book.css" />
-        <link rel="stylesheet" href="css/popup.css" type="text/css" />
-        <link rel="stylesheet" href="css/pages.css" type="text/css" />
+        <link type="text/css" rel="stylesheet" href="css/popup.css"  />
+        <link type="text/css" rel="stylesheet" href="css/pages.css"  />
+        <link type="text/css" rel="stylesheet" href="css/tooltipe.css"  />
     </head>
 
     <body onload="loadBook();">
@@ -72,22 +74,24 @@ and open the template in the editor.
                             <div style="clear:both"></div>
                             <div>
                                 <section>
-                                    <img id="chichenItzaImg" class="middle" src="images/page1_1.jpg"/>
+                                    <img id="chichenItzaImg" class="middle" src="images/page1_1.jpg" title="Click to see the video"/>
+                                    
                                     <div id="chichenItzaPopup">
-                                        <a href="#" class="popupClose"></a>
-                                        <h1>Chichen Itza Popup!</h1>
+                                        <a href="#" class="popupClose"></a> 
+                                        <h1>Chichen Itza Popup!</h1> 
                                         <p> The famous Mayan pyramids of Chichén-Itzá are over 1500 years old and are located only 75 miles from Mérida.
-                                        </p>
+                                        </p> 
 
-                                        <center>
-                                            <video>
+                                       <center>
+                                            <video controls="controls">
                                                 <source src="material/Chichen Itza.mp4" type="video/mp4" />
                                                 Your browser does not support the video tag.
                                             </video>
-                                        </center>
+                                       </center>
 
-                                    </div>
-                                    <div class="backgroundPopup"></div>                                    
+                                    </div>	
+                                    <div class="backgroundPopup"></div>	
+                                                                   
                                     <footer><b>Figure 1:</b> El Castillo (Pyramidd of Kukulcán) in Chichén Itzá </footer>
                                     <!--<video width="350" height="300" controls="controls">
                                         <source src="material/Chichen Itza.mp4" type="video/mp4" />

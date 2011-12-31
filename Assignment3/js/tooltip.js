@@ -92,8 +92,6 @@ function setTooltipPosition (target) {
 }
 
 $(document).ready(function() {
-	
-	$('.myTooltip').live("mouseover", function () {$('#tooltip').fadeIn('slow');});
     //Select all anchor tag with rel set to tooltip
     $('.myTooltip').mouseover(function(e) {  
         //Grab the title attribute's value and assign it to a variable
