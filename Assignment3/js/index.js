@@ -79,13 +79,13 @@ $(document).ready(function(){
     });				
 
     $(window).resize(function() { setWondersPosition(); });
-    $("#chichenItza").click(function ()                 { postData(1); });
-    $("#greatWallOfChina").click(function ()            { postData(2); });	
-    $("#statueOfChristTheRedeemer").click(function ()   { postData(3); });     
-    $("#colosseum").click(function ()                   { postData(4); });      
-    $("#petra").click(function ()                       { postData(5); }); 
-    $("#tajMahal").click(function ()                    { postData(6); }); 
-    $("#machuPicchu").click(function ()                 { postData(7); });
+    $("#chichenItza").click(function ()                 { postData(481); });
+    $("#greatWallOfChina").click(function ()            { postData(482); });	
+    $("#statueOfChristTheRedeemer").click(function ()   { postData(483); });     
+    $("#colosseum").click(function ()                   { postData(484); });      
+    $("#petra").click(function ()                       { postData(485); }); 
+    $("#tajMahal").click(function ()                    { postData(486); }); 
+    $("#machuPicchu").click(function ()                 { postData(487); });
         
     $("#chichenItza").hover(
         function (){$("#chichenItza").css({"background-color" : "rgba(105, 105, 105, 0.6)"});}, 

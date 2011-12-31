@@ -43,7 +43,7 @@ function loadBook() {
         overlays:           false
     });
     
-    var times = Math.floor((getValue('pageId'))/2);
+    var times = Math.floor((getValue('pageId')-479)/2);
     if (times > 0)
             $(document).everyTime(1600, function() {$('#mybook').booklet("next");}, times);
    /* $('#mybook').booklet({
@@ -97,7 +97,7 @@ function loadBook() {
 
 var activeWonder = null;
 
-function onHover (wonder) { 
+function onMouseEnter (wonder) { 
     activeWonder = wonder;
     centerPopup(wonder);								//centering with css 
     loadPopup(wonder);									//load popup 				
@@ -111,33 +111,39 @@ function stopVideo () {
 			{$('video')[videoIndex].pause();});
 }
 
+function setBookPagesZindex(value){
+    $(".b-p2").css("z-index", value);
+    $(".b-p4").css("z-index", value);    
+}
+
 //------------------------------------------------------------------------------
-var malakas = 0;
+
 $(document).ready(function(){
     $(".popupClose").click(function() {
         stopVideo();
+        setBookPagesZindex('');
         disablePopup(activeWonder);
     });                                                 //Click the x event!
 
     $(".backgroundPopup").click(function() {
         stopVideo();
+        setBookPagesZindex('');
         disablePopup(activeWonder);
     });                                                 //Click out event! 
 
     $(document).keyup(function(e){                      //Pressed Escape event!
         if(e.keyCode == 27 && popupIsEnabled) {         //27 key code for ESC buton
             stopVideo();
+            setBookPagesZindex('');
             disablePopup(activeWonder);  
         }
 
     });
     
-    $("#chichenItzaImg").hover(function (){
-        if (malakas != 0)
-            onHover("#chichenItzaPopup");
-        malakas = 1;
-    });
-
+    $("#chichenItzaImg").mouseenter(function (e){
+        setBookPagesZindex('0');
+        onMouseEnter("#chichenItzaPopup");
+    })
 });
 
 
