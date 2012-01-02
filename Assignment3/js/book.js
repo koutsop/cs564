@@ -22,8 +22,8 @@ function getValue(varname) {
         }
     }
     value = unescape(value);
-    value.replace(/\+/g," ");   // Convert "+"s to " "s
-
+    value = value.replace(/\+/g," ");   // Convert "+"s to " "s
+    value = value.replace('#',"");      // Convert "#" to ""
     return value;
 }
 
