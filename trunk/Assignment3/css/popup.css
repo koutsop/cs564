@@ -64,7 +64,7 @@
 	/*border:2px solid #cecece;  */
 	border: 4px;
 	border-radius:10px;
-	z-index:3;  
+	z-index:110;  
 	padding:12px;  
 	font-size:13px;  
 }

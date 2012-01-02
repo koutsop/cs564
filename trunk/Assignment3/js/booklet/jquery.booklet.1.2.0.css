@@ -64,22 +64,7 @@
 	.booklet .b-arrow-next div {background:url("images/arrow-next.png") no-repeat left top;}
 	.booklet .b-arrow-prev div {background:url("images/arrow-prev.png") no-repeat left top;}
 		
-/* @z-index fix (needed for older IE browsers)
-----------------------------------------*/
-	body              {z-index:0;}
-    .b-menu           {z-index:100;}
-    .b-selector       {z-index:100;}
-	.booklet          {z-index:10;}
-    .b-pN             {z-index:10;}
-    .b-p0             {z-index:10;}
-    .b-p1             {z-index:10;}
-    .b-p2             {z-index:10;}
-    .b-p3             {z-index:10;}
-    .b-p4             {z-index:10;}
-    .b-prev           {z-index:40;}
-    .b-next           {z-index:40;}
-    .b-counter        {z-index:40;}
-	
+
 /* @Menu Items
 ----------------------------------------*/
 	.b-menu {height:40px; padding:0 0 10px;}
