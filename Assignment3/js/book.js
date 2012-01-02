@@ -112,8 +112,8 @@ function stopVideo () {
 }
 
 function setBookPagesZindex(value, time){
-    $(".b-p2").oneTime(time, function (){$(".b-p2").css("z-index", value);});
-    $(".b-p4").oneTime(time, function (){$(".b-p4").css("z-index", value);});      
+   // $(".b-p2").oneTime(time, function (){$(".b-p2").css("z-index", value);});
+   // $(".b-p4").oneTime(time, function (){$(".b-p4").css("z-index", value);});      
 }
 
 //------------------------------------------------------------------------------
