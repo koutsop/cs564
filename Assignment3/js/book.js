@@ -3,6 +3,12 @@
  * and open the template in the editor.
  */
 
+var prevId = 0;
+var idsArray = []; // the recognized ids
+var activeWonder = null;
+
+//------------------------------------------------------------------------------
+
 function getValue(varname) {
     var url = window.location.href;
     var qparts = url.split("?");
@@ -27,6 +33,8 @@ function getValue(varname) {
     return value;
 }
 
+//------------------------------------------------------------------------------
+
 function loadBook() {  
     $("#mybook").booklet({
         name:               "The new Seven Wonders of the World",
@@ -36,14 +44,14 @@ function loadBook() {
         startingPage:       0,
         closed:             true,
         covers:             true,
-        next:               $('#next_page_button'),          			// selector for element to use as click trigger for next page
-        prev:               $('#prev_page_button'),          			// selector for element to use as click trigger for previous page
+        next:               $('#next_page_button'),     // selector for element to use as click trigger for next page
+        prev:               $('#prev_page_button'),     // selector for element to use as click trigger for previous page
         manual:             false,
-        hovers:             false,                            // enables preview pageturn hover animation, shows a small preview of previous or next page on hover
+        hovers:             false,                      // enables preview pageturn hover animation, shows a small preview of previous or next page on hover
         overlays:           false
     });
     
-    var times = Math.floor((getValue('pageId')-479)/2);
+    var times = Math.floor(( (prevId = getValue('pageId'))-479)/2);
     if (times > 0)
             $(document).everyTime(1600, function() {$('#mybook').booklet("next");}, times);
    /* $('#mybook').booklet({
@@ -94,8 +102,7 @@ function loadBook() {
     });*/
 }
 
-
-var activeWonder = null;
+//------------------------------------------------------------------------------
 
 function onClick (wonder) { 
     activeWonder = wonder;
@@ -113,7 +120,48 @@ function stopVideo () {
 
 //------------------------------------------------------------------------------
 
+function processChunk(i)  {
+    $.ajax({
+        type: "GET",
+        url: "http://www.csd.uoc.gr/~hy564/idsBook.php",
+        data: "",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",	
+        success: function (data) {processJson(data, i);} 
+    });			  
+}
+
+//------------------------------------------------------------------------------
+
+function getNumberOfFlip (dif) {
+    if (dif % 2 != 0)
+        ++dif;
+    return dif / 2;
+}
+
+//------------------------------------------------------------------------------
+
+function processJson(data, idx) {		
+    $.each(data, function(i, item){
+        idsArray = item;
+    });		
+
+    // if the new id is the same as the previous id, do not change the contents of the page
+    if(idsArray[0] != prevId) {
+        if (idsArray[0] < prevId)
+            $(document).everyTime(1600, function() {$('#mybook').booklet("prev");}, getNumberOfFlip(prevId - idsArray[0]));
+        else
+            $(document).everyTime(1600, function() {$('#mybook').booklet("next");}, getNumberOfFlip(idsArray[0] - prevId));
+        prevId = idsArray[0];
+    }
+}
+
+//------------------------------------------------------------------------------
+
 $(document).ready(function(){
+    jQuery.support.cors = true;
+    $(document).everyTime("10s", processChunk, 0);
+    
     $(".popupClose").click(function() {
         stopVideo();
         disablePopup(activeWonder);
@@ -129,8 +177,27 @@ $(document).ready(function(){
             stopVideo();
             disablePopup(activeWonder); 
         }
-
     });
+    
+    $("#prev_page_button").click(function (){
+        if (prevId == 480)
+            return;
+        
+        if (prevId == 481)
+            prevId = 480;
+        else
+            prevId = parseInt(prevId) - 2;
+    });
+    $("#next_page_button").click(function (){
+        if (prevId == 489)
+            return;
+
+        if (prevId == 480)
+            prevId = 481;
+        else
+            prevId = parseInt(prevId) + 2;
+    });
+    
     
     $("#chichenItzaImg").click(function (){
         onClick("#chichenItzaPopup");
