@@ -111,9 +111,9 @@ function stopVideo () {
 			{$('video')[videoIndex].pause();});
 }
 
-function setBookPagesZindex(value){
-    $(".b-p2").css("z-index", value);
-    $(".b-p4").css("z-index", value);    
+function setBookPagesZindex(value, time){
+    $(".b-p2").oneTime(time, function (){$(".b-p2").css("z-index", value);});
+    $(".b-p4").oneTime(time, function (){$(".b-p4").css("z-index", value);});      
 }
 
 //------------------------------------------------------------------------------
@@ -122,7 +122,7 @@ $(document).ready(function(){
     $(".popupClose").click(function() {
         stopVideo();
         disablePopup(activeWonder);
-        setBookPagesZindex('');
+        setBookPagesZindex('', 700);
     });                                                 //Click the x event!
 
     $(".backgroundPopup").click(function() {
@@ -135,13 +135,13 @@ $(document).ready(function(){
         if(e.keyCode == 27 && popupIsEnabled) {         //27 key code for ESC buton
             stopVideo();
             disablePopup(activeWonder); 
-            setBookPagesZindex('');
+            setBookPagesZindex('', 700);
         }
 
     });
     
     $("#chichenItzaImg").click(function (){
-        setBookPagesZindex('0');
+        setBookPagesZindex('0', 0);
         onMouseEnter("#chichenItzaPopup");
     });
 });
