@@ -42,7 +42,7 @@ and open the template in the editor.
     </head>
 
     <body onload="loadBook();">
-
+        <div class="backgroundPopup"></div>
         <div id="navigationButtons">
             <div id="prevButton"><a id="prev_page_button">prev</a></div>
             <div id="nextButton"><a id="next_page_button">next</a></div>
@@ -96,30 +96,21 @@ and open the template in the editor.
                             <div style="clear:both"></div>
                             <div>
                                 <section>
-                                    <div class="myTooltip" title="Click to see the video">
-                                        <img id="chichenItzaImg" class="middle" src="images/page1_1.jpg"/>
+                                    <div id="chichenItzaImg" class="myTooltip" style="max-width: 300px;margin-right:auto;margin-left:auto;" title="Click to see the video">
+                                        <img class="middle" src="images/page1_1.jpg"/>
                                     </div>
                                     <div id="chichenItzaPopup">
                                         <a href="#" class="popupClose"></a> 
-                                        <h1>Chichen Itza Popup!</h1> 
-                                        <p> The famous Mayan pyramids of Chichén-Itzá are over 1500 years old and are located only 75 miles from Mérida.
-                                        </p> 
-
+                                        <h1>Chichen Itza Popup !</h1> 
                                        <center>
                                             <video controls="controls">
                                                 <source src="material/Chichen Itza.mp4" type="video/mp4" />
                                                 Your browser does not support the video tag.
                                             </video>
                                        </center>
-
-                                    </div>	
-                                    <div class="backgroundPopup"></div>	
+                                    </div>		
                                                                    
                                     <footer><b>Figure 1:</b> El Castillo (Pyramidd of Kukulcán) in Chichén Itzá </footer>
-                                    <!--<video width="350" height="300" controls="controls">
-                                        <source src="material/Chichen Itza.mp4" type="video/mp4" />
-                                    </video> -->
-                            
                                 </section>
                             </div>
                             <div style="clear:both"></div>
@@ -158,11 +149,20 @@ and open the template in the editor.
                             </div><div style="clear:both"></div>
                             <div>
                                 <section>
-                                    <img class="middle" src="images/page2_1.jpg"/>
+                                    <div id="greatWallOfChinaImg" class="myTooltip" style="max-width: 300px;margin-right:auto;margin-left:auto;" title="Click to see the video">
+                                        <img class="middle" src="images/page2_1.jpg"/>
+                                    </div>
+                                    <div id="greatWallOfChinaPopup">
+                                        <a href="#" class="popupClose"></a> 
+                                        <h1>Great Wall of China !</h1> 
+                                       <center>
+                                            <video controls="controls">
+                                                <source src="material/The Great Wall of China.mp4" type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                       </center>
+                                    </div>	
                                     <footer><b>Figure 3:</b> The great wall of China </footer> 
-                                    <!--  <video width="350" height="300" controls="controls">
-                                          <source src="material/The Great Wall of China.mp4" type="video/mp4" />
-                                      </video> -->
                                 </section>
                             </div><div style="clear:both"></div>
                             <div>
@@ -199,10 +199,19 @@ and open the template in the editor.
                             <div style="clear:both"></div>
                             <div>
                                 <section>
-                                    <!-- <video width="350" height="300" controls="controls">
-                                        <source src="material/Christ the Redeemer.mp4" type="video/mp4" />
-                                    </video> -->
-                                    <img class="middle" src="images/page3_1.jpg"/>
+                                    <div id="statueOfChristTheRedeemerImg" class="myTooltip" style="max-width: 300px;margin-right:auto;margin-left:auto;" title="Click to see the video">
+                                        <img class="middle" src="images/page3_1.jpg"/>
+                                    </div>
+                                    <div id="statueOfChristTheRedeemerPopup">
+                                        <a href="#" class="popupClose"></a> 
+                                        <h1>Statue of Christ the Redeemer !</h1> 
+                                       <center>
+                                            <video controls="controls">
+                                                <source src="material/Christ the Redeemer.mp4" type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                       </center>
+                                    </div>	
                                     <footer><b>Figure 4:</b>A view of the statue, as seen from a helicopter. </footer>
                                 </section>
                             </div>
@@ -238,10 +247,19 @@ and open the template in the editor.
                             </div>
                             <div>
                                 <section>
-                                    <!-- <video width="350" height="300" controls="controls">
-                                        <source src="material/Colosseum.mp4" type="video/mp4" />
-                                    </video> -->
-                                    <img class="middle" src="images/page5_1.jpg"/>
+                                    <div id="colosseumImg" class="myTooltip" style="max-width: 300px;margin-right:auto;margin-left:auto;" title="Click to see the video">
+                                        <img class="middle" src="images/page4_1.jpg"/>
+                                    </div>
+                                    <div id="colosseumPopup">
+                                        <a href="#" class="popupClose"></a> 
+                                        <h1>Colosseum !</h1> 
+                                       <center>
+                                            <video controls="controls">
+                                                <source src="material/Colosseum.mp4" type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                       </center>
+                                    </div>	
                                     <footer><b>Figure 5:</b> The exterior of the Colosseum </footer>
                                 </section>
                             </div>
@@ -271,14 +289,20 @@ and open the template in the editor.
                             <div style="clear:both"></div>
                             <div>
                                 <section>
-                                    <!--   <video width="350" height="300" controls="controls">
-                                           <source src="material/Petra.mp4" type="video/mp4" />
-                                       </video> -->
-
-                                    <div style="width: 80%; margin-left: 15%;">
+                                    <div id="petraImg" class="myTooltip" style="width: 80%; margin-left: 15%;" title="Click to see the video">
                                         <img class="middle" src="images/page5_1.jpg"  style="float: left; width: 50%;"/>
                                         <img class="middle" src="images/page5_2.jpg"  style="float: right; width: 50%;"/>
                                     </div> 
+                                    <div id="petraPopup">
+                                        <a href="#" class="popupClose"></a> 
+                                        <h1>Petra !</h1> 
+                                       <center>
+                                            <video controls="controls">
+                                                <source src="material/Petra.mp4" type="video/mp4" />
+                                                Your browser does not support the video tag.
+                                            </video>
+                                       </center>
+                                    </div>
                                     <div style="clear:both"></div>
                                     <div>
                                         <footer><b>Figure 6: a) </b> The end of the Siq, with its dramatic view of Al Khazneh ("The Treasury")<b> b)</b> Urn Tomb   </footer>
@@ -317,9 +341,20 @@ and open the template in the editor.
                                 <p> 
                                     Taj Mahal was built by a Muslim, Emperor Shah Jahan (died 1666 C.E.) in the memory of his dear wife and queen Mumtaz Mahal at Agra, India. It is an "elegy in marble" or some say an expression of a "dream." Taj Mahal (meaning Crown Palace) is a Mausoleum that houses the grave of queen Mumtaz Mahal at the lower chamber. The grave of Shah Jahan was added to it later. The queen’s real name was Arjumand Banu. In the tradition of the Mughals, important ladies of the royal family were given another name at their marriage or at some other significant event in their lives, and that new name was commonly used by the public. Shah Jahan's real name was Shahab-ud-din, and he was known as Prince Khurram before ascending to the throne in 1628.    
                                 </p> 
-
-
-                                <img  class="middle" src="images/page6_1.jpg"/>
+                                
+                                <div id="tajMahalImg" class="myTooltip" style="max-width: 300px;margin-right:auto;margin-left:auto;" title="Click to see the video">
+                                    <img class="middle" src="images/page6_1.jpg"/>
+                                </div>
+                                <div id="tajMahalPopup">
+                                    <a href="#" class="popupClose"></a> 
+                                    <h1>Taj Mahal !</h1> 
+                                   <center>
+                                        <video controls="controls">
+                                            <source src="material/Taj Mahal.mp4" type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                   </center>
+                                </div>	                               
                                 <footer><b>Figure 7:</b> Southern view of the Taj Mahal. </footer>
 
 
@@ -353,8 +388,20 @@ and open the template in the editor.
                                     Machu Picchu ("Old Peak") is a pre-Columbian 15th-century Inca site located 2,430 metres (7,970 ft) above sea level. It is situated on a mountain ridge above the Urubamba Valley in Peru, which is 80 kilometres northwest of Cusco and through which the Urubamba River flows. Most archaeologists believe that Machu Picchu was built as an estate for the Inca emperor Pachacuti (1438–1472). Often referred to as the "Lost City of the Incas", it is perhaps the most familiar icon of the Inca World.
                                 </p>
 
-                                <img  class="middle" src="images/page7_1.jpg"/>
-                                <footer><b>Figure 8:</b> Southern view of the Taj Mahal. </footer>
+                                <div id="machuPicchuImg" class="myTooltip" style="max-width: 300px;margin-right:auto;margin-left:auto;" title="Click to see the video">
+                                    <img class="middle" src="images/page7_1.jpg"/>
+                                </div>
+                                <div id="machuPicchuPopup">
+                                    <a href="#" class="popupClose"></a> 
+                                    <h1>Machu Picchu !</h1> 
+                                   <center>
+                                        <video controls="controls">
+                                            <source src="material/Machu Picchu.mp4" type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                   </center>
+                                </div>
+                                <footer><b>Figure 8:</b> A complete overview of the site. </footer>
 
                             </section>
                             <section>
