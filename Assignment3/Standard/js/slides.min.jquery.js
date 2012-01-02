@@ -196,7 +196,7 @@
     autoHeight:!1,
     autoHeightSpeed:350,
     bigTarget:!1,
-    animationStart:function(){},
+    //animationStart:function(){},
     animationComplete:function(){},
     slidesLoaded:function(){}
 },a.fn.randomize=function(b){
