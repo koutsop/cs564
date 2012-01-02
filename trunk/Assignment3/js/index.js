@@ -43,14 +43,6 @@ function setWondersPosition (){
 
 //------------------------------------------------------------------------------
 
-function onClick (wonder) { 
-    activeWonder = wonder;
-    centerPopup(wonder);								//centering with css 
-    loadPopup(wonder);									//load popup 				
-}
-
-//------------------------------------------------------------------------------
-
 function stopVideo () {
     if (popupIsEnabled)
         $('video').each(function (videoIndex)

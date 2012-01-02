@@ -97,7 +97,7 @@ function loadBook() {
 
 var activeWonder = null;
 
-function onMouseEnter (wonder) { 
+function onClick (wonder) { 
     activeWonder = wonder;
     centerPopup(wonder);								//centering with css 
     loadPopup(wonder);									//load popup 				
@@ -111,39 +111,54 @@ function stopVideo () {
 			{$('video')[videoIndex].pause();});
 }
 
-function setBookPagesZindex(value, time){
-   // $(".b-p2").oneTime(time, function (){$(".b-p2").css("z-index", value);});
-   // $(".b-p4").oneTime(time, function (){$(".b-p4").css("z-index", value);});      
-}
-
 //------------------------------------------------------------------------------
 
 $(document).ready(function(){
     $(".popupClose").click(function() {
         stopVideo();
         disablePopup(activeWonder);
-        setBookPagesZindex('', 700);
     });                                                 //Click the x event!
 
     $(".backgroundPopup").click(function() {
         stopVideo();
         disablePopup(activeWonder);
-        setBookPagesZindex('');
     });                                                 //Click out event! 
 
     $(document).keyup(function(e){                      //Pressed Escape event!
         if(e.keyCode == 27 && popupIsEnabled) {         //27 key code for ESC buton
             stopVideo();
             disablePopup(activeWonder); 
-            setBookPagesZindex('', 700);
         }
 
     });
     
     $("#chichenItzaImg").click(function (){
-        setBookPagesZindex('0', 0);
-        onMouseEnter("#chichenItzaPopup");
+        onClick("#chichenItzaPopup");
     });
+    
+    $("#greatWallOfChinaImg").click(function (){
+        onClick("#greatWallOfChinaPopup");
+    });    
+    
+    $("#statueOfChristTheRedeemerImg").click(function (){
+        onClick("#statueOfChristTheRedeemerPopup");
+    });     
+    
+    $("#colosseumImg").click(function (){
+        onClick("#colosseumPopup");
+    });       
+    
+    $("#petraImg").click(function (){
+        onClick("#petraPopup");
+    });  
+
+    $("#tajMahalImg").click(function (){
+        onClick("#tajMahalPopup");
+    });  
+    
+    $("#machuPicchuImg").click(function (){
+        onClick("#machuPicchuPopup");
+    });  
 });
 
 
