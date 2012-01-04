@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : data.xml
+    Created on : 4 Ιανουάριος 2012, 10:20 μμ
+    Author     : koutsop
+    Description:
+        Purpose of the document follows.
+-->
+
+<data>
+	<multimedia for="chichenItza">
+		<video>material/Chichen Itza.mp4</video>
+	</multimedia>
+	
+	<multimedia for="greatWallOfChina">
+		<video>material/The Great Wall of China.mp4</video>
+	</multimedia>
+	
+	<multimedia for="statueOfChristTheRedeemer">
+		<video>material/Christ the Redeemer.mp4</video>
+	</multimedia>
+	
+	<multimedia for="colosseum">
+		<video>material/Colosseum.mp4</video>
+	</multimedia>
+	
+	<multimedia for="petra">
+		<video>material/Petra.mp4</video>
+	</multimedia>
+	
+		<multimedia for="tajMahal">
+		<video>material/Taj Mahal.mp4</video>
+	</multimedia>	
+	
+	<multimedia for="machuPicchu">
+		<video>material/Machu Picchu.mp4</video>
+	</multimedia>
+</data>

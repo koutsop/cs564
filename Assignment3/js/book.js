@@ -50,6 +50,7 @@ function loadBook() {
         hovers:             false,                      // enables preview pageturn hover animation, shows a small preview of previous or next page on hover
         overlays:           false
     });
+	loadMultimedia();
     
     var times = Math.floor(( (prevId = getValue('pageId'))-479)/2);
     if (times > 0)
@@ -100,6 +101,48 @@ function loadBook() {
         before:             function(){},     // callback invoked before each page turn animation
         after:              function(){}      // callback invoked after each page turn animation        
     });*/
+}
+
+//------------------------------------------------------------------------------
+
+function loadMultimedia() {
+	$.ajax({
+		type: "GET",
+		url: "data.xml",
+		dataType: "xml",
+		success: parseXml
+	});
+}
+
+//------------------------------------------------------------------------------
+
+function parseXml(xml) {
+
+	$(xml).find("multimedia").each(function() {
+		switch($(this).attr('for')) {
+			case 'chichenItza': 
+				$("#chichenItzaVideo").attr('src', $(this).find("video").text()); 
+				break;
+			case 'greatWallOfChina': 
+				$("#greatWallOfChinaVideo").attr('src', $(this).find("video").text()); 
+				break;
+				case 'statueOfChristTheRedeemer': 
+				$("#statueOfChristTheRedeemerVideo").attr('src', $(this).find("video").text()); 
+			break;
+			case 'colosseum': 
+				$("#colosseumVideo").attr('src', $(this).find("video").text()); 
+				break;
+			case 'petra': 
+				$("#petraVideo").attr('src', $(this).find("video").text()); 
+				break;
+			case 'tajMahal': 
+				$("#tajMahalVideo").attr('src', $(this).find("video").text()); 
+				break;
+			case 'machuPicchu': 
+				$("#machuPicchuVideo").attr('src', $(this).find("video").text()); 
+				break;			
+		}
+	});
 }
 
 //------------------------------------------------------------------------------
